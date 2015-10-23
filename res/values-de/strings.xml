@@ -207,4 +207,9 @@
     <string name="network_traffic_autohide_title">Netzwerkverkehrsanzeige bei Inaktivität ausblenden</string>
     <string name="network_traffic_autohide_summary">Blendet die Netzwerkverkehrsanzeige aus, wenn der Netzwerkverkehr unter 1 KB/s liegt</string>
 
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">Albumcover</string>
+    <string name="media_art_title">Albumcover</string>
+    <string name="media_art_summary">Albumcover anzeigen, wenn verfügbar</string>
+
 </resources>
