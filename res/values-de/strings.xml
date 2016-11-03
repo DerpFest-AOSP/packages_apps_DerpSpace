@@ -155,6 +155,16 @@
     <string name="dialog_delete_title">Löschen</string>
     <string name="dialog_delete_message">Markiertes Element löschen?</string>
 
+	<!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Zeitlimit</string>
+    <string name="heads_up_time_out_summary">Peeking-Benachrichtigungen werden angezeigt für <xliff:g id="number">%d</xliff:g> Sekunden</string>
+    <string name="heads_up_time_out_2sec">2 Sekunden</string>
+    <string name="heads_up_time_out_4sec">4 Sekunden</string>
+    <string name="heads_up_time_out_5sec">5 Sekunden</string>
+    <string name="heads_up_time_out_6sec">6 Sekunden</string>
+    <string name="heads_up_time_out_8sec">8 Sekunden</string>
+    <string name="heads_up_time_out_10sec">10 Sekunden</string>
+
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">QS Panel schnell herunterziehen</string>
     <string name="quick_pulldown_none">Aus</string>
@@ -174,7 +184,7 @@
     <string name="status_bar_show_clock_title">Zeit und Datum anzeigen</string>
     <string name="status_bar_am_pm_title">AM/PM-Darstellung</string>
     <string name="status_bar_am_pm_info">24 Stunden-Format ist aktiviert</string>
-    <string name="clock_seconds_display">Sekunden anzeigen</string>
+    <string name="clock_Sekunden_display">Sekunden anzeigen</string>
     <string name="enable_clock_weekday">Wochentag</string>
     <string name="enable_clock_weekday_summary">Abgekürzter Wochentag vor der Uhrzeit</string>
     <string name="dont_show">Nicht anzeigen</string>
@@ -526,8 +536,8 @@
     <string name="navigation_bar_help_text">Diese Einstellungen beziehen sich hauptsächlich auf die 3-Tasten-Navigationsleiste. Wenn Sie die Gestennavigation verwenden und diese anpassen möchten, z.B. Verstecken des Gestengriffs, bitte besuchen Sie: Einstellungen > System > Gesten und Tasten.</string>
 
     <!-- Units -->
-    <string name="unit_seconds">Sekunden</string>
-    <string name="unit_milliseconds">Millisekunden</string>
+    <string name="unit_Sekunden">Sekunden</string>
+    <string name="unit_milliSekunden">Millisekunden</string>
 
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">Über Pulse</string>
