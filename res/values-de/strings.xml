@@ -165,6 +165,20 @@
     <string name="heads_up_time_out_8sec">8 Sekunden</string>
     <string name="heads_up_time_out_10sec">10 Sekunden</string>
 
+	<!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Schlummertimer</string>
+    <string name="heads_up_snooze_summary_one_minute">Wenn Sie bei Peeking-Benachrichtigungen nach oben wischen, werden Heads-Up von dieser Anwendung für 1 Minute zurückgestellt</string>
+    <string name="heads_up_snooze_summary">Wenn Sie bei Peeking-Benachrichtigungen nach oben wischen, werden Heads-up von dieser Anwendung für die vom Benutzer festgelegte Zeit zurückgestellt.</string>
+    <string name="heads_up_snooze_disabled_summary">Schlummertimer ist deaktiviert</string>
+    <string name="heads_up_snooze_1min">1 Minute</string>
+    <string name="heads_up_snooze_5min">5 Minuten</string>
+    <string name="heads_up_snooze_10min">10 Minuten</string>
+    <string name="heads_up_snooze_15min">15 Minuten</string>
+    <string name="heads_up_snooze_20min">20 Minuten</string>
+    <string name="heads_up_snooze_25min">25 Minuten</string>
+    <string name="heads_up_snooze_30min">30 Minuten</string>
+    <string name="heads_up_snooze_1h">1 Stunde</string>
+
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">QS Panel schnell herunterziehen</string>
     <string name="quick_pulldown_none">Aus</string>
