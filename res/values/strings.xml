@@ -495,4 +495,8 @@
     <string name="burn_in_protection_interval_title">Interval of shift</string>
     <string name="burn_in_protection_interval_summary">How often to make icons shift</string>
     <string name="unit_x1000ms">x1000 ms</string>
+
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">Bluetooth battery status</string>
+    <string name="bluetooth_battery_summary">Display battery status for the connected bluetooth device, if available</string>
 </resources>
