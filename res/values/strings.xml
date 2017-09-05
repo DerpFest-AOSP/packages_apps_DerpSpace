@@ -66,6 +66,9 @@
     <!-- Misc DerpSpace -->
     <string name="misc_derpspace_title">Miscellaneous</string>
 
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+
     <!-- Quick Settings -->
     <string name="quick_settings_title">Quick Settings</string>
 
@@ -415,4 +418,10 @@
     <string name="combined_status_bar_signal_icons_summary">Enable combined signal icons in status bar\nRequires a SystemUI restart</string>
 
     <string name="dark_ui_mode_summary">Browse the dark theme options</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
 </resources>
