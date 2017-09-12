@@ -199,4 +199,12 @@
     <string name="reticker_landscape_only_title">Nur im Querformat</string>
     <string name="reticker_landscape_only_summary">reTicker nur aktivieren, wenn das Gerät im Querformat ist</string>
 
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Netzwerkverkehrsanzeige</string>
+    <string name="network_traffic_summary">Anpassen der Anzeige des Netzwerkverkehrs</string>
+    <string name="network_traffic_state_title">Netzwerkverkehrsanzeige aktivieren</string>
+    <string name="network_options_title">Einstellungen</string>
+    <string name="network_traffic_autohide_title">Netzwerkverkehrsanzeige bei Inaktivität ausblenden</string>
+    <string name="network_traffic_autohide_summary">Blendet die Netzwerkverkehrsanzeige aus, wenn der Netzwerkverkehr unter 1 KB/s liegt</string>
+
 </resources>

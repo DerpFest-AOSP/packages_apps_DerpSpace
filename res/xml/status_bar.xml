@@ -41,7 +41,7 @@
 
     <org.derpfest.support.preferences.CardviewPreference
         android:key="traffic"
-        android:fragment="org.derpfest.derpspace.fragments.Traffic"
+        android:fragment="org.derpfest.derpspace.fragments.NetworkTrafficSettings"
         android:icon="@drawable/ic_traffic"
         android:title="@string/traffic_title" />
 
