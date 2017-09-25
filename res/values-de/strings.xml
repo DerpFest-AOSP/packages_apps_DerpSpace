@@ -140,6 +140,19 @@
     <string name="toast_icon_title">Toast-App-Symbol</string>
     <string name="toast_icon_summary">Zeigen Sie das Symbol der App an, das dem Toast entspricht</string>
 
+    <!-- Heads up -->
+    <string name="headsup_category">HeadsUp-Einstellungen</string>
+    <string name="heads_up_notifications">Heads up</string>
+    <string name="heads_up_notifications_summary">Passen Sie die Einstellungen für Heads-up-Benachrichtigungen an</string>
+    <string name="summary_heads_up_enabled">Popup-Benachrichtigungen sind aktiviert</string>
+    <string name="summary_heads_up_disabled">Popup-Benachrichtigungen sind deaktiviert</string>
+    <string name="add_heads_up_package">Anwendung hinzufügen</string>
+    <string name="add_heads_up_stoplist_summary">Deaktiviert Heads-up-Benachrichtigungen in diesen Anwendungen</string>
+    <string name="heads_up_stoplist_title">Anwendungsliste</string>
+    <string name="profile_choose_app">Anwendung auswählen</string>
+    <string name="dialog_delete_title">Löschen</string>
+    <string name="dialog_delete_message">Markiertes Element löschen?</string>
+
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">QS Panel schnell herunterziehen</string>
     <string name="quick_pulldown_none">Aus</string>
