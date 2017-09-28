@@ -69,6 +69,9 @@
     <!-- Misc DerpSpace -->
     <string name="misc_derpspace_title">Sonstiges</string>
 
+    <!-- Navigation -->
+    <string name="navigationbar_settings_title">Navigationsleiste</string>
+
     <!-- Notifications -->
     <string name="notifications_title">Benachrichtigungen</string>
 

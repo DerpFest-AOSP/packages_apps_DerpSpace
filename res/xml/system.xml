@@ -32,6 +32,12 @@
         android:title="@string/customisation_title" />
 
      <com.derp.support.preferences.CardviewPreference
+        android:key="navbar_settings"
+        android:fragment="org.derpfest.derpspace.fragments.NavbarSettings"
+        android:icon="@drawable/ic_navigation"
+        android:title="@string/navigationbar_settings_title" />
+
+     <com.derp.support.preferences.CardviewPreference
         android:key="general_tweaks"
         android:fragment="org.derpfest.derpspace.fragments.GeneralTweaks"
         android:icon="@drawable/ic_general_tweaks"
