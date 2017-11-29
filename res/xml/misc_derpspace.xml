@@ -61,6 +61,12 @@
              android:summary="@string/data_disabled_icon_summary"
              android:defaultValue="true"/>
 
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+             android:key="roaming_indicator_icon"
+             android:title="@string/roaming_indicator_icon_title"
+             android:summary="@string/roaming_indicator_icon_summary"
+             android:defaultValue="true"/>
+
          <org.derpfest.support.preferences.SystemSettingSwitchPreference
              android:key="show_fourg_icon"
              android:title="@string/show_fourg_icon_title"
