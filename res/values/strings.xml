@@ -70,6 +70,12 @@
     <!-- Notifications -->
     <string name="notifications_title">Notifications</string>
 
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_shortcuts">Lockscreen Shortcuts</string>
+
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Lockscreen Shortcuts</string>
+
     <!-- Quick Settings -->
     <string name="quick_settings_title">Quick Settings</string>
 
