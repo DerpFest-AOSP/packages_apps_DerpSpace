@@ -56,9 +56,11 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
 
     private static final String KEY_NAVIGATION_BAR_ENABLED = "navbar_visibility";
     private static final String LAYOUT_SETTINGS = "layout_settings";
+    private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
 
     private SwitchPreference mNavigationBar;
     private Preference mLayoutSettings;
+    private SwitchPreference mPixelNavAnimation;
 
     private boolean mIsNavSwitchingMode = false;
 
@@ -79,6 +81,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
                 resolver, KEY_NAVIGATION_BAR_ENABLED,
                 defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
 
+        mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
         mNavigationBar.setChecked((Settings.System.getInt(getContentResolver(),
             KEY_NAVIGATION_BAR_ENABLED,

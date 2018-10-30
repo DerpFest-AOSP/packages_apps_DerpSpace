@@ -21,6 +21,13 @@
         android:title="@string/navigation_bar_title"
         android:summary="@string/navigation_bar_summary" />
 
+    <com.derp.support.preferences.SystemSettingSwitchPreference
+        android:key="pixel_nav_animation"
+        android:title="@string/pixel_navbar_anim_title"
+        android:summary="@string/pixel_navbar_anim_summary"
+        android:defaultValue="true"
+        android:dependency="navbar_visibility" />
+
     <Preference
         android:key="layout_settings"
         android:title="@string/navigation_bar_layout_title"
