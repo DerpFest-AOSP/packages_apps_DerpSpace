@@ -509,6 +509,13 @@
     <string name="keyguard_show_battery_always_summary">Always show a battery bar on the ambient display</string>
 
     <!-- Ambient display battery percentage --> 
-    <string name="ambient_battery_percent_title">Battery level on bottom</string> 
-    <string name="ambient_battery_percent_summary">Enable to show battery percent while dozing</string> 
+    <string name="ambient_battery_percent_title">Battery level on bottom</string>
+    <string name="ambient_battery_percent_summary">Enable to show battery percent while dozing</string>
+
+    <!-- Notifications general category -->
+    <string name="notifications_general_category_title">General</string>
+
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 </resources>
