@@ -41,6 +41,14 @@
             android:summary="@string/notification_sound_vib_screen_on_summary"
             android:defaultValue="true" />
 
+        <com.derp.support.preferences.SystemSettingIntListPreference
+            android:key="mute_annoying_notifications_threshold"
+            android:title="@string/less_notification_sounds_title"
+            android:summary="@string/less_notification_sounds_summary"
+            android:entries="@array/less_notification_sounds_entries"
+            android:entryValues="@array/less_notification_sounds_values"
+            android:defaultValue="0" />
+
         <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_notifications"
             android:title="@string/vibrate_on_notifications_title"

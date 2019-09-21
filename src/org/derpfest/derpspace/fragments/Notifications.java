@@ -47,6 +47,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.internal.util.derp.derpUtils;
 
+import com.derp.support.preferences.SystemSettingIntListPreference;
 import com.derp.support.preferences.CustomSeekBarPreference;
 import com.derp.support.preferences.SystemSettingListPreference;
 import com.derp.support.preferences.SystemSettingSwitchPreference;

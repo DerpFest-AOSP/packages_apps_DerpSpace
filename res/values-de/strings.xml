@@ -671,4 +671,16 @@
     <string name="vibrate_on_notifications_title">Benachrichtigungsvibration</string>
     <string name="vibrate_on_notifications_summary">Bei Benachrichtigungen vibrieren</string>
 
+    <!-- Less Notification sounds -->
+    <string name="less_notification_sounds_title">Weniger Benachrichtigungstöne</string>
+    <string name="less_notification_sounds_summary">Begrenze Benachrichtigungstöne je App, so dass diese nur einmal je Zeitspanne ertönen</string>
+    <string name="less_notification_sounds_default">App-Standardeinstellung</string>
+    <string name="less_notification_sounds_10s">Alle 10 Sekunden</string>
+    <string name="less_notification_sounds_30s">Alle 30 Sekunden</string>
+    <string name="less_notification_sounds_1m">Jede Minute</string>
+    <string name="less_notification_sounds_2m">Alle 2 Minuten</string>
+    <string name="less_notification_sounds_5m">Alle 5 Minuten</string>
+    <string name="less_notification_sounds_15m">Alle 15 Minuten</string>
+    <string name="less_notification_sounds_30m">Alle 30 Minuten</string>
+
 </resources>
