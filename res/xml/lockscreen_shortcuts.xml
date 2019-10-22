@@ -20,6 +20,12 @@
         android:key="lockscreen_general_category"
         android:title="@string/general_category">
 
+    <com.derp.support.preferences.SecureSettingSwitchPreference 
+        android:key="hide_lock_shortcuts"
+        android:title="@string/lockscreen_hide_shortcuts_title"
+        android:summary="@string/lockscreen_hide_shortcuts_summary"
+        android:defaultValue="true" />
+
     <Preference
             android:title="@string/lockscreen_tuner_title" >
             <intent android:action="android.intent.action.MAIN"
