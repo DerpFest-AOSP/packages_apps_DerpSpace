@@ -45,6 +45,12 @@
         android:icon="@drawable/ic_traffic"
         android:title="@string/traffic_title" />
 
+     <org.derpfest.support.preferences.CardviewPreference
+        android:key="carrier_label"
+        android:fragment="org.derpfest.derpspace.fragments.CarrierLabel"
+        android:icon="@drawable/ic_carrierlabel"
+        android:title="@string/carrier_label_category" />
+
     <org.derpfest.support.preferences.CardviewPreference
         android:key="misc_derpspace"
         android:fragment="org.derpfest.derpspace.fragments.MiscDerpSpace"

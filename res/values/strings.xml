@@ -548,4 +548,16 @@
     <!-- QS Header offset -->
     <string name="status_bar_custom_header_offset_title">Header image offset</string>
     <string name="status_bar_custom_header_offset_summary">Adjust the image header size</string>
+
+    <!-- Carrier label -->
+    <string name="carrier_label_category">Carrier label</string>
+    <string name="carrier_label_custom">Custom carrier label</string>
+    <string name="carrier_label_custom_unset">Touch to set</string>
+    <string name="carrier_label_custom_title">Custom carrier label</string>
+    <string name="carrier_label_custom_explain">Enter a custom label. Leave blank to use your network name</string>
+    <string name="carrier_label_position">Carrier label position</string>
+    <string name="carrier_label_position_hide">Hide</string>
+    <string name="carrier_label_position_lockscreen">Lockscreen</string>
+    <string name="carrier_label_position_statusbar">Statusbar</string>
+    <string name="carrier_label_position_both">Lockscreen &amp; Statusbar</string>
 </resources>
