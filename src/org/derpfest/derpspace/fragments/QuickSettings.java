@@ -48,19 +48,22 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
+import com.derp.support.preferences.SystemSettingEditTextPreference;
+
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PREF_TILE_ANIM_STYLE = "qs_tile_animation_style";
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
+    private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
 
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
     private ListPreference mTileAnimationInterpolator;
-
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
+    private SystemSettingEditTextPreference mFooterString;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -107,6 +110,18 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                 Settings.System.QS_SMART_PULLDOWN, 0);
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
+
+        mFooterString = (SystemSettingEditTextPreference) findPreference(QS_FOOTER_TEXT_STRING);
+        mFooterString.setOnPreferenceChangeListener(this);
+        String footerString = Settings.System.getString(getContentResolver(),
+                QS_FOOTER_TEXT_STRING);
+        if (footerString != null && !footerString.isEmpty())
+            mFooterString.setText(footerString);
+        else {
+            mFooterString.setText("#StayDerped");
+            Settings.System.putString(getActivity().getContentResolver(),
+                    Settings.System.QS_FOOTER_TEXT_STRING, "#StayDerped");
+        }
     }
 
      @Override
@@ -144,6 +159,17 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             int smartPulldown = Integer.valueOf((String) newValue);
             Settings.System.putInt(resolver, Settings.System.QS_SMART_PULLDOWN, smartPulldown);
             updateSmartPulldownSummary(smartPulldown);
+            return true;
+        } else if (preference == mFooterString) {
+            String value = (String) newValue;
+            if (value != "" && !value.isEmpty())
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.QS_FOOTER_TEXT_STRING, value);
+            else {
+                mFooterString.setText("#StayDerped");
+                Settings.System.putString(getActivity().getContentResolver(),
+                        Settings.System.QS_FOOTER_TEXT_STRING, "#StayDerped");
+            }
             return true;
         }
         return false;

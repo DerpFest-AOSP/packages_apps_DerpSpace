@@ -403,4 +403,9 @@
     <!-- Screen off FOD -->
     <string name="screen_off_fod_title">Screen off FOD</string>
     <string name="screen_off_fod_summary">Keep FOD enabled when the screen is off</string>
+
+    <!-- QS footer text -->
+    <string name="qs_footer_text_show_title">Show QS footer text</string>
+    <string name="qs_footer_text_string_title">Customize footer text</string>
+    <string name="qs_footer_text_string_summary">Set to empty for default #StayDerped</string>
 </resources>

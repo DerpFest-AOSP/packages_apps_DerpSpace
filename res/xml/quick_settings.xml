@@ -29,6 +29,20 @@
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
+        <!-- QS footer text toggle -->
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_text_show"
+            android:title="@string/qs_footer_text_show_title"
+            android:defaultValue="false" />
+
+        <!-- QS footer text string -->
+        <com.derp.support.preferences.SystemSettingEditTextPreference
+            android:key="qs_footer_text_string"
+            android:title="@string/qs_footer_text_string_title"
+            android:summary="@string/qs_footer_text_string_summary"
+            android:dependency="qs_footer_text_show"
+            android:defaultValue="#StayDerped" />
+
         <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="qs_edit_toggle"
             android:title="@string/qs_edit_title"
