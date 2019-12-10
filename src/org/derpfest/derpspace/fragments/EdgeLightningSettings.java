@@ -84,7 +84,7 @@ public class EdgeLightningSettings extends SettingsPreferenceFragment implements
                 KEY_COLOR, accentColor, UserHandle.USER_CURRENT);
         mColorPref.setDefaultColor(accentColor);
         AmbientLightSettingsPreview.setAmbientLightPreviewColor(value);
-        String colorHex = String.format("#%08x", (0xFFFFFFFF & value));
+        String colorHex = ColorPickerPreference.convertToRGB(value);
         if (value == accentColor) {
             mColorPref.setSummary(R.string.default_string);
         } else {
@@ -137,9 +137,9 @@ public class EdgeLightningSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mColorPref) {
             int accentColor = getAccentColor();
-            String hex = ColorPickerPreference.convertToARGB(
+            String hex = ColorPickerPreference.convertToRGB(
                     Integer.valueOf(String.valueOf(newValue)));
-            if (hex.equals(String.format("#%08x", (0xFFFFFFFF & accentColor)))) {
+            if (hex.equals("#3980ff")) {
                 preference.setSummary(R.string.default_string);
             } else {
                 preference.setSummary(hex);
