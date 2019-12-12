@@ -31,11 +31,11 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.derp.support.colorpicker.ColorPickerPreference;
 import com.derp.support.preferences.CustomSeekBarPreference;
 import com.derp.support.preferences.SystemSettingListPreference;
 import com.derp.support.preferences.SystemSettingSwitchPreference;
-
-import com.derp.support.colorpicker.ColorPickerPreference;
+import org.derpfest.derpspace.preferences.AmbientLightSettingsPreview;
 
 public class EdgeLightningSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -83,6 +83,7 @@ public class EdgeLightningSettings extends SettingsPreferenceFragment implements
         value = Settings.System.getIntForUser(resolver,
                 KEY_COLOR, accentColor, UserHandle.USER_CURRENT);
         mColorPref.setDefaultColor(accentColor);
+        AmbientLightSettingsPreview.setAmbientLightPreviewColor(value);
         String colorHex = String.format("#%08x", (0xFFFFFFFF & value));
         if (value == accentColor) {
             mColorPref.setSummary(R.string.default_string);
@@ -143,6 +144,7 @@ public class EdgeLightningSettings extends SettingsPreferenceFragment implements
             } else {
                 preference.setSummary(hex);
             }
+            AmbientLightSettingsPreview.setAmbientLightPreviewColor(Integer.valueOf(String.valueOf(newValue)));
             int color = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putIntForUser(resolver,
                     KEY_COLOR, color, UserHandle.USER_CURRENT);
