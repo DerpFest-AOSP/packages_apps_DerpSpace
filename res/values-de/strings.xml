@@ -666,4 +666,9 @@
     <string name="ambient_icons_size_title">Größe der AOD-Symbole</string>
     <string name="ambient_icons_color_title">Farbe der AOD-Symbole</string>
     <string name="ambient_icons_intro_text">Erfordert einen SystemUI-Neustart</string>
+
+    <!-- Notification Vibration -->
+    <string name="vibrate_on_notifications_title">Benachrichtigungsvibration</string>
+    <string name="vibrate_on_notifications_summary">Bei Benachrichtigungen vibrieren</string>
+
 </resources>

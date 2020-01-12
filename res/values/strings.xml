@@ -677,4 +677,9 @@
     <string name="ambient_icons_size_title">AOD icons size</string>
     <string name="ambient_icons_color_title">AOD icons color</string>
     <string name="ambient_icons_intro_text">Requires a SystemUI restart</string>
+
+    <!-- Notification Vibration -->
+    <string name="vibrate_on_notifications_title">Notification vibration</string>
+    <string name="vibrate_on_notifications_summary">Vibrate on notifications</string>
+
 </resources>

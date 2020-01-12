@@ -41,6 +41,12 @@
             android:summary="@string/notification_sound_vib_screen_on_summary"
             android:defaultValue="true" />
 
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="vibrate_on_notifications"
+            android:title="@string/vibrate_on_notifications_title"
+            android:summary="@string/vibrate_on_notifications_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
