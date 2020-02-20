@@ -513,4 +513,6 @@
     <!-- Navigation bar -->
     <string name="navigation_bar_title">Navigationsleiste einblenden</string>
     <string name="navigation_bar_summary">Navigationsleiste immer anzeigen</string>
+    <string name="navigation_bar_arrow_keys_title">Pfeiltasten während des Schreibens</string>
+    <string name="navigation_bar_arrow_keys_summary">Zeige nach links und rechts Pfeiltasten während des Schreibens</string>
 </resources>
