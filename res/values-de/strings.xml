@@ -509,4 +509,8 @@
     <!-- SmartSpace -->
     <string name="smart_space_title">Google SmartSpace</string>
     <string name="smart_space_summary">Bedingte Informationen wie Wetter und Ereignisse auf dem Sperrbildschirm anzeigen</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_title">Navigationsleiste einblenden</string>
+    <string name="navigation_bar_summary">Navigationsleiste immer anzeigen</string>
 </resources>

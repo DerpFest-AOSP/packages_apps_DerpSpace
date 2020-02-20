@@ -525,4 +525,8 @@
     <!-- SmartSpace -->
     <string name="smart_space_title">Google SmartSpace</string>
     <string name="smart_space_summary">Display conditional info such as weather and events on lockscreen</string>
+
+    <!-- Navigation bar -->
+    <string name="navigation_bar_title">On-screen navigation bar</string>
+    <string name="navigation_bar_summary">Enable on-screen navigation keys</string>
 </resources>
