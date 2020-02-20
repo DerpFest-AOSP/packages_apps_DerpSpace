@@ -515,4 +515,6 @@
     <string name="navigation_bar_summary">Navigationsleiste immer anzeigen</string>
     <string name="navigation_bar_arrow_keys_title">Pfeiltasten während des Schreibens</string>
     <string name="navigation_bar_arrow_keys_summary">Zeige nach links und rechts Pfeiltasten während des Schreibens</string>
+    <string name="navigation_bar_layout_title">Layout</string>
+    <string name="navigation_bar_layout_summary">Passen Sie das Layout der Navigationsleiste an</string>
 </resources>
