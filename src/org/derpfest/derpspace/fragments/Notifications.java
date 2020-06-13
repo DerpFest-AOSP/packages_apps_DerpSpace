@@ -47,9 +47,20 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.internal.util.derp.derpUtils;
 
+import com.derp.support.preferences.CustomSeekBarPreference;
+import com.derp.support.preferences.SystemSettingListPreference;
+import com.derp.support.preferences.SystemSettingSwitchPreference;
+
 public class Notifications extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String INCALL_VIB_OPTIONS = "incall_vib_options";
+    private static final String PREF_FLASH_ON_CALL = "flashlight_on_call";
+    private static final String PREF_FLASH_ON_CALL_DND = "flashlight_on_call_ignore_dnd";
+    private static final String PREF_FLASH_ON_CALL_RATE = "flashlight_on_call_rate";
+
+    private SystemSettingListPreference mFlashOnCall;
+    private SystemSettingSwitchPreference mFlashOnCallIgnoreDND;
+    private CustomSeekBarPreference mFlashOnCallRate;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -62,10 +73,42 @@ public class Notifications extends SettingsPreferenceFragment implements OnPrefe
         if (!derpUtils.isVoiceCapable(getActivity())) {
                 prefScreen.removePreference(incallVibCategory);
         }
+
+        mFlashOnCallRate = (CustomSeekBarPreference)
+                findPreference(PREF_FLASH_ON_CALL_RATE);
+        int value = Settings.System.getInt(resolver,
+                Settings.System.FLASHLIGHT_ON_CALL_RATE, 1);
+        mFlashOnCallRate.setValue(value);
+        mFlashOnCallRate.setOnPreferenceChangeListener(this);
+
+        mFlashOnCallIgnoreDND = (SystemSettingSwitchPreference)
+                findPreference(PREF_FLASH_ON_CALL_DND);
+        value = Settings.System.getInt(resolver,
+                Settings.System.FLASHLIGHT_ON_CALL, 0);
+        mFlashOnCallIgnoreDND.setVisible(value > 1);
+        mFlashOnCallRate.setVisible(value != 0);
+
+        mFlashOnCall = (SystemSettingListPreference)
+                findPreference(PREF_FLASH_ON_CALL);
+        mFlashOnCall.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mFlashOnCall) {
+            int value = Integer.parseInt((String) newValue);
+            Settings.System.putInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL, value);
+            mFlashOnCallIgnoreDND.setVisible(value > 1);
+            mFlashOnCallRate.setVisible(value != 0);
+            return true;
+        } else if (preference == mFlashOnCallRate) {
+            int value = (Integer) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.FLASHLIGHT_ON_CALL_RATE, value);
+            return true;
+        }
         return false;
     }
 
