@@ -729,4 +729,8 @@
     <string name="notification_guts_kill_app_button_title">\"App beenden\" für Benachrichtigungen</string>
     <string name="notification_guts_kill_app_button_summary">Zeigt eine Taste zum Beenden der App, wenn deren Benachrichtigung lange gedrückt wird</string>
 
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Erzwinge erweiterte Benachrichtungen</string>
+    <string name="force_expanded_notifications_summary">Nur für Apps verfügbar, die erweiterte Benachrichtigungen unterstützen</string>
+
 </resources>

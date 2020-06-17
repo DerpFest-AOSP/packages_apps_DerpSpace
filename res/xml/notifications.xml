@@ -36,6 +36,12 @@
             android:defaultValue="false" />
 
         <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="force_expanded_notifications"
+            android:title="@string/force_expanded_notifications_title"
+            android:summary="@string/force_expanded_notifications_summary"
+            android:defaultValue="false" />
+
+        <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="statusbar_notif_count"
             android:title="@string/status_bar_notif_count_title"
             android:summary="@string/status_bar_notif_count_summary"
