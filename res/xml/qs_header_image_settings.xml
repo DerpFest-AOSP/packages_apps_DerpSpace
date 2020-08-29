@@ -57,6 +57,15 @@
     </Preference>
 
     <org.derpfest.support.preferences.CustomSeekBarPreference
+        android:key="status_bar_custom_header_height"
+        android:title="@string/status_bar_custom_header_offset_title"
+        android:summary="@string/status_bar_custom_header_offset_summary"
+        android:max="200"
+        settings:min="112"
+        android:defaultValue="142"
+        android:dependency="status_bar_custom_header" />
+
+    <org.derpfest.support.preferences.CustomSeekBarPreference
         android:key="status_bar_custom_header_shadow"
         android:title="@string/status_bar_custom_header_shadow_title"
         android:summary="@string/status_bar_custom_header_shadow_summary"
