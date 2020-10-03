@@ -93,6 +93,13 @@
         android:key="quick_settings_brighness_category"
         android:title="@string/qs_brightness_slider_category">
 
+        <com.derp.support.preferences.SecureSettingMasterSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/qs_show_brightness_title"
+            android:summary="@string/qs_show_brightness_summary"
+            android:fragment="org.derpfest.derpspace.fragments.BrightnessSliderSettings"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

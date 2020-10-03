@@ -275,6 +275,10 @@
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Helligkeitsregler</string>
+    <string name="qs_show_brightness_title">Helligkeitsregler</string>
+    <string name="qs_show_brightness_summary">Sichtbarkeit und Einstellungen des Helligkeitsreglers</string>
+    <string name="qs_brightness_position_bottom_title">Helligkeitsregler unten</string>
+    <string name="qs_brightness_position_bottom_summary">Den Helligkeitsregler unten in den Schnelleinstellungen anzeigen</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">Fußzeilenwarnungen</string>

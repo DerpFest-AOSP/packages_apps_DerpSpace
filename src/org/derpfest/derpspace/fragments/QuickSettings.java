@@ -51,6 +51,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.derp.support.preferences.SecureSettingMasterSwitchPreference;
 import com.derp.support.preferences.SystemSettingEditTextPreference;
 
 import java.util.ArrayList;
@@ -64,10 +65,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
 
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
+    private static final String BRIGHTNESS_SLIDER = "qs_show_brightness";
 
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
     private SystemSettingEditTextPreference mFooterString;
+    private SecureSettingMasterSwitchPreference mBrightnessSlider;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -92,15 +95,22 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
 
+        mBrightnessSlider = (SecureSettingMasterSwitchPreference)
+                findPreference(BRIGHTNESS_SLIDER);
+        mBrightnessSlider.setOnPreferenceChangeListener(this);
+        boolean enabled = Settings.Secure.getInt(resolver,
+                BRIGHTNESS_SLIDER, 1) == 1;
+        mBrightnessSlider.setChecked(enabled);
+
         mFooterString = (SystemSettingEditTextPreference) findPreference(QS_FOOTER_TEXT_STRING);
         mFooterString.setOnPreferenceChangeListener(this);
-        String footerString = Settings.System.getString(getContentResolver(),
+        String footerString = Settings.System.getString(resolver,
                 QS_FOOTER_TEXT_STRING);
         if (footerString != null && !footerString.isEmpty())
             mFooterString.setText(footerString);
         else {
             mFooterString.setText("#StayDerped");
-            Settings.System.putString(getActivity().getContentResolver(),
+            Settings.System.putString(resolver,
                     Settings.System.QS_FOOTER_TEXT_STRING, "#StayDerped");
         }
     }
@@ -124,14 +134,19 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             return true;
         } else if (preference == mFooterString) {
             String value = (String) newValue;
-            if (value != "" && !value.isEmpty())
-                Settings.System.putString(getActivity().getContentResolver(),
+            if (value != null && !value.isEmpty())
+                Settings.System.putString(resolver,
                         Settings.System.QS_FOOTER_TEXT_STRING, value);
             else {
                 mFooterString.setText("#StayDerped");
-                Settings.System.putString(getActivity().getContentResolver(),
+                Settings.System.putString(resolver,
                         Settings.System.QS_FOOTER_TEXT_STRING, "#StayDerped");
             }
+            return true;
+        } else if (preference == mBrightnessSlider) {
+            Boolean value = (Boolean) newValue;
+            Settings.Secure.putInt(resolver,
+                    BRIGHTNESS_SLIDER, value ? 1 : 0);
             return true;
         }
         return false;
