@@ -46,6 +46,7 @@ import android.view.View;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.derp.derpUtils;
 import com.android.internal.util.derp.udfps.UdfpsUtils;
 import com.android.settings.Utils;
 
@@ -55,10 +56,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
-
     private static final String UDFPS_HAPTIC_FEEDBACK = "udfps_haptic_feedback";
-
     private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
+    private static final String SMART_SPACE_TOGGLE = "smart_space";
 
     static final int MODE_DISABLED = 0;
     static final int MODE_NIGHT = 1;
@@ -71,6 +71,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     private SystemSettingSwitchPreference mFingerprintErrorVib;
     private SystemSettingSwitchPreference mUdfpsHapticFeedback;
     Preference mAODPref;
+    private SystemSettingSwitchPreference mSmartSpacerToggle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -115,6 +116,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);
         updateAlwaysOnSummary();
+
+        mSmartSpacerToggle = findPreference(SMART_SPACE_TOGGLE);
+        mSmartSpacerToggle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -144,6 +148,12 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.UDFPS_HAPTIC_FEEDBACK, value ? 1 : 0);
+            return true;
+        } else if (preference == mSmartSpacerToggle) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SMART_SPACE, value ? 1 : 0);
+            derpUtils.showSystemUiRestartDialog(getActivity());
             return true;
         }
         return false;

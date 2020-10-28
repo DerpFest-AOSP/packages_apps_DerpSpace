@@ -502,4 +502,8 @@
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">Anzahl der Benachrichtigungen</string>
     <string name="status_bar_notif_count_summary">Zeigen Sie die Anzahl der ausstehenden Benachrichtigungen an</string>
+
+    <!-- SmartSpace -->
+    <string name="smart_space_title">Google SmartSpace</string>
+    <string name="smart_space_summary">Bedingte Informationen wie Wetter und Ereignisse auf dem Sperrbildschirm anzeigen</string>
 </resources>

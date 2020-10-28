@@ -518,4 +518,8 @@
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">Notification count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- SmartSpace -->
+    <string name="smart_space_title">Google SmartSpace</string>
+    <string name="smart_space_summary">Display conditional info such as weather and events on lockscreen</string>
 </resources>

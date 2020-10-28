@@ -51,6 +51,12 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="true" />
 
+    <com.derp.support.preferences.SystemSettingSwitchPreference
+        android:key="smart_space"
+        android:title="@string/smart_space_title"
+        android:summary="@string/smart_space_summary"
+        android:defaultValue="true" />
+
     <Preference
         android:key="always_on_display_schedule"
         android:title="@string/always_on_display_schedule_title"
