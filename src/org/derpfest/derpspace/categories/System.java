@@ -30,6 +30,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import org.derpfest.derpspace.fragments.PulseSettings;
+
 public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
@@ -50,6 +52,11 @@ public class System extends SettingsPreferenceFragment implements
                         com.android.internal.R.bool.config_intrusiveBatteryLed)) {
             getPreferenceScreen().removePreference(mBattery);
         }
+    }
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+        PulseSettings.reset(mContext);
     }
 
     @Override

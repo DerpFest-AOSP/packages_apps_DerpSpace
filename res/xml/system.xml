@@ -31,6 +31,12 @@
         android:icon="@drawable/ic_customisation"
         android:title="@string/customisation_title" />
 
+    <com.derp.support.preferences.CardviewPreference
+        android:key="pulse_settings"
+        android:fragment="org.derpfest.derpspace.fragments.PulseSettings"
+        android:icon="@drawable/ic_pulse"
+        android:title="@string/pulse_settings" />
+
      <com.derp.support.preferences.CardviewPreference
         android:key="navbar_settings"
         android:fragment="org.derpfest.derpspace.fragments.NavbarSettings"
