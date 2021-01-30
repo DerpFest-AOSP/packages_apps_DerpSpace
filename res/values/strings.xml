@@ -552,4 +552,10 @@
     <!-- QS Header offset -->
     <string name="status_bar_custom_header_offset_title">Header image offset</string>
     <string name="status_bar_custom_header_offset_summary">Adjust the image header size</string>
+    
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
 </resources>

@@ -526,4 +526,10 @@
     <!-- QS Header offset -->
     <string name="status_bar_custom_header_offset_title">Bildversatz</string>
     <string name="status_bar_custom_header_offset_summary">Die Größe des Bilds anpassen</string>
+
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Stil der Abschaltanimation</string>
+    <string name="screen_off_animation_default">Standard</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skalieren</string>
 </resources>
