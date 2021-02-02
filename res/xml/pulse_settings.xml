@@ -26,6 +26,11 @@
         android:summary="@string/show_navbar_pulse_summary"/>
 
     <SwitchPreference
+        android:key="qs_pulse_enabled"
+        android:title="@string/show_qs_pulse_title"
+        android:summary="@string/show_qs_pulse_summary"/>
+
+    <SwitchPreference
         android:key="lockscreen_pulse_enabled"
         android:title="@string/show_lockscreen_pulse_title"
         android:summary="@string/show_lockscreen_pulse_summary"/>
