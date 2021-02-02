@@ -538,5 +538,11 @@
     <string name="pulse_empty_block_size">Blockabstände</string>
     <string name="pulse_solid_units_rounded_title">Durchgezogene Linien gerundet</string>
     <string name="pulse_solid_units_rounded_summary">Runden Sie die durchgezogenen Linien</string>
+    <string name="pulse_custom_gravity_title">Gravitation</string>
+    <string name="pulse_custom_gravity_bottom">Unten</string>
+    <string name="pulse_custom_gravity_top">Oben</string>
+    <string name="pulse_custom_gravity_center">Zentriert</string>
+    <string name="visualizer_center_mirrored_title">Mittig gespiegelt</string>
+    <string name="visualizer_center_mirrored_summary">Stellen Sie den Visualizer in den Modus Mittig gespiegelt ein</string>
 
 </resources>
