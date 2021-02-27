@@ -56,6 +56,11 @@
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="true" />
+
+    <Preference
+        android:key="always_on_display_schedule"
+        android:title="@string/always_on_display_schedule_title"
+        android:fragment="org.derpfest.derpspace.fragments.AODSchedule" />
     </PreferenceCategory>
 
     <PreferenceCategory

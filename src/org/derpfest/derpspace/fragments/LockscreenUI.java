@@ -59,11 +59,14 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     private static final String UDFPS_HAPTIC_FEEDBACK = "udfps_haptic_feedback";
     private static final String SCREEN_OFF_FOD = "screen_off_fod";
 
+    private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
+
     private FingerprintManager mFingerprintManager;
     private SystemSettingSwitchPreference mFingerprintSuccessVib;
     private SystemSettingSwitchPreference mFingerprintErrorVib;
     private SystemSettingSwitchPreference mUdfpsHapticFeedback;
     private SystemSettingSwitchPreference mScreenOffFOD;
+    Preference mAODPref;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -110,6 +113,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         } else {
             prefSet.removePreference(fpCategory);
         }
+
+        mAODPref = findPreference(AOD_SCHEDULE_KEY);
+        updateAlwaysOnSummary();
     }
 
     @Override
@@ -120,6 +126,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     @Override
     public void onResume() {
         super.onResume();
+        updateAlwaysOnSummary();
     }
 
     @Override
@@ -146,5 +153,22 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             return true;
         }
         return false;
+    }
+
+    private void updateAlwaysOnSummary() {
+        if (mAODPref == null) return;
+        int mode = Settings.Secure.getIntForUser(getActivity().getContentResolver(),
+                Settings.Secure.DOZE_ALWAYS_ON_AUTO_MODE, 0, UserHandle.USER_CURRENT);
+        switch (mode) {
+            case 0:
+                mAODPref.setSummary(R.string.disabled);
+                break;
+            case 1:
+                mAODPref.setSummary(R.string.night_display_auto_mode_twilight);
+                break;
+            case 2:
+                mAODPref.setSummary(R.string.night_display_auto_mode_custom);
+                break;
+        }
     }
 }
