@@ -20,7 +20,6 @@ import android.content.Context;
 
 import com.android.settings.core.BasePreferenceController;
 
-
 public class TopLevelDerpSpaceEntryPreferenceController extends BasePreferenceController {
 
     public TopLevelDerpSpaceEntryPreferenceController(Context context, String preferenceKey) {

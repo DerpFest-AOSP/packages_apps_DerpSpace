@@ -16,9 +16,10 @@
 
 package org.derpfest.derpspace.categories;
 
-import android.content.Context;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.os.Bundle;
+
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;

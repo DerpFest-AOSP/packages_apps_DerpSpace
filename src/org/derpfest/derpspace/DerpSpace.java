@@ -44,11 +44,12 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.Preference;
 import androidx.viewpager.widget.ViewPager;
 
 import com.android.internal.logging.nano.MetricsProto;
+
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -57,10 +58,10 @@ import org.derpfest.derpspace.categories.NotificationsPanel;
 import org.derpfest.derpspace.categories.StatusBar;
 import org.derpfest.derpspace.categories.System;
 
-import org.derpfest.derpspace.navigation.BubbleNavigationConstraintView;
 import org.derpfest.derpspace.navigation.BubbleNavigationChangeListener;
+import org.derpfest.derpspace.navigation.BubbleNavigationConstraintView;
 
-public class DerpSpace extends SettingsPreferenceFragment implements   
+public class DerpSpace extends SettingsPreferenceFragment implements
        Preference.OnPreferenceChangeListener {
 
     private static final int MENU_HELP  = 0;
