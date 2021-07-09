@@ -762,4 +762,8 @@
     <string name="volte_vowifi_override_title">Vorrang für VoWiFi</string>
     <string name="volte_vowifi_override_summary">VoLTE-Symbol ausblenden, wenn VoWiFi verfügbar ist</string>
 
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Datenverbrauch</string>
+    <string name="qs_footer_datausage_summary">Zusammenfassung der Datennutzung in der Fußzeile der Schnelleinstellungen anzeigen</string>
+
 </resources>
