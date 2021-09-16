@@ -361,6 +361,8 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Stil der Akkuanzeige</string>
     <string name="status_bar_battery_style_icon_portrait">Batterie (Standard)</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Querformat (Rechts)</string>
+    <string name="status_bar_battery_style_icon_landscape">Querformat (Links)</string>
     <string name="status_bar_battery_style_circle">Kreis</string>
     <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
     <string name="status_bar_battery_style_filled_circle">Gefüllter Kreis</string>
@@ -368,12 +370,14 @@
     <string name="status_bar_battery_style_big_dotted_circle">Großer gepunkteter Kreis</string>
     <string name="status_bar_battery_style_text">Nur Prozentsatz</string>
     <string name="status_bar_battery_style_hidden">Nicht anzeigen</string>
+    <string name="left_battery_text_title">Linker Batterietext</string>
+    <string name="left_battery_text_summary">Setzen Sie den Batterietext links neben das Batteriesymbol</string>
 
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Akku-Prozentsatz</string>
     <string name="status_bar_battery_percentage_default">Nicht anzeigen</string>
     <string name="status_bar_battery_percentage_text_inside">Im Symbol</string>
-    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string> 
+    <string name="status_bar_battery_percentage_text_next">Außerhalb</string> 
 
     <!-- Call strength icons in QS -->
     <string name="show_qs_call_strength_icon_title">Symbole für Anrufstärke anzeigen</string>
