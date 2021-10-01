@@ -744,4 +744,8 @@
     <string name="headset_connect_player_title">Musik-App Bei Kopfhöreranschluß starten</string>
     <string name="headset_connect_player_summary">Beim Verbinden eines Kopfhörers die Standard-Musik-App starten</string>
 
+    <!-- Colorful battery icon -->
+    <string name="battery_level_colors_title">Buntes Batteriesymbol aktivieren</string>
+    <string name="battery_level_colors_summary">Jeder Batteriestandsabfall ist farbcodiert</string>
+
 </resources>
