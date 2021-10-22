@@ -23,12 +23,6 @@
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
 
-        <com.derp.support.preferences.SecureSettingSwitchPreference
-            android:key="quick_settings_vibrate"
-            android:title="@string/quick_settings_vibrate_title"
-            android:summary="@string/quick_settings_vibrate_summary"
-            android:defaultValue="false"/>
-
         <!-- QS footer text toggle -->
         <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_text_show"
@@ -149,5 +143,24 @@
             android:entryValues="@array/qs_tile_animation_interpolator_values"
             android:summary="%s"
             android:defaultValue="0" />
+
+    <PreferenceCategory
+        android:key="quick_settings_vibration"
+        android:title="@string/qs_tile_vibration_title"/>
+
+        <com.derp.support.preferences.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+
+        <com.derp.support.preferences.SecureSettingSeekBarPreference
+            android:key="quick_settings_vibrate_duration"
+            android:title="@string/quick_settings_vibrate_duration_title"
+            android:summary="@string/quick_settings_vibrate_duration_summary"
+            android:max="200"
+            android:min="10"
+            android:defaultValue="45"
+            android:dependency="quick_settings_vibrate" />
 
 </PreferenceScreen>

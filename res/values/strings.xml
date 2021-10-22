@@ -92,8 +92,11 @@
     <string name="artwork_media_fade_level_summary">Fading the media artwork image</string>
 
     <!-- QuickSettings haptic feedback -->
+    <string name="qs_tile_vibration_title">Vibration</string>
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
+    <string name="quick_settings_vibrate_duration_title">Vibration duration</string>
+    <string name="quick_settings_vibrate_duration_summary">How many milliseconds to vibrate</string>
 
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animations</string>
