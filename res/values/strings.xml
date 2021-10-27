@@ -249,7 +249,7 @@
     <string name="quick_pulldown_left">Pulldown statusbar from left side</string>
 
     <!-- Status bar clock and date options -->
-    <string name="status_bar_clock_title">Clock settings</string>
+    <string name="status_bar_clock_title">Clock &amp; Date Settings</string>
     <string name="status_bar_clock">Clock &amp; Date</string>
     <string name="clock_enabled">Enabled</string>
     <string name="clock_disabled">Disabled</string>
