@@ -19,7 +19,7 @@
         android:key="battery_style_category"
         android:title="@string/battery_style_category_title" >
 
-        <org.aospextended.support.preference.SystemSettingListPreference
+        <com.derp.support.preferences.SystemSettingListPreference
             android:key="status_bar_battery_style"
             android:title="@string/status_bar_battery_style_title"
             android:summary="%s"
@@ -28,7 +28,7 @@
             android:entryValues="@array/status_bar_battery_style_values"
             android:defaultValue="0" />
 
-        <org.aospextended.support.preference.SystemSettingListPreference
+        <com.derp.support.preferences.SystemSettingListPreference
             android:key="status_bar_show_battery_percent"
             android:title="@string/battery_percent_title"
             android:dialogTitle="@string/battery_percent_title"
@@ -48,34 +48,34 @@
         android:entries="@array/battery_bar_no_navbar_entries"
         android:entryValues="@array/battery_bar_no_navbar_values" />
 
-    <org.aospextended.support.colorpicker.ColorPickerPreference
+    <com.derp.support.colorpicker.ColorPickerPreference
         android:key="statusbar_battery_bar_color"
         android:title="@string/battery_bar_color"
         android:defaultValue="0xffffff" />
 
-    <org.aospextended.support.colorpicker.ColorPickerPreference
+    <com.derp.support.colorpicker.ColorPickerPreference
         android:key="statusbar_battery_bar_battery_low_color"
         android:title="@string/battery_bar_battery_low_color"
         android:defaultValue="0xffffff" />
 
-    <org.aospextended.support.preference.SystemSettingSwitchPreference
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="statusbar_battery_bar_enable_charging_color"
         android:title="@string/battery_bar_use_charging_color"
         android:defaultValue="true" />
 
-    <org.aospextended.support.colorpicker.ColorPickerPreference
+    <com.derp.support.colorpicker.ColorPickerPreference
         android:key="statusbar_battery_bar_charging_color"
         android:title="@string/battery_bar_charging_color"
         android:defaultValue="0xffffff"
         android:dependency="statusbar_battery_bar_enable_charging_color" />
 
-    <org.aospextended.support.preference.SystemSettingSwitchPreference
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="statusbar_battery_bar_blend_color"
         android:title="@string/battery_bar_blend_color_title"
         android:summary="@string/battery_bar_blend_color_summary"
         android:defaultValue="false" />
 
-    <org.aospextended.support.preference.SystemSettingSwitchPreference
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="statusbar_battery_bar_blend_color_reverse"
         android:title="@string/battery_bar_blend_color_reverse_title"
         android:summaryOn="@string/battery_bar_blend_color_reverse_summary_on"
@@ -89,7 +89,7 @@
         android:entries="@array/battery_bar_style_entries"
         android:entryValues="@array/battery_bar_style_values" />
 
-    <org.aospextended.support.preference.CustomSeekBarPreference
+    <com.derp.support.preferences.CustomSeekBarPreference
         android:key="statusbar_battery_bar_thickness"
         android:title="@string/battery_bar_thickness_title"
         android:max="4"

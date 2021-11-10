@@ -21,19 +21,19 @@
         android:key="lockscreen_ui_finterprint_category"
         android:title="@string/fingerprint_category">
 
-    <org.aospextended.support.preference.SystemSettingSwitchPreference
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="fingerprint_success_vib"
         android:title="@string/fprint_sucess_vib_title"
         android:summary="@string/fprint_sucess_vib_summary"
         android:persistent="true" />
 
-    <org.aospextended.support.preference.SystemSettingSwitchPreference
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="fingerprint_error_vib"
         android:title="@string/fprint_error_vib_title"
         android:summary="@string/fprint_error_vib_summary"
         android:persistent="true" />
 
-    <org.aospextended.support.preference.SystemSettingSwitchPreference
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="udfps_haptic_feedback"
         android:title="@string/udfps_haptic_feedback_title"
         android:summary="@string/udfps_haptic_feedback_summary"
@@ -45,7 +45,7 @@
         android:key="lockscreen_ui_general_category"
         android:title="@string/general_category">
 
-    <org.aospextended.support.preference.SystemSettingSwitchPreference
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
@@ -53,33 +53,15 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="lockscreen_ui_gestures_category"
-        android:title="@string/gestures_category">
-
-    <org.aospextended.support.preference.SystemSettingSwitchPreference
-        android:key="double_tap_sleep_lockscreen"
-        android:title="@string/double_tap_to_sleep_lockscreen_title"
-        android:summary="@string/double_tap_to_sleep_lockscreen_summary"
-        android:defaultValue="true" />
-
-    <org.aospextended.support.preference.SecureSettingSwitchPreference
-        android:key="doze_pulse_on_double_tap"
-        android:title="@string/double_tap_on_doze_to_wake_title"
-        android:summary="@string/double_tap_on_doze_to_wake_summary"
-        android:defaultValue="true" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_options_title" >
 
-        <org.aospextended.support.preference.SystemSettingSwitchPreference
+        <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="show_lockscreen_media_art"
             android:title="@string/show_lockscreen_media_art_title"
             android:defaultValue="true" />
 
-        <org.aospextended.support.preference.SystemSettingSeekBarPreference
+        <com.derp.support.preferences.SystemSettingSeekBarPreference
             android:key="lockscreen_media_blur"
             android:title="@string/lockscreen_media_blur_title"
             android:dependency="show_lockscreen_media_art"
@@ -97,7 +79,7 @@
 
         <Preference
             android:key="lockscreen_visualizer"
-            android:fragment="org.aospextended.extensions.fragments.Visualizer"
+            android:fragment="org.derpfest.derpspace.fragments.Visualizer"
             android:title="@string/lockscreen_visualizer_enable"
             android:summary="@string/lockscreen_visualizer_enable_summary" />
 

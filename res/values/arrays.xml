@@ -65,54 +65,6 @@
         <item>7</item>
     </string-array>
 
-    <!-- Torch Power button gestures -->
-    <string-array name="torch_power_button_gesture_entries">
-        <item>@string/torch_power_button_gesture_none</item>
-        <item>@string/torch_power_button_gesture_dt</item>
-        <item>@string/torch_power_button_gesture_lp</item>
-    </string-array>
-     <string-array name="torch_power_button_gesture_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <!-- Heads up timeout -->
-    <string-array name="heads_up_time_out_entries" translatable="false">
-        <item>@string/heads_up_time_out_2sec</item>
-        <item>@string/heads_up_time_out_4sec</item>
-        <item>@string/heads_up_time_out_5sec</item>
-        <item>@string/heads_up_time_out_6sec</item>
-        <item>@string/heads_up_time_out_8sec</item>
-        <item>@string/heads_up_time_out_10sec</item>
-    </string-array>
-    <string-array name="heads_up_time_out_values" translatable="false">
-        <item>2000</item>
-        <item>4000</item>
-        <item>5000</item>
-        <item>6000</item>
-        <item>8000</item>
-        <item>10000</item>
-    </string-array>
-
-	<!-- Heads up snooze -->
-    <string-array name="heads_up_snooze_entries">
-        <item>@string/disabled</item>
-        <item>@string/heads_up_snooze_1min</item>
-        <item>@string/heads_up_snooze_5min</item>
-        <item>@string/heads_up_snooze_10min</item>
-        <item>@string/heads_up_snooze_15min</item>
-        <item>@string/heads_up_snooze_20min</item>
-    </string-array>
-    <string-array name="heads_up_snooze_values" translatable="false">
-        <item>0</item>
-        <item>60000</item>
-        <item>300000</item>
-        <item>600000</item>
-        <item>900000</item>
-        <item>1200000</item>
-    </string-array>
-
     <!-- Quick QS pulldown -->
     <string-array name="quick_pulldown_entries">
        <item>@string/quick_pulldown_none</item>
@@ -256,39 +208,6 @@
         <item>1</item>
         <item>2</item>
         <item>0</item>
-    </string-array>
-
-    <!-- HW Keys customization -->
-    <string-array name="action_dialog_entries">
-        <item>@string/action_entry_default_action</item>
-        <item>@string/action_entry_custom_action</item>
-        <item>@string/action_entry_select_app</item>
-    </string-array>
-     <string-array name="action_dialog_values" translatable="false">
-        <item>@string/action_value_default_action</item>
-        <item>@string/action_value_custom_action</item>
-        <item>@string/action_value_select_app</item>
-    </string-array>
-     <string-array name="action_dialog_no_default_entries">
-        <item>@string/action_entry_custom_action</item>
-        <item>@string/action_entry_select_app</item>
-    </string-array>
-     <string-array name="action_dialog_no_default_values" translatable="false">
-        <item>@string/action_value_custom_action</item>
-        <item>@string/action_value_select_app</item>
-    </string-array>
-
-    <!--- Volume key cursor control -->
-    <string-array name="volume_key_cursor_control_entries">
-        <item>@string/volume_key_cursor_control_off</item>
-        <item>@string/volume_key_cursor_control_on</item>
-        <item>@string/volume_key_cursor_control_on_reverse</item>
-    </string-array>
-
-    <string-array name="volume_key_cursor_control_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
     </string-array>
 
     <!-- Smart pulldown -->

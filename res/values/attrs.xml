@@ -16,24 +16,24 @@
 <resources>
 
 <declare-styleable name="BubbleToggleView">
-        <attr name="extensions_icon" format="reference" />
-        <attr name="extensions_iconWidth" format="dimension" />
-        <attr name="extensions_iconHeight" format="dimension" />
-        <attr name="extensions_shape" format="reference" />
-        <attr name="extensions_shapeColor" format="color" />
-        <attr name="extensions_showShapeAlways" format="boolean" />
-        <attr name="extensions_title" format="string" />
-        <attr name="extensions_titleSize" format="dimension" />
-        <attr name="extensions_colorActive" format="color" />
-        <attr name="extensions_titleColorActive" format="color" />
-        <attr name="extensions_colorInactive" format="color" />
-        <attr name="extensions_active" format="boolean" />
-        <attr name="extensions_duration" format="integer" />
-        <attr name="extensions_padding" format="dimension" />
-        <attr name="extensions_titlePadding" format="dimension" />
+        <attr name="derpspace_icon" format="reference" />
+        <attr name="derpspace_iconWidth" format="dimension" />
+        <attr name="derpspace_iconHeight" format="dimension" />
+        <attr name="derpspace_shape" format="reference" />
+        <attr name="derpspace_shapeColor" format="color" />
+        <attr name="derpspace_showShapeAlways" format="boolean" />
+        <attr name="derpspace_title" format="string" />
+        <attr name="derpspace_titleSize" format="dimension" />
+        <attr name="derpspace_colorActive" format="color" />
+        <attr name="derpspace_titleColorActive" format="color" />
+        <attr name="derpspace_colorInactive" format="color" />
+        <attr name="derpspace_active" format="boolean" />
+        <attr name="derpspace_duration" format="integer" />
+        <attr name="derpspace_padding" format="dimension" />
+        <attr name="derpspace_titlePadding" format="dimension" />
     </declare-styleable>
     <declare-styleable name="BubbleNavigationConstraintView">
-        <attr name="extensions_mode">
+        <attr name="derpspace_mode">
             <enum name="spread" value="0" />
             <enum name="inside" value="1" />
             <enum name="packed" value="2" />

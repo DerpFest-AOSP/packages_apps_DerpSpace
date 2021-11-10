@@ -19,7 +19,7 @@
 	android:title="@string/carrier_label_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <org.aospextended.support.preference.SystemSettingListPreference
+    <com.derp.support.preferences.SystemSettingListPreference
         android:key="status_bar_show_carrier"
         android:title="@string/show_carrier_title"
         android:defaultValue="1" />

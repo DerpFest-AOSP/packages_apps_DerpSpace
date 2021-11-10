@@ -19,15 +19,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-     <org.aospextended.support.preference.CardviewPreference
+     <com.derp.support.preferences.CardviewPreference
          android:key="lockscreen_shortcuts"
-         android:fragment="org.aospextended.extensions.fragments.LockscreenShortcuts"
+         android:fragment="org.derpfest.derpspace.fragments.LockscreenShortcuts"
          android:icon="@drawable/ic_lockscreen_shortcuts"
          android:title="@string/lockscreen_shortcuts" />
 
-     <org.aospextended.support.preference.CardviewPreference
+     <com.derp.support.preferences.CardviewPreference
          android:key="lockscreen_ui"
-         android:fragment="org.aospextended.extensions.fragments.LockscreenUI"
+         android:fragment="org.derpfest.derpspace.fragments.LockscreenUI"
          android:icon="@drawable/ic_lockscreen_ui"
          android:title="@string/lockscreen_ui_title" />
 

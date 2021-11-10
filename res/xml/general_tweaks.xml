@@ -20,29 +20,17 @@
         android:key="general_tweaks_general_category"
         android:title="@string/general_category">
 
-        <org.aospextended.support.preference.SystemSettingSwitchPreference
+        <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="toast_icon"
             android:title="@string/toast_icon_title"
             android:summary="@string/toast_icon_summary"
             android:defaultValue="false" />
 
-        <org.aospextended.support.preference.SystemSettingSwitchPreference
+        <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="charging_animation"
             android:title="@string/charging_animation_title"
             android:summary="@string/charging_animation_summary"
             android:defaultValue="true" />
-
-    </PreferenceCategory>
-
-        <PreferenceCategory
-            android:key="gestures_category"
-            android:title="@string/gestures_category" >
-
-        <org.aospextended.support.preference.SystemSettingSwitchPreference
-            android:key="three_finger_gesture"
-            android:title="@string/three_finger_gesture"
-            android:summary="@string/three_finger_gesture_summary"
-            android:defaultValue="false" />
 
     </PreferenceCategory>
 
