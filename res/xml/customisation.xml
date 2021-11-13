@@ -35,10 +35,10 @@
     <com.derp.support.preferences.SecureSettingSeekBarPreference
         android:key="monet_engine_white_luminance_user"
         android:title="@string/monet_engine_white_luminance_user_title"
-        android:defaultValue="425"
+        android:defaultValue="450"
         android:max="1000"
-        settings:min="200"
-        settings:interval="100"/>
+        settings:min="50"
+        settings:interval="50"/>
 
     <com.derp.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_accurate_shades"
@@ -49,7 +49,7 @@
         android:key="monet_engine_chroma_factor"
         android:title="@string/monet_engine_chroma_factor_title"
         android:defaultValue="100"
-        android:max="400"
+        android:max="500"
         settings:min="50"
         settings:interval="50"/>
 
