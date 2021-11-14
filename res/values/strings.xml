@@ -399,4 +399,8 @@
     <!-- Location privacy indicator -->
     <string name="location_privacy_indicator_title">Location privacy indicator</string>
     <string name="location_privacy_indicator_summary">Show privacy indicator for location\nRequires a SystemUI restart</string>
+
+    <!-- Screen off FOD -->
+    <string name="screen_off_fod_title">Screen off FOD</string>
+    <string name="screen_off_fod_summary">Keep FOD enabled when the screen is off</string>
 </resources>
