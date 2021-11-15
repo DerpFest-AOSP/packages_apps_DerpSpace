@@ -32,6 +32,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
+import android.provider.DeviceConfig;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
@@ -45,13 +46,16 @@ import android.view.View;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.derp.derpUtils;
 import com.android.settings.Utils;
 
 public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
+    private static final String LOCATION_INDICATOR_PREF_KEY = "enable_location_privacy_indicator";
 
     private SwitchPreference mShowDerpLogo;
+    private SwitchPreference mLocationIndicator;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,9 +67,14 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
         final PreferenceScreen prefSet = getPreferenceScreen();
 
 	    mShowDerpLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
-        mShowDerpLogo.setChecked((Settings.System.getInt(getContentResolver(),
+        mShowDerpLogo.setChecked((Settings.System.getInt(resolver,
              Settings.System.STATUS_BAR_LOGO, 0) == 1));
         mShowDerpLogo.setOnPreferenceChangeListener(this);
+
+        mLocationIndicator = (SwitchPreference) findPreference(LOCATION_INDICATOR_PREF_KEY);
+        mLocationIndicator.setChecked((Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.ENABLE_LOCATION_PRIVACY_INDICATOR,
+                shouldShowLocationIndicator() ? 1 : 0, UserHandle.USER_CURRENT) == 1));
     }
 
     @Override
@@ -80,12 +89,26 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if  (preference == mShowDerpLogo) {
+        final ContentResolver resolver = getActivity().getContentResolver();
+        if (preference == mShowDerpLogo) {
             boolean value = (Boolean) objValue;
-            Settings.System.putInt(getActivity().getContentResolver(),
+            Settings.System.putInt(resolver,
                     Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
+            return true;
+        } else if (preference == mLocationIndicator) {
+            boolean value = (Boolean) objValue;
+            Settings.Secure.putIntForUser(resolver,
+                    Settings.Secure.ENABLE_LOCATION_PRIVACY_INDICATOR, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            derpUtils.showSystemUiRestartDialog(getActivity());
             return true;
         }
         return false;
     }
+
+    private static boolean shouldShowLocationIndicator() {
+        return DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_PRIVACY,
+            "location_indicators_enabled", false);
+    }
+
 }

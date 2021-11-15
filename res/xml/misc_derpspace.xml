@@ -87,6 +87,12 @@
              android:summary="@string/show_qs_call_strength_icon_summary"
              android:defaultValue="true" />
 
+         <com.derp.support.preferences.SecureSettingSwitchPreference
+             android:key="enable_location_privacy_indicator"
+             android:title="@string/location_privacy_indicator_title"
+             android:summary="@string/location_privacy_indicator_summary"
+             android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
