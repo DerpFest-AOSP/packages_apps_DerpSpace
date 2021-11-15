@@ -16,41 +16,42 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-     <ListPreference
-        android:key="network_traffic_view_location"
-        android:title="@string/network_traffic_location"
-        android:summary="%s"
-        android:entries="@array/network_traffic_location_entries"
-        android:entryValues="@array/network_traffic_location_values"
-        android:persistent="false" />
+     <com.derp.support.preferences.SystemSettingSwitchPreference
+         android:key="network_traffic_enabled"
+         android:title="@string/statusbar_show_network_traffic_title"
+         android:defaultValue="0" />
 
-     <ListPreference
-        android:key="network_traffic_type"
-        android:title="@string/network_traffic_type"
-        android:entries="@array/show_network_traffic_type_entries"
-        android:entryValues="@array/show_network_traffic_type_values"
-        android:defaultValue="0"
-        android:persistent="false" />
+     <com.derp.support.preferences.SystemSettingSeekBarPreference
+         android:key="network_traffic_auto_hide_threshold_tx"
+         android:title="@string/statusbar_network_traffic_threshold_tx_title"
+         android:dependency="network_traffic_enabled"
+         android:defaultValue="0"
+         android:max="1024"
+         settings:min="0"
+         settings:interval="128" />
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="network_traffic_arrow"
-        android:title="@string/network_traffic_arrow"
-        android:summary="@string/network_traffic_arrow_summary"
-        android:defaultValue="false" />
+     <com.derp.support.preferences.SystemSettingSeekBarPreference
+          android:key="network_traffic_auto_hide_threshold_rx"
+          android:title="@string/statusbar_network_traffic_threshold_rx_title"
+          android:dependency="network_traffic_enabled"
+          android:defaultValue="0"
+          android:max="1024"
+          settings:min="0"
+          settings:interval="128" />
 
-    <com.derp.support.preferences.CustomSeekBarPreference
-        android:key="network_traffic_autohide_threshold"
-        android:title="@string/network_traffic_autohide_threshold_title"
-        android:max="10"
-        settings:min="0"
-        settings:defaultValue="1"
-        settings:units="" />
+     <com.derp.support.preferences.SystemSettingSeekBarPreference
+          android:key="network_traffic_unit_text_size"
+          android:title="@string/statusbar_network_traffic_unit_text_size_title"
+          android:dependency="network_traffic_enabled"
+          android:defaultValue="21"
+          android:max="25"
+          settings:min="15" />
 
-    <com.derp.support.preferences.CustomSeekBarPreference
-        android:key="network_traffic_font_size"
-        android:title="@string/nettraf_font_size"
-        android:max="46"
-        android:min="26"
-        settings:defaultValue="36"
-        settings:units="dp" />
+     <com.derp.support.preferences.SystemSettingSeekBarPreference
+         android:key="network_traffic_rate_text_scale_factor"
+         android:title="@string/statusbar_network_traffic_rate_text_scale_factor_title"
+         android:dependency="network_traffic_enabled"
+         android:defaultValue="15"
+         android:max="20"
+         settings:min="10" />
 </PreferenceScreen>
