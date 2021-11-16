@@ -37,7 +37,7 @@
         android:title="@string/monet_engine_white_luminance_user_title"
         android:defaultValue="450"
         android:max="1000"
-        settings:min="50"
+        settings:min="0"
         settings:interval="50"/>
 
     <com.derp.support.preferences.SecureSettingSwitchPreference
