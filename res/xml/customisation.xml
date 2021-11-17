@@ -32,13 +32,19 @@
         android:dependency="monet_engine_custom_color"
         android:defaultValue="0xffffff" />
 
+    <com.derp.support.preferences.SecureSettingSwitchPreference
+        android:key="monet_engine_linear_lightness"
+        android:title="@string/monet_engine_linear_lightness_title"
+        android:defaultValue="false" />
+
     <com.derp.support.preferences.SecureSettingSeekBarPreference
         android:key="monet_engine_white_luminance_user"
         android:title="@string/monet_engine_white_luminance_user_title"
+        android:dependency="monet_engine_linear_lightness"
         android:defaultValue="450"
         android:max="1000"
         settings:min="1"
-        settings:interval="50"/>
+        settings:interval="25"/>
 
     <com.derp.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_accurate_shades"
@@ -51,12 +57,7 @@
         android:defaultValue="100"
         android:max="500"
         settings:min="50"
-        settings:interval="50"/>
-
-    <com.derp.support.preferences.SecureSettingSwitchPreference
-        android:key="monet_engine_linear_lightness"
-        android:title="@string/monet_engine_linear_lightness_title"
-        android:defaultValue="false" />
+        settings:interval="25"/>
 
     </PreferenceCategory>
 </PreferenceScreen>
