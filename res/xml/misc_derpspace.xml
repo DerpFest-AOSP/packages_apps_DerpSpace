@@ -87,6 +87,13 @@
              android:summary="@string/show_qs_call_strength_icon_summary"
              android:defaultValue="true" />
 
+        <!-- Combined signal icons -->
+         <com.derp.support.preferences.SecureSettingSwitchPreference
+             android:key="show_combined_status_bar_signal_icons"
+             android:title="@string/combined_status_bar_signal_icons"
+             android:summary="@string/combined_status_bar_signal_icons_summary"
+             android:defaultValue="true" />
+
          <com.derp.support.preferences.SecureSettingSwitchPreference
              android:key="enable_location_privacy_indicator"
              android:title="@string/location_privacy_indicator_title"

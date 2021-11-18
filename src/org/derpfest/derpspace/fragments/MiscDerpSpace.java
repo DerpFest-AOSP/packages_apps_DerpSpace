@@ -49,13 +49,19 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.derp.derpUtils;
 import com.android.settings.Utils;
 
+import com.derp.support.preferences.SecureSettingSwitchPreference;
+
 public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
     private static final String LOCATION_INDICATOR_PREF_KEY = "enable_location_privacy_indicator";
+    private static final String COMBINED_STATUSBAR_ICONS = "show_combined_status_bar_signal_icons";
+    private static final String CONFIG_RESOURCE_NAME = "flag_combined_status_bar_signal_icons";
+    private static final String SYSTEMUI_PACKAGE = "com.android.systemui";
 
     private SwitchPreference mShowDerpLogo;
     private SwitchPreference mLocationIndicator;
+    private SecureSettingSwitchPreference mCombinedIcons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -75,6 +81,27 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
         mLocationIndicator.setChecked((Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.ENABLE_LOCATION_PRIVACY_INDICATOR,
                 shouldShowLocationIndicator() ? 1 : 0, UserHandle.USER_CURRENT) == 1));
+
+        mCombinedIcons = (SecureSettingSwitchPreference)
+                findPreference(COMBINED_STATUSBAR_ICONS);
+        Resources sysUIRes = null;
+        boolean def = false;
+        int resId = 0;
+        try {
+            sysUIRes = getActivity().getPackageManager()
+                    .getResourcesForApplication(SYSTEMUI_PACKAGE);
+        } catch (Exception ignored) {
+            // If you don't have system UI you have bigger issues
+        }
+        if (sysUIRes != null) {
+            resId = sysUIRes.getIdentifier(
+                    CONFIG_RESOURCE_NAME, "bool", SYSTEMUI_PACKAGE);
+            if (resId != 0) def = sysUIRes.getBoolean(resId);
+        }
+        boolean enabled = Settings.Secure.getInt(resolver,
+                COMBINED_STATUSBAR_ICONS, def ? 1 : 0) == 1;
+        mCombinedIcons.setChecked(enabled);
+        mCombinedIcons.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -100,6 +127,12 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
             Settings.Secure.putIntForUser(resolver,
                     Settings.Secure.ENABLE_LOCATION_PRIVACY_INDICATOR, value ? 1 : 0,
                     UserHandle.USER_CURRENT);
+            derpUtils.showSystemUiRestartDialog(getActivity());
+            return true;
+        } else if (preference == mCombinedIcons) {
+            boolean enabled = (boolean) objValue;
+            Settings.Secure.putInt(resolver,
+                    COMBINED_STATUSBAR_ICONS, enabled ? 1 : 0);
             derpUtils.showSystemUiRestartDialog(getActivity());
             return true;
         }
