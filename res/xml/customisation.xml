@@ -49,6 +49,7 @@
     <com.derp.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_accurate_shades"
         android:title="@string/monet_engine_accurate_shades_title"
+        android:summary="@string/monet_engine_accurate_shades_summary"
         android:defaultValue="true" />
 
     <com.derp.support.preferences.SecureSettingSeekBarPreference

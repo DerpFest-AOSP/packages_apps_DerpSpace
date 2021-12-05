@@ -376,7 +376,8 @@
     <string name="monet_engine_custom_color_summary">Use custom color for monet engine instead of wallpaper colors</string>
     <string name="monet_engine_color_override_title">Custom color</string>
     <string name="monet_engine_white_luminance_user_title">Brightness scale</string>
-    <string name="monet_engine_accurate_shades_title">Use accurate shades</string>
+    <string name="monet_engine_accurate_shades_title">Accurate shades</string>
+    <string name="monet_engine_accurate_shades_summary">More accurate color shades at the cost of duller colors</string>
     <string name="monet_engine_chroma_factor_title">Colorfulness</string>
     <string name="monet_engine_linear_lightness_title">Use custom brightness scale</string>
 
