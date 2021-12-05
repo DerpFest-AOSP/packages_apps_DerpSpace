@@ -16,76 +16,66 @@
 
 package org.derpfest.derpspace.fragments;
 
+import static android.os.UserHandle.USER_CURRENT;
 import static android.os.UserHandle.USER_SYSTEM;
 
-import android.app.ActivityManagerNative;
-import android.app.UiModeManager;
-import android.content.Context;
+import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.om.IOverlayManager;
-import android.content.om.OverlayInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
+import android.database.ContentObserver;
 import android.graphics.Color;
-import android.os.AsyncTask;
+import android.net.Uri;
 import android.os.Bundle;
-import android.os.UserHandle;
+import android.os.Handler;
 import android.os.RemoteException;
 import android.os.ServiceManager;
-import androidx.annotation.VisibleForTesting;
-import androidx.preference.Preference;
-import androidx.preference.ListPreference;
-import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
+import android.os.UserHandle;
 import android.provider.Settings;
 import android.text.TextUtils;
-import android.util.Log;
-import android.view.WindowManagerGlobal;
-import android.view.IWindowManager;
-import android.widget.Toast;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import com.android.settings.dashboard.DashboardFragment;
 
-import java.util.Locale;
-import android.text.TextUtils;
-import android.view.View;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.preference.*;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 
-import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.settings.Utils;
-
-import com.derp.support.colorpicker.ColorPickerPreference;
+import com.android.settings.development.OverlayCategoryPreferenceController;
+import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
-public class Customisation extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+import com.derp.support.preferences.SystemSettingListPreference;
+import com.derp.support.colorpicker.ColorPickerPreference;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+public class Customisation extends DashboardFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "Customisation";
 
     private String MONET_ENGINE_COLOR_OVERRIDE = "monet_engine_color_override";
 
+    private ColorPickerPreference mMonetColor;
     private Context mContext;
 
-    private ColorPickerPreference mMonetColor;
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        addPreferencesFromResource(R.xml.customisation);
-
+        PreferenceScreen prefScreen = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+        final Resources res = getResources();
         mContext = getActivity();
 
-        final ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen screen = getPreferenceScreen();
-
-        mMonetColor = (ColorPickerPreference) screen.findPreference(MONET_ENGINE_COLOR_OVERRIDE);
+        mMonetColor = (ColorPickerPreference)findPreference(MONET_ENGINE_COLOR_OVERRIDE);
         int intColor = Settings.Secure.getInt(resolver, MONET_ENGINE_COLOR_OVERRIDE, Color.WHITE);
         String hexColor = String.format("#%08x", (0xffffff & intColor));
         mMonetColor.setNewPreviewColor(intColor);
@@ -99,8 +89,13 @@ public class Customisation extends SettingsPreferenceFragment implements OnPrefe
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    protected String getLogTag() {
+        return TAG;
+    }
+
+    @Override
+    protected int getPreferenceScreenResId() {
+        return R.xml.customisation;
     }
 
     @Override
@@ -116,5 +111,20 @@ public class Customisation extends SettingsPreferenceFragment implements OnPrefe
             return true;
         }
         return false;
+    }
+
+    @Override
+    protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
+        return buildPreferenceControllers(context, getSettingsLifecycle(), this);
+    }
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Lifecycle lifecycle, Fragment fragment) {
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.font"));
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.icon_pack"));
+        return controllers;
     }
 }
