@@ -126,25 +126,28 @@
         android:key="quick_settings_animations"
         android:title="@string/qs_tile_animation_title"/>
 
-        <ListPreference
-            android:key="qs_tile_animation_style"
+        <com.derp.support.preferences.SecureSettingIntListPreference
+            android:key="quick_settings_tiles_anim_style"
             android:title="@string/qs_tile_animation_style_title"
             android:entries="@array/qs_tile_animation_style_entries"
             android:entryValues="@array/qs_tile_animation_style_values"
-            android:persistent="false" />
+            android:summary="%s"
+            android:defaultValue="0" />
 
-        <ListPreference
-            android:key="qs_tile_animation_duration"
+        <com.derp.support.preferences.SecureSettingIntListPreference
+            android:key="quick_settings_tiles_anim_duration"
             android:title="@string/qs_tile_animation_duration_title"
             android:entries="@array/qs_tile_animation_duration_entries"
             android:entryValues="@array/qs_tile_animation_duration_values"
-            android:persistent="false" />
+            android:summary="%s"
+            android:defaultValue="2000" />
 
-        <ListPreference
-            android:key="qs_tile_animation_interpolator"
+        <com.derp.support.preferences.SecureSettingIntListPreference
+            android:key="quick_settings_tiles_anim_interpolator"
             android:title="@string/qs_tile_animation_interpolator_title"
             android:entries="@array/qs_tile_animation_interpolator_entries"
             android:entryValues="@array/qs_tile_animation_interpolator_values"
-            android:persistent="false" />
+            android:summary="%s"
+            android:defaultValue="0" />
 
 </PreferenceScreen>

@@ -16,7 +16,7 @@
 -->
 <resources>
 
-     <!-- Tiles animation style -->
+    <!-- Tiles animation style -->
     <string-array name="qs_tile_animation_style_entries" translatable="false">
         <item>@string/qs_tile_animation_style_off</item>
         <item>@string/qs_tile_animation_style_flip</item>
