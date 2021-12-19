@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2021 DerpFest
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- General app strings -->
+    <string name="derpspace_title">DerpSpace</string>
+    <string name="add">Hinzufügen</string>
+    <string name="advanced">Benutzerdefiniert</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="default_text">Standard</string>
+    <string name="dlg_ok">OK</string>
+    <string name="attention">Achtung</string>
+    <string name="loading">Lädt\u2026</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="reset_colors">Farben zurücksetzen</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Symbol</string>
+    <string name="color_title">Farbe</string>
+    <string name="colors_title">Farben</string>
+
+    <!-- DerpSpace categories -->
+    <string name="fingerprint_category">Fingerabdruck</string>
+    <string name="gestures_category">Gesten</string>
+    <string name="icons_category">Symbole</string>
+    <string name="status_bar_category">Statusleiste</string>
+    <string name="notifications_panel_category">Schnelleinstellungen</string>
+    <string name="system_category">System</string>
+    <string name="lockscreen_category">Sperrbildschirm</string>
+    <string name="build_tweaks_summary_title">Wo das kaputte Zeug steckt</string>
+    <string name="listview">ListView</string>
+    <string name="light_category">LED-Optionen</string>
+
+    <!-- Frags -->
+    <!-- General Tweaks -->
+    <string name="general_tweaks_title">Allgemeine Einstellungen</string>
+
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_shortcuts">Sperrbildschirmverknüpfungen</string>
+
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_tuner_title">Verknüpfungen auf dem Sperrbildschirm</string>
+
+    <!-- Lockscreen UI -->
+    <string name="lockscreen_ui_title">Sperrbildschirm-UI</string>
+
+    <!-- Lockscreen general category -->
+    <string name="general_category">Allgemein</string>
+
+    <!-- Flashlight category -->
+    <string name="flashlight_category">Taschenlampe</string>
+
+    <!-- Misc DerpSpace -->
+    <string name="misc_derpspace_title">Sonstiges</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Benachrichtigungen</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Schnelleinstellungen</string>
+
+    <!-- Statusbar Iten -->
+    <string name="statusbar_items_category">Statusbar-Elemente</string>
+
+    <!-- Customisation -->
+    <string name="customisation_title">Personalisierung</string>
+
+    <!-- Battery -->
+    <string name="battery_title">Akkustand</string>
+    <string name="battery_category">Akkustand-LED</string>
+
+    <!-- App info dialog -->
+    <string name="derpspace_dialog_title">Hilf uns, Dir zu helfen!</string>
+    <string name="derpspace_dialog_message">Wenn Du bei einer dieser Einstellungen einen Bug findest, melde ihn in unserer Telegram-Gruppe. Du MUSST folgendes angeben, wenn Du einen Fehlerbericht postest:\n\n1. Ein logcat oder last_kmsg\n2. Verwendeter Kernel und Mods\n3. Nützliche Informationen\n\nWenn Du etwas nicht angemessen meldest, erwarte NICHT, dass die Dinge behoben werden.</string>
+    <string name="derpspace_dialog_toast">LESEN SIE ALLES!</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="qs_tile_vibration_title">Vibration</string>
+    <string name="quick_settings_vibrate_title">Vibrieren bei Berührung</string>
+    <string name="quick_settings_vibrate_summary">Beim Berühren der Schaltflächen vibrieren</string>
+    <string name="quick_settings_vibrate_duration_title">Vibrationsdauer</string>
+    <string name="quick_settings_vibrate_duration_summary">Wie viele Millisekunden soll vibriert werden</string>
+
+    <!-- Tiles animation style  -->
+    <string name="qs_animation_options_title">Animationen</string>
+    <string name="qs_tile_animation_style_title">Style</string>
+    <string name="qs_tile_animation_duration_title">Geschwindigkeit</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolation</string>
+    <string name="qs_tile_animation_style_off">Keine</string>
+    <string name="qs_tile_animation_style_flip">Drehen</string>
+    <string name="qs_tile_animation_style_rotate">Rotieren</string>
+    <string name="qs_tile_animation_duration_low">Langsam</string>
+    <string name="qs_tile_animation_duration_default">Standard</string>
+    <string name="qs_tile_animation_duration_fast">Schnell</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Beschleunigen</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Verzögern</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Beschleunigen - Verlangsamen</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Hüpfend</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Überschwingen</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Vorausberechnen</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Überschwingen vorausberechnen</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G-Symbol</string>
+    <string name="show_fourg_icon_summary">Anzeige von 4G im Signalsymbol anstelle von LTE</string>
+
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_switch_title">VoLTE-Symbol</string>
+    <string name="volte_switch_summary">VoLTE-Symbol anzeigen</string>
+    <string name="volte_icon_title">VoLTE-Symbol</string>
+    <string name="volte_icon_summary">VoLTE-Symbol anzeigen</string>
+    <string name="volte_icon_style_title">VoLTE-Symbol auswählen</string>
+    <string name="volte_icon_asus">VoLTE Asus-Symbol</string>
+    <string name="volte_icon_vo">Vo-Symbol</string>
+    <string name="volte_icon_volte">VoLTE-Symbol</string>
+    <string name="volte_icon_oos">VoLTE OOS-Symbol</string>
+    <string name="volte_icon_hd">HD-Symbol</string>
+    <string name="volte_icon_hd2">HD CAF-Symbol</string>
+    <string name="volte_icon_miui">MIUI 11-Symbol</string>
+    <string name="volte_icon_emui">EMUI-Symbol</string>
+    <string name="volte_icon_margaritov">gefülltes HD-Symbol</string>
+    <string name="volte_icon_margaritov2">Margaritov VoLTE-Symbol</string>
+    <string name="volte_icon_vivo">Vivo-Symbol</string>
+
+    <!-- VoWiFi icon -->
+    <string name="vowifi_icon_title">VoWiFi-Symbol</string>
+    <string name="vowifi_icon_enabled">VoWiFi-Symbol aktiviert</string>
+    <string name="vowifi_icon_disabled">VoWiFi-Symbol deaktiviert</string>
+    <string name="vowifi_icon_enabled_volte_disabled">VoWiFi anstelle von VoLTE-Symbol</string>
+    <string name="vowifi_icon_style_title">VoWiFi-Symbolstil</string>
+    <string name="vowifi_icon_default">Default Symbol</string>
+    <string name="vowifi_icon_emui">EMUI-Symbol</string>
+    <string name="vowifi_icon_asus">Asus-Symbol</string>
+    <string name="vowifi_icon_oneplus">OOS-Symbol</string>
+    <string name="vowifi_icon_moto">Motorola-Symbol</string>
+    <string name="vowifi_icon_simple1">Simple1-Symbol</string>
+    <string name="vowifi_icon_simple2">Simple2-Symbol</string>
+    <string name="vowifi_icon_simple3">Simple3-Symbol</string>
+    <string name="vowifi_icon_vivo">Vivo-Symbol</string>
+    <string name="vowifi_icon_margaritov">Margaritov-Symbol</string>
+
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Toast-App-Symbol</string>
+    <string name="toast_icon_summary">Zeigen Sie das Symbol der App an, das dem Toast entspricht</string>
+
+    <!-- Quick QS pulldown -->
+    <string name="status_bar_quick_qs_pulldown">QS Panel schnell herunterziehen</string>
+    <string name="quick_pulldown_none">Aus</string>
+    <string name="quick_pulldown_right">Statusleiste von rechts herunterziehen</string>
+    <string name="quick_pulldown_left">Statusleiste von links herunterziehen</string>
+
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_clock_title">Zeit- und Datumsanzeige</string>
+    <string name="status_bar_clock">Uhrzeit und Datum</string>
+    <string name="clock_enabled">Aktiviert</string>
+    <string name="clock_disabled">Deaktiviert</string>
+    <string name="statusbar_clock_style_title">Zeit- und Datumsanzeige positionieren</string>
+    <string name="statusbar_clock_style_right">Rechts</string>
+    <string name="statusbar_clock_style_centre">Mittig</string>
+    <string name="statusbar_clock_style_left">Links</string>
+    <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
+    <string name="status_bar_show_clock_title">Zeit und Datum anzeigen</string>
+    <string name="status_bar_am_pm_title">AM/PM-Darstellung</string>
+    <string name="status_bar_am_pm_info">24 Stunden-Format ist aktiviert</string>
+    <string name="clock_seconds_display">Sekunden anzeigen</string>
+    <string name="enable_clock_weekday">Wochentag</string>
+    <string name="enable_clock_weekday_summary">Abgekürzter Wochentag vor der Uhrzeit</string>
+    <string name="dont_show">Nicht anzeigen</string>
+    <string name="clock_date_display">Datum</string>
+    <string name="clock_date_display_summary">Benutzerdefiniertes Datum vor der Uhrzeit anzeigen</string>
+    <string name="clock_date_style">Datumsstil</string>
+    <string name="clock_date_format">Datumsformat</string>
+    <string name="clock_date_string_edittext_title">Eingabe nur im vorgegebenen Datumsformat möglich, z.B. MM/TT/JJ</string>
+    <string name="clock_date_string_edittext_summary">Zeichenfolge eingeben</string>
+    <string name="am_pm_clock_normal">Normale Schriftgröße</string>
+    <string name="am_pm_clock_small">Kleine Schriftgröße</string>
+    <string name="am_pm_clock_none">Nicht anzeigen</string>
+    <string name="clock_date_display_none">Nicht anzeigen</string>
+    <string name="clock_date_display_small">Kleine Schriftgröße</string>
+    <string name="clock_date_display_normal">Normale Schriftgröße</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Kleinschreibung</string>
+    <string name="clock_date_style_uppercase">Großschreibung</string>
+    <string name="clock_date_right">Rechts neben der Uhrzeit</string>
+    <string name="clock_date_left">Links neben der Uhrzeit</string>
+    <string name="clock_date_position">Datumsanzeige positionieren</string>
+
+    <!-- Running Services button -->
+    <string name="qs_running_services_title">Laufende Dienste-Symbol</string>
+    <string name="qs_running_services_summary">Symbol für laufende Dienste in der Fußzeile anzeigen</string>
+    <string name="qs_edit_title">Kachelbearbeitungssymbol</string>
+    <string name="qs_edit_summary">Das Kachelbearbeitungssymbol in der Fußzeile anzeigen</string>
+
+	    <!-- DerpFest logo -->
+    <string name="derp_logo_title">DerpFest-Logo</string>
+    <string name="derp_logo_summary">Lass alle wissen, dass Du DerpFest verwendest, wenn sie Deinen Bildschirm sehen</string>
+
+    <!-- Statusbar net monitor -->
+    <string name="traffic_title">Netzwerkaktivität</string>
+    <string name="network_traffic">Netzwerkmonitor</string>
+    <string name="statusbar_show_network_traffic_title">Netzwerkaktivität in Statusleiste anzeigen</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Schwellenwert für das automatische Ausblenden der Upload-Anzeige</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Schwellenwert für das automatische Ausblenden der Download-Anzeige</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Textgröße der Netzwerkaktivität-Einheit</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Textskalierungsfaktor der Netzwerkaktivitätsanzeige</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Skalierungsfaktor</string>
+
+    <!-- Lockscreen media artwork -->
+    <string name="lockscreen_media_blur_title">Unschärfebetrag für Mediengrafiken</string>
+    <string name="show_lockscreen_media_art_title">Mediengrafiken anzeigen</string>
+    <string name="lockscreen_media_art_options_title">Mediengrafiken</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibrieren bei Fingerabdruck-Authentifizierung</string>
+    <string name="fprint_sucess_vib_summary">Bei erfolgreicher Fingerabdruck-Erkennung vibrieren</string>
+    <string name="fprint_error_vib_title">Vibration bei Fingerabdruckfehlern</string>
+    <string name="fprint_error_vib_summary">Bei fehlgeschlagener Fingerabdruckauthentifizierung vibrieren</string>
+
+    <!-- Battery light -->
+    <string name="battery_light_settings">LED für Akkustand</string>
+    <string name="battery_light_enable">LED-Anzeige für den Akkustand aktivieren</string>
+    <string name="battery_light_allow_on_dnd_title">LED-Anzeige im Modus \"Nicht stören\"</string>
+    <string name="battery_light_low_blinking_title">Blinkende LED-Anzeige bei niedrigem Akkustand</string>
+    <string name="battery_light_cat">LED-Anzeige beim Aufladen</string>
+    <string name="battery_light_low_color">Niedriger Akkustand</string>
+    <string name="battery_light_medium_color">Mittlerer Akkustand</string>
+    <string name="battery_light_full_color">Fast voller Akkustand</string>
+    <string name="battery_light_reallyfull_color">Voller Akkustand</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Symbol für deaktivierte Mobildaten anzeigen</string>
+    <string name="data_disabled_icon_summary">Zeigen Sie das Kreuz neben der Signalleiste an, wenn die Mobildaten deaktiviert sind</string>
+
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Roaming-Indikator anzeigen</string>
+    <string name="roaming_indicator_icon_summary">Anzeige des Roaming-Indikators im Signalsymbol im Roaming-Modus</string>
+
+    <!-- Lock screen visualizer -->
+    <string name="enable_visualizer">Musikvisualisierung aktivieren</string>
+    <string name="lockscreen_visualizer_title">Musikvisualisierung</string>
+    <string name="lockscreen_visualizer_enable">Musikvisualisierung</string>
+    <string name="lockscreen_visualizer_enable_summary">Visualisierung während der Musikwiedergabe anzeigen</string>
+    <string name="lockscreen_autocolor_title">Automatische Farbe</string>
+    <string name="lockscreen_autocolor_summary">Farbe mit Sperrbildschirmhintergrund synchronisieren</string>
+    <string name="lockscreen_autocolor_lavalamp">Lavalampe muss dazu deaktiviert sein</string>
+    <string name="lockscreen_lavalamp_title">Lavalampeneffekt</string>
+    <string name="lockscreen_lavalamp_summary">Verwenden Sie eine glatte Farbmischungsanimation im Lavalampenstil</string>
+    <string name="lockscreen_lavalamp_speed_title">Farbmischintervall</string>
+    <string name="lockscreen_solid_lines_category">Durchgehende Linien</string>
+    <string name="lockscreen_solid_units_count_title">Anzahl der Linien</string>
+    <string name="lockscreen_solid_fudge_factor_title">Füll-Faktor</string>
+    <string name="lockscreen_solid_units_opacity_title">Deckkraft der Linien</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">Helligkeitsregler</string>
+    <string name="qs_brightness_slider_title">Helligkeitsregler anzeigen</string>
+    <string name="qs_brightness_slider_summary">Helligkeitsregler in den Schnelleinstellungen anzeigen</string>
+    <string name="qs_brightness_position_bottom_title">Helligkeitsregler unten</string>
+    <string name="qs_brightness_position_bottom_summary">Helligkeitsregler im unteren Bereich der Schnelleinstellungen anzeigen</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Symbol für automatische Helligkeit</string>
+    <string name="brightness_icon_summary">Das Symbol für die automatische Helligkeit wird rechts neben dem Helligkeitsregler angezeigt</string>
+
+    <!-- Quick QS Panel brightness slider -->
+    <string name="quick_qs_brightness_slider_title">Helligkeitsregler für die kurzen Schnelleinstellungen</string>
+    <string name="quick_qs_brightness_slider_summary">Helligkeitsregler auch in den kurzen Schnelleinstellungen anzeigen</string>
+
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">Fußzeilenwarnungen</string>
+    <string name="qs_footer_warnings_summary">Eine Warnung unten in den Schnelleinstellungen anzeigen, wenn das Netzwerk von externen Apps oder VPN überwacht wird</string>
+
+    <!-- Smart pulldown-->
+    <string name="smart_pulldown_title">Einfaches Herunterziehen</string>
+    <string name="smart_pulldown_summary">Schnelleinstellungen öffnen, wenn %1$s Benachtichtigungen vorliegen</string>
+    <string name="smart_pulldown_none_summary">Schnelleinstellungen öffnen, wenn keine Benachrichtigungen vorhanden sind</string>
+    <string name="smart_pulldown_off">Aus</string>
+    <string name="smart_pulldown_none">Keine Benachrichtigungen</string>
+    <string name="smart_pulldown_dismissable">Keine verwerfbaren Benachrichtigungen</string>
+    <string name="smart_pulldown_ongoing">Keine laufenden</string>
+
+    <!-- Brightness control -->
+    <string name="status_bar_toggle_brightness">Helligkeitsregler in der Statusleiste</string> 
+    <string name="status_bar_toggle_brightness_summary">Über die Statusleiste streichen, um die Helligkeit zu einzustellen</string>
+
+    <!-- Battery Bar -->
+    <string name="battery_bar_title">Akku-Leiste</string>
+    <string name="battery_bar_summary">Akku-Leiste in der Nähe der Statusleiste oder Navigationsleiste anzeigen und anpassen</string>
+    <string name="battery_bar_no_navbar">Position der Akku-Leiste</string>
+    <string name="battery_bar_location_hide">Verstecken</string>
+    <string name="battery_bar_statusbar_top">Statusbarleiste oben</string>
+    <string name="battery_bar_statusbar_bot">Statusbarleiste unten</string>
+    <string name="battery_bar_color">Farben der Akku-Leiste</string>
+    <string name="battery_bar_charging_color">Farbe beim Ladevorgang</string>
+    <string name="battery_bar_battery_low_color">Farbe bei niedrigem Akkustand</string>
+    <string name="battery_bar_cat">Stil</string>
+    <string name="battery_bar_style_title">Ausrichtung</string>
+    <string name="battery_bar_thickness_title">Randstärke</string>
+    <string name="battery_bar_animate_title">Ladeanimation</string>
+    <string name="battery_bar_style_regular">Standard</string>
+    <string name="battery_bar_style_center_mirrored">Mittig gespiegelt</string>
+    <string name="battery_bar_style_reversed">Umgekehrt</string>
+    <string name="battery_bar_use_charging_color">Benutzerdefinierte Farbe beim Laden</string>
+    <string name="battery_bar_blend_color_title">Farben mischen</string>
+    <string name="battery_bar_blend_color_summary">Angepasste Farben je nach Ladestand</string>
+    <string name="battery_bar_blend_color_reverse_title">Farben umkehren</string>
+    <string name="battery_bar_blend_color_reverse_summary_off">Voll &#8594; Leer: Rot &#8592; Grün &#8592; Blau &#8592; Rot</string>
+    <string name="battery_bar_blend_color_reverse_summary_on">Voll &#8594; Leer: Rot &#8594; Grün &#8594; Blau &#8594; Rot</string>
+
+    <!-- Custom carrier label and position -->
+    <string name="carrier_label_settings_title">Netzbetreiberbezeichnung</string>
+    <string name="carrier_label_settings_summary">Anpassen des Netzbetreibernamens auf Sperrbildschirm oder Statusleiste</string>
+    <string name="custom_carrier_label_title">Eigene Netzbetreiberbezeichnung</string>
+    <string name="custom_carrier_label_explain">Bitte eine neue Bezeichnung eingeben. Leerlassen für die Standardanzeige.</string>
+    <string name="custom_carrier_label_notset">Eigene Bezeichnung zur Zeit nicht gesetzt</string>
+    <string name="show_carrier_title">Anzeige des Netzbetreibers</string>
+    <string name="show_carrier_disabled">Deaktiviert</string>
+    <string name="show_carrier_keyguard">Nur auf Sperrbildschirm</string>
+    <string name="show_carrier_statusbar">Nur in Statusleiste</string>
+    <string name="show_carrier_enabled">Sperrbildschirm &amp; Statusleiste</string>
+
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Alten Stil der Netzsignalanzeige benutzen</string>
+    <string name="use_old_mobiletype_summary">Aktivieren, um zur früheren Symbol-Darstellung mit integrierter Verbindungstyp-Anzeige zu wechseln</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Zusatzinfo zum Ladevorgang</string>
+    <string name="lockscreen_battery_info_summary">Die vom System ermittelte Ladespannung, Stromstärke, Wattzahl und Akkutemperatur während des Ladevorgangs auf dem Sperrbildschirm anzeigen</string>
+
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Animation beim Laden</string>
+    <string name="charging_animation_summary">Animation anzeigen, wenn das Gerät angeschlossen ist</string>
+
+    <!-- Battery Settings -->
+    <string name="battery_settings_title">Akkustandanzeige</string>   
+
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">Akkustandanzeige</string>
+    <string name="battery_percent_title">Akkustand in Prozent</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Stil der Akkuanzeige</string>
+    <string name="status_bar_battery_style_icon_portrait">Batterie (Standard)</string>
+    <string name="status_bar_battery_style_circle">Kreis</string>
+    <string name="status_bar_battery_style_dotted_circle">Gepunkteter Kreis</string>
+    <string name="status_bar_battery_style_filled_circle">Gefüllter Kreis</string>
+    <string name="status_bar_battery_style_big_circle">Großer Kreis</string>
+    <string name="status_bar_battery_style_big_dotted_circle">Großer gepunkteter Kreis</string>
+    <string name="status_bar_battery_style_text">Nur Prozentsatz</string>
+    <string name="status_bar_battery_style_hidden">Nicht anzeigen</string>
+
+    <!-- Status bar - Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Akku-Prozentsatz</string>
+    <string name="status_bar_battery_percentage_default">Nicht anzeigen</string>
+    <string name="status_bar_battery_percentage_text_inside">Im Symbol</string>
+    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string> 
+
+    <!-- Call strength icons in QS -->
+    <string name="show_qs_call_strength_icon_title">Symbole für Anrufstärke anzeigen</string>
+    <string name="show_qs_call_strength_icon_summary">Symbole für die Anrufstärke im Schnelleinstellungsfeld anzeigen, wenn verfügbar</string>
+
+    <!-- Monet Engine -->
+    <string name="monet_engine_custom_color_title">Benutzerdefinierte Farbe verwenden</string>
+    <string name="monet_engine_custom_color_summary">Verwenden Sie eine benutzerdefinierte Farbe für die Monet-Engine anstelle von Hintergrundfarben</string>
+    <string name="monet_engine_color_override_title">Benutzerdefinierte Farbe</string>
+    <string name="monet_engine_white_luminance_user_title">Helligkeitsskala</string>
+    <string name="monet_engine_accurate_shades_title">Präzise Farbtöne</string>
+    <string name="monet_engine_accurate_shades_summary">Genauere Farbnuancen auf Kosten stumpferer Farben</string>
+    <string name="monet_engine_chroma_factor_title">Farbintensität</string>
+    <string name="monet_engine_linear_lightness_title">Benutzerdefinierte Helligkeitsskala verwenden</string>
+
+    <!-- Udfps Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">Haptisches Feedback für FOD</string>
+    <string name="udfps_haptic_feedback_summary">Vibrieren beim Berühren des FOD-Symbols</string>
+
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Aufforderung zum Entsperren des Sperrbildschirms bei Verwendung empfindlicher QS-Kacheln</string>
+
+    <!-- Alert Slider Notifications (OnePlus devices) -->
+    <string name="alert_slider_notifications_title">Alarmschieberegler-Benachrichtigungen</string>
+    <string name="alert_slider_notifications_summary">Benachrichtigung anzeigen, wenn die Position des Alarmschiebereglers geändert wird</string>
+
+    <!-- Battery estimate -->
+    <string name="battery_estimate_title">Geschätzte Akkulaufzeit</string>
+    <string name="battery_estimate_summary">Geschätzte verbleibende Akkulaufzeit anzeigen, sofern verfügbar</string>
+
+    <!-- Location privacy indicator -->
+    <string name="location_privacy_indicator_title">Indikator für Standortdatennutzung</string>
+    <string name="location_privacy_indicator_summary">Indikator bei Verwendung von Standortdaten anzeigen\nErfordert einen Neustart der SystemUI</string>
+
+    <!-- Screen off FOD -->
+    <string name="screen_off_fod_title">FOD bei ausgeschaltetem Bildschirm</string>
+    <string name="screen_off_fod_summary">Lassen Sie FOD aktiviert, wenn der Bildschirm ausgeschaltet ist</string>
+
+    <!-- QS footer text -->
+    <string name="qs_footer_text_show_title">QS-Fußzeilentext anzeigen</string>
+    <string name="qs_footer_text_string_title">QS-Fußzeilentext anpassen</string>
+    <string name="qs_footer_text_string_summary">Auf leer setzen für Standard #StayDerped</string>
+
+    <!-- Combined signal icons in status bar -->
+    <string name="combined_status_bar_signal_icons">Kombinierte Signalsymbole</string>
+    <string name="combined_status_bar_signal_icons_summary">Kombinierte Signalsymbole in der Statusleiste anzeigen\nErfordert einen Neustart der SystemUI</string>
+
+    <string name="dark_ui_mode_summary">Durchstöbern Sie die dunklen Themenoptionen</string>
+
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">Vibrationsoptionen bei Anruf</string>
+    <string name="incall_vibrate_connect_title">Beim Verbinden vibrieren</string>
+    <string name="incall_vibrate_call_wait_title">Bei Anklopfen vibrieren</string>
+    <string name="incall_vibrate_disconnect_title">Beim Trennen vibrieren</string>
+
+    <!-- Blink flashlight for incoming calls -->
+    <string name="flashlight_on_call_title">Taschenlampen-Blinken für eingehenden Anruf</string>
+    <string name="flashlight_on_call_disabled">Deaktiviert</string>
+    <string name="flashlight_on_call_ringer">Beim Klingeln</string>
+    <string name="flashlight_on_call_no_ringer">Wenn der Klingelton stumm ist</string>
+    <string name="flashlight_on_call_silent">Wenn völlig stumm (kein Klingelton oder Vibrator)</string>
+    <string name="flashlight_on_call_always">Immer</string>
+    <string name="flashlight_on_call_ignore_dnd_title">DND ignorieren</string>
+    <string name="flashlight_on_call_ignore_dnd_summary">Ob im Nicht-stören-Modus geblinkt werden soll</string>
+    <string name="flashlight_on_call_rate_title">Rate</string>
+    <string name="flashlight_on_call_rate_summary">Blinkrate der Taschenlampe bei Anruf</string>
+
+    <!-- AOD Schedule -->
+    <string name="default_string">Standard</string>
+    <string name="disabled">Deaktiviert</string>
+    <string name="always_on_display_schedule_title">Always on display schedule</string>
+    <string name="always_on_display_schedule_sunset">Sonnenuntergang</string>
+    <string name="always_on_display_schedule_sunrise">Sonnenaufgang</string>
+    <string name="always_on_display_schedule_mixed_sunset">Von Sonnenuntergang bis zu einer bestimmten Zeit einschalten</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Von einer bestimmten Zeit bis zum Sonnenaufgang einschalten</string>
+
+    <!-- Custom Signal bar icons -->
+    <string name="custom_signal_bar_title">Mobilfunksymbole</string>
+
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="custom_wifi_bar_title">WLAN-Symbol</string>
+
+    <!-- Pulse notifications lightning -->
+    <string name="pulse_ambient_light_title">Kantenbeleuchtung</string>
+    <string name="pulse_ambient_light_summary">Kantenbeleuchtung beim Eingang von Benachrichtigungen anzeigen</string>
+    <string name="ambient_notification_light_enabled_title">Kantenbeleuchtung für AoD anzeigen</string>
+    <string name="ambient_notification_light_enabled_summary">Kantenbeleuchtung für AoD beim Eingang von Benachrichtigungen anzeigen</string>
+    <string name="ambient_notification_light_hide_aod_title">Inhalte des AoD verbergen</string>
+    <string name="ambient_notification_light_hide_aod_summary">Sämtliche Inhalte der AoD Ansicht verbergen während Kantenbeleuchtung an ist</string>
+    <string name="ambient_notification_light_duration_title">Dauer</string>
+    <string name="ambient_notification_light_duration_summary">Zeit, die für jede Animation benötigt wird</string>
+    <string name="ambient_notification_light_repeats_title">Wiederholungen</string>
+    <string name="ambient_notification_light_repeats_summary">Wie oft die Animation angezeigt werden soll\n0 für unendlich</string>
+    <string name="ambient_notification_light_timeout_title">Zeitüberschreitung</string>
+    <string name="ambient_notification_light_timeout_forever">Für immer</string>
+    <string name="ambient_notification_light_timeout_half_minute">30 Sekunden</string>
+    <string name="ambient_notification_light_timeout_minute">1 Minute</string>
+    <string name="ambient_notification_light_timeout_three_minutes">3 Minuten</string>
+    <string name="ambient_notification_light_timeout_five_minutes">5 Minuten</string>
+    <string name="ambient_notification_light_timeout_ten_minutes">10 Minuten</string>
+    <string name="set_to_zero">Setze Wiederholungen auf 0, um sie zu aktivieren</string>
+    <string name="ambient_notification_color_mode_title">Farbmodus</string>
+    <string name="ambient_notification_color_mode_accent">Akzentfarbe</string>
+    <string name="ambient_notification_color_mode_wall">Dominante Farbe des Hintergrundbilds</string>
+    <string name="ambient_notification_color_mode_notification">Farbe des Benachrichtigungssymbols</string>
+    <string name="ambient_notification_color_mode_custom">@string/ambient_notification_light_color_title</string>
+    <string name="ambient_notification_light_color_title">Benutzerdefinierte Farbe</string>
+
+    <!-- Hide Lockscreen shortcuts on secure Lockscreen -->
+    <string name="lockscreen_hide_shortcuts_title">Untere Verknüpfungen ausblenden</string>
+    <string name="lockscreen_hide_shortcuts_summary">Links-Rechts-Verknüpfungen auf sicheren Sperrbildschirmen ausblenden</string>
+
+    <!-- Burn-in Protection -->
+    <string name="burnin_category">Einbrennschutz</string>
+    <string name="burn_in_protection_title">Aktivieren</string>
+    <string name="burn_in_protection_summary">Verschieben Sie die Navigationssymbole und die Statusleistensymbole, um ein Einbrennen zu verhindern</string>
+    <string name="burn_in_protection_interval_title">Intervall der Verschiebungen</string>
+    <string name="burn_in_protection_interval_summary">Wie oft die Symbole verschoben werden</string>
+    <string name="unit_x1000ms">x1000 ms</string>
+
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">Bluetooth-Akkustatus</string>
+    <string name="bluetooth_battery_summary">Batteriestatus des verbundenen Bluetooth-Geräts anzeigen, falls verfügbar</string>
+</resources>
