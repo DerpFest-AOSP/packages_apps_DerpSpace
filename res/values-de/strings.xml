@@ -45,6 +45,7 @@
     <string name="build_tweaks_summary_title">Wo das kaputte Zeug steckt</string>
     <string name="listview">ListView</string>
     <string name="light_category">LED-Optionen</string>
+    <string name="udfps_category">In-Display-Fingerabdruck</string>
 
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -493,4 +494,15 @@
     <!-- Bluetooth status -->
     <string name="bluetooth_battery_title">Bluetooth-Akkustatus</string>
     <string name="bluetooth_battery_summary">Batteriestatus des verbundenen Bluetooth-Geräts anzeigen, falls verfügbar</string>
+
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">FOD-Animation</string>
+    <string name="udfps_recog_animation_summary">Zeigt eine Animation an, während der Fingerabdruck gelesen wird</string>
+    <string name="udfps_recog_animation_effect_title">FOD-Animationseffekt</string>
+    <string name="udfps_recog_animation_effect_summary">Animationseffekt auswählen</string>
+
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">Fingerabdrucksymbol</string>
+    <string name="udfps_icon_picker_summary">Wählen Sie Ihr bevorzugtes Fingerabdrucksymbol</string>
+
 </resources>

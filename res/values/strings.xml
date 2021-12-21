@@ -46,6 +46,7 @@
     <string name="build_tweaks_summary_title">Where the derped stuff is placed</string>
     <string name="listview">ListView</string>
     <string name="light_category">Lights</string>
+    <string name="udfps_category">Fingerprint On Display</string>
 
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -495,4 +496,15 @@
     <!-- Bluetooth status -->
     <string name="bluetooth_battery_title">Bluetooth battery status</string>
     <string name="bluetooth_battery_summary">Display battery status for the connected bluetooth device, if available</string>
+
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">FOD animation</string>
+    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
+    <string name="udfps_recog_animation_effect_title">FOD animation effect</string>
+    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">FOD icon picker</string>
+    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+
 </resources>

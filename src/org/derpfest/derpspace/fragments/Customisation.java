@@ -45,6 +45,7 @@ import androidx.preference.*;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.derp.derpUtils;
 import com.android.settings.development.OverlayCategoryPreferenceController;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
@@ -81,6 +82,13 @@ public class Customisation extends DashboardFragment implements OnPreferenceChan
         mMonetColor.setNewPreviewColor(intColor);
         mMonetColor.setSummary(hexColor);
         mMonetColor.setOnPreferenceChangeListener(this);
+
+        boolean udfpsResPkgInstalled = derpUtils.isPackageInstalled(getContext(),
+                "org.derp.udfps.resources");
+        PreferenceCategory udfps = (PreferenceCategory) prefScreen.findPreference("udfps_category");
+        if (!udfpsResPkgInstalled) {
+            prefScreen.removePreference(udfps);
+        }
     }
 
     @Override
