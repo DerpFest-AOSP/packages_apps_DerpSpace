@@ -408,10 +408,6 @@
     <string name="location_privacy_indicator_title">Indikator für Standortdatennutzung</string>
     <string name="location_privacy_indicator_summary">Indikator bei Verwendung von Standortdaten anzeigen\nErfordert einen Neustart der SystemUI</string>
 
-    <!-- Screen off FOD -->
-    <string name="screen_off_fod_title">FOD bei ausgeschaltetem Bildschirm</string>
-    <string name="screen_off_fod_summary">Lassen Sie FOD aktiviert, wenn der Bildschirm ausgeschaltet ist</string>
-
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">QS-Fußzeilentext anzeigen</string>
     <string name="qs_footer_text_string_title">QS-Fußzeilentext anpassen</string>
