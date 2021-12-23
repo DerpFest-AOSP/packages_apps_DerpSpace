@@ -124,40 +124,15 @@
     <string name="show_fourg_icon_title">4G-Symbol</string>
     <string name="show_fourg_icon_summary">Anzeige von 4G im Signalsymbol anstelle von LTE</string>
 
-    <!-- Show VoLTE icon on statusbar -->
+    <!-- VoLTE icon -->
     <string name="volte_switch_title">VoLTE-Symbol</string>
     <string name="volte_switch_summary">VoLTE-Symbol anzeigen</string>
     <string name="volte_icon_title">VoLTE-Symbol</string>
-    <string name="volte_icon_summary">VoLTE-Symbol anzeigen</string>
-    <string name="volte_icon_style_title">VoLTE-Symbol auswählen</string>
-    <string name="volte_icon_asus">VoLTE Asus-Symbol</string>
-    <string name="volte_icon_vo">Vo-Symbol</string>
-    <string name="volte_icon_volte">VoLTE-Symbol</string>
-    <string name="volte_icon_oos">VoLTE OOS-Symbol</string>
-    <string name="volte_icon_hd">HD-Symbol</string>
-    <string name="volte_icon_hd2">HD CAF-Symbol</string>
-    <string name="volte_icon_miui">MIUI 11-Symbol</string>
-    <string name="volte_icon_emui">EMUI-Symbol</string>
-    <string name="volte_icon_margaritov">gefülltes HD-Symbol</string>
-    <string name="volte_icon_margaritov2">Margaritov VoLTE-Symbol</string>
-    <string name="volte_icon_vivo">Vivo-Symbol</string>
+    <string name="volte_icon_summary">VoLTE-Symbol anzeigen, wenn verfügbar</string>
 
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">VoWiFi-Symbol</string>
-    <string name="vowifi_icon_enabled">VoWiFi-Symbol aktiviert</string>
-    <string name="vowifi_icon_disabled">VoWiFi-Symbol deaktiviert</string>
-    <string name="vowifi_icon_enabled_volte_disabled">VoWiFi anstelle von VoLTE-Symbol</string>
-    <string name="vowifi_icon_style_title">VoWiFi-Symbolstil</string>
-    <string name="vowifi_icon_default">Default Symbol</string>
-    <string name="vowifi_icon_emui">EMUI-Symbol</string>
-    <string name="vowifi_icon_asus">Asus-Symbol</string>
-    <string name="vowifi_icon_oneplus">OOS-Symbol</string>
-    <string name="vowifi_icon_moto">Motorola-Symbol</string>
-    <string name="vowifi_icon_simple1">Simple1-Symbol</string>
-    <string name="vowifi_icon_simple2">Simple2-Symbol</string>
-    <string name="vowifi_icon_simple3">Simple3-Symbol</string>
-    <string name="vowifi_icon_vivo">Vivo-Symbol</string>
-    <string name="vowifi_icon_margaritov">Margaritov-Symbol</string>
+    <string name="vowifi_icon_summary">VoWiFi-Symbol anzeigen, wenn verfügbar</string>
 
     <!-- Toast app icon -->
     <string name="toast_icon_title">Toast-App-Symbol</string>
