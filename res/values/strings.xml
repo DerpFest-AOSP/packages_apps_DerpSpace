@@ -498,4 +498,7 @@
     <string name="pulse_on_new_tracks_title">Ambient music ticker</string>
     <string name="pulse_on_new_tracks_summary">Show music ticker on Ambient Display during track change</string>
 
+    <string name="ambient_ui">Always On Display</string>
+    <string name="ambient_battery_title">AoD battery</string>
+
 </resources>

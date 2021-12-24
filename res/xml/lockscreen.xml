@@ -31,5 +31,11 @@
          android:icon="@drawable/ic_lockscreen_ui"
          android:title="@string/lockscreen_ui_title" />
 
+     <com.derp.support.preferences.CardviewPreference
+         android:key="ambient_ui"
+         android:fragment="org.derpfest.derpspace.fragments.AmbientUI"
+         android:icon="@drawable/ic_info"
+         android:title="@string/ambient_ui" />
+
 </PreferenceScreen>
 
