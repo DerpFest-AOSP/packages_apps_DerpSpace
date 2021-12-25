@@ -21,6 +21,12 @@
         android:title="@string/ambient_battery_title">
 
         <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="ambient_battery_percent" 
+            android:title="@string/ambient_battery_percent_title" 
+            android:summary="@string/ambient_battery_percent_summary" 
+            android:defaultValue="true" />
+
+        <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="sysui_keyguard_show_battery_bar"
             android:title="@string/keyguard_show_battery_title"
             android:summary="@string/keyguard_show_battery_summary"
