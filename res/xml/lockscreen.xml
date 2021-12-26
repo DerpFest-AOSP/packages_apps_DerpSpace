@@ -34,7 +34,7 @@
      <com.derp.support.preferences.CardviewPreference
          android:key="ambient_ui"
          android:fragment="org.derpfest.derpspace.fragments.AmbientUI"
-         android:icon="@drawable/ic_info"
+         android:icon="@drawable/ic_aod"
          android:title="@string/ambient_ui" />
 
 </PreferenceScreen>
