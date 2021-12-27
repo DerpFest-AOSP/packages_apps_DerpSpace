@@ -40,6 +40,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
+import com.android.internal.util.derp.derpUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -54,8 +55,10 @@ import java.util.regex.Pattern;
 public class NavbarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_NAVIGATION_BAR_ENABLED = "navbar_visibility";
+    private static final String LAYOUT_SETTINGS = "layout_settings";
 
     private SwitchPreference mNavigationBar;
+    private Preference mLayoutSettings;
 
     private boolean mIsNavSwitchingMode = false;
 
@@ -78,9 +81,11 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
 
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
         mNavigationBar.setChecked((Settings.System.getInt(getContentResolver(),
-                KEY_NAVIGATION_BAR_ENABLED,
-                defaultToNavigationBar ? 1 : 0) == 1));
+            KEY_NAVIGATION_BAR_ENABLED,
+            defaultToNavigationBar ? 1 : 0) == 1));
         mNavigationBar.setOnPreferenceChangeListener(this);
+        mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
+        mLayoutSettings.setEnabled(derpUtils.isOverlayEnabled("com.android.internal.systemui.navbar.threebutton"));
 
         mHandler = new Handler();
     }
