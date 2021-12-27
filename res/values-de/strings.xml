@@ -42,7 +42,6 @@
     <string name="notifications_panel_category">Schnelleinstellungen</string>
     <string name="system_category">System</string>
     <string name="lockscreen_category">Sperrbildschirm</string>
-    <string name="build_tweaks_summary_title">Wo das kaputte Zeug steckt</string>
     <string name="listview">ListView</string>
     <string name="light_category">LED-Optionen</string>
     <string name="udfps_category">In-Display-Fingerabdruck</string>

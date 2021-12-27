@@ -43,7 +43,6 @@
     <string name="notifications_panel_category">Pannello impostazioni rapide</string>
     <string name="system_category">Sistema</string>
     <string name="lockscreen_category">Blocco schermo</string>
-    <string name="build_tweaks_summary_title">Dov\'è lo stuff derped</string>
     <string name="listview">ListView</string>
     <string name="light_category">Opzioni LED</string>
     <string name="udfps_category">Udfps</string>
