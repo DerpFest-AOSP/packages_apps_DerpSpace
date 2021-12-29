@@ -18,48 +18,13 @@
 
     <PreferenceCategory
         android:key="monet_category"
-        android:title="Monet">
+        android:title="@string/monet_category">
 
-    <com.derp.support.preferences.SecureSettingSwitchPreference
-        android:key="monet_engine_custom_color"
-        android:title="@string/monet_engine_custom_color_title"
-        android:summary="@string/monet_engine_custom_color_summary"
-        android:defaultValue="false" />
-
-    <com.derp.support.colorpicker.ColorPickerPreference
-        android:key="monet_engine_color_override"
-        android:title="@string/monet_engine_color_override_title"
-        android:dependency="monet_engine_custom_color"
-        android:defaultValue="0xffffff" />
-
-    <com.derp.support.preferences.SecureSettingSwitchPreference
-        android:key="monet_engine_linear_lightness"
-        android:title="@string/monet_engine_linear_lightness_title"
-        android:defaultValue="false" />
-
-    <com.derp.support.preferences.SecureSettingSeekBarPreference
-        android:key="monet_engine_white_luminance_user"
-        android:title="@string/monet_engine_white_luminance_user_title"
-        android:dependency="monet_engine_linear_lightness"
-        android:defaultValue="450"
-        android:max="1000"
-        settings:min="1"
-        settings:interval="25"/>
-
-    <com.derp.support.preferences.SecureSettingSwitchPreference
-        android:key="monet_engine_accurate_shades"
-        android:title="@string/monet_engine_accurate_shades_title"
-        android:summary="@string/monet_engine_accurate_shades_summary"
-        android:defaultValue="true" />
-
-    <com.derp.support.preferences.SecureSettingSeekBarPreference
-        android:key="monet_engine_chroma_factor"
-        android:title="@string/monet_engine_chroma_factor_title"
-        android:defaultValue="100"
-        android:max="500"
-        settings:min="50"
-        settings:interval="25"/>
-
+        <Preference
+            android:key="monet_engine"
+            android:title="@string/monet_engine_title"
+            android:summary="@string/monet_engine_summary"
+            android:fragment="org.derpfest.derpspace.fragments.MonetEngine"/>
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -338,13 +338,16 @@
     <string name="status_bar_battery_percentage_title">Akku-Prozentsatz</string>
     <string name="status_bar_battery_percentage_default">Nicht anzeigen</string>
     <string name="status_bar_battery_percentage_text_inside">Im Symbol</string>
-    <string name="status_bar_battery_percentage_text_next">Außerhalb</string> 
+    <string name="status_bar_battery_percentage_text_next">Außerhalb</string>
 
     <!-- Call strength icons in QS -->
     <string name="show_qs_call_strength_icon_title">Symbole für Anrufstärke anzeigen</string>
     <string name="show_qs_call_strength_icon_summary">Symbole für die Anrufstärke im Schnelleinstellungsfeld anzeigen, wenn verfügbar</string>
 
     <!-- Monet Engine -->
+    <string name="monet_category">Monet</string>
+    <string name="monet_engine_title">\"Monet\"-Themen-Engine</string>
+    <string name="monet_engine_summary">Benutzerdefinierte Farbe, Farbintensität, Helligkeit</string>
     <string name="monet_engine_custom_color_title">Benutzerdefinierte Farbe verwenden</string>
     <string name="monet_engine_custom_color_summary">Verwenden Sie eine benutzerdefinierte Farbe für die Monet-Engine anstelle von Hintergrundfarben</string>
     <string name="monet_engine_color_override_title">Benutzerdefinierte Farbe</string>
