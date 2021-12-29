@@ -539,4 +539,18 @@
     <string name="visualizer_center_mirrored_title">Mittig gespiegelt</string>
     <string name="visualizer_center_mirrored_summary">Stellen Sie den Visualizer in den Modus Mittig gespiegelt ein</string>
 
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Designs</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Schriftart für Überschrift und Haupttext</string>
+    <string name="theme_customization_font_summary">Systemschriftart festlegen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Form des Symbols</string>
+    <string name="theme_customization_icon_shape_summary">Formstil für Systemsymbole festlegen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Statusleiste/QS Symbole</string>
+    <string name="theme_customization_icon_pack_summary">Benutzerdefinierten Icon-Pack-Stil festlegen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Gemäß Standard fürs Gerät</string>
+
 </resources>
