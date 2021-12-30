@@ -233,20 +233,9 @@
     <string name="roaming_indicator_icon_summary">Anzeige des Roaming-Indikators im Signalsymbol im Roaming-Modus</string>
 
     <!-- Lock screen visualizer -->
-    <string name="enable_visualizer">Musikvisualisierung aktivieren</string>
     <string name="lockscreen_visualizer_title">Musikvisualisierung</string>
     <string name="lockscreen_visualizer_enable">Musikvisualisierung</string>
     <string name="lockscreen_visualizer_enable_summary">Visualisierung während der Musikwiedergabe anzeigen</string>
-    <string name="lockscreen_autocolor_title">Automatische Farbe</string>
-    <string name="lockscreen_autocolor_summary">Farbe mit Sperrbildschirmhintergrund synchronisieren</string>
-    <string name="lockscreen_autocolor_lavalamp">Lavalampe muss dazu deaktiviert sein</string>
-    <string name="lockscreen_lavalamp_title">Lavalampeneffekt</string>
-    <string name="lockscreen_lavalamp_summary">Verwenden Sie eine glatte Farbmischungsanimation im Lavalampenstil</string>
-    <string name="lockscreen_lavalamp_speed_title">Farbmischintervall</string>
-    <string name="lockscreen_solid_lines_category">Durchgehende Linien</string>
-    <string name="lockscreen_solid_units_count_title">Anzahl der Linien</string>
-    <string name="lockscreen_solid_fudge_factor_title">Füll-Faktor</string>
-    <string name="lockscreen_solid_units_opacity_title">Deckkraft der Linien</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Helligkeitsregler</string>
