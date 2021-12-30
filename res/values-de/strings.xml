@@ -232,11 +232,6 @@
     <string name="roaming_indicator_icon_title">Roaming-Indikator anzeigen</string>
     <string name="roaming_indicator_icon_summary">Anzeige des Roaming-Indikators im Signalsymbol im Roaming-Modus</string>
 
-    <!-- Lock screen visualizer -->
-    <string name="lockscreen_visualizer_title">Musikvisualisierung</string>
-    <string name="lockscreen_visualizer_enable">Musikvisualisierung</string>
-    <string name="lockscreen_visualizer_enable_summary">Visualisierung während der Musikwiedergabe anzeigen</string>
-
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Helligkeitsregler</string>
     <string name="qs_brightness_slider_title">Helligkeitsregler anzeigen</string>
