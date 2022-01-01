@@ -385,8 +385,6 @@
     <string name="combined_status_bar_signal_icons">Combined signal icons</string>
     <string name="combined_status_bar_signal_icons_summary">Enable combined signal icons in status bar\nRequires a SystemUI restart</string>
 
-    <string name="dark_ui_mode_summary">Browse the dark theme options</string>
-
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">In-call vibration options</string>
     <string name="incall_vibrate_connect_title">Vibrate on connect</string>

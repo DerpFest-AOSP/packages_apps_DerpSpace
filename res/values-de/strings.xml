@@ -383,8 +383,6 @@
     <string name="combined_status_bar_signal_icons">Kombinierte Signalsymbole</string>
     <string name="combined_status_bar_signal_icons_summary">Kombinierte Signalsymbole in der Statusleiste anzeigen\nErfordert einen Neustart der SystemUI</string>
 
-    <string name="dark_ui_mode_summary">Durchstöbern Sie die dunklen Themenoptionen</string>
-
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Vibrationsoptionen bei Anruf</string>
     <string name="incall_vibrate_connect_title">Beim Verbinden vibrieren</string>
@@ -540,8 +538,5 @@
     <string name="pulse_vertical_mirror_summary">Erstellen Sie eine andere Audiovisualisierung und drehen Sie es vertikal</string>
     <string name="visualizer_center_mirrored_title">Mittig gespiegelt</string>
     <string name="visualizer_center_mirrored_summary">Stellen Sie den Visualizer in den Modus Mittig gespiegelt ein</string>
-
-    <string name="theme_customization_font_title">Systemüberschrift (Standard)</string>
-    <string name="theme_customization_icon_pack_title">Symbolpaket</string>
 
 </resources>
