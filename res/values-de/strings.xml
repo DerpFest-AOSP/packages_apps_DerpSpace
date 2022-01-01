@@ -412,12 +412,6 @@
     <string name="always_on_display_schedule_mixed_sunset">Von Sonnenuntergang bis zu einer bestimmten Zeit einschalten</string>
     <string name="always_on_display_schedule_mixed_sunrise">Von einer bestimmten Zeit bis zum Sonnenaufgang einschalten</string>
 
-    <!-- Custom Signal bar icons -->
-    <string name="custom_signal_bar_title">Mobilfunksymbole</string>
-
-    <!-- Custom Wi-Fi bar icons -->
-    <string name="custom_wifi_bar_title">WLAN-Symbol</string>
-
     <!-- Pulse notifications lightning -->
     <string name="pulse_ambient_light_title">Kantenbeleuchtung</string>
     <string name="pulse_ambient_light_summary">Kantenbeleuchtung beim Eingang von Benachrichtigungen anzeigen</string>
