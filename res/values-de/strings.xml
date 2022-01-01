@@ -553,4 +553,12 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Gemäß Standard fürs Gerät</string>
 
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="theme_customization_wifi_icon_title">WLAN-Symbol</string>
+    <string name="theme_customization_wifi_icon_summary">Stil für WLAN-Symbol festlegen</string>
+
+    <!-- Custom Signal bar icons -->
+    <string name="theme_customization_signal_icon_title">Mobilfunksymbole</string>
+    <string name="theme_customization_signal_icon_summary">Stil für Mobilfunksymbole festlegen</string>
+
 </resources>

@@ -571,4 +571,12 @@
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
     <string name="theme_customization_device_default">Device default</string>
 
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="theme_customization_wifi_icon_title">Wifi icon</string>
+    <string name="theme_customization_wifi_icon_summary">Set Wifi icon style</string>
+
+    <!-- Custom Signal bar icons -->
+    <string name="theme_customization_signal_icon_title">Signal icons</string>
+    <string name="theme_customization_signal_icon_summary">Set signal icons style</string>
+
 </resources>
