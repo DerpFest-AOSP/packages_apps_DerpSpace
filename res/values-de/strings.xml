@@ -208,7 +208,7 @@
     <string name="lockscreen_media_art_options_title">Mediengrafiken</string>
 
     <!-- Fingerprint authentication vibration -->
-    <string name="fprint_sucess_vib_title">Vibrieren bei Fingerabdruck-Authentifizierung</string>
+    <string name="fprint_sucess_vib_title">Vibration bei Fingerabdruck-Authentifizierung</string>
     <string name="fprint_sucess_vib_summary">Bei erfolgreicher Fingerabdruck-Erkennung vibrieren</string>
     <string name="fprint_error_vib_title">Vibration bei Fingerabdruckfehlern</string>
     <string name="fprint_error_vib_summary">Bei fehlgeschlagener Fingerabdruckauthentifizierung vibrieren</string>
@@ -546,5 +546,8 @@
     <string name="pulse_vertical_mirror_summary">Erstellen Sie eine andere Audiovisualisierung und drehen Sie es vertikal</string>
     <string name="visualizer_center_mirrored_title">Mittig gespiegelt</string>
     <string name="visualizer_center_mirrored_summary">Stellen Sie den Visualizer in den Modus Mittig gespiegelt ein</string>
+
+    <string name="theme_customization_font_title">Systemüberschrift (Standard)</string>
+    <string name="theme_customization_icon_pack_title">Symbolpaket</string>
 
 </resources>
