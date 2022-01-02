@@ -38,6 +38,18 @@
             android:summary="@string/keyguard_show_battery_always_summary"
             android:defaultValue="false" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="ambient_pulse_category"
+        android:title="@string/ambient_pulse_title">
+
+        <com.derp.support.preferences.SecureSettingSwitchPreference
+            android:key="ambient_wake_gestures"
+            android:title="@string/ambient_wake_gestures_title"
+            android:summary="@string/ambient_wake_gestures_summary"
+            android:defaultValue="false" />
+
         <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="pulse_on_new_tracks"
             android:title="@string/pulse_on_new_tracks_title"
