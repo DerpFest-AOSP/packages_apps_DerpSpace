@@ -46,6 +46,12 @@
         android:title="@string/general_category">
 
     <com.derp.support.preferences.SystemSettingSwitchPreference
+        android:defaultValue="false"
+        android:key="lockscreen_small_clock"
+        android:summary="@string/lockscreen_small_clock_summary"
+        android:title="@string/lockscreen_small_clock_title" />
+
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"

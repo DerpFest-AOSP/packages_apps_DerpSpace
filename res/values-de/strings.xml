@@ -579,4 +579,8 @@
     <string name="screen_off_animation_default">Standard</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Skalieren</string>
+
+    <string name="lockscreen_small_clock_title">Immer kleine Uhr anzeigen</string>
+    <string name="lockscreen_small_clock_summary">Ändert den Uhrstil nicht mehr basierend auf Benachrichtigungen</string>
+
 </resources>

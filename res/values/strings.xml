@@ -583,4 +583,8 @@
     <string name="screen_off_animation_default">Default</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
+
+    <string name="lockscreen_small_clock_title">Always show small clock</string>
+    <string name="lockscreen_small_clock_summary">Do not change clock style based on notifications</string>
+
 </resources>
