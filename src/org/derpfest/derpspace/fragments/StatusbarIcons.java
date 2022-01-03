@@ -23,6 +23,8 @@ import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.view.LayoutInflater;
@@ -61,6 +63,9 @@ import com.android.internal.util.derp.ThemeUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -76,6 +81,10 @@ public class StatusbarIcons extends SettingsPreferenceFragment {
     private String mCategory = "android.theme.customization.icon_pack.android";
 
     private List<String> mPkgs;
+
+    private ExecutorService mExecutor = Executors.newSingleThreadExecutor();
+    private Handler mHandler = new Handler();
+    private final AtomicBoolean mApplyingOverlays = new AtomicBoolean(false);
 
     Map<String, String> overlayMap = new HashMap<String, String>();
     {
@@ -164,6 +173,7 @@ public class StatusbarIcons extends SettingsPreferenceFragment {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    if (mApplyingOverlays.get()) return;
                     updateActivatedStatus(mSelectedPkg, false);
                     updateActivatedStatus(iconPkg, true);
                     mSelectedPkg = iconPkg;
@@ -235,12 +245,16 @@ public class StatusbarIcons extends SettingsPreferenceFragment {
     }
 
     public void enableOverlays(int position) {
-        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
-        String pattern = "android".equals(mPkgs.get(position)) ? ""
-                : mPkgs.get(position).split("\\.")[4];
-        for (Map.Entry<String, String> entry : overlayMap.entrySet()) {
-            enableOverlay(entry.getValue(), entry.getKey(), pattern);
-        }
+        mApplyingOverlays.set(true);
+        mExecutor.execute(() -> {
+            mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
+            String pattern = "android".equals(mPkgs.get(position)) ? ""
+                    : mPkgs.get(position).split("\\.")[4];
+            for (Map.Entry<String, String> entry : overlayMap.entrySet()) {
+                enableOverlay(entry.getValue(), entry.getKey(), pattern);
+            }
+            mHandler.post(() -> mApplyingOverlays.set(false));
+        });
     }
 
     public void enableOverlay(String category, String target, String pattern) {

@@ -27,6 +27,8 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.view.LayoutInflater;
@@ -67,6 +69,9 @@ import com.android.internal.util.derp.ThemeUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.List;
 import java.util.Arrays;
 
@@ -81,6 +86,10 @@ public class IconShapes extends SettingsPreferenceFragment {
     private String mCategory = ICON_SHAPE_KEY;
 
     private List<String> mPkgs;
+
+    private ExecutorService mExecutor = Executors.newSingleThreadExecutor();
+    private Handler mHandler = new Handler();
+    private final AtomicBoolean mApplyingOverlays = new AtomicBoolean(false);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -153,10 +162,21 @@ public class IconShapes extends SettingsPreferenceFragment {
                      pkg.equals(currentPackageName) || isDefault ? 170 : 75);
             holder.image.setBackgroundTintList(ColorStateList.valueOf(color));
 
+            if (currentPackageName.equals(pkg)) {
+                mAppliedPkg = pkg;
+                if (mSelectedPkg == null) {
+                    mSelectedPkg = pkg;
+                }
+            }
+
             holder.itemView.findViewById(R.id.option_tile).setBackgroundDrawable(null);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    if (mApplyingOverlays.get()) return;
+                    updateActivatedStatus(mSelectedPkg, false);
+                    updateActivatedStatus(pkg, true);
+                    mSelectedPkg = pkg;
                     enableOverlays(position);
                 }
             });
@@ -175,6 +195,22 @@ public class IconShapes extends SettingsPreferenceFragment {
                 name = (TextView) itemView.findViewById(R.id.option_label);
                 image = (ImageView) itemView.findViewById(R.id.option_thumbnail);
             }
+        }
+
+        private void updateActivatedStatus(String pkg, boolean isActivated) {
+            int index = mPkgs.indexOf(pkg);
+            if (index < 0) return;
+
+            RecyclerView.ViewHolder holder = mRecyclerView.findViewHolderForAdapterPosition(index);
+            if (holder == null) return;
+
+            ImageView thumbnail = holder.itemView.findViewById(R.id.option_thumbnail);
+            if (thumbnail == null) return;
+
+            int color = ColorUtils.setAlphaComponent(
+                Utils.getColorAttrDefaultColor(getContext(), android.R.attr.colorAccent),
+                isActivated ? 170 : 75);
+            thumbnail.setBackgroundTintList(ColorStateList.valueOf(color));
         }
     }
 
@@ -203,6 +239,10 @@ public class IconShapes extends SettingsPreferenceFragment {
     }
 
     public void enableOverlays(int position) {
-        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
+        mApplyingOverlays.set(true);
+        mExecutor.execute(() -> {
+            mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
+            mHandler.post(() -> mApplyingOverlays.set(false));
+        });
     }
 }

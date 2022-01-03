@@ -23,6 +23,8 @@ import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.view.LayoutInflater;
@@ -61,6 +63,9 @@ import com.android.internal.util.derp.ThemeUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -76,6 +81,10 @@ public class WifiIcon extends SettingsPreferenceFragment {
     private String mCategory = "android.theme.customization.wifi_icon";
 
     private List<String> mPkgs;
+
+    private ExecutorService mExecutor = Executors.newSingleThreadExecutor();
+    private Handler mHandler = new Handler();
+    private final AtomicBoolean mApplyingOverlays = new AtomicBoolean(false);
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -156,6 +165,7 @@ public class WifiIcon extends SettingsPreferenceFragment {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    if (mApplyingOverlays.get()) return;
                     updateActivatedStatus(mSelectedPkg, false);
                     updateActivatedStatus(iconPkg, true);
                     mSelectedPkg = iconPkg;
@@ -227,18 +237,10 @@ public class WifiIcon extends SettingsPreferenceFragment {
     }
 
     public void enableOverlays(int position) {
-        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
-    }
-
-    public void enableOverlay(String category, String target, String pattern) {
-        if (pattern.isEmpty()) {
-            mThemeUtils.setOverlayEnabled(category, "android");
-            return;
-        }
-        for (String pkg: mThemeUtils.getOverlayPackagesForCategory(category, target)) {
-            if (pkg.contains(pattern)) {
-                mThemeUtils.setOverlayEnabled(category, pkg);
-            }
-        }
+        mApplyingOverlays.set(true);
+        mExecutor.execute(() -> {
+            mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
+            mHandler.post(() -> mApplyingOverlays.set(false));
+        });
     }
 }
