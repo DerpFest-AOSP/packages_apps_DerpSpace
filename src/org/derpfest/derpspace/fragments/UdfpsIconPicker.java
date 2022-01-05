@@ -199,7 +199,9 @@ public class UdfpsIconPicker extends SettingsPreferenceFragment {
         try {
             PackageManager pm = context.getPackageManager();
             Resources res = pm.getResourcesForApplication(mPkg);
-            return res.getDrawable(res.getIdentifier(drawableName, "drawable", mPkg));
+            Context ctx = context.createPackageContext(
+                    mPkg, Context.CONTEXT_IGNORE_SECURITY);
+            return ctx.getDrawable(res.getIdentifier(drawableName, "drawable", mPkg));
         }
         catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();

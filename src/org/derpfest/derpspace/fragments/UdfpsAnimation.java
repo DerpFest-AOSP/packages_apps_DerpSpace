@@ -84,6 +84,8 @@ public class UdfpsAnimation extends SettingsPreferenceFragment implements
     private String[] mAnimPreviews;
     private String[] mTitles;
 
+    private boolean mEnabled;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -129,10 +131,10 @@ public class UdfpsAnimation extends SettingsPreferenceFragment implements
         final SettingsActivity activity = (SettingsActivity) getActivity();
         final SettingsMainSwitchBar switchBar = activity.getSwitchBar();
         mSwitch = switchBar.getSwitch();
-        boolean enabled = Settings.System.getInt(getActivity().getContentResolver(),
+        mEnabled = Settings.System.getInt(getActivity().getContentResolver(),
                        Settings.System.UDFPS_ANIM, 0) == 1;
-        mSwitch.setChecked(enabled);
-        setEnabled(enabled);
+        mSwitch.setChecked(mEnabled);
+        setEnabled(mEnabled);
         switchBar.setTitle(getActivity().getString(R.string.udfps_recog_animation));
         switchBar.addOnSwitchChangeListener(this);
         switchBar.show();
@@ -214,6 +216,10 @@ public class UdfpsAnimation extends SettingsPreferenceFragment implements
                             Settings.System.UDFPS_ANIM_STYLE, position);
                 }
             });
+
+            holder.itemView.setEnabled(mEnabled);
+            holder.itemView.findViewById(R.id.option_thumbnail).setAlpha(mEnabled ? 1f : 0.5f);
+            holder.itemView.findViewById(R.id.option_label).setAlpha(mEnabled ? 1f : 0.5f);
         }
 
         @Override
