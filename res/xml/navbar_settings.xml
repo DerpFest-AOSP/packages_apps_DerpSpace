@@ -38,4 +38,9 @@
         android:dependency="navbar_visibility"
         android:defaultValue="false" />
 
+    <com.android.settingslib.widget.FooterPreference
+        android:key="navigation_bar_footer_preference"
+        android:selectable="false"
+        android:title="@string/navigation_bar_help_text" />
+
 </PreferenceScreen>
