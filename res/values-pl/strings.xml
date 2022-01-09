@@ -480,7 +480,6 @@
     <string name="ambient_battery_title">Bateria na ekranie zawsze włączonym</string>
 
     <!-- AoD battery bar -->
-    <string name="aod_display_category">Ekran zawsze włączony</string>
     <string name="keyguard_show_battery_title">Pasek baterii podczas ładowania</string>
     <string name="keyguard_show_battery_summary">Wyświetlanie paska baterii na ekranie zawsze włączonym podczas ładowania</string>
     <string name="keyguard_show_battery_always_title">Zawsze pokazuj pasek baterii</string>
