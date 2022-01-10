@@ -26,6 +26,12 @@
         android:title="@string/general_category">
 
         <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="disable_ripple_effect"
+            android:title="@string/disable_fingerprint_ripple_effect_title"
+            android:summary="@string/disable_fingerprint_ripple_effect_summary"
+            android:defaultValue="false" />
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
             android:title="@string/lockscreen_battery_info_title"
             android:summary="@string/lockscreen_battery_info_summary"
