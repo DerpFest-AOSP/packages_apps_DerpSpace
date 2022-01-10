@@ -585,4 +585,8 @@
     <string name="pixel_navbar_anim_title">Pixel-Animation</string>
     <string name="pixel_navbar_anim_summary">Animation der Home-Taste aktivieren</string>
 
+    <!-- Ripple Effect on lockscreen -->
+    <string name="disable_fingerprint_ripple_effect_title">Ripple-Effekt</string>
+    <string name="disable_fingerprint_ripple_effect_summary">Ripple-Effekt beim Entsperren deaktivieren</string>
+
 </resources>

@@ -22,6 +22,12 @@
         android:title="@string/fingerprint_category">
 
     <com.derp.support.preferences.SystemSettingSwitchPreference
+        android:key="disable_ripple_effect"
+        android:title="@string/disable_fingerprint_ripple_effect_title"
+        android:summary="@string/disable_fingerprint_ripple_effect_summary"
+        android:defaultValue="false" />
+
+    <com.derp.support.preferences.SystemSettingSwitchPreference
         android:key="fingerprint_success_vib"
         android:title="@string/fprint_sucess_vib_title"
         android:summary="@string/fprint_sucess_vib_summary"
