@@ -477,6 +477,19 @@
     <string name="pulse_on_new_tracks_title">Ambient Music Ticker anzeigen</string>
     <string name="pulse_on_new_tracks_summary">Ambient Display anzeigen, wenn ein neuer Songtitel abgespielt wird. Die Titelinformationen doppelt antippen, um zum nächsten Titel zu springen.</string>
 
+    <string name="ambient_ui">Ambient/Always on display</string>
+    <string name="ambient_battery_title">AOD-Akkustand</string>
+
+    <!-- AoD battery bar -->
+    <string name="keyguard_show_battery_title">Akkuleiste beim Aufladen</string>
+    <string name="keyguard_show_battery_summary">Akkuleiste beim Aufladen auf dem Bildschirm anzeigen</string>
+    <string name="keyguard_show_battery_always_title">Akkuleiste immer anzeigen</string>
+    <string name="keyguard_show_battery_always_summary">Akkuleiste immer auf dem Bildschirm anzeigen</string>
+
+    <!-- Ambient display battery percentage --> 
+    <string name="ambient_battery_percent_title">Akkustand unten</string> 
+    <string name="ambient_battery_percent_summary">Aktivieren, um Batterieprozentsatz anzuzeigen</string> 
+
     <!-- Notifications general category -->
     <string name="notifications_general_category_title">Allgemein</string>
 
