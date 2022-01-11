@@ -38,6 +38,12 @@
             android:summary="@string/keyguard_show_battery_always_summary"
             android:defaultValue="false" />
 
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
