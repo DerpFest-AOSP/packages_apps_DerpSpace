@@ -87,8 +87,12 @@ public class NavbarSettings extends SettingsPreferenceFragment implements OnPref
             KEY_NAVIGATION_BAR_ENABLED,
             defaultToNavigationBar ? 1 : 0) == 1));
         mNavigationBar.setOnPreferenceChangeListener(this);
+
+        final boolean isThreeButtonNavbarEnabled = derpUtils.isOverlayEnabled("com.android.internal.systemui.navbar.threebutton");
         mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
-        mLayoutSettings.setEnabled(derpUtils.isOverlayEnabled("com.android.internal.systemui.navbar.threebutton"));
+        mLayoutSettings.setEnabled(isThreeButtonNavbarEnabled);
+        mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
+        mPixelNavAnimation.setEnabled(isThreeButtonNavbarEnabled);
 
         mHandler = new Handler();
     }
