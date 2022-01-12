@@ -604,4 +604,8 @@
     <string name="statusbar_colored_icons_title">Farbige Symbole</string>
     <string name="statusbar_colored_icons_summary">Verwenden Sie die richtigen App-Symbole für Benachrichtigungssymbole in der Statusleiste</string>
 
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Schwarzes Design verwenden</string>
+    <string name="system_black_theme_summary">Schwarze Hintergrundfarben erzwingen</string>
+
 </resources>
