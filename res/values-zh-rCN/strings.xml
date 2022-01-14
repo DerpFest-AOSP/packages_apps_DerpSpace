@@ -503,8 +503,6 @@
     <!-- Navigation bar -->
     <string name="navigation_bar_title">屏幕导航栏</string>
     <string name="navigation_bar_summary">启用屏幕导航栏</string>
-    <string name="navigation_bar_arrow_keys_title">键入时显示箭头键</string>
-    <string name="navigation_bar_arrow_keys_summary">键入时在导航栏中显示左右光标按钮</string>
     <string name="navigation_bar_layout_title">布局</string>
     <string name="navigation_bar_layout_summary">自定义导航栏的布局</string>
     <string name="navigation_bar_help_text">这些设置主要涉及三键导航栏。如果您使用手势导航并希望对其进行自定义，例如隐藏手势手柄，请访问手势和按键</string>

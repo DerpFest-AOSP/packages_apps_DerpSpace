@@ -500,8 +500,6 @@
     <!-- Navigation bar -->
     <string name="navigation_bar_title">Navigationsleiste einblenden</string>
     <string name="navigation_bar_summary">Navigationsleiste immer anzeigen</string>
-    <string name="navigation_bar_arrow_keys_title">Pfeiltasten während des Schreibens</string>
-    <string name="navigation_bar_arrow_keys_summary">Zeige nach links und rechts Pfeiltasten während des Schreibens</string>
     <string name="navigation_bar_layout_title">Layout</string>
     <string name="navigation_bar_layout_summary">Passen Sie das Layout der Navigationsleiste an</string>
     <string name="navigation_bar_help_text">Diese Einstellungen beziehen sich hauptsächlich auf die 3-Tasten-Navigationsleiste. Wenn Sie die Gestennavigation verwenden und diese anpassen möchten, z.B. Verstecken des Gestengriffs, bitte besuchen Sie: Einstellungen > System > Gesten und Tasten.</string>

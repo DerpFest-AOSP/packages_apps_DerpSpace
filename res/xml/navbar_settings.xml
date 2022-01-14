@@ -38,13 +38,6 @@
             android:targetClass="com.android.systemui.tuner.NavbarActivity" />
     </Preference>
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="navigation_bar_menu_arrow_keys"
-        android:title="@string/navigation_bar_arrow_keys_title"
-        android:summary="@string/navigation_bar_arrow_keys_summary"
-        android:dependency="navbar_visibility"
-        android:defaultValue="false" />
-
     <com.android.settingslib.widget.FooterPreference
         android:key="navigation_bar_footer_preference"
         android:selectable="false"
