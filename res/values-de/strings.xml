@@ -449,4 +449,8 @@
     <string name="tint_background_title">Hintergrund färben</string>
     <string name="tint_background_summary">Luminanz- und Chroma-Auswahl auch die Hintergrundfarben beeinflussen lassen</string>
 
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Farbige Symbole</string>
+    <string name="statusbar_colored_icons_summary">Verwenden Sie die richtigen App-Symbole für Benachrichtigungssymbole in der Statusleiste</string>
+
 </resources>
