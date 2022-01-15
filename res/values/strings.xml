@@ -607,4 +607,8 @@
     <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
     <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal locksreen on wake gestures</string>
 
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Colored icons</string>
+    <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in statusbar</string>
+
 </resources>
