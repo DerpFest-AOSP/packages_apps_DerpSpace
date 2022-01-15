@@ -28,6 +28,17 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/lock_screen_custom_clock_face_category">
+
+        <ListPreference
+            android:key="lock_screen_custom_clock_face"
+            android:summary="%s"
+            android:title="@string/lock_screen_custom_clock_face_title"
+            android:entries="@array/lock_screen_custom_clock_face_entries"
+            android:entryValues="@array/lock_screen_custom_clock_face_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="theme_customization_category"
         android:title="@string/theme_customization_category">
 

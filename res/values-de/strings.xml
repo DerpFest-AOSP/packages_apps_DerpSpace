@@ -750,4 +750,12 @@
     <string name="notification_material_dismiss_style_title">Stil der Schaltfläche</string>
     <string name="notification_material_dismiss_bgstyle_title">Hintergrund der Schaltfläche</string>
 
+    <!-- Lockscreen Clocks -->
+    <string name="lock_screen_custom_clock_face_category">Sperrbildschirmuhr</string>
+    <string name="lock_screen_custom_clock_face_title">Stil der Sperrbildschirmuhr</string>
+    <string name="lock_screen_custom_clock_face_default">Standard</string>
+    <string name="lock_screen_custom_clock_face_sfunny">Sfuny</string>
+    <string name="lock_screen_custom_clock_face_oos">OOS</string>
+    <string name="lock_screen_custom_clock_face_clockertino">Clockertino</string>
+
 </resources>
