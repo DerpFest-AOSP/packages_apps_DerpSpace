@@ -78,6 +78,9 @@
     <!-- Quick Settings -->
     <string name="quick_settings_title">Quick Settings</string>
 
+    <!-- Quick Settings footer category -->
+    <string name="footer_category">Footer</string>
+
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusbar Items</string>
 

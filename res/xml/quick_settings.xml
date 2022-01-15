@@ -23,6 +23,38 @@
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
 
+        <ListPreference
+            android:key="smart_pulldown"
+            android:title="@string/smart_pulldown_title"
+            android:entries="@array/smart_pulldown_entries"
+            android:entryValues="@array/smart_pulldown_values"
+            android:persistent="false" />
+
+        <ListPreference
+            android:key="status_bar_quick_qs_pulldown"
+            android:title="@string/status_bar_quick_qs_pulldown"
+            android:entries="@array/quick_pulldown_entries"
+            android:entryValues="@array/quick_pulldown_values"
+            android:defaultValue="0" />
+
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_show_battery_estimate"
+            android:title="@string/battery_estimate_title"
+            android:summary="@string/battery_estimate_summary"
+            android:defaultValue="true"/>
+
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="use_tiles_on_secure_keyguard"
+            android:title="@string/use_tiles_on_secure_keyguard_title"
+            android:summary="@string/use_tiles_on_secure_keyguard_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+     <PreferenceCategory
+        android:key="quick_settings_footer_category"
+        android:title="@string/footer_category">
+
         <!-- QS footer text toggle -->
         <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_text_show"
@@ -49,36 +81,10 @@
             android:summary="@string/qs_running_services_summary"
             android:defaultValue="false" />
 
-        <ListPreference
-            android:key="status_bar_quick_qs_pulldown"
-            android:title="@string/status_bar_quick_qs_pulldown"
-            android:entries="@array/quick_pulldown_entries"
-            android:entryValues="@array/quick_pulldown_values"
-            android:defaultValue="0" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_show_battery_estimate"
-            android:title="@string/battery_estimate_title"
-            android:summary="@string/battery_estimate_summary"
-            android:defaultValue="true"/>
-
         <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_warnings"
             android:title="@string/qs_footer_warnings_title"
             android:summary="@string/qs_footer_warnings_summary"
-            android:defaultValue="true" />
-
-        <ListPreference
-            android:key="smart_pulldown"
-            android:title="@string/smart_pulldown_title"
-            android:entries="@array/smart_pulldown_entries"
-            android:entryValues="@array/smart_pulldown_values"
-            android:persistent="false" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="use_tiles_on_secure_keyguard"
-            android:title="@string/use_tiles_on_secure_keyguard_title"
-            android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
 
     </PreferenceCategory>
