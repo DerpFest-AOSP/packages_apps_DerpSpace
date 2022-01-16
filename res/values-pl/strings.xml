@@ -499,8 +499,6 @@
     <!-- Navigation bar -->
     <string name="navigation_bar_title">Pokaż pasek nawigacyjny</string>
     <string name="navigation_bar_summary">Zawsze pokazuj pasek nawigacyjny</string>
-    <string name="navigation_bar_arrow_keys_title">Pokaż klawisze strzałek podczas pisania</string>
-    <string name="navigation_bar_arrow_keys_summary">Wyświetlanie przycisków lewego i prawego kursora na pasku nawigacyjnym podczas pisania</string>
     <string name="navigation_bar_layout_title">Układ</string>
     <string name="navigation_bar_layout_summary">Dostosuj układ paska nawigacyjnego</string>
 
