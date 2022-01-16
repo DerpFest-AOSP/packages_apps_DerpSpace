@@ -374,7 +374,7 @@
 
     <!-- Location privacy indicator -->
     <string name="location_privacy_indicator_title">Wskaźnik poufności lokalizacji</string>
-    <string name="location_privacy_indicator_summary">Wyświetlanie wskaźnika prywatności dla lokalizacji. Wymaga ponownego uruchomienia SystemUI</string>
+    <string name="location_privacy_indicator_summary">Wyświetlanie wskaźnika prywatności dla lokalizacji</string>
 
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Pokaż tekst w stopce QS</string>

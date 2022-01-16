@@ -408,7 +408,7 @@
 
     <!-- Location privacy indicator -->
     <string name="location_privacy_indicator_title">Indicatore privacy posizione</string>
-    <string name="location_privacy_indicator_summary">Mostra indicatore di privacy per la posizione\nRichiede un riavvio di SystemUI</string>
+    <string name="location_privacy_indicator_summary">Mostra indicatore di privacy per la posizione</string>
 
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Mostra testo footer impostazioni rapide</string>

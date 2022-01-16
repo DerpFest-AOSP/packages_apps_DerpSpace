@@ -32,7 +32,6 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 import android.provider.Settings;
-import android.provider.DeviceConfig;
 import android.util.Log;
 import android.view.WindowManagerGlobal;
 import android.view.IWindowManager;
@@ -54,13 +53,11 @@ import com.derp.support.preferences.SecureSettingSwitchPreference;
 public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
-    private static final String LOCATION_INDICATOR_PREF_KEY = "enable_location_privacy_indicator";
     private static final String COMBINED_STATUSBAR_ICONS = "show_combined_status_bar_signal_icons";
     private static final String CONFIG_RESOURCE_NAME = "flag_combined_status_bar_signal_icons";
     private static final String SYSTEMUI_PACKAGE = "com.android.systemui";
 
     private SwitchPreference mShowDerpLogo;
-    private SwitchPreference mLocationIndicator;
     private SecureSettingSwitchPreference mCombinedIcons;
 
     @Override
@@ -76,11 +73,6 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
         mShowDerpLogo.setChecked((Settings.System.getInt(resolver,
              Settings.System.STATUS_BAR_LOGO, 0) == 1));
         mShowDerpLogo.setOnPreferenceChangeListener(this);
-
-        mLocationIndicator = (SwitchPreference) findPreference(LOCATION_INDICATOR_PREF_KEY);
-        mLocationIndicator.setChecked((Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.ENABLE_LOCATION_PRIVACY_INDICATOR,
-                shouldShowLocationIndicator() ? 1 : 0, UserHandle.USER_CURRENT) == 1));
 
         mCombinedIcons = (SecureSettingSwitchPreference)
                 findPreference(COMBINED_STATUSBAR_ICONS);
@@ -122,13 +114,6 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
             Settings.System.putInt(resolver,
                     Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
             return true;
-        } else if (preference == mLocationIndicator) {
-            boolean value = (Boolean) objValue;
-            Settings.Secure.putIntForUser(resolver,
-                    Settings.Secure.ENABLE_LOCATION_PRIVACY_INDICATOR, value ? 1 : 0,
-                    UserHandle.USER_CURRENT);
-            derpUtils.showSystemUiRestartDialog(getActivity());
-            return true;
         } else if (preference == mCombinedIcons) {
             boolean enabled = (boolean) objValue;
             Settings.Secure.putInt(resolver,
@@ -137,11 +122,6 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
             return true;
         }
         return false;
-    }
-
-    private static boolean shouldShowLocationIndicator() {
-        return DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_PRIVACY,
-            "location_indicators_enabled", false);
     }
 
 }

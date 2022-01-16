@@ -380,7 +380,7 @@
 
     <!-- Location privacy indicator -->
     <string name="location_privacy_indicator_title">Location privacy indicator</string>
-    <string name="location_privacy_indicator_summary">Show privacy indicator for location\nRequires a SystemUI restart</string>
+    <string name="location_privacy_indicator_summary">Show privacy indicator for location</string>
 
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Show QS footer text</string>
