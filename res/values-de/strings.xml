@@ -373,9 +373,11 @@
     <string name="battery_estimate_title">Geschätzte Akkulaufzeit</string>
     <string name="battery_estimate_summary">Geschätzte verbleibende Akkulaufzeit anzeigen, sofern verfügbar</string>
 
-    <!-- Location privacy indicator -->
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">Indikator für Verwendung von Mikrofon und Kamera</string>
+    <string name="mic_camera_privacy_indicator_summary">Indikator anzeigen, wenn eine App auf Mikrofon oder Kamera zugreift</string>
     <string name="location_privacy_indicator_title">Indikator für Standortdatennutzung</string>
-    <string name="location_privacy_indicator_summary">Indikator bei Verwendung von Standortdaten anzeigen</string>
+    <string name="location_privacy_indicator_summary">Indikator anzeigen, wenn eine App auf Standortdaten zugreift</string>
 
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">QS-Fußzeilentext anzeigen</string>

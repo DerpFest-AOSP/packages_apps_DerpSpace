@@ -378,9 +378,11 @@
     <string name="battery_estimate_title">Battery estimate</string>
     <string name="battery_estimate_summary">Display estimated remaining battery life when available</string>
 
-    <!-- Location privacy indicator -->
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">Mic and camera privacy indicator</string>
+    <string name="mic_camera_privacy_indicator_summary">Show separate indicator when an any app uses mic or camera</string>
     <string name="location_privacy_indicator_title">Location privacy indicator</string>
-    <string name="location_privacy_indicator_summary">Show privacy indicator for location</string>
+    <string name="location_privacy_indicator_summary">Show separate indicator when an any app uses location</string>
 
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Show QS footer text</string>

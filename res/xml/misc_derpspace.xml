@@ -94,6 +94,12 @@
              android:defaultValue="true" />
 
          <com.derp.support.preferences.SecureSettingSwitchPreference
+             android:key="enable_camera_privacy_indicator"
+             android:title="@string/mic_camera_privacy_indicator_title"
+             android:summary="@string/mic_camera_privacy_indicator_summary"
+             android:defaultValue="true" />
+
+         <com.derp.support.preferences.SecureSettingSwitchPreference
              android:key="enable_location_privacy_indicator"
              android:title="@string/location_privacy_indicator_title"
              android:summary="@string/location_privacy_indicator_summary"
