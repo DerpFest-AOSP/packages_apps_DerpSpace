@@ -379,6 +379,10 @@
     <string name="screen_off_fod_title">FOD bei ausgeschaltetem Bildschirm</string>
     <string name="screen_off_fod_summary">Lassen Sie FOD aktiviert, wenn der Bildschirm ausgeschaltet ist</string>
 
+    <!-- Udfps Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">Haptisches Feedback für FOD</string>
+    <string name="udfps_haptic_feedback_summary">Vibrieren beim Berühren des FOD-Symbols</string>
+
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">QS-Fußzeilentext anzeigen</string>
     <string name="qs_footer_text_string_title">QS-Fußzeilentext anpassen</string>

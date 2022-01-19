@@ -58,6 +58,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
     private static final String FOD_NIGHT_LIGHT = "fod_night_light";
     private static final String SCREEN_OFF_FOD = "screen_off_fod";
+    private static final String ENABLE_UDFPS_START_HAPTIC_FEEDBACK = "enable_udfps_start_haptic_feedback";
 
     static final int MODE_DISABLED = 0;
     static final int MODE_NIGHT = 1;
@@ -71,6 +72,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     Preference mAODPref;
     private SystemSettingSwitchPreference mFodNightLight;
     private SystemSettingSwitchPreference mScreenOffFOD;
+    private SystemSettingSwitchPreference mUdfpsHapticFeedback;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -90,6 +92,8 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         mFingerprintErrorVib = findPreference(FINGERPRINT_ERROR_VIB);
         mFodNightLight = findPreference(FOD_NIGHT_LIGHT);
         mScreenOffFOD = findPreference(SCREEN_OFF_FOD);
+        mUdfpsHapticFeedback = findPreference(ENABLE_UDFPS_START_HAPTIC_FEEDBACK);
+
 
         if (mPm.hasSystemFeature(PackageManager.FEATURE_FINGERPRINT) &&
                  mFingerprintManager != null) {
@@ -109,9 +113,13 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
                     mScreenOffFOD.setChecked((Settings.System.getInt(getContentResolver(),
                             Settings.System.SCREEN_OFF_FOD, 1) == 1));
                     mScreenOffFOD.setOnPreferenceChangeListener(this);
+                    mUdfpsHapticFeedback.setChecked((Settings.System.getInt(getContentResolver(),
+                            Settings.System.ENABLE_UDFPS_START_HAPTIC_FEEDBACK, 1) == 1));
+                    mUdfpsHapticFeedback.setOnPreferenceChangeListener(this);
                 } else {
                     fpCategory.removePreference(mFodNightLight);
                     fpCategory.removePreference(mScreenOffFOD);
+                    fpCategory.removePreference(mUdfpsHapticFeedback);
                 }
             }
         } else {
@@ -154,6 +162,11 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.SCREEN_OFF_FOD, value ? 1 : 0);
+            return true;
+        } else if (preference == mUdfpsHapticFeedback) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.ENABLE_UDFPS_START_HAPTIC_FEEDBACK, value ? 1 : 0);
             return true;
         }
         return false;

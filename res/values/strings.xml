@@ -384,6 +384,10 @@
     <string name="screen_off_fod_title">Screen off FOD</string>
     <string name="screen_off_fod_summary">Keep FOD enabled when the screen is off</string>
 
+    <!-- Udfps Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">Udfps haptic feedback</string>
+    <string name="udfps_haptic_feedback_summary">Play haptic feedback on pressing udfps view</string>
+
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Show QS footer text</string>
     <string name="qs_footer_text_string_title">Customize footer text</string>
