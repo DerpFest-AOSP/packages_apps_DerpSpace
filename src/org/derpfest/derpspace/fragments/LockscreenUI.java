@@ -109,6 +109,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
                     mUdfpsHapticFeedback.setChecked((Settings.System.getInt(getContentResolver(),
                             Settings.System.UDFPS_HAPTIC_FEEDBACK, 1) == 1));
                     mUdfpsHapticFeedback.setOnPreferenceChangeListener(this);
+                    mFodNightLight.setChecked((Settings.System.getInt(getContentResolver(),
+                            Settings.System.FOD_NIGHT_LIGHT, 0) == 1));
+                    mFodNightLight.setOnPreferenceChangeListener(this);
                     mScreenOffFOD.setChecked((Settings.System.getInt(getContentResolver(),
                             Settings.System.SCREEN_OFF_FOD, 1) == 1));
                     mScreenOffFOD.setOnPreferenceChangeListener(this);
@@ -153,6 +156,11 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.UDFPS_HAPTIC_FEEDBACK, value ? 1 : 0);
+            return true;
+        } else if (preference == mFodNightLight) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FOD_NIGHT_LIGHT, value ? 0 : 0);
             return true;
         } else if (preference == mScreenOffFOD) {
             boolean value = (Boolean) objValue;
