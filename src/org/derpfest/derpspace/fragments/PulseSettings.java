@@ -187,7 +187,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
                 Settings.Secure.LOCKSCREEN_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
 
         boolean qsPulse = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.QS_PULSE_ENABLED, 1, UserHandle.USER_CURRENT) != 0;
+                Settings.Secure.QS_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
 
         boolean ambientPulse = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.AMBIENT_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
@@ -256,7 +256,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.NAVBAR_PULSE_ENABLED, 0, UserHandle.USER_CURRENT);
         Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.LOCKSCREEN_PULSE_ENABLED, 1, UserHandle.USER_CURRENT);
+                Settings.Secure.LOCKSCREEN_PULSE_ENABLED, 0, UserHandle.USER_CURRENT);
         Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.PULSE_RENDER_STYLE, RENDER_STYLE_SOLID_LINES, UserHandle.USER_CURRENT);
         Settings.Secure.putIntForUser(resolver,
