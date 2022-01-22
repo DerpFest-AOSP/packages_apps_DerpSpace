@@ -390,10 +390,6 @@
     <string name="monet_engine_chroma_factor_title">Colorito</string>
     <string name="monet_engine_linear_lightness_title">Usa scala luminosità personalizzata</string>
 
-    <!-- Udfps Haptic Feedback -->
-    <string name="udfps_haptic_feedback_title">Feedback aptico Udfps</string>
-    <string name="udfps_haptic_feedback_summary">Vibra al tocco dell\'icona udfps</string>
-
     <!-- Tiles on secure keyguard -->
     <string name="use_tiles_on_secure_keyguard_title">Richiedi sblocco per usare tile sensibili</string>
     <string name="use_tiles_on_secure_keyguard_summary">Chiedi di sbloccare il blocco schermo durante l\'uso di tile sensibili</string>

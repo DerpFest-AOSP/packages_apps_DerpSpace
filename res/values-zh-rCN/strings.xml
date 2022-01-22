@@ -359,10 +359,6 @@
     <string name="monet_engine_chroma_factor_title">色彩丰富</string>
     <string name="monet_engine_linear_lightness_title">使用自定义亮度标准</string>
 
-    <!-- Udfps Haptic Feedback -->
-    <string name="udfps_haptic_feedback_title">Udfps 触觉反馈</string>
-    <string name="udfps_haptic_feedback_summary">点击Udfps图标时振动</string>
-
     <!-- Tiles on secure keyguard -->
     <string name="use_tiles_on_secure_keyguard_title">需要解锁才能使用敏感的磁贴</string>
     <string name="use_tiles_on_secure_keyguard_summary">使用敏感磁贴时要求解锁</string>

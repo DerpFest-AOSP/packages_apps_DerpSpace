@@ -358,10 +358,6 @@
     <string name="monet_engine_chroma_factor_title">Красочность</string>
     <string name="monet_engine_linear_lightness_title">Использовать свою шкалу яркости</string>
 
-    <!-- Udfps Haptic Feedback -->
-    <string name="udfps_haptic_feedback_title">Вибрация сканера отпечатков в экране</string>
-    <string name="udfps_haptic_feedback_summary">Вибрировать при касании иконки экранного сканера отпечатков</string>
-
     <!-- Tiles on secure keyguard -->
     <string name="use_tiles_on_secure_keyguard_title">Требовать разблокировки для использования конфиденциальных плиток</string>
     <string name="use_tiles_on_secure_keyguard_summary">Попросить разблокировать экран блокировки для использования конфиденциальных плиток</string>

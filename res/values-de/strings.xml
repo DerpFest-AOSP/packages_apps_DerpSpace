@@ -357,10 +357,6 @@
     <string name="monet_engine_chroma_factor_title">Farbintensität</string>
     <string name="monet_engine_linear_lightness_title">Benutzerdefinierte Helligkeitsskala verwenden</string>
 
-    <!-- Udfps Haptic Feedback -->
-    <string name="udfps_haptic_feedback_title">Haptisches Feedback für FOD</string>
-    <string name="udfps_haptic_feedback_summary">Vibrieren beim Berühren des FOD-Symbols</string>
-
     <!-- Tiles on secure keyguard -->
     <string name="use_tiles_on_secure_keyguard_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
     <string name="use_tiles_on_secure_keyguard_summary">Aufforderung zum Entsperren des Sperrbildschirms bei Verwendung empfindlicher QS-Kacheln</string>

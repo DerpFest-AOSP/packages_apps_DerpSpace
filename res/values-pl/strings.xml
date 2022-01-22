@@ -356,10 +356,6 @@
     <string name="monet_engine_chroma_factor_title">Kolorystyka</string>
     <string name="monet_engine_linear_lightness_title">Użyj niestandardowej skali jasności</string>
 
-    <!-- Udfps Haptic Feedback -->
-    <string name="udfps_haptic_feedback_title">Wibracja zwrotna Udfps</string>
-    <string name="udfps_haptic_feedback_summary">Wibracja po dotknięciu ikony udfps</string>
-
     <!-- Tiles on secure keyguard -->
     <string name="use_tiles_on_secure_keyguard_title">Wymaga odblokowania, aby korzystać z wrażliwych płytek</string>
     <string name="use_tiles_on_secure_keyguard_summary">Prośba o odblokowanie ekranu blokady podczas korzystania z wrażliwych kafelków</string>
