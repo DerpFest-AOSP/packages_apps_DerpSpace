@@ -49,6 +49,12 @@
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
 
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="music_tile_title"
+            android:title="@string/qs_music_tile_track_optional_title"
+            android:summary="@string/qs_music_tile_track_optional_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
      <PreferenceCategory

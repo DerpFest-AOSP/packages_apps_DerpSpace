@@ -706,4 +706,8 @@
     <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
     <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
 
+    <!-- Disable music track title in QS tile -->
+    <string name="qs_music_tile_track_optional_title">Musiktitelanzeige</string>
+    <string name="qs_music_tile_track_optional_summary">Zeigt den Titelnamen als Kachelbezeichnung</string>
+
 </resources>
