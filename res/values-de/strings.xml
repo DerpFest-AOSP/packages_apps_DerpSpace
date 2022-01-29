@@ -614,4 +614,6 @@
     <string name="system_black_theme_title">Schwarzes Design verwenden</string>
     <string name="system_black_theme_summary">Schwarze Hintergrundfarben erzwingen</string>
 
+    <string name="theme_customization_navbar_title">Stil der Navigationsleiste</string>
+
 </resources>

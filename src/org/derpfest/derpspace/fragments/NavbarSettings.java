@@ -146,6 +146,8 @@ public class NavbarSettings extends DashboardFragment implements OnPreferenceCha
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new OverlayCategoryPreferenceController(context,
+                "android.theme.customization.navbar"));             
         return controllers;
     }
 

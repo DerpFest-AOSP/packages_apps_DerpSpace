@@ -621,4 +621,6 @@
     <string name="system_black_theme_title">Use black theme</string>
     <string name="system_black_theme_summary">Force black background colors</string>
 
+    <string name="theme_customization_navbar_title">Navbar styles</string>
+
 </resources>

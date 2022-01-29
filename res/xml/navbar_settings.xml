@@ -28,6 +28,11 @@
         android:defaultValue="true"
         android:dependency="navbar_visibility" />
 
+    <ListPreference
+        android:key="android.theme.customization.navbar"
+        android:dependency="navbar_visibility"
+        android:title="@string/theme_customization_navbar_title" />
+
     <Preference
         android:key="layout_settings"
         android:title="@string/navigation_bar_layout_title"
