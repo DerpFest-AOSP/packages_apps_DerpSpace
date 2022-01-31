@@ -616,4 +616,9 @@
 
     <string name="theme_customization_navbar_title">Stil der Navigationsleiste</string>
 
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Unbegrenzter Google Fotos Speicherplatz</string>
+    <string name="use_photos_spoof_summary">Dein Gerät wird als Pixel XL ausgewiesen, um kostenlos Videos und Fotos in verlustfreier Qualität bei Google Fotos zu speichern</string>
+    <string name="photos_spoof_toast">Fotos-App neustarten, damit es wirksam wird</string>
+
 </resources>

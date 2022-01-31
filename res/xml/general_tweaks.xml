@@ -21,6 +21,12 @@
         android:title="@string/general_category">
 
         <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="use_photos_spoof"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:persistent="false" />
+
+        <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="toast_icon"
             android:title="@string/toast_icon_title"
             android:summary="@string/toast_icon_summary"
