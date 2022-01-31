@@ -26,6 +26,12 @@
         android:key="general_tweaks_general_category"
         android:title="@string/general_category">
 
+        <SwitchPreference
+            android:key="use_photos_spoof"
+            android:title="@string/use_photos_spoof_title"
+            android:summary="@string/use_photos_spoof_summary"
+            android:defaultValue="true" />
+
         <org.derpfest.support.preferences.GlobalSettingSwitchPreference
             android:key="pie_animation_style"
             android:title="@string/pie_animation_style_title"
