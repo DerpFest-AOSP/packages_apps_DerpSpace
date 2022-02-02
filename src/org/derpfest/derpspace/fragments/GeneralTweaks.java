@@ -24,7 +24,7 @@ import android.os.UserHandle;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.provider.Settings;
-import android.util.Log;
+import android.widget.Toast;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -82,6 +82,9 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
         if (preference == mSpoof) {
             String value = ((Boolean) objValue) ? "1" : "0";
             SystemProperties.set(SYS_SPOOF, value);
+            Toast.makeText(getActivity(),
+                    (R.string.photos_spoof_toast),
+                    Toast.LENGTH_LONG).show();
             return true;
         }
         return false;
