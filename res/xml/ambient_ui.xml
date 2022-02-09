@@ -59,7 +59,7 @@
             android:key="ambient_wake_gestures"
             android:title="@string/ambient_wake_gestures_title"
             android:summary="@string/ambient_wake_gestures_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="pulse_on_new_tracks"
