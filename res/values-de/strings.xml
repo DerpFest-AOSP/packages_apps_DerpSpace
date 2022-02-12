@@ -549,10 +549,6 @@
     <string name="navigation_bar_layout_summary">Passen Sie das Layout der Navigationsleiste an</string>
     <string name="navigation_bar_help_text">Diese Einstellungen beziehen sich hauptsächlich auf die 3-Tasten-Navigationsleiste. Wenn Sie die Gestennavigation verwenden und diese anpassen möchten, z.B. Verstecken des Gestengriffs, bitte besuchen Sie: Einstellungen > System > Gesten und Tasten.</string>
 
-    <!-- Units -->
-    <string name="unit_Sekunden">Sekunden</string>
-    <string name="unit_milliSekunden">Millisekunden</string>
-
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">Über Pulse</string>
     <string name="pulse_help_policy_notice_summary">Pulse ist eine brillante Audiovisualisierung, wenn Musik auf dem Gerät abgespielt wird</string>

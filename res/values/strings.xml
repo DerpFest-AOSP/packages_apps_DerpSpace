@@ -555,8 +555,8 @@
     <string name="navigation_bar_help_text">These settings mainly relate to the 3-button navigation bar. If you use gesture navigation and want to customize it, e.g. hide the gesture handle, please visit: Settings > System > Gestures &amp; Keys.</string>
 
     <!-- Units -->
-    <string name="unit_seconds">seconds</string>
-    <string name="unit_milliseconds">milliseconds</string>
+    <string name="unit_seconds">s</string>
+    <string name="unit_milliseconds">ms</string>
     <string name="unit_pixels">dp</string>
 
     <!-- Pulse music visualizer -->
