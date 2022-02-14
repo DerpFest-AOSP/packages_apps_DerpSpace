@@ -42,10 +42,13 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settingslib.search.SearchIndexable;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
+@SearchIndexable
 public class AmbientUI extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
@@ -107,4 +110,7 @@ public class AmbientUI extends SettingsPreferenceFragment implements OnPreferenc
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         return false;
     }
+
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.ambient_ui);
 }
