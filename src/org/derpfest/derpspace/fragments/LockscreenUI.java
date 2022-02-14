@@ -65,21 +65,13 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     private static final String FINGERPRINT_SUCCESS_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
-    private static final String AOD_SCHEDULE_KEY = "always_on_display_schedule";
     private static final String FOD_NIGHT_LIGHT = "fod_night_light";
     private static final String SCREEN_OFF_FOD = "screen_off_fod";
     private static final String ENABLE_UDFPS_START_HAPTIC_FEEDBACK = "enable_udfps_start_haptic_feedback";
 
-    static final int MODE_DISABLED = 0;
-    static final int MODE_NIGHT = 1;
-    static final int MODE_TIME = 2;
-    static final int MODE_MIXED_SUNSET = 3;
-    static final int MODE_MIXED_SUNRISE = 4;
-
     private FingerprintManager mFingerprintManager;
     private SystemSettingSwitchPreference mFingerprintSuccessVib;
     private SystemSettingSwitchPreference mFingerprintErrorVib;
-    Preference mAODPref;
     private SystemSettingSwitchPreference mFodNightLight;
     private SystemSettingSwitchPreference mScreenOffFOD;
     private SystemSettingSwitchPreference mUdfpsHapticFeedback;
@@ -135,9 +127,6 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         } else {
             prefSet.removePreference(fpCategory);
         }
-
-        mAODPref = findPreference(AOD_SCHEDULE_KEY);
-        updateAlwaysOnSummary();
     }
 
     @Override
@@ -148,7 +137,6 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     @Override
     public void onResume() {
         super.onResume();
-        updateAlwaysOnSummary();
     }
 
     @Override
@@ -180,30 +168,6 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             return true;
         }
         return false;
-    }
-
-    private void updateAlwaysOnSummary() {
-        if (mAODPref == null) return;
-        int mode = Settings.Secure.getIntForUser(getActivity().getContentResolver(),
-                Settings.Secure.DOZE_ALWAYS_ON_AUTO_MODE, 0, UserHandle.USER_CURRENT);
-        switch (mode) {
-            default:
-            case MODE_DISABLED:
-                mAODPref.setSummary(R.string.disabled);
-                break;
-            case MODE_NIGHT:
-                mAODPref.setSummary(R.string.night_display_auto_mode_twilight);
-                break;
-            case MODE_TIME:
-                mAODPref.setSummary(R.string.night_display_auto_mode_custom);
-                break;
-            case MODE_MIXED_SUNSET:
-                mAODPref.setSummary(R.string.always_on_display_schedule_mixed_sunset);
-                break;
-            case MODE_MIXED_SUNRISE:
-                mAODPref.setSummary(R.string.always_on_display_schedule_mixed_sunrise);
-                break;
-        }
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

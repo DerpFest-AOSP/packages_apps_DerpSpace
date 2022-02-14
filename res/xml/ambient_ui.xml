@@ -17,6 +17,17 @@
     android:title="@string/ambient_ui">
 
     <PreferenceCategory
+        android:key="aod_category"
+        android:title="@string/aod_title">
+
+        <Preference
+            android:key="always_on_display_schedule"
+            android:title="@string/always_on_display_schedule_title"
+            android:fragment="org.derpfest.derpspace.fragments.AODSchedule" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="ambient_battery_category"
         android:title="@string/ambient_battery_title">
 

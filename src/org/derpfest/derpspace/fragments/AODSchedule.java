@@ -15,11 +15,11 @@
  */
 package org.derpfest.derpspace.fragments;
 
-import static org.derpfest.derpspace.fragments.LockscreenUI.MODE_DISABLED;
-import static org.derpfest.derpspace.fragments.LockscreenUI.MODE_NIGHT;
-import static org.derpfest.derpspace.fragments.LockscreenUI.MODE_TIME;
-import static org.derpfest.derpspace.fragments.LockscreenUI.MODE_MIXED_SUNSET;
-import static org.derpfest.derpspace.fragments.LockscreenUI.MODE_MIXED_SUNRISE;
+import static org.derpfest.derpspace.fragments.AmbientUI.MODE_DISABLED;
+import static org.derpfest.derpspace.fragments.AmbientUI.MODE_NIGHT;
+import static org.derpfest.derpspace.fragments.AmbientUI.MODE_TIME;
+import static org.derpfest.derpspace.fragments.AmbientUI.MODE_MIXED_SUNSET;
+import static org.derpfest.derpspace.fragments.AmbientUI.MODE_MIXED_SUNRISE;
 
 import android.app.TimePickerDialog;
 import android.content.ContentResolver;

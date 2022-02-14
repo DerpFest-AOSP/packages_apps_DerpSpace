@@ -84,10 +84,6 @@
         android:entryValues="@array/screen_off_animation_values"
         android:defaultValue="0" />
 
-    <Preference
-        android:key="always_on_display_schedule"
-        android:title="@string/always_on_display_schedule_title"
-        android:fragment="org.derpfest.derpspace.fragments.AODSchedule" />
     </PreferenceCategory>
 
     <PreferenceCategory

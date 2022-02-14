@@ -524,6 +524,7 @@
 
     <string name="ambient_ui">Ambient/Always on display</string>
     <string name="ambient_battery_title">AOD-Akkustand</string>
+    <string name="aod_title">AOD</string>
 
     <!-- AoD battery bar -->
     <string name="keyguard_show_battery_title">Akkuleiste beim Aufladen</string>

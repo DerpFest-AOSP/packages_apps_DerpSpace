@@ -529,6 +529,7 @@
 
     <string name="ambient_ui">Ambient/Always on display</string>
     <string name="ambient_battery_title">Ambient battery</string>
+    <string name="aod_title">Always on display</string>
 
     <!-- AoD battery bar -->
     <string name="keyguard_show_battery_title">Battery bar when charging</string>
