@@ -98,7 +98,7 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
         mLockscreenPulse = (SwitchPreference) findPreference(LOCKSCREEN_PULSE_ENABLED_KEY);
         boolean lockscreenPulse = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.LOCKSCREEN_PULSE_ENABLED, 1, UserHandle.USER_CURRENT) != 0;
+                Settings.Secure.LOCKSCREEN_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
         mLockscreenPulse.setChecked(lockscreenPulse);
         mLockscreenPulse.setOnPreferenceChangeListener(this);
 
