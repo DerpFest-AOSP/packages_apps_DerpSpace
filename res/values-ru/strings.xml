@@ -39,7 +39,7 @@
     <string name="fingerprint_category">Отпечаток пальца</string>
     <string name="gestures_category">Жесты</string>
     <string name="icons_category">Иконки</string>
-    <string name="status_bar_category">Статус бар</string>
+    <string name="status_bar_category">Строка состояния</string>
     <string name="notifications_panel_category">Панель быстрых настроек</string>
     <string name="system_category">Система</string>
     <string name="lockscreen_category">Экран блокировки</string>
@@ -82,7 +82,7 @@
     <string name="footer_category">Подпись</string>
 
     <!-- Statusbar Iten -->
-    <string name="statusbar_items_category">Иконки статус бара</string>
+    <string name="statusbar_items_category">Иконки строки состояния</string>
 
     <!-- Customisation -->
     <string name="customisation_title">Кастомизация</string>
@@ -95,14 +95,14 @@
     <string name="derpspace_dialog_title">Помоги нам помочь тебе!</string>
     <string name="derpspace_dialog_message">Если вы обнаружите ошибку с любой из этих настроек, сообщите об этом в нашу группу Telegram.  Вы ДОЛЖНЫ включить следующее при публикации отчета об ошибке:\n\n1. logcat или last_kmsg\n2. Используемые ядра и моды\n3. Полезную информацию\n\nЕсли вы не сообщаете о чем-либо должным образом, НЕ ждите, что что-то будет исправлено.</string>
     <string name="derpspace_dialog_toast">ПРОЧИТАЙТЕ ВСЕ!</string>
-    <string name="artwork_media_fade_level_summary">Fading the media artwork image</string>
+    <string name="artwork_media_fade_level_summary">Размытие изображения медиафайла</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="qs_tile_vibration_title">Вибрация</string>
     <string name="quick_settings_vibrate_title">Вибрация при касаниях</string>
     <string name="quick_settings_vibrate_summary">Вибрировать при нажатии быстрых настроек</string>
     <string name="quick_settings_vibrate_duration_title">Сила вибрации</string>
-    <string name="quick_settings_vibrate_duration_summary">Сколько миллисекунд вибрировать</string>
+    <string name="quick_settings_vibrate_duration_summary">Время вибрации в миллисекундах</string>
 
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Анимации</string>
@@ -135,14 +135,18 @@
     <string name="volte_switch_title">Иконка VoLTE</string>
     <string name="volte_switch_summary">Показывать иконку VoLTE</string>
     <string name="volte_icon_title">Иконка VoLTE</string>
-    <string name="volte_icon_summary">Показывать иконку VoLTE когда это возможно</string>
+    <string name="volte_icon_summary">Показывать иконку VoLTE, когда это возможно</string>
 
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">Иконка VoWiFi</string>
-    <string name="vowifi_icon_summary">Показывать иконку VoWiFi когда это возможно</string>
+    <string name="vowifi_icon_summary">Показывать иконку VoWiFi, когда это возможно</string>
+
+    <!-- Toast app icon -->
+    <string name="toast_icon_title">Иконка приложения всплывающего сообщения</string>
+    <string name="toast_icon_summary">Показывать иконку приложения во всплывающем сообщении</string>
 
     <!-- Quick QS pulldown -->
-    <string name="status_bar_quick_qs_pulldown">Быстрое раскрытие настроек</string>
+    <string name="status_bar_quick_qs_pulldown">Быстрое раскрытие шторки</string>
     <string name="quick_pulldown_none">Отключено</string>
     <string name="quick_pulldown_right">Опустить с правой стороны</string>
     <string name="quick_pulldown_left">Опустить с левой стороны</string>
@@ -196,11 +200,11 @@
     <!-- Statusbar net monitor -->
     <string name="traffic_title">Скорость сети</string>
     <string name="network_traffic">Скорость сети</string>
-    <string name="statusbar_show_network_traffic_title">Показывать скорость сети в статус баре</string>
-    <string name="statusbar_network_traffic_threshold_tx_title">Порог автоматического скрытия для загрузки</string>
-    <string name="statusbar_network_traffic_threshold_rx_title">Порог автоматического скрытия для скачивания</string>
-    <string name="statusbar_network_traffic_unit_text_size_title">Размер текста скорости сети</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Размер единицы измерения скорости сети</string>
+    <string name="statusbar_show_network_traffic_title">Показывать скорость сети в строке состояния</string>
+    <string name="statusbar_network_traffic_threshold_tx_title">Время скрытия загрузки</string>
+    <string name="statusbar_network_traffic_threshold_rx_title">Время скрытия для скачивания</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">Размер текста скорости</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">Размер единицы измерения</string>
     <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">Коэффициент масштаба</string>
 
     <!-- Lockscreen media artwork -->
@@ -256,22 +260,22 @@
     <string name="smart_pulldown_title">Умное открытие</string>
     <string name="smart_pulldown_summary">Открыть быстрые настройки, когда %1$s уведомлений</string>
     <string name="smart_pulldown_none_summary">Открыть быстрые настройки, когда нет уведомлений</string>
-    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_off">Отключено</string>
     <string name="smart_pulldown_none">нет уведомлений</string>
     <string name="smart_pulldown_dismissable">нет удаленных</string>
     <string name="smart_pulldown_ongoing">нет новых</string>
 
     <!-- Brightness control -->
     <string name="status_bar_toggle_brightness">Контроль яркости</string>
-    <string name="status_bar_toggle_brightness_summary">Изменять яркость свайпом по статус бару</string>
+    <string name="status_bar_toggle_brightness_summary">Изменять яркость свайпом по строке состояния</string>
 
     <!-- Battery Bar -->
     <string name="battery_bar_title">Полоса заряда</string>
     <string name="battery_bar_summary">Отображение и настройка полосы заряда рядом со строкой состояния или панелью навигации</string>
     <string name="battery_bar_no_navbar">Расположение полосы заряда</string>
     <string name="battery_bar_location_hide">Скрыто</string>
-    <string name="battery_bar_statusbar_top">Сверху статус бара</string>
-    <string name="battery_bar_statusbar_bot">Снизу статус бара</string>
+    <string name="battery_bar_statusbar_top">Сверху строки состояния</string>
+    <string name="battery_bar_statusbar_bot">Снизу строки состояния</string>
     <string name="battery_bar_color">Цвет полосы заряда</string>
     <string name="battery_bar_charging_color">Цвет полосы во время заряда</string>
     <string name="battery_bar_battery_low_color">Цвет полосы при низком заряде</string>
@@ -298,7 +302,7 @@
     <string name="show_carrier_title">Расположение имени оператора</string>
     <string name="show_carrier_disabled">Отключено</string>
     <string name="show_carrier_keyguard">Экран блокировки</string>
-    <string name="show_carrier_statusbar">Статус бар</string>
+    <string name="show_carrier_statusbar">Строка состояния</string>
     <string name="show_carrier_enabled">Везде</string>
 
     <!-- Old mobile type icons -->
@@ -307,7 +311,7 @@
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Информация о зарядке на экране блокировки</string>
-    <string name="lockscreen_battery_info_summary">Показывать зарядный ток, напряжение, мощность и температуру батареи на экране блокировки во время зарядки</string>
+    <string name="lockscreen_battery_info_summary">Показывать ток зарядки, напряжение, мощность и температуру батареи на экране блокировки во время зарядки</string>
 
     <!-- Charging animation -->
     <string name="charging_animation_title">Анимация зарядки</string>
@@ -342,7 +346,7 @@
     <string name="status_bar_battery_percentage_text_next">Снаружи</string>
 
     <!-- Call strength icons in QS -->
-    <string name="show_qs_call_strength_icon_title">Роказывать иконку силы сигнала вызова</string>
+    <string name="show_qs_call_strength_icon_title">Показывать иконку силы сигнала вызова</string>
     <string name="show_qs_call_strength_icon_summary">Показывать иконку силы сигнала вызова в меню быстрых настроек, когда это возможно</string>
 
     <!-- Monet Engine -->
@@ -358,6 +362,10 @@
     <string name="monet_engine_chroma_factor_title">Красочность</string>
     <string name="monet_engine_linear_lightness_title">Использовать свою шкалу яркости</string>
 
+    <!-- Udfps Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">Вибрация сканера отпечатков в экране</string>
+    <string name="udfps_haptic_feedback_summary">Вибрировать при касании иконки экранного сканера отпечатков</string>
+
     <!-- Tiles on secure keyguard -->
     <string name="use_tiles_on_secure_keyguard_title">Требовать разблокировки для использования конфиденциальных плиток</string>
     <string name="use_tiles_on_secure_keyguard_summary">Попросить разблокировать экран блокировки для использования конфиденциальных плиток</string>
@@ -366,11 +374,52 @@
     <string name="alert_slider_notifications_title">Оповещения о ползунке уведомлений</string>
     <string name="alert_slider_notifications_summary">Отображение уведомления при изменении положения ползунка уведомлений</string>
 
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Таймер повтора</string>
+    <string name="heads_up_snooze_summary_one_minute">Свайп вверх по всплывающему уведомлению, заглушит его на 1 минуту</string>
+    <string name="heads_up_snooze_summary">Свайп вверх по всплывающему уаедолмению, заглушит его на <xliff:g id="number">%d</xliff:g> минут</string>
+    <string name="heads_up_snooze_disabled_summary">Таймер повтора отключен</string>
+    <string name="heads_up_snooze_1min">1 минута</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
+    <string name="heads_up_snooze_25min">25 минут</string>
+    <string name="heads_up_snooze_30min">30 минут</string>
+    <string name="heads_up_snooze_1h">1 час</string>
+
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Тайм-аут</string>
+    <string name="heads_up_time_out_summary">Уведомления будут отображаться<xliff:g id="number">%d</xliff:g> секунд</string>
+    <string name="heads_up_time_out_2sec">2 секунды</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_5sec">5 секунд</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
+
+    <!-- Heads up -->
+    <string name="headsup_category">Всплывающие уведомления</string>
+    <string name="heads_up_notifications">Всплывающие уведомления</string>
+    <string name="heads_up_notifications_summary">Изменение настроек всплывающих уведомлений</string>
+    <string name="summary_heads_up_enabled">Всплывающие уведомления включены</string>
+    <string name="summary_heads_up_disabled">Всплывающие уведомления отключены</string>
+    <string name="add_heads_up_package">Добавить приложение</string>
+    <string name="add_heads_up_stoplist_summary">Отключить всплывающие уведомления в этих приложениях</string>
+    <string name="add_heads_up_blacklist_summary">Отключить всплывающие уведомления от этих приложений</string>
+    <string name="heads_up_stoplist_title">Стоп-лист</string>
+    <string name="heads_up_blacklist_title">Черный список</string>
+    <string name="profile_choose_app">Выберите приложение</string>
+    <string name="dialog_delete_title">Удалить</string>
+    <string name="dialog_delete_message">Удалить выбранное приложение?</string>
+
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Оценка заряда</string>
     <string name="battery_estimate_summary">Отображение расчетного оставшегося времени работы от батареи, если доступно</string>
 
     <!-- Location privacy indicator -->
+    <string name="mic_camera_privacy_indicator_title">Индикатор микрофона и камеры</string>
+    <string name="mic_camera_privacy_indicator_summary">Показывать индикатор конфиденциальности микрофона и камеры во время использования</string>
     <string name="location_privacy_indicator_title">Индикатор местоположения</string>
     <string name="location_privacy_indicator_summary">Показать индикатор конфиденциальности для местоположения\nТребуется перезагрузка SystemUI</string>
 
@@ -380,8 +429,8 @@
     <string name="qs_footer_text_string_summary">По умолчанию #StayDerped</string>
 
     <!-- Combined signal icons in status bar -->
-    <string name="combined_status_bar_signal_icons">Комбинированные иконки сигнала</string>
-    <string name="combined_status_bar_signal_icons_summary">Включить комбинированные значки сигналов в строке состояния\nТребуется перезапуск SystemUI</string>
+    <string name="combined_status_bar_signal_icons">Комбинированные иконки сети</string>
+    <string name="combined_status_bar_signal_icons_summary">Включить комбинированные значки сети в строке состояния\nТребуется перезапуск SystemUI</string>
 
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">Вибрация во время разговора</string>
@@ -404,7 +453,7 @@
     <!-- AOD Schedule -->
     <string name="default_string">По умолчанию</string>
     <string name="disabled">Отключено</string>
-    <string name="always_on_display_schedule_title">Расписание AOD</string>
+    <string name="always_on_display_schedule_title">Расписание Always on Display</string>
     <string name="always_on_display_schedule_sunset">Закат</string>
     <string name="always_on_display_schedule_sunrise">Рассвет</string>
     <string name="always_on_display_schedule_mixed_sunset">Включается от заката до времени</string>
@@ -413,10 +462,10 @@
     <!-- Pulse notifications lightning -->
     <string name="pulse_ambient_light_title">Свечение по краям экрана</string>
     <string name="pulse_ambient_light_summary">Пульсировать свечением по краям экрана во время новых уведомлений</string>
-    <string name="ambient_notification_light_enabled_title">Показывать на AOD</string>
-    <string name="ambient_notification_light_enabled_summary">Продолжать показывать на AOD</string>
-    <string name="ambient_notification_light_hide_aod_title">Скрыть информацию AOD</string>
-    <string name="ambient_notification_light_hide_aod_summary">Скрыть информацию на AOD во время свечения</string>
+    <string name="ambient_notification_light_enabled_title">Показывать на Always on Display</string>
+    <string name="ambient_notification_light_enabled_summary">Продолжать показывать на Always on Display</string>
+    <string name="ambient_notification_light_hide_aod_title">Скрыть информацию Always on Display</string>
+    <string name="ambient_notification_light_hide_aod_summary">Скрыть информацию на Always on Display во время свечения</string>
     <string name="ambient_notification_light_duration_title">Продолжительность</string>
     <string name="ambient_notification_light_duration_summary">Время, необходимое для завершения каждой анимации</string>
     <string name="ambient_notification_light_repeats_title">Повторять</string>
@@ -444,7 +493,7 @@
     <string name="burnin_category">Защита от выгорания</string>
     <string name="burn_in_protection_title">Включена</string>
     <string name="burn_in_protection_summary">Сдвигать значки панели навигации и строки состояния, чтобы предотвратить выгорание</string>
-    <string name="burn_in_protection_interval_title">Инетрвал сдвига</string>
+    <string name="burn_in_protection_interval_title">Интервал сдвига</string>
     <string name="burn_in_protection_interval_summary">Как часто сдвигать иконки</string>
     <string name="unit_x1000ms">x1000 мс</string>
 
@@ -453,13 +502,13 @@
     <string name="bluetooth_battery_summary">Отображение состояния батареи для подключенного устройства Bluetooth, если оно доступно</string>
 
     <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Анимация сканера отпечатков в экране</string>
-    <string name="udfps_recog_animation_summary">Показывает анимацию при чтении отпечатка пальца</string>
-    <string name="udfps_recog_animation_effect_title">Эффект анимации сканера отпечатков в экране</string>
+    <string name="udfps_recog_animation">Анимация сканера отпечатка пальцев в экране</string>
+    <string name="udfps_recog_animation_summary">Показывать анимацию при чтении отпечатка пальца</string>
+    <string name="udfps_recog_animation_effect_title">Эффект анимации сканера отпечатка пальцев в экране</string>
     <string name="udfps_recog_animation_effect_summary">Выберите эффект</string>
 
     <!-- Udfps icon picker -->
-    <string name="udfps_icon_picker_title">Иконка сканера отпечатков в экране</string>
+    <string name="udfps_icon_picker_title">Иконка сканера отпечатка пальцев в экране</string>
     <string name="udfps_icon_picker_summary">Выберите иконку которая вам нравится</string>
 
     <!-- Media artwork -->
@@ -471,21 +520,21 @@
     <string name="artwork_media_background_alpha_title">Прозрачность обложки</string>
 
     <!-- Ambient Ticker -->
-    <string name="pulse_on_new_tracks_title">Название песни на AOD</string>
-    <string name="pulse_on_new_tracks_summary">показывать название песни на AOD при переключении треков</string>
+    <string name="pulse_on_new_tracks_title">Название песни в Always on Display</string>
+    <string name="pulse_on_new_tracks_summary">показывать название песни в Always on Display при переключении треков</string>
 
     <string name="ambient_ui">Always on Display</string>
     <string name="ambient_battery_title">Отображение заряда</string>
 
     <!-- AoD battery bar -->
     <string name="keyguard_show_battery_title">Полоса заряда во время заряда</string>
-    <string name="keyguard_show_battery_summary">Показывать полосу заряда на AOD во время зарядки</string>
+    <string name="keyguard_show_battery_summary">Показывать полосу заряда в Always on Display во время зарядки</string>
     <string name="keyguard_show_battery_always_title">Всегда показывать полосу заряда</string>
-    <string name="keyguard_show_battery_always_summary">Всегда показывать полосу заряда на AOD</string>
+    <string name="keyguard_show_battery_always_summary">Всегда показывать полосу заряда в Always on Display</string>
 
     <!-- Ambient display battery percentage --> 
     <string name="ambient_battery_percent_title">Заряд батареи внизу</string>
-    <string name="ambient_battery_percent_summary">Показывать заряд батареи в нижней части AOD</string>
+    <string name="ambient_battery_percent_summary">Показывать заряд батареи в нижней части Always on Display</string>
 
     <!-- Notifications general category -->
     <string name="notifications_general_category_title">Общие</string>
@@ -499,7 +548,7 @@
     <string name="navigation_bar_summary">Включить экранную панель навигации</string>
     <string name="navigation_bar_layout_title">Макет</string>
     <string name="navigation_bar_layout_summary">Настройка макета панели навигации</string>
-    <string name="navigation_bar_help_text">Эти настройки в основном относятся к 3-кнопочной панели навигации.  Если вы используете навигацию с помощью жестов и хотите настроить ее, например, чтобы скрыть полосу жестов, перейдите в раздел «Настройки» > «Система» > «Кнопки и жесты».</string>
+    <string name="navigation_bar_help_text">Эти настройки в основном относятся к 3-кнопочной панели навигации.  Если вы используете навигацию с помощью жестов и хотите настроить ее, например, чтобы скрыть полосу жестов, перейдите в раздел «Настройки» > «Система» > «Жесты и кнопки».</string>
 
     <!-- Units -->
     <string name="unit_seconds">секунды</string>
@@ -510,15 +559,15 @@
     <string name="pulse_help_policy_notice_title">О Pulse</string>
     <string name="pulse_help_policy_notice_summary">Pulse — блестящий визуализатор звука, когда на устройстве играет музыка.</string>
     <string name="pulse_settings">Pulse</string>
-    <string name="pulse_settings_summary">Аудиовизуализатор для панели навигации, экрана блокировки, AOD и панели быстрых настроек</string>
+    <string name="pulse_settings_summary">Аудиовизуализатор для панели навигации, экрана блокировки, Always on Display и панели быстрых настроек</string>
     <string name="show_navbar_pulse_title">Pulse на панели навигации</string>
     <string name="show_navbar_pulse_summary">Аудиовизуализатор на панели навигации</string>
     <string name="show_lockscreen_pulse_title">Pulse на экране блокировки</string>
     <string name="show_lockscreen_pulse_summary">Аудиовизуализатор на экране блокировки</string>
     <string name="show_qs_pulse_title">Pulse в панели быстрых настроек</string>
     <string name="show_qs_pulse_summary">Аудиовизуализатор в панели быстрых настроек</string>
-    <string name="show_ambient_pulse_title">AOD Pulse</string>
-    <string name="show_ambient_pulse_summary">Аудиовизуализатор на AOD</string>
+    <string name="show_ambient_pulse_title">Always on Display Pulse</string>
+    <string name="show_ambient_pulse_summary">Аудиовизуализатор в  Always on Display</string>
     <string name="pulse_render_mode_title">Режим отображения</string>
     <string name="pulse_render_mode_fading_bars">Блоки</string>
     <string name="pulse_render_mode_solid_lines">Линии</string>
@@ -599,8 +648,15 @@
     <string name="ambient_wake_gestures_title">Жесты пробуждения</string>
     <string name="ambient_wake_gestures_summary">Показывать Ambient Display вместо обычного экрана блокировки при жестах пробуждения</string>
 
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Безлимитное хранилище Google Фото</string>
+    <string name="use_photos_spoof_summary">Ваше устройство будет идентифицировано как Pixel XL, чтобы получить неограниченное хранилище фотографий Google в исходном качестве</string>
+    <string name="photos_spoof_toast">Перезапустите приложение Фото, чтобы изменение вступило в силу</string>
+
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">Цветные иконки</string>
-    <string name="statusbar_colored_icons_summary">Использовать собственные значки приложений для значков уведомлений в строке состояния.</string>
+    <string name="statusbar_colored_icons_summary">Использовать собственные значки приложений для значков уведомлений в строке состояния</string>
+
+    <string name="theme_customization_navbar_title">Стили строки навигации</string>
 
 </resources>
