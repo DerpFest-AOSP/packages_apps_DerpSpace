@@ -43,8 +43,8 @@
             android:summary="@string/battery_estimate_summary"
             android:defaultValue="true"/>
 
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="use_tiles_on_secure_keyguard"
+        <com.derp.support.preferences.SecureSettingSwitchPreference
+            android:key="disable_secure_tiles_on_lockscreen"
             android:title="@string/use_tiles_on_secure_keyguard_title"
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
