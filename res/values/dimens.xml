@@ -32,4 +32,7 @@
     <dimen name="ambient_light_preview_paddingHorizontal">50dp</dimen>
     <dimen name="ambient_light_preview_paddingVertical">30dp</dimen>
 
+    <!-- Applications fragment -->
+    <dimen name="default_margin">16dp</dimen>
+
 </resources>

@@ -661,4 +661,8 @@
     <string name="notification_sound_vib_screen_on_title">Benachrichtigungston bei eingeschaltetem Bildschirm</string>
     <string name="notification_sound_vib_screen_on_summary">Töne und Vibrationen für Benachrichtigungen abspielen, wenn der Bildschirm eingeschaltet ist</string>
 
+    <!-- Applications fragment -->
+    <string name="search">Suche</string>
+    <string name="search_apps">Apps suchen</string>
+
 </resources>
