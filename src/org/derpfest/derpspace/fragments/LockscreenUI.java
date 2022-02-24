@@ -21,6 +21,8 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
@@ -53,6 +55,8 @@ import com.android.settingslib.search.SearchIndexable;
 
 import org.derpfest.support.preferences.SystemSettingListPreference;
 import org.derpfest.support.preferences.SystemSettingSwitchPreference;
+import org.derpfest.support.preferences.CustomSystemSeekBarPreference;
+import org.derpfest.support.colorpicker.ColorPickerPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,9 +69,15 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     private static final String LOCKSCREEN_BATTERY_INFO_TEMP_UNIT = "lockscreen_charge_temp_unit";
     private static final String SECONDARY_COLOR_CLOCK = "use_secondary_color_clock";
+    private static final String AMBIENT_ICONS_LOCKSCREEN = "ambient_icons_lockscreen";
+    private static final String AMBIENT_ICONS_SIZE = "ambient_icons_size";
+    private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
 
     private SystemSettingListPreference mBatteryTempUnit;
     private SystemSettingSwitchPreference mSecondaryColorClock;
+    private SystemSettingSwitchPreference mAmbientIconsLockscreen;
+    private CustomSystemSeekBarPreference mAmbientIconsSize;
+    private ColorPickerPreference mAmbientIconsColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,6 +98,25 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
         mSecondaryColorClock = (SystemSettingSwitchPreference) findPreference(SECONDARY_COLOR_CLOCK);
         mSecondaryColorClock.setOnPreferenceChangeListener(this);
+
+        mAmbientIconsLockscreen = (SystemSettingSwitchPreference) findPreference(AMBIENT_ICONS_LOCKSCREEN);
+        mAmbientIconsLockscreen.setChecked((Settings.System.getInt(resolver,
+                Settings.System.AMBIENT_ICONS_LOCKSCREEN, 0) == 1));
+        mAmbientIconsLockscreen.setOnPreferenceChangeListener(this);
+
+        mAmbientIconsSize = (CustomSystemSeekBarPreference) findPreference(AMBIENT_ICONS_SIZE);
+        int intSize = Settings.System.getInt(getContentResolver(),
+                Settings.System.AMBIENT_ICONS_SIZE, 80);
+        mAmbientIconsSize.setValue(intSize / 1);
+        mAmbientIconsSize.setOnPreferenceChangeListener(this);
+
+        mAmbientIconsColor = (ColorPickerPreference) findPreference(AMBIENT_ICONS_COLOR);
+        int intColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.AMBIENT_ICONS_COLOR, Color.WHITE);
+        String hexColor = String.format("#%08x", (0xffffff & intColor));
+        mAmbientIconsColor.setNewPreviewColor(intColor);
+        mAmbientIconsColor.setSummary(hexColor);
+        mAmbientIconsColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -113,6 +142,24 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             return true;
     	} else if (preference == mSecondaryColorClock) {
             derpUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mAmbientIconsLockscreen) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.AMBIENT_ICONS_LOCKSCREEN, value ? 0 : 0);
+            return true;
+        } else if (preference == mAmbientIconsSize) {
+            int width = ((Integer)objValue).intValue();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.AMBIENT_ICONS_SIZE, width);
+            return true;
+        } else if (preference == mAmbientIconsColor) {
+            String hex = ColorPickerPreference.convertToARGB(Integer
+                .parseInt(String.valueOf(objValue)));
+            mAmbientIconsColor.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.AMBIENT_ICONS_COLOR, intHex);
             return true;
         }
         return false;

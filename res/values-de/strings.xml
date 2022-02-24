@@ -447,4 +447,10 @@
     <string name="ambient_text_color_type_gradient">Farbverlauf (Start- bis Endfarbe)</string>
     <string name="ambient_text_color_type_lava_lamp">Lavalampe</string>
     <string name="ambient_text_color_type_lava_lamp_custom">Lavalampe mit benutzerdefinierten Farben (Start- bis Endfarbe)</string>
+
+    <!-- AOD icons on lockscreen -->
+    <string name="ambient_icons_lockscreen_title">AOD-Symbole auf dem Sperrbildschirm</string>
+    <string name="ambient_icons_lockscreen_summary">Ändern Sie die Darstellung der AOD-Symbole</string>
+    <string name="ambient_icons_size_title">Größe der AOD-Symbole</string>
+    <string name="ambient_icons_color_title">Farbe der AOD-Symbole</string>
 </resources>

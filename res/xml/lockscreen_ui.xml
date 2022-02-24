@@ -93,4 +93,37 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="lockscreen_notifications"
+        android:title="@string/notifications_title">
+
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="ambient_icons_intro_text"
+            android:title="@string/ambient_icons_intro_text"/>
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="ambient_icons_lockscreen"
+            android:title="@string/ambient_icons_lockscreen_title"
+            android:summary="@string/ambient_icons_lockscreen_summary"
+            android:defaultValue="false" />
+
+        <org.derpfest.support.preferences.CustomSystemSeekBarPreference
+            android:key="ambient_icons_size"
+            android:title="@string/ambient_icons_size_title"
+            android:dependency="ambient_icons_lockscreen"
+            settings:allowEditText="true"
+            android:max="100"
+            settings:min="0"
+            settings:units="dp"
+            settings:interval="1"
+            android:defaultValue="80" />
+
+        <org.derpfest.support.colorpicker.ColorPickerPreference
+            android:key="ambient_icons_color"
+            android:title="@string/ambient_icons_color_title"
+            android:dependency="ambient_icons_lockscreen"
+            android:defaultValue="0xFFFFFFFF" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
