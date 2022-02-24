@@ -21,42 +21,41 @@
         android:key="lockscreen_ui_finterprint_category"
         android:title="@string/fingerprint_category">
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="disable_ripple_effect"
-        android:title="@string/disable_fingerprint_ripple_effect_title"
-        android:summary="@string/disable_fingerprint_ripple_effect_summary"
-        android:defaultValue="false" />
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="disable_ripple_effect"
+            android:title="@string/disable_fingerprint_ripple_effect_title"
+            android:summary="@string/disable_fingerprint_ripple_effect_summary"
+            android:defaultValue="false" />
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="fingerprint_success_vib"
-        android:title="@string/fprint_sucess_vib_title"
-        android:summary="@string/fprint_sucess_vib_summary"
-        android:persistent="true" />
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="fingerprint_success_vib"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:persistent="true" />
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="fingerprint_error_vib"
-        android:title="@string/fprint_error_vib_title"
-        android:summary="@string/fprint_error_vib_summary"
-        android:persistent="true" />
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="fingerprint_error_vib"
+            android:title="@string/fprint_error_vib_title"
+            android:summary="@string/fprint_error_vib_summary"
+            android:persistent="true" />
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="enable_udfps_start_haptic_feedback"
-        android:title="@string/udfps_haptic_feedback_title"
-        android:summary="@string/udfps_haptic_feedback_summary"
-        android:defaultValue="true" />
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="enable_udfps_start_haptic_feedback"
+            android:title="@string/udfps_haptic_feedback_title"
+            android:summary="@string/udfps_haptic_feedback_summary"
+            android:defaultValue="true" />
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="screen_off_fod"
-        android:title="@string/screen_off_fod_title"
-        android:summary="@string/screen_off_fod_summary"
-        android:defaultValue="true" />
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="screen_off_fod"
+            android:title="@string/screen_off_fod_title"
+            android:summary="@string/screen_off_fod_summary"
+            android:defaultValue="true" />
 
-    <!-- FOD Nightlight -->
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="fod_night_light"
-        android:title="@string/fod_night_light_title"
-        android:summary="@string/fod_night_light_summary"
-        android:defaultValue="@*android:bool/disable_fod_night_light"  />
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="fod_night_light"
+            android:title="@string/fod_night_light_title"
+            android:summary="@string/fod_night_light_summary"
+            android:defaultValue="@*android:bool/disable_fod_night_light"  />
 
     </PreferenceCategory>
 
@@ -64,26 +63,59 @@
         android:key="lockscreen_ui_general_category"
         android:title="@string/general_category">
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:defaultValue="false"
-        android:key="lockscreen_small_clock"
-        android:summary="@string/lockscreen_small_clock_summary"
-        android:title="@string/lockscreen_small_clock_title" />
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
 
-    <com.derp.support.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_battery_info"
-        android:title="@string/lockscreen_battery_info_title"
-        android:summary="@string/lockscreen_battery_info_summary"
-        android:defaultValue="true" />
+        <com.derp.support.preferences.SystemSettingListPreference
+            android:key="screen_off_animation"
+            android:title="@string/screen_off_animation_title"
+            android:dialogTitle="@string/screen_off_animation_title"
+            android:entries="@array/screen_off_animation_entries"
+            android:entryValues="@array/screen_off_animation_values"
+            android:defaultValue="0" />
 
-    <com.derp.support.preferences.SystemSettingListPreference
-        android:key="screen_off_animation"
-        android:title="@string/screen_off_animation_title"
-        android:dialogTitle="@string/screen_off_animation_title"
-        android:entries="@array/screen_off_animation_entries"
-        android:entryValues="@array/screen_off_animation_values"
-        android:defaultValue="0" />
+    </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="alt_layout_category"
+        android:title="@string/alt_layout_category">
+
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:defaultValue="false"
+            android:key="lockscreen_small_clock"
+            android:summary="@string/lockscreen_small_clock_summary"
+            android:title="@string/lockscreen_small_clock_title" />
+
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="ambient_icons_lockscreen"
+            android:title="@string/ambient_icons_lockscreen_title"
+            android:summary="@string/ambient_icons_lockscreen_summary"
+            android:dependency="lockscreen_small_clock"
+            android:defaultValue="false" />
+
+        <com.derp.support.preferences.CustomSystemSeekBarPreference
+            android:key="ambient_icons_size"
+            android:title="@string/ambient_icons_size_title"
+            android:dependency="ambient_icons_lockscreen"
+            settings:allowEditText="true"
+            android:max="100"
+            settings:min="0"
+            settings:units="dp"
+            settings:interval="1"
+            android:defaultValue="80" />
+
+        <com.derp.support.colorpicker.ColorPickerPreference
+            android:key="ambient_icons_color"
+            android:title="@string/ambient_icons_color_title"
+            android:dependency="ambient_icons_lockscreen"
+            android:defaultValue="0xFFFFFFFF" />
+
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="ambient_icons_intro_text"
+            android:title="@string/ambient_icons_intro_text"/>
     </PreferenceCategory>
 
     <PreferenceCategory

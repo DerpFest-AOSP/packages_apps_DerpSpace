@@ -22,6 +22,8 @@ import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.net.Uri;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.RemoteException;
@@ -59,6 +61,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.derp.support.preferences.SystemSettingSwitchPreference;
+import com.derp.support.preferences.CustomSystemSeekBarPreference;
+import com.derp.support.colorpicker.ColorPickerPreference;
 
 @SearchIndexable
 public class LockscreenUI extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
@@ -68,6 +72,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     private static final String FOD_NIGHT_LIGHT = "fod_night_light";
     private static final String SCREEN_OFF_FOD = "screen_off_fod";
     private static final String ENABLE_UDFPS_START_HAPTIC_FEEDBACK = "enable_udfps_start_haptic_feedback";
+    private static final String AMBIENT_ICONS_LOCKSCREEN = "ambient_icons_lockscreen";
+    private static final String AMBIENT_ICONS_SIZE = "ambient_icons_size";
+    private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
 
     private FingerprintManager mFingerprintManager;
     private SystemSettingSwitchPreference mFingerprintSuccessVib;
@@ -75,6 +82,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     private SystemSettingSwitchPreference mFodNightLight;
     private SystemSettingSwitchPreference mScreenOffFOD;
     private SystemSettingSwitchPreference mUdfpsHapticFeedback;
+    private SystemSettingSwitchPreference mAmbientIconsLockscreen;
+    private CustomSystemSeekBarPreference mAmbientIconsSize;
+    private ColorPickerPreference mAmbientIconsColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -127,6 +137,25 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         } else {
             prefSet.removePreference(fpCategory);
         }
+
+        mAmbientIconsLockscreen = (SystemSettingSwitchPreference) findPreference(AMBIENT_ICONS_LOCKSCREEN);
+        mAmbientIconsLockscreen.setChecked((Settings.System.getInt(resolver,
+                Settings.System.AMBIENT_ICONS_LOCKSCREEN, 0) == 1));
+        mAmbientIconsLockscreen.setOnPreferenceChangeListener(this);
+
+        mAmbientIconsSize = (CustomSystemSeekBarPreference) findPreference(AMBIENT_ICONS_SIZE);
+        int intSize = Settings.System.getInt(getContentResolver(),
+                Settings.System.AMBIENT_ICONS_SIZE, 80);
+        mAmbientIconsSize.setValue(intSize / 1);
+        mAmbientIconsSize.setOnPreferenceChangeListener(this);
+
+        mAmbientIconsColor = (ColorPickerPreference) findPreference(AMBIENT_ICONS_COLOR);
+        int intColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.AMBIENT_ICONS_COLOR, Color.WHITE);
+        String hexColor = String.format("#%08x", (0xffffff & intColor));
+        mAmbientIconsColor.setNewPreviewColor(intColor);
+        mAmbientIconsColor.setSummary(hexColor);
+        mAmbientIconsColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -165,6 +194,24 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.ENABLE_UDFPS_START_HAPTIC_FEEDBACK, value ? 1 : 0);
+            return true;
+        } else if (preference == mAmbientIconsLockscreen) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.AMBIENT_ICONS_LOCKSCREEN, value ? 0 : 0);
+            return true;
+        } else if (preference == mAmbientIconsSize) {
+            int width = ((Integer)objValue).intValue();
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.AMBIENT_ICONS_SIZE, width);
+            return true;
+        } else if (preference == mAmbientIconsColor) {
+            String hex = ColorPickerPreference.convertToARGB(Integer
+                .parseInt(String.valueOf(objValue)));
+            mAmbientIconsColor.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.AMBIENT_ICONS_COLOR, intHex);
             return true;
         }
         return false;

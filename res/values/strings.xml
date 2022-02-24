@@ -675,4 +675,12 @@
     <!-- Applications fragment -->
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>
+
+    <!-- AOD Icons on Lockscreen! -->
+    <string name="alt_layout_category">Alternative layout</string>
+    <string name="ambient_icons_lockscreen_title">AOD icons on lockscreen</string>
+    <string name="ambient_icons_lockscreen_summary">Replace notifications with AOD icons</string>
+    <string name="ambient_icons_size_title">AOD icons size</string>
+    <string name="ambient_icons_color_title">AOD icons color</string>
+    <string name="ambient_icons_intro_text">Requires a SystemUI restart</string>
 </resources>

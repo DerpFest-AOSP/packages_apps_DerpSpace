@@ -665,4 +665,11 @@
     <string name="search">Suche</string>
     <string name="search_apps">Apps suchen</string>
 
+    <!-- AOD Icons on Lockscreen! -->
+    <string name="alt_layout_category">Alternatives Layout</string>
+    <string name="ambient_icons_lockscreen_title">AOD-Symbole auf dem Sperrbildschirm</string>
+    <string name="ambient_icons_lockscreen_summary">Ändern Sie die Darstellung der AOD-Symbole</string>
+    <string name="ambient_icons_size_title">Größe der AOD-Symbole</string>
+    <string name="ambient_icons_color_title">Farbe der AOD-Symbole</string>
+    <string name="ambient_icons_intro_text">Erfordert einen SystemUI-Neustart</string>
 </resources>
