@@ -22,6 +22,14 @@
         android:summaryOff="@string/summary_heads_up_disabled"
         android:defaultValue="true" />
 
+    <com.derp.support.preferences.SystemSettingIntListPreference
+        android:key="heads_up_notifications_threshold"
+        android:title="@string/hun_importance_title"
+        android:summary="%s"
+        android:entries="@array/hun_importance_entries"
+        android:entryValues="@array/hun_importance_values"
+        android:defaultValue="4" />
+
     <ListPreference
         android:key="heads_up_time_out"
         android:title="@string/heads_up_time_out_title"

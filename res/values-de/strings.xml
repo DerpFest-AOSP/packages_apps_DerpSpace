@@ -732,4 +732,13 @@
     <string name="force_expanded_notifications_title">Erzwinge erweiterte Benachrichtungen</string>
     <string name="force_expanded_notifications_summary">Nur für Apps verfügbar, die erweiterte Benachrichtigungen unterstützen</string>
 
+    <!-- HeadsUp notifications importance threshold -->
+    <!--string name="hun_importance_none">None</string-->
+    <string name="hun_importance_title">Wichtigkeitsschwelle</string>
+    <string name="hun_importance_min">Minimum</string>
+    <string name="hun_importance_low">Niedrig</string>
+    <string name="hun_importance_default">Standard</string>
+    <string name="hun_importance_high">Hoch</string>
+    <string name="hun_importance_max">Maxiumum</string>
+
 </resources>
