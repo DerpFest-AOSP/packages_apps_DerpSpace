@@ -55,6 +55,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.derp.support.preferences.AppListPreference;
 import com.derp.support.preferences.PackageListAdapter;
 import com.derp.support.preferences.PackageListAdapter.PackageItem;
 
@@ -340,7 +341,7 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
         PackageInfo info = mPackageManager.getPackageInfo(pkg.name,
                 PackageManager.GET_META_DATA);
         Preference pref =
-                new Preference(getActivity());
+                new AppListPreference(getActivity());
 
         pref.setKey(pkg.name);
         pref.setTitle(info.applicationInfo.loadLabel(mPackageManager));
