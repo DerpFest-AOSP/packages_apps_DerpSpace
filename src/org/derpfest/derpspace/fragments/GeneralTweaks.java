@@ -40,7 +40,7 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
     private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
     private static final String KEY_SPOOF = "use_photos_spoof";
-    private static final String SYS_SPOOF = "persist.sys.photo";
+    private static final String SYS_SPOOF = "persist.sys.pixelprops.gphotos";
 
     private Preference mAlertSlider;
     private SwitchPreference mSpoof;
@@ -55,15 +55,14 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
 
-        mAlertSlider = (Preference) prefScreen.findPreference(ALERT_SLIDER_PREF);
+        mAlertSlider = (Preference) findPreference(ALERT_SLIDER_PREF);
         boolean mAlertSliderAvailable = res.getBoolean(
                 com.android.internal.R.bool.config_hasAlertSlider);
         if (!mAlertSliderAvailable)
             prefScreen.removePreference(mAlertSlider);
 
-        final String useSpoof = SystemProperties.get(SYS_SPOOF, "1");
         mSpoof = (SwitchPreference) findPreference(KEY_SPOOF);
-        mSpoof.setChecked("1".equals(useSpoof));
+        mSpoof.setChecked(SystemProperties.getBoolean(SYS_SPOOF, true));
         mSpoof.setOnPreferenceChangeListener(this);
     }
 
