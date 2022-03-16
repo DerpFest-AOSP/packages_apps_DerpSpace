@@ -275,18 +275,6 @@
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Helligkeitsregler</string>
-    <string name="qs_brightness_slider_title">Helligkeitsregler anzeigen</string>
-    <string name="qs_brightness_slider_summary">Helligkeitsregler in den Schnelleinstellungen anzeigen</string>
-    <string name="qs_brightness_position_bottom_title">Helligkeitsregler unten</string>
-    <string name="qs_brightness_position_bottom_summary">Helligkeitsregler im unteren Bereich der Schnelleinstellungen anzeigen</string>
-
-    <!-- Quick Settings brightness icon -->
-    <string name="brightness_icon_title">Symbol für automatische Helligkeit</string>
-    <string name="brightness_icon_summary">Das Symbol für die automatische Helligkeit wird rechts neben dem Helligkeitsregler angezeigt</string>
-
-    <!-- Quick QS Panel brightness slider -->
-    <string name="quick_qs_brightness_slider_title">Helligkeitsregler für die kurzen Schnelleinstellungen</string>
-    <string name="quick_qs_brightness_slider_summary">Helligkeitsregler auch in den kurzen Schnelleinstellungen anzeigen</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">Fußzeilenwarnungen</string>

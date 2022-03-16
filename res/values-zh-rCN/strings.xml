@@ -239,18 +239,6 @@
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">亮度滑块</string>
-    <string name="qs_brightness_slider_title">控制中心顶部亮度滑块</string>
-    <string name="qs_brightness_slider_summary">在控制中心顶部显示亮度滑块</string>
-    <string name="qs_brightness_position_bottom_title">控制中心底部亮度滑块</string>
-    <string name="qs_brightness_position_bottom_summary">在控制中心底部上显示亮度滑块</string>
-
-    <!-- Quick Settings brightness icon -->
-    <string name="brightness_icon_title">自适应亮度按钮</string>
-    <string name="brightness_icon_summary">显示自适应亮度按钮</string>
-
-    <!-- Quick QS Panel brightness slider -->
-    <string name="quick_qs_brightness_slider_title">在控制中心中显示亮度滑块</string>
-    <string name="quick_qs_brightness_slider_summary">在控制中心中显示亮度滑块</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">控制中心底部警告</string>

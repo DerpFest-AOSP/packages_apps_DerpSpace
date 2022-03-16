@@ -239,18 +239,6 @@
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Слайдер яркости</string>
-    <string name="qs_brightness_slider_title">Показывать слайдер яркости</string>
-    <string name="qs_brightness_slider_summary">Показывать слайдер яркости в панели быстрых настроек</string>
-    <string name="qs_brightness_position_bottom_title">Показывать слайдер яркости в нижней части</string>
-    <string name="qs_brightness_position_bottom_summary">Показывать слайдер яркости в нижней части быстрых настроек</string>
-
-    <!-- Quick Settings brightness icon -->
-    <string name="brightness_icon_title">Иконка автояркости</string>
-    <string name="brightness_icon_summary">Показывать иконку автояркости рядом со слайдером</string>
-
-    <!-- Quick QS Panel brightness slider -->
-    <string name="quick_qs_brightness_slider_title">Показывать слайдер яркости в шторке</string>
-    <string name="quick_qs_brightness_slider_summary">Показывать слайдер яркости в шторке</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">Предупреждения в нижней части быстрых настроек</string>

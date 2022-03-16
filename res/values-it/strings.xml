@@ -274,18 +274,6 @@
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Cursore luminosità</string>
-    <string name="qs_brightness_slider_title">Mostra cursore luminosità</string>
-    <string name="qs_brightness_slider_summary">Mostra un cursore di luminosità nel pannello impostazioni rapide</string>
-    <string name="qs_brightness_position_bottom_title">Mostra cursore luminosità in basso</string>
-    <string name="qs_brightness_position_bottom_summary">Mostra un cursore di luminosità nelle impostazioni rapide in basso</string>
-
-    <!-- Quick Settings brightness icon -->
-    <string name="brightness_icon_title">Pulsante lumonisità adattiva</string>
-    <string name="brightness_icon_summary">Mostra pulsante lumonisità adattiva</string>
-
-    <!-- Quick QS Panel brightness slider -->
-    <string name="quick_qs_brightness_slider_title">Mostra cursore luminosità nel Pannello Impostazioni rapide</string>
-    <string name="quick_qs_brightness_slider_summary">Mostra un cursore di luminosità nel pannello impostazioni rapide</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">Avvisi footer impostazioni rapide</string>
