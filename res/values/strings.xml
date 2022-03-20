@@ -730,4 +730,7 @@
     <string name="disable_wp_zoom_title">Disable wallpaper zoom</string>
     <string name="disable_wp_zoom_summary">Requires a restart!</string>
 
+    <string name="artwork_media_force_expand_title">Force expand</string>
+    <string name="artwork_media_force_expand_summary">Set QS media player expanded</string>
+
 </resources>
