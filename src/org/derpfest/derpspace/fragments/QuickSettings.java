@@ -51,6 +51,9 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.internal.util.derp.derpUtils;
+
+import com.derp.support.preferences.SystemSettingSwitchPreference;
 import com.derp.support.preferences.SecureSettingMasterSwitchPreference;
 import com.derp.support.preferences.SystemSettingEditTextPreference;
 
@@ -64,11 +67,13 @@ import java.util.regex.Pattern;
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
+    private static final String MEDIA_ARTWORK = "artwork_media_force_expand";
     private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
     private static final String BRIGHTNESS_SLIDER = "qs_show_brightness";
 
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
+    private SystemSettingSwitchPreference mArtwork;
     private SystemSettingEditTextPreference mFooterString;
     private SecureSettingMasterSwitchPreference mBrightnessSlider;
 
@@ -113,6 +118,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             Settings.System.putString(resolver,
                     Settings.System.QS_FOOTER_TEXT_STRING, "#StayDerped");
         }
+
+        mArtwork = (SystemSettingSwitchPreference) findPreference(MEDIA_ARTWORK);
+        mArtwork.setChecked((Settings.System.getInt(resolver,
+                Settings.System.ARTWORK_MEDIA_FORCE_EXPAND, 0) == 1));
+        mArtwork.setOnPreferenceChangeListener(this);
     }
 
      @Override
@@ -131,6 +141,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             int smartPulldown = Integer.valueOf((String) newValue);
             Settings.System.putInt(resolver, Settings.System.QS_SMART_PULLDOWN, smartPulldown);
             updateSmartPulldownSummary(smartPulldown);
+            return true;
+        } else if (preference == mArtwork) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.ARTWORK_MEDIA_FORCE_EXPAND, value ? 0 : 1);
+            derpUtils.showSystemUiRestartDialog(getContext());
             return true;
         } else if (preference == mFooterString) {
             String value = (String) newValue;
