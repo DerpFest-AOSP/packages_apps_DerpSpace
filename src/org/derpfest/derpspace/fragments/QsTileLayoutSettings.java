@@ -27,15 +27,21 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 import org.derpfest.support.preferences.SystemSettingSeekBarPreference;
+import org.derpfest.support.preferences.SystemSettingSwitchPreference;
 
 public class QsTileLayoutSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     private static final String KEY_QS_ROW_PORTRAIT = "qs_layout_rows";
     private static final String KEY_QQS_ROW_PORTRAIT = "qqs_layout_rows";
+    private static final String KEY_QS_HIDE_LABEL = "qs_tile_label_hide";
+    private static final String KEY_QS_VERTICAL_LAYOUT = "qs_tile_vertical_layout";
 
     private SystemSettingSeekBarPreference mQsRows;
     private SystemSettingSeekBarPreference mQqsRows;
+    
+    private SystemSettingSwitchPreference mHide;
+    private SystemSettingSwitchPreference mVertical;
 
     @Override
     public void onCreate(Bundle savedInstance) {
@@ -50,6 +56,15 @@ public class QsTileLayoutSettings extends SettingsPreferenceFragment
 
         mQqsRows = (SystemSettingSeekBarPreference) findPreference(KEY_QQS_ROW_PORTRAIT);
         updateQqsRowsLimit(qs_rows);
+
+        final boolean hideLabel = Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.QS_TILE_LABEL_HIDE , 0, UserHandle.USER_CURRENT) == 1;
+
+        mHide = (SystemSettingSwitchPreference) findPreference(KEY_QS_HIDE_LABEL);
+        mHide.setOnPreferenceChangeListener(this);
+
+        mVertical = (SystemSettingSwitchPreference) findPreference(KEY_QS_VERTICAL_LAYOUT);
+        mVertical.setEnabled(!hideLabel);
     }
 
     @Override
@@ -57,6 +72,10 @@ public class QsTileLayoutSettings extends SettingsPreferenceFragment
         if (preference == mQsRows) {
             int qs_rows = Integer.parseInt(newValue.toString());
             updateQqsRowsLimit(qs_rows);
+            return true;
+        } else if (preference == mHide) {
+            boolean hideLabel = (Boolean) newValue;
+            mVertical.setEnabled(!hideLabel);
             return true;
         }
         return false;

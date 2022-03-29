@@ -41,6 +41,12 @@
         settings:min="1" />
 
     <org.derpfest.support.preferences.SystemSettingSwitchPreference
+        android:key="qs_tile_label_hide"
+        android:title="@string/qs_tile_hide_label_title"
+        android:summary="@string/qs_tile_hide_label_summary"
+        android:defaultValue="false" />
+
+    <org.derpfest.support.preferences.SystemSettingSwitchPreference
         android:key="qs_tile_vertical_layout"
         android:title="@string/qs_tile_vertical_layout_title"
         android:summary="@string/qs_tile_vertical_layout_summary"
