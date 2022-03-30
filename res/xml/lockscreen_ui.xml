@@ -84,12 +84,6 @@
         android:title="@string/alt_layout_category">
 
         <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:defaultValue="false"
-            android:key="lockscreen_small_clock"
-            android:summary="@string/lockscreen_small_clock_summary"
-            android:title="@string/lockscreen_small_clock_title" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_icons_lockscreen"
             android:title="@string/ambient_icons_lockscreen_title"
             android:summary="@string/ambient_icons_lockscreen_summary"

@@ -639,9 +639,6 @@
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Skalieren</string>
 
-    <string name="lockscreen_small_clock_title">Immer kleine Uhr anzeigen</string>
-    <string name="lockscreen_small_clock_summary">Ändert den Uhrstil nicht mehr basierend auf Benachrichtigungen</string>
-
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel-Animation</string>
     <string name="pixel_navbar_anim_summary">Animation der Home-Taste aktivieren</string>

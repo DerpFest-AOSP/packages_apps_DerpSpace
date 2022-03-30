@@ -650,9 +650,6 @@
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
 
-    <string name="lockscreen_small_clock_title">Always show small clock</string>
-    <string name="lockscreen_small_clock_summary">Do not change clock style based on notifications</string>
-
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel animation</string>
     <string name="pixel_navbar_anim_summary">Toggle home button animation</string>
