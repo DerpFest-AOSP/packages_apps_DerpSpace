@@ -46,6 +46,7 @@ import androidx.preference.PreferenceScreen;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.derp.udfps.UdfpsUtils;
 
+import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
@@ -63,6 +64,7 @@ import java.util.regex.Pattern;
 import com.derp.support.preferences.SystemSettingSwitchPreference;
 import com.derp.support.preferences.CustomSystemSeekBarPreference;
 import com.derp.support.colorpicker.ColorPickerPreference;
+import com.derp.support.preferences.SystemSettingListPreference;
 
 @SearchIndexable
 public class LockscreenUI extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
@@ -75,6 +77,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     private static final String AMBIENT_ICONS_LOCKSCREEN = "ambient_icons_lockscreen";
     private static final String AMBIENT_ICONS_SIZE = "ambient_icons_size";
     private static final String AMBIENT_ICONS_COLOR = "ambient_icons_color";
+    private static final String LOCKSCREEN_BATTERY_INFO_TEMP_UNIT = "lockscreen_charge_temp_unit";
 
     private FingerprintManager mFingerprintManager;
     private SystemSettingSwitchPreference mFingerprintSuccessVib;
@@ -85,6 +88,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     private SystemSettingSwitchPreference mAmbientIconsLockscreen;
     private CustomSystemSeekBarPreference mAmbientIconsSize;
     private ColorPickerPreference mAmbientIconsColor;
+    private SystemSettingListPreference mBatteryTempUnit;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -97,6 +101,14 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         final PackageManager mPm = getActivity().getPackageManager();
         final PreferenceCategory fpCategory = (PreferenceCategory)
                 findPreference("lockscreen_ui_finterprint_category");
+
+        int unitMode = Settings.System.getIntForUser(resolver,
+                Settings.System.LOCKSCREEN_BATTERY_INFO_TEMP_UNIT, 0, UserHandle.USER_CURRENT);
+        mBatteryTempUnit = (SystemSettingListPreference) findPreference(
+                "lockscreen_charge_temp_unit");
+        mBatteryTempUnit.setValue(String.valueOf(unitMode));
+        mBatteryTempUnit.setSummary(mBatteryTempUnit.getEntry());
+        mBatteryTempUnit.setOnPreferenceChangeListener(this);
 
         mFingerprintManager = (FingerprintManager)
                 getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
@@ -170,7 +182,16 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mFingerprintSuccessVib) {
+        if (preference == mBatteryTempUnit) {
+            int value = Integer.parseInt((String) objValue);
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.LOCKSCREEN_BATTERY_INFO_TEMP_UNIT, value,
+                    UserHandle.USER_CURRENT);
+            int index = mBatteryTempUnit.findIndexOfValue((String) objValue);
+            mBatteryTempUnit.setSummary(
+            mBatteryTempUnit.getEntries()[index]);
+            return true;
+        } else if (preference == mFingerprintSuccessVib) {
             boolean value = (Boolean) objValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.FP_SUCCESS_VIBRATE, value ? 1 : 0);

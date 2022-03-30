@@ -70,6 +70,14 @@
             android:defaultValue="true" />
 
         <com.derp.support.preferences.SystemSettingListPreference
+            android:key="lockscreen_charge_temp_unit"
+            android:title="@string/lockscreen_charge_temp_unit_title"
+            android:entries="@array/lockscreen_charge_temp_unit_entries"
+            android:entryValues="@array/lockscreen_charge_temp_unit_values"
+            android:defaultValue="1"
+            android:dependency="lockscreen_battery_info" />
+
+        <com.derp.support.preferences.SystemSettingListPreference
             android:key="screen_off_animation"
             android:title="@string/screen_off_animation_title"
             android:dialogTitle="@string/screen_off_animation_title"

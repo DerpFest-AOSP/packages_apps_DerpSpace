@@ -703,4 +703,9 @@
     <string name="less_notification_sounds_15m">Alle 15 Minuten</string>
     <string name="less_notification_sounds_30m">Alle 30 Minuten</string>
 
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Temperatureinheit</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
+    <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
+
 </resources>
