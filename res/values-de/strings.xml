@@ -322,4 +322,10 @@
     <!-- UDFPS icon picker -->
     <string name="udfps_icon_picker_title">Symbolauswahl des Under-Display-Fingerabdrucks</string>
     <string name="udfps_icon_picker_summary">Bevorzugtes Fingerabdrucksymbol wählen</string>
+
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Temperatureinheit</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
+    <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
+
 </resources>

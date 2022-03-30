@@ -362,4 +362,10 @@
     <!-- Udfps icon picker -->
     <string name="udfps_icon_picker_title">UDFPS icon picker</string>
     <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Temperature unit</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
+    <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
+
 </resources>
