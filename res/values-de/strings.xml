@@ -172,9 +172,7 @@
     <string name="summary_heads_up_enabled">Popup-Benachrichtigungen sind aktiviert</string>
     <string name="summary_heads_up_disabled">Popup-Benachrichtigungen sind deaktiviert</string>
     <string name="add_heads_up_package">Anwendung hinzufügen</string>
-    <string name="add_heads_up_stoplist_summary">Deaktiviert Heads-up-Benachrichtigungen in diesen Anwendungen</string>
     <string name="add_heads_up_blacklist_summary">Deaktivieren Sie Heads-Up von diesen Anwendungen</string>
-    <string name="heads_up_stoplist_title">Stoppliste</string>
     <string name="heads_up_blacklist_title">Schwarze Liste</string>
     <string name="profile_choose_app">Anwendung auswählen</string>
     <string name="dialog_delete_title">Löschen</string>
