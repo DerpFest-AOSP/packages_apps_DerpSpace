@@ -62,7 +62,6 @@ public class BatterySettings extends SettingsPreferenceFragment
     private static final String PREF_BATT_BLEND_COLOR_REVERSE = "statusbar_battery_bar_blend_color_reverse";
     private static final String PREF_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String PREF_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
-    private static final String LEFT_BATTERY_TEXT = "do_left_battery_text";
 
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
@@ -83,7 +82,6 @@ public class BatterySettings extends SettingsPreferenceFragment
     private ColorPickerPreference mBatteryBarBatteryLowColor;
     private ListPreference mBatteryPercent;
     private ListPreference mBatteryStyle;
-    private SystemSettingSwitchPreference mLeftBatteryText;
     private int mBatteryPercentValue;
 
     @Override
@@ -163,10 +161,6 @@ public class BatterySettings extends SettingsPreferenceFragment
         updateBatteryBarOptions();
         mBatteryPercent.setEnabled(
                 batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
-
-        mLeftBatteryText = (SystemSettingSwitchPreference) findPreference(LEFT_BATTERY_TEXT);
-        mLeftBatteryText.setEnabled(
-                batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
     }
 
     @Override
@@ -228,8 +222,6 @@ public class BatterySettings extends SettingsPreferenceFragment
             int index = mBatteryStyle.findIndexOfValue((String) newValue);
             mBatteryStyle.setSummary(mBatteryStyle.getEntries()[index]);
             mBatteryPercent.setEnabled(
-                    batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
-            mLeftBatteryText.setEnabled(
                     batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
             return true;
         } else if (preference == mBatteryPercent) {

@@ -385,14 +385,12 @@
     <string name="status_bar_battery_style_big_dotted_circle">Großer gepunkteter Kreis</string>
     <string name="status_bar_battery_style_text">Nur Prozentsatz</string>
     <string name="status_bar_battery_style_hidden">Nicht anzeigen</string>
-    <string name="left_battery_text_title">Linker Batterietext</string>
-    <string name="left_battery_text_summary">Setzen Sie den Batterietext links neben das Batteriesymbol</string>
 
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Akku-Prozentsatz</string>
     <string name="status_bar_battery_percentage_default">Nicht anzeigen</string>
     <string name="status_bar_battery_percentage_text_inside">Im Symbol</string>
-    <string name="status_bar_battery_percentage_text_next">Außerhalb</string>
+    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
 
     <!-- Call strength icons in QS -->
     <string name="show_qs_call_strength_icon_title">Symbole für Anrufstärke anzeigen</string>
