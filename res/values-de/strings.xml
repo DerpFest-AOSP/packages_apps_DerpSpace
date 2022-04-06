@@ -715,7 +715,7 @@
     <string name="reticker_colored_summary">Ersetzen Sie die Hintergrundfarbe von reTicker mithilfe der Hauptfarbe der Benachrichtigungs-App</string>
 
     <!-- Wp zoom -->
-    <string name="use_wp_zoom_title">Hintergrundbild-Zoom aktivieren</string>
-    <string name="use_wp_zoom_summary">Erfordert einen Neustart!</string>
+    <string name="disable_wp_zoom_title">Hintergrundbild-Zoom deaktivieren</string>
+    <string name="disable_wp_zoom_summary">Erfordert einen Neustart!</string>
 
 </resources>

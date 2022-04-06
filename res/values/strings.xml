@@ -727,7 +727,7 @@
     <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
 
     <!-- Wp zoom -->
-    <string name="use_wp_zoom_title">Enable wallpaper zoom</string>
-    <string name="use_wp_zoom_summary">Requires a restart!</string>
+    <string name="disable_wp_zoom_title">Disable wallpaper zoom</string>
+    <string name="disable_wp_zoom_summary">Requires a restart!</string>
 
 </resources>

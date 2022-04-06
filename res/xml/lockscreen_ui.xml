@@ -64,9 +64,9 @@
         android:title="@string/general_category">
 
         <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="use_wp_zoom"
-            android:title="@string/use_wp_zoom_title"
-            android:summary="@string/use_wp_zoom_summary"
+            android:key="disable_wp_zoom"
+            android:title="@string/disable_wp_zoom_title"
+            android:summary="@string/disable_wp_zoom_summary"
             android:defaultValue="false" />
 
         <com.derp.support.preferences.SystemSettingSwitchPreference
