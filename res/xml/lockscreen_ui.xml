@@ -91,11 +91,17 @@
         android:key="alt_layout_category"
         android:title="@string/alt_layout_category">
 
+        <SwitchPreference
+            android:key="lockscreen_double_line_clock_switch"
+            android:title="@string/lockscreen_double_line_clock_setting_toggle"
+            android:summary="@string/lockscreen_double_line_clock_summary"
+            settings:controller="com.android.settings.display.LockscreenClockPreferenceController" />
+
         <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="ambient_icons_lockscreen"
             android:title="@string/ambient_icons_lockscreen_title"
             android:summary="@string/ambient_icons_lockscreen_summary"
-            android:dependency="lockscreen_small_clock"
+            android:dependency="lockscreen_double_line_clock_switch"
             android:defaultValue="false" />
 
         <com.derp.support.preferences.CustomSystemSeekBarPreference
