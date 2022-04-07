@@ -40,6 +40,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -54,7 +55,6 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.internal.util.derp.derpUtils;
 
 import com.derp.support.preferences.SystemSettingSwitchPreference;
-import com.derp.support.preferences.SecureSettingMasterSwitchPreference;
 import com.derp.support.preferences.SystemSettingEditTextPreference;
 
 import java.util.ArrayList;
@@ -69,13 +69,17 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String MEDIA_ARTWORK = "artwork_media_force_expand";
     private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
-    private static final String BRIGHTNESS_SLIDER = "qs_show_brightness";
+    private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
+    private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
+    private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
 
     private ListPreference mQuickPulldown;
     private ListPreference mSmartPulldown;
+    private ListPreference mBrightnessSliderPosition;
+    private ListPreference mShowBrightnessSlider;
     private SystemSettingSwitchPreference mArtwork;
     private SystemSettingEditTextPreference mFooterString;
-    private SecureSettingMasterSwitchPreference mBrightnessSlider;
+    private SwitchPreference mShowAutoBrightness;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,6 +87,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
 
         addPreferencesFromResource(R.xml.quick_settings);
 
+        final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
@@ -100,12 +105,22 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         mSmartPulldown.setValue(String.valueOf(smartPulldown));
         updateSmartPulldownSummary(smartPulldown);
 
-        mBrightnessSlider = (SecureSettingMasterSwitchPreference)
-                findPreference(BRIGHTNESS_SLIDER);
-        mBrightnessSlider.setOnPreferenceChangeListener(this);
-        boolean enabled = Settings.Secure.getInt(resolver,
-                BRIGHTNESS_SLIDER, 1) == 1;
-        mBrightnessSlider.setChecked(enabled);
+        mShowBrightnessSlider = findPreference(KEY_SHOW_BRIGHTNESS_SLIDER);
+        mShowBrightnessSlider.setOnPreferenceChangeListener(this);
+        boolean showSlider = Settings.Secure.getIntForUser(resolver,
+                Settings.Secure.QS_SHOW_BRIGHTNESS_SLIDER, 1, UserHandle.USER_CURRENT) > 0;
+
+        mBrightnessSliderPosition = findPreference(KEY_BRIGHTNESS_SLIDER_POSITION);
+        mBrightnessSliderPosition.setEnabled(showSlider);
+
+        mShowAutoBrightness = findPreference(KEY_SHOW_AUTO_BRIGHTNESS);
+        boolean automaticAvailable = mContext.getResources().getBoolean(
+                com.android.internal.R.bool.config_automatic_brightness_available);
+        if (automaticAvailable) {
+            mShowAutoBrightness.setEnabled(showSlider);
+        } else {
+            prefSet.removePreference(mShowAutoBrightness);
+        }
 
         mFooterString = (SystemSettingEditTextPreference) findPreference(QS_FOOTER_TEXT_STRING);
         mFooterString.setOnPreferenceChangeListener(this);
@@ -159,10 +174,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                         Settings.System.QS_FOOTER_TEXT_STRING, "#StayDerped");
             }
             return true;
-        } else if (preference == mBrightnessSlider) {
-            Boolean value = (Boolean) newValue;
-            Settings.Secure.putInt(resolver,
-                    BRIGHTNESS_SLIDER, value ? 1 : 0);
+        } else if (preference == mShowBrightnessSlider) {
+            int value = Integer.parseInt((String) newValue);
+            mBrightnessSliderPosition.setEnabled(value > 0);
+            if (mShowAutoBrightness != null)
+                mShowAutoBrightness.setEnabled(value > 0);
             return true;
         }
         return false;

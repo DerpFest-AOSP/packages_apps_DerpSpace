@@ -294,11 +294,18 @@
     <string name="roaming_indicator_icon_summary">Anzeige des Roaming-Indikators im Signalsymbol im Roaming-Modus</string>
 
     <!-- Quick Settings brightness slider -->
-    <string name="qs_brightness_slider_category">Helligkeitsregler</string>
-    <string name="qs_show_brightness_title">Helligkeitsregler</string>
-    <string name="qs_show_brightness_summary">Sichtbarkeit und Einstellungen des Helligkeitsreglers</string>
-    <string name="qs_brightness_position_bottom_title">Helligkeitsregler unten</string>
-    <string name="qs_brightness_position_bottom_summary">Den Helligkeitsregler unten in den Schnelleinstellungen anzeigen</string>
+    <string name="qs_show_brightness_slider_title">Helligkeitsregler</string>
+    <string name="qs_show_brightness_slider_never">Niemals anzeigen</string>
+    <string name="qs_show_brightness_slider_expanded">Anzeigen, wenn aufgeklappt</string>
+    <string name="qs_show_brightness_slider_always">Immer anzeigen</string>
+    <string name="qs_show_brightness_slider_not_expanded">Anzeigen, wenn nicht aufgeklappt</string>
+    <string name="qs_brightness_slider_position_title">Position</string>
+    <string name="qs_brightness_slider_position_top">Oben</string>
+    <string name="qs_brightness_slider_position_bottom">Unten</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Symbol für autom. Helligkeit</string>
+    <string name="qs_show_auto_brightness_summary">Schalter für autom. Helligkeit neben dem Helligkeitsregler anzeigen</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">Fußzeilenwarnungen</string>
