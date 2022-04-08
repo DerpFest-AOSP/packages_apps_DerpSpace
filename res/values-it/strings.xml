@@ -19,7 +19,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- General app strings -->
-    <string name="derpspace_title">DerpSpace</string>
     <string name="add">Aggiungi</string>
     <string name="advanced">Avanzate</string>
     <string name="cancel">Elimina</string>

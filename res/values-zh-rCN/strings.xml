@@ -19,7 +19,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- General app strings -->
-    <string name="derpspace_title">Derpfest自定义</string>
     <string name="add">添加</string>
     <string name="advanced">高级</string>
     <string name="cancel">取消</string>
