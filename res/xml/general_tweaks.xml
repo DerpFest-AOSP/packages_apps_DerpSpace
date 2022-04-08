@@ -44,6 +44,12 @@
             android:summary="@string/alert_slider_notifications_summary"
             android:defaultValue="true" />
 
+        <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="headset_connect_player"
+            android:title="@string/headset_connect_player_title"
+            android:summary="@string/headset_connect_player_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

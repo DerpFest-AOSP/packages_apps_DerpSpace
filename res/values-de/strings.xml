@@ -745,4 +745,8 @@
     <string name="less_boring_heads_up_title">Heads-Up weniger lästig machen</string>
     <string name="less_boring_heads_up_summary">Heads-Up nur für Telefon-, Messaging-Apps oder den Wecker anzeigen, wenn sie nicht im Vordergrund sind</string>
 
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Musik-App Bei Kopfhöreranschluß starten</string>
+    <string name="headset_connect_player_summary">Beim Verbinden eines Kopfhörers die Standard-Musik-App starten</string>
+
 </resources>
