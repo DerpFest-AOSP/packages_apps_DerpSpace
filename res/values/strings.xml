@@ -733,4 +733,8 @@
     <string name="artwork_media_force_expand_title">Force expand</string>
     <string name="artwork_media_force_expand_summary">Set QS media player expanded</string>
 
+    <!-- Hide statusbar on lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Hide Statusbar</string>
+    <string name="lockscreen_hide_status_bar_summary">When enabled, statusbar will be hidden on lockscreen</string>
+
 </resources>

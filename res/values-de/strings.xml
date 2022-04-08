@@ -721,4 +721,8 @@
     <string name="artwork_media_force_expand_title">Expandieren erzwingen</string>
     <string name="artwork_media_force_expand_summary">Expandieren des QS-Media-Players erzwingen</string>
 
+    <!-- Hide statusbar on lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Statusleiste ausblenden</string>
+    <string name="lockscreen_hide_status_bar_summary">Bei Aktivierung, wird die Statusleiste auf dem Sperrbildschirm ausgeblendet</string>
+
 </resources>

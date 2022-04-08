@@ -64,6 +64,12 @@
         android:title="@string/general_category">
 
         <com.derp.support.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_hide_status_bar"
+            android:title="@string/lockscreen_hide_status_bar_title"
+            android:summary="@string/lockscreen_hide_status_bar_summary"
+            android:defaultValue="false" />
+
+        <com.derp.support.preferences.SystemSettingSwitchPreference
             android:key="disable_wp_zoom"
             android:title="@string/disable_wp_zoom_title"
             android:summary="@string/disable_wp_zoom_summary"
