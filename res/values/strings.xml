@@ -754,4 +754,8 @@
     <string name="hun_importance_high">High</string>
     <string name="hun_importance_max">Maxiumum</string>
 
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Display popup notifications only for alarm, dialer and messaging app if they are not in foreground</string>
+
 </resources>
