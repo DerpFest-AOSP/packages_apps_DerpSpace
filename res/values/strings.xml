@@ -441,4 +441,8 @@
     <string name="lockscreen_clock_color_title">Lockscreen clock color</string>
     <string name="lockscreen_clock_color_summary">Use secondary color for lockscreen clock, if disabled will use color accent</string>
 
+    <!-- Hide statusbar on lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Hide Statusbar</string>
+    <string name="lockscreen_hide_status_bar_summary">When enabled, statusbar will be hidden on lockscreen</string>
+
 </resources>
