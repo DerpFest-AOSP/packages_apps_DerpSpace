@@ -774,4 +774,8 @@
     <string name="lock_screen_custom_clock_face_spark">Spark</string>
     <string name="lock_screen_custom_clock_face_spark_circle">Spark Circle</string>
 
+    <!-- VoLTE VoWifi override switch -->
+    <string name="volte_vowifi_override_title">VoWiFi override</string>
+    <string name="volte_vowifi_override_summary">Hide VoLTE when VoWiFi is available</string>
+
 </resources>
