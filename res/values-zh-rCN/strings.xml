@@ -592,10 +592,6 @@
     <string name="disable_fingerprint_ripple_effect_title">波纹效果</string>
     <string name="disable_fingerprint_ripple_effect_summary">解锁时禁用波纹效果</string>
 
-     <!-- Nightlight Fod -->
-    <string name="fod_night_light_title">当显示指纹禁用夜光</string>
-    <string name="fod_night_light_summary">如果指纹显示处于启用状态，则在锁定屏幕上禁用夜灯。 禁用此选项可能会影响您在夜光开启时的指纹准确性。</string>
-
     <!-- Ambient Wake gesture -->
     <string name="ambient_pulse_title">主动显示脉冲</string>
     <string name="ambient_wake_gestures_title">唤醒手势主动显示</string>

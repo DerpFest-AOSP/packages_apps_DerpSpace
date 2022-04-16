@@ -649,10 +649,6 @@
     <string name="disable_fingerprint_ripple_effect_title">Ripple-Effekt deaktivieren</string>
     <string name="disable_fingerprint_ripple_effect_summary">Ripple-Effekt beim Entsperren deaktivieren</string>
 
-     <!-- Nightlight Fod -->
-    <string name="fod_night_light_title">Nachtlicht deaktivieren, wenn FOD angezeigt wird</string>
-    <string name="fod_night_light_summary">Deaktivieren Sie das Nachtlicht auf dem Sperrbildschirm, wenn FOD aktiv ist. Das Deaktivieren dieser Option kann die Genauigkeit Ihres Fingerabdrucks bei eingeschaltetem Nachtlicht beeinträchtigen.</string>
-
     <!-- Ambient Wake gesture -->
     <string name="ambient_pulse_title">Ambient Pulse</string>
     <string name="ambient_wake_gestures_title">Ambient-Weckgesten</string>

@@ -626,10 +626,6 @@
     <string name="disable_fingerprint_ripple_effect_title">Эффект волны</string>
     <string name="disable_fingerprint_ripple_effect_summary">Отключить эффект волны при разблокировке</string>
 
-     <!-- Nightlight Fod -->
-    <string name="fod_night_light_title">Disable night light when showing FOD</string>
-    <string name="fod_night_light_summary">Disable night light on lockscreen if FOD is active. Disabling this option might affect your fingerprint accuracy with night light on.</string>
-
     <!-- Ambient Wake gesture -->
     <string name="ambient_pulse_title">Ambient Pulse</string>
     <string name="ambient_wake_gestures_title">Жесты пробуждения</string>
