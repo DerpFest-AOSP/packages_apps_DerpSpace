@@ -62,6 +62,33 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:title="@string/notification_material_dismiss_title">
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="notification_material_dismiss"
+            android:title="@string/notification_material_dismiss_title"
+            android:summary="@string/notification_material_dismiss_summary"
+            android:defaultValue="false" />
+
+        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
+            android:key="notification_material_dismiss_style"
+            android:title="@string/notification_material_dismiss_style_title"
+            android:dependency="notification_material_dismiss"
+            android:defaultValue="0"
+            android:max="10"
+            android:min="0" />
+
+        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
+            android:key="notification_material_dismiss_bgstyle"
+            android:title="@string/notification_material_dismiss_bgstyle_title"
+            android:dependency="notification_material_dismiss"
+            android:defaultValue="0"
+            android:max="6"
+            android:min="0" />
+
+    </PreferenceCategory>
+
      <PreferenceCategory
         android:key="quick_settings_footer_category"
         android:title="@string/footer_category">
