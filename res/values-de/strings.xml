@@ -744,4 +744,10 @@
     <string name="battery_level_colors_title">Buntes Batteriesymbol aktivieren</string>
     <string name="battery_level_colors_summary">Jeder Batteriestandsabfall ist farbcodiert</string>
 
+    <!-- Material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_title">Schaltfläche zum Schließen aller Apps</string>
+    <string name="notification_material_dismiss_summary">Aktivieren, um eine Schaltfläche in der unteren Bildschirmmitte anstelle des Textes \"Alle löschen\" zu verwenden</string>
+    <string name="notification_material_dismiss_style_title">Stil der Schaltfläche</string>
+    <string name="notification_material_dismiss_bgstyle_title">Hintergrund der Schaltfläche</string>
+
 </resources>
