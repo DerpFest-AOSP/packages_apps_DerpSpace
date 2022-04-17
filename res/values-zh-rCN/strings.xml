@@ -17,7 +17,7 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    
+
     <!-- General app strings -->
     <string name="add">添加</string>
     <string name="advanced">高级</string>
@@ -130,19 +130,81 @@
     <string name="show_fourg_icon_title">4G 图标</string>
     <string name="show_fourg_icon_summary">在信号图标中显示4G图标代替LTE</string>
 
-    <!-- VoLTE icon -->
+    <!-- Show VoLTE icon on statusbar -->
     <string name="volte_switch_title">VoLTE 图标</string>
     <string name="volte_switch_summary">显示VoLTE图标</string>
     <string name="volte_icon_title">VoLTE 图标</string>
     <string name="volte_icon_summary">当使用VoLTE时显示VoLTE图标</string>
+    <string name="volte_icon_style_title">选择 VoLTE 图标</string>
+    <string name="volte_icon_asus">VoLTE Asus Icon</string>
+    <string name="volte_icon_vo">Vo Only Icon</string>
+    <string name="volte_icon_volte">VoLTE Icon</string>
+    <string name="volte_icon_oos">VoLTE OOS Icon</string>
+    <string name="volte_icon_hd">HD Icon</string>
+    <string name="volte_icon_hd2">HD CAF Icon</string>
+    <string name="volte_icon_miui">MIUI 11 Icon</string>
+    <string name="volte_icon_emui">EMUI Icon</string>
+    <string name="volte_icon_margaritov">HD Filled Icon</string>
+    <string name="volte_icon_margaritov2">Margaritov VoLTE Icon</string>
+    <string name="volte_icon_vivo">Vivo Icon</string>
 
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">VoWiFi 图标</string>
-    <string name="vowifi_icon_summary">当使用VoWiFi时显示VoWiFi图标</string>
+    <string name="vowifi_icon_enabled">显示 VoWiFi 图标</string>
+    <string name="vowifi_icon_disabled">隐藏 VoWiFi 图标</string>
+    <string name="vowifi_icon_enabled_volte_disabled">使用 VoWiFi 图标代替 VoLTE 图标</string>
+    <string name="vowifi_icon_style_title">VoWiFi 图标样式</string>
+    <string name="vowifi_icon_default">Default Icon</string>
+    <string name="vowifi_icon_emui">EMUI Icon</string>
+    <string name="vowifi_icon_asus">Asus Icon</string>
+    <string name="vowifi_icon_oneplus">OOS Icon</string>
+    <string name="vowifi_icon_moto">Motorola Icon</string>
+    <string name="vowifi_icon_simple1">Simple1 Icon</string>
+    <string name="vowifi_icon_simple2">Simple2 Icon</string>
+    <string name="vowifi_icon_simple3">Simple3 Icon</string>
+    <string name="vowifi_icon_vivo">Vivo Icon</string>
+    <string name="vowifi_icon_margaritov">Margaritov Icon</string>
 
     <!-- Toast app icon -->
-    <string name="toast_icon_title">通知中应用程序图标</string>
-    <string name="toast_icon_summary">显示对应通知的应用程序图标</string>
+    <string name="toast_icon_title">Toast 通知图标</string>
+    <string name="toast_icon_summary">在 Toast 通知上显示应用程序图标</string>
+
+    <!-- Heads up -->
+    <string name="headsup_category">浮动通知设置</string>
+    <string name="heads_up_notifications">浮动通知</string>
+    <string name="heads_up_notifications_summary">自定义浮动通知设置</string>
+    <string name="summary_heads_up_enabled">浮动通知已开启</string>
+    <string name="summary_heads_up_disabled">浮动通知已关闭</string>
+    <string name="add_heads_up_package">添加应用</string>
+    <string name="add_heads_up_blacklist_summary">在这些应用中停用浮动通知</string>
+    <string name="heads_up_blacklist_title">黑名单</string>
+    <string name="profile_choose_app">选择应用</string>
+    <string name="dialog_delete_title">移除</string>
+    <string name="dialog_delete_message">移除选定的项目？</string>
+
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">通知超时</string>
+    <string name="heads_up_time_out_summary">浮动通知将显示 <xliff:g id="number">%d</xliff:g> 秒</string>
+    <string name="heads_up_time_out_2sec">2 秒</string>
+    <string name="heads_up_time_out_4sec">4 秒</string>
+    <string name="heads_up_time_out_5sec">5 秒</string>
+    <string name="heads_up_time_out_6sec">6 秒</string>
+    <string name="heads_up_time_out_8sec">8 秒</string>
+    <string name="heads_up_time_out_10sec">10 秒</string>
+
+    <!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">暂停计时器</string>
+    <string name="heads_up_snooze_summary_one_minute">向上滑动浮动通知将暂停接收该应用的通知 1 分钟</string>
+    <string name="heads_up_snooze_summary">向上滑动浮动通知将暂停接收该应用的通知 <xliff:g id="number">%d</xliff:g> 分钟</string>
+    <string name="heads_up_snooze_disabled_summary">暂停计时器已禁用</string>
+    <string name="heads_up_snooze_1min">1 分钟</string>
+    <string name="heads_up_snooze_5min">5 分钟</string>
+    <string name="heads_up_snooze_10min">10 分钟</string>
+    <string name="heads_up_snooze_15min">15 分钟</string>
+    <string name="heads_up_snooze_20min">20 分钟</string>
+    <string name="heads_up_snooze_25min">25 分钟</string>
+    <string name="heads_up_snooze_30min">30 分钟</string>
+    <string name="heads_up_snooze_1h">1 小时</string>
 
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">状态栏快速打开控制中心</string>
@@ -192,18 +254,18 @@
     <string name="qs_edit_title">编辑磁贴图标</string>
     <string name="qs_edit_summary">在控制中心显示磁贴的图标</string>
 
-	    <!-- DerpFest logo -->
+    <!-- DerpFest logo -->
     <string name="derp_logo_title">显示DerpFest logo</string>
     <string name="derp_logo_summary">让每个人都知道你在用Derpfest</string>
 
     <!-- Statusbar net monitor -->
     <string name="traffic_title">网速显示</string>
     <string name="network_traffic">显示实时网速</string>
-    <string name="statusbar_show_network_traffic_title">显示网速在状态栏</string>
+    <string name="statusbar_show_network_traffic_title">在状态栏显示网速</string>
     <string name="statusbar_network_traffic_threshold_tx_title">自动隐藏上传阈值</string>
     <string name="statusbar_network_traffic_threshold_rx_title">自动隐藏下载阈值</string>
-    <string name="statusbar_network_traffic_unit_text_size_title">网速指示灯文字大小</string>
-    <string name="statusbar_network_traffic_rate_text_scale_factor_title">网速指示灯文字比例</string>
+    <string name="statusbar_network_traffic_unit_text_size_title">网速指示器文字大小</string>
+    <string name="statusbar_network_traffic_rate_text_scale_factor_title">网速指示器文字比例</string>
     <string name="statusbar_network_traffic_rate_text_scale_factor_dialog_title">比例</string>
 
     <!-- Lockscreen media artwork -->
@@ -233,11 +295,23 @@
     <string name="data_disabled_icon_summary">当数据被禁用时，在信号栏旁边显示打叉符号</string>
 
     <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">漫游指示灯</string>
-    <string name="roaming_indicator_icon_summary">在漫游模式下，在信号图标中显示漫游指示灯</string>
+    <string name="roaming_indicator_icon_title">漫游指示器</string>
+    <string name="roaming_indicator_icon_summary">在漫游模式下，在信号图标中显示漫游指示器</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">亮度滑块</string>
+    <string name="qs_show_brightness_slider_title">亮度滑块</string>
+    <string name="qs_show_brightness_slider_never">不显示</string>
+    <string name="qs_show_brightness_slider_expanded">展开控制中心时显示</string>
+    <string name="qs_show_brightness_slider_always">总是显示</string>
+    <string name="qs_show_brightness_slider_not_expanded">未展开控制中心时显示</string>
+    <string name="qs_brightness_slider_position_title">位置</string>
+    <string name="qs_brightness_slider_position_top">顶部</string>
+    <string name="qs_brightness_slider_position_bottom">底部</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">自动亮度按钮</string>
+    <string name="qs_show_auto_brightness_summary">在亮度滑块旁显示自动亮度按钮</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">控制中心底部警告</string>
@@ -304,8 +378,8 @@
     <string name="charging_animation_title">充电动画</string>
     <string name="charging_animation_summary">充电时显示动画</string>
 
-   <!-- Battery Settings -->
-    <string name="battery_settings_title">电池设置</string>   
+    <!-- Battery Settings -->
+    <string name="battery_settings_title">电池设置</string>
 
     <!-- Battery Styles -->
     <string name="battery_style_category_title">电池样式</string>
@@ -323,8 +397,6 @@
     <string name="status_bar_battery_style_big_dotted_circle">大虚线圆</string>
     <string name="status_bar_battery_style_text">文本</string>
     <string name="status_bar_battery_style_hidden">隐藏</string>
-    <string name="left_battery_text_title">居左电量显示</string>
-    <string name="left_battery_text_summary">将电量放在电池图标的左侧</string>
 
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">电池百分比</string>
@@ -378,11 +450,11 @@
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">显示控制中心底部文本</string>
     <string name="qs_footer_text_string_title">自定义控制中心底部文本</string>
-    <string name="qs_footer_text_string_summary">默认为StayDerped</string>
+    <string name="qs_footer_text_string_summary">默认为 #StayDerped</string>
 
     <!-- Combined signal icons in status bar -->
     <string name="combined_status_bar_signal_icons">组合信号图标</string>
-    <string name="combined_status_bar_signal_icons_summary">启用状态栏中的组合信号图标,需要重启system ui</string>
+    <string name="combined_status_bar_signal_icons_summary">启用状态栏中的组合信号图标,需要重启SystemUI</string>
 
     <!-- Incall vibrate options -->
     <string name="incall_vibration_category">呼叫内振动选项</string>
@@ -477,15 +549,15 @@
 
     <string name="ambient_ui">息屏或始终显示</string>
     <string name="ambient_battery_title">息屏显示电量</string>
+    <string name="aod_title">息屏显示</string>
 
     <!-- AoD battery bar -->
-    <string name="aod_display_category">主动/始终显示</string>
     <string name="keyguard_show_battery_title">充电时电池条</string>
     <string name="keyguard_show_battery_summary">充电时在显示屏上显示电池条</string>
     <string name="keyguard_show_battery_always_title">始终息屏显示电池条</string>
     <string name="keyguard_show_battery_always_summary">始终在息屏上显示电池条</string>
 
-    <!-- Ambient display battery percentage --> 
+    <!-- Ambient display battery percentage -->
     <string name="ambient_battery_percent_title">底部的电池电量</string>
     <string name="ambient_battery_percent_summary">允许在闲置时显示电池百分比</string>
 
@@ -581,9 +653,6 @@
     <string name="screen_off_animation_crt">闪断动画</string>
     <string name="screen_off_animation_scale">缩放动画</string>
 
-    <string name="lockscreen_small_clock_title">总是显示个小时钟</string>
-    <string name="lockscreen_small_clock_summary">不要根据通知更改时钟样式</string>
-
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel动画</string>
     <string name="pixel_navbar_anim_summary">按下主屏幕按钮动画</string>
@@ -611,5 +680,81 @@
     <string name="use_photos_spoof_title">无限的Google照片存储</string>
     <string name="use_photos_spoof_summary">您的设备将被识别为 Pixel XL，以原始质量获得无限的 Google 照片存储空间</string>
     <string name="photos_spoof_toast">重新启动照片应用程序以使其生效</string>
+
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">烦人的通知</string>
+    <string name="notification_sound_vib_screen_on_summary">在屏幕开启时为通知播放声音和震动</string>
+
+    <!-- Applications fragment -->
+    <string name="search">搜索</string>
+    <string name="search_apps">搜索应用</string>
+
+    <!-- AOD Icons on Lockscreen! -->
+    <string name="alt_layout_category">替代布局</string>
+    <string name="ambient_icons_lockscreen_title">锁屏上的息屏显示图标</string>
+    <string name="ambient_icons_lockscreen_summary">使用息屏显示图标替代通知</string>
+    <string name="ambient_icons_size_title">息屏显示图标大小</string>
+    <string name="ambient_icons_color_title">息屏显示图标颜色</string>
+    <string name="ambient_icons_intro_text">需要重启 SystemUI</string>
+
+    <!-- Notification Vibration -->
+    <string name="vibrate_on_notifications_title">通知震动</string>
+    <string name="vibrate_on_notifications_summary">在收到通知时震动</string>
+
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">温度单位</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">法式度</string>
+    <string name="lockscreen_charge_temp_unit_celsius">摄氏度</string>
+
+    <!-- Disable music track title in QS tile -->
+    <string name="qs_music_tile_track_optional_title">音乐磁贴标题</string>
+    <string name="qs_music_tile_track_optional_summary">使用音乐标题作为快速设置磁贴标题</string>
+
+    <!-- reTicker -->
+    <string name="reticker_category" translatable="false">reTicker</string>
+    <string name="reticker_title">reTicker\n需要重启 SystemUI</string>
+    <string name="reticker_summary">使用重新设计的样式替代您的通知\n相比于标准通知更纤细，减少了割裂感</string>
+    <string name="reticker_colored_title">使用应用颜色着色背景</string>
+    <string name="reticker_colored_summary">使用应用主色调替换 reTicker 背景颜色</string>
+
+    <!-- Wp zoom -->
+    <string name="disable_wp_zoom_title">禁用壁纸缩放</string>
+    <string name="disable_wp_zoom_summary">需要重启!</string>
+
+    <string name="artwork_media_force_expand_title">强制展开</string>
+    <string name="artwork_media_force_expand_summary">强制展开快速设置媒体播放器</string>
+
+    <!-- Hide statusbar on lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">隐藏状态栏</string>
+    <string name="lockscreen_hide_status_bar_summary">在锁屏上隐藏状态栏</string>
+
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">强行停止应用按钮</string>
+    <string name="notification_guts_kill_app_button_summary">在通知长按菜单中显示强行停止按钮</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">强制展开通知</string>
+    <string name="force_expanded_notifications_summary">仅对支持展开通知的应用有效</string>
+
+    <!-- HeadsUp notifications importance threshold -->
+    <!--string name="hun_importance_none">None</string-->
+    <string name="hun_importance_title">重要性阈值</string>
+    <string name="hun_importance_min">最低</string>
+    <string name="hun_importance_low">低</string>
+    <string name="hun_importance_default">默认</string>
+    <string name="hun_importance_high">高</string>
+    <string name="hun_importance_max">最高</string>
+
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">更安静的浮动通知</string>
+    <string name="less_boring_heads_up_summary">仅显示闹钟、电话和短信的浮动通知</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">耳机连接时启动音乐应用</string>
+    <string name="headset_connect_player_summary">耳机连接时启动默认音乐应用</string>
+
+    <!-- Colorful battery icon -->
+    <string name="battery_level_colors_title">显示多彩电池图标</string>
+    <string name="battery_level_colors_summary">每个电量级别显示对应颜色</string>
 
 </resources>
