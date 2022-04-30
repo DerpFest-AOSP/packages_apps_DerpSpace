@@ -699,7 +699,7 @@
     <string name="qs_music_tile_track_optional_summary">Zeigt den Titelnamen als Kachelbezeichnung</string>
 
     <!-- reTicker -->
-    <string name="reticker_title">reTicker\nErfordert einen Neustart der SystemUI</string>
+    <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Ersetzen Sie Ihre Benachrichtigungen durch eine neu gestaltete Version vom Ticker. \nSchmal und weniger invasiv als eine Standardbenachrichtigung.</string>
     <string name="reticker_colored_title">Verwenden Sie App-farbigen Hintergrund</string>
     <string name="reticker_colored_summary">Ersetzen Sie die Hintergrundfarbe von reTicker mithilfe der Hauptfarbe der Benachrichtigungs-App</string>
