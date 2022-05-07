@@ -672,6 +672,8 @@
     <string name="reticker_summary">Ersetzen Sie Ihre Benachrichtigungen durch eine neu gestaltete Version vom Ticker. \nSchmal und weniger invasiv als eine Standardbenachrichtigung.</string>
     <string name="reticker_colored_title">Verwenden Sie App-farbigen Hintergrund</string>
     <string name="reticker_colored_summary">Ersetzen Sie die Hintergrundfarbe von reTicker mithilfe der Hauptfarbe der Benachrichtigungs-App</string>
+    <string name="reticker_landscape_only_title">Nur im Querformat</string>
+    <string name="reticker_landscape_only_summary">reTicker nur aktivieren, wenn das Gerät im Querformat ist</string>
 
     <!-- Wp zoom -->
     <string name="disable_wp_zoom_title">Hintergrundbild-Zoom deaktivieren</string>
