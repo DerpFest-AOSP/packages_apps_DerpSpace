@@ -42,18 +42,14 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.derp.udfps.UdfpsUtils;
 
+import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.core.TogglePreferenceController;
-import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.display.LockscreenClockPreferenceController;
-import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.search.BaseSearchIndexProvider;
 
 import com.android.settingslib.search.Indexable;

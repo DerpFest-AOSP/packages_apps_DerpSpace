@@ -679,7 +679,7 @@
     <string name="ambient_icons_lockscreen_summary">Ändern Sie die Darstellung der AOD-Symbole</string>
     <string name="ambient_icons_size_title">Größe der AOD-Symbole</string>
     <string name="ambient_icons_color_title">Farbe der AOD-Symbole</string>
-    <string name="ambient_icons_intro_text">Erfordert einen SystemUI-Neustart</string>
+    <string name="ambient_icons_intro_text">Für diese Einstellungen muss die Uhrzeit in zwei Zeilen (Display > Sperrbildschirm) deaktiviert sein und ein Neustart der System-UI ist notwendig, um wirksam zu werden</string>
 
     <!-- Notification Vibration -->
     <string name="vibrate_on_notifications_title">Benachrichtigungsvibration</string>

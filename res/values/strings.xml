@@ -692,7 +692,7 @@
     <string name="ambient_icons_lockscreen_summary">Replace notifications with AOD icons</string>
     <string name="ambient_icons_size_title">AOD icons size</string>
     <string name="ambient_icons_color_title">AOD icons color</string>
-    <string name="ambient_icons_intro_text">Requires a SystemUI restart</string>
+    <string name="ambient_icons_intro_text">For these settings double line clock switch (Display > Loockscreen) must be deactivated and a systemui restart is necessary to take effect.</string>
 
     <!-- Notification Vibration -->
     <string name="vibrate_on_notifications_title">Notification vibration</string>
