@@ -749,10 +749,6 @@
     <string name="less_boring_heads_up_title">更安静的浮动通知</string>
     <string name="less_boring_heads_up_summary">仅显示闹钟、电话和短信的浮动通知</string>
 
-    <!-- Launch music player when headset is connected -->
-    <string name="headset_connect_player_title">耳机连接时启动音乐应用</string>
-    <string name="headset_connect_player_summary">耳机连接时启动默认音乐应用</string>
-
     <!-- Colorful battery icon -->
     <string name="battery_level_colors_title">显示多彩电池图标</string>
     <string name="battery_level_colors_summary">每个电量级别显示对应颜色</string>
