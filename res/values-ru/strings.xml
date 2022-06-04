@@ -506,10 +506,6 @@
     <string name="artwork_media_background_blur_radius_title">Сила размытия</string>
     <string name="artwork_media_background_alpha_title">Прозрачность обложки</string>
 
-    <!-- Ambient Ticker -->
-    <string name="pulse_on_new_tracks_title">Название песни в Always on Display</string>
-    <string name="pulse_on_new_tracks_summary">показывать название песни в Always on Display при переключении треков</string>
-
     <string name="ambient_ui">Always on Display</string>
     <string name="ambient_battery_title">Отображение заряда</string>
 

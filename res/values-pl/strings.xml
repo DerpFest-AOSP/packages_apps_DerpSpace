@@ -455,10 +455,6 @@
     <string name="artwork_media_background_blur_radius_title">Wielkość rozmycia dla grafiki multimedialnej</string>
     <string name="artwork_media_background_alpha_title">Przezroczystość dla grafiki multimedialnej</string>
 
-    <!-- Ambient Ticker -->
-    <string name="pulse_on_new_tracks_title">Pokaż znacznik muzyki ambient</string>
-    <string name="pulse_on_new_tracks_summary">Gdy na ekranie ambient odtwarzany jest nowy tytuł utworu. Dotknij dwukrotnie informacji o utworze, aby przejść do następnego utworu</string>
-
     <string name="ambient_ui">Ekran zawsze włączony</string>
     <string name="ambient_battery_title">Bateria na ekranie zawsze włączonym</string>
 

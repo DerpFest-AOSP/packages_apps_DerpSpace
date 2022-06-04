@@ -543,10 +543,6 @@
     <string name="artwork_media_background_blur_radius_title">媒体封面的模糊度</string>
     <string name="artwork_media_background_alpha_title">媒体封面的透明度</string>
 
-    <!-- Ambient Ticker -->
-    <string name="pulse_on_new_tracks_title">曲目改变主动显示</string>
-    <string name="pulse_on_new_tracks_summary">在曲目更改期间，主动显示</string>
-
     <string name="ambient_ui">息屏或始终显示</string>
     <string name="ambient_battery_title">息屏显示电量</string>
     <string name="aod_title">息屏显示</string>
