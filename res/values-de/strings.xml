@@ -742,10 +742,6 @@
     <string name="notification_material_dismiss_style_title">Stil der Schaltfläche</string>
     <string name="notification_material_dismiss_bgstyle_title">Hintergrund der Schaltfläche</string>
 
-    <!-- VoLTE VoWifi override switch -->
-    <string name="volte_vowifi_override_title">Vorrang für VoWiFi</string>
-    <string name="volte_vowifi_override_summary">VoLTE-Symbol ausblenden, wenn VoWiFi verfügbar ist</string>
-
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Datenverbrauch</string>
     <string name="qs_footer_datausage_summary">Zusammenfassung der Datennutzung in der Fußzeile der Schnelleinstellungen anzeigen</string>

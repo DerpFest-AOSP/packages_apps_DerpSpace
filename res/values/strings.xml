@@ -756,10 +756,6 @@
     <string name="notification_material_dismiss_style_title">Button style</string>
     <string name="notification_material_dismiss_bgstyle_title">Button background</string>
 
-    <!-- VoLTE VoWifi override switch -->
-    <string name="volte_vowifi_override_title">VoWiFi override</string>
-    <string name="volte_vowifi_override_summary">Hide VoLTE when VoWiFi is available</string>
-
     <!-- Data usage info in QS footer -->
     <string name="qs_footer_datausage_title">Data usage</string>
     <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
