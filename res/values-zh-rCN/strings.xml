@@ -649,10 +649,6 @@
     <string name="screen_off_animation_crt">闪断动画</string>
     <string name="screen_off_animation_scale">缩放动画</string>
 
-    <!-- Navbar Animation -->
-    <string name="pixel_navbar_anim_title">Pixel动画</string>
-    <string name="pixel_navbar_anim_summary">按下主屏幕按钮动画</string>
-
     <!-- Ripple Effect on lockscreen -->
     <string name="disable_fingerprint_ripple_effect_title">波纹效果</string>
     <string name="disable_fingerprint_ripple_effect_summary">解锁时禁用波纹效果</string>

@@ -614,10 +614,6 @@
     <string name="lockscreen_small_clock_title">Всегда показывать маленькие часы</string>
     <string name="lockscreen_small_clock_summary">Не менять стиль часов на основе уведомлений</string>
 
-    <!-- Navbar Animation -->
-    <string name="pixel_navbar_anim_title">Анимация Pixel</string>
-    <string name="pixel_navbar_anim_summary">Включить анимацию кнопки "Домой"</string>
-
     <!-- Ripple Effect on lockscreen -->
     <string name="disable_fingerprint_ripple_effect_title">Эффект волны</string>
     <string name="disable_fingerprint_ripple_effect_summary">Отключить эффект волны при разблокировке</string>

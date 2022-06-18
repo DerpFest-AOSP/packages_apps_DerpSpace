@@ -62,12 +62,10 @@ public class NavbarSettings extends DashboardFragment implements OnPreferenceCha
 
     private static final String KEY_NAVIGATION_BAR_ENABLED = "navbar_visibility";
     private static final String LAYOUT_SETTINGS = "layout_settings";
-    private static final String PIXEL_NAV_ANIMATION = "pixel_nav_animation";
     private static final String NAVBAR_KEY = "android.theme.customization.navbar";
 
     private SwitchPreference mNavigationBar;
     private Preference mLayoutSettings;
-    private SwitchPreference mPixelNavAnimation;
     private ListPreference mNavbarStyle;
 
     private boolean mIsNavSwitchingMode = false;
@@ -88,20 +86,16 @@ public class NavbarSettings extends DashboardFragment implements OnPreferenceCha
                 resolver, KEY_NAVIGATION_BAR_ENABLED,
                 defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
 
-        mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
         mNavigationBar = (SwitchPreference) findPreference(KEY_NAVIGATION_BAR_ENABLED);
         mNavigationBar.setChecked((Settings.System.getInt(getContentResolver(),
             KEY_NAVIGATION_BAR_ENABLED,
             defaultToNavigationBar ? 1 : 0) == 1));
         mNavigationBar.setOnPreferenceChangeListener(this);
 
-        final boolean isThreeButtonNavbarEnabled = derpUtils.isOverlayEnabled("com.android.internal.systemui.navbar.threebutton");
         mLayoutSettings = (Preference) findPreference(LAYOUT_SETTINGS);
-        mLayoutSettings.setEnabled(isThreeButtonNavbarEnabled);
-        mPixelNavAnimation = (SwitchPreference) findPreference(PIXEL_NAV_ANIMATION);
-        mPixelNavAnimation.setEnabled(isThreeButtonNavbarEnabled);
+        mLayoutSettings.setEnabled(derpUtils.isOverlayEnabled("com.android.internal.systemui.navbar.threebutton"));
         mNavbarStyle = (ListPreference) findPreference(NAVBAR_KEY);
-        mNavbarStyle.setEnabled(isThreeButtonNavbarEnabled);
+        mNavbarStyle.setEnabled(derpUtils.isOverlayEnabled("com.android.internal.systemui.navbar.threebutton"));
 
         mHandler = new Handler();
     }
