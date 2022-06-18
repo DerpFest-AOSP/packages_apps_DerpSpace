@@ -134,6 +134,8 @@
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">VoWiFi-Symbol</string>
     <string name="vowifi_icon_summary">VoWiFi-Symbol anzeigen, wenn verfügbar</string>
+    <string name="volte_vowifi_override_title">VoWiFi-Überschreibung</string>
+    <string name="volte_vowifi_override_summary">Das VoLTE-Symbol ausblenden, wenn VoWiFi verfügbar ist</string>
 
     <!-- Toast app icon -->
     <string name="toast_icon_title">Toast-App-Symbol</string>
