@@ -22,4 +22,16 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/general_tweaks_title">
 
+    <PreferenceCategory
+        android:key="general_tweaks_general_category"
+        android:title="@string/general_category">
+
+        <org.derpfest.support.preferences.SecureSettingSwitchPreference
+            android:key="display_settings_wallpaper_zoom"
+            android:title="@string/wallpaper_zoom_effect_title"
+            android:summary="@string/wallpaper_zoom_effect_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
