@@ -512,6 +512,7 @@
     <string name="artwork_media_background_summary">Legen Sie Mediengrafiken als Hintergrund für Medienbenachrichtigungen fest</string>
     <string name="artwork_media_background_enable_blur_title">Mediengrafiken verwischen</string>
     <string name="artwork_media_background_blur_radius_title">Unschärfebetrag für Mediengrafiken</string>
+    <string name="artwork_media_background_fade_filter_title">Überblendbetrag für Mediengrafiken</string>
     <string name="artwork_media_background_alpha_title">Transparenz für Mediengrafiken</string>
 
     <string name="ambient_ui">Ambient/Always on display</string>
