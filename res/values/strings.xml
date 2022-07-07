@@ -713,7 +713,7 @@
     <string name="hun_importance_low">Low</string>
     <string name="hun_importance_default">Default</string>
     <string name="hun_importance_high">High</string>
-    <string name="hun_importance_max">Maxiumum</string>
+    <string name="hun_importance_max">Maximum</string>
 
     <!-- Heads up options -->
     <string name="less_boring_heads_up_title">Make heads up less annoying</string>
