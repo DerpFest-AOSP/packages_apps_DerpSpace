@@ -721,4 +721,8 @@
     <string name="qs_footer_datausage_title">Datenverbrauch</string>
     <string name="qs_footer_datausage_summary">Zusammenfassung der Datennutzung in der Fußzeile der Schnelleinstellungen anzeigen</string>
 
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">WLAN-Typ-Symbol anzeigen</string>
+    <string name="show_wifi_standard_icon_summary">WLAN-Typ in der WLAN-Signalanzeige anzeigen</string>
+
 </resources>
