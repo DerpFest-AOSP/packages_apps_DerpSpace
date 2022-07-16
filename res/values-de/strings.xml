@@ -508,12 +508,11 @@
 
     <!-- Media artwork -->
     <string name="media_category">Medienbenachrichtigung</string>
-    <string name="artwork_media_background_title">Hintergrund mit Mediengrafiken</string>
-    <string name="artwork_media_background_summary">Legen Sie Mediengrafiken als Hintergrund für Medienbenachrichtigungen fest</string>
-    <string name="artwork_media_background_enable_blur_title">Mediengrafiken verwischen</string>
-    <string name="artwork_media_background_blur_radius_title">Unschärfebetrag für Mediengrafiken</string>
-    <string name="artwork_media_background_fade_filter_title">Überblendbetrag für Mediengrafiken</string>
-    <string name="artwork_media_background_alpha_title">Transparenz für Mediengrafiken</string>
+    <string name="media_artwork_enabled_title">Hintergrund mit Mediengrafiken</string>
+    <string name="media_artwork_enabled_summary">Legen Sie Mediengrafiken als Hintergrund für Medienbenachrichtigungen fest</string>
+    <string name="media_artwork_blur_enabled_title">Mediengrafiken verwischen</string>
+    <string name="media_artwork_blur_radius_title">Unschärfebetrag für Mediengrafiken</string>
+    <string name="media_artwork_fade_percent_title">Überblendbetrag für Mediengrafiken</string>
 
     <string name="ambient_ui">Ambient/Always on display</string>
     <string name="ambient_battery_title">AOD-Akkustand</string>
@@ -678,8 +677,8 @@
     <string name="disable_wp_zoom_title">Hintergrundbild-Zoom deaktivieren</string>
     <string name="disable_wp_zoom_summary">Erfordert einen Neustart!</string>
 
-    <string name="artwork_media_force_expand_title">Expandieren erzwingen</string>
-    <string name="artwork_media_force_expand_summary">Expandieren des QS-Media-Players erzwingen</string>
+    <string name="media_artwork_force_expand_title">Expandieren erzwingen</string>
+    <string name="media_artwork_force_expand_summary">Expandieren des QS-Media-Players erzwingen</string>
 
     <!-- Hide statusbar on lockscreen -->
     <string name="lockscreen_hide_status_bar_title">Statusleiste ausblenden</string>

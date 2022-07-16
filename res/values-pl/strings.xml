@@ -449,11 +449,10 @@
 
     <!-- Media artwork -->
     <string name="media_category">Powiadomienie mediów</string>
-    <string name="artwork_media_background_title">Tło multimedialne</string>
-    <string name="artwork_media_background_summary">Ustaw grafikę multimedialną jako tło multimediów powiadomienia</string>
-    <string name="artwork_media_background_enable_blur_title">Rozmycie grafiki multimedialnej</string>
-    <string name="artwork_media_background_blur_radius_title">Wielkość rozmycia dla grafiki multimedialnej</string>
-    <string name="artwork_media_background_alpha_title">Przezroczystość dla grafiki multimedialnej</string>
+    <string name="media_artwork_enabled_title">Tło multimedialne</string>
+    <string name="media_artwork_enabled_summary">Ustaw grafikę multimedialną jako tło multimediów powiadomienia</string>
+    <string name="media_artwork_blur_enabled_title">Rozmycie grafiki multimedialnej</string>
+    <string name="media_artwork_blur_radius_title">Wielkość rozmycia dla grafiki multimedialnej</string>
 
     <string name="ambient_ui">Ekran zawsze włączony</string>
     <string name="ambient_battery_title">Bateria na ekranie zawsze włączonym</string>

@@ -500,11 +500,10 @@
 
     <!-- Media artwork -->
     <string name="media_category">Уведомление плеера</string>
-    <string name="artwork_media_background_title">Обложка как фон плеера</string>
-    <string name="artwork_media_background_summary">Установить обложку в качестве фона для уведомления плеера</string>
-    <string name="artwork_media_background_enable_blur_title">Размытие обложки</string>
-    <string name="artwork_media_background_blur_radius_title">Сила размытия</string>
-    <string name="artwork_media_background_alpha_title">Прозрачность обложки</string>
+    <string name="media_artwork_enabled_title">Обложка как фон плеера</string>
+    <string name="media_artwork_enabled_summary">Установить обложку в качестве фона для уведомления плеера</string>
+    <string name="media_artwork_blur_enabled_title">Размытие обложки</string>
+    <string name="media_artwork_blur_radius_title">Сила размытия</string>
 
     <string name="ambient_ui">Always on Display</string>
     <string name="ambient_battery_title">Отображение заряда</string>

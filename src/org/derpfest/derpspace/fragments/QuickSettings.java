@@ -67,7 +67,7 @@ import java.util.regex.Pattern;
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
-    private static final String MEDIA_ARTWORK = "artwork_media_force_expand";
+    private static final String MEDIA_ARTWORK = "media_artwork_force_expand";
     private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
     private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
@@ -136,7 +136,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
 
         mArtwork = (SystemSettingSwitchPreference) findPreference(MEDIA_ARTWORK);
         mArtwork.setChecked((Settings.System.getInt(resolver,
-                Settings.System.ARTWORK_MEDIA_FORCE_EXPAND, 0) == 1));
+                Settings.System.MEDIA_ARTWORK_FORCE_EXPAND, 0) == 1));
         mArtwork.setOnPreferenceChangeListener(this);
     }
 
@@ -160,7 +160,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         } else if (preference == mArtwork) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(resolver,
-                    Settings.System.ARTWORK_MEDIA_FORCE_EXPAND, value ? 0 : 1);
+                    Settings.System.MEDIA_ARTWORK_FORCE_EXPAND, value ? 0 : 1);
             derpUtils.showSystemUiRestartDialog(getContext());
             return true;
         } else if (preference == mFooterString) {

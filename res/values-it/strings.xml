@@ -537,11 +537,10 @@
 
     <!-- Media artwork -->
     <string name="media_category">Notifiche multimediali</string>
-    <string name="artwork_media_background_title">Copertina multimediale come sfondo</string>
-    <string name="artwork_media_background_summary">Imposta la copertina dei multimediale come sfondo delle notiche media</string>
-    <string name="artwork_media_background_enable_blur_title">Sfondo copertina multimediale sfocato</string>
-    <string name="artwork_media_background_blur_radius_title">Quantità sfocatura copertina multimediale</string>
-    <string name="artwork_media_background_alpha_title">Trasparenza della copertina multimediale</string>
+    <string name="media_artwork_enabled_title">Copertina multimediale come sfondo</string>
+    <string name="media_artwork_enabled_summary">Imposta la copertina dei multimediale come sfondo delle notiche media</string>
+    <string name="media_artwork_blur_enabled_title">Sfondo copertina multimediale sfocato</string>
+    <string name="media_artwork_blur_radius_title">Quantità sfocatura copertina multimediale</string>
 
     <string name="ambient_ui">Ambient/Always on display</string>
     <string name="ambient_battery_title">Ambient battery</string>
@@ -716,8 +715,8 @@
     <string name="disable_wp_zoom_title">Disabilita lo zoom dello sfondo</string>
     <string name="disable_wp_zoom_summary">Richiede un riavvio!</string>
 
-    <string name="artwork_media_force_expand_title">Forza estensione</string>
-    <string name="artwork_media_force_expand_summary">Imposta lettore multimediale QS esteso</string>
+    <string name="media_artwork_force_expand_title">Forza estensione</string>
+    <string name="media_artwork_force_expand_summary">Imposta lettore multimediale QS esteso</string>
 
     <!-- Hide statusbar on lockscreen -->
     <string name="lockscreen_hide_status_bar_title">Nascondi barra di stato</string>

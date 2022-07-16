@@ -537,11 +537,10 @@
 
     <!-- Media artwork -->
     <string name="media_category">媒体通知</string>
-    <string name="artwork_media_background_title">媒体封面背景</string>
-    <string name="artwork_media_background_summary">设置媒体封面作为通知媒体背景</string>
-    <string name="artwork_media_background_enable_blur_title">模糊媒体封面背景</string>
-    <string name="artwork_media_background_blur_radius_title">媒体封面的模糊度</string>
-    <string name="artwork_media_background_alpha_title">媒体封面的透明度</string>
+    <string name="media_artwork_enabled_title">显示封面</string>
+    <string name="media_artwork_enabled_summary">将专辑封面作为音乐通知栏的背景</string>
+    <string name="media_artwork_blur_enabled_title">背景模糊</string>
+    <string name="media_artwork_blur_radius_title">背景模糊量</string>
 
     <string name="ambient_ui">息屏或始终显示</string>
     <string name="ambient_battery_title">息屏显示电量</string>
@@ -713,8 +712,8 @@
     <string name="disable_wp_zoom_title">禁用壁纸缩放</string>
     <string name="disable_wp_zoom_summary">需要重启!</string>
 
-    <string name="artwork_media_force_expand_title">强制展开</string>
-    <string name="artwork_media_force_expand_summary">强制展开快速设置媒体播放器</string>
+    <string name="media_artwork_force_expand_title">强制展开</string>
+    <string name="media_artwork_force_expand_summary">强制展开快速设置媒体播放器</string>
 
     <!-- Hide statusbar on lockscreen -->
     <string name="lockscreen_hide_status_bar_title">隐藏状态栏</string>
