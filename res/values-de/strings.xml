@@ -717,4 +717,8 @@
     <string name="show_wifi_standard_icon_title">WLAN-Typ-Symbol anzeigen</string>
     <string name="show_wifi_standard_icon_summary">WLAN-Typ in der WLAN-Signalanzeige anzeigen</string>
 
+    <!-- Lockscreen clock color -->
+    <string name="lockscreen_clock_color_title">Farbe der Sperrbildschirmuhr</string>
+    <string name="lockscreen_clock_color_summary">Sekundärfarbe statt Hauptfarbakzent für die Uhr auf dem Sperrbildschirm verwenden</string>
+
 </resources>
