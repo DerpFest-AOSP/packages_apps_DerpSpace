@@ -31,6 +31,12 @@
             android:summary="@string/disable_fingerprint_ripple_effect_summary"
             android:defaultValue="false" />
 
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="use_secondary_color_clock"
+            android:title="@string/lockscreen_clock_color_title"
+            android:summary="@string/lockscreen_clock_color_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

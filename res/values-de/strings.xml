@@ -407,4 +407,8 @@
     <string name="separate_signal_icons_title">Separate Mobilfunksymbole</string>
     <string name="separate_signal_icons_summary">Mobilfunk und WLAN separat anzeigen\nErfordert einen SystemUI-Neustart</string>
 
+    <!-- Lockscreen clock color -->
+    <string name="lockscreen_clock_color_title">Farbe der Sperrbildschirmuhr</string>
+    <string name="lockscreen_clock_color_summary">Sekundärfarbe statt Hauptfarbakzent für die Uhr auf dem Sperrbildschirm verwenden</string>
+
 </resources>

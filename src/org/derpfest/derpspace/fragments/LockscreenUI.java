@@ -40,6 +40,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.derp.derpUtils;
 
 import com.android.settings.fuelgauge.PowerUsageSummary;
 import com.android.settings.R;
@@ -51,6 +52,7 @@ import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
 import org.derpfest.support.preferences.SystemSettingListPreference;
+import org.derpfest.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,8 +64,10 @@ import java.util.regex.Pattern;
 public class LockscreenUI extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String LOCKSCREEN_BATTERY_INFO_TEMP_UNIT = "lockscreen_charge_temp_unit";
+    private static final String SECONDARY_COLOR_CLOCK = "use_secondary_color_clock";
 
     private SystemSettingListPreference mBatteryTempUnit;
+    private SystemSettingSwitchPreference mSecondaryColorClock;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,6 +85,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         mBatteryTempUnit.setValue(String.valueOf(unitMode));
         mBatteryTempUnit.setSummary(mBatteryTempUnit.getEntry());
         mBatteryTempUnit.setOnPreferenceChangeListener(this);
+
+        mSecondaryColorClock = (SystemSettingSwitchPreference) findPreference(SECONDARY_COLOR_CLOCK);
+        mSecondaryColorClock.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -103,6 +110,9 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             int index = mBatteryTempUnit.findIndexOfValue((String) objValue);
             mBatteryTempUnit.setSummary(
             mBatteryTempUnit.getEntries()[index]);
+            return true;
+    	} else if (preference == mSecondaryColorClock) {
+            derpUtils.showSystemUiRestartDialog(getContext());
             return true;
         }
         return false;

@@ -437,4 +437,8 @@
     <string name="separate_signal_icons_title">Separate signal icons</string>
     <string name="separate_signal_icons_summary">Show signal and WiFi separately\nRequires a SystemUI restart</string>
 
+    <!-- Lockscreen clock color -->
+    <string name="lockscreen_clock_color_title">Lockscreen clock color</string>
+    <string name="lockscreen_clock_color_summary">Use secondary color for lockscreen clock, if disabled will use color accent</string>
+
 </resources>
