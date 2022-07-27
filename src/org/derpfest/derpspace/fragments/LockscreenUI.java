@@ -156,7 +156,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
         mAmbientIconsColor = (ColorPickerPreference) findPreference(AMBIENT_ICONS_COLOR);
         int intColor = Settings.System.getInt(getContentResolver(),
-                Settings.System.AMBIENT_ICONS_COLOR, Color.WHITE);
+                Settings.System.AMBIENT_ICONS_COLOR, Color.TRANSPARENT);
         String hexColor = String.format("#%08x", (0xffffff & intColor));
         mAmbientIconsColor.setNewPreviewColor(intColor);
         mAmbientIconsColor.setSummary(hexColor);
