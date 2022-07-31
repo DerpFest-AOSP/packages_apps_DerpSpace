@@ -735,4 +735,8 @@
     <string name="lockscreen_clock_color_title">Lockscreen clock color</string>
     <string name="lockscreen_clock_color_summary">Use secondary color for lockscreen clock, if disabled will use color accent</string>
 
+    <!-- Tint -->
+    <string name="system_tint_theme_title">Use tint</string>
+    <string name="system_tint_theme_summary">Use tint to get more vivid colors</string>
+
 </resources>

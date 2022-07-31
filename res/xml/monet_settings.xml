@@ -23,6 +23,13 @@
         android:defaultValue="false" />
 
     <com.derp.support.preferences.SecureSettingSwitchPreference
+        android:key="system_tint_theme"
+        android:title="@string/system_tint_theme_title"
+        android:summary="@string/system_tint_theme_summary"
+        android:defaultValue="false"
+        android:dependency="system_black_theme" />
+
+    <com.derp.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_custom_color"
         android:title="@string/monet_engine_custom_color_title"
         android:summary="@string/monet_engine_custom_color_summary"

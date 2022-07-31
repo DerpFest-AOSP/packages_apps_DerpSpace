@@ -721,4 +721,8 @@
     <string name="lockscreen_clock_color_title">Farbe der Sperrbildschirmuhr</string>
     <string name="lockscreen_clock_color_summary">Sekundärfarbe statt Hauptfarbakzent für die Uhr auf dem Sperrbildschirm verwenden</string>
 
+    <!-- Tint -->
+    <string name="system_tint_theme_title">Färbung verwenden</string>
+    <string name="system_tint_theme_summary">Verwenden um lebendigere Farben zu erhalten</string>
+
 </resources>
