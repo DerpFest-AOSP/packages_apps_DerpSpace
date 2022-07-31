@@ -388,8 +388,8 @@
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">Stile batteria</string>
     <string name="status_bar_battery_style_icon_portrait">Icona verticale (Predefinito)</string>
-	<string name="status_bar_battery_style_icon_rlandscape">Icon orizzontale (Destra)</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon orizzontale (Sinistra)</string>																					   																					 
+    <string name="status_bar_battery_style_icon_rlandscape">Icona orizzontale (Destra)</string>
+    <string name="status_bar_battery_style_icon_landscape">Icona orizzontale (Sinistra)</string>																					   																					 
     <string name="status_bar_battery_style_circle">Cerchio</string>
     <string name="status_bar_battery_style_dotted_circle">Cerchio (Punteggiato)</string>
     <string name="status_bar_battery_style_filled_circle">Cerchio (Riempito)</string>
@@ -762,4 +762,7 @@
     <string name="qs_footer_datausage_title">Utilizzo dei dati</string>
     <string name="qs_footer_datausage_summary">Visualizza il riepilogo dell\'utilizzo dei dati nel riquadro delle impostazioni rapide</string>
 
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Mostra l\'icona del tipo di Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Mostra il tipo di Wi-Fi nell\'indicatore del segnale Wi-Fi</string>
 </resources>
