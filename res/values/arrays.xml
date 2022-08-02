@@ -131,15 +131,11 @@
     <string-array name="status_bar_logo_position_entries" translatable="false">
         <item>@string/status_bar_logo_position_left</item>
         <item>@string/status_bar_logo_position_right</item>
-        <item>@string/status_bar_logo_position_left_quick</item>
-        <item>@string/status_bar_logo_position_right_quick</item>
     </string-array>
 
     <string-array name="status_bar_logo_position_values" translatable="false">
         <item>0</item>
         <item>1</item>
-        <item>2</item>
-        <item>3</item>
     </string-array>
 
     <!-- Status bar logo style -->
@@ -170,12 +166,6 @@
         <item>@string/status_bar_logo_style_flower</item>
         <item>@string/status_bar_logo_style_ghost</item>
         <item>@string/status_bar_logo_style_google</item>
-        <item>@string/status_bar_logo_style_human_male</item>
-        <item>@string/status_bar_logo_style_human_female</item>
-        <item>@string/status_bar_logo_style_human_male_female</item>
-        <item>@string/status_bar_logo_style_gender_male</item>
-        <item>@string/status_bar_logo_style_gender_female</item>
-        <item>@string/status_bar_logo_style_gender_male_female</item>
         <item>@string/status_bar_logo_style_guitar_electric</item>
     </string-array>
 
@@ -207,12 +197,6 @@
         <item>24</item>
         <item>25</item>
         <item>26</item>
-        <item>27</item>
-        <item>28</item>
-        <item>29</item>
-        <item>30</item>
-        <item>31</item>
-        <item>32</item>
     </string-array>
 
 </resources>
