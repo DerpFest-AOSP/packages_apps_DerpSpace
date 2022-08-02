@@ -27,6 +27,12 @@
         android:summary="@string/status_bar_lyric_summary"
         android:fragment="org.derpfest.derpspace.fragments.StatusbarLyricSettings"/>
 
+    <Preference
+        android:key="status_bar_logo"
+        android:title="@string/status_bar_logo_title"
+        android:summary="@string/status_bar_logo_summary"
+        android:fragment="org.derpfest.derpspace.fragments.StatusBarLogo" />
+
     <PreferenceCategory
         android:key="misc_derpspace_icons_category"
         android:title="@string/icons_category">
