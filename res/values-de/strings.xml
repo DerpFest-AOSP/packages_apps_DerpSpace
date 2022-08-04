@@ -428,4 +428,9 @@
     <string name="qs_tile_round">Rund</string>
     <string name="qs_tile_rect">Rechteck mit abgerundeten Ecken</string>
     <string name="qs_tile_mix">Rund für aktive Kacheln und abgerundetes Rechteck für inaktive Kacheln</string>
+
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">Statusleisten-Lyric</string>
+    <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
+    <string name="status_bar_show_lyric_title">Statusleisten-Lyric aktivieren</string>
 </resources>
