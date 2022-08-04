@@ -273,4 +273,9 @@
     <string name="qs_tile_vertical_layout_title">Vertikales Layout</string>
     <string name="qs_tile_vertical_layout_summary">Vertikales Layout für QS-Kacheln aktivieren</string>
 
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">Statusleisten-Lyric</string>
+    <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
+    <string name="status_bar_show_lyric_title">Statusleisten-Lyric aktivieren</string>
+
 </resources>
