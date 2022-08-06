@@ -701,10 +701,6 @@
     <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
     <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
 
-    <!-- Disable music track title in QS tile -->
-    <string name="qs_music_tile_track_optional_title">Titolo della traccia del riquadro musicale</string>
-    <string name="qs_music_tile_track_optional_summary">Mostra il titolo del brano musicale come titolo del riquadro QS</string>
-
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Sostituisci le tue notifiche con una versione riprogettata di ticker. Sottile e meno invasivo di una notifica standard</string>

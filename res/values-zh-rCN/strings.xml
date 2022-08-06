@@ -697,12 +697,7 @@
     <string name="lockscreen_charge_temp_unit_farhenheit">法式度</string>
     <string name="lockscreen_charge_temp_unit_celsius">摄氏度</string>
 
-    <!-- Disable music track title in QS tile -->
-    <string name="qs_music_tile_track_optional_title">音乐磁贴标题</string>
-    <string name="qs_music_tile_track_optional_summary">使用音乐标题作为快速设置磁贴标题</string>
-
     <!-- reTicker -->
-    <string name="reticker_category" translatable="false">reTicker</string>
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">使用重新设计的样式替代您的通知\n相比于标准通知更纤细，减少了割裂感</string>
     <string name="reticker_colored_title">使用应用颜色着色背景</string>
