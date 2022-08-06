@@ -676,8 +676,8 @@
     <string name="reticker_landscape_only_summary">reTicker nur aktivieren, wenn das Gerät im Querformat ist</string>
 
     <!-- Wp zoom -->
-    <string name="disable_wp_zoom_title">Hintergrundbild-Zoom deaktivieren</string>
-    <string name="disable_wp_zoom_summary">Erfordert einen Neustart!</string>
+    <string name="use_wp_zoom_title">Hintergrundbild-Zoom aktivieren</string>
+    <string name="use_wp_zoom_summary">Erfordert einen Neustart!</string>
 
     <string name="media_artwork_force_expand_title">Expandieren erzwingen</string>
     <string name="media_artwork_force_expand_summary">Expandieren des QS-Media-Players erzwingen</string>
