@@ -711,10 +711,7 @@
     <string name="reticker_colored_title">Usa lo sfondo colorato dell\'app</string>
     <string name="reticker_colored_summary">Sostituisci il colore di sfondo di reTicker usando il colore principale dell\'app di notifica</string>
     <string name="reticker_landscape_only_title">Solo modalità orizzontale</string>
-    <string name="reticker_landscape_only_summary">Abilita reTicker solo quando il dispositivo è in modalità orizzontale</string>																	
-    <!-- Wp zoom -->
-    <string name="disable_wp_zoom_title">Disabilita lo zoom dello sfondo</string>
-    <string name="disable_wp_zoom_summary">Richiede un riavvio!</string>
+    <string name="reticker_landscape_only_summary">Abilita reTicker solo quando il dispositivo è in modalità orizzontale</string>
 
     <string name="media_artwork_force_expand_title">Forza estensione</string>
     <string name="media_artwork_force_expand_summary">Imposta lettore multimediale QS esteso</string>

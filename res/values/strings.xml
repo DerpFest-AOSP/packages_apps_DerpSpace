@@ -689,10 +689,6 @@
     <string name="reticker_landscape_only_title">Landscape only</string>
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
 
-    <!-- Wp zoom -->
-    <string name="use_wp_zoom_title">Enable wallpaper zoom</string>
-    <string name="use_wp_zoom_summary">Requires a restart!</string>
-
     <string name="media_artwork_force_expand_title">Force expand</string>
     <string name="media_artwork_force_expand_summary">Set QS media player expanded</string>
 

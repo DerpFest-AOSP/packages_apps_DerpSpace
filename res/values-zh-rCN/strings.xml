@@ -708,10 +708,6 @@
     <string name="reticker_colored_title">使用应用颜色着色背景</string>
     <string name="reticker_colored_summary">使用应用主色调替换 reTicker 背景颜色</string>
 
-    <!-- Wp zoom -->
-    <string name="disable_wp_zoom_title">禁用壁纸缩放</string>
-    <string name="disable_wp_zoom_summary">需要重启!</string>
-
     <string name="media_artwork_force_expand_title">强制展开</string>
     <string name="media_artwork_force_expand_summary">强制展开快速设置媒体播放器</string>
 
