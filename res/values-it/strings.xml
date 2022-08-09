@@ -541,7 +541,8 @@
     <string name="media_artwork_enabled_summary">Imposta la copertina dei multimediale come sfondo delle notiche media</string>
     <string name="media_artwork_blur_enabled_title">Sfondo copertina multimediale sfocato</string>
     <string name="media_artwork_blur_radius_title">Quantità sfocatura copertina multimediale</string>
-
+    <string name="media_artwork_fade_percent_title">Quantità di dissolvenza della grafica multimediale</string>																						  
+	
     <string name="ambient_ui">Ambient/Always on display</string>
     <string name="ambient_battery_title">Ambient battery</string>
     <string name="aod_title">Always on display</string>
