@@ -19,6 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- General app strings -->
+																		  
     <string name="add">Aggiungi</string>
     <string name="advanced">Avanzate</string>
     <string name="cancel">Elimina</string>
@@ -703,6 +704,7 @@
     <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
 
     <!-- reTicker -->
+																		   
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Sostituisci le tue notifiche con una versione riprogettata di ticker. Sottile e meno invasivo di una notifica standard</string>
     <string name="reticker_colored_title">Usa lo sfondo colorato dell\'app</string>
@@ -759,4 +761,9 @@
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Mostra l\'icona del tipo di Wi-Fi</string>
     <string name="show_wifi_standard_icon_summary">Mostra il tipo di Wi-Fi nell\'indicatore del segnale Wi-Fi</string>
+
+	<!-- Lockscreen clock color -->
+    <string name="lockscreen_clock_color_title">Colore orologio schermata di blocco</string>
+    <string name="lockscreen_clock_color_summary">Usa il colore secondario per l\'orologio della schermata di blocco, se disabilitato utilizzerà l\'accento del colore</string>
+
 </resources>
