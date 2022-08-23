@@ -202,6 +202,10 @@
     <string name="system_black_theme_title">Use black theme</string>
     <string name="system_black_theme_summary">Force black background colors</string>
 
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">UI Style</string>
+    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
+
     <!-- Applications fragment -->
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>

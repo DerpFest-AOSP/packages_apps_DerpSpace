@@ -194,6 +194,10 @@
     <string name="system_black_theme_title">Schwarzes Design verwenden</string>
     <string name="system_black_theme_summary">Schwarze Hintergrundfarben erzwingen</string>
 
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">UI-Stil</string>
+    <string name="theme_customization_ui_style_summary">Einen benutzerdefinierten Stil für die Benutzeroberfläche festlegen</string>
+
     <!-- Applications fragment -->
     <string name="search">Suche</string>
     <string name="search_apps">Apps suchen</string>
