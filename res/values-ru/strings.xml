@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
       Copyright (C) 2016 AospExtended ROM Project
-
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
   (at your option) any later version
-
   This program is distributed in the hope that it will be useful,
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   GNU General Public License for more details.
-
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
  -->
@@ -44,7 +41,7 @@
     <string name="lockscreen_category">Экран блокировки</string>
     <string name="listview">ListView</string>
     <string name="light_category">Светодиод</string>
-    <string name="udfps_category">Сканер в экране</string>
+    <string name="udfps_category">Сканер отпечатков в экране</string>
 
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -139,10 +136,49 @@
     <!-- VoWiFi icon -->
     <string name="vowifi_icon_title">Иконка VoWiFi</string>
     <string name="vowifi_icon_summary">Показывать иконку VoWiFi, когда это возможно</string>
+    <string name="volte_vowifi_override_title">Переключение VoWiFi</string>
+    <string name="volte_vowifi_override_summary">Скрыть иконку VoLTE когда VoWiFi доступен</string>
 
     <!-- Toast app icon -->
     <string name="toast_icon_title">Иконка приложения всплывающего сообщения</string>
     <string name="toast_icon_summary">Показывать иконку приложения во всплывающем сообщении</string>
+
+    <!-- Heads up -->
+    <string name="headsup_category">Всплывающие уведомления</string>
+    <string name="heads_up_notifications">Всплывающие уведомления</string>
+    <string name="heads_up_notifications_summary">Изменение настроек всплывающих уведомлений</string>
+    <string name="summary_heads_up_enabled">Всплывающие уведомления включены</string>
+    <string name="summary_heads_up_disabled">Всплывающие уведомления отключены</string>
+    <string name="add_heads_up_package">Добавить приложение</string>
+    <string name="add_heads_up_blacklist_summary">Отключить всплывающие уведомления от этих приложений</string>
+    <string name="heads_up_blacklist_title">Черный список</string>
+    <string name="profile_choose_app">Выберите приложение</string>
+    <string name="dialog_delete_title">Удалить</string>
+    <string name="dialog_delete_message">Удалить выбранное приложение?</string>
+
+	<!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Тайм-аут</string>
+    <string name="heads_up_time_out_summary">Уведомления будут отображаться<xliff:g id="number">%d</xliff:g> секунд</string>
+    <string name="heads_up_time_out_2sec">2 секунды</string>
+    <string name="heads_up_time_out_4sec">4 секунды</string>
+    <string name="heads_up_time_out_5sec">5 секунд</string>
+    <string name="heads_up_time_out_6sec">6 секунд</string>
+    <string name="heads_up_time_out_8sec">8 секунд</string>
+    <string name="heads_up_time_out_10sec">10 секунд</string>
+
+	<!-- Heads up snooze -->
+    <string name="heads_up_snooze_title">Таймер повтора</string>
+    <string name="heads_up_snooze_summary_one_minute">Свайп вверх по всплывающему уведомлению, заглушит его на 1 минуту</string>
+    <string name="heads_up_snooze_summary">Свайп вверх по всплывающему уаедолмению, заглушит его на <xliff:g id="number">%d</xliff:g> минут</string>
+    <string name="heads_up_snooze_disabled_summary">Таймер повтора отключен</string>
+    <string name="heads_up_snooze_1min">1 минута</string>
+    <string name="heads_up_snooze_5min">5 минут</string>
+    <string name="heads_up_snooze_10min">10 минут</string>
+    <string name="heads_up_snooze_15min">15 минут</string>
+    <string name="heads_up_snooze_20min">20 минут</string>
+    <string name="heads_up_snooze_25min">25 минут</string>
+    <string name="heads_up_snooze_30min">30 минут</string>
+    <string name="heads_up_snooze_1h">1 час</string>
 
     <!-- Quick QS pulldown -->
     <string name="status_bar_quick_qs_pulldown">Быстрое раскрытие шторки</string>
@@ -194,7 +230,7 @@
 
 	    <!-- DerpFest logo -->
     <string name="derp_logo_title">Логотип DerpFest</string>
-    <string name="derp_logo_summary">Пусть все знают, что вы используете DerpFest, когда они видят ваш экран</string>
+    <string name="derp_logo_summary">Пусть все знают, что вы используете DerpFest, когда они смотрят на ваш экран</string>
 
     <!-- Statusbar net monitor -->
     <string name="traffic_title">Скорость сети</string>
@@ -238,6 +274,18 @@
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Слайдер яркости</string>
+    <string name="qs_show_brightness_slider_title">Слайдер яркости</string>
+    <string name="qs_show_brightness_slider_never">Не показывать</string>
+    <string name="qs_show_brightness_slider_expanded">Показывать когда шторка раскрыта</string>
+    <string name="qs_show_brightness_slider_always">Показывать всегда</string>
+    <string name="qs_show_brightness_slider_not_expanded">Показывать когда шторка не раскрыта</string>
+    <string name="qs_brightness_slider_position_title">Позиция</string>
+    <string name="qs_brightness_slider_position_top">Сверху</string>
+    <string name="qs_brightness_slider_position_bottom">Снизу</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="qs_show_auto_brightness_title">Иконка автояркости</string>
+    <string name="qs_show_auto_brightness_summary">Показывать переключатель автояркости у слайдера</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">Предупреждения в нижней части быстрых настроек</string>
@@ -323,8 +371,6 @@
     <string name="status_bar_battery_style_big_dotted_circle">Большой пунктирный круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скрыта</string>
-    <string name="left_battery_text_title">Проценты заряда слева</string>
-    <string name="left_battery_text_summary">Расположить проценты слева от иконки батареи</string>
 
     <!-- Status bar - Battery percentage -->
     <string name="status_bar_battery_percentage_title">Проценты заряда</string>
@@ -349,10 +395,6 @@
     <string name="monet_engine_chroma_factor_title">Красочность</string>
     <string name="monet_engine_linear_lightness_title">Использовать свою шкалу яркости</string>
 
-    <!-- Udfps Haptic Feedback -->
-    <string name="udfps_haptic_feedback_title">Вибрация сканера отпечатков в экране</string>
-    <string name="udfps_haptic_feedback_summary">Вибрировать при касании иконки экранного сканера отпечатков</string>
-
     <!-- Tiles on secure keyguard -->
     <string name="use_tiles_on_secure_keyguard_title">Требовать разблокировки для использования конфиденциальных плиток</string>
     <string name="use_tiles_on_secure_keyguard_summary">Попросить разблокировать экран блокировки для использования конфиденциальных плиток</string>
@@ -361,54 +403,23 @@
     <string name="alert_slider_notifications_title">Оповещения о ползунке уведомлений</string>
     <string name="alert_slider_notifications_summary">Отображение уведомления при изменении положения ползунка уведомлений</string>
 
-    <!-- Heads up snooze -->
-    <string name="heads_up_snooze_title">Таймер повтора</string>
-    <string name="heads_up_snooze_summary_one_minute">Свайп вверх по всплывающему уведомлению, заглушит его на 1 минуту</string>
-    <string name="heads_up_snooze_summary">Свайп вверх по всплывающему уаедолмению, заглушит его на <xliff:g id="number">%d</xliff:g> минут</string>
-    <string name="heads_up_snooze_disabled_summary">Таймер повтора отключен</string>
-    <string name="heads_up_snooze_1min">1 минута</string>
-    <string name="heads_up_snooze_5min">5 минут</string>
-    <string name="heads_up_snooze_10min">10 минут</string>
-    <string name="heads_up_snooze_15min">15 минут</string>
-    <string name="heads_up_snooze_20min">20 минут</string>
-    <string name="heads_up_snooze_25min">25 минут</string>
-    <string name="heads_up_snooze_30min">30 минут</string>
-    <string name="heads_up_snooze_1h">1 час</string>
-
-    <!-- Heads up timeout -->
-    <string name="heads_up_time_out_title">Тайм-аут</string>
-    <string name="heads_up_time_out_summary">Уведомления будут отображаться<xliff:g id="number">%d</xliff:g> секунд</string>
-    <string name="heads_up_time_out_2sec">2 секунды</string>
-    <string name="heads_up_time_out_4sec">4 секунды</string>
-    <string name="heads_up_time_out_5sec">5 секунд</string>
-    <string name="heads_up_time_out_6sec">6 секунд</string>
-    <string name="heads_up_time_out_8sec">8 секунд</string>
-    <string name="heads_up_time_out_10sec">10 секунд</string>
-
-    <!-- Heads up -->
-    <string name="headsup_category">Всплывающие уведомления</string>
-    <string name="heads_up_notifications">Всплывающие уведомления</string>
-    <string name="heads_up_notifications_summary">Изменение настроек всплывающих уведомлений</string>
-    <string name="summary_heads_up_enabled">Всплывающие уведомления включены</string>
-    <string name="summary_heads_up_disabled">Всплывающие уведомления отключены</string>
-    <string name="add_heads_up_package">Добавить приложение</string>
-    <string name="add_heads_up_stoplist_summary">Отключить всплывающие уведомления в этих приложениях</string>
-    <string name="add_heads_up_blacklist_summary">Отключить всплывающие уведомления от этих приложений</string>
-    <string name="heads_up_stoplist_title">Стоп-лист</string>
-    <string name="heads_up_blacklist_title">Черный список</string>
-    <string name="profile_choose_app">Выберите приложение</string>
-    <string name="dialog_delete_title">Удалить</string>
-    <string name="dialog_delete_message">Удалить выбранное приложение?</string>
-
     <!-- Battery estimate -->
     <string name="battery_estimate_title">Оценка заряда</string>
     <string name="battery_estimate_summary">Отображение расчетного оставшегося времени работы от батареи, если доступно</string>
 
-    <!-- Location privacy indicator -->
+    <!-- Privacy Indicator -->
     <string name="mic_camera_privacy_indicator_title">Индикатор микрофона и камеры</string>
     <string name="mic_camera_privacy_indicator_summary">Показывать индикатор конфиденциальности микрофона и камеры во время использования</string>
     <string name="location_privacy_indicator_title">Индикатор местоположения</string>
     <string name="location_privacy_indicator_summary">Показать индикатор конфиденциальности для местоположения\nТребуется перезагрузка SystemUI</string>
+
+    <!-- Screen off FOD -->
+    <string name="screen_off_fod_title">FOD при выключенном экране</string>
+    <string name="screen_off_fod_summary">Оставить FOD включенным если экран выключен</string>
+
+    <!-- Udfps Haptic Feedback -->
+    <string name="udfps_haptic_feedback_title">Вибрация сканера отпечатков в экране</string>
+    <string name="udfps_haptic_feedback_summary">Вибрировать при касании иконки экранного сканера отпечатков</string>
 
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Показывать текст в нижней части быстрых настроек</string>
@@ -504,9 +515,11 @@
     <string name="media_artwork_enabled_summary">Установить обложку в качестве фона для уведомления плеера</string>
     <string name="media_artwork_blur_enabled_title">Размытие обложки</string>
     <string name="media_artwork_blur_radius_title">Сила размытия</string>
+    <string name="media_artwork_fade_percent_title">Fade amount for media artwork</string>
 
-    <string name="ambient_ui">Always on Display</string>
+    <string name="ambient_ui">Ambient/Always on display</string>
     <string name="ambient_battery_title">Отображение заряда</string>
+    <string name="aod_title">Always on display</string>
 
     <!-- AoD battery bar -->
     <string name="keyguard_show_battery_title">Полоса заряда во время заряда</string>
@@ -610,9 +623,6 @@
     <string name="screen_off_animation_crt">Эффект старого телевизора</string>
     <string name="screen_off_animation_scale">Уменьшение</string>
 
-    <string name="lockscreen_small_clock_title">Всегда показывать маленькие часы</string>
-    <string name="lockscreen_small_clock_summary">Не менять стиль часов на основе уведомлений</string>
-
     <!-- Ripple Effect on lockscreen -->
     <string name="disable_fingerprint_ripple_effect_title">Эффект волны</string>
     <string name="disable_fingerprint_ripple_effect_summary">Отключить эффект волны при разблокировке</string>
@@ -622,15 +632,102 @@
     <string name="ambient_wake_gestures_title">Жесты пробуждения</string>
     <string name="ambient_wake_gestures_summary">Показывать Ambient Display вместо обычного экрана блокировки при жестах пробуждения</string>
 
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Цветные иконки</string>
+    <string name="statusbar_colored_icons_summary">Использовать собственные значки приложений для значков уведомлений в строке состояния</string>
+
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Использовать черную тему</string>
+    <string name="system_black_theme_summary">Принудительное использование черного цвета фона</string>
+
+    <string name="theme_customization_navbar_title">Стили строки навигации</string>
+
     <!-- Unlimited g00gle ph0t0s st0rage -->
     <string name="use_photos_spoof_title">Безлимитное хранилище Google Фото</string>
     <string name="use_photos_spoof_summary">Ваше устройство будет идентифицировано как Pixel XL, чтобы получить неограниченное хранилище фотографий Google в исходном качестве</string>
     <string name="photos_spoof_toast">Перезапустите приложение Фото, чтобы изменение вступило в силу</string>
 
-    <!-- Statusbar colored icons -->
-    <string name="statusbar_colored_icons_title">Цветные иконки</string>
-    <string name="statusbar_colored_icons_summary">Использовать собственные значки приложений для значков уведомлений в строке состояния</string>
+    <!-- Annoying Notifications -->
+    <string name="notification_sound_vib_screen_on_title">Надоедливые уведомления</string>
+    <string name="notification_sound_vib_screen_on_summary">Воспроизведение звука и вибрации для уведомлений при включенном экране</string>
 
-    <string name="theme_customization_navbar_title">Стили строки навигации</string>
+    <!-- Applications fragment -->
+    <string name="search">Поиск</string>
+    <string name="search_apps">Поиск приложений</string>
+
+    <!-- AOD Icons on Lockscreen! -->
+    <string name="alt_layout_category">Альтернативная раскладка</string>
+    <string name="ambient_icons_lockscreen_title">AOD иконки на экране блокировки</string>
+    <string name="ambient_icons_lockscreen_summary">Замените уведомления значками AOD</string>
+    <string name="ambient_icons_size_title">Размер AOD иконок</string>
+    <string name="ambient_icons_color_title">Цвет AOD иконок</string>
+    <string name="ambient_icons_intro_text">Для этих настроек переключатель двойных строчных часов (Display > Loockscreen) должен быть деактивирован, а для вступления их в силу необходим перезапуск systemui.</string>
+
+    <!-- Notification Vibration -->
+    <string name="vibrate_on_notifications_title">Вибрация уведомлений</string>
+    <string name="vibrate_on_notifications_summary">Вибрация при уведомлениях</string>
+
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Температурная мера</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Фаренгейты</string>
+    <string name="lockscreen_charge_temp_unit_celsius">Цельсии</string>
+
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Замените свои уведомления на обновленную версию бегущей строки. \nТонкие и менее инвазивные, чем стандартные уведомления</string>
+    <string name="reticker_colored_title">Использовать цветной фон приложения</string>
+    <string name="reticker_colored_summary">Замените цвет фона reTicker на основной цвет приложения уведомлений</string>
+    <string name="reticker_landscape_only_title">Только ландшафтный режим</string>
+    <string name="reticker_landscape_only_summary">Включать reTicker только тогда, когда устройство находится в ландшафтном режиме</string>
+
+    <string name="media_artwork_force_expand_title">Принудительно раскрыть</string>
+    <string name="media_artwork_force_expand_summary">Установить QS медиаплеер раскрытым</string>
+
+    <!-- Hide statusbar on lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Скрыть статусбар</string>
+    <string name="lockscreen_hide_status_bar_summary">Если включено, статусбар будет выключен на экране блокировки</string>
+
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Кнопка закрытия приложения</string>
+    <string name="notification_guts_kill_app_button_summary">Показать кнопку "закрыть приложение" в меню уведомлений при зажатии на уведомлении</string>
+
+    <!-- Force expanded notifications -->
+    <string name="force_expanded_notifications_title">Принудительно раскрывать уведомления</string>
+    <string name="force_expanded_notifications_summary">Доступно только для приложений поддерживающих раскрытие уведомлений</string>
+
+    <!-- HeadsUp notifications importance threshold -->
+    <!--string name="hun_importance_none">None</string-->
+    <string name="hun_importance_title">Порог важности</string>
+    <string name="hun_importance_min">Минимальный</string>
+    <string name="hun_importance_low">Низкий</string>
+    <string name="hun_importance_default">По умолчанию</string>
+    <string name="hun_importance_high">Высокий</string>
+    <string name="hun_importance_max">Максимальный</string>
+
+    <!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Сделать всплывающие уведомления менее раздражающими</string>
+    <string name="less_boring_heads_up_summary">Отображение всплывающих уведомлений только для будильника, телефона и смс, если приложение не находятся на переднем плане</string>
+
+    <!-- Colorful battery icon -->
+    <string name="battery_level_colors_title">Включить цветную иконку батареи</string>
+    <string name="battery_level_colors_summary">Каждое снижение процента зарядки будет менять цвет иконки батареи</string>
+
+    <!-- Material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_title">Кнопка очистки всех уведомлений</string>
+    <string name="notification_material_dismiss_summary">Перемещение текста очистки всех уведомлений на плавующий как в Material Desing</string>
+    <string name="notification_material_dismiss_style_title">Стиль кнопки</string>
+    <string name="notification_material_dismiss_bgstyle_title">Фон кнопки</string>
+
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Использование данных</string>
+    <string name="qs_footer_datausage_summary">Отображать количество использованных данных в тайле</string>
+
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Показывать тип Wi-Fi в иконке</string>
+    <string name="show_wifi_standard_icon_summary">Показывать тип Wi-Fi в иконке Wi-Fi сигнала</string>
+
+    <!-- Lockscreen clock color -->
+    <string name="lockscreen_clock_color_title">Цвет часов на экране блокировки</string>
+    <string name="lockscreen_clock_color_summary">Использовать ваш цвет часов на экране блокировки, если выключено будет использован цвет акцента</string>
 
 </resources>
