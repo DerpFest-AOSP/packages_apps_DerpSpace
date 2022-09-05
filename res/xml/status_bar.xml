@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2017 The Dirty Unicorns Project
+      Copyright (C) 2022 DerpFest
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,40 +20,32 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.derp.support.preferences.CardviewPreference
+    <org.derpfest.support.preferences.CardviewPreference
         android:key="battery_bar_category"
         android:fragment="org.derpfest.derpspace.fragments.BatterySettings"
         android:icon="@drawable/ic_battery_bar"
         android:title="@string/battery_settings_title" />
 
-   <com.derp.support.preferences.CardviewPreference
-        android:key="carrier_label"
-        android:fragment="org.derpfest.derpspace.fragments.CarrierLabel"
-        android:icon="@drawable/ic_carrierlabel"
-        android:title="@string/carrier_label_settings_title" />
-
-    <com.derp.support.preferences.CardviewPreference
+    <org.derpfest.support.preferences.CardviewPreference
         android:key="status_bar_clock"
         android:fragment="org.derpfest.derpspace.fragments.ClockDateSettings"
         android:icon="@drawable/ic_status_bar_clock"
         android:title="@string/status_bar_clock_title" />
 
-    <com.derp.support.preferences.CardviewPreference
+    <org.derpfest.support.preferences.CardviewPreference
         android:key="systemui_tuner_statusbar"
         android:title="@string/statusbar_items_category"
         android:icon="@drawable/ic_statusbar_items" >
-        <intent android:action="android.intent.action.MAIN"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
-    </com.derp.support.preferences.CardviewPreference>
+        <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
+    </org.derpfest.support.preferences.CardviewPreference>
 
-    <com.derp.support.preferences.CardviewPreference
+    <org.derpfest.support.preferences.CardviewPreference
         android:key="traffic"
         android:fragment="org.derpfest.derpspace.fragments.Traffic"
         android:icon="@drawable/ic_traffic"
         android:title="@string/traffic_title" />
 
-    <com.derp.support.preferences.CardviewPreference
+    <org.derpfest.support.preferences.CardviewPreference
         android:key="misc_derpspace"
         android:fragment="org.derpfest.derpspace.fragments.MiscDerpSpace"
         android:icon="@drawable/ic_misc_derpspace"

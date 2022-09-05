@@ -23,16 +23,6 @@
     <dimen name="default_nav_item_title_max_width">80dp</dimen>
     <dimen name="default_icon_size">24dp</dimen>
 
-    <!-- Ambient light -->
-    <dimen name="ambient_light_preview_imageview_marginHorizontal">4.5dp</dimen>
-    <dimen name="ambient_light_preview_imageview_marginVertical">20dp</dimen>
-    <dimen name="ambient_light_preview_imageview_width">15dp</dimen>
-    <dimen name="ambient_light_preview_layout_height">300dp</dimen>
-    <dimen name="ambient_light_preview_layout_width">150dp</dimen>
-    <dimen name="ambient_light_preview_paddingHorizontal">50dp</dimen>
-    <dimen name="ambient_light_preview_paddingVertical">30dp</dimen>
-
     <!-- Applications fragment -->
     <dimen name="default_margin">16dp</dimen>
-
 </resources>

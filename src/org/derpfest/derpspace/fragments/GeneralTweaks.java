@@ -16,34 +16,47 @@
 
 package org.derpfest.derpspace.fragments;
 
-import android.content.Context;
+import android.app.ActivityManagerNative;
 import android.content.ContentResolver;
+import android.content.Context;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.UserHandle;
+import android.os.RemoteException;
 import android.os.ServiceManager;
-import android.os.SystemProperties;
+import android.os.UserHandle;
+import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.widget.Toast;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.IWindowManager;
+import android.view.View;
+import android.view.WindowManagerGlobal;
 
-import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.SwitchPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
+
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.settings.Utils;
+import com.android.settings.search.BaseSearchIndexProvider;
+
+import com.android.settingslib.search.Indexable;
+import com.android.settingslib.search.SearchIndexable;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class GeneralTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-
-    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
-    private static final String KEY_SPOOF = "use_photos_spoof";
-    private static final String SYS_SPOOF = "persist.sys.pixelprops.gphotos";
-
-    private Preference mAlertSlider;
-    private SwitchPreference mSpoof;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,17 +66,6 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-        final Resources res = getResources();
-
-        mAlertSlider = (Preference) findPreference(ALERT_SLIDER_PREF);
-        boolean mAlertSliderAvailable = res.getBoolean(
-                com.android.internal.R.bool.config_hasAlertSlider);
-        if (!mAlertSliderAvailable)
-            prefScreen.removePreference(mAlertSlider);
-
-        mSpoof = (SwitchPreference) findPreference(KEY_SPOOF);
-        mSpoof.setChecked(SystemProperties.getBoolean(SYS_SPOOF, true));
-        mSpoof.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -78,14 +80,25 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        if (preference == mSpoof) {
-            String value = ((Boolean) objValue) ? "1" : "0";
-            SystemProperties.set(SYS_SPOOF, value);
-            Toast.makeText(getActivity(),
-                    (R.string.photos_spoof_toast),
-                    Toast.LENGTH_LONG).show();
-            return true;
-        }
         return false;
     }
+
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+        new BaseSearchIndexProvider() {
+            @Override
+            public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                    boolean enabled) {
+                final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                final SearchIndexableResource sir = new SearchIndexableResource(context);
+                sir.xmlResId = R.xml.general_tweaks;
+                result.add(sir);
+                return result;
+            }
+
+            @Override
+            public List<String> getNonIndexableKeys(Context context) {
+                final List<String> keys = super.getNonIndexableKeys(context);
+                return keys;
+            }
+    };
 }

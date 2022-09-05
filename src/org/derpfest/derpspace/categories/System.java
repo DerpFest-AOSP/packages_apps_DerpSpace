@@ -31,13 +31,10 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.derpfest.derpspace.fragments.PulseSettings;
-
 public class System extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "System";
-    private static final String PREF_BATTERY = "battery";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,19 +42,8 @@ public class System extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.system);
 
-        ContentResolver resolver = getActivity().getContentResolver();
-
-        Preference mBattery = findPreference(PREF_BATTERY);
-        if (mBattery != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            getPreferenceScreen().removePreference(mBattery);
-        }
-    }
-
-    public static void reset(Context mContext) {
-        ContentResolver resolver = mContext.getContentResolver();
-        PulseSettings.reset(mContext);
+        final ContentResolver resolver = getActivity().getContentResolver();
+        final PreferenceScreen prefSet = getPreferenceScreen();
     }
 
     @Override

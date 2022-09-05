@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2016 AospExtended ROM Project
+<!--  Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 DerpFest
 
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
 
-          http://www.apache.org/licenses/LICENSE-2.0
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
 
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
 <PreferenceScreen 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
@@ -23,74 +25,10 @@
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
 
-        <ListPreference
-            android:key="smart_pulldown"
-            android:title="@string/smart_pulldown_title"
-            android:entries="@array/smart_pulldown_entries"
-            android:entryValues="@array/smart_pulldown_values"
-            android:persistent="false" />
-
-        <ListPreference
-            android:key="status_bar_quick_qs_pulldown"
-            android:title="@string/status_bar_quick_qs_pulldown"
-            android:entries="@array/quick_pulldown_entries"
-            android:entryValues="@array/quick_pulldown_values"
-            android:defaultValue="0" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_show_battery_estimate"
-            android:title="@string/battery_estimate_title"
-            android:summary="@string/battery_estimate_summary"
-            android:defaultValue="true"/>
-
-        <com.derp.support.preferences.SecureSettingSwitchPreference
+        <org.derpfest.support.preferences.SecureSettingSwitchPreference
             android:key="disable_secure_tiles_on_lockscreen"
             android:title="@string/use_tiles_on_secure_keyguard_title"
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
-
-     <PreferenceCategory
-        android:key="quick_settings_footer_category"
-        android:title="@string/footer_category">
-
-        <!-- QS footer text toggle -->
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_text_show"
-            android:title="@string/qs_footer_text_show_title"
-            android:defaultValue="false" />
-
-        <!-- QS footer text string -->
-        <com.derp.support.preferences.SystemSettingEditTextPreference
-            android:key="qs_footer_text_string"
-            android:title="@string/qs_footer_text_string_title"
-            android:summary="@string/qs_footer_text_string_summary"
-            android:dependency="qs_footer_text_show"
-            android:defaultValue="#StayDerped" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_data_usage"
-            android:title="@string/qs_footer_datausage_title"
-            android:summary="@string/qs_footer_datausage_summary"
-            android:defaultValue="false" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_edit_toggle"
-            android:title="@string/qs_edit_title"
-            android:summary="@string/qs_edit_summary"
-            android:defaultValue="true" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_running_services_toggle"
-            android:title="@string/qs_running_services_title"
-            android:summary="@string/qs_running_services_summary"
-            android:defaultValue="false" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_warnings"
-            android:title="@string/qs_footer_warnings_title"
-            android:summary="@string/qs_footer_warnings_summary"
             android:defaultValue="true" />
 
     </PreferenceCategory>
@@ -99,92 +37,31 @@
         android:key="quick_settings_brighness_category"
         android:title="@string/qs_brightness_slider_category">
 
-        <com.derp.support.preferences.SecureSettingListPreference
-            android:key="qs_show_brightness_slider"
-            android:title="@string/qs_show_brightness_slider_title"
-            android:entries="@array/qs_show_brightness_slider_entries"
-            android:entryValues="@array/qs_show_brightness_slider_values"
-            android:defaultValue="1" />
+    </PreferenceCategory>
 
-        <com.derp.support.preferences.SecureSettingListPreference
-            android:key="qs_brightness_slider_position"
-            android:title="@string/qs_brightness_slider_position_title"
-            android:entries="@array/qs_brightness_slider_position_entries"
-            android:entryValues="@array/qs_brightness_slider_position_values"
-            android:defaultValue="0" />
+     <PreferenceCategory
+        android:key="quick_settings_footer_category"
+        android:title="@string/footer_category">
 
-        <com.derp.support.preferences.SecureSettingSwitchPreference
-            android:key="qs_show_auto_brightness"
-            android:title="@string/qs_show_auto_brightness_title"
-            android:summary="@string/qs_show_auto_brightness_summary"
+        <!-- QS footer text toggle -->
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_text_show"
+            android:title="@string/qs_footer_text_show_title"
+            android:defaultValue="false" />
+
+        <!-- QS footer text string -->
+        <org.derpfest.support.preferences.SystemSettingEditTextPreference
+            android:key="qs_footer_text_string"
+            android:title="@string/qs_footer_text_string_title"
+            android:summary="@string/qs_footer_text_string_summary"
+            android:dependency="qs_footer_text_show"
+            android:defaultValue="#StayDerped" />
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_footer_warnings"
+            android:title="@string/qs_footer_warnings_title"
+            android:summary="@string/qs_footer_warnings_summary"
             android:defaultValue="true" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/notification_material_dismiss_title">
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="notification_material_dismiss"
-            android:title="@string/notification_material_dismiss_title"
-            android:summary="@string/notification_material_dismiss_summary"
-            android:defaultValue="false" />
-
-        <com.derp.support.preferences.SystemSettingSeekBarPreference
-            android:key="notification_material_dismiss_style"
-            android:title="@string/notification_material_dismiss_style_title"
-            android:dependency="notification_material_dismiss"
-            android:defaultValue="0"
-            android:max="9"
-            android:min="0" />
-
-        <com.derp.support.preferences.SystemSettingSeekBarPreference
-            android:key="notification_material_dismiss_bgstyle"
-            android:title="@string/notification_material_dismiss_bgstyle_title"
-            android:dependency="notification_material_dismiss"
-            android:defaultValue="0"
-            android:max="4"
-            android:min="0" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/media_category">
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="media_artwork_enabled"
-            android:title="@string/media_artwork_enabled_title"
-            android:summary="@string/media_artwork_enabled_summary"
-            android:defaultValue="false" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="media_artwork_force_expand"
-            android:title="@string/media_artwork_force_expand_title"
-            android:summary="@string/media_artwork_force_expand_summary"
-            android:dependency="media_artwork_enabled"
-            android:defaultValue="false" />
-
-        <com.derp.support.preferences.SystemSettingSeekBarPreference
-            android:key="media_artwork_fade_percent"
-            android:title="@string/media_artwork_fade_percent_title"
-            android:dependency="media_artwork_enabled"
-            android:defaultValue="30"
-            android:max="100"
-            settings:min="0" />
-
-        <com.derp.support.preferences.SystemSettingSwitchPreference
-            android:key="media_artwork_blur_enabled"
-            android:title="@string/media_artwork_blur_enabled_title"
-            android:dependency="media_artwork_enabled"
-            android:defaultValue="false" />
-
-        <com.derp.support.preferences.SystemSettingSeekBarPreference
-            android:key="media_artwork_blur_radius"
-            android:title="@string/media_artwork_blur_radius_title"
-            android:dependency="media_artwork_blur_enabled"
-            android:defaultValue="1"
-            android:max="25"
-            settings:min="1" />
 
     </PreferenceCategory>
     
@@ -192,7 +69,7 @@
         android:key="quick_settings_animations"
         android:title="@string/qs_tile_animation_title"/>
 
-        <com.derp.support.preferences.SecureSettingIntListPreference
+        <org.derpfest.support.preferences.SecureSettingIntListPreference
             android:key="quick_settings_tiles_anim_style"
             android:title="@string/qs_tile_animation_style_title"
             android:entries="@array/qs_tile_animation_style_entries"
@@ -200,7 +77,7 @@
             android:summary="%s"
             android:defaultValue="0" />
 
-        <com.derp.support.preferences.SecureSettingIntListPreference
+        <org.derpfest.support.preferences.SecureSettingIntListPreference
             android:key="quick_settings_tiles_anim_duration"
             android:title="@string/qs_tile_animation_duration_title"
             android:entries="@array/qs_tile_animation_duration_entries"
@@ -208,7 +85,7 @@
             android:summary="%s"
             android:defaultValue="2000" />
 
-        <com.derp.support.preferences.SecureSettingIntListPreference
+        <org.derpfest.support.preferences.SecureSettingIntListPreference
             android:key="quick_settings_tiles_anim_interpolator"
             android:title="@string/qs_tile_animation_interpolator_title"
             android:entries="@array/qs_tile_animation_interpolator_entries"
@@ -220,13 +97,13 @@
         android:key="quick_settings_vibration"
         android:title="@string/qs_tile_vibration_title"/>
 
-        <com.derp.support.preferences.SecureSettingSwitchPreference
+        <org.derpfest.support.preferences.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
-        <com.derp.support.preferences.SecureSettingSeekBarPreference
+        <org.derpfest.support.preferences.SecureSettingSeekBarPreference
             android:key="quick_settings_vibrate_duration"
             android:title="@string/quick_settings_vibrate_duration_title"
             android:summary="@string/quick_settings_vibrate_duration_summary"

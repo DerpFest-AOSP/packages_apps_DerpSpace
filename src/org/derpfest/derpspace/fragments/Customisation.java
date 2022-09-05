@@ -53,7 +53,6 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.util.derp.derpUtils;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 
@@ -67,14 +66,10 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.derp.support.colorpicker.ColorPickerPreference;
-
 @SearchIndexable
 public class Customisation extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String TAG = "Customisation";
-
-    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -82,17 +77,8 @@ public class Customisation extends SettingsPreferenceFragment implements OnPrefe
 
         addPreferencesFromResource(R.xml.customisation);
 
-        mContext = getActivity();
-
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen screen = getPreferenceScreen();
-
-        boolean udfpsResPkgInstalled = derpUtils.isPackageInstalled(getContext(),
-                "org.derp.udfps.resources");
-        PreferenceCategory udfps = (PreferenceCategory) screen.findPreference("udfps_category");
-        if (!udfpsResPkgInstalled) {
-            screen.removePreference(udfps);
-        }
     }
 
     @Override

@@ -30,9 +30,4 @@
     <color name="google_grey700">#5f6368</color>
     <color name="edit_background_base">@color/google_grey700</color>
     <color name="option_border_default">@color/edit_background_base</color>
-
-    <!-- Ambient lights-->
-    <color name="ambient_light_screen_color">#111111</color>
-    <color name="ambient_light_body_color">#323232</color>
-
 </resources>

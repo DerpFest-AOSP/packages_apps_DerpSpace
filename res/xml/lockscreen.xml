@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2017 The Dirty Unicorns Project
+      Copyright (C) 2022 DerpFest
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,23 +20,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-     <com.derp.support.preferences.CardviewPreference
-         android:key="lockscreen_shortcuts"
-         android:fragment="org.derpfest.derpspace.fragments.LockscreenShortcuts"
-         android:icon="@drawable/ic_lockscreen_shortcuts"
-         android:title="@string/lockscreen_shortcuts" />
-
-     <com.derp.support.preferences.CardviewPreference
+     <org.derpfest.support.preferences.CardviewPreference
          android:key="lockscreen_ui"
          android:fragment="org.derpfest.derpspace.fragments.LockscreenUI"
          android:icon="@drawable/ic_lockscreen_ui"
          android:title="@string/lockscreen_ui_title" />
-
-     <com.derp.support.preferences.CardviewPreference
-         android:key="ambient_ui"
-         android:fragment="org.derpfest.derpspace.fragments.AmbientUI"
-         android:icon="@drawable/ic_aod"
-         android:title="@string/ambient_ui" />
 
 </PreferenceScreen>
 

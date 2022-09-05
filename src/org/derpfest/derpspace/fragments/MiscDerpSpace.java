@@ -17,48 +17,48 @@
 package org.derpfest.derpspace.fragments;
 
 import android.app.ActivityManagerNative;
-import android.content.Context;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.UserHandle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
-import androidx.preference.Preference;
+import android.os.SystemProperties;
+import android.os.UserHandle;
+import android.provider.DeviceConfig;
+import android.provider.SearchIndexableResource;
+import android.provider.Settings;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.IWindowManager;
+import android.view.View;
+import android.view.WindowManagerGlobal;
+
 import androidx.preference.ListPreference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
-import android.provider.Settings;
-import android.util.Log;
-import android.view.WindowManagerGlobal;
-import android.view.IWindowManager;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-import java.util.Locale;
-import android.text.TextUtils;
-import android.view.View;
+import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.derp.derpUtils;
 import com.android.settings.Utils;
+import com.android.settings.search.BaseSearchIndexProvider;
 
-import com.derp.support.preferences.SecureSettingSwitchPreference;
+import com.android.settingslib.search.Indexable;
+import com.android.settingslib.search.SearchIndexable;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-
-    private static final String KEY_STATUS_BAR_LOGO = "status_bar_logo";
-    private static final String COMBINED_STATUSBAR_ICONS = "show_combined_status_bar_signal_icons";
-    private static final String CONFIG_RESOURCE_NAME = "flag_combined_status_bar_signal_icons";
-    private static final String SYSTEMUI_PACKAGE = "com.android.systemui";
-
-    private SwitchPreference mShowDerpLogo;
-    private SecureSettingSwitchPreference mCombinedIcons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,32 +68,6 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
-
-	    mShowDerpLogo = (SwitchPreference) findPreference(KEY_STATUS_BAR_LOGO);
-        mShowDerpLogo.setChecked((Settings.System.getInt(resolver,
-             Settings.System.STATUS_BAR_LOGO, 0) == 1));
-        mShowDerpLogo.setOnPreferenceChangeListener(this);
-
-        mCombinedIcons = (SecureSettingSwitchPreference)
-                findPreference(COMBINED_STATUSBAR_ICONS);
-        Resources sysUIRes = null;
-        boolean def = false;
-        int resId = 0;
-        try {
-            sysUIRes = getActivity().getPackageManager()
-                    .getResourcesForApplication(SYSTEMUI_PACKAGE);
-        } catch (Exception ignored) {
-            // If you don't have system UI you have bigger issues
-        }
-        if (sysUIRes != null) {
-            resId = sysUIRes.getIdentifier(
-                    CONFIG_RESOURCE_NAME, "bool", SYSTEMUI_PACKAGE);
-            if (resId != 0) def = sysUIRes.getBoolean(resId);
-        }
-        boolean enabled = Settings.Secure.getInt(resolver,
-                COMBINED_STATUSBAR_ICONS, def ? 1 : 0) == 1;
-        mCombinedIcons.setChecked(enabled);
-        mCombinedIcons.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -108,20 +82,25 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mShowDerpLogo) {
-            boolean value = (Boolean) objValue;
-            Settings.System.putInt(resolver,
-                    Settings.System.STATUS_BAR_LOGO, value ? 1 : 0);
-            return true;
-        } else if (preference == mCombinedIcons) {
-            boolean enabled = (boolean) objValue;
-            Settings.Secure.putInt(resolver,
-                    COMBINED_STATUSBAR_ICONS, enabled ? 1 : 0);
-            derpUtils.showSystemUiRestartDialog(getActivity());
-            return true;
-        }
         return false;
     }
 
+    public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+        new BaseSearchIndexProvider() {
+            @Override
+            public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                    boolean enabled) {
+                final ArrayList<SearchIndexableResource> result = new ArrayList<>();
+                final SearchIndexableResource sir = new SearchIndexableResource(context);
+                sir.xmlResId = R.xml.misc_derpspace;
+                result.add(sir);
+                return result;
+            }
+
+            @Override
+            public List<String> getNonIndexableKeys(Context context) {
+                final List<String> keys = super.getNonIndexableKeys(context);
+                return keys;
+            }
+    };
 }
