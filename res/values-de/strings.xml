@@ -212,4 +212,7 @@
     <string name="media_art_title">Albumcover</string>
     <string name="media_art_summary">Albumcover anzeigen, wenn verfügbar</string>
 
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">Unschärfebetrag für Mediengrafiken</string>
+
 </resources>
