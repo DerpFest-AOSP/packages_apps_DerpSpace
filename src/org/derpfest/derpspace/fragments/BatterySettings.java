@@ -39,12 +39,21 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
+import org.derpfest.support.preferences.SecureSettingListPreference;
+import org.derpfest.support.preferences.SystemSettingListPreference;
+
 import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
 public class BatterySettings extends SettingsPreferenceFragment
             implements Preference.OnPreferenceChangeListener  {
+
+    private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
+    private static final String KEY_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+
+    private SecureSettingListPreference mBatteryStyle;
+    private SystemSettingListPreference mShowPercentage;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -54,12 +63,32 @@ public class BatterySettings extends SettingsPreferenceFragment
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mBatteryStyle = findPreference(KEY_STATUS_BAR_BATTERY_STYLE);
+        mShowPercentage = findPreference(KEY_STATUS_BAR_SHOW_BATTERY_PERCENT);
+
+        mBatteryStyle.setOnPreferenceChangeListener(this);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateStates();
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ((ListPreference)preference).setValue((String)newValue);
+        updateStates();
         return false;
-    }  
+    }
+
+    private void updateStates() {
+        if ("2".equals(mBatteryStyle.getValue()))
+            mShowPercentage.setEnabled(false);
+        else
+            mShowPercentage.setEnabled(true);
+    }
     
     @Override
     public int getMetricsCategory() {
