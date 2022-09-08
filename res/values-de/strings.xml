@@ -228,4 +228,8 @@
     <string name="status_bar_am_pm_title">AM/PM-Format</string>
     <string name="status_bar_am_pm_info">24-Stunden-Format ist aktiviert</string>
 
+    <!-- Clock show seconds -->
+    <string name="status_bar_clock_show_seconds_title">Sekunden anzeigen</string>
+    <string name="status_bar_clock_show_seconds_desc">Stunden, Minuten und Sekunden anzeigen</string>
+
 </resources>

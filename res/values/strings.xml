@@ -237,4 +237,8 @@
     <string name="status_bar_am_pm_title">Clock AM/PM style</string>
     <string name="status_bar_am_pm_unavailable">24-hour clock is enabled</string>
 
+    <!-- Clock show seconds -->
+    <string name="status_bar_clock_show_seconds_title">Clock show seconds</string>
+    <string name="status_bar_clock_show_seconds_desc">Show hours, minutes, and seconds</string>
+
 </resources>

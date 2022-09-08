@@ -40,4 +40,10 @@
         android:entryValues="@array/status_bar_am_pm_values"
         android:defaultValue="0"/>
 
+    <org.derpfest.support.preferences.SecureSettingSwitchPreference
+        android:key="clock_seconds"
+        android:title="@string/status_bar_clock_show_seconds_title"
+        android:summary="@string/status_bar_clock_show_seconds_desc"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
