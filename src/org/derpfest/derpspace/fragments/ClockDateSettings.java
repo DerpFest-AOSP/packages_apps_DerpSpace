@@ -48,6 +48,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
+import org.derpfest.support.preferences.SecureSettingListPreference;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -58,6 +60,10 @@ public class ClockDateSettings extends SettingsPreferenceFragment
 
     private static final String TAG = "ClockDateSettings";
 
+    private static final String KEY_STATUS_BAR_AM_PM = "status_bar_am_pm";
+
+    private SecureSettingListPreference mStatusBarAmPm;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,11 +71,18 @@ public class ClockDateSettings extends SettingsPreferenceFragment
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen screen = getPreferenceScreen();
+
+        mStatusBarAmPm = findPreference(KEY_STATUS_BAR_AM_PM);
     }
 
     @Override
     public void onResume() {
         super.onResume();
+
+        if (DateFormat.is24HourFormat(requireContext())) {
+            mStatusBarAmPm.setEnabled(false);
+            mStatusBarAmPm.setSummary(R.string.status_bar_am_pm_unavailable);
+        }
     }
 
     @Override

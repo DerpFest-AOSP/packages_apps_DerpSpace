@@ -221,4 +221,11 @@
     <string name="status_bar_clock_position_right">Rechts</string>
     <string name="status_bar_clock_position_title">Position der Uhr</string>
 
+    <!-- Clock AM/PM -->
+    <string name="status_bar_am_pm_hidden">Ausgeblendet</string>
+    <string name="status_bar_am_pm_normal">Standard</string>
+    <string name="status_bar_am_pm_small">Klein</string>
+    <string name="status_bar_am_pm_title">AM/PM-Format</string>
+    <string name="status_bar_am_pm_info">24-Stunden-Format ist aktiviert</string>
+
 </resources>
