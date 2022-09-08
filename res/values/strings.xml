@@ -224,4 +224,10 @@
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_blur_title">Media art blur level</string>
 
+    <!-- Clock position -->
+    <string name="status_bar_clock_position_center">Center</string>
+    <string name="status_bar_clock_position_left">Left</string>
+    <string name="status_bar_clock_position_right">Right</string>
+    <string name="status_bar_clock_position_title">Clock position</string>
+
 </resources>

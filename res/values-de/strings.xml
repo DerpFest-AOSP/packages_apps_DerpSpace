@@ -215,4 +215,10 @@
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_blur_title">Unschärfebetrag für Mediengrafiken</string>
 
+    <!-- Clock position -->
+    <string name="status_bar_clock_position_center">Zentriert</string>
+    <string name="status_bar_clock_position_left">Links</string>
+    <string name="status_bar_clock_position_right">Rechts</string>
+    <string name="status_bar_clock_position_title">Position der Uhr</string>
+
 </resources>
