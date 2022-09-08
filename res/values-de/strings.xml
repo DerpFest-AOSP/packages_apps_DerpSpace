@@ -242,4 +242,11 @@
     <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
     <string name="status_bar_battery_percentage_title">Akkustand in Prozent</string>
 
+    <!-- Brightness slider -->
+    <string name="qqs_show_brightness_title">Helligkeitsregler in QQS anzeigen</string>
+    <string name="brightness_slider_position_title">Helligkeitsreglerposition</string>
+    <string name="top">Oben</string>
+    <string name="bottom">Unten</string>
+    <string name="show_auto_brightness_button_title">Symbol für autom. Helligkeit anzeigen</string>
+
 </resources>
