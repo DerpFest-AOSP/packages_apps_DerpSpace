@@ -18,7 +18,7 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    
+
     <!-- General app strings -->
     <string name="derpspace_title" translatable="false">DerpSpace</string>
     <string name="add">Add</string>
@@ -45,6 +45,7 @@
     <string name="listview">ListView</string>
 
     <!-- Frags -->
+
     <!-- General Tweaks -->
     <string name="general_tweaks_title">General settings</string>
 
@@ -85,7 +86,7 @@
     <string name="battery_title">Battery</string>
 
    <!-- Battery Settings -->
-    <string name="battery_settings_title">Battery Settings</string>   
+    <string name="battery_settings_title">Battery Settings</string>
 
     <!-- Battery Styles -->
     <string name="battery_style_category_title">Battery Styles</string>

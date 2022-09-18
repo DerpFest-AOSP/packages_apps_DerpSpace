@@ -67,7 +67,7 @@
     <string name="quick_settings_title">Configurações rápidas</string>
 
     <!-- Status bar clock and date options -->
-    <string name="status_bar_clock_title">Rélogio &amp; Configurações do calendário</string>
+    <string name="status_bar_clock_title">Rélogio e; Configurações do calendário</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Controle de brilho da tela</string>
@@ -211,7 +211,7 @@
     <!-- Network traffic -->
     <string name="network_traffic_title">Monitor de tráfego na rede</string>
     <string name="network_traffic_summary">Exibir ou ocultar a velocidade da rede na barra de status</string>
-    <string name="network_traffic_state_title">Exibit "Monitor de tráfego na rede"</string>
+    <string name="network_traffic_state_title">Exibir "Monitor de tráfego na rede"</string>
     <string name="network_options_title">Opções</string>
     <string name="network_traffic_autohide_title">Ocultar o monitor quando não houver uso de rede</string>
     <string name="network_traffic_autohide_summary">Ocultar o monitor quando o uso for menor que 1 KB/s</string>
