@@ -22,6 +22,18 @@
     android:title="@string/notifications_title">
 
     <PreferenceCategory
+        android:key="ambient_light"
+        android:title="@string/ambient_light_category" >
+
+        <Preference
+            android:key="pulse_ambient_light_settings"
+            android:title="@string/pulse_ambient_light_title"
+            android:summary="@string/pulse_ambient_light_summary"
+            android:fragment="org.derpfest.derpspace.fragments.PulseAmbientLightSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="reticker"
         android:title="@string/reticker_category" >
 

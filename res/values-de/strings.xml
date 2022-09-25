@@ -249,4 +249,13 @@
     <string name="bottom">Unten</string>
     <string name="show_auto_brightness_button_title">Symbol für autom. Helligkeit anzeigen</string>
 
+    <!-- Pulse -->
+    <string name="ambient_light_category">Kantenbeleuchtung</string>
+    <string name="pulse_ambient_light_text">Die Kantenbeleuchtung lässt Ihren Bildschirm leuchten, wenn Sie eine Benachrichtigung erhalten. Dies macht es einfacher zu erkennen, wenn Sie eine Benachrichtigung erhalten, während sich das Telefon im Ruhemodus befindet.</string>
+    <string name="pulse_ambient_light_title">Kantenbeleuchtung</string>
+    <string name="pulse_ambient_light_summary">Beleuchtet die Seitenränder des Bildschirms bei einem Benachrichtigungsimpuls</string>
+    <string name="ambient_notification_light_accent_title">Systemakzentfarbe</string>
+    <string name="ambient_notification_light_color_automatic_title">Benachrichtigungsfarbe</string>
+    <string name="pulse_ambient_light_color">Beleuchtung mit</string>
+
 </resources>
