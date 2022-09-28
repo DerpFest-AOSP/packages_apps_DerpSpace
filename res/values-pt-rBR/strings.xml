@@ -258,4 +258,15 @@
     <string name="bottom">Na parte inferior</string>
     <string name="show_auto_brightness_button_title">Mostar botão de brilho automatico</string>
 
+    <!-- Pulse -->
+    <string name="ambient_light_category">Luz nas bordas</string>
+    <string name="keywords_pulse_ambient_light_display">Notificações, notificação, bordas, luz, cor, cores</string>
+    <string name="pulse_ambient_light_text">As bordas da sua tela irão piscar uma luz para que seja possivel ver quando chegou alguma notificação enquanto a tela está desligada.</string>
+    <string name="pulse_ambient_light_title">Luz nas bordas</string>
+    <string name="pulse_ambient_light_summary">Ilumine as bordas laterais da tela durante as notificações</string>
+    <string name="ambient_notification_light_accent_title">Cor de destaque do sistema</string>
+    <string name="ambient_notification_light_color_automatic_title">Cor da notificação</string>
+    <string name="pulse_ambient_light_color">Ao pulsar, use</string>
+
+
 </resources>
