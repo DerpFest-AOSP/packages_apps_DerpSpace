@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 DerpFest
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- General app strings -->
+    <string name="derpspace_title" translatable="false">DerpSpace</string>
+    <string name="add">添加</string>
+    <string name="advanced">高级</string>
+    <string name="cancel">取消</string>
+    <string name="default_text">默认</string>
+    <string name="dlg_ok">好</string>
+    <string name="attention">注意</string>
+    <string name="loading">加载中\u2026</string>
+    <string name="reset">重置</string>
+    <string name="reset_colors">重置颜色</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">文本</string>
+    <string name="icon_title">图标</string>
+    <string name="color_title">颜色</string>
+    <string name="colors_title">颜色</string>
+
+    <!-- DerpSpace categories -->
+    <string name="icons_category">图标</string>
+    <string name="status_bar_category">状态栏</string>
+    <string name="notifications_panel_category">控制中心</string>
+    <string name="system_category">系统</string>
+    <string name="lockscreen_category">锁屏</string>
+    <string name="listview">列表视图</string>
+
+    <!-- Frags -->
+    <!-- General Tweaks -->
+    <string name="general_tweaks_title">常规设置</string>
+
+    <!-- Lockscreen UI -->
+    <string name="lockscreen_ui_title">锁屏界面</string>
+
+    <!-- Lockscreen general category -->
+    <string name="general_category">常规</string>
+
+    <!-- Network Traffic -->
+    <string name="traffic_title">网速指示器</string>
+
+    <!-- Misc DerpSpace -->
+    <string name="misc_derpspace_title">杂项</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">通知</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">控制中心设置</string>
+
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_clock_title">日期与时间</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">亮度滑块</string>
+
+    <!-- Quick Settings footer category -->
+    <string name="footer_category">页脚</string>
+
+    <!-- Statusbar Iten -->
+    <string name="statusbar_items_category">状态栏图标</string>
+
+    <!-- Customisation -->
+    <string name="customisation_title">定制</string>
+
+    <!-- Battery -->
+    <string name="battery_title">电池</string>
+
+   <!-- Battery Settings -->
+    <string name="battery_settings_title">电池设置</string>   
+
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">电池样式</string>
+    <string name="battery_percent_title">电池百分比</string>
+
+    <!-- App info dialog -->
+    <string name="derpspace_dialog_title">帮助我们帮助您！</string>
+    <string name="derpspace_dialog_message">如果您找到了这些设置中的任何一个错误，请在我们的电报群组中报告。发布错误报告时必须包括以下内容：\n\n1.logcat或last_kmsg\n\n2.使用的内核及mods\n\n3.有用的信息\n\n如果您无法充分报告某些内容，请不要期望解决问题。</string>
+    <string name="derpspace_dialog_toast">阅读这些事项！</string>
+    <string name="artwork_media_fade_level_summary">淡化媒体封面</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="qs_tile_vibration_title">振动</string>
+    <string name="quick_settings_vibrate_title">点按时振动</string>
+    <string name="quick_settings_vibrate_summary">点击控制中心磁贴时振动</string>
+    <string name="quick_settings_vibrate_duration_title">振动持续时间</string>
+    <string name="quick_settings_vibrate_duration_summary">振动多少毫秒</string>
+
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">动画</string>
+    <string name="qs_tile_animation_style_title">动画样式</string>
+    <string name="qs_tile_animation_duration_title">动画持续时间</string>
+    <string name="qs_tile_animation_interpolator_title">设置动画效果</string>
+    <string name="qs_tile_animation_style_off">无动画</string>
+    <string name="qs_tile_animation_style_flip">翻转</string>
+    <string name="qs_tile_animation_style_rotate">旋转</string>
+    <string name="qs_tile_animation_duration_low">慢</string>
+    <string name="qs_tile_animation_duration_default">默认</string>
+    <string name="qs_tile_animation_duration_fast">快</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">线性</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">减速</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">随机加速减速</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">弹跳</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">过冲</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">预期</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">预期过冲</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G 图标</string>
+    <string name="show_fourg_icon_summary">显示4G图标代替LTE</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">显示数据禁用图标</string>
+    <string name="data_disabled_icon_summary">禁用数据时，在信号旁边显示打叉符号</string>
+
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">控制中心页脚提醒</string>
+    <string name="qs_footer_warnings_summary">当网络被外部应用程序或VPN监控时,在控制中心页脚显示警告</string>
+
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">小的移动类型图标</string>
+    <string name="use_old_mobiletype_summary">在信号顶部显示移动类型图标</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">锁屏充电信息</string>
+    <string name="lockscreen_battery_info_summary">充电时在锁屏上显示充电电流、电压、瓦数和电池温度</string>
+
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">需要解锁才能使用敏感磁贴</string>
+    <string name="use_tiles_on_secure_keyguard_summary">要求在使用敏感磁贴时解锁锁屏</string>
+
+    <!-- QS footer text -->
+    <string name="qs_footer_text_show_title">显示控制中心页脚文字</string>
+    <string name="qs_footer_text_string_title">自定义页脚文字</string>
+    <string name="qs_footer_text_string_summary">默认值 #StayDerped</string>
+
+    <!-- Notifications general category -->
+    <string name="notifications_general_category_title">常规</string>
+
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">通知计数</string>
+    <string name="status_bar_notif_count_summary">显示待处理通知的数量</string>
+
+    <!-- Units -->
+    <string name="unit_seconds">s</string>
+    <string name="unit_milliseconds">ms</string>
+    <string name="unit_pixels">dp</string>
+
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">主题</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">标题/正文字体</string>
+    <string name="theme_customization_font_summary">设置系统字体</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adap                                               tive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">图标样式</string>
+    <string name="theme_customization_icon_shape_summary">设置系统图标样式</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">图标包</string>
+    <string name="theme_customization_icon_pack_summary">设置自定义图标包样式</string>
+
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">设备默认</string>
+
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="theme_customization_wifi_icon_title">Wifi图标</string>
+    <string name="theme_customization_wifi_icon_summary">设定Wifi图标样式</string>
+
+    <!-- Custom Signal bar icons -->
+    <string name="theme_customization_signal_icon_title">信号图标</string>
+    <string name="theme_customization_signal_icon_summary">设置信号图标样式</string>
+
+    <!-- Black theme -->
+    <string name="system_black_theme_title">启用深色模式</string>
+    <string name="system_black_theme_summary">强制使用黑色背景色</string>
+
+    <!-- Applications fragment -->
+    <string name="search">搜索</string>
+    <string name="search_apps">搜索app</string>
+
+    <!-- reTicker -->
+    <string name="reticker_category" translatable="false">reTicker</string>
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">使用重新设计的样式替代您的通知\n相比于标准通知更纤细,减少了割裂感</string>
+    <string name="reticker_colored_title">使用应用的主颜色</string>
+    <string name="reticker_colored_summary">使用通知应用程序的主颜色替换reTicker背景色</string>
+    <string name="reticker_landscape_only_title">仅横屏</string>
+    <string name="reticker_landscape_only_summary">仅当设备处于横向模式时才启用reTicker</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">网速指示器</string>
+    <string name="network_traffic_summary">启用或禁用状态栏中的网速指示器</string>
+    <string name="network_traffic_state_title">启用网速指示器</string>
+    <string name="network_options_title">选项</string>
+    <string name="network_traffic_autohide_title">非活动时隐藏网速指示器</string>
+    <string name="network_traffic_autohide_summary">当网速低于1 KB/s时隐藏网速指示器</string>
+
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">媒体通知</string>
+    <string name="media_art_title">媒体通知</string>
+    <string name="media_art_summary">显示媒体封面（如果可用）</string>
+
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">媒体封面模糊</string>
+
+    <!-- Clock position -->
+    <string name="status_bar_clock_position_center">居中</string>
+    <string name="status_bar_clock_position_left">居左</string>
+    <string name="status_bar_clock_position_right">居右</string>
+    <string name="status_bar_clock_position_title">时钟定位</string>
+
+    <!-- Clock AM/PM -->
+    <string name="status_bar_am_pm_hidden">隐藏</string>
+    <string name="status_bar_am_pm_normal">正常</string>
+    <string name="status_bar_am_pm_small">缩小</string>
+    <string name="status_bar_am_pm_title">时钟 AM/PM 样式</string>
+    <string name="status_bar_am_pm_unavailable">24小时计时已启用</string>
+
+    <!-- Clock show seconds -->
+    <string name="status_bar_clock_show_seconds_title">时间显示秒</string>
+    <string name="status_bar_clock_show_seconds_desc">显示时分秒</string>
+
+    <!-- Battery style and percentage -->
+    <string name="status_bar_battery_style_circle">圆环</string>
+    <string name="status_bar_battery_style_icon_portrait">图标（默认）</string>
+    <string name="status_bar_battery_style_text">文本</string>
+    <string name="status_bar_battery_style_title">电量样式</string>
+    <string name="status_bar_battery_percentage_hidden">隐藏</string>
+    <string name="status_bar_battery_percentage_text_inside">图标内</string>
+    <string name="status_bar_battery_percentage_text_next">图标外</string>
+    <string name="status_bar_battery_percentage_title">电池百分比</string>
+
+    <!-- Brightness slider -->
+    <string name="qqs_show_brightness_title">显示亮度滑块在控制中心</string>
+    <string name="brightness_slider_position_title">亮度滑块位置</string>
+    <string name="top">顶部</string>
+    <string name="bottom">底部</string>
+    <string name="show_auto_brightness_button_title">显示自动亮度按钮</string>
+
+    <!-- Pulse -->
+    <string name="ambient_light_category">通知光效</string>
+    <string name="keywords_pulse_ambient_light_display">notification, notifications, edge, light, colour, color</string>
+    <string name="pulse_ambient_light_text">会在您收到通知时使屏幕发光</string>
+    <string name="pulse_ambient_light_enable">启用通知光效</string>
+    <string name="pulse_ambient_light_title">通知光效</string>
+    <string name="pulse_ambient_light_summary">收到通知时点亮屏幕侧边</string>
+    <string name="ambient_notification_light_accent_title">系统主题色</string>
+    <string name="ambient_notification_light_color_automatic_title">通知颜色</string>
+    <string name="pulse_ambient_light_color">光效颜色</string>
+
+    <!-- QS tiles layout -->
+    <string name="qs_tile_layout_title">磁贴布局</string>
+    <string name="qs_tile_layout_summary">自定义控制中心磁贴布局</string>
+    <string name="qs_tiles_layout_category">磁贴布局</string>
+    <string name="qs_rows_portrait_title">行</string>
+    <string name="qqs_rows_portrait_title">页</string>
+    <string name="qs_columns_portrait_title">列</string>
+    <string name="qs_apply_change_button_title">应用更改</string>
+    <string name="qs_apply_change_failed">更改失败</string>
+    <string name="qs_tile_hide_label_title">隐藏标签</string>
+    <string name="qs_tile_hide_label_summary">仅显示磁贴图标</string>
+    <string name="qs_tile_vertical_layout_title">垂直布局</string>
+    <string name="qs_tile_vertical_layout_summary">磁贴启用垂直布局</string>
+
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">状态栏歌词</string>
+    <string name="status_bar_lyric_summary">显示歌词在状态栏（需要应用支持）</string>
+    <string name="status_bar_show_lyric_title">启用状态栏歌词</string>
+
+</resources>
