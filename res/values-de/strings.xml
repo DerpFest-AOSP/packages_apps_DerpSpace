@@ -334,4 +334,8 @@
     <string name="notification_material_dismiss_style_title">Stil der Schaltfläche</string>
     <string name="notification_material_dismiss_bgstyle_title">Hintergrund der Schaltfläche</string>
 
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">Bluetooth-Akkustand</string>
+    <string name="bluetooth_battery_summary">Akkustand des verbundenen Bluetooth-Geräts anzeigen, falls verfügbar</string>
+
 </resources>
