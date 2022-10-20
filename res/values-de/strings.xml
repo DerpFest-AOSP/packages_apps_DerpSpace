@@ -398,4 +398,9 @@
     <string name="lock_clock_font_summary">Änderung der Schriftart des Uhrzeit-Widgets auf dem Sperrbildschirm</string>
     <string name="lock_clock_font_dialog_title">Schriftart auswählen</string>
 
+    <!-- Lock date fonts -->
+    <string name="lock_date_font_title">Datum-Schriftart-Optionen</string>
+    <string name="lock_date_font_summary">Änderung der Schriftart des Datums auf dem Sperrbildschirm</string>
+    <string name="lock_date_font_dialog_title">Schriftart auswählen</string>
+
 </resources>

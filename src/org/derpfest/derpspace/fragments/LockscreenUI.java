@@ -63,9 +63,11 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     private static final String LOCKSCREEN_BATTERY_INFO_TEMP_UNIT = "lockscreen_charge_temp_unit";
     private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
+    private static final String LOCK_DATE_FONTS = "lock_date_fonts";
 
     private SystemSettingListPreference mBatteryTempUnit;
     private ListPreference mLockClockFonts;
+    private ListPreference mLockDateFonts;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -89,6 +91,12 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
                 getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 24)));
         mLockClockFonts.setSummary(mLockClockFonts.getEntry());
         mLockClockFonts.setOnPreferenceChangeListener(this);
+
+        mLockDateFonts = (ListPreference) findPreference(LOCK_DATE_FONTS);
+        mLockDateFonts.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.LOCK_DATE_FONTS, 1)));
+        mLockDateFonts.setSummary(mLockDateFonts.getEntry());
+        mLockDateFonts.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -118,6 +126,12 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
                     Integer.valueOf((String) objValue));
             mLockClockFonts.setValue(String.valueOf(objValue));
             mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+            return true;
+        } else if (preference == mLockDateFonts) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCK_DATE_FONTS,
+                    Integer.valueOf((String) objValue));
+            mLockDateFonts.setValue(String.valueOf(objValue));
+            mLockDateFonts.setSummary(mLockDateFonts.getEntry());
             return true;
         }
         return false;
