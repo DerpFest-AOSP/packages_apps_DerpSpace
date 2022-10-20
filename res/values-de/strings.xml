@@ -374,4 +374,28 @@
     <string name="keyguard_show_battery_always_title">Akkustandbalken immer anzeigen</string>
     <string name="keyguard_show_battery_always_summary">Akkustandbalken immer auf dem Ambient Display anzeigen</string>
 
+    <!-- Lockscreen fonts - other fonts, untranslatable by default -->
+    <!-- Custom fonts -->
+    <string name="lock_clock_font_themeable">Theme-fähig (oder VCR OSD Mono)</string>
+    <string name="lock_dateown_font_themeable">Theme-fähig (oder Fox and Cat)</string>
+
+    <!-- Lockscreen fonts - Common strings -->
+    <string name="font_category">Schriftarten</string>
+    <string name="lock_fonts_stock">Normal</string>
+    <string name="lock_fonts_bold">Fett</string>
+    <string name="lock_fonts_italic">Kursiv</string>
+    <string name="lock_fonts_bold_italic">Fett Kursiv</string>
+    <string name="lock_fonts_light_italic">Leicht Kursiv</string>
+    <string name="lock_fonts_light">Leicht</string>
+    <string name="lock_fonts_condensed_normal">Schmal</string>
+    <string name="lock_fonts_condensed_italic">Schmal Kursiv</string>
+    <string name="lock_fonts_condensed_bold">Schmal Fett</string>
+    <string name="lock_fonts_condensed_bold_italic">Schmal Fett Kursiv</string>
+    <string name="lock_fonts_medium_normal">Medium</string>
+    <string name="lock_fonts_medium_italic">Medium Kursiv</string>
+    <!-- Lock Clock Fonts -->
+    <string name="lock_clock_font_title">Uhr-Schriftart-Optionen</string>
+    <string name="lock_clock_font_summary">Änderung der Schriftart des Uhrzeit-Widgets auf dem Sperrbildschirm</string>
+    <string name="lock_clock_font_dialog_title">Schriftart auswählen</string>
+
 </resources>

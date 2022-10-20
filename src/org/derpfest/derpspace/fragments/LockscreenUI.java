@@ -62,8 +62,10 @@ import java.util.regex.Pattern;
 public class LockscreenUI extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String LOCKSCREEN_BATTERY_INFO_TEMP_UNIT = "lockscreen_charge_temp_unit";
+    private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
 
     private SystemSettingListPreference mBatteryTempUnit;
+    private ListPreference mLockClockFonts;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -81,6 +83,12 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         mBatteryTempUnit.setValue(String.valueOf(unitMode));
         mBatteryTempUnit.setSummary(mBatteryTempUnit.getEntry());
         mBatteryTempUnit.setOnPreferenceChangeListener(this);
+
+        mLockClockFonts = (ListPreference) findPreference(LOCK_CLOCK_FONTS);
+        mLockClockFonts.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.LOCK_CLOCK_FONTS, 24)));
+        mLockClockFonts.setSummary(mLockClockFonts.getEntry());
+        mLockClockFonts.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -95,6 +103,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mBatteryTempUnit) {
             int value = Integer.parseInt((String) objValue);
             Settings.System.putIntForUser(getActivity().getContentResolver(),
@@ -103,6 +112,12 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             int index = mBatteryTempUnit.findIndexOfValue((String) objValue);
             mBatteryTempUnit.setSummary(
             mBatteryTempUnit.getEntries()[index]);
+            return true;
+        } else if (preference == mLockClockFonts) {
+            Settings.System.putInt(getContentResolver(), Settings.System.LOCK_CLOCK_FONTS,
+                    Integer.valueOf((String) objValue));
+            mLockClockFonts.setValue(String.valueOf(objValue));
+            mLockClockFonts.setSummary(mLockClockFonts.getEntry());
             return true;
         }
         return false;
