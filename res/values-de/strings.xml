@@ -303,6 +303,7 @@
     <string name="pulse_color_accent">Akzentfarbe</string>
     <string name="pulse_color_custom">Benutzerdefiniert</string>
     <string name="pulse_color_lava_lamp">Lavalampe</string>
+    <string name="pulse_color_auto">Albumcover</string>
     <string name="pulse_color_user_title">Farbe auswählen</string>
     <string name="pulse_smoothing_enabled_title">Glättung aktivieren</string>
     <string name="pulse_smoothing_enabled_summary">Alle Balken werden flüssiger animiert</string>
