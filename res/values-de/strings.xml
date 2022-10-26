@@ -54,6 +54,9 @@
     <!-- Lockscreen general category -->
     <string name="general_category">Allgemein</string>
 
+    <!-- Quicksettings media category -->
+    <string name="media_category">Media-Player</string>
+
     <!-- Network Traffic -->
     <string name="traffic_title">Netzwerkmonitor</string>
 
@@ -347,5 +350,9 @@
     <string name="wallpaper_zoom_effect_title">Hintergrund-Zoom-Effekt</string>
     <!-- Display Settings: Subtitle of the setting which toggles wallpaper zooming effects on interraction -->
     <string name="wallpaper_zoom_effect_summary">Zoomt das Hintergrundbild, um die Zoom-Out-Tiefenanimation anzuzeigen. Hintergrundbilder können Qualitätseinbußen erleiden.</string>
+
+    <!-- Squiggle animation -->
+    <string name="show_squiggle_animation_title">Squiggle-Animation anzeigen</string>
+    <string name="show_squiggle_animation_summary">Squiggle-Animation im Medienfeld anzeigen\nNach der Änderung muss die Musik gewechselt, die Musik angehalten oder der Fortschrittsbalken verschoben werden, um sie anzuwenden</string>
 
 </resources>

@@ -55,6 +55,9 @@
     <!-- Lockscreen general category -->
     <string name="general_category">General</string>
 
+    <!-- Quicksettings media category -->
+    <string name="media_category">Media player</string>
+
     <!-- Network Traffic -->
     <string name="traffic_title">Traffic Indicators</string>
 
@@ -387,5 +390,9 @@
     <string name="wallpaper_zoom_effect_title">Wallpaper zoom effect</string>
     <!-- Display Settings: Subtitle of the setting which toggles wallpaper zooming effects on interraction -->
     <string name="wallpaper_zoom_effect_summary">Zoom the wallpaper in order to show zoom-out depth animation. Wallpapers may suffer quality decrease</string>
+
+    <!-- Squiggle animation -->
+    <string name="show_squiggle_animation_title">Show squiggle animation</string>
+    <string name="show_squiggle_animation_summary">Show media panel squiggle animation\nAfter change need to switch music, pause music or move the progress bar to apply</string>
 
 </resources>
