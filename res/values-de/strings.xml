@@ -282,6 +282,16 @@
     <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
     <string name="status_bar_show_lyric_title">Statusleisten-Lyric aktivieren</string>
 
+    <!-- Statusbar logo -->
+    <string name="status_bar_logo_category_title">Logo</string>
+    <string name="status_bar_logo_title">Logo</string>
+    <string name="status_bar_logo_summary">Aktivieren, um ein Logo in der Statusleiste anzuzeigen</string>
+    <string name="status_bar_logo_position_title">Position</string>
+    <string name="status_bar_logo_position_summary">Auswahl auf welcher Seite das Logo angezeigt werden soll, links oder rechts</string>
+    <string name="status_bar_logo_position_right">Rechts</string>
+    <string name="status_bar_logo_position_left">Links</string>
+    <string name="status_bar_logo_style_title">Logo auswählen</string>
+
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">Über Pulse</string>
     <string name="pulse_help_policy_notice_summary">Pulse ist eine brillante Audiovisualisierung, wenn Musik auf dem Gerät abgespielt wird</string>
