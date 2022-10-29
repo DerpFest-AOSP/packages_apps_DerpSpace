@@ -395,4 +395,13 @@
     <string name="show_squiggle_animation_title">Show squiggle animation</string>
     <string name="show_squiggle_animation_summary">Show media panel squiggle animation\nAfter change need to switch music, pause music or move the progress bar to apply</string>
 
+    <!-- Ambient battery bar settings -->
+    <string name="ambient_ui">Ambient/Always on display</string>
+    <string name="ambient_battery_settings_title">Battery bar</string>
+    <string name="ambient_battery_settings_summary">Display a battery bar on the ambient display</string>
+    <string name="keyguard_show_battery_title">Battery bar when charging</string>
+    <string name="keyguard_show_battery_summary">Show a battery bar on the ambient display when charging</string>
+    <string name="keyguard_show_battery_always_title">Always show battery bar</string>
+    <string name="keyguard_show_battery_always_summary">Always show a battery bar on the ambient display</string>
+
 </resources>

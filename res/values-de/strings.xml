@@ -365,4 +365,13 @@
     <string name="show_squiggle_animation_title">Squiggle-Animation anzeigen</string>
     <string name="show_squiggle_animation_summary">Squiggle-Animation im Medienfeld anzeigen\nNach der Änderung muss die Musik gewechselt, die Musik angehalten oder der Fortschrittsbalken verschoben werden, um sie anzuwenden</string>
 
+    <!-- Ambient battery bar settings -->
+    <string name="ambient_ui">Ambient/Always on display</string>
+    <string name="ambient_battery_settings_title">Akkustandbalken</string>
+    <string name="ambient_battery_settings_summary">Akkustandbalken auf dem Ambient Display anzeigen</string>
+    <string name="keyguard_show_battery_title">Akkustandbalken beim Laden</string>
+    <string name="keyguard_show_battery_summary">Während des Ladevorgangs einen Akkustandbalken auf dem Ambient Display anzeigen</string>
+    <string name="keyguard_show_battery_always_title">Akkustandbalken immer anzeigen</string>
+    <string name="keyguard_show_battery_always_summary">Akkustandbalken immer auf dem Ambient Display anzeigen</string>
+
 </resources>
