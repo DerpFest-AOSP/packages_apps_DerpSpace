@@ -404,4 +404,12 @@
     <string name="keyguard_show_battery_always_title">Always show battery bar</string>
     <string name="keyguard_show_battery_always_summary">Always show a battery bar on the ambient display</string>
 
+    <!-- Pulse Gravity and mirror options -->
+    <string name="pulse_custom_gravity_title">Gravity</string>
+    <string name="pulse_custom_gravity_bottom">Bottom</string>
+    <string name="pulse_custom_gravity_top">Top</string>
+    <string name="pulse_custom_gravity_center">Center</string>
+    <string name="visualizer_center_mirrored_title">Center mirrored</string>
+    <string name="visualizer_center_mirrored_summary">Set the visualizer in center mirrored mode</string>
+
 </resources>
