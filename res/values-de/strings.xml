@@ -381,5 +381,7 @@
     <string name="pulse_custom_gravity_center">Mittig</string>
     <string name="visualizer_center_mirrored_title">Mittig gespiegelt</string>
     <string name="visualizer_center_mirrored_summary">Den mittig gespiegelten Modus aktivieren</string>
+    <string name="pulse_vertical_mirror_title">Vertikal gespiegelt</string>
+    <string name="pulse_vertical_mirror_summary">Erzeugt einen weiteren Pulse, der vertikal gedreht ist</string>
 
 </resources>
