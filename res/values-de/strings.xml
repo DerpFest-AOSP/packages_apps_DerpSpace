@@ -384,4 +384,8 @@
     <string name="pulse_vertical_mirror_title">Vertikal gespiegelt</string>
     <string name="pulse_vertical_mirror_summary">Erzeugt einen weiteren Pulse, der vertikal gedreht ist</string>
 
+    <!-- Ambient Ticker -->
+    <string name="pulse_on_new_tracks_title">Musikticker</string>
+    <string name="pulse_on_new_tracks_summary">Bei Titelwechsel Musikticker im Ambient-Modus anzeigen</string>
+
 </resources>
