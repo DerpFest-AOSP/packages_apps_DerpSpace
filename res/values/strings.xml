@@ -55,6 +55,9 @@
     <!-- Lockscreen general category -->
     <string name="general_category">General</string>
 
+    <!-- Lockscreen charging category -->
+    <string name="charging_category">Charging</string>
+
     <!-- Quicksettings media category -->
     <string name="media_category">Media player</string>
 
@@ -417,5 +420,9 @@
     <!-- Ripple Effect on lockscreen -->
     <string name="disable_fingerprint_ripple_effect_title">Disable Ripple effect</string>
     <string name="disable_fingerprint_ripple_effect_summary">Disable ripple effect on unlock</string>
+
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
 
 </resources>

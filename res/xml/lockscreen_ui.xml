@@ -31,6 +31,18 @@
             android:summary="@string/disable_fingerprint_ripple_effect_summary"
             android:defaultValue="false" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="lockscreen_ui_charging_category"
+        android:title="@string/charging_category">
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="charging_animation"
+            android:title="@string/charging_animation_title"
+            android:summary="@string/charging_animation_summary"
+            android:defaultValue="true" />
+
         <org.derpfest.support.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_battery_info"
             android:title="@string/lockscreen_battery_info_title"

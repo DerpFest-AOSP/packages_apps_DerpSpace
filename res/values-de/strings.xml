@@ -54,6 +54,9 @@
     <!-- Lockscreen general category -->
     <string name="general_category">Allgemein</string>
 
+    <!-- Lockscreen charging category -->
+    <string name="charging_category">Ladevorgang</string>
+
     <!-- Quicksettings media category -->
     <string name="media_category">Media-Player</string>
 
@@ -387,5 +390,9 @@
     <!-- Ripple Effect on lockscreen -->
     <string name="disable_fingerprint_ripple_effect_title">Ripple-Effekt deaktivieren</string>
     <string name="disable_fingerprint_ripple_effect_summary">Ripple-Effekt beim Entsperren deaktivieren</string>
+
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Ladeanimation</string>
+    <string name="charging_animation_summary">Animation anzeigen, wenn das Gerät angeschlossen wird</string>
 
 </resources>
