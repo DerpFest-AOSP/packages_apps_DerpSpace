@@ -52,4 +52,10 @@
         android:summary="@string/status_bar_clock_auto_hide_summary"
         android:defaultValue="false" />
 
+    <org.derpfest.support.preferences.SystemSettingSwitchPreference
+        android:key="statusbar_clock_chip"
+        android:title="@string/statusbar_clock_chip_title"
+        android:summary="@string/statusbar_clock_chip_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

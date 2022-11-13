@@ -399,4 +399,8 @@
     <string name="show_wifi_standard_icon_title">WLAN-Typ-Symbol anzeigen</string>
     <string name="show_wifi_standard_icon_summary">WLAN-Typ in der WLAN-Signalanzeige anzeigen</string>
 
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Hintergrundchip anzeigen</string>
+    <string name="statusbar_clock_chip_summary">Akzentuierter Chip hinter der Uhr anzeigen</string>
+
 </resources>
