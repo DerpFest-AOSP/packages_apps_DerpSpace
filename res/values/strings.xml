@@ -449,4 +449,36 @@
     <string name="show_qs_call_strength_icon_title">Show call strength icon(s)</string>
     <string name="show_qs_call_strength_icon_summary">Show call strength icons in QuickSettings panel when available</string>
 
+    <!-- Ambient Text -->
+    <string name="ambient_category_title">Ambient Text</string>
+
+    <string name="ambient_image_hide_type_title">Hide animation type</string>
+    <string name="ambient_image_show_type_title">Show animation type</string>
+    <string name="ambient_image_animation_type_pick">Pick a animation type</string>
+    <string name="ambient_image_animation_alpha">Alpha</string>
+    <string name="ambient_image_animation_slide_to_left">Slide to left</string>
+    <string name="ambient_image_animation_slide_to_right">Slide to right</string>
+    <string name="ambient_image_animation_slide_to_left_alpha">Slide to left + Alpha</string>
+    <string name="ambient_image_animation_slide_to_right_alpha">Slide to right + Alpha</string>
+
+    <string name="ambient_text_enabled_title">Ambient Text</string>
+    <string name="ambient_text_enabled_summary">Enable a Custom Text in ambient screen</string>
+    <string name="ambient_custom_text_title">Custom Text</string>
+
+    <string name="ambient_text_custom_color_start_title">Start Color</string>
+    <string name="ambient_text_custom_color_final_title">Final Color</string>
+
+    <string name="ambient_text_vertical_location_title">Vertical Position</string>
+    <string name="ambient_text_horizontal_location_title">Horizontal Position</string>
+    <string name="ambient_text_rotation_title">Rotation</string>
+    <string name="ambient_text_size_title">Font Size</string>
+
+    <string name="ambient_text_color_type_title">Color type</string>
+    <string name="ambient_text_color_type_pick">Pick a Color type</string>
+    <string name="ambient_text_color_type_accent">Color Accent</string>
+    <string name="ambient_text_color_type_custom">Custom Color (Start)</string>
+    <string name="ambient_text_color_type_gradient">Gradient (Start to Final)</string>
+    <string name="ambient_text_color_type_lava_lamp">Lava Lamp</string>
+    <string name="ambient_text_color_type_lava_lamp_custom">Lava Lamp with Custom Colors (Start to Final)</string>
+
 </resources>
