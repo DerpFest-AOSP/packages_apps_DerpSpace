@@ -37,4 +37,105 @@
             android:defaultValue="false" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="ambient"
+        android:title="@string/ambient_category_title">
+
+        <com.android.settingslib.widget.TopIntroPreference
+            android:key="ambient_icons_intro_text"
+            android:title="@string/ambient_icons_intro_text"/>
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="ambient_text_enabled"
+            android:title="@string/ambient_text_enabled_title"
+            android:summary="@string/ambient_text_enabled_summary"
+            android:defaultValue="false" />
+
+        <org.derpfest.support.preferences.SystemSettingEditTextPreference
+            android:key="ambient_custom_text"
+            android:title="@string/ambient_custom_text_title"
+            android:defaultValue="DerpFest" />
+
+        <org.derpfest.support.preferences.SystemSettingListPreference
+            android:key="ambient_text_color_type"
+            android:title="@string/ambient_text_color_type_title"
+            android:dialogTitle="@string/ambient_text_color_type_pick"
+            android:entries="@array/ambient_text_color_type_entries"
+            android:entryValues="@array/ambient_text_color_type_values"
+            android:summary="%s"
+            android:defaultValue="0" />
+
+        <org.derpfest.support.colorpicker.ColorPickerSystemPreference
+            android:key="ambient_text_custom_color_start"
+            android:title="@string/ambient_text_custom_color_start_title"
+            android:defaultValue="0xffffff" />
+
+        <org.derpfest.support.colorpicker.ColorPickerSystemPreference
+            android:key="ambient_text_custom_color_final"
+            android:title="@string/ambient_text_custom_color_final_title"
+            android:defaultValue="0xffffff" />
+
+        <org.derpfest.support.preferences.CustomSystemSeekBarPreference
+            android:key="ambient_text_vertical_location"
+            android:title="@string/ambient_text_vertical_location_title"
+            android:dependency="ambient_text_enabled"
+            settings:allowEditText="true"
+            android:max="100"
+            settings:min="0"
+            settings:units=""
+            settings:interval="1"
+            android:defaultValue="50" />
+
+        <org.derpfest.support.preferences.CustomSystemSeekBarPreference
+            android:key="ambient_text_horizontal_location"
+            android:title="@string/ambient_text_horizontal_location_title"
+            android:dependency="ambient_text_enabled"
+            settings:allowEditText="true"
+            android:max="100"
+            settings:min="0"
+            settings:units=""
+            settings:interval="1"
+            android:defaultValue="50" />
+
+        <org.derpfest.support.preferences.CustomSystemSeekBarPreference
+            android:key="ambient_text_rotation"
+            android:title="@string/ambient_text_rotation_title"
+            android:dependency="ambient_text_enabled"
+            settings:allowEditText="true"
+            android:max="360"
+            settings:min="0"
+            settings:units=""
+            settings:interval="1"
+            android:defaultValue="0" />
+
+        <org.derpfest.support.preferences.CustomSystemSeekBarPreference
+            android:key="ambient_text_size"
+            android:title="@string/ambient_text_size_title"
+            android:dependency="ambient_text_enabled"
+            settings:allowEditText="true"
+            android:max="120"
+            settings:min="0"
+            settings:units="dp"
+            settings:interval="1"
+            android:defaultValue="24" />
+
+        <org.derpfest.support.preferences.SystemSettingListPreference
+            android:key="ambient_text_hide_type"
+            android:title="@string/ambient_image_hide_type_title"
+            android:dialogTitle="@string/ambient_image_animation_type_pick"
+            android:entries="@array/ambient_image_animation_type_entries"
+            android:entryValues="@array/ambient_image_animation_type_values"
+            android:summary="%s"
+            android:defaultValue="0" />
+
+        <org.derpfest.support.preferences.SystemSettingListPreference
+            android:key="ambient_text_show_type"
+            android:title="@string/ambient_image_show_type_title"
+            android:dialogTitle="@string/ambient_image_animation_type_pick"
+            android:entries="@array/ambient_image_animation_type_entries"
+            android:entryValues="@array/ambient_image_animation_type_values"
+            android:summary="%s"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
 </PreferenceScreen>

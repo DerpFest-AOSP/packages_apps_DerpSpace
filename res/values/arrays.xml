@@ -233,4 +233,37 @@
         <item>2</item>
     </string-array>
 
+    <!-- Ambient Animation Type -->
+    <string-array name="ambient_image_animation_type_entries" translatable="false">
+        <item>@string/ambient_image_animation_alpha</item>
+        <item>@string/ambient_image_animation_slide_to_left</item>
+        <item>@string/ambient_image_animation_slide_to_right</item>
+        <item>@string/ambient_image_animation_slide_to_left_alpha</item>
+        <item>@string/ambient_image_animation_slide_to_right_alpha</item>
+    </string-array>
+
+    <string-array name="ambient_image_animation_type_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="ambient_text_color_type_entries" translatable="false">
+        <item>@string/ambient_text_color_type_accent</item>
+        <item>@string/ambient_text_color_type_custom</item>
+        <item>@string/ambient_text_color_type_gradient</item>
+        <item>@string/ambient_text_color_type_lava_lamp</item>
+        <item>@string/ambient_text_color_type_lava_lamp_custom</item>
+    </string-array>
+
+    <string-array name="ambient_text_color_type_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
 </resources>

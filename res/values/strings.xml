@@ -445,4 +445,37 @@
     <string name="lockscreen_hide_status_bar_title">Hide Statusbar</string>
     <string name="lockscreen_hide_status_bar_summary">When enabled, statusbar will be hidden on lockscreen</string>
 
+    <!-- Ambient Text -->
+    <string name="ambient_category_title">Ambient Text</string>
+    <string name="ambient_icons_intro_text">Many of the following settings require a SystemUI restart</string>
+
+    <string name="ambient_image_hide_type_title">Hide animation type</string>
+    <string name="ambient_image_show_type_title">Show animation type</string>
+    <string name="ambient_image_animation_type_pick">Pick a animation type</string>
+    <string name="ambient_image_animation_alpha">Alpha</string>
+    <string name="ambient_image_animation_slide_to_left">Slide to left</string>
+    <string name="ambient_image_animation_slide_to_right">Slide to right</string>
+    <string name="ambient_image_animation_slide_to_left_alpha">Slide to left + Alpha</string>
+    <string name="ambient_image_animation_slide_to_right_alpha">Slide to right + Alpha</string>
+
+    <string name="ambient_text_enabled_title">Ambient Text</string>
+    <string name="ambient_text_enabled_summary">Enable a custom text on ambient screen</string>
+    <string name="ambient_custom_text_title">Custom text</string>
+
+    <string name="ambient_text_custom_color_start_title">Start color</string>
+    <string name="ambient_text_custom_color_final_title">Final color</string>
+
+    <string name="ambient_text_vertical_location_title">Vertical position</string>
+    <string name="ambient_text_horizontal_location_title">Horizontal position</string>
+    <string name="ambient_text_rotation_title">Rotation</string>
+    <string name="ambient_text_size_title">Font size</string>
+
+    <string name="ambient_text_color_type_title">Color type</string>
+    <string name="ambient_text_color_type_pick">Pick a color type</string>
+    <string name="ambient_text_color_type_accent">Color accent</string>
+    <string name="ambient_text_color_type_custom">Custom color (Start)</string>
+    <string name="ambient_text_color_type_gradient">Gradient (Start to final)</string>
+    <string name="ambient_text_color_type_lava_lamp">Lava lamp</string>
+    <string name="ambient_text_color_type_lava_lamp_custom">Lava lamp with custom colors (Start to final)</string>
+
 </resources>

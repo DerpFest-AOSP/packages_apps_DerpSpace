@@ -415,4 +415,36 @@
     <string name="lockscreen_hide_status_bar_title">Statusleiste ausblenden</string>
     <string name="lockscreen_hide_status_bar_summary">Bei Aktivierung, wird die Statusleiste auf dem Sperrbildschirm ausgeblendet</string>
 
+    <!-- Ambient Text -->
+    <string name="ambient_category_title">Ambient-Text</string>
+    <string name="ambient_icons_intro_text">Viele der folgenden Einstellungen benötigen einen SystemUI-Neustart</string>
+
+    <string name="ambient_image_hide_type_title">Animationstyp fürs Ausblenden</string>
+    <string name="ambient_image_show_type_title">Animationstyp fürs Einblenden</string>
+    <string name="ambient_image_animation_type_pick">Wählen Sie einen Animationstyp aus</string>
+    <string name="ambient_image_animation_alpha">Opazität</string>
+    <string name="ambient_image_animation_slide_to_left">Nach links bewegen</string>
+    <string name="ambient_image_animation_slide_to_right">Nach rechts bewegen</string>
+    <string name="ambient_image_animation_slide_to_left_alpha">Nach links bewegen + Opazität</string>
+    <string name="ambient_image_animation_slide_to_right_alpha">Nach rechts bewegen + Opazität</string>
+
+    <string name="ambient_text_enabled_title">Ambient-Text</string>
+    <string name="ambient_text_enabled_summary">Aktivieren Sie einen benutzerdefinierten Text in der Umgebungsanzeige/AOD</string>
+    <string name="ambient_custom_text_title">Benutzerdefinierter Text</string>
+
+    <string name="ambient_text_custom_color_start_title">Startfarbe</string>
+    <string name="ambient_text_custom_color_final_title">Endfarbe</string>
+
+    <string name="ambient_text_vertical_location_title">Vertikale Position</string>
+    <string name="ambient_text_horizontal_location_title">Horizontale Position</string>
+    <string name="ambient_text_rotation_title">Rotation</string>
+    <string name="ambient_text_size_title">Schriftgröße</string>
+
+    <string name="ambient_text_color_type_title">Farbtyp</string>
+    <string name="ambient_text_color_type_pick">Wählen Sie einen Farbtyp</string>
+    <string name="ambient_text_color_type_accent">Systemakzent</string>
+    <string name="ambient_text_color_type_custom">Benutzerdefinierte Farbe (Startfarbe)</string>
+    <string name="ambient_text_color_type_gradient">Farbverlauf (Start- bis Endfarbe)</string>
+    <string name="ambient_text_color_type_lava_lamp">Lavalampe</string>
+    <string name="ambient_text_color_type_lava_lamp_custom">Lavalampe mit benutzerdefinierten Farben (Start- bis Endfarbe)</string>
 </resources>
