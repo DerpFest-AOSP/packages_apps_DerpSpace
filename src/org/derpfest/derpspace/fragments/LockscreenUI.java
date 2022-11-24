@@ -51,6 +51,13 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+import android.os.RemoteException;
+import android.os.ServiceManager;
+import static android.os.UserHandle.USER_SYSTEM;
+import static android.os.UserHandle.USER_CURRENT;
+
 import org.derpfest.support.preferences.SystemSettingListPreference;
 import org.derpfest.support.preferences.SystemSettingSwitchPreference;
 
@@ -65,9 +72,13 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
     private static final String LOCKSCREEN_BATTERY_INFO_TEMP_UNIT = "lockscreen_charge_temp_unit";
     private static final String SECONDARY_COLOR_CLOCK = "use_secondary_color_clock";
+    private static final String CUSTOM_CLOCK_FACE = Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_FACE;
+    private static final String DEFAULT_CLOCK = "com.android.keyguard.clock.DefaultClockController";
 
     private SystemSettingListPreference mBatteryTempUnit;
     private SystemSettingSwitchPreference mSecondaryColorClock;
+    private ListPreference mLockClockStyles;
+    private Context mContext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -88,6 +99,12 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
 
         mSecondaryColorClock = (SystemSettingSwitchPreference) findPreference(SECONDARY_COLOR_CLOCK);
         mSecondaryColorClock.setOnPreferenceChangeListener(this);
+
+        mLockClockStyles = (ListPreference) findPreference(CUSTOM_CLOCK_FACE);
+        String mLockClockStylesValue = getLockScreenCustomClockFace();
+        mLockClockStyles.setValue(mLockClockStylesValue);
+        mLockClockStyles.setSummary(mLockClockStyles.getEntry());
+        mLockClockStyles.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -114,8 +131,38 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
     	} else if (preference == mSecondaryColorClock) {
             derpUtils.showSystemUiRestartDialog(getContext());
             return true;
+        } else if (preference == mLockClockStyles) {
+            setLockScreenCustomClockFace((String) objValue);
+            int index = mLockClockStyles.findIndexOfValue((String) objValue);
+            mLockClockStyles.setSummary(mLockClockStyles.getEntries()[index]);
+            return true;
         }
         return false;
+    }
+
+    private String getLockScreenCustomClockFace() {
+        mContext = getActivity();
+        String value = Settings.Secure.getStringForUser(mContext.getContentResolver(),
+                CUSTOM_CLOCK_FACE, USER_CURRENT);
+
+        if (value == null || value.isEmpty()) value = DEFAULT_CLOCK;
+
+        try {
+            JSONObject json = new JSONObject(value);
+            return json.getString("clock");
+        } catch (JSONException ex) {
+        }
+        return value;
+    }
+
+    private void setLockScreenCustomClockFace(String value) {
+        try {
+            JSONObject json = new JSONObject();
+            json.put("clock", value);
+            Settings.Secure.putStringForUser(mContext.getContentResolver(), CUSTOM_CLOCK_FACE,
+                    json.toString(), USER_CURRENT);
+        } catch (JSONException ex) {
+        }
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

@@ -46,6 +46,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="lock_screen_custom_clock_face_category"
+        android:title="@string/lock_screen_custom_clock_face_category">
+
+        <ListPreference
+            android:key="lock_screen_custom_clock_face"
+            android:summary="%s"
+            android:title="@string/lock_screen_custom_clock_face_title"
+            android:entries="@array/lock_screen_custom_clock_face_entries"
+            android:entryValues="@array/lock_screen_custom_clock_face_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="lockscreen_ui_charging_category"
         android:title="@string/charging_category">
 
