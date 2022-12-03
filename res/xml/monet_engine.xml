@@ -20,6 +20,13 @@
     android:key="monet_settings"
     android:title="@string/monet_engine_title">
 
+    <ListPreference
+        android:key="theme_style"
+        android:title="@string/monet_engine_style_title"
+        android:entries="@array/monet_engine_style_entries"
+        android:entryValues="@array/monet_engine_style_values"
+        android:defaultValue="0" />
+
     <org.derpfest.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_custom_color"
         android:title="@string/monet_engine_custom_color_title"
