@@ -419,4 +419,24 @@
     <string name="laboratory_parallel_space_title">Zweites Profil</string>
     <string name="laboratory_parallel_space_summary">Ermöglicht parallele Ausführung mehrerer Instanzen derselben App</string>
 
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Erweiterte Monet-Einstellungen</string>
+    <string name="monet_settings_summary">Ein paar zusätzliche Einstellungen zum Anpassen der Monet-Engine</string>
+    <string name="theme_style_title">Themenstil</string>
+    <string name="theme_style_tonal_spot">Tonal Spot (Standard)</string>
+    <string name="theme_style_vibrant">Vibrant</string>
+    <string name="theme_style_expressive">Expressive</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Rainbow</string>
+    <string name="theme_style_fruit_salad">Fruit Salad</string>
+    <string name="theme_style_muted">Muted</string>
+    <string name="theme_style_content">Content</string>
+    <string name="color_source_title">Farbquelle</string>
+    <string name="color_source_both">Beides (Standard)</string>
+    <string name="color_source_home">Hintergrundbild des Startbildschirms</string>
+    <string name="color_source_lock">Hintergrundbild des Sperrbildschirms</string>
+    <string name="color_source_preset">Voreinstellung</string>
+    <string name="accent_color_title">Akzentfarbe</string>
+    <string name="accent_color_summary">Überschreiben der standardmäßigen Akzentfarbe</string>
+
 </resources>
