@@ -65,6 +65,21 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="powermenu_category"
+        android:title="@string/powermenu_category">
+
+        <org.derpfest.support.preferences.SecureSettingListPreference
+            android:key="power_menu_type"
+            android:title="@string/power_menu_type_title"
+            android:summary="%s"
+            android:dialogTitle="@string/power_menu_type_title"
+            android:entries="@array/power_menu_type_entries"
+            android:entryValues="@array/power_menu_type_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="udfps_category"
         android:title="@string/udfps_category">
 
