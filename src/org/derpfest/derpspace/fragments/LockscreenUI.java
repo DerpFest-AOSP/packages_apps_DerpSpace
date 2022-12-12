@@ -42,7 +42,7 @@ import androidx.preference.PreferenceScreen;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.internal.util.derp.derpUtils;
 
-import com.android.settings.fuelgauge.PowerUsageSummary;
+import com.android.settings.fuelgauge.batteryusage.PowerUsageSummary;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
