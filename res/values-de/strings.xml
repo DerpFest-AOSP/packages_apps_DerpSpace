@@ -411,4 +411,7 @@
     <string name="lockscreen_hide_status_bar_title">Statusleiste ausblenden</string>
     <string name="lockscreen_hide_status_bar_summary">Bei Aktivierung, wird die Statusleiste auf dem Sperrbildschirm ausgeblendet</string>
 
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Zweites Profil</string>
+    <string name="laboratory_parallel_space_summary">Ermöglicht parallele Ausführung mehrerer Instanzen derselben App</string>
 </resources>

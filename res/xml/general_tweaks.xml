@@ -32,6 +32,15 @@
             android:summary="@string/wallpaper_zoom_effect_summary"
             android:defaultValue="true" />
 
+        <Preference
+            android:key="parallel_space"
+            android:title="@string/laboratory_parallel_space_title"
+           android:summary="@string/laboratory_parallel_space_summary">
+            <intent
+                android:targetPackage="ink.kscope.parallelspace"
+                android:targetClass="ink.kscope.parallelspace.MainActivity" />
+        </Preference>
+
     </PreferenceCategory>
 
 </PreferenceScreen>
