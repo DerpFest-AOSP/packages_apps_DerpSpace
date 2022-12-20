@@ -411,4 +411,8 @@
     <string name="pie_animation_style_title">Android P-Animationsstil</string>
     <string name="pie_animation_style_summary">Aktiviert Android P \"Standard\"-Animationen</string>
 
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Zweites Profil</string>
+    <string name="laboratory_parallel_space_summary">Ermöglicht parallele Ausführung mehrerer Instanzen derselben App</string>
+
 </resources>
