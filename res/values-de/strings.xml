@@ -407,4 +407,8 @@
     <string name="lockscreen_hide_status_bar_title">Statusleiste ausblenden</string>
     <string name="lockscreen_hide_status_bar_summary">Bei Aktivierung, wird die Statusleiste auf dem Sperrbildschirm ausgeblendet</string>
 
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Android P-Animationsstil</string>
+    <string name="pie_animation_style_summary">Aktiviert Android P \"Standard\"-Animationen</string>
+
 </resources>
