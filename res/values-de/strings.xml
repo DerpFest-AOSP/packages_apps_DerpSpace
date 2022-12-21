@@ -403,10 +403,6 @@
     <string name="statusbar_clock_chip_title">Hintergrundchip anzeigen</string>
     <string name="statusbar_clock_chip_summary">Akzentuierter Chip hinter der Uhr anzeigen</string>
 
-    <!-- Lockscreen clock color -->
-    <string name="lockscreen_clock_color_title">Farbe der Sperrbildschirmuhr</string>
-    <string name="lockscreen_clock_color_summary">Sekundärfarbe statt Hauptfarbakzent für die Uhr auf dem Sperrbildschirm verwenden</string>
-
     <!-- Hide statusbar on lockscreen -->
     <string name="lockscreen_hide_status_bar_title">Statusleiste ausblenden</string>
     <string name="lockscreen_hide_status_bar_summary">Bei Aktivierung, wird die Statusleiste auf dem Sperrbildschirm ausgeblendet</string>
