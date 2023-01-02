@@ -206,6 +206,10 @@
     <string name="theme_customization_ui_style_title">UI Style</string>
     <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
 
+    <!-- Fonts -->
+    <string name="theme_customization_lock_clock_title">Lockscreen clock font</string>
+    <string name="theme_customization_lock_clock_summary">Set LS clock font style</string>
+
     <!-- Applications fragment -->
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>

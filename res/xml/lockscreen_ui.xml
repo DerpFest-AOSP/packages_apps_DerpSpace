@@ -37,6 +37,12 @@
             android:summary="@string/lockscreen_hide_status_bar_summary"
             android:defaultValue="false" />
 
+        <Preference
+            android:key="android.theme.customization.lockscreen_clock_font"
+            android:title="@string/theme_customization_lock_clock_title"
+            android:summary="@string/theme_customization_lock_clock_summary"
+            android:fragment="org.derpfest.derpspace.fragments.LockClockFonts"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory

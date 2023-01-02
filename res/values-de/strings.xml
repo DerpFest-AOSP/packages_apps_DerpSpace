@@ -198,6 +198,10 @@
     <string name="theme_customization_ui_style_title">UI-Stil</string>
     <string name="theme_customization_ui_style_summary">Einen benutzerdefinierten Stil für die Benutzeroberfläche festlegen</string>
 
+    <!-- Fonts -->
+    <string name="theme_customization_lock_clock_title">Sperrbildschirm-Uhr-Schriftart</string>
+    <string name="theme_customization_lock_clock_summary">Schriftstil der Sperrbildschirm-Uhr einstellen</string>
+
     <!-- Applications fragment -->
     <string name="search">Suche</string>
     <string name="search_apps">Apps suchen</string>
