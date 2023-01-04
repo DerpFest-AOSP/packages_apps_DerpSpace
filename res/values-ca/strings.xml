@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 DerpFest
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General app strings -->
+    <string name="add">Afegeix</string>
+    <string name="advanced">Avançat</string>
+    <string name="cancel">Cancel · lar</string>
+    <string name="default_text">Per defecte</string>
+    <string name="dlg_ok">D\'acord</string>
+    <string name="attention">Atenció</string>
+    <string name="loading">Carregant\u2026</string>
+    <string name="reset">Restableix</string>
+    <string name="reset_colors">Restableix els colors</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Icona</string>
+    <string name="color_title">Color</string>
+    <string name="colors_title">Colors</string>
+    <!-- DerpSpace categories -->
+    <string name="icons_category">Icones</string>
+    <string name="status_bar_category">Barra d\'estat</string>
+    <string name="notifications_panel_category">Panell QS</string>
+    <string name="system_category">Sistema</string>
+    <string name="lockscreen_category">Pantalla de bloqueig</string>
+    <string name="udfps_category">Empremta digital sota la pantalla</string>
+    <string name="listview">Visualització de llista</string>
+    <!-- Frags -->
+    <!-- General Tweaks -->
+    <string name="general_tweaks_title">Configuració general</string>
+    <!-- Lockscreen UI -->
+    <string name="lockscreen_ui_title">Interfície d\'usuari de la pantalla de bloqueig</string>
+    <!-- Lockscreen general category -->
+    <string name="general_category">General</string>
+    <!-- Lockscreen charging category -->
+    <string name="charging_category">Carregant</string>
+    <!-- Quicksettings media category -->
+    <string name="media_category">Reproductor multimèdia</string>
+    <!-- Network Traffic -->
+    <string name="traffic_title">Indicadors de trànsit</string>
+    <!-- Misc DerpSpace -->
+    <string name="misc_derpspace_title">Divers</string>
+    <!-- Notifications -->
+    <string name="notifications_title">Notificacions</string>
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Configuració ràpida</string>
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_clock_title">Configuració de la data del rellotge &amp;</string>
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">Control lliscant de brillantor</string>
+    <!-- Quick Settings footer category -->
+    <string name="footer_category">Peu de pàgina</string>
+    <!-- Statusbar Iten -->
+    <string name="statusbar_items_category">Elements de la barra d\'estat</string>
+    <!-- Customisation -->
+    <string name="customisation_title">Personalització</string>
+    <!-- Battery -->
+    <string name="battery_title">Pila</string>
+    <!-- Battery Settings -->
+    <string name="battery_settings_title">Configuració de la bateria</string>
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">Estils de bateria</string>
+    <string name="battery_percent_title">Percentatge de bateria</string>
+    <!-- App info dialog -->
+    <string name="derpspace_dialog_title">Ajuda\'ns a ajudar-te!</string>
+    <string name="derpspace_dialog_message">Si trobeu un error amb alguna d\'aquestes configuracions, informeu-lo al nostre Grup de Telegram. HEU d\'incloure el següent quan publiqueu un informe d\'error:\n\n1. Un logcat o last_kmsg\n2. Nucli i modificacions utilitzades\n3. Informació útil\n\nSi no informeu d\'alguna cosa adequadament, NO espereu que les coses s\'arreglin.</string>
+    <string name="derpspace_dialog_toast">LLEGIU TOT!</string>
+    <string name="artwork_media_fade_level_summary">Esvair la imatge de l\'obra d\'art dels mitjans</string>
+    <!-- QuickSettings haptic feedback -->
+    <string name="qs_tile_vibration_title">Vibració</string>
+    <string name="quick_settings_vibrate_title">Vibra al tacte</string>
+    <string name="quick_settings_vibrate_summary">Vibrar en tocar les rajoles QS</string>
+    <string name="quick_settings_vibrate_duration_title">Durada de la vibració</string>
+    <string name="quick_settings_vibrate_duration_summary">Quants mil·lisegons per vibrar</string>
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Animacions</string>
+    <string name="qs_tile_animation_style_title">Estil d\'animació</string>
+    <string name="qs_tile_animation_duration_title">Durada de l\'animació</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolador d\'animació de rajoles</string>
+    <string name="qs_tile_animation_style_off">Sense animació</string>
+    <string name="qs_tile_animation_style_flip">Flip</string>
+    <string name="qs_tile_animation_style_rotate">Gira</string>
+    <string name="qs_tile_animation_duration_low">baix</string>
+    <string name="qs_tile_animation_duration_default">Per defecte</string>
+    <string name="qs_tile_animation_duration_fast">Ràpid</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Lineal</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerar</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Desaccelerar</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerar desaccelerar</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Rebot</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Desbordament</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipar</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipar l\'excés</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">icona 4G</string>
+    <string name="show_fourg_icon_summary">Mostra la icona 4G a la icona de senyal en lloc de LTE</string>
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Mostra la icona de dades desactivades</string>
+    <string name="data_disabled_icon_summary">Mostra el signe de creu al costat de la barra de senyal quan les dades estiguin desactivades</string>
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">Avisos al peu de pàgina de QS</string>
+    <string name="qs_footer_warnings_summary">Mostra un avís a la part inferior del tauler QS quan la xarxa està supervisada per aplicacions externes o VPN</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Icona petita de tipus mòbil</string>
+    <string name="use_old_mobiletype_summary">Mostra la icona del tipus de mòbil a la part superior de l\'indicador de senyal</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Informació de càrrega de la pantalla de bloqueig</string>
+    <string name="lockscreen_battery_info_summary">Mostra el corrent de càrrega, la tensió, la potència i la temperatura de la bateria a la pantalla de bloqueig mentre es carrega</string>
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Cal desbloquejar per utilitzar fitxes sensibles</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Demaneu desbloquejar la pantalla de bloqueig quan feu servir rajoles sensibles</string>
+    <!-- QS footer text -->
+    <string name="qs_footer_text_show_title">Mostra el text del peu de pàgina QS</string>
+    <string name="qs_footer_text_string_title">Personalitza el text del peu de pàgina</string>
+    <string name="qs_footer_text_string_summary">Estableix com a buit per defecte #StayDerped</string>
+    <!-- Notifications general category -->
+    <string name="notifications_general_category_title">General</string>
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Recompte de notificacions</string>
+    <string name="status_bar_notif_count_summary">Mostra el nombre de notificacions pendents</string>
+    <!-- Units -->
+    <string name="unit_seconds">s</string>
+    <string name="unit_milliseconds">Senyora</string>
+    <string name="unit_pixels">dp</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Tematització</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Tipus de lletra del títol/cos</string>
+    <string name="theme_customization_font_summary">Estableix l\'estil de font del sistema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Forma d\'icona</string>
+    <string name="theme_customization_icon_shape_summary">Estableix l\'estil de forma de la icona del sistema</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Paquet d\'icones</string>
+    <string name="theme_customization_icon_pack_summary">Estableix un estil de paquet d\'icones personalitzat</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Dispositiu predeterminat</string>
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="theme_customization_wifi_icon_title">Icona de wifi</string>
+    <string name="theme_customization_wifi_icon_summary">Estableix l\'estil d\'icona de Wifi</string>
+    <!-- Custom Signal bar icons -->
+    <string name="theme_customization_signal_icon_title">Icones de senyal</string>
+    <string name="theme_customization_signal_icon_summary">Estableix l\'estil d\'icones de senyal</string>
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Utilitzeu el tema negre</string>
+    <string name="system_black_theme_summary">Força els colors de fons negre</string>
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">Estil d\'IU</string>
+    <string name="theme_customization_ui_style_summary">Estableix un estil personalitzat per a la teva interfície</string>
+    <!-- Applications fragment -->
+    <string name="search">Cerca</string>
+    <string name="search_apps">Cerca aplicacions</string>
+    <!-- reTicker -->
+    <string name="reticker_title">reticker</string>
+    <string name="reticker_summary">Substituïu les vostres notificacions per una versió redissenyada de tickers. \nEsvelt i menys invasiu que una notificació estàndard</string>
+    <string name="reticker_colored_title">Utilitzeu el fons de color de l\'aplicació</string>
+    <string name="reticker_colored_summary">Substituïu el color de fons de reTicker mitjançant el color principal de l\'aplicació de notificació</string>
+    <string name="reticker_landscape_only_title">Només paisatge</string>
+    <string name="reticker_landscape_only_summary">Activeu reTicker només quan el dispositiu estigui en mode horitzontal</string>
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Indicador de trànsit de xarxa</string>
+    <string name="network_traffic_summary">Activa o desactiva l\'indicador de velocitat de xarxa a la barra d\'estat</string>
+    <string name="network_traffic_state_title">Activa \"Indicador de trànsit de xarxa\"</string>
+    <string name="network_options_title">Opcions</string>
+    <string name="network_traffic_autohide_title">Amaga l\'indicador de trànsit de xarxa quan està inactiu</string>
+    <string name="network_traffic_autohide_summary">Amaga quan el trànsit de xarxa sigui inferior a 1 KB/s</string>
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">Portada dels mitjans</string>
+    <string name="media_art_title">Portada dels mitjans</string>
+    <string name="media_art_summary">Mostra la portada dels mitjans quan estigui disponible</string>
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">Nivell de desenfocament de l\'art multimèdia</string>
+    <!-- Clock position -->
+    <string name="status_bar_clock_position_center">Centre</string>
+    <string name="status_bar_clock_position_left">Esquerra</string>
+    <string name="status_bar_clock_position_right">Dret</string>
+    <string name="status_bar_clock_position_title">Posició del rellotge</string>
+    <!-- Clock AM/PM -->
+    <string name="status_bar_am_pm_hidden">Ocult</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Petit</string>
+    <string name="status_bar_am_pm_title">Rellotge estil AM/PM</string>
+    <string name="status_bar_am_pm_unavailable">El rellotge de 24 hores està habilitat</string>
+    <!-- Clock show seconds -->
+    <string name="status_bar_clock_show_seconds_title">El rellotge mostra els segons</string>
+    <string name="status_bar_clock_show_seconds_desc">Mostra hores, minuts i segons</string>
+    <!-- Battery style and percentage -->
+    <string name="status_bar_battery_style_circle">Cercle</string>
+    <string name="status_bar_battery_style_icon_portrait">Retrat d\'icona</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_title">Estil d\'estat de la bateria</string>
+    <string name="status_bar_battery_percentage_hidden">Ocult</string>
+    <string name="status_bar_battery_percentage_text_inside">Dins de la icona</string>
+    <string name="status_bar_battery_percentage_text_next">Al costat de la icona</string>
+    <string name="status_bar_battery_percentage_title">Percentatge de bateria</string>
+    <!-- Brightness slider -->
+    <string name="qqs_show_brightness_title">Mostra el control lliscant de brillantor al tauler Quick QS</string>
+    <string name="brightness_slider_position_title">Posició del control lliscant de brillantor</string>
+    <string name="top">Superior</string>
+    <string name="bottom">A baix</string>
+    <string name="show_auto_brightness_button_title">Mostra el botó de brillantor automàtica</string>
+    <!-- Pulse -->
+    <string name="ambient_light_category">Il·luminació de vora</string>
+    <string name="keywords_pulse_ambient_light_display">notificació, notificacions, vora, llum, color, color</string>
+    <string name="pulse_ambient_light_text">La il·luminació de la vora fa que la pantalla brilli quan rebeu una notificació. Això fa que sigui més fàcil calcular quan rep un pols mentre el telèfon està en mode de somni.</string>
+    <string name="pulse_ambient_light_enable">Utilitzeu la il·luminació Edge</string>
+    <string name="pulse_ambient_light_title">Il·luminació de vora</string>
+    <string name="pulse_ambient_light_summary">Il·lumina les vores laterals de la pantalla al pols de notificació</string>
+    <string name="ambient_notification_light_accent_title">Color d\'accent del sistema</string>
+    <string name="ambient_notification_light_color_automatic_title">Color de notificació</string>
+    <string name="pulse_ambient_light_color">Quan palpi, feu servir</string>
+    <!-- QS tiles layout -->
+    <string name="qs_tile_layout_title">Disseny de rajoles QS</string>
+    <string name="qs_tile_layout_summary">Personalitzeu la disposició de les fitxes al tauler QS</string>
+    <string name="qs_tiles_layout_category">Distribució de rajoles</string>
+    <string name="qs_rows_portrait_title">Files (retrat)</string>
+    <string name="qqs_rows_portrait_title">Files (retrat de QS ràpid)</string>
+    <string name="qs_columns_portrait_title">Columnes (Retrat)</string>
+    <string name="qs_apply_change_button_title">Aplica el canvi</string>
+    <string name="qs_apply_change_failed">No s\'ha pogut aplicar el canvi</string>
+    <string name="qs_tile_hide_label_title">Amaga les etiquetes</string>
+    <string name="qs_tile_hide_label_summary">Mostra només la icona per a les fitxes QS</string>
+    <string name="qs_tile_vertical_layout_title">Distribució vertical</string>
+    <string name="qs_tile_vertical_layout_summary">Activa la disposició vertical per a les fitxes QS</string>
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">Lletra de la barra d\'estat</string>
+    <string name="status_bar_lyric_summary">Mostra la lletra a la barra d\'estat (necessita suport per a l\'aplicació)</string>
+    <string name="status_bar_show_lyric_title">Activa la lletra de la barra d\'estat</string>
+    <!-- Statusbar logo -->
+    <string name="status_bar_logo_category_title">Logotip</string>
+    <string name="status_bar_logo_title">Logotip</string>
+    <string name="status_bar_logo_summary">Activa per mostrar el logotip a la barra d\'estat</string>
+    <string name="status_bar_logo_position_title">Posició</string>
+    <string name="status_bar_logo_position_summary">Trieu a quin costat voleu mostrar el logotip, a l\'esquerra o a la dreta</string>
+    <string name="status_bar_logo_position_right">Dret</string>
+    <string name="status_bar_logo_position_left">Esquerra</string>
+    <string name="status_bar_logo_style_title">Estil</string>
+    <string name="status_bar_logo_style_derp">DerpFest</string>
+    <string name="status_bar_logo_style_derp_alt">Triangle DerpFest</string>
+    <string name="status_bar_logo_style_adidas">Adidas</string>
+    <string name="status_bar_logo_style_airjordan">Air Jordan</string>
+    <string name="status_bar_logo_style_apple">poma</string>
+    <string name="status_bar_logo_style_avengers">Venjadors</string>
+    <string name="status_bar_logo_style_batman">Batman</string>
+    <string name="status_bar_logo_style_batman_tdk">Batman El Cavaller Fosc</string>
+    <string name="status_bar_logo_style_beats">Batecs</string>
+    <string name="status_bar_logo_style_biohazard">Risc biològic</string>
+    <string name="status_bar_logo_style_blackberry">Blackberry</string>
+    <string name="status_bar_logo_style_cannabis">Cànnabis</string>
+    <string name="status_bar_logo_style_fire">Foc</string>
+    <string name="status_bar_logo_style_nike">Nike</string>
+    <string name="status_bar_logo_style_pac_man">Pac-Man</string>
+    <string name="status_bar_logo_style_puma">Puma</string>
+    <string name="status_bar_logo_style_rog">ROG</string>
+    <string name="status_bar_logo_style_superman">Superman</string>
+    <string name="status_bar_logo_style_windows">Windows</string>
+    <string name="status_bar_logo_style_xbox">XBOX</string>
+    <!-- Pulse music visualizer -->
+    <string name="pulse_help_policy_notice_title">Sobre el pols</string>
+    <string name="pulse_help_policy_notice_summary">Pulse és un visualitzador d\'àudio brillant quan es reprodueix música al dispositiu</string>
+    <string name="pulse_settings">Pols</string>
+    <string name="pulse_settings_summary">Visualitzador d\'àudio per a la barra de navegació, la pantalla de bloqueig i la pantalla ambiental</string>
+    <string name="show_navbar_pulse_title">Navbar Pulse</string>
+    <string name="show_navbar_pulse_summary">Visualitzador d\'àudio a la barra de navegació</string>
+    <string name="show_lockscreen_pulse_title">Pols de pantalla de bloqueig</string>
+    <string name="show_lockscreen_pulse_summary">Visualitzador d\'àudio a la pantalla de bloqueig</string>
+    <string name="show_ambient_pulse_title">Pols ambiental</string>
+    <string name="show_ambient_pulse_summary">Visualitzador d\'àudio a la pantalla ambiental</string>
+    <string name="pulse_render_mode_title">Mode de renderització</string>
+    <string name="pulse_render_mode_fading_bars">Blocs esvaïts</string>
+    <string name="pulse_render_mode_solid_lines">Línies sòlides</string>
+    <string name="pulse_legacy_mode_advanced_category">Configuració del mode de blocs esvaïts</string>
+    <string name="pulse_custom_fudge_factor">Nivell de seny</string>
+    <string name="pulse_lavalamp_speed_title">Velocitat de la làmpada de lava</string>
+    <string name="pulse_solid_units_count">Les línies sòlides compten</string>
+    <string name="pulse_solid_units_opacity">Opacitat de línies sòlides</string>
+    <string name="pulse_solid_dimen_category">Configuració del mode de línies sòlides</string>
+    <string name="pulse_color_mode_title">Color</string>
+    <string name="pulse_color_accent">Accent</string>
+    <string name="pulse_color_custom">Personalitzat</string>
+    <string name="pulse_color_lava_lamp">Llum de lava</string>
+    <string name="pulse_color_auto">Àlbum</string>
+    <string name="pulse_color_user_title">Trieu el color</string>
+    <string name="pulse_smoothing_enabled_title">Activa la suavització</string>
+    <string name="pulse_smoothing_enabled_summary">Cada barra s\'anima més suaument</string>
+    <string name="pulse_custom_dimen">Amplada de la barra</string>
+    <string name="pulse_custom_div">Espaiat entre barres</string>
+    <string name="pulse_filled_block_size">Mida del bloc</string>
+    <string name="pulse_empty_block_size">Espaiat entre blocs</string>
+    <string name="pulse_solid_units_rounded_title">Línies sòlides arrodonides</string>
+    <string name="pulse_solid_units_rounded_summary">Arrodoneix les línies sòlides</string>
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">Utilitzeu l\'animació UDFPS</string>
+    <string name="udfps_recog_animation_summary">Mostra una animació mentre llegeix el dit</string>
+    <string name="udfps_recog_animation_effect_title">Animació personalitzada UDFPS</string>
+    <string name="udfps_recog_animation_effect_summary">Trieu l\'efecte d\'animació</string>
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">Selector d\'icones UDFPS</string>
+    <string name="udfps_icon_picker_summary">Trieu la vostra icona d\'empremta digital preferida</string>
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Unitat de temperatura</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
+    <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
+    <!-- Material dismiss all button for notifications -->
+    <string name="notification_material_dismiss_title">Esborra tot el botó de notificació</string>
+    <string name="notification_material_dismiss_summary">Substituïu esborra tot el text de notificació pel botó flotant d\'estil de material</string>
+    <string name="notification_material_dismiss_style_title">Estil de botons</string>
+    <string name="notification_material_dismiss_bgstyle_title">Fons del botó</string>
+    <!-- Bluetooth status -->
+    <string name="bluetooth_battery_title">Estat de la bateria del Bluetooth</string>
+    <string name="bluetooth_battery_summary">Mostra l\'estat de la bateria del dispositiu Bluetooth connectat, si està disponible</string>
+    <!-- Clock auto hide -->
+    <string name="status_bar_clock_auto_hide_title">Ocultació automàtica</string>
+    <string name="status_bar_clock_auto_hide_summary">Amaga el rellotge si el llançador és visible</string>
+    <!-- Display Settings: Title of the setting which toggles wallpaper zooming effects on interraction -->
+    <string name="wallpaper_zoom_effect_title">Efecte de zoom de fons de pantalla</string>
+    <!-- Display Settings: Subtitle of the setting which toggles wallpaper zooming effects on interraction -->
+    <string name="wallpaper_zoom_effect_summary">Amplieu el fons de pantalla per mostrar l\'animació de profunditat de zoom. Els fons de pantalla poden patir una disminució de la qualitat</string>
+    <!-- Squiggle animation -->
+    <string name="show_squiggle_animation_title">Mostra l\'animació de gargots</string>
+    <string name="show_squiggle_animation_summary">Mostra l\'animació d\'esquiggle del panell multimèdia\nDesprés del canvi, cal canviar de música, posar en pausa la música o moure la barra de progrés per aplicar-la</string>
+    <!-- Ambient battery bar settings -->
+    <string name="ambient_ui">Ambient/Sempre en exhibició</string>
+    <string name="ambient_battery_settings_title">Barra de bateria</string>
+    <string name="ambient_battery_settings_summary">Mostra una barra de bateria a la pantalla ambiental</string>
+    <string name="keyguard_show_battery_title">Barra de bateria durant la càrrega</string>
+    <string name="keyguard_show_battery_summary">Mostra una barra de bateria a la pantalla ambiental quan es carrega</string>
+    <string name="keyguard_show_battery_always_title">Mostra sempre la barra de la bateria</string>
+    <string name="keyguard_show_battery_always_summary">Mostra sempre una barra de bateria a la pantalla ambiental</string>
+    <!-- Pulse Gravity and mirror options -->
+    <string name="pulse_custom_gravity_title">Gravetat</string>
+    <string name="pulse_custom_gravity_bottom">A baix</string>
+    <string name="pulse_custom_gravity_top">Superior</string>
+    <string name="pulse_custom_gravity_center">Centre</string>
+    <string name="visualizer_center_mirrored_title">Centre mirall</string>
+    <string name="visualizer_center_mirrored_summary">Estableix el visualitzador en mode mirall central</string>
+    <string name="pulse_vertical_mirror_title">Mirall vertical</string>
+    <string name="pulse_vertical_mirror_summary">Crea un altre pols i gira verticalment</string>
+    <!-- Ripple Effect on lockscreen -->
+    <string name="disable_fingerprint_ripple_effect_title">Desactiva l\'efecte ondulació</string>
+    <string name="disable_fingerprint_ripple_effect_summary">Desactiva l\'efecte ondulació al desbloquejar</string>
+    <!-- Charging animation -->
+    <string name="charging_animation_title">Animació de càrrega</string>
+    <string name="charging_animation_summary">Mostra una animació quan el dispositiu està connectat</string>
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Xip de fons</string>
+    <string name="statusbar_clock_chip_summary">Mostra xip accentuat darrere del rellotge</string>
+    <!-- Hide statusbar on lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Amaga la barra d\'estat</string>
+    <string name="lockscreen_hide_status_bar_summary">Quan està activada, la barra d\'estat s\'amagarà a la pantalla de bloqueig</string>
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Estil d\'animació Android P</string>
+    <string name="pie_animation_style_summary">Activa les animacions \"predeterminades\" d\'Android P</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Espai paral·lel</string>
+    <string name="laboratory_parallel_space_summary">Permet executar diverses instàncies de la mateixa aplicació en paral·lel</string>
+</resources>
