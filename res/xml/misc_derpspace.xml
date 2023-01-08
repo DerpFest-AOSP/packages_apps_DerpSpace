@@ -38,7 +38,7 @@
         android:title="@string/icons_category">
 
          <org.derpfest.support.preferences.SystemSettingSwitchPreference
-             android:key="status_bar_notif_count"
+             android:key="statusbar_notif_count"
              android:title="@string/status_bar_notif_count_title"
              android:summary="@string/status_bar_notif_count_summary"
              android:defaultValue="false" />
