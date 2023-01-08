@@ -483,4 +483,7 @@
     <string name="statusbar_colored_icons_title">Colored icons</string>
     <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in statusbar</string>
 
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Wi-Fi Standard icon</string>
+
 </resources>

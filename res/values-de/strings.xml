@@ -453,4 +453,7 @@
     <string name="statusbar_colored_icons_title">Farbige Symbole</string>
     <string name="statusbar_colored_icons_summary">Verwenden Sie die richtigen App-Symbole für Benachrichtigungssymbole in der Statusleiste</string>
 
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Wi-Fi-Standard-Symbol</string>
+
 </resources>
