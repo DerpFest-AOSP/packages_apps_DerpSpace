@@ -410,6 +410,10 @@
     <string name="statusbar_clock_chip_title">Hintergrundchip anzeigen</string>
     <string name="statusbar_clock_chip_summary">Akzentuierter Chip hinter der Uhr anzeigen</string>
 
+    <!-- Separate signal icons -->
+    <string name="separate_signal_icons_title">Separate Mobilfunksymbole</string>
+    <string name="separate_signal_icons_summary">Mobilfunk und WLAN separat anzeigen\nErfordert einen SystemUI-Neustart</string>
+
     <!-- Hide statusbar on lockscreen -->
     <string name="lockscreen_hide_status_bar_title">Statusleiste ausblenden</string>
     <string name="lockscreen_hide_status_bar_summary">Bei Aktivierung, wird die Statusleiste auf dem Sperrbildschirm ausgeblendet</string>
