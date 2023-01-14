@@ -31,6 +31,16 @@
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
 
+        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_transparency"
+            android:title="@string/qs_transparency_title"
+            android:summary="@string/qs_transparency_summary"
+            android:defaultValue="100"
+            settings:interval="1"
+            settings:units="%"
+            android:max="100"
+            android:min="1" />
+
         <Preference
             android:key="qs_tile_layout"
             android:title="@string/qs_tile_layout_title"

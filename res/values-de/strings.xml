@@ -457,4 +457,8 @@
     <string name="show_wifi_standard_icon_title">WLAN-Standard-Symbol</string>
     <string name="show_wifi_standard_icon_summary">Indikator des WLAN-Standards in der WLAN-Signalanzeige anzeigen</string>
 
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">Hintergrundtransparenz</string>
+    <string name="qs_transparency_summary">Transparenz des Hintergrunds der Schnelleinstellungen anpassen</string>
+
 </resources>
