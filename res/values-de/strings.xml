@@ -48,6 +48,9 @@
     <!-- General Tweaks -->
     <string name="general_tweaks_title">Allgemeine Einstellungen</string>
 
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_shortcuts">Sperrbildschirmverknüpfungen</string>
+
     <!-- Lockscreen UI -->
     <string name="lockscreen_ui_title">Sperrbildschirm-UI</string>
 
