@@ -31,7 +31,7 @@
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
             android:defaultValue="true" />
 
-        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
+        <org.derpfest.support.preferences.CustomSystemSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
             android:summary="@string/qs_transparency_summary"
