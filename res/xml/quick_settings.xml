@@ -26,6 +26,12 @@
         android:title="@string/general_category">
 
         <org.derpfest.support.preferences.SecureSettingSwitchPreference
+            android:key="secure_lockscreen_qs_disabled"
+            android:title="@string/disable_qs_title"
+            android:summary="@string/disable_qs_summary"
+            android:defaultValue="false" />
+
+        <org.derpfest.support.preferences.SecureSettingSwitchPreference
             android:key="disable_secure_tiles_on_lockscreen"
             android:title="@string/use_tiles_on_secure_keyguard_title"
             android:summary="@string/use_tiles_on_secure_keyguard_summary"
