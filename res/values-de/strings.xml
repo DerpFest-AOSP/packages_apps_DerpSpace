@@ -422,10 +422,6 @@
     <string name="pie_animation_style_title">Android P-Animationsstil</string>
     <string name="pie_animation_style_summary">Aktiviert Android P \"Standard\"-Animationen</string>
 
-    <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Zweites Profil</string>
-    <string name="laboratory_parallel_space_summary">Ermöglicht parallele Ausführung mehrerer Instanzen derselben App</string>
-
     <!-- Monet settings -->
     <string name="monet_settings_title">Erweiterte Monet-Einstellungen</string>
     <string name="monet_settings_summary">Ein paar zusätzliche Einstellungen zum Anpassen der Monet-Engine</string>

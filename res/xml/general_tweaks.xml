@@ -38,15 +38,6 @@
             android:summary="@string/pie_animation_style_summary"
             android:defaultValue="false" />
 
-        <Preference
-            android:key="parallel_space"
-            android:title="@string/laboratory_parallel_space_title"
-           android:summary="@string/laboratory_parallel_space_summary">
-            <intent
-                android:targetPackage="ink.kscope.parallelspace"
-                android:targetClass="ink.kscope.parallelspace.MainActivity" />
-        </Preference>
-
     </PreferenceCategory>
 
 </PreferenceScreen>
