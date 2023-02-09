@@ -379,7 +379,25 @@
     <string name="notification_material_dismiss_title">Clear all notification button</string>
     <string name="notification_material_dismiss_summary">Replace clear all notification text with material style floating button</string>
     <string name="notification_material_dismiss_style_title">Button style</string>
+    <string name="notification_material_dismiss_style_default">Default</string>
+    <string name="notification_material_dismiss_style_trash">Trash can</string>
+    <string name="notification_material_dismiss_style_broom">Broom</string>
+    <string name="notification_material_dismiss_style_pac-man">Pac-Man</string>
+    <string name="notification_material_dismiss_style_minus">Minus circle outline</string>
+    <string name="notification_material_dismiss_style_close">Close circle outline</string>
+    <string name="notification_material_dismiss_style_recycle">Recycle</string>
+    <string name="notification_material_dismiss_style_eraser">Eraser</string>
+    <string name="notification_material_dismiss_style_playlist">Playlist check</string>
+    <string name="notification_material_dismiss_style_magnet">Magnet on</string>
+    <string name="notification_material_dismiss_style_derpfest">DerpFest logo</string>
     <string name="notification_material_dismiss_bgstyle_title">Button background</string>
+    <string name="notification_material_dismiss_bgstyle_default">Circle (Default)</string>
+    <string name="notification_material_dismiss_bgstyle_rectangle">Rounded rectangle</string>
+    <string name="notification_material_dismiss_bgstyle_square">Square</string>
+    <string name="notification_material_dismiss_bgstyle_gear">Gear</string>
+    <string name="notification_material_dismiss_bgstyle_dashedline">Square with dashed line</string>
+    <string name="notification_material_dismiss_bgstyle_circle_accent">Circle with accented outline</string>
+    <string name="notification_material_dismiss_bgstyle_rectangle_accent">Rounded rectangle with accented outline</string>
 
     <!-- Bluetooth status -->
     <string name="bluetooth_battery_title">Bluetooth battery status</string>

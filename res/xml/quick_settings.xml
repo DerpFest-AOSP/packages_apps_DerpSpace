@@ -99,21 +99,21 @@
             android:summary="@string/notification_material_dismiss_summary"
             android:defaultValue="false" />
 
-        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
+        <org.derpfest.support.preferences.SystemSettingListPreference
             android:key="notification_material_dismiss_style"
             android:title="@string/notification_material_dismiss_style_title"
+            android:entries="@array/notification_material_dismiss_style_entries"
+            android:entryValues="@array/notification_material_dismiss_style_values"
             android:dependency="notification_material_dismiss"
-            android:defaultValue="0"
-            android:max="10"
-            android:min="0" />
+            android:defaultValue="0" />
 
-        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
+        <org.derpfest.support.preferences.SystemSettingListPreference
             android:key="notification_material_dismiss_bgstyle"
             android:title="@string/notification_material_dismiss_bgstyle_title"
+            android:entries="@array/notification_material_dismiss_bgstyle_entries"
+            android:entryValues="@array/notification_material_dismiss_bgstyle_values"
             android:dependency="notification_material_dismiss"
-            android:defaultValue="0"
-            android:max="6"
-            android:min="0" />
+            android:defaultValue="0" />
 
     </PreferenceCategory>
 
