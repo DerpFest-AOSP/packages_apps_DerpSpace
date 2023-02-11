@@ -53,7 +53,7 @@ import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.android.internal.util.derp.derpUtils;
-import org.derpfest.support.preferences.OverlaySwitchPreference;
+import org.derpfest.support.preferences.CustomOverlaySwitchPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,7 +65,7 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
 
     private static final String COMBINED_ICONS = "com.android.systemui.flags.no_combined_icons";
 
-    private OverlaySwitchPreference mCombinedIcons;
+    private CustomOverlaySwitchPreference mCombinedIcons;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -76,7 +76,7 @@ public class MiscDerpSpace extends SettingsPreferenceFragment implements OnPrefe
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
 
-        mCombinedIcons = (OverlaySwitchPreference) findPreference(COMBINED_ICONS);
+        mCombinedIcons = (CustomOverlaySwitchPreference) findPreference(COMBINED_ICONS);
         mCombinedIcons.setOnPreferenceChangeListener(this);
     }
 
