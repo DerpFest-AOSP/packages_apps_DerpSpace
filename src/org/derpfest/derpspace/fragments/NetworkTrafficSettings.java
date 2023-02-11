@@ -40,7 +40,9 @@ import androidx.preference.SwitchPreference;
 import com.android.internal.logging.nano.MetricsProto;
 
 import com.android.settings.R;
+import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.Utils;
 
 import java.util.Locale;
@@ -53,6 +55,7 @@ import java.util.Collections;
 import org.derpfest.support.preferences.SystemSettingSwitchPreference;
 import org.derpfest.support.preferences.SystemSettingMainSwitchPreference;
 
+@SearchIndexable
 public class NetworkTrafficSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
@@ -104,4 +107,7 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment implement
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.DERP;
     }
+
+    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider(R.xml.network_traffic_settings);
 }
