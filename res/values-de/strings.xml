@@ -531,4 +531,20 @@
     <!-- Quick settings styles -->
     <string name="default_string">Standard</string>
     <string name="qs_styles_title">Thema der QS-Kacheln</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_category_title">Anpassung der Akkuanzeige</string>
+    <string name="status_bar_battery_style_title">Akkudarstellung</string>
+    <string name="status_bar_battery_style_icon_portrait">Symbol (Hochformat)</string>
+    <string name="status_bar_battery_style_circle">Kreis</string>
+    <string name="status_bar_battery_style_dotted_circle">Kreis (gepunktet)</string>
+    <string name="status_bar_battery_style_filled_circle">Kreis (gefüllt)</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_hidden">Ausgeblendet</string>
+    <string name="status_bar_battery_percent_title">Akkuanzeige in Prozent</string>
+    <string name="status_bar_battery_percent_hidden">Ausgeblendet</string>
+    <string name="status_bar_battery_percent_text_inside">Innerhalb des Symbols</string>
+    <string name="status_bar_battery_percent_text_next">Neben dem Symbol</string>
+    <string name="status_bar_battery_text_charging_title">Akkuanzeige in Prozent beim Aufladen</string>
+    <string name="status_bar_battery_text_charging_summary">Beim Aufladen immer den Akkuprozentsatz anzeigen</string>
 </resources>
