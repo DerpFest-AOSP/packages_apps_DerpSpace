@@ -250,16 +250,6 @@
     <string name="status_bar_clock_show_seconds_title">Sekunden anzeigen</string>
     <string name="status_bar_clock_show_seconds_desc">Stunden, Minuten und Sekunden anzeigen</string>
 
-    <!-- Battery style and percentage -->
-    <string name="status_bar_battery_style_circle">Kreis</string>
-    <string name="status_bar_battery_style_icon_portrait">Symbol (Hochformat)</string>
-    <string name="status_bar_battery_style_text">Text</string>
-    <string name="status_bar_battery_style_title">Anzeigeformat</string>
-    <string name="status_bar_battery_percentage_hidden">Ausgeblendet</string>
-    <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
-    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
-    <string name="status_bar_battery_percentage_title">Akkustand in Prozent</string>
-
     <!-- Brightness slider -->
     <string name="qqs_show_brightness_title">Helligkeitsregler in QQS anzeigen</string>
     <string name="brightness_slider_position_title">Helligkeitsreglerposition</string>

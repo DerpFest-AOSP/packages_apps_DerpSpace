@@ -91,31 +91,6 @@
         <item>2</item>
     </string-array>
 
-    <!-- Battery style and percentage -->
-    <string-array name="status_bar_battery_style_entries" translatable="false">
-        <item>@string/status_bar_battery_style_icon_portrait</item>
-        <item>@string/status_bar_battery_style_circle</item>
-        <item>@string/status_bar_battery_style_text</item>
-    </string-array>
-
-    <string-array name="status_bar_battery_style_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <string-array name="status_bar_battery_percentage_entries" translatable="false">
-        <item>@string/status_bar_battery_percentage_hidden</item>
-        <item>@string/status_bar_battery_percentage_text_inside</item>
-        <item>@string/status_bar_battery_percentage_text_next</item>
-    </string-array>
-
-    <string-array name="status_bar_battery_percentage_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!-- Brightness slider -->
     <string-array name="brightness_slider_position_entries" translatable="false">
         <item>@string/top</item>
