@@ -37,20 +37,16 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
-import org.derpfest.support.preferences.SystemSettingEditTextPreference;
-
 import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
     private static final String KEY_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
     private static final String KEY_BRIGHTNESS_SLIDER_POSITION = "qs_brightness_slider_position";
     private static final String KEY_SHOW_AUTO_BRIGHTNESS = "qs_show_auto_brightness";
 
-    private SystemSettingEditTextPreference mFooterString;
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
     private SwitchPreference mShowAutoBrightness;
@@ -63,18 +59,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
-
-        mFooterString = (SystemSettingEditTextPreference) findPreference(QS_FOOTER_TEXT_STRING);
-        mFooterString.setOnPreferenceChangeListener(this);
-        String footerString = Settings.System.getString(resolver,
-                QS_FOOTER_TEXT_STRING);
-        if (footerString != null && !footerString.isEmpty())
-            mFooterString.setText(footerString);
-        else {
-            mFooterString.setText("#StayDerped");
-            Settings.System.putString(resolver,
-                    Settings.System.QS_FOOTER_TEXT_STRING, "#StayDerped");
-        }
 
         mShowBrightnessSlider = findPreference(KEY_SHOW_BRIGHTNESS_SLIDER);
         mShowBrightnessSlider.setOnPreferenceChangeListener(this);
@@ -97,18 +81,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mFooterString) {
-            String value = (String) newValue;
-            if (value != null && !value.isEmpty())
-                Settings.System.putString(resolver,
-                        Settings.System.QS_FOOTER_TEXT_STRING, value);
-            else {
-                mFooterString.setText("#StayDerped");
-                Settings.System.putString(resolver,
-                        Settings.System.QS_FOOTER_TEXT_STRING, "#StayDerped");
-            }
-            return true;
-        } else if (preference == mShowBrightnessSlider) {
+        if (preference == mShowBrightnessSlider) {
             int value = Integer.parseInt((String) newValue);
             mBrightnessSliderPosition.setEnabled(value > 0);
             if (mShowAutoBrightness != null)

@@ -150,11 +150,6 @@
     <string name="qstile_requires_unlocking_title">Require unlocking to use sensitive tiles</string>
     <string name="qstile_requires_unlocking_summary">Ask to unlock lockscreen when using sensitive tiles</string>
 
-    <!-- QS footer text -->
-    <string name="qs_footer_text_show_title">Show QS footer text</string>
-    <string name="qs_footer_text_string_title">Customize footer text</string>
-    <string name="qs_footer_text_string_summary">Set to empty for default #StayDerped</string>
-
     <!-- Notifications general category -->
     <string name="notifications_general_category_title">General</string>
 

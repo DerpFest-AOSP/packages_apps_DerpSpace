@@ -151,11 +151,6 @@
     <string name="qstile_requires_unlocking_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
     <string name="qstile_requires_unlocking_summary">Aufforderung zum Entsperren des Sperrbildschirms bei Verwendung empfindlicher QS-Kacheln</string>
 
-    <!-- QS footer text -->
-    <string name="qs_footer_text_show_title">QS-Fußzeilentext anzeigen</string>
-    <string name="qs_footer_text_string_title">QS-Fußzeilentext anpassen</string>
-    <string name="qs_footer_text_string_summary">Auf leer setzen für Standard #StayDerped</string>
-
     <!-- Notifications general category -->
     <string name="notifications_general_category_title">Allgemein</string>
 

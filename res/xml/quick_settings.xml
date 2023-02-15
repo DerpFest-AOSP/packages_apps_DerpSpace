@@ -172,26 +172,6 @@
             android:defaultValue="0" />
 
     </PreferenceCategory>
-
-     <PreferenceCategory
-        android:key="quick_settings_footer_category"
-        android:title="@string/footer_category">
-
-        <!-- QS footer text toggle -->
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:key="qs_footer_text_show"
-            android:title="@string/qs_footer_text_show_title"
-            android:defaultValue="false" />
-
-        <!-- QS footer text string -->
-        <org.derpfest.support.preferences.SystemSettingEditTextPreference
-            android:key="qs_footer_text_string"
-            android:title="@string/qs_footer_text_string_title"
-            android:summary="@string/qs_footer_text_string_summary"
-            android:dependency="qs_footer_text_show"
-            android:defaultValue="#StayDerped" />
-
-    </PreferenceCategory>
     
     <PreferenceCategory
         android:key="quick_settings_animations"
