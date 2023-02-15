@@ -430,4 +430,16 @@
     <string name="disable_qs_title">Schnelleinstellungen auf dem Sperrbildschirm ausblenden</string>
     <string name="disable_qs_summary">Blendet die Schnelleinstellungen aus, wenn das Gerät gesperrt ist. Deaktiviert nicht die Benachrichtigungsschattierung</string>
 
+    <!-- QS brightness slider -->
+    <string name="qs_brightness_slider_title">Helligkeitsregler</string>
+    <string name="qs_brightness_slider_summary">Helligkeitsregler in den Schnelleinstellungen anpassen</string>
+    <string name="qs_brightness_slider_never">Niemals zeigen</string>
+    <string name="qs_brightness_slider_expanded">Anzeigen wenn erweitert</string>
+    <string name="qs_brightness_slider_always">Immer anzeigen</string>
+    <string name="qs_brightness_slider_position_title">Position</string>
+    <string name="qs_brightness_slider_position_top">Oben</string>
+    <string name="qs_brightness_slider_position_bottom">Unten</string>
+    <!-- QS auto brightness icon -->
+    <string name="qs_auto_brightness_title">Symbol für automatische Helligkeit</string>
+    <string name="qs_auto_brightness_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
 </resources>
