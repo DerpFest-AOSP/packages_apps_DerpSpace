@@ -253,20 +253,6 @@
     <string name="bottom">Unten</string>
     <string name="show_auto_brightness_button_title">Symbol für autom. Helligkeit anzeigen</string>
 
-    <!-- QS tiles layout -->
-    <string name="qs_tile_layout_title">Kachel-Layout</string>
-    <string name="qs_tile_layout_summary">Das Kachel-Layout der Schnelleinstellungen anpassen</string>
-    <string name="qs_tiles_layout_category">Kachel-Layout</string>
-    <string name="qs_rows_portrait_title">Zeilen (Hochformat)</string>
-    <string name="qqs_rows_portrait_title">Zeilen (Schnell-QS-Hochformat)</string>
-    <string name="qs_columns_portrait_title">Spalten (Hochformat)</string>
-    <string name="qs_apply_change_button_title">Änderung anwenden</string>
-    <string name="qs_apply_change_failed">Änderung konnte nicht angewendet werden</string>
-    <string name="qs_tile_hide_label_title">Beschriftung ausblenden</string>
-    <string name="qs_tile_hide_label_summary">Nur Symbol für QS-Kacheln anzeigen</string>
-    <string name="qs_tile_vertical_layout_title">Vertikales Layout</string>
-    <string name="qs_tile_vertical_layout_summary">Vertikales Layout für QS-Kacheln aktivieren</string>
-
     <!-- Statusbar lyric -->
     <string name="status_bar_lyric_title">Statusleisten-Lyric</string>
     <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>

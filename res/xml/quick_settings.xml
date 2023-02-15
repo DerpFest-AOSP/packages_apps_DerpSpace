@@ -39,12 +39,6 @@
             android:dependency="secure_lockscreen_qs_disabled"
             android:defaultValue="true" />
 
-        <Preference
-            android:key="qs_tile_layout"
-            android:title="@string/qs_tile_layout_title"
-            android:summary="@string/qs_tile_layout_summary"
-            android:fragment="org.derpfest.derpspace.fragments.QsTileLayoutSettings" />
-
         <org.derpfest.support.preferences.CustomSystemSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
