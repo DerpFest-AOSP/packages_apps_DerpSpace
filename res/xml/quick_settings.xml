@@ -54,24 +54,6 @@
         android:key="quick_settings_brighness_category"
         android:title="@string/qs_brightness_slider_category">
 
-        <org.derpfest.support.preferences.SystemSettingListPreference
-            android:key="brightness_slider_position"
-            android:title="@string/brightness_slider_position_title"
-            android:summary="%s"
-            android:entries="@array/brightness_slider_position_entries"
-            android:entryValues="@array/brightness_slider_position_values"
-            android:defaultValue="0" />
-
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:key="qqs_show_brightness"
-            android:title="@string/qqs_show_brightness_title"
-            android:defaultValue="false" />
-
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:key="show_auto_brightness_button"
-            android:title="@string/show_auto_brightness_button_title"
-            android:defaultValue="false" />
-
     </PreferenceCategory>
 
      <PreferenceCategory

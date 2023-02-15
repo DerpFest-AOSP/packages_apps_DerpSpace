@@ -246,13 +246,6 @@
     <string name="status_bar_clock_show_seconds_title">Sekunden anzeigen</string>
     <string name="status_bar_clock_show_seconds_desc">Stunden, Minuten und Sekunden anzeigen</string>
 
-    <!-- Brightness slider -->
-    <string name="qqs_show_brightness_title">Helligkeitsregler in QQS anzeigen</string>
-    <string name="brightness_slider_position_title">Helligkeitsreglerposition</string>
-    <string name="top">Oben</string>
-    <string name="bottom">Unten</string>
-    <string name="show_auto_brightness_button_title">Symbol für autom. Helligkeit anzeigen</string>
-
     <!-- Statusbar lyric -->
     <string name="status_bar_lyric_title">Statusleisten-Lyric</string>
     <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>

@@ -255,13 +255,6 @@
     <string name="status_bar_clock_show_seconds_title">Clock show seconds</string>
     <string name="status_bar_clock_show_seconds_desc">Show hours, minutes, and seconds</string>
 
-    <!-- Brightness slider -->
-    <string name="qqs_show_brightness_title">Show brightness slider in Quick QS panel</string>
-    <string name="brightness_slider_position_title">Brightness slider position</string>
-    <string name="top">Top</string>
-    <string name="bottom">Bottom</string>
-    <string name="show_auto_brightness_button_title">Show auto brightness button</string>
-
     <!-- Statusbar lyric -->
     <string name="status_bar_lyric_title">Status bar lyric</string>
     <string name="status_bar_lyric_summary">Show lyric in status bar (need app support)</string>

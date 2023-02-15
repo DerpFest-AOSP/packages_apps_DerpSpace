@@ -91,17 +91,6 @@
         <item>2</item>
     </string-array>
 
-    <!-- Brightness slider -->
-    <string-array name="brightness_slider_position_entries" translatable="false">
-        <item>@string/top</item>
-        <item>@string/bottom</item>
-    </string-array>
-
-    <string-array name="brightness_slider_position_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
-
     <!-- Status bar logo position -->
     <string-array name="status_bar_logo_position_entries" translatable="false">
         <item>@string/status_bar_logo_position_left</item>
