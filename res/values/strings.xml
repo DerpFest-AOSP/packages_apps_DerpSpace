@@ -421,4 +421,10 @@
     <string name="monet_engine_chroma_factor_summary">Higher values produce stronger colors</string>
     <string name="monet_engine_tint_background_title">Tint background</string>
     <string name="monet_engine_tint_background_summary">Make luminance and chroma selection affect background colors as well</string>
+
+    <!-- QS tile shape -->
+    <string name="qs_tile_shape">QS tile shape</string>
+    <string name="qs_tile_round">Round</string>
+    <string name="qs_tile_rect">Rounded Rectangle</string>
+    <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
 </resources>

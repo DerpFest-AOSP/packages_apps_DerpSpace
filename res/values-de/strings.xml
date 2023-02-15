@@ -412,4 +412,10 @@
     <string name="monet_engine_chroma_factor_summary">Höhere Werte erzeugen kräftigere Farben</string>
     <string name="monet_engine_tint_background_title">Hintergrund einfärben</string>
     <string name="monet_engine_tint_background_summary">Leuchtkraft- und Sättigungseinstellung Einfluss auf die Farben des Hintergrundbilds nehmen lassen</string>
+
+    <!-- QS tile shape -->
+    <string name="qs_tile_shape">Kachelform</string>
+    <string name="qs_tile_round">Rund</string>
+    <string name="qs_tile_rect">Rechteck mit abgerundeten Ecken</string>
+    <string name="qs_tile_mix">Rund für aktive Kacheln und abgerundetes Rechteck für inaktive Kacheln</string>
 </resources>

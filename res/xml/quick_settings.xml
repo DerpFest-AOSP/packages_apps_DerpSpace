@@ -45,6 +45,13 @@
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
+        <org.derpfest.support.preferences.SecureSettingListPreference
+            android:key="qs_tile_shape"
+            android:title="@string/qs_tile_shape"
+            android:entries="@array/qs_tile_shape_entries"
+            android:entryValues="@array/qs_tile_shape_values"
+            android:defaultValue="2" />
+
         <org.derpfest.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
