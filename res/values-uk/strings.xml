@@ -123,7 +123,7 @@
     <string name="use_old_mobiletype_summary">Відображати значок мобільного типу вгорі індикатора сигналу</string>
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Інформація про заряджання на екрані блокування</string>
-    <string name="lockscreen_battery_info_summary">Відобразити напругу, напругу, струм та температуру акумулятора на екрані блокування під час зарядки</string>
+    <string name="lockscreen_battery_info_summary">Відображення поточного струму, напруги, потужності та температури акумулятора на екрані блокування під час заряджання</string>
     <!-- Tiles on secure keyguard -->
     <string name="use_tiles_on_secure_keyguard_title">Вимагати розблокування для використання чутливих плиток</string>
     <string name="use_tiles_on_secure_keyguard_summary">Запитувати розблокування екрану при використанні чутливих плиток</string>
@@ -194,7 +194,7 @@
     <string name="status_bar_clock_position_right">Праворуч</string>
     <string name="status_bar_clock_position_title">Розташування годинника</string>
     <!-- Clock AM/PM -->
-    <string name="status_bar_am_pm_hidden">Hidden</string>
+    <string name="status_bar_am_pm_hidden">Прихований</string>
     <string name="status_bar_am_pm_normal">Нормальний</string>
     <string name="status_bar_am_pm_small">Маленький</string>
     <string name="status_bar_am_pm_title">Стиль годинника AM/PM</string>
@@ -296,16 +296,16 @@
     <string name="pulse_color_mode_title">Колір</string>
     <string name="pulse_color_accent">Акцент</string>
     <string name="pulse_color_custom">Користувацька</string>
-    <string name="pulse_color_lava_lamp">Lava lamp</string>
+    <string name="pulse_color_lava_lamp">Лава лампа</string>
     <string name="pulse_color_auto">Альбом</string>
     <string name="pulse_color_user_title">Вибрати колір</string>
     <string name="pulse_smoothing_enabled_title">Включити згладжування</string>
     <string name="pulse_smoothing_enabled_summary">Більш плавно анімований кожен бар</string>
-    <string name="pulse_custom_dimen">Bar width</string>
+    <string name="pulse_custom_dimen">Ширина блоків</string>
     <string name="pulse_custom_div">Відстань між панелями</string>
     <string name="pulse_filled_block_size">Розмір блоку</string>
     <string name="pulse_empty_block_size">Інтервал блоків</string>
-    <string name="pulse_solid_units_rounded_title">Об\'єднано суцільних ліній</string>
+    <string name="pulse_solid_units_rounded_title">Суцільні закруглені лінії</string>
     <string name="pulse_solid_units_rounded_summary">Заокруглення суцільних ліній</string>
     <!-- Udfps animations -->
     <string name="udfps_recog_animation">Використовувати UDFPS анімацію</string>
@@ -317,7 +317,7 @@
     <string name="udfps_icon_picker_summary">Виберіть ваш улюблений значок відбитку пальця</string>
     <!-- Lockscreen charge temperature unit -->
     <string name="lockscreen_charge_temp_unit_title">Одиниця виміру температури</string>
-    <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Фаренгейт</string>
     <string name="lockscreen_charge_temp_unit_celsius">Цельсій</string>
     <!-- Material dismiss all button for notifications -->
     <string name="notification_material_dismiss_title">Кнопка очищення сповіщень</string>
@@ -372,4 +372,73 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Паралельний простір</string>
     <string name="laboratory_parallel_space_summary">Дозволити запуск кількох екземплярів однакової програми паралельно</string>
+    <string name="theme_customization_lock_clock_summary">Встановити стиль шрифту годинника LS</string>
+    <string name="notification_material_dismiss_style_broom">Веник</string>
+    <string name="notification_material_dismiss_style_pac-man">Пак-мен</string>
+    <string name="notification_material_dismiss_style_trash">Смітник</string>
+    <string name="notification_material_dismiss_style_close">Контур замкнутого кола</string>
+    <string name="notification_material_dismiss_style_recycle">Утилізація</string>
+    <string name="notification_material_dismiss_style_eraser">Ластик</string>
+    <string name="notification_material_dismiss_style_playlist">Перевірка плейлиста</string>
+    <string name="notification_material_dismiss_style_magnet">Магніт на</string>
+    <string name="notification_material_dismiss_style_derpfest">Логотип DerpFest</string>
+    <string name="notification_material_dismiss_bgstyle_rectangle">Закруглений прямокутник</string>
+    <string name="notification_material_dismiss_bgstyle_square">Квадратний</string>
+    <string name="notification_material_dismiss_bgstyle_gear">Шестерня</string>
+    <string name="notification_material_dismiss_bgstyle_dashedline">Квадрат з пунктирною лінією</string>
+    <string name="notification_material_dismiss_bgstyle_rectangle_accent">Закруглений прямокутник з акцентованим контуром</string>
+    <string name="monet_settings_title">Розширені налаштування монет</string>
+    <string name="monet_settings_summary">Кілька додаткових налаштувань для налаштування двигуна монет</string>
+    <string name="theme_style_title">Стиль теми</string>
+    <string name="theme_style_tonal_spot">Тональна пляма (За замовчуванням)</string>
+    <string name="theme_style_vibrant">Яскравий</string>
+    <string name="theme_style_spritz">Спритц</string>
+    <string name="theme_style_rainbow">Веселка</string>
+    <string name="theme_style_fruit_salad">Фруктовий салат</string>
+    <string name="theme_style_muted">Приглушений</string>
+    <string name="theme_style_content">Контент</string>
+    <string name="color_source_both">Обидва (За замовчуванням)</string>
+    <string name="color_source_home">Домашні обої</string>
+    <string name="color_source_lock">Заблокувати обої</string>
+    <string name="color_source_preset">Пресет</string>
+    <string name="accent_color_title">Акцентний колір</string>
+    <string name="accent_background_title">Акцент фону</string>
+    <string name="accent_background_summary">Виберіть інший колір акценту для фону</string>
+    <string name="bg_color_title">Колір фону</string>
+    <string name="luminance_factor_title">Яскравість</string>
+    <string name="luminance_factor_summary">Більш високі значення дають більш яскраві кольори</string>
+    <string name="show_wifi_standard_icon_title">Показувати іконку типу Wi-Fi</string>
+    <string name="qs_transparency_title">Прозорість фону</string>
+    <string name="lockscreen_shortcut_remote">Пульт ДК Google TV</string>
+    <string name="disable_qs_title">Приховати QS на блокованому екрані блокування</string>
+    <string name="disable_qs_summary">Приховує QS, якщо пристрій заблоковано. Не вимикає відтінок сповіщень</string>
+    <string name="lockscreen_shortcuts">Ярлики блокування екрана</string>
+    <string name="theme_customization_lock_clock_title">Шрифт годинника на екрані блокування</string>
+    <string name="notification_material_dismiss_style_default">Типово</string>
+    <string name="notification_material_dismiss_style_minus">Контур мінусового кола</string>
+    <string name="notification_material_dismiss_bgstyle_default">Коло (За замовчуванням)</string>
+    <string name="notification_material_dismiss_bgstyle_circle_accent">Коло з акцентованим контуром</string>
+    <string name="separate_signal_icons_title">Окремі іконки сигналів</string>
+    <string name="separate_signal_icons_summary">Показувати сигнал і WiFi окремо\nПотрібен перезапуск SystemUI</string>
+    <string name="theme_style_expressive">Виразний</string>
+    <string name="color_source_title">Джерело кольору</string>
+    <string name="accent_color_summary">Перевизначити колір акценту за замовчуванням</string>
+    <string name="bg_color_summary">Перевизначити колір фонового акценту за замовчуванням</string>
+    <string name="chroma_factor_title">Хрома</string>
+    <string name="chroma_factor_summary">Більш високі значення дають більш сильні кольори</string>
+    <string name="tint_background_title">Відтінок фону</string>
+    <string name="tint_background_summary">Зробіть вибір яскравості та кольоровості також впливати на кольори тла</string>
+    <string name="statusbar_colored_icons_title">Кольорові іконки</string>
+    <string name="statusbar_colored_icons_summary">Використовувати вірні піктограми програм для сповіщень в рядку стану</string>
+    <string name="show_wifi_standard_icon_summary">Показувати тип Wi-Fi в індикаторі сигналу Wi-Fi</string>
+    <string name="qs_transparency_summary">Встановити рівень прозорості для фону швидких налаштувань</string>
+    <string name="lockscreen_shortcut_category">Нижні ярлики</string>
+    <string name="lockscreen_shortcut_start_title">Лівий ярлик</string>
+    <string name="lockscreen_shortcut_end_title">Правий ярлик</string>
+    <string name="lockscreen_shortcut_home">Домашні елементи управління</string>
+    <string name="lockscreen_shortcut_wallet">Гаманець</string>
+    <string name="lockscreen_shortcut_flashlight">Ліхтарик</string>
+    <string name="lockscreen_shortcut_qr">Сканер QR-коду</string>
+    <string name="lockscreen_shortcut_camera">Камера</string>
+    <string name="lockscreen_shortcut_none">Не відображати</string>
 </resources>
