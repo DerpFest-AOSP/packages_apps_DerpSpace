@@ -500,6 +500,7 @@
     <string name="lockscreen_shortcut_flashlight">Flashlight</string>
     <string name="lockscreen_shortcut_qr">QR code scanner</string>
     <string name="lockscreen_shortcut_camera">Camera</string>
+    <string name="lockscreen_shortcut_dnd">DND</string>
     <string name="lockscreen_shortcut_none">None</string>
 
     <!-- Disable QS -->

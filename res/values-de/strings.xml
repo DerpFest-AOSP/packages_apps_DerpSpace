@@ -453,6 +453,7 @@
     <string name="lockscreen_shortcut_flashlight">Taschenlampe</string>
     <string name="lockscreen_shortcut_qr">QR-Code-Scanner</string>
     <string name="lockscreen_shortcut_camera">Kamera</string>
+    <string name="lockscreen_shortcut_dnd">Nicht stören</string>
     <string name="lockscreen_shortcut_none">Keine</string>
 
     <!-- Disable QS -->
