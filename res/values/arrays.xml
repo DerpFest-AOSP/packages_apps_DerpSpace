@@ -253,7 +253,6 @@
         <item>@string/lockscreen_shortcut_flashlight</item>
         <item>@string/lockscreen_shortcut_qr</item>
         <item>@string/lockscreen_shortcut_camera</item>
-        <item>@string/lockscreen_shortcut_remote</item>
         <item>@string/lockscreen_shortcut_none</item>
     </string-array>
 
@@ -263,7 +262,6 @@
         <item>flashlight</item>
         <item>qr</item>
         <item>camera</item>
-        <item>remote</item>
         <item>none</item>
     </string-array>
 

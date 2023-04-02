@@ -453,7 +453,6 @@
     <string name="lockscreen_shortcut_flashlight">Taschenlampe</string>
     <string name="lockscreen_shortcut_qr">QR-Code-Scanner</string>
     <string name="lockscreen_shortcut_camera">Kamera</string>
-    <string name="lockscreen_shortcut_remote">Fernbedienung für Google TV</string>
     <string name="lockscreen_shortcut_none">Keine</string>
 
     <!-- Disable QS -->
