@@ -48,7 +48,7 @@ public class LockscreenShortcuts extends SettingsPreferenceFragment implements O
     private static final String SHORTCUT_START_KEY = "lockscreen_shortcut_start";
     private static final String SHORTCUT_END_KEY = "lockscreen_shortcut_end";
 
-    private static final String[] DEFAULT_START_SHORTCUT = new String[] { "home", "flashlight" };
+    private static final String[] DEFAULT_START_SHORTCUT = new String[] { "home", "flashlight", "do_not_disturb" };
     private static final String[] DEFAULT_END_SHORTCUT = new String[] { "wallet", "qr_code_scanner", "camera" };
 
     private ListPreference mStartShortcut;
