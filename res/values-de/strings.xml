@@ -96,10 +96,6 @@
     <!-- Battery Settings -->
     <string name="battery_settings_title">Akkustandanzeige</string>   
 
-    <!-- Battery Styles -->
-    <string name="battery_style_category_title">Akkustandanzeige</string>
-    <string name="battery_percent_title">Akkustand in Prozent</string>
-
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">Hilf uns, Dir zu helfen!</string>
     <string name="derpspace_dialog_message">Wenn Du bei einer dieser Einstellungen einen Bug findest, melde ihn in unserer Telegram-Gruppe. Du MUSST folgendes angeben, wenn Du einen Fehlerbericht postest:\n\n1. Ein logcat oder last_kmsg\n2. Verwendeter Kernel und Mods\n3. Nützliche Informationen\n\nWenn Du etwas nicht angemessen meldest, erwarte NICHT, dass die Dinge behoben werden.</string>
