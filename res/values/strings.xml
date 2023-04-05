@@ -498,4 +498,6 @@
     <string name="battery_style_text">Text</string>
     <string name="battery_percent_title">Show percent</string>
     <string name="battery_percent_summary">Always show the battery percent with the icon</string>
+    <string name="battery_percent_inside_title">Show percent inside</string>
+    <string name="battery_percent_inside_summary">Show percent inside the icon</string>
 </resources>
