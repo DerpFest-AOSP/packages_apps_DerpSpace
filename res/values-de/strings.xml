@@ -84,6 +84,9 @@
     <!-- Quick Settings footer category -->
     <string name="footer_category">Fußzeile</string>
 
+    <!-- Quick Settings header category -->
+    <string name="header_category">Kopf</string>
+
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusbar-Elemente</string>
 
