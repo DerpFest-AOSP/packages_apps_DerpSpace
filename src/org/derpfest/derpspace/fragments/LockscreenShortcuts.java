@@ -97,11 +97,11 @@ public class LockscreenShortcuts extends SettingsPreferenceFragment implements O
         if (value == null || value.isEmpty()) {
             StringBuilder sb = new StringBuilder(DEFAULT_START_SHORTCUT[0]);
             for (int i = 1; i < DEFAULT_START_SHORTCUT.length; i++) {
-                sb.append("," + DEFAULT_START_SHORTCUT[i]);
+                sb.append(",").append(DEFAULT_START_SHORTCUT[i]);
             }
             sb.append(";" + DEFAULT_END_SHORTCUT[0]);
             for (int i = 1; i < DEFAULT_END_SHORTCUT.length; i++) {
-                sb.append("," + DEFAULT_END_SHORTCUT[i]);
+                sb.append(",").append(DEFAULT_END_SHORTCUT[i]);
             }
             value = sb.toString();
         }
@@ -135,7 +135,7 @@ public class LockscreenShortcuts extends SettingsPreferenceFragment implements O
             final String[] def = start ? DEFAULT_START_SHORTCUT : DEFAULT_END_SHORTCUT;
             for (String str : def) {
                 if (str.equals(value)) continue;
-                sb.append("," + str);
+                sb.append(",").append(str);
             }
             split[splitIndex] = sb.toString();
         }
