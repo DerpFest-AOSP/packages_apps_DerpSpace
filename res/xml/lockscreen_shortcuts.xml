@@ -20,22 +20,28 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/lockscreen_shortcuts">
 
-    <ListPreference
+    <org.derpfest.support.preferences.SystemSettingListPreference
         android:key="lockscreen_shortcut_start"
         android:icon="@drawable/ic_bottom_left"
         android:title="@string/lockscreen_shortcut_start_title"
         android:summary="%s"
         android:entries="@array/lockscreen_shortcut_entries"
         android:entryValues="@array/lockscreen_shortcut_values"
-        android:defaultValue="home" />
+        android:defaultValue="1" />
 
-    <ListPreference
+    <org.derpfest.support.preferences.SystemSettingListPreference
         android:key="lockscreen_shortcut_end"
         android:icon="@drawable/ic_bottom_right"
         android:title="@string/lockscreen_shortcut_end_title"
         android:summary="%s"
         android:entries="@array/lockscreen_shortcut_entries"
         android:entryValues="@array/lockscreen_shortcut_values"
-        android:defaultValue="wallet" />
+        android:defaultValue="0" />
+
+    <SwitchPreference
+        android:key="lockscreen_shortcut_enforce"
+        android:title="@string/lockscreen_shortcut_enforce_title"
+        android:summary="@string/lockscreen_shortcut_enforce_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>

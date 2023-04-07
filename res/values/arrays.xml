@@ -237,8 +237,8 @@
 
     <!-- Lockscreen bottom shortcuts -->
     <string-array name="lockscreen_shortcut_entries">
-        <item>@string/lockscreen_shortcut_home</item>
         <item>@string/lockscreen_shortcut_wallet</item>
+        <item>@string/lockscreen_shortcut_home</item>
         <item>@string/lockscreen_shortcut_flashlight</item>
         <item>@string/lockscreen_shortcut_qr</item>
         <item>@string/lockscreen_shortcut_camera</item>
@@ -247,8 +247,8 @@
     </string-array>
 
     <string-array name="lockscreen_shortcut_values" translatable="false">
-        <item>home</item>
         <item>wallet</item>
+        <item>home</item>
         <item>flashlight</item>
         <item>qr_code_scanner</item>
         <item>camera</item>

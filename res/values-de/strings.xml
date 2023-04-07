@@ -414,13 +414,15 @@
     <string name="lockscreen_shortcut_category">Verknüpfungen unten</string>
     <string name="lockscreen_shortcut_start_title">Verknüpfung links</string>
     <string name="lockscreen_shortcut_end_title">Verknüpfung rechts</string>
-    <string name="lockscreen_shortcut_home">Home-Steuerung</string>
     <string name="lockscreen_shortcut_wallet">Wallet</string>
+    <string name="lockscreen_shortcut_home">Home-Steuerung</string>
     <string name="lockscreen_shortcut_flashlight">Taschenlampe</string>
     <string name="lockscreen_shortcut_qr">QR-Code-Scanner</string>
     <string name="lockscreen_shortcut_camera">Kamera</string>
     <string name="lockscreen_shortcut_dnd">Nicht stören</string>
     <string name="lockscreen_shortcut_none">Keine</string>
+    <string name="lockscreen_shortcut_enforce_title">Verknüpfung erzwingen</string>
+    <string name="lockscreen_shortcut_enforce_summary">Ausgewählte Verknüpfung als einzige vorhandene Priorität erzwingen\nZeigt nichts an, bis die speziell ausgewählte Verknüpfung verfügbar ist</string>
 
     <!-- Disable QS -->
     <string name="disable_qs_title">Schnelleinstellungen auf dem Sperrbildschirm ausblenden</string>

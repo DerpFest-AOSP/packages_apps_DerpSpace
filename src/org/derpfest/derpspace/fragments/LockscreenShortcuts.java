@@ -39,6 +39,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import org.derpfest.support.preferences.SystemSettingListPreference;
+
+import java.lang.StringBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,12 +50,14 @@ public class LockscreenShortcuts extends SettingsPreferenceFragment implements O
 
     private static final String SHORTCUT_START_KEY = "lockscreen_shortcut_start";
     private static final String SHORTCUT_END_KEY = "lockscreen_shortcut_end";
+    private static final String SHORTCUT_ENFORCE_KEY = "lockscreen_shortcut_enforce";
 
     private static final String[] DEFAULT_START_SHORTCUT = new String[] { "home", "flashlight", "do_not_disturb" };
     private static final String[] DEFAULT_END_SHORTCUT = new String[] { "wallet", "qr_code_scanner", "camera" };
 
-    private ListPreference mStartShortcut;
-    private ListPreference mEndShortcut;
+    private SystemSettingListPreference mStartShortcut;
+    private SystemSettingListPreference mEndShortcut;
+    private SwitchPreference mEnforceShortcut;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -60,20 +65,27 @@ public class LockscreenShortcuts extends SettingsPreferenceFragment implements O
 
         addPreferencesFromResource(R.xml.lockscreen_shortcuts);
 
-        mStartShortcut = (ListPreference) findPreference(SHORTCUT_START_KEY);
-        mEndShortcut = (ListPreference) findPreference(SHORTCUT_END_KEY);
+        mStartShortcut = findPreference(SHORTCUT_START_KEY);
+        mEndShortcut = findPreference(SHORTCUT_END_KEY);
+        mEnforceShortcut = findPreference(SHORTCUT_ENFORCE_KEY);
         updateShortcutSelection();
         mStartShortcut.setOnPreferenceChangeListener(this);
         mEndShortcut.setOnPreferenceChangeListener(this);
+        mEnforceShortcut.setOnPreferenceChangeListener(this);
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mStartShortcut) {
-            setShortcutSelection((String) newValue, true);
+            setShortcutSelection((String) objValue, true);
             return true;
         } else if (preference == mEndShortcut) {
-            setShortcutSelection((String) newValue, false);
+            setShortcutSelection((String) objValue, false);
+            return true;
+        } else if (preference == mEnforceShortcut) {
+            final boolean value = (Boolean) objValue;
+            setShortcutSelection(mStartShortcut.getValue(), true, value);
+            setShortcutSelection(mEndShortcut.getValue(), false, value);
             return true;
         }
         return false;
@@ -83,9 +95,15 @@ public class LockscreenShortcuts extends SettingsPreferenceFragment implements O
         String value = Settings.System.getString(getActivity().getContentResolver(),
                 Settings.System.KEYGUARD_QUICK_TOGGLES_NEW);
         if (value == null || value.isEmpty()) {
-            for (String str : DEFAULT_START_SHORTCUT) value += str;
-            value += ";";
-            for (String str : DEFAULT_END_SHORTCUT) value += str;
+            StringBuilder sb = new StringBuilder(DEFAULT_START_SHORTCUT[0]);
+            for (int i = 1; i < DEFAULT_START_SHORTCUT.length; i++) {
+                sb.append("," + DEFAULT_START_SHORTCUT[i]);
+            }
+            sb.append(";" + DEFAULT_END_SHORTCUT[0]);
+            for (int i = 1; i < DEFAULT_END_SHORTCUT.length; i++) {
+                sb.append("," + DEFAULT_END_SHORTCUT[i]);
+            }
+            value = sb.toString();
         }
         return value;
     }
@@ -93,25 +111,33 @@ public class LockscreenShortcuts extends SettingsPreferenceFragment implements O
     private void updateShortcutSelection() {
         final String value = getSettingsShortcutValue();
         final String[] split = value.split(";");
-        mStartShortcut.setValue(split[0].split(",")[0]);
+        final String[] start = split[0].split(",");
+        final String[] end = split[1].split(",");
+        mStartShortcut.setValue(start[0]);
         mStartShortcut.setSummary(mStartShortcut.getEntry());
-        mEndShortcut.setValue(split[1].split(",")[0]);
+        mEndShortcut.setValue(end[0]);
         mEndShortcut.setSummary(mEndShortcut.getEntry());
+        mEnforceShortcut.setChecked(start.length == 1 && end.length == 1);
     }
 
     private void setShortcutSelection(String value, boolean start) {
+        setShortcutSelection(value, start, mEnforceShortcut.isChecked());
+    }
+
+    private void setShortcutSelection(String value, boolean start, boolean single) {
         final String oldValue = getSettingsShortcutValue();
         final int splitIndex = start ? 0 : 1;
         String[] split = oldValue.split(";");
-        if (value.equals("none")) {
-            split[splitIndex] = "none";
-        } else {
+        if (value.equals("none") || single) {
             split[splitIndex] = value;
+        } else {
+            StringBuilder sb = new StringBuilder(value);
             final String[] def = start ? DEFAULT_START_SHORTCUT : DEFAULT_END_SHORTCUT;
             for (String str : def) {
                 if (str.equals(value)) continue;
-                split[splitIndex] += "," + str;
+                sb.append("," + str);
             }
+            split[splitIndex] = sb.toString();
         }
         Settings.System.putString(getActivity().getContentResolver(),
                 Settings.System.KEYGUARD_QUICK_TOGGLES_NEW, split[0] + ";" + split[1]);
