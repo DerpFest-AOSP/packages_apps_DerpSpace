@@ -440,4 +440,8 @@
     <!-- QS auto brightness icon -->
     <string name="qs_auto_brightness_title">Symbol für automatische Helligkeit</string>
     <string name="qs_auto_brightness_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibration bei Fingerabdruckerkennung</string>
+    <string name="fprint_sucess_vib_summary">Bei erfolgreicher Fingerabdruckerkennung vibrieren</string>
 </resources>

@@ -21,6 +21,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
@@ -33,6 +34,7 @@ import android.view.IWindowManager;
 import android.view.View;
 import android.view.WindowManagerGlobal;
 
+import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
@@ -62,8 +64,11 @@ import java.util.regex.Pattern;
 public class LockscreenUI extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String LOCKSCREEN_BATTERY_INFO_TEMP_UNIT = "lockscreen_charge_temp_unit";
+    private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
 
     private SystemSettingListPreference mBatteryTempUnit;
+    private FingerprintManager mFingerprintManager;
+    private SwitchPreference mFingerprintVib;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -72,7 +77,7 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         addPreferencesFromResource(R.xml.lockscreen_ui);
 
         final ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefSet = getPreferenceScreen();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
 
         int unitMode = Settings.System.getIntForUser(resolver,
                 Settings.System.LOCKSCREEN_BATTERY_INFO_TEMP_UNIT, 0, UserHandle.USER_CURRENT);
@@ -81,6 +86,16 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
         mBatteryTempUnit.setValue(String.valueOf(unitMode));
         mBatteryTempUnit.setSummary(mBatteryTempUnit.getEntry());
         mBatteryTempUnit.setOnPreferenceChangeListener(this);
+
+        mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
+        if (!mFingerprintManager.isHardwareDetected()){
+            prefScreen.removePreference(mFingerprintVib);
+        } else {
+        mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
+        mFingerprintVib.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -103,6 +118,11 @@ public class LockscreenUI extends SettingsPreferenceFragment implements OnPrefer
             int index = mBatteryTempUnit.findIndexOfValue((String) objValue);
             mBatteryTempUnit.setSummary(
             mBatteryTempUnit.getEntries()[index]);
+            return true;
+        } else if (preference == mFingerprintVib) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.FINGERPRINT_SUCCESS_VIB, value ? 1 : 0);
             return true;
         }
         return false;
