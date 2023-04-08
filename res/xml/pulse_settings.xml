@@ -169,8 +169,8 @@
         <org.derpfest.support.preferences.SecureSettingSeekBarPreference
             android:key="pulse_solid_fudge_factor"
             android:title="@string/pulse_custom_fudge_factor"
-            android:defaultValue="4"
-            android:max="6"
+            android:defaultValue="5"
+            android:max="7"
             settings:min="2"
             android:dependency="pulse_2"/>
     </PreferenceCategory>
