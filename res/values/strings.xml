@@ -490,7 +490,7 @@
 
     <!-- Ambient Wake gesture -->
     <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
-    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal locksreen on wake gestures</string>
+    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal lockscreen on wake gestures</string>
 
     <!-- Battery customizations -->
     <string name="battery_options">Battery</string>
