@@ -441,6 +441,23 @@
     <string name="qs_auto_brightness_title">Symbol für automatische Helligkeit</string>
     <string name="qs_auto_brightness_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
 
+    <!-- Ambient Wake gesture -->
+    <string name="ambient_wake_gestures_title">Ambient-Aufweck-Gesten</string>
+    <string name="ambient_wake_gestures_summary">Inaktivitätsdisplay statt normalen Sperrbildschirm bei Weckgesten anzeigen</string>
+
+    <!-- Battery customizations -->
+    <string name="battery_options">Akkuanzeige</string>
+    <string name="battery_style_title">Akkudarstellung</string>
+    <string name="battery_style_port">Hochformat</string>
+    <string name="battery_style_circle">Kreis</string>
+    <string name="battery_style_text">Text</string>
+    <string name="battery_percent_title">Akkuanzeige mit Prozent</string>
+    <string name="battery_percent_summary">Immer den Akkuprozentsatz anzeigen</string>
+    <string name="battery_percent_inside_title">Innerhalb des Symbols</string>
+    <string name="battery_percent_inside_summary">Akkuprozentsatz innerhalb des Symbols anzeigen</string>
+    <string name="show_battery_percent_charging_title">Akkuanzeige in Prozent beim Aufladen</string>
+    <string name="show_battery_percent_charging_summary">Beim Aufladen immer den Akkuprozentsatz anzeigen</string>
+
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Vibration bei Fingerabdruckerkennung</string>
     <string name="fprint_sucess_vib_summary">Bei erfolgreicher Fingerabdruckerkennung vibrieren</string>
