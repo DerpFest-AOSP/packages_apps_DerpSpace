@@ -466,4 +466,12 @@
     <string name="qs_show_battery_estimate_title">Akkuschätzung</string>
     <string name="qs_show_battery_estimate_summary_on">Geschätzte verbleibende Akkulaufzeit anzeigen, wenn verfügbar</string>
     <string name="qs_show_battery_estimate_summary_off">Geschätzte verbleibende Akkulaufzeit verstecken</string>
+
+    <!-- Privacy Indicator -->
+    <string name="mic_camera_privacy_indicator_title">Anzeige bei Mikrofon-/Kamerazugriff</string>
+    <string name="mic_camera_privacy_indicator_summary">In der Statusleiste anzeigen, wenn eine App auf Mikrofon oder Kamera zugreift</string>
+    <string name="location_privacy_indicator_title">Anzeige bei Standortzugriff</string>
+    <string name="location_privacy_indicator_summary">In der Statusleiste anzeigen, wenn eine App auf den Standort zugreift</string>
+    <string name="projection_privacy_indicator_title">Anzeige bei Streamen des Bildschirms</string>
+    <string name="projection_privacy_indicator_summary">Separate Anzeige bei aktivem Streamen des Bildschirms</string>
 </resources>
