@@ -75,8 +75,8 @@
     <!-- Quick Settings -->
     <string name="quick_settings_title">Schnelleinstellungen</string>
 
-    <!-- Status bar clock and date options -->
-    <string name="status_bar_clock_title">Zeit- und Datumsanzeige</string>
+    <!-- Status bar clock options -->
+    <string name="status_bar_clock_title">Zeitanzeige</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Helligkeitsregler</string>
