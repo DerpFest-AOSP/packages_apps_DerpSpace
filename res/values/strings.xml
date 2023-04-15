@@ -365,6 +365,7 @@
     <string name="notification_material_dismiss_bgstyle_dashedline">Square with dashed line</string>
     <string name="notification_material_dismiss_bgstyle_circle_accent">Circle with accented outline</string>
     <string name="notification_material_dismiss_bgstyle_rectangle_accent">Rounded rectangle with accented outline</string>
+    <string name="notification_material_dismiss_bgstyle_rectangle_gradient">Rounded rectangle with gradient background</string>
 
     <!-- Bluetooth status -->
     <string name="bluetooth_battery_title">Bluetooth battery status</string>

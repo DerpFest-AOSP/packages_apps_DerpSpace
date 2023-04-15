@@ -294,6 +294,7 @@
         <item>@string/notification_material_dismiss_bgstyle_dashedline</item>
         <item>@string/notification_material_dismiss_bgstyle_circle_accent</item>
         <item>@string/notification_material_dismiss_bgstyle_rectangle_accent</item>
+        <item>@string/notification_material_dismiss_bgstyle_rectangle_gradient</item>
     </string-array>
 
     <string-array name="notification_material_dismiss_bgstyle_values" translatable="false">
@@ -304,6 +305,7 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
+        <item>7</item>
     </string-array>
 
     <!-- QS brightness slider -->
