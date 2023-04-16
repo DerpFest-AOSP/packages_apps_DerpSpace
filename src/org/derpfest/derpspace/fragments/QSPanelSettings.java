@@ -39,11 +39,30 @@ import com.android.settingslib.search.SearchIndexable;
 @SearchIndexable
 public class QSPanelSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String TAG = "QSPanelSettings";
+    private static final String[] qsCustPreferences = { "qs_tile_shape",
+            "qqs_num_columns", "qqs_num_columns_landscape",
+            "qs_num_columns", "qs_num_columns_landscape" };
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.qs_panel_settings);
+
+        PreferenceScreen preferenceScreen = getPreferenceScreen();
+
+        boolean qsStyleRound = Settings.Secure.getIntForUser(getContext().getContentResolver(),
+                Settings.Secure.QS_STYLE_ROUND, 1, UserHandle.USER_CURRENT) == 1;
+
+        if (!qsStyleRound) {
+            for (String key : qsCustPreferences) {
+                Preference preference = preferenceScreen.findPreference(key);
+                if (preference != null) {
+                    preference.setEnabled(false);
+                }
+            }
+        }
     }
 
     @Override

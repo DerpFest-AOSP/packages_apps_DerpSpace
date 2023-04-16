@@ -418,6 +418,12 @@
     <string name="qs_panel_options_summary">Anpassen des Kachel-Layouts der Schnelleinstellungen</string>
     <string name="category_name_qs_tiles">Kacheln</string>
 
+    <!-- QS columns -->
+    <string name="qs_columns">Spalten im Hochformat</string>
+    <string name="qs_columns_landscape">Spalten im Querformat</string>
+    <string name="qqs_columns">Spalten im Schnell-QS-Hochformat</string>
+    <string name="qqs_columns_landscape">Spalten im Schnell-QS-Querformat</string>
+
     <!-- QS tile shape -->
     <string name="qs_tile_shape">Kachelform</string>
     <string name="qs_tile_round">Rund</string>

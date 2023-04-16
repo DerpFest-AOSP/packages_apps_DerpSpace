@@ -29,5 +29,41 @@
             android:entries="@array/qs_tile_shape_entries"
             android:entryValues="@array/qs_tile_shape_values"
             android:defaultValue="2" />
+
+        <com.android.settings.support.SecureSettingSeekBarPreference
+            android:key="qqs_num_columns"
+            android:title="@string/qqs_columns"
+            android:min="@string/qqs_columns_min"
+            android:max="@string/qqs_columns_max"
+            android:defaultValue="5"
+            settings:textStart="@string/qqs_columns_min"
+            settings:textEnd="@string/qqs_columns_max" />
+
+        <com.android.settings.support.SecureSettingSeekBarPreference
+            android:key="qqs_num_columns_landscape"
+            android:title="@string/qqs_columns_landscape"
+            android:min="@string/qqs_columns_landscape_min"
+            android:max="@string/qqs_columns_landscape_max"
+            android:defaultValue="6"
+            settings:textStart="@string/qqs_columns_landscape_min"
+            settings:textEnd="@string/qqs_columns_landscape_max" />
+
+        <com.android.settings.support.SecureSettingSeekBarPreference
+            android:key="qs_num_columns"
+            android:title="@string/qs_columns"
+            android:min="@string/qs_columns_min"
+            android:max="@string/qs_columns_max"
+            android:defaultValue="4"
+            settings:textStart="@string/qs_columns_min"
+            settings:textEnd="@string/qs_columns_max" />
+
+        <com.android.settings.support.SecureSettingSeekBarPreference
+            android:key="qs_num_columns_landscape"
+            android:title="@string/qs_columns_landscape"
+            android:min="@string/qs_columns_landscape_min"
+            android:max="@string/qs_columns_landscape_max"
+            android:defaultValue="6"
+            settings:textStart="@string/qs_columns_landscape_min"
+            settings:textEnd="@string/qs_columns_landscape_max" />
     </PreferenceCategory>
 </PreferenceScreen>
