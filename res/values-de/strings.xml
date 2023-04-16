@@ -552,4 +552,8 @@
     <!-- Custom Data icons -->
     <string name="theme_customization_data_title">Mobilfunkdatensymbol</string>
     <string name="theme_customization_data_summary">Stil für Mobilfunkdatensymbol festlegen</string>
+
+    <!-- QS footer data usage -->
+    <string name="qs_show_data_usage_title">Datennutzung anzeigen</string>
+    <string name="qs_show_data_usage_summary">Tägliche Mobilfunk-/WLAN-Datennutzung in der QS-Fußzeile anzeigen</string>
 </resources>
