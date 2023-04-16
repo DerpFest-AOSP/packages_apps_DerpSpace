@@ -413,6 +413,11 @@
     <string name="monet_engine_tint_background_title">Hintergrund einfärben</string>
     <string name="monet_engine_tint_background_summary">Leuchtkraft- und Sättigungseinstellung Einfluss auf die Farben des Hintergrundbilds nehmen lassen</string>
 
+    <!-- QS panel -->
+    <string name="qs_panel_options_title">Kachel-Layout</string>
+    <string name="qs_panel_options_summary">Anpassen des Kachel-Layouts der Schnelleinstellungen</string>
+    <string name="category_name_qs_tiles">Kacheln</string>
+
     <!-- QS tile shape -->
     <string name="qs_tile_shape">Kachelform</string>
     <string name="qs_tile_round">Rund</string>

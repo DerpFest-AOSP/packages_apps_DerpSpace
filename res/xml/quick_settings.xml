@@ -25,6 +25,13 @@
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
 
+        <Preference
+            android:key="qs_panel_options"
+            android:persistent="false"
+            android:title="@string/qs_panel_options_title"
+            android:summary="@string/qs_panel_options_summary"
+            android:fragment="org.derpfest.derpspace.fragments.QSPanelSettings" />
+
         <org.derpfest.support.preferences.SecureSettingSwitchPreference
             android:key="secure_lockscreen_qs_disabled"
             android:title="@string/disable_qs_title"
@@ -44,13 +51,6 @@
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
-
-        <org.derpfest.support.preferences.SecureSettingListPreference
-            android:key="qs_tile_shape"
-            android:title="@string/qs_tile_shape"
-            android:entries="@array/qs_tile_shape_entries"
-            android:entryValues="@array/qs_tile_shape_values"
-            android:defaultValue="2" />
 
         <org.derpfest.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
