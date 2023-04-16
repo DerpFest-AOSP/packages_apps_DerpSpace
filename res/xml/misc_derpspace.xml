@@ -77,7 +77,7 @@
              android:key="use_old_mobiletype"
              android:title="@string/use_old_mobiletype_title"
              android:summary="@string/use_old_mobiletype_summary"
-             android:defaultValue="false" />
+             android:defaultValue="@*android:bool/config_useOldMobileIcons" />
 
          <org.derpfest.support.preferences.CustomOverlaySwitchPreference
              android:key="com.android.systemui.flags.no_combined_icons"
