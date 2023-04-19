@@ -75,7 +75,6 @@
     <string name="battery_settings_title">Pil ayarları</string>
     <!-- Battery Styles -->
     <string name="battery_style_category_title">Pil stilleri</string>
-    <string name="battery_percent_title">Pil yüzdesi</string>
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">Bize yardım edin size yardım edelim!</string>
     <string name="derpspace_dialog_message">Bu ayarlardan herhangi birinde bir hata bulursanız, bunu Telegram Grubumuzda bildirin. Bir hata raporu gönderirken aşağıdakileri eklemeniz GEREKİR:\n\n1. Bir logcat veya last_kmsg\n2. Kullanılan çekirdek ve modlar\n3. Yararlı bilgiler\n\nBir şeyi yeterince rapor edemezseniz, bir şeylerin düzeltilmesini BEKLEMEYİN.</string>
