@@ -322,8 +322,8 @@
     <string name="status_bar_clock_auto_hide_summary">Uhr auf dem Startbildschirm ausblenden</string>
 
     <!-- Squiggle animation -->
-    <string name="show_squiggle_animation_title">Squiggle-Animation anzeigen</string>
-    <string name="show_squiggle_animation_summary">Squiggle-Animation im Medienfeld anzeigen\nNach der Änderung muss die Musik gewechselt, die Musik angehalten oder der Fortschrittsbalken verschoben werden, um sie anzuwenden</string>
+    <string name="show_squiggle_animation_title">Schnörkelanimation anzeigen</string>
+    <string name="show_squiggle_animation_summary">Schnörkelanimation im Mediaplayer anzeigen.\nDamit diese Einstellung sichtbar wird, muss entweder der Track gewechselt, die Wiedergabe angehalten oder der Fortschrittsbalken verschoben werden.</string>
 
     <!-- Ambient battery bar settings -->
     <string name="ambient_ui">Ambient/Always on display</string>

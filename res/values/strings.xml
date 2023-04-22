@@ -370,7 +370,7 @@
 
     <!-- Squiggle animation -->
     <string name="show_squiggle_animation_title">Show squiggle animation</string>
-    <string name="show_squiggle_animation_summary">Show media panel squiggle animation\nAfter change need to switch music, pause music or move the progress bar to apply</string>
+    <string name="show_squiggle_animation_summary">Show squiggle animation in media player.\nYou must either change the track, pause playback, or move the progress bar for this setting to take effect.</string>
 
     <!-- Ambient battery bar settings -->
     <string name="ambient_ui">Ambient/Always on display</string>
