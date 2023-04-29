@@ -150,7 +150,8 @@ public class LockClockFonts extends SettingsPreferenceFragment {
 
             holder.title.setTextSize(24);
             holder.title.setTypeface(getTypeface(holder.title.getContext(), pkg));
-            holder.name.setVisibility(View.GONE);
+            holder.name.setVisibility(View.VISIBLE);
+            holder.name.setText("android".equals(pkg) ? "Default" : label);
 
             if (currentPackageName.equals(pkg)) {
                 mAppliedPkg = pkg;
