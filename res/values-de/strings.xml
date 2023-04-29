@@ -358,6 +358,9 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Hintergrundchip anzeigen</string>
     <string name="statusbar_clock_chip_summary">Akzentuierter Chip hinter der Uhr anzeigen</string>
+    <string name="solid_accent">Einfarbig</string>
+    <string name="outline">Umrisslinie</string>
+    <string name="solid_accent_gradient">Akzentverlauf</string>
 
     <!-- Separate signal icons -->
     <string name="separate_signal_icons_title">Separate Mobilfunksymbole</string>
