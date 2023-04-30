@@ -105,9 +105,10 @@
     <!-- Status bar logo style -->
     <string-array name="status_bar_logo_style_entries" translatable="false">
         <item>@string/status_bar_logo_style_derp</item>
-        <item>@string/status_bar_logo_style_derp_alt</item>
+        <item>@string/status_bar_logo_style_derp_2</item>
+        <item>@string/status_bar_logo_style_android</item>
         <item>@string/status_bar_logo_style_adidas</item>
-        <item>@string/status_bar_logo_style_airjordan</item>
+        <item>@string/status_bar_logo_style_alien</item>
         <item>@string/status_bar_logo_style_apple</item>
         <item>@string/status_bar_logo_style_avengers</item>
         <item>@string/status_bar_logo_style_batman</item>
@@ -116,14 +117,27 @@
         <item>@string/status_bar_logo_style_biohazard</item>
         <item>@string/status_bar_logo_style_blackberry</item>
         <item>@string/status_bar_logo_style_cannabis</item>
+        <item>@string/status_bar_logo_style_emoticon_cool</item>
+        <item>@string/status_bar_logo_style_emoticon_devil</item>
         <item>@string/status_bar_logo_style_fire</item>
+        <item>@string/status_bar_logo_style_heart</item>
         <item>@string/status_bar_logo_style_nike</item>
-        <item>@string/status_bar_logo_style_pac_man</item>
+        <item>@string/status_bar_logo_style_pacman</item>
         <item>@string/status_bar_logo_style_puma</item>
         <item>@string/status_bar_logo_style_rog</item>
+        <item>@string/status_bar_logo_style_spiderman</item>
         <item>@string/status_bar_logo_style_superman</item>
         <item>@string/status_bar_logo_style_windows</item>
         <item>@string/status_bar_logo_style_xbox</item>
+        <item>@string/status_bar_logo_style_ghost</item>
+        <item>@string/status_bar_logo_style_ninja</item>
+        <item>@string/status_bar_logo_style_robot</item>
+        <item>@string/status_bar_logo_style_ironman</item>
+        <item>@string/status_bar_logo_style_captain_america</item>
+        <item>@string/status_bar_logo_style_flash</item>
+        <item>@string/status_bar_logo_style_tux</item>
+        <item>@string/status_bar_logo_style_ubuntu</item>
+        <item>@string/status_bar_logo_style_mint</item>
     </string-array>
 
     <string-array name="status_bar_logo_style_values" translatable="false">
@@ -147,6 +161,20 @@
         <item>17</item>
         <item>18</item>
         <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
     </string-array>
 
     <!-- Pulse music visualizer -->
