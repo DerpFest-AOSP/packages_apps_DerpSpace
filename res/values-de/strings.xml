@@ -512,4 +512,10 @@
     <string name="location_privacy_indicator_summary">In der Statusleiste anzeigen, wenn eine App auf den Standort zugreift</string>
     <string name="projection_privacy_indicator_title">Anzeige bei Streamen des Bildschirms</string>
     <string name="projection_privacy_indicator_summary">Separate Anzeige bei aktivem Streamen des Bildschirms</string>
+
+    <!-- Brightness slider styles -->
+    <string name="brightness_slider_style_title">Stil des Helligkeitsreglers</string>
+    <string name="brightness_slider_style_default">Standard</string>
+    <string name="brightness_slider_style_filled">Gefüllt</string>
+    <string name="brightness_slider_style_thin">Dünn</string>
 </resources>
