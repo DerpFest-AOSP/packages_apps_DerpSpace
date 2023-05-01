@@ -249,6 +249,9 @@
     <string name="status_bar_lyric_title">Statusleisten-Lyric</string>
     <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
     <string name="status_bar_show_lyric_title">Statusleisten-Lyric aktivieren</string>
+    <string name="status_bar_lyric_options_title">Optionen</string>
+    <string name="disguise_props_for_music_app_title">Tarngerät für Musik-Apps</string>
+    <string name="disguise_props_for_music_app_summary">Gibt in einigen Musikanwendungen vor ein anderes Gerätemodell zu sein, um Text in der Statusleiste zu unterstützen. Nach Aktivierung müssen die Anwendungen neu gestartet, damit die Änderung wirksam wird.</string>
 
     <!-- Statusbar logo -->
     <string name="status_bar_logo_title">Logo</string>
@@ -346,7 +349,26 @@
     <string name="notification_material_dismiss_title">Schaltfläche zum Löschen aller Benachrichtigungen</string>
     <string name="notification_material_dismiss_summary">Anstelle von Text eine Schaltfläche zum Schließen aller Benachrichtigungen anzeigen</string>
     <string name="notification_material_dismiss_style_title">Stil der Schaltfläche</string>
+    <string name="notification_material_dismiss_style_default">Standard</string>
+    <string name="notification_material_dismiss_style_trash">Mülleimer</string>
+    <string name="notification_material_dismiss_style_broom">Besen</string>
+    <string name="notification_material_dismiss_style_pac-man">Pac-Man</string>
+    <string name="notification_material_dismiss_style_minus">Minussymbol im Kreis</string>
+    <string name="notification_material_dismiss_style_close">Schließensymbol im Kreis</string>
+    <string name="notification_material_dismiss_style_recycle">Recycle</string>
+    <string name="notification_material_dismiss_style_eraser">Radiergummi</string>
+    <string name="notification_material_dismiss_style_playlist">Abgehakte Wiedergabeliste</string>
+    <string name="notification_material_dismiss_style_magnet">Magnet</string>
+    <string name="notification_material_dismiss_style_derpfest">DerpFest-Logo</string>
     <string name="notification_material_dismiss_bgstyle_title">Hintergrund der Schaltfläche</string>
+    <string name="notification_material_dismiss_bgstyle_default">Kreis (Standard)</string>
+    <string name="notification_material_dismiss_bgstyle_rectangle">Abgerundetes Rechteck</string>
+    <string name="notification_material_dismiss_bgstyle_square">Quadrat</string>
+    <string name="notification_material_dismiss_bgstyle_gear">Zahnrad</string>
+    <string name="notification_material_dismiss_bgstyle_dashedline">Quadrat mit gestrichelter Linie</string>
+    <string name="notification_material_dismiss_bgstyle_circle_accent">Kreis mit akzentuiertem Umriss</string>
+    <string name="notification_material_dismiss_bgstyle_rectangle_accent">Abgerundetes Rechteck mit akzentuiertem Umriss</string>
+    <string name="notification_material_dismiss_bgstyle_rectangle_gradient">Abgerundetes Rechteck mit Farbverlauf im Hintergrund</string>
 
     <!-- Bluetooth status -->
     <string name="bluetooth_battery_title">Bluetooth-Akkustand</string>
@@ -512,6 +534,9 @@
     <string name="location_privacy_indicator_summary">In der Statusleiste anzeigen, wenn eine App auf den Standort zugreift</string>
     <string name="projection_privacy_indicator_title">Anzeige bei Streamen des Bildschirms</string>
     <string name="projection_privacy_indicator_summary">Separate Anzeige bei aktivem Streamen des Bildschirms</string>
+
+    <!-- QS Header -->
+    <string name="qs_header_image_title">QS-Header-Bild</string>
 
     <!-- Brightness slider styles -->
     <string name="brightness_slider_style_title">Stil des Helligkeitsreglers</string>
