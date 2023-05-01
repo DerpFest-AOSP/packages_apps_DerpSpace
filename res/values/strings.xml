@@ -258,6 +258,9 @@
     <string name="status_bar_lyric_title">Status bar lyric</string>
     <string name="status_bar_lyric_summary">Show lyric in status bar (need app support)</string>
     <string name="status_bar_show_lyric_title">Enable status bar lyric</string>
+    <string name="status_bar_lyric_options_title">Options</string>
+    <string name="disguise_props_for_music_app_title">Disguise device for music apps</string>
+    <string name="disguise_props_for_music_app_summary">Disguise device in some music applications for support status bar lyric. After changing this toggle, you have to restart applications for the change to take effect.</string>
 
     <!-- Statusbar logo -->
     <string name="status_bar_logo_category_title">Logo</string>
@@ -528,4 +531,6 @@
 
     <!-- QS Header -->
     <string name="qs_header_image_title">QS Header Image</string>
+
+    
 </resources>
