@@ -415,6 +415,15 @@
     <string name="solid_accent">Einfarbig</string>
     <string name="outline">Umrisslinie</string>
     <string name="solid_accent_gradient">Akzentverlauf</string>
+    <string name="solid_gradient">Solid Gradient side</string>
+    <string name="solid_gradient_corner">Solid accent gradient sharp</string>
+    <string name="solid_gradient_void">Gradient Void</string>
+    <string name="solid_gradient_neumorph">Neumorph gradient</string>
+    <string name="solid_gradient_stroke">Sharp gradient stroke</string>
+    <string name="solid_accent_transperent">Accent transparent</string>    
+    <string name="solid_gradient_light">Gradient light</string>
+    <string name="solid_gradient_shape">Sharp gradient corner</string>
+    <string name="solid_gradient_void_light">Gradient Void light</string>
 
     <!-- Separate signal icons -->
     <string name="separate_signal_icons_title">Separate Mobilfunksymbole</string>
