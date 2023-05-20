@@ -524,4 +524,21 @@
     <!-- Navbar styles -->
     <string name="theme_customization_navbar_title">Stil der Navigationsleiste</string>
     <string name="theme_customization_navbar_summary">Stil der Navigationsleiste anpassen</string>
+
+    <!-- QS tiles layout direction: vertical or horizontal -->
+    <string name="qs_tile_layout_category_title">Kachellayout</string>
+    <string name="qs_tile_layout_title">Vertikale Anordnung</string>
+    <string name="qs_tile_layout_summary">Beschriftung unter Symbol statt neben Symbol anzeigen</string>
+
+    <!-- QS tiles title visibility -->
+    <string name="qs_tile_title_visibility_title">Kacheltitel ausblenden</string>
+    <string name="qs_tile_title_visibility_summary">Aktivieren, um Kacheltitel auszublenden</string>
+
+    <!-- QS tiles layout  -->
+    <string name="qs_layout_category_title">Kachelanordnung</string>
+    <string name="qs_tile_label_hide_title">Überschrift verbergen</string>
+    <string name="qs_tile_label_size_title">Beschriftungsgröße</string>
+    <string name="qs_tile_label_hide_summary">Nur Symbol in Kachel anzeigen</string>
+    <string name="qs_columns_portrait_title">Spalten (Hochformat)</string>
+    <string name="qs_columns_landscape_title">Spalten (Querformat)</string>
 </resources>
