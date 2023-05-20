@@ -551,4 +551,11 @@
     <string name="qs_tile_label_size_title">Label text size</string>
     <string name="qs_columns_portrait_title">Columns (portrait)</string>
     <string name="qs_columns_landscape_title">Columns (landscape)</string>
+
+    <!-- Quick settings styles -->
+    <string name="default_string">Default</string>
+    <string name="qs_styles_title">QS tile theme</string>
+    <string name="qs_outline">Outline</string>
+    <string name="qs_two_tone">Two-tone accent</string>
+    <string name="qs_shaded">Shaded</string>
 </resources>

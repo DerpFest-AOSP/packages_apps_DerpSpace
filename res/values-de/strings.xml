@@ -541,4 +541,8 @@
     <string name="qs_tile_label_hide_summary">Nur Symbol in Kachel anzeigen</string>
     <string name="qs_columns_portrait_title">Spalten (Hochformat)</string>
     <string name="qs_columns_landscape_title">Spalten (Querformat)</string>
+
+    <!-- Quick settings styles -->
+    <string name="default_string">Standard</string>
+    <string name="qs_styles_title">Thema der QS-Kacheln</string>
 </resources>
