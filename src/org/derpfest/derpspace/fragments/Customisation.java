@@ -58,6 +58,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.util.derp.derpUtils;
+import com.android.internal.util.derp.ThemeUtils;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 
@@ -84,6 +85,7 @@ public class Customisation extends SettingsPreferenceFragment implements OnPrefe
     private IOverlayManager mOverlayManager;
     private IOverlayManager mOverlayService;
     private SystemSettingListPreference mQsStyle;
+    private ThemeUtils mThemeUtils;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -93,6 +95,8 @@ public class Customisation extends SettingsPreferenceFragment implements OnPrefe
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen screen = getPreferenceScreen();
+
+        mThemeUtils = new ThemeUtils(getActivity());
 
         mOverlayService = IOverlayManager.Stub
         .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
@@ -156,49 +160,28 @@ public class Customisation extends SettingsPreferenceFragment implements OnPrefe
         int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.QS_PANEL_STYLE , 0, UserHandle.USER_CURRENT);
 
-        if (qsPanelStyle == 0) {
-            setDefaultStyle(mOverlayService);
-        } else if (qsPanelStyle == 1) {
-            setQsStyle(mOverlayService, "com.android.system.qs.outline");
-        } else if (qsPanelStyle == 2) {
-            setQsStyle(mOverlayService, "com.android.system.qs.twotoneaccent");
-        } else if (qsPanelStyle == 3) {
-            setQsStyle(mOverlayService, "com.android.system.qs.shaded");
+        switch (qsPanelStyle) {
+            case 0:
+              setQsStyle("com.android.systemui");
+              break;
+            case 1:
+              setQsStyle("com.android.system.qs.outline");
+              break;
+            case 2:
+            case 3:
+              setQsStyle("com.android.system.qs.twotoneaccent");
+              break;
+            case 4:
+              setQsStyle("com.android.system.qs.shaded");
+              break;
+            default:
+              break;
         }
     }
 
-    public static void setDefaultStyle(IOverlayManager overlayManager) {
-        for (int i = 0; i < QS_STYLES.length; i++) {
-            String qsStyles = QS_STYLES[i];
-            try {
-                overlayManager.setEnabled(qsStyles, false, USER_SYSTEM);
-            } catch (RemoteException e) {
-                e.printStackTrace();
-            }
-        }
+    public void setQsStyle(String overlayName) {
+        mThemeUtils.setOverlayEnabled("android.theme.customization.qs_panel", overlayName, "com.android.systemui");
     }
-
-    public static void setQsStyle(IOverlayManager overlayManager, String overlayName) {
-        try {
-            for (int i = 0; i < QS_STYLES.length; i++) {
-                String qsStyles = QS_STYLES[i];
-                try {
-                    overlayManager.setEnabled(qsStyles, false, USER_SYSTEM);
-                } catch (RemoteException e) {
-                    e.printStackTrace();
-                }
-            }
-            overlayManager.setEnabled(overlayName, true, USER_SYSTEM);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static final String[] QS_STYLES = {
-        "com.android.system.qs.outline",
-        "com.android.system.qs.twotoneaccent",
-        "com.android.system.qs.shaded",
-    };
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
         new BaseSearchIndexProvider() {
