@@ -548,8 +548,6 @@
     <string name="qs_header_image_title">QS-Header-Bild</string>
 
     <!-- Brightness slider styles -->
-    <string name="brightness_slider_style_title">Stil des Helligkeitsreglers</string>
-    <string name="brightness_slider_style_default">Standard</string>
-    <string name="brightness_slider_style_filled">Gefüllt</string>
-    <string name="brightness_slider_style_thin">Dünn</string>
+    <string name="theme_customization_brightness_slider_title">Stil des Helligkeitsreglers</string>
+    <string name="theme_customization_brightness_slider_summary">Benutzerdefinierten Helligkeitsreglerstil festlegen</string>
 </resources>
