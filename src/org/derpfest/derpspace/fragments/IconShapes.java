@@ -20,64 +20,54 @@ import static com.android.internal.util.derp.ThemeUtils.ICON_SHAPE_KEY;
 
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.text.TextUtils;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup.LayoutParams;
+import android.view.Gravity;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+import android.text.TextUtils;
+import androidx.preference.PreferenceViewHolder;
+import android.view.ViewGroup.LayoutParams;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.ColorUtils;
-import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.Preference;
-import androidx.preference.PreferenceScreen;
-import androidx.preference.PreferenceViewHolder;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.derp.ThemeUtils;
-
 import com.android.settings.R;
-import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
-
-import com.android.settingslib.Utils;
 import com.android.settingslib.search.Indexable;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.settingslib.Utils;
 
 import com.bumptech.glide.Glide;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.List;
+import com.android.internal.util.derp.ThemeUtils;
 
-import org.json.JSONException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
+
 import org.json.JSONObject;
+import org.json.JSONException;
 
 public class IconShapes extends SettingsPreferenceFragment {
 
@@ -88,10 +78,6 @@ public class IconShapes extends SettingsPreferenceFragment {
 
     private List<String> mPkgs;
 
-    private ExecutorService mExecutor = Executors.newSingleThreadExecutor();
-    private Handler mHandler = new Handler();
-    private final AtomicBoolean mApplyingOverlays = new AtomicBoolean(false);
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,7 +85,6 @@ public class IconShapes extends SettingsPreferenceFragment {
 
         mThemeUtils = new ThemeUtils(getActivity());
         mPkgs = mThemeUtils.getOverlayPackagesForCategory(mCategory, "android");
-        Collections.sort(mPkgs);
     }
 
     @Override
@@ -163,21 +148,10 @@ public class IconShapes extends SettingsPreferenceFragment {
                      pkg.equals(currentPackageName) || isDefault ? 170 : 75);
             holder.image.setBackgroundTintList(ColorStateList.valueOf(color));
 
-            if (currentPackageName.equals(pkg)) {
-                mAppliedPkg = pkg;
-                if (mSelectedPkg == null) {
-                    mSelectedPkg = pkg;
-                }
-            }
-
             holder.itemView.findViewById(R.id.option_tile).setBackgroundDrawable(null);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (mApplyingOverlays.get()) return;
-                    updateActivatedStatus(mSelectedPkg, false);
-                    updateActivatedStatus(pkg, true);
-                    mSelectedPkg = pkg;
                     enableOverlays(position);
                 }
             });
@@ -196,22 +170,6 @@ public class IconShapes extends SettingsPreferenceFragment {
                 name = (TextView) itemView.findViewById(R.id.option_label);
                 image = (ImageView) itemView.findViewById(R.id.option_thumbnail);
             }
-        }
-
-        private void updateActivatedStatus(String pkg, boolean isActivated) {
-            int index = mPkgs.indexOf(pkg);
-            if (index < 0) return;
-
-            RecyclerView.ViewHolder holder = mRecyclerView.findViewHolderForAdapterPosition(index);
-            if (holder == null) return;
-
-            ImageView thumbnail = holder.itemView.findViewById(R.id.option_thumbnail);
-            if (thumbnail == null) return;
-
-            int color = ColorUtils.setAlphaComponent(
-                Utils.getColorAttrDefaultColor(getContext(), android.R.attr.colorAccent),
-                isActivated ? 170 : 75);
-            thumbnail.setBackgroundTintList(ColorStateList.valueOf(color));
         }
     }
 
@@ -240,10 +198,6 @@ public class IconShapes extends SettingsPreferenceFragment {
     }
 
     public void enableOverlays(int position) {
-        mApplyingOverlays.set(true);
-        mExecutor.execute(() -> {
-            mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
-            mHandler.post(() -> mApplyingOverlays.set(false));
-        });
+        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position), "android");
     }
 }

@@ -36,7 +36,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.text.TextUtils;
 import androidx.preference.PreferenceViewHolder;
 import android.view.ViewGroup.LayoutParams;
@@ -47,8 +46,6 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import androidx.recyclerview.widget.RecyclerView;
-import android.net.Uri;
-import androidx.core.content.res.ResourcesCompat;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceScreen;
@@ -62,7 +59,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.util.derp.ThemeUtils;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -99,7 +95,6 @@ public class UIStyles extends SettingsPreferenceFragment {
 
         mThemeUtils = new ThemeUtils(getActivity());
         mPkgs = mThemeUtils.getOverlayPackagesForCategory(mCategory, "android");
-        Collections.sort(mPkgs);
     }
 
     @Override
@@ -240,7 +235,7 @@ public class UIStyles extends SettingsPreferenceFragment {
     public void enableOverlays(int position) {
         mApplyingOverlays.set(true);
         mExecutor.execute(() -> {
-            mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
+            mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position), "android");
             String pattern = "android".equals(mPkgs.get(position)) ? ""
                     : mPkgs.get(position).split("\\.")[4];
             for (Map.Entry<String, String> entry : overlayMap.entrySet()) {
@@ -252,12 +247,12 @@ public class UIStyles extends SettingsPreferenceFragment {
 
     public void enableOverlay(String category, String target, String pattern) {
         if (pattern.isEmpty()) {
-            mThemeUtils.setOverlayEnabled(category, "android");
+            mThemeUtils.setOverlayEnabled(category, "android", "android");
             return;
         }
         for (String pkg: mThemeUtils.getOverlayPackagesForCategory(category, target)) {
             if (pkg.contains(pattern)) {
-                mThemeUtils.setOverlayEnabled(category, pkg);
+                mThemeUtils.setOverlayEnabled(category, pkg, target);
             }
         }
     }

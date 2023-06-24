@@ -26,8 +26,6 @@ import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.view.LayoutInflater;
@@ -38,7 +36,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.text.TextUtils;
 import androidx.preference.PreferenceViewHolder;
 import android.view.ViewGroup.LayoutParams;
@@ -48,8 +45,6 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import androidx.recyclerview.widget.RecyclerView;
-import android.net.Uri;
-import androidx.core.content.res.ResourcesCompat;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceScreen;
@@ -60,13 +55,11 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.bumptech.glide.Glide;
+
 import com.android.internal.util.derp.ThemeUtils;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.List;
 import java.util.Arrays;
 
@@ -81,19 +74,13 @@ public class LockClockFonts extends SettingsPreferenceFragment {
 
     private List<String> mPkgs;
 
-    private ExecutorService mExecutor = Executors.newSingleThreadExecutor();
-    private Handler mHandler = new Handler();
-    private final AtomicBoolean mApplyingOverlays = new AtomicBoolean(false);
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActivity().setTitle(R.string.theme_customization_lock_clock_title);
 
-        mHandler = new Handler();
         mThemeUtils = new ThemeUtils(getActivity());
         mPkgs = mThemeUtils.getOverlayPackagesForCategory(mCategory, "android");
-        Collections.sort(mPkgs);
     }
 
     @Override
@@ -148,7 +135,7 @@ public class LockClockFonts extends SettingsPreferenceFragment {
                 .findFirst()
                 .orElse("android");
 
-            holder.title.setTextSize(24);
+            holder.title.setTextSize(28);
             holder.title.setTypeface(getTypeface(holder.title.getContext(), pkg));
             holder.name.setVisibility(View.VISIBLE);
             holder.name.setText("android".equals(pkg) ? "Default" : label);
@@ -164,7 +151,6 @@ public class LockClockFonts extends SettingsPreferenceFragment {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (mApplyingOverlays.get()) return;
                     updateActivatedStatus(mSelectedPkg, false);
                     updateActivatedStatus(pkg, true);
                     mSelectedPkg = pkg;
@@ -227,10 +213,6 @@ public class LockClockFonts extends SettingsPreferenceFragment {
     }
 
     public void enableOverlays(int position) {
-        mApplyingOverlays.set(true);
-        mExecutor.execute(() -> {
-            mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position));
-            mHandler.post(() -> mApplyingOverlays.set(false));
-        });
+        mThemeUtils.setOverlayEnabled(mCategory, mPkgs.get(position), "android");
     }
 }
