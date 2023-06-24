@@ -89,18 +89,6 @@
 
     </PreferenceCategory>
 
-     <PreferenceCategory
-        android:key="quick_settings_media_category"
-        android:title="@string/media_category">
-
-        <org.derpfest.support.preferences.SecureSettingSwitchPreference
-            android:key="show_media_squiggle_animation"
-            android:title="@string/show_squiggle_animation_title"
-            android:summary="@string/show_squiggle_animation_summary"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
-
     <PreferenceCategory
         android:title="@string/notification_material_dismiss_title">
 
