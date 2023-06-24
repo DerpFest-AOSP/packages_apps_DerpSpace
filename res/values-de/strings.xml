@@ -139,10 +139,6 @@
     <string name="data_disabled_icon_title">Symbol für deaktivierte Mobildaten anzeigen</string>
     <string name="data_disabled_icon_summary">Zeigen Sie das Kreuz neben der Signalleiste an, wenn die Mobildaten deaktiviert sind</string>
 
-    <!-- Old mobile type icons -->
-    <string name="use_old_mobiletype_title">Alten Stil der Netzsignalanzeige benutzen</string>
-    <string name="use_old_mobiletype_summary">Aktivieren, um zur früheren Symbol-Darstellung mit integrierter Verbindungstyp-Anzeige zu wechseln</string>
-
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Zusatzinfo zum Ladevorgang</string>
     <string name="lockscreen_battery_info_summary">Die vom System ermittelte Ladespannung, Stromstärke, Wattzahl und Akkutemperatur während des Ladevorgangs auf dem Sperrbildschirm anzeigen</string>
