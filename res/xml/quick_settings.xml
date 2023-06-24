@@ -50,19 +50,6 @@
             android:min="1" />
     </PreferenceCategory>
 
-     <PreferenceCategory
-        android:key="quick_settings_header_category"
-        android:title="@string/header_category">
-
-        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
-            android:key="qs_header_image"
-            android:title="@string/qs_header_image_title"
-            android:defaultValue="0"
-            settings:interval="1"
-            android:max="15"
-            android:min="0" />
-     </PreferenceCategory>
-
     <PreferenceCategory
         android:key="quick_settings_brighness_category"
         android:title="@string/qs_brightness_slider_category">

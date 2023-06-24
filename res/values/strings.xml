@@ -85,9 +85,6 @@
     <!-- Quick Settings footer category -->
     <string name="footer_category">Footer</string>
 
-    <!-- Quick Settings header category -->
-    <string name="header_category">Header</string>
-
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusbar Items</string>
 
@@ -550,9 +547,6 @@
     <string name="mic_camera_privacy_indicator_summary">Show separate indicator when an any app uses mic or camera</string>
     <string name="location_privacy_indicator_title">Location privacy indicator</string>
     <string name="location_privacy_indicator_summary">Show separate indicator when an any app uses location</string>
-
-    <!-- QS Header -->
-    <string name="qs_header_image_title">QS Header Image</string>
 
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Brightness slider style</string>

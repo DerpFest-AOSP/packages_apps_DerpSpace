@@ -84,9 +84,6 @@
     <!-- Quick Settings footer category -->
     <string name="footer_category">Fußzeile</string>
 
-    <!-- Quick Settings header category -->
-    <string name="header_category">Kopf</string>
-
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusbar-Elemente</string>
 
@@ -543,9 +540,6 @@
     <string name="location_privacy_indicator_summary">In der Statusleiste anzeigen, wenn eine App auf den Standort zugreift</string>
     <string name="projection_privacy_indicator_title">Anzeige bei Streamen des Bildschirms</string>
     <string name="projection_privacy_indicator_summary">Separate Anzeige bei aktivem Streamen des Bildschirms</string>
-
-    <!-- QS Header -->
-    <string name="qs_header_image_title">QS-Header-Bild</string>
 
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Stil des Helligkeitsreglers</string>
