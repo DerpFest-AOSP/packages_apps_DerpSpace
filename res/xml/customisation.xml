@@ -51,6 +51,12 @@
             android:fragment="org.derpfest.derpspace.fragments.BrightnessSlider"/>
 
         <Preference
+            android:key="android.theme.customization.navbar"
+            android:title="@string/theme_customization_navbar_title"
+            android:summary="@string/theme_customization_navbar_summary"
+            android:fragment="org.derpfest.derpspace.fragments.NavbarStyles"/>
+
+        <Preference
             android:key="android.theme.customization.icon_pack"
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"

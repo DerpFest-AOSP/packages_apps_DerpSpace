@@ -537,4 +537,8 @@
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Brightness slider style</string>
     <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
+
+    <!-- Navbar styles -->
+    <string name="theme_customization_navbar_title">Navbar style</string>
+    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 </resources>
