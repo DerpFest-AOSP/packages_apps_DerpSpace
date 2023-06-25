@@ -372,9 +372,6 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Параллельное пространство</string>
     <string name="laboratory_parallel_space_summary">Разрешить запуск нескольких экземпляров одного приложения параллельно</string>
-    <!-- Ambient Wake gesture -->
-    <string name="ambient_wake_gestures_title">Черно-белый экран</string>
-    <string name="ambient_wake_gestures_summary">Черно-белый экран вместо экрана блокировки</string>
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Отпечаток пальца</string>
     <string name="fprint_sucess_vib_summary">Вибрировать при успешном распознавании отпечатка пальца</string>

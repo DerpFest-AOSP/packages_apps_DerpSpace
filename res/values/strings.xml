@@ -504,10 +504,6 @@
     <string name="qs_auto_brightness_title">Auto brightness icon</string>
     <string name="qs_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
 
-    <!-- Ambient Wake gesture -->
-    <string name="ambient_wake_gestures_title">Ambient wake gestures</string>
-    <string name="ambient_wake_gestures_summary">Show Ambient Display instead of normal lockscreen on wake gestures</string>
-
     <!-- Battery customizations -->
     <string name="battery_options">Battery</string>
     <string name="battery_style_title">Battery Style</string>

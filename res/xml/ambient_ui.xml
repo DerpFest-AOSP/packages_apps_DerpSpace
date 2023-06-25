@@ -8,12 +8,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ambient_ui">
 
-    <org.derpfest.support.preferences.SystemSettingSwitchPreference
-        android:key="ambient_wake_gestures"
-        android:title="@string/ambient_wake_gestures_title"
-        android:summary="@string/ambient_wake_gestures_summary"
-        android:defaultValue="false" />
-
     <PreferenceCategory
         android:key="ambient_battery_settings"
         android:title="@string/ambient_battery_settings_title" >

@@ -495,10 +495,6 @@
     <string name="qs_auto_brightness_title">Symbol für automatische Helligkeit</string>
     <string name="qs_auto_brightness_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
 
-    <!-- Ambient Wake gesture -->
-    <string name="ambient_wake_gestures_title">Ambient-Aufweck-Gesten</string>
-    <string name="ambient_wake_gestures_summary">Inaktivitätsdisplay statt normalen Sperrbildschirm bei Weckgesten anzeigen</string>
-
     <!-- Battery customizations -->
     <string name="battery_options">Akkuanzeige</string>
     <string name="battery_style_title">Akkudarstellung</string>
