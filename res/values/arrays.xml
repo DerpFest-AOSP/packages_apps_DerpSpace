@@ -429,6 +429,7 @@
         <item>@string/status_bar_battery_style_icon_landscape_style_b</item>
         <item>@string/status_bar_battery_style_icon_landscape_ios15</item>
         <item>@string/status_bar_battery_style_icon_landscape_ios16</item>
+        <item>@string/status_bar_battery_style_icon_landscape_origami</item>
     </string-array>
 
     <string-array name="status_bar_battery_style_values" translatable="false">
@@ -451,6 +452,7 @@
         <item>16</item>
         <item>17</item>
         <item>18</item>
+        <item>19</item>
     </string-array>
 
     <string-array name="status_bar_battery_percent_entries">
