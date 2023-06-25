@@ -37,12 +37,6 @@
             android:summary="@string/disable_fingerprint_ripple_effect_summary"
             android:defaultValue="false" />
 
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:key="lockscreen_hide_status_bar"
-            android:title="@string/lockscreen_hide_status_bar_title"
-            android:summary="@string/lockscreen_hide_status_bar_summary"
-            android:defaultValue="false" />
-
         <Preference
             android:key="android.theme.customization.lockscreen_clock_font"
             android:title="@string/theme_customization_lock_clock_title"
