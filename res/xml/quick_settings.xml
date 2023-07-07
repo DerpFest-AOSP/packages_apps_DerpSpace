@@ -90,7 +90,7 @@
          android:max="6"
          settings:min="2"
          settings:interval="1"
-         android:defaultValue="4" />
+         android:defaultValue="2" />
 
     </PreferenceCategory>
 
