@@ -515,8 +515,6 @@
     <string name="battery_percent_summary">Always show the battery percent with the icon</string>
     <string name="battery_percent_inside_title">Show percent inside</string>
     <string name="battery_percent_inside_summary">Show percent inside the icon</string>
-    <string name="show_battery_percent_charging_title">Show percent when charging</string>
-    <string name="show_battery_percent_charging_summary">Enforce showing the percent next to the icon when charging</string>
 
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Fingerprint authentication vibration</string>
