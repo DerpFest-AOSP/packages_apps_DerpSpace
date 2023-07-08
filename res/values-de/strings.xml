@@ -512,11 +512,6 @@
     <string name="fprint_sucess_vib_title">Vibration bei Fingerabdruckerkennung</string>
     <string name="fprint_sucess_vib_summary">Bei erfolgreicher Fingerabdruckerkennung vibrieren</string>
 
-    <!-- QS Battery estimates -->
-    <string name="qs_show_battery_estimate_title">Akkuschätzung</string>
-    <string name="qs_show_battery_estimate_summary_on">Geschätzte verbleibende Akkulaufzeit anzeigen, wenn verfügbar</string>
-    <string name="qs_show_battery_estimate_summary_off">Geschätzte verbleibende Akkulaufzeit verstecken</string>
-
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Stil des Helligkeitsreglers</string>
     <string name="theme_customization_brightness_slider_summary">Benutzerdefinierten Helligkeitsreglerstil festlegen</string>
