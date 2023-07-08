@@ -17,7 +17,6 @@ package org.derpfest.derpspace.fragments;
 
 import android.content.ContentResolver;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -25,10 +24,6 @@ import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
-import android.text.format.DateFormat;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -44,79 +39,27 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
-import org.derpfest.support.preferences.SystemSettingListPreference;
-import org.derpfest.support.preferences.SystemSettingSwitchPreference;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @SearchIndexable
 public class BatterySettings extends SettingsPreferenceFragment
             implements Preference.OnPreferenceChangeListener  {
 
-    private static final String BATTERY_STYLE = "status_bar_battery_style";
-    private static final String SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-    private static final String SHOW_BATTERY_PERCENT_INSIDE = "status_bar_show_battery_percent_inside";
-
-    private SystemSettingListPreference mBatteryStyle;
-    private SystemSettingSwitchPreference mBatteryPercent;
-    private SystemSettingSwitchPreference mBatteryPercentInside;
-
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.battery_settings);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-        final ContentResolver resolver = getActivity().getContentResolver();
-
-        mBatteryPercentInside = (SystemSettingSwitchPreference)
-                findPreference(SHOW_BATTERY_PERCENT_INSIDE);
-        mBatteryPercent = (SystemSettingSwitchPreference)
-                findPreference(SHOW_BATTERY_PERCENT);
-        enabled = Settings.System.getIntForUser(resolver,
-                SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT) == 1;
-        mBatteryPercent.setChecked(enabled);
-        mBatteryPercent.setOnPreferenceChangeListener(this);
-        mBatteryPercentInside.setEnabled(enabled);
-
-        mBatteryStyle = (SystemSettingListPreference)
-                findPreference(BATTERY_STYLE);
-        int value = Settings.System.getIntForUser(resolver,
-                BATTERY_STYLE, 0, UserHandle.USER_CURRENT);
-        mBatteryStyle.setValue(Integer.toString(value));
-        mBatteryStyle.setSummary(mBatteryStyle.getEntry());
-        mBatteryStyle.setOnPreferenceChangeListener(this);
-        updatePercentEnablement(value != 2);
+        ContentResolver resolver = getActivity().getContentResolver();
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-        final ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mBatteryStyle) {
-            int value = Integer.valueOf((String) objValue);
-            int index = mBatteryStyle.findIndexOfValue((String) objValue);
-            mBatteryStyle.setSummary(mBatteryStyle.getEntries()[index]);
-            Settings.System.putIntForUser(resolver,
-                    BATTERY_STYLE, value, UserHandle.USER_CURRENT);
-            updatePercentEnablement(value != 2);
-            return true;
-        } else if (preference == mBatteryPercent) {
-            boolean enabled = (boolean) objValue;
-            Settings.System.putInt(resolver,
-                    SHOW_BATTERY_PERCENT, enabled ? 1 : 0);
-            mBatteryPercentInside.setEnabled(enabled);
-            return true;
-        }
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         return false;
-    }
-
-    private void updatePercentEnablement(boolean enabled) {
-        mBatteryPercent.setEnabled(enabled);
-        mBatteryPercentInside.setEnabled(enabled && mBatteryPercent.isChecked());
-    }
+    }  
     
     @Override
     public int getMetricsCategory() {
