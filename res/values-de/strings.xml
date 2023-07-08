@@ -96,6 +96,10 @@
     <!-- Battery Settings -->
     <string name="battery_settings_title">Akkustandanzeige</string>   
 
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">Akkustandanzeige</string>
+    <string name="battery_percent_title">Akkustand in Prozent</string>
+
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">Hilf uns, Dir zu helfen!</string>
     <string name="derpspace_dialog_message">Wenn Du bei einer dieser Einstellungen einen Bug findest, melde ihn in unserer Telegram-Gruppe. Du MUSST folgendes angeben, wenn Du einen Fehlerbericht postest:\n\n1. Ein logcat oder last_kmsg\n2. Verwendeter Kernel und Mods\n3. Nützliche Informationen\n\nWenn Du etwas nicht angemessen meldest, erwarte NICHT, dass die Dinge behoben werden.</string>
@@ -494,19 +498,6 @@
     <!-- QS auto brightness icon -->
     <string name="qs_auto_brightness_title">Symbol für automatische Helligkeit</string>
     <string name="qs_auto_brightness_summary">Umschalter für adaptive Helligkeit neben dem Schieberegler anzeigen</string>
-
-    <!-- Battery customizations -->
-    <string name="battery_options">Akkuanzeige</string>
-    <string name="battery_style_title">Akkudarstellung</string>
-    <string name="battery_style_port">Hochformat</string>
-    <string name="battery_style_circle">Kreis</string>
-    <string name="battery_style_text">Text</string>
-    <string name="battery_percent_title">Akkuanzeige mit Prozent</string>
-    <string name="battery_percent_summary">Immer den Akkuprozentsatz anzeigen</string>
-    <string name="battery_percent_inside_title">Innerhalb des Symbols</string>
-    <string name="battery_percent_inside_summary">Akkuprozentsatz innerhalb des Symbols anzeigen</string>
-    <string name="show_battery_percent_charging_title">Akkuanzeige in Prozent beim Aufladen</string>
-    <string name="show_battery_percent_charging_summary">Beim Aufladen immer den Akkuprozentsatz anzeigen</string>
 
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Vibration bei Fingerabdruckerkennung</string>
