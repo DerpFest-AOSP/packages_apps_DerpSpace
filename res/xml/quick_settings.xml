@@ -120,12 +120,6 @@
 
     </PreferenceCategory>
 
-     <PreferenceCategory
-        android:key="quick_settings_battery_category"
-        android:title="@string/battery_title">
-
-    </PreferenceCategory>
-
     <PreferenceCategory
         android:title="@string/notification_material_dismiss_title">
 
