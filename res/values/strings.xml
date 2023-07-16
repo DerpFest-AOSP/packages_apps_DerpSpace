@@ -530,13 +530,6 @@
     <string name="qs_columns_portrait_title">Columns (portrait)</string>
     <string name="qs_columns_landscape_title">Columns (landscape)</string>
 
-    <!-- Quick settings styles -->
-    <string name="default_string">Default</string>
-    <string name="qs_styles_title">QS tile theme</string>
-    <string name="qs_outline">Outline</string>
-    <string name="qs_two_tone">Two-tone accent</string>
-    <string name="qs_shaded">Shaded</string>
-
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_category_title">Battery customizations</string>
     <string name="status_bar_battery_style_title">Battery style</string>

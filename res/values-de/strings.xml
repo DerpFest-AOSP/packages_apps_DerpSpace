@@ -523,10 +523,6 @@
     <string name="qs_columns_portrait_title">Spalten (Hochformat)</string>
     <string name="qs_columns_landscape_title">Spalten (Querformat)</string>
 
-    <!-- Quick settings styles -->
-    <string name="default_string">Standard</string>
-    <string name="qs_styles_title">Thema der QS-Kacheln</string>
-
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_category_title">Anpassung der Akkuanzeige</string>
     <string name="status_bar_battery_style_title">Akkudarstellung</string>
