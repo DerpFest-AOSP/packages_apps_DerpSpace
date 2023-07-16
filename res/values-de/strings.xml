@@ -440,12 +440,6 @@
     <string name="color_source_preset">Voreinstellung</string>
     <string name="accent_color_title">Akzentfarbe</string>
     <string name="accent_color_summary">Überschreiben der standardmäßigen Akzentfarbe</string>
-    <string name="luminance_factor_title">Luminanz</string>
-    <string name="luminance_factor_summary">Höhere Werte erzeugen hellere Farben</string>
-    <string name="chroma_factor_title">Chroma</string>
-    <string name="chroma_factor_summary">Höhere Werte erzeugen kräftigere Farben</string>
-    <string name="tint_background_title">Hintergrund färben</string>
-    <string name="tint_background_summary">Luminanz- und Chroma-Auswahl auch die Hintergrundfarben beeinflussen lassen</string>
 
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">Farbige Symbole</string>
