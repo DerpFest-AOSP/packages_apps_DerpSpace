@@ -27,12 +27,6 @@
         android:title="@string/theme_customization_category">
 
         <Preference
-            android:key="android.theme.customization.style"
-            android:title="@string/theme_customization_ui_style_title"
-            android:summary="@string/theme_customization_ui_style_summary"
-            android:fragment="org.derpfest.derpspace.fragments.UIStyles"/>
-
-        <Preference
             android:key="android.theme.customization.fonts"
             android:title="@string/theme_customization_font_title"
             android:summary="@string/theme_customization_font_summary"
