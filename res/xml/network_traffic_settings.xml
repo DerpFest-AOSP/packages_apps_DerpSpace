@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2022 Project Kaleidoscope
+     Copyright (C) 2017-2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,24 +14,32 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen
-    android:title="@string/network_traffic_title"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <org.derpfest.support.preferences.SystemSettingMainSwitchPreference
-        android:key="network_traffic_state"
-        android:title="@string/network_traffic_state_title"
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/network_traffic_settings_title">
+
+    <org.derpfest.support.preferences.SecureSettingMainSwitchPreference
+        android:key="network_traffic_mode"
+        android:title="@string/network_traffic_toggle_title"
         android:defaultValue="false" />
 
-    <PreferenceCategory
-        android:title="@string/network_options_title">
+    <org.derpfest.support.preferences.SecureSettingSwitchPreference
+        android:key="network_traffic_autohide"
+        android:title="@string/network_traffic_autohide"
+        android:summary="@string/network_traffic_autohide_summary"
+        android:defaultValue="true" />
 
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:key="network_traffic_autohide_threshold"
-            android:title="@string/network_traffic_autohide_title"
-            android:summary="@string/network_traffic_autohide_summary"
-            android:dependency="network_traffic_state"
-            android:defaultValue="false" />
-    </PreferenceCategory>
+    <org.derpfest.support.preferences.SystemSettingDropDownPreference
+        android:key="network_traffic_units"
+        android:title="@string/network_traffic_units_title"
+        android:entries="@array/network_traffic_units_entries"
+        android:entryValues="@array/network_traffic_units_values"
+        android:summary="%s"
+        android:persistent="false" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="network_traffic_footer"
+        android:title="@string/network_traffic_settings_summary"
+        android:selectable="false" />
 </PreferenceScreen>

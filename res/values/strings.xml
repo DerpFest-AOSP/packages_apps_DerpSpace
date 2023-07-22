@@ -206,13 +206,16 @@
     <string name="reticker_landscape_only_title">Landscape only</string>
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
 
-    <!-- Network traffic -->
-    <string name="network_traffic_title">Network traffic indicator</string>
-    <string name="network_traffic_summary">Enable or disable network speed indicator in status bar</string>
-    <string name="network_traffic_state_title">Enable "Network traffic indicator"</string>
-    <string name="network_options_title">Options</string>
-    <string name="network_traffic_autohide_title">Hide network traffic indicator when inactive</string>
-    <string name="network_traffic_autohide_summary">Hide when the network traffic is below 1 KB/s</string>
+    <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">Network traffic monitor</string>
+    <string name="network_traffic_toggle_title">Show Network traffic</string>
+    <string name="network_traffic_settings_summary">Display the current network traffic levels in the status bar</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_units_title">Traffic measurement units</string>
+    <string name="network_traffic_units_bits" translatable="false">kbps, Mbps, Gbps</string>
+    <string name="network_traffic_units_bytes" translatable="false">kB/s, MB/s, GB/s</string>
+    <string name="network_traffic_disabled_clock">Network traffic disabled due to clock position</string>
 
     <!-- Media art -->
     <string name="lockscreen_media_art_options_title">Media cover art</string>
