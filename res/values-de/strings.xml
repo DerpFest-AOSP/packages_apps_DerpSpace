@@ -84,6 +84,9 @@
     <!-- Quick Settings footer category -->
     <string name="footer_category">Fußzeile</string>
 
+    <!-- Quick Settings header category -->
+    <string name="header_category">Kopf</string>
+
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusbar-Elemente</string>
 
@@ -502,6 +505,9 @@
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">Vibration bei Fingerabdruckerkennung</string>
     <string name="fprint_sucess_vib_summary">Bei erfolgreicher Fingerabdruckerkennung vibrieren</string>
+
+    <!-- QS Header -->
+    <string name="qs_header_image_title">QS-Header-Bild</string>
 
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Stil des Helligkeitsreglers</string>
