@@ -39,6 +39,12 @@
             android:dependency="secure_lockscreen_qs_disabled"
             android:defaultValue="true" />
 
+        <org.derpfest.support.preferences.SecureSettingSwitchPreference
+            android:key="quick_settings_vibrate"
+            android:title="@string/quick_settings_vibrate_title"
+            android:summary="@string/quick_settings_vibrate_summary"
+            android:defaultValue="false"/>
+
         <org.derpfest.support.preferences.CustomSystemSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
@@ -194,24 +200,5 @@
             android:entryValues="@array/qs_tile_animation_interpolator_values"
             android:summary="%s"
             android:defaultValue="0" />
-
-    <PreferenceCategory
-        android:key="quick_settings_vibration"
-        android:title="@string/qs_tile_vibration_title"/>
-
-        <org.derpfest.support.preferences.SecureSettingSwitchPreference
-            android:key="quick_settings_vibrate"
-            android:title="@string/quick_settings_vibrate_title"
-            android:summary="@string/quick_settings_vibrate_summary"
-            android:defaultValue="false"/>
-
-        <org.derpfest.support.preferences.SecureSettingSeekBarPreference
-            android:key="quick_settings_vibrate_duration"
-            android:title="@string/quick_settings_vibrate_duration_title"
-            android:summary="@string/quick_settings_vibrate_duration_summary"
-            android:max="200"
-            android:min="10"
-            android:defaultValue="45"
-            android:dependency="quick_settings_vibrate" />
 
 </PreferenceScreen>
