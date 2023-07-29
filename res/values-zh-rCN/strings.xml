@@ -85,9 +85,6 @@
     <!-- Quick Settings footer category -->
     <string name="footer_category">脚注</string>
 
-    <!-- Quick Settings header category -->
-    <string name="header_category">标头</string>
-
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">状态栏图标</string>
 
@@ -99,6 +96,10 @@
 
     <!-- Battery Settings -->
     <string name="battery_settings_title">电池设置</string>
+
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">电池栏样式</string>
+    <string name="battery_percent_title">电池栏百分比</string>
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">让我们帮助你！</string>
@@ -143,10 +144,6 @@
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">显示数据网络关闭叹号</string>
     <string name="data_disabled_icon_summary">当数据网络关闭时在信号图标上显示一个叹号</string>
-
-    <!-- Old mobile type icons -->
-    <string name="use_old_mobiletype_title">信号类型显示</string>
-    <string name="use_old_mobiletype_summary">在移动信号指示器的上方显示信号类型</string>
 
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">锁屏充电信息</string>
@@ -263,18 +260,17 @@
     <string name="disguise_props_for_music_app_summary">对一些音乐应用伪装机型以正确启用状态栏歌词. 启用该设置后需要重启音乐应用</string>
 
     <!-- Statusbar logo -->
-    <string name="status_bar_logo_category_title">Logo</string>
     <string name="status_bar_logo_title">Logo</string>
     <string name="status_bar_logo_summary">在状态栏中显示一个 Logo</string>
     <string name="status_bar_logo_position_title">位置</string>
-    <string name="status_bar_logo_position_summary">选择 logo 的显示位置</string>
     <string name="status_bar_logo_position_right">右对齐</string>
     <string name="status_bar_logo_position_left">左对齐</string>
     <string name="status_bar_logo_style_title">样式</string>
-    <string name="status_bar_logo_style_derp">DerpFest</string>
-    <string name="status_bar_logo_style_derp_alt">DerpFest三角</string>
+    <string name="status_bar_logo_style_derp">DerpFest 默认</string>
+    <string name="status_bar_logo_style_derp_2">DerpFest三角</string>
+    <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">阿迪达斯</string>
-    <string name="status_bar_logo_style_airjordan">Air Jordan(AJ)</string>
+    <string name="status_bar_logo_style_alien">外星人</string>
     <string name="status_bar_logo_style_apple">苹果</string>
     <string name="status_bar_logo_style_avengers">复仇者联盟</string>
     <string name="status_bar_logo_style_batman">蝙蝠侠</string>
@@ -283,14 +279,27 @@
     <string name="status_bar_logo_style_biohazard">生物危害警示</string>
     <string name="status_bar_logo_style_blackberry">黑莓</string>
     <string name="status_bar_logo_style_cannabis">Cannabis</string>
+    <string name="status_bar_logo_style_emoticon_cool">emoji 小帅哥</string>
+    <string name="status_bar_logo_style_emoticon_devil">emoji 小恶魔</string>
     <string name="status_bar_logo_style_fire">火焰</string>
+    <string name="status_bar_logo_style_heart">心</string>
     <string name="status_bar_logo_style_nike">耐克(Nike)</string>
-    <string name="status_bar_logo_style_pac_man">吃豆人</string>
+    <string name="status_bar_logo_style_pacman">吃豆人</string>
     <string name="status_bar_logo_style_puma">彪马(Puma)</string>
-    <string name="status_bar_logo_style_rog">ROG 玩家国度</string>
+    <string name="status_bar_logo_style_rog">败家之眼</string>
+    <string name="status_bar_logo_style_spiderman">失败的man</string>
     <string name="status_bar_logo_style_superman">超人</string>
     <string name="status_bar_logo_style_windows">Windows</string>
-    <string name="status_bar_logo_style_xbox">XBOX</string>
+    <string name="status_bar_logo_style_xbox">Xbox</string>
+    <string name="status_bar_logo_style_ghost">鬼魂</string>
+    <string name="status_bar_logo_style_ninja">忍者</string>
+    <string name="status_bar_logo_style_robot">机器人</string>
+    <string name="status_bar_logo_style_ironman">钢铁侠</string>
+    <string name="status_bar_logo_style_captain_america">美国队长</string>
+    <string name="status_bar_logo_style_flash">闪电侠</string>
+    <string name="status_bar_logo_style_tux">Tux</string>
+    <string name="status_bar_logo_style_ubuntu">Ubuntu</string>
+    <string name="status_bar_logo_style_mint">Linux Mint</string>
 
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">关于律动脉冲</string>
@@ -357,7 +366,7 @@
     <string name="notification_material_dismiss_style_playlist">检录列表</string>
     <string name="notification_material_dismiss_style_magnet">磁铁</string>
     <string name="notification_material_dismiss_style_derpfest">DerpFest logo</string>
-    <string name="notification_material_dismiss_bgstyle_title">按钮样式</string>
+    <string name="notification_material_dismiss_bgstyle_title">按钮背景样式</string>
     <string name="notification_material_dismiss_bgstyle_default">环形 (默认)</string>
     <string name="notification_material_dismiss_bgstyle_rectangle">圆角矩形</string>
     <string name="notification_material_dismiss_bgstyle_square">方形</string>
@@ -373,10 +382,6 @@
     <!-- Clock auto hide -->
     <string name="status_bar_clock_auto_hide_title">自动隐藏</string>
     <string name="status_bar_clock_auto_hide_summary">当启动器时钟可见时自动隐藏状态栏时钟</string>
-
-    <!-- Squiggle animation -->
-    <string name="show_squiggle_animation_title">显示曲线进度条</string>
-    <string name="show_squiggle_animation_summary">在媒体播放面板中显示曲线样式的进度条\n该项变更后需要切换音乐/暂停音乐/快进以应用更改</string>
 
     <!-- Ambient battery bar settings -->
     <string name="ambient_ui">熄屏显示</string>
@@ -408,17 +413,22 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">背景条</string>
     <string name="statusbar_clock_chip_summary">显示 Material You 风格化的状态栏时钟背景条</string>
-    <string name="solid_accent">块状 (带取色)</string>
+    <string name="solid_accent">纯色</string>
     <string name="outline">描边</string>
-    <string name="solid_accent_gradient">块状 (带副色)</string>
+    <string name="solid_accent_gradient">纯色 (强调色渐变)</string>
+    <string name="solid_gradient">纯色 (副色渐变)</string>
+    <string name="solid_gradient_corner">块状 (描边渐变)</string>
+    <string name="solid_gradient_void">虚空渐变</string>
+    <string name="solid_gradient_neumorph">神经样渐变</string>
+    <string name="solid_gradient_stroke">斜轴描边</string>
+    <string name="solid_accent_transperent">主色透明</string>    
+    <string name="solid_gradient_light">浅色渐变</string>
+    <string name="solid_gradient_shape">斜轴浅色渐变</string>
+    <string name="solid_gradient_void_light">虚空浅色渐变</string>
 
     <!-- Separate signal icons -->
     <string name="separate_signal_icons_title">分离信号图标</string>
     <string name="separate_signal_icons_summary">单独显示移动信号和 Wi-Fi 图标\n需要重启 SystemUI </string>
-
-    <!-- Hide statusbar on lockscreen -->
-    <string name="lockscreen_hide_status_bar_title">隐藏状态栏</string>
-    <string name="lockscreen_hide_status_bar_summary">该项启动时，锁屏界面的状态栏将被自动隐藏</string>
 
     <!-- Android P animation style -->
     <string name="pie_animation_style_title">Android P 动画样式</string>
@@ -436,6 +446,7 @@
     <string name="theme_style_fruit_salad">水果沙拉</string>
     <string name="theme_style_muted">禁用</string>
     <string name="theme_style_content">自适应</string>
+    <string name="theme_style_monochromatic">黑白风</string>
     <string name="color_source_title">取色源</string>
     <string name="color_source_both">我全都要 (默认)</string>
     <string name="color_source_home">桌面壁纸</string>
@@ -497,39 +508,67 @@
     <string name="qs_auto_brightness_title">自动亮度图标</string>
     <string name="qs_auto_brightness_summary">在滑块左侧显示自动亮度图标</string>
 
-    <!-- Ambient Wake gesture -->
-    <string name="ambient_wake_gestures_title">手势唤醒熄屏显示</string>
-    <string name="ambient_wake_gestures_summary">当您使用手势唤醒设备时显示熄屏显示界面而非锁屏界面</string>
-
-    <!-- Battery customizations -->
-    <string name="battery_options">电量显示</string>
-    <string name="battery_style_title">电池风格</string>
-    <string name="battery_style_port">纵向</string>
-    <string name="battery_style_circle">环状</string>
-    <string name="battery_style_text">纯文字</string>
-    <string name="battery_percent_title">显示</string>
-    <string name="battery_percent_summary">总是显示电量百分比</string>
-    <string name="battery_percent_inside_title">内部显示电量百分比</string>
-    <string name="battery_percent_inside_summary">在图标内部显示电量百分比</string>
-    <string name="show_battery_percent_charging_title">充电时显示电量百分比</string>
-    <string name="show_battery_percent_charging_summary">强制在充电时显示电池百分比</string>
-
     <!-- Fingerprint authentication vibration -->
     <string name="fprint_sucess_vib_title">指纹识别振动</string>
     <string name="fprint_sucess_vib_summary">当指纹识别成功时振动</string>
 
-    <!-- QS Battery estimates -->
-    <string name="qs_show_battery_estimate_title">续航时间估计</string>
-    <string name="qs_show_battery_estimate_summary_on">在快速设置面板中显示估计的剩余续航时间</string>
-    <string name="qs_show_battery_estimate_summary_off">在快速设置面板中隐藏估计的剩余续航时间</string>
+    <!-- Navbar styles -->
+    <string name="theme_customization_navbar_title">导航栏样式</string>
+    <string name="theme_customization_navbar_summary">自定义导航栏样式</string>
 
-    <!-- Privacy Indicator -->
-    <string name="mic_camera_privacy_indicator_title">分离麦克风与相机隐私指示器</string>
-    <string name="mic_camera_privacy_indicator_summary">当应用使用麦克风或相机时使用分离的指示器</string>
-    <string name="location_privacy_indicator_title">位置服务隐私指示器</string>
-    <string name="location_privacy_indicator_summary">当应用使用位置服务时显示单独的隐私指示器</string>
+    <!-- QS tiles layout direction: vertical or horizontal -->
+    <string name="qs_tile_layout_category_title">磁贴布局</string>
+    <string name="qs_tile_layout_title">居中对齐</string>
+    <string name="qs_tile_layout_summary">启用以使磁贴居中对齐</string>
 
-    <!-- QS Header -->
-    <string name="qs_header_image_title">快速设置标头图像</string>
+    <!-- QS tiles title visibility -->
+    <string name="qs_tile_title_visibility_title">隐藏磁贴标题</string>
+    <string name="qs_tile_title_visibility_summary">仅显示磁贴图标</string>
 
+    <!-- QS tiles layout  -->
+    <string name="qs_layout_category_title">磁贴布局</string>
+    <string name="qs_tile_label_hide_title">隐藏磁贴标题</string>
+    <string name="qs_tile_label_hide_summary">仅显示磁贴图标</string>
+    <string name="qs_tile_label_size_title">磁贴标题字体大小</string>
+    <string name="qs_columns_portrait_title">磁贴列数</string>
+    <string name="qs_columns_landscape_title">磁贴行数</string>
+
+    <!-- Quick settings styles -->
+    <string name="default_string">默认</string>
+    <string name="qs_styles_title">磁贴主题</string>
+    <string name="qs_outline">描边</string>
+    <string name="qs_two_tone">双味色彩</string>
+    <string name="qs_shaded">阴影</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_category_title">电池栏自定义</string>
+    <string name="status_bar_battery_style_title">电池样式</string>
+    <string name="status_bar_battery_style_icon_portrait">纵向图标</string>
+    <string name="status_bar_battery_style_icon_rlandscape">横向图标 (向右)</string>
+    <string name="status_bar_battery_style_icon_landscape">横向图标 (向左)</string>
+    <string name="status_bar_battery_style_circle">环状</string>
+    <string name="status_bar_battery_style_dotted_circle">虚线环状</string>
+    <string name="status_bar_battery_style_filled_circle">实心圆</string>
+    <string name="status_bar_battery_style_text">纯文字</string>
+    <string name="status_bar_battery_style_hidden">隐藏</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">胶囊</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">iOS(纵向)</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Mx(纵向)</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Airoo(横向)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">样式 A (横向向右)</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">样式 A (横向向左)</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">样式 B (横向向右)</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">样式 B (横向向左)</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">iOS 16</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Origami</string>
+    <string name="status_bar_battery_style_icon_landscape_miui_pill">MIUI</string>
+    <string name="status_bar_battery_percent_title">电池百分比</string>
+    <string name="status_bar_battery_percent_hidden">隐藏</string>
+    <string name="status_bar_battery_percent_text_inside">在图标内部显示</string>
+    <string name="status_bar_battery_percent_text_next_right">在图标右侧显示</string>
+    <string name="status_bar_battery_percent_text_next_left">在图标左侧显示</string>
+    <string name="status_bar_battery_text_charging_title">充电时显示百分比</string>
+    <string name="status_bar_battery_text_charging_summary">充电时总是显示百分比</string>
 </resources>
