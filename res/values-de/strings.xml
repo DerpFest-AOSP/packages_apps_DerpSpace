@@ -556,4 +556,7 @@
     <string name="status_bar_battery_percent_text_next_left">Neben dem Symbol (links)</string>
     <string name="status_bar_battery_text_charging_title">Akkuanzeige in Prozent beim Aufladen</string>
     <string name="status_bar_battery_text_charging_summary">Beim Aufladen immer den Akkuprozentsatz anzeigen</string>
+
+    <!-- QS battery -->
+    <string name="qs_use_status_bar_battery_style">Gleich wie in Statusleiste</string>
 </resources>
