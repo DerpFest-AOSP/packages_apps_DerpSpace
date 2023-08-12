@@ -559,4 +559,8 @@
 
     <!-- QS battery -->
     <string name="qs_use_status_bar_battery_style">Gleich wie in Statusleiste</string>
+
+    <!-- Brightness slider haptic feedback -->
+    <string name="qs_brightness_slider_haptic_title">Haptisches Feedback</string>
+    <string name="qs_brightness_slider_haptic_summary">Haptisches Feedback bei Helligkeitsregelung mithilfe des Schiebereglers</string>
 </resources>
