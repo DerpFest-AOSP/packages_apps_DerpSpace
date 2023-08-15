@@ -75,6 +75,12 @@
             android:fragment="org.derpfest.derpspace.fragments.SignalIcons"/>
 
         <Preference
+            android:key="android.customization.sb_data"
+            android:title="@string/theme_customization_data_title"
+            android:summary="@string/theme_customization_data_summary"
+            android:fragment="org.derpfest.derpspace.fragments.DataStyles"/>
+
+        <Preference
             android:key="android.theme.customization.adaptive_icon_shape"
             android:title="@string/theme_customization_icon_shape_title"
             android:summary="@string/theme_customization_icon_shape_summary"
