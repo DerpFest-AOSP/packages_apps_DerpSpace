@@ -18,22 +18,31 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General app strings -->
+    <string name="add">Lägg till</string>
+    <string name="advanced">Avancerat</string>
+    <string name="cancel">Avbryt</string>
     <string name="default_text">Standard</string>
+    <string name="dlg_ok">Ok</string>
     <string name="attention">Uppmärksamhet</string>
+    <string name="loading">Laddar\u2026</string>
+    <string name="reset">Reset</string>
     <string name="reset_colors">Återställ färger</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Text</string>
     <string name="icon_title">Ikon</string>
     <string name="color_title">Färg</string>
     <string name="colors_title">Färger</string>
     <!-- DerpSpace categories -->
     <string name="icons_category">Ikoner</string>
     <string name="status_bar_category">Statusfält</string>
+    <string name="notifications_panel_category">QS panel</string>
+    <string name="system_category">System</string>
     <string name="lockscreen_category">Låsskärm</string>
     <string name="udfps_category">Fingeravtryck under display</string>
     <string name="listview">ListVy</string>
     <!-- Frags -->
     <!-- General Tweaks -->
     <string name="general_tweaks_title">Allmänna inställningar</string>
-    <!-- Lockscreen icons -->
     <!-- Lockscreen UI -->
     <string name="lockscreen_ui_title">Låsskärm UI</string>
     <!-- Lockscreen general category -->
@@ -50,13 +59,12 @@
     <string name="notifications_title">Aviseringar</string>
     <!-- Quick Settings -->
     <string name="quick_settings_title">Snabbinställningar</string>
-    <!-- Status bar clock options -->
+    <!-- Status bar clock and date options -->
     <string name="status_bar_clock_title">Klocka &amp; datuminställningar</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Reglage för ljusstyrka</string>
     <!-- Quick Settings footer category -->
     <string name="footer_category">Sidfot</string>
-    <!-- Quick Settings header category -->
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusfält objekt</string>
     <!-- Customisation -->
@@ -74,8 +82,11 @@
     <string name="derpspace_dialog_toast">LÄS VÄLLET THING!</string>
     <string name="artwork_media_fade_level_summary">Fading media tryckfil bild</string>
     <!-- QuickSettings haptic feedback -->
+    <string name="qs_tile_vibration_title">Vibration</string>
     <string name="quick_settings_vibrate_title">Vibrera vid tryck</string>
     <string name="quick_settings_vibrate_summary">Vibrera när du rör vid QS-brickor</string>
+    <string name="quick_settings_vibrate_duration_title">Vibrationslängd</string>
+    <string name="quick_settings_vibrate_duration_summary">Hur många millisekunder att vibrera</string>
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animationer</string>
     <string name="qs_tile_animation_style_title">Animering stil</string>
@@ -95,12 +106,21 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Överskrid</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Förutse</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Förutse överskridande</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G ikon</string>
     <string name="show_fourg_icon_summary">Visa 4G-ikonen i signalikonen istället LTE</string>
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Visa data-inaktiverad ikon</string>
     <string name="data_disabled_icon_summary">Visa korsskylten bredvid signalfältet när data är inaktiverad</string>
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">QS sidfotsvarningar</string>
+    <string name="qs_footer_warnings_summary">Visa en varning längst ner på QS-panelen när nätverket övervakas av externa appar eller vpn</string>
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Liten ikon för mobiltyp</string>
+    <string name="use_old_mobiletype_summary">Visa ikonen för mobiltyp ovanpå signalindikatorn</string>
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Låsskärm laddningsinformation</string>
     <string name="lockscreen_battery_info_summary">Visa laddningsström, spänning, watt och batteritemperatur på låsskärmen vid laddning</string>
@@ -115,7 +135,11 @@
     <string name="notifications_general_category_title">Allmänt</string>
     <!-- Notification count -->
     <string name="status_bar_notif_count_title">Antal aviseringar</string>
+    <string name="status_bar_notif_count_summary">Visa antalet väntande aviseringar</string>
     <!-- Units -->
+    <string name="unit_seconds">s</string>
+    <string name="unit_milliseconds">ms</string>
+    <string name="unit_pixels">dp</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <string name="theme_customization_category">Tema</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
@@ -141,10 +165,11 @@
     <!-- UI styles -->
     <string name="theme_customization_ui_style_title">UI stil</string>
     <string name="theme_customization_ui_style_summary">Ange anpassad stil för ditt gränssnitt</string>
-    <!-- Fonts -->
     <!-- Applications fragment -->
+    <string name="search">Sök</string>
     <string name="search_apps">Sök appar</string>
     <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Ersätt dina aviseringar med en omdesignad version av klistermärken. \nSlim och mindre invasiv än en standardavisering</string>
     <string name="reticker_colored_title">Använd app färgad bakgrund</string>
     <string name="reticker_colored_summary">Ersätt bakgrundsfärg för reTicker med hjälp av aviseringsapp huvudfärg</string>
@@ -164,30 +189,88 @@
     <!-- Lock screen cover art -->
     <string name="lockscreen_media_blur_title">Media art oskärpa nivå</string>
     <!-- Clock position -->
+    <string name="status_bar_clock_position_center">Centrera</string>
+    <string name="status_bar_clock_position_left">Vänster</string>
+    <string name="status_bar_clock_position_right">Höger</string>
+    <string name="status_bar_clock_position_title">Klockans position</string>
     <!-- Clock AM/PM -->
+    <string name="status_bar_am_pm_hidden">Hidden</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Liten</string>
     <string name="status_bar_am_pm_title">Klockans AM/PM-stil</string>
     <string name="status_bar_am_pm_unavailable">24-timmarsklocka är aktiverad</string>
     <!-- Clock show seconds -->
     <string name="status_bar_clock_show_seconds_title">Visa sekunder för klocka</string>
     <string name="status_bar_clock_show_seconds_desc">Visa timmar, minuter och sekunder</string>
+    <!-- Battery style and percentage -->
+    <string name="status_bar_battery_style_circle">Cirkel</string>
+    <string name="status_bar_battery_style_icon_portrait">Ikon porträtt</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_title">Stil på batteristatus</string>
+    <string name="status_bar_battery_percentage_hidden">Hidden</string>
+    <string name="status_bar_battery_percentage_text_inside">Inuti ikonen</string>
+    <string name="status_bar_battery_percentage_text_next">Bredvid ikonen</string>
+    <string name="status_bar_battery_percentage_title">Batteri procent</string>
+    <!-- Brightness slider -->
+    <string name="qqs_show_brightness_title">Visa reglaget för ljusstyrka i Quick QS-panelen</string>
+    <string name="brightness_slider_position_title">Reglage för ljusstyrka</string>
+    <string name="top">Överst</string>
+    <string name="bottom">Botten</string>
+    <string name="show_auto_brightness_button_title">Visa knappen för automatisk ljusstyrka</string>
+    <!-- Pulse -->
+    <string name="ambient_light_category">Kant belysning</string>
+    <string name="keywords_pulse_ambient_light_display">notifikation, meddelanden, kant, ljus, färg, färg</string>
+    <string name="pulse_ambient_light_text">Kantbelysning får din skärm att lysa när du får en avisering. Detta gör det lättare att räkna när du får en puls medan telefonen är doze läge.</string>
+    <string name="pulse_ambient_light_enable">Använd Edge belysning</string>
+    <string name="pulse_ambient_light_title">Kant belysning</string>
+    <string name="pulse_ambient_light_summary">Tänd upp sidokanterna på skärmen vid aviseringspuls</string>
+    <string name="ambient_notification_light_accent_title">System accentfärg</string>
+    <string name="ambient_notification_light_color_automatic_title">Färg på aviseringar</string>
+    <string name="pulse_ambient_light_color">Vid pulsering, använd</string>
+    <!-- QS tiles layout -->
+    <string name="qs_tile_layout_title">QS panel layout</string>
+    <string name="qs_tile_layout_summary">Anpassa rutornas layout i QS-panelen</string>
+    <string name="qs_tiles_layout_category">Plattans layout</string>
+    <string name="qs_rows_portrait_title">Rader (porträtt)</string>
+    <string name="qqs_rows_portrait_title">Rader (Quick QS porträtt)</string>
+    <string name="qs_columns_portrait_title">Kolumner (porträtt)</string>
+    <string name="qs_apply_change_button_title">Tillämpa ändring</string>
+    <string name="qs_apply_change_failed">Misslyckades att tillämpa ändring</string>
+    <string name="qs_tile_hide_label_title">Dölj etiketter</string>
+    <string name="qs_tile_hide_label_summary">Visa endast ikon för QS-paneler</string>
+    <string name="qs_tile_vertical_layout_title">Vertikal layout</string>
+    <string name="qs_tile_vertical_layout_summary">Aktivera vertikal layout för QS-plattor</string>
     <!-- Statusbar lyric -->
     <string name="status_bar_lyric_title">Statusfält lyrisk</string>
     <string name="status_bar_lyric_summary">Visa text i statusfältet (behöver stöd för appen)</string>
     <string name="status_bar_show_lyric_title">Aktivera låttext i statusfältet</string>
     <!-- Statusbar logo -->
+    <string name="status_bar_logo_category_title">Logotyp</string>
     <string name="status_bar_logo_title">Logotyp</string>
     <string name="status_bar_logo_summary">Aktivera för att visa logotyp i statusfältet</string>
     <string name="status_bar_logo_position_title">Befattning</string>
+    <string name="status_bar_logo_position_summary">Välj vilken sida du vill visa logotypen på, vänster eller höger</string>
     <string name="status_bar_logo_position_right">Höger</string>
     <string name="status_bar_logo_position_left">Vänster</string>
     <string name="status_bar_logo_style_title">Stil</string>
     <string name="status_bar_logo_style_derp">DerpFest</string>
+    <string name="status_bar_logo_style_derp_alt">DerpFest triangel</string>
+    <string name="status_bar_logo_style_adidas">Adidas</string>
+    <string name="status_bar_logo_style_airjordan">Air Jordanien</string>
     <string name="status_bar_logo_style_apple">Äpple</string>
+    <string name="status_bar_logo_style_avengers">Avengers</string>
+    <string name="status_bar_logo_style_batman">Batman</string>
     <string name="status_bar_logo_style_batman_tdk">Batman Den Mörka Riddaren</string>
     <string name="status_bar_logo_style_beats">Slå</string>
     <string name="status_bar_logo_style_biohazard">Biorisk</string>
     <string name="status_bar_logo_style_blackberry">Björnbär</string>
+    <string name="status_bar_logo_style_cannabis">Cannabis</string>
     <string name="status_bar_logo_style_fire">Eld</string>
+    <string name="status_bar_logo_style_nike">Nike</string>
+    <string name="status_bar_logo_style_pac_man">Pac-Man</string>
+    <string name="status_bar_logo_style_puma">Puma</string>
+    <string name="status_bar_logo_style_rog">ROG</string>
+    <string name="status_bar_logo_style_superman">Superman</string>
     <string name="status_bar_logo_style_windows">Fönster</string>
     <string name="status_bar_logo_style_xbox">XBOX</string>
     <!-- Pulse music visualizer -->
@@ -211,10 +294,14 @@
     <string name="pulse_solid_units_opacity">Solida linjer opacitet</string>
     <string name="pulse_solid_dimen_category">Inställningar för Solida linjer</string>
     <string name="pulse_color_mode_title">Färg</string>
+    <string name="pulse_color_accent">Accent</string>
     <string name="pulse_color_custom">Anpassad</string>
+    <string name="pulse_color_lava_lamp">Lava lamp</string>
+    <string name="pulse_color_auto">Album</string>
     <string name="pulse_color_user_title">Välj färg</string>
     <string name="pulse_smoothing_enabled_title">Slå på utjämning</string>
     <string name="pulse_smoothing_enabled_summary">Varje bar animeras mer smidigt</string>
+    <string name="pulse_custom_dimen">Bar width</string>
     <string name="pulse_custom_div">Fält avstånd</string>
     <string name="pulse_filled_block_size">Blockera storlek</string>
     <string name="pulse_empty_block_size">Blockera avstånd</string>
@@ -230,6 +317,8 @@
     <string name="udfps_icon_picker_summary">Välj din favoritikon för fingeravtryck</string>
     <!-- Lockscreen charge temperature unit -->
     <string name="lockscreen_charge_temp_unit_title">Temperaturenhet</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
+    <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
     <!-- Material dismiss all button for notifications -->
     <string name="notification_material_dismiss_title">Rensa all aviseringsknapp</string>
     <string name="notification_material_dismiss_summary">Ersätt rensa all aviseringstext med en flytande knapp i materialstil</string>
@@ -241,6 +330,13 @@
     <!-- Clock auto hide -->
     <string name="status_bar_clock_auto_hide_title">Dölj automatiskt</string>
     <string name="status_bar_clock_auto_hide_summary">Dölj klockan om launcher är synlig</string>
+    <!-- Display Settings: Title of the setting which toggles wallpaper zooming effects on interraction -->
+    <string name="wallpaper_zoom_effect_title">Bakgrund zoom effekt</string>
+    <!-- Display Settings: Subtitle of the setting which toggles wallpaper zooming effects on interraction -->
+    <string name="wallpaper_zoom_effect_summary">Zooma tapeten för att visa zoom-ut djup animation. Bakgrundsbilder kan drabbas av kvalitet minskning</string>
+    <!-- Squiggle animation -->
+    <string name="show_squiggle_animation_title">Visa squiggle animation</string>
+    <string name="show_squiggle_animation_summary">Visa media panel squiggle animation\nEfter ändring måste du växla musik, pausa musik eller flytta förloppsindikatorn för att tillämpa</string>
     <!-- Ambient battery bar settings -->
     <string name="ambient_ui">Omgivande/alltid på display</string>
     <string name="ambient_battery_settings_title">Batterifält</string>
@@ -267,34 +363,13 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Bakgrunds chip</string>
     <string name="statusbar_clock_chip_summary">Visa accentuerade marker bakom klockan</string>
-    <!-- Separate signal icons -->
+    <!-- Hide statusbar on lockscreen -->
+    <string name="lockscreen_hide_status_bar_title">Dölj statusfält</string>
+    <string name="lockscreen_hide_status_bar_summary">När aktiverad, kommer statusfältet att döljas på låsskärmen</string>
     <!-- Android P animation style -->
     <string name="pie_animation_style_title">Android P-animeringsstil</string>
     <string name="pie_animation_style_summary">Aktivera Android P \"Standard\" animationer</string>
-    <!-- Monet settings -->
-    <!-- Statusbar colored icons -->
-    <!-- Wi-Fi Standard icon -->
-    <!-- QS Transparency -->
-    <!-- Lockscreen bottom shortcuts -->
-    <!-- Disable QS -->
-    <!-- QS brightness slider -->
-    <!-- QS auto brightness icon -->
-    <!-- Fingerprint authentication vibration -->
-    <!-- QS Header -->
-    <!-- Brightness slider styles -->
-    <!-- Navbar styles -->
-    <!-- QS tiles layout direction: vertical or horizontal -->
-    <string name="qs_tile_layout_title">QS panel layout</string>
-    <string name="qs_tile_layout_summary">Anpassa rutornas layout i QS-panelen</string>
-    <!-- QS tiles title visibility -->
-    <!-- QS tiles layout  -->
-    <string name="qs_columns_portrait_title">Kolumner (porträtt)</string>
-    <!-- Quick settings styles -->
-    <!-- Status bar - Battery -->
-    <string name="status_bar_battery_style_title">Stil på batteristatus</string>
-    <string name="status_bar_battery_style_icon_portrait">Ikon porträtt</string>
-    <string name="status_bar_battery_style_circle">Cirkel</string>
-    <!-- QS battery -->
-    <!-- Brightness slider haptic feedback -->
-    <!-- Custom Data icons -->
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Parallellt utrymme</string>
+    <string name="laboratory_parallel_space_summary">Tillåt att köra flera instanser av samma program parallellt</string>
 </resources>
