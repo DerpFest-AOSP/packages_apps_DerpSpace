@@ -18,6 +18,12 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General app strings -->
+    <string name="add">Dodaj</string>
+    <string name="advanced">Zaawansowane</string>
+    <string name="cancel">Anuluj</string>
+    <string name="dlg_ok">OK</string>
+    <string name="loading">Wczytywanie…</string>
+    <string name="reset">Resetuj</string>
     <!-- DerpSpace categories -->
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -61,6 +67,7 @@
     <!-- UI styles -->
     <!-- Fonts -->
     <!-- Applications fragment -->
+    <string name="search">Wyszukiwanie</string>
     <!-- reTicker -->
     <!-- Network traffic -->
     <!-- Media art -->

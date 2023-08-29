@@ -18,6 +18,12 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General app strings -->
+    <string name="add">Přidat</string>
+    <string name="advanced">Pokročilé</string>
+    <string name="cancel">Storno</string>
+    <string name="dlg_ok">Budiž</string>
+    <string name="loading">Načítání</string>
+    <string name="reset">Reset</string>
     <!-- DerpSpace categories -->
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -61,6 +67,7 @@
     <!-- UI styles -->
     <!-- Fonts -->
     <!-- Applications fragment -->
+    <string name="search">Hledat</string>
     <!-- reTicker -->
     <!-- Network traffic -->
     <!-- Media art -->

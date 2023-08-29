@@ -18,6 +18,12 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General app strings -->
+    <string name="add">追加</string>
+    <string name="advanced">高度な設定</string>
+    <string name="cancel">キャンセル</string>
+    <string name="dlg_ok">OK</string>
+    <string name="loading">読み込み中\u2026</string>
+    <string name="reset">リセット</string>
     <!-- DerpSpace categories -->
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -49,6 +55,7 @@
     <!-- QS footer text -->
     <!-- Notifications general category -->
     <!-- Notification count -->
+    <string name="status_bar_notif_count_summary">保留中の通知の数を表示する</string>
     <!-- Units -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
@@ -61,12 +68,20 @@
     <!-- UI styles -->
     <!-- Fonts -->
     <!-- Applications fragment -->
+    <string name="search">検索</string>
     <!-- reTicker -->
     <!-- Network traffic -->
     <!-- Media art -->
     <!-- Lock screen cover art -->
     <!-- Clock position -->
+    <string name="status_bar_clock_position_center">中央</string>
+    <string name="status_bar_clock_position_left">左</string>
+    <string name="status_bar_clock_position_right">右</string>
+    <string name="status_bar_clock_position_title">時計の位置</string>
     <!-- Clock AM/PM -->
+    <string name="status_bar_am_pm_hidden">非表示</string>
+    <string name="status_bar_am_pm_normal">通常</string>
+    <string name="status_bar_am_pm_small">小</string>
     <!-- Clock show seconds -->
     <!-- Statusbar lyric -->
     <!-- Statusbar logo -->

@@ -18,6 +18,12 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General app strings -->
+    <string name="add">Tambahkan</string>
+    <string name="advanced">Lanjutan</string>
+    <string name="cancel">Batal</string>
+    <string name="dlg_ok">Oke</string>
+    <string name="loading">Memuat\u2026</string>
+    <string name="reset">Setel ulang</string>
     <!-- DerpSpace categories -->
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -49,6 +55,7 @@
     <!-- QS footer text -->
     <!-- Notifications general category -->
     <!-- Notification count -->
+    <string name="status_bar_notif_count_summary">Menampilkan jumlah dari pemberitahuan yang tertunda</string>
     <!-- Units -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
@@ -61,12 +68,20 @@
     <!-- UI styles -->
     <!-- Fonts -->
     <!-- Applications fragment -->
+    <string name="search">Cari</string>
     <!-- reTicker -->
     <!-- Network traffic -->
     <!-- Media art -->
     <!-- Lock screen cover art -->
     <!-- Clock position -->
+    <string name="status_bar_clock_position_center">Tengah</string>
+    <string name="status_bar_clock_position_left">Kiri</string>
+    <string name="status_bar_clock_position_right">Kanan</string>
+    <string name="status_bar_clock_position_title">Posisi Jam</string>
     <!-- Clock AM/PM -->
+    <string name="status_bar_am_pm_hidden">Tersembunyi</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Kecil</string>
     <!-- Clock show seconds -->
     <!-- Statusbar lyric -->
     <!-- Statusbar logo -->

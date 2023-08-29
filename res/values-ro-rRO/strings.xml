@@ -18,6 +18,12 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General app strings -->
+    <string name="add">Adăugaţi</string>
+    <string name="advanced">Avansat</string>
+    <string name="cancel">Anulare</string>
+    <string name="dlg_ok">OK</string>
+    <string name="loading">Încărcare\u2026</string>
+    <string name="reset">Resetare</string>
     <!-- DerpSpace categories -->
     <!-- Frags -->
     <!-- General Tweaks -->
@@ -49,6 +55,7 @@
     <!-- QS footer text -->
     <!-- Notifications general category -->
     <!-- Notification count -->
+    <string name="status_bar_notif_count_summary">Afișează numărul notificărilor în așteptare</string>
     <!-- Units -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
@@ -61,12 +68,20 @@
     <!-- UI styles -->
     <!-- Fonts -->
     <!-- Applications fragment -->
+    <string name="search">Căutare</string>
     <!-- reTicker -->
     <!-- Network traffic -->
     <!-- Media art -->
     <!-- Lock screen cover art -->
     <!-- Clock position -->
+    <string name="status_bar_clock_position_center">Centru</string>
+    <string name="status_bar_clock_position_left">Stânga</string>
+    <string name="status_bar_clock_position_right">Dreapta</string>
+    <string name="status_bar_clock_position_title">Poziţia ceasului</string>
     <!-- Clock AM/PM -->
+    <string name="status_bar_am_pm_hidden">Ascuns</string>
+    <string name="status_bar_am_pm_normal">Normal</string>
+    <string name="status_bar_am_pm_small">Mic</string>
     <!-- Clock show seconds -->
     <!-- Statusbar lyric -->
     <!-- Statusbar logo -->
