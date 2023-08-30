@@ -19,10 +19,14 @@ package org.derpfest.derpspace.fragments;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
+import android.content.DialogInterface;
+import android.view.ViewGroup;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
 
+import android.content.res.Resources;
+import android.app.AlertDialog;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
@@ -33,8 +37,19 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.skydoves.colorpickerview.ActionMode;
+import com.skydoves.colorpickerview.ColorEnvelope;
+import com.skydoves.colorpickerview.ColorPickerDialog;
+import com.skydoves.colorpickerview.ColorPickerView;
+import com.skydoves.colorpickerview.listeners.ColorListener;
+import com.skydoves.colorpickerview.listeners.ColorPickerViewListener;
+import com.skydoves.colorpickerview.preference.ColorPickerPreferenceManager;
+import org.derpfest.derpspace.utils.WallpaperUtils;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.Preference.OnPreferenceClickListener;
 
-public class MonetEngine extends SettingsPreferenceFragment {
+public class MonetEngine extends SettingsPreferenceFragment implements
+        OnPreferenceClickListener {
 
     final static String TAG = "MonetEngine";
 
@@ -45,13 +60,56 @@ public class MonetEngine extends SettingsPreferenceFragment {
     private static final String PREF_COLOR_OVERRIDE ="monet_engine_color_override";
     private static final String PREF_CUSTOM_BGCOLOR ="monet_engine_custom_bgcolor";
     private static final String PREF_BGCOLOR_OVERRIDE ="monet_engine_bgcolor_override";
+    private static final String PREF_WALLPAPER_COLOR ="monet_engine_wall_color_select";
 
+    private Preference mWallColorPicker;
+    public ColorPickerView mColorPickerView;
+    public int mUserColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.monet_engine);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Context mContext = getActivity().getApplicationContext();
+        final Resources res = mContext.getResources();
+        final ContentResolver resolver = mContext.getContentResolver();
+        mColorPickerView = new ColorPickerView.Builder(getContext()).setActionMode(ActionMode.LAST).setPaletteDrawable(WallpaperUtils.getWall(getContext(), false)).setPreferenceName("GhostColorPicker").setColorListener(new ColorListener() {
+            public void onColorSelected(int color, boolean fromUser) {
+                if (fromUser) {
+                    mUserColor = color;
+                    Settings.Secure.putInt(resolver, PREF_COLOR_OVERRIDE, mUserColor);
+                    ColorPickerPreferenceManager.getInstance(getContext()).saveColorPickerData(mColorPickerView);
+                }
+            }
+        }).build();
+        mWallColorPicker = (Preference) prefScreen.findPreference(PREF_WALLPAPER_COLOR);
+        mWallColorPicker.setOnPreferenceClickListener(this);
+        mWallColorPicker.setEnabled(!WallpaperUtils.isLiveWall(getContext()));
+        mWallColorPicker.setSummary(WallpaperUtils.isLiveWall(getContext()) ? R.string.not_available : R.string.monet_engine_wallpaper_color_select_summary);
+    }
+
+    @Override
+    public boolean onPreferenceClick(Preference preference) {
+        if (preference == mWallColorPicker) {
+            ColorPickerPreferenceManager.getInstance(getContext()).restoreColorPickerData(mColorPickerView);
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), R.style.Theme_WallpaperColorPicker_Dialog_Alert);
+            builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+              @Override
+              public void onClick(DialogInterface dialogInterface, int i) {
+                  dialogInterface.dismiss();
+              }
+           });
+            builder.setView(mColorPickerView);
+            builder.setCancelable(true);
+            builder.setTitle(R.string.monet_engine_wallpaper_color_select_summary);
+            builder.show();
+            return true;
+        } else {
+            return true;
+        }
     }
 
     public static void reset(Context mContext) {

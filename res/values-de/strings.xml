@@ -412,6 +412,9 @@
     <string name="monet_engine_chroma_factor_summary">Höhere Werte erzeugen kräftigere Farben</string>
     <string name="monet_engine_tint_background_title">Hintergrund einfärben</string>
     <string name="monet_engine_tint_background_summary">Leuchtkraft- und Sättigungseinstellung Einfluss auf die Farben des Hintergrundbilds nehmen lassen</string>
+    <string name="monet_engine_wallpaper_color_select_summary">Wähle eine Akzentfarbe aus dem Hintergrundbild</string>
+    <string name="monet_engine_wallpaper_color_select_title">Hintergrundbild-Farbauswahl</string>
+    <string name="not_available">Nicht verfügbar</string>
 
     <!-- QS panel -->
     <string name="qs_panel_options_title">Kachel-Layout</string>

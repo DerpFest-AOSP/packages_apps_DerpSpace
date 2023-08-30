@@ -32,6 +32,12 @@
         android:dependency="monet_engine_custom_color"
         android:defaultValue="0xFF1b6ef3" />
 
+    <Preference
+        android:key="monet_engine_wall_color_select"
+        android:title="@string/monet_engine_wallpaper_color_select_title"
+        android:dependency="monet_engine_custom_color"
+        android:summary="@string/monet_engine_wallpaper_color_select_summary" />
+
     <org.derpfest.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_custom_bgcolor"
         android:title="@string/monet_engine_custom_bgcolor_title"

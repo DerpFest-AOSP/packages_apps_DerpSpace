@@ -421,6 +421,9 @@
     <string name="monet_engine_chroma_factor_summary">Higher values produce stronger colors</string>
     <string name="monet_engine_tint_background_title">Tint background</string>
     <string name="monet_engine_tint_background_summary">Make luminance and chroma selection affect background colors as well</string>
+    <string name="monet_engine_wallpaper_color_select_summary">Select a different accent color from your wallpaper</string>
+    <string name="monet_engine_wallpaper_color_select_title">Wallpaper color selector</string>
+    <string name="not_available">Not available</string>
 
     <!-- QS panel -->
     <string name="qs_panel_options_title">QS tiles layout</string>
