@@ -150,9 +150,9 @@
     <string name="lockscreen_battery_info_title">Zusatzinfo zum Ladevorgang</string>
     <string name="lockscreen_battery_info_summary">Die vom System ermittelte Ladespannung, Stromstärke, Wattzahl und Akkutemperatur während des Ladevorgangs auf dem Sperrbildschirm anzeigen</string>
 
-    <!-- Tiles on secure keyguard -->
-    <string name="use_tiles_on_secure_keyguard_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
-    <string name="use_tiles_on_secure_keyguard_summary">Aufforderung zum Entsperren des Sperrbildschirms bei Verwendung empfindlicher QS-Kacheln</string>
+    <!-- QSTile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
+    <string name="qstile_requires_unlocking_summary">Aufforderung zum Entsperren des Sperrbildschirms bei Verwendung empfindlicher QS-Kacheln</string>
 
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">QS-Fußzeilentext anzeigen</string>

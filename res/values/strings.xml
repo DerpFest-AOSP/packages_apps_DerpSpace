@@ -149,9 +149,9 @@
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
 
-    <!-- Tiles on secure keyguard -->
-    <string name="use_tiles_on_secure_keyguard_title">Require unlocking to use sensitive tiles</string>
-    <string name="use_tiles_on_secure_keyguard_summary">Ask to unlock lockscreen when using sensitive tiles</string>
+    <!-- QSTile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">Require unlocking to use sensitive tiles</string>
+    <string name="qstile_requires_unlocking_summary">Ask to unlock lockscreen when using sensitive tiles</string>
 
     <!-- QS footer text -->
     <string name="qs_footer_text_show_title">Show QS footer text</string>
