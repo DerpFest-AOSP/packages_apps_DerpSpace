@@ -494,4 +494,21 @@
     <string name="use_photos_spoof_title">Unbegrenzter Google Fotos Speicherplatz</string>
     <string name="use_photos_spoof_summary">Dein Gerät wird als Pixel XL ausgewiesen, um kostenlos Videos und Fotos in verlustfreier Qualität bei Google Fotos zu speichern</string>
     <string name="photos_spoof_toast">Fotos-App neustarten, damit es wirksam wird</string>
+
+    <!-- Ambient edge lighting -->
+    <string name="ambient_edge_light_action_title">Bildschirm-Seitenbeleuchtung bei Inaktivität</string>
+    <string name="ambient_edge_light_title">Seitenbeleuchtung</string>
+    <string name="ambient_edge_light_enable_title">Bildschirm-Seitenbeleuchtung aktivieren</string>
+    <string name="ambient_edge_light_summary">Bei Benachrichtigungen die Seiten des Bildschirms pulsierend leuchten lassen</string>
+    <string name="ambient_edge_light_color_mode_category_title">Farbe</string>
+    <string name="ambient_edge_light_color_mode_auto">Automatisch</string>
+    <string name="ambient_edge_light_color_mode_app">App-Farbe</string>
+    <string name="ambient_edge_light_color_mode_manual">Manuell</string>
+    <string name="ambient_edge_light_color_mode_auto_summary">Akzentfarbe für die Seitenbeleuchtung verwenden</string>
+    <string name="ambient_edge_light_color_mode_app_summary">App-Benachrichtigungsfarbe für die Seitenbeleuchtung verwenden</string>
+    <string name="ambient_edge_light_color_mode_manual_summary">Eine Farbe manuell auswählen</string>
+    <string name="ambient_edge_light_advanced_category_title">Erweitert</string>
+    <string name="ambient_edge_light_duration_title">Effektdauer</string>
+    <string name="ambient_edge_light_repeat_count_title">Anzahl der Wiederholungen</string>
+    <string name="ambient_edge_light_width_title">Beleuchtungsbreite</string>
 </resources>
