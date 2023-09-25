@@ -45,7 +45,7 @@
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
-        <org.derpfest.support.preferences.CustomSystemSeekBarPreference
+        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
             android:summary="@string/qs_transparency_summary"
