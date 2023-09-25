@@ -49,7 +49,7 @@
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
             android:summary="@string/qs_transparency_summary"
-            android:defaultValue="@*android:integer/config_qs_transparency"
+            android:defaultValue="85"
             settings:interval="1"
             settings:units="%"
             android:max="100"
