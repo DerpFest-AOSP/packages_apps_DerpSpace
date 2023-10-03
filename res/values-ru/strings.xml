@@ -531,7 +531,7 @@
     <!-- QS tiles layout  -->
     <string name="qs_layout_category_title">Расположение плиток</string>
     <string name="qs_tile_label_hide_title">Скрыть подписи</string>
-    <string name="qs_tile_label_hide_summary">>Показывать только значок в плитке</string>
+    <string name="qs_tile_label_hide_summary">Показывать только значок в плитке</string>
     <string name="qs_tile_label_size_title">Размер текста подписи</string>
     <string name="qs_columns_portrait_title">Столбцы (вертикально)</string>
     <string name="qs_columns_landscape_title">Столбцы (горизонтально)</string>
@@ -550,7 +550,7 @@
     <string name="status_bar_battery_style_icon_rlandscape">Горизонтальная (Вправо)</string>
     <string name="status_bar_battery_style_icon_landscape">Горизонтальная (Влево)</string>
     <string name="status_bar_battery_style_circle">Круг</string>
-    <string name="status_bar_battery_style_dotted_circle">>Круг (Пунктирный)</string>
+    <string name="status_bar_battery_style_dotted_circle">Круг (Пунктирный)</string>
     <string name="status_bar_battery_style_filled_circle">Круг (Заполненный)</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скрыто</string>
@@ -581,4 +581,13 @@
     <!-- Brightness slider haptic feedback -->
     <string name="qs_brightness_slider_haptic_title">Тактильная отдача</string>
     <string name="qs_brightness_slider_haptic_summary">Тактильная отдача при использовании слайдера яркости</string>
+
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Стиль значка сети</string>
+    <string name="theme_customization_data_summary">Выберите пользовательский значок сети</string>
+
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Безлимитное хранилище в «Google Фото»</string>
+    <string name="use_photos_spoof_summary">Ваше устройство будет замаскировано под Pixel XL, чтобы получить неограниченное хранилище Google photo в оригинальном качестве</string>
+    <string name="photos_spoof_toast">Перезапустите приложение "Google Фото", чтобы оно вступило в силу</string>
 </resources>
