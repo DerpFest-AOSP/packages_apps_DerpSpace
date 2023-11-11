@@ -49,12 +49,6 @@
              android:summary="@string/status_bar_notif_count_summary"
              android:defaultValue="false" />
 
-         <org.derpfest.support.preferences.SecureSettingSwitchPreference
-             android:key="show_wifi_standard_icon"
-             android:title="@string/show_wifi_standard_icon_title"
-             android:summary="@string/show_wifi_standard_icon_summary"
-             android:defaultValue="false" />
-
          <org.derpfest.support.preferences.SystemSettingSwitchPreference
              android:key="bluetooth_show_battery"
              android:title="@string/bluetooth_battery_title"
