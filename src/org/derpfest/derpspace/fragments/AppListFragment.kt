@@ -29,7 +29,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.ImageView
-import android.widget.ProgressBar
 import android.widget.SearchView
 import android.widget.TextView
 
@@ -62,7 +61,6 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
     private val mutex = Mutex()
 
     private lateinit var fragmentScope: CoroutineScope
-    private lateinit var progressBar: ProgressBar
     private lateinit var appBarLayout: AppBarLayout
     private lateinit var packageManager: PackageManager
     private lateinit var recyclerView: RecyclerView
@@ -77,8 +75,6 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
         getLabel(a).compareTo(getLabel(b))
     }
 
-    private var needsToHideProgressBar = false
-
     override fun onAttach(context: Context) {
         super.onAttach(context)
         fragmentScope = CoroutineScope(Dispatchers.Main)
@@ -87,6 +83,7 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
+        appBarLayout = requireActivity().findViewById(R.id.app_bar)
         packageManager = requireContext().packageManager
         packageList.addAll(packageManager.getInstalledPackages(0))
     }
@@ -98,14 +95,11 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         requireActivity().setTitle(getTitle())
-        appBarLayout = requireActivity().findViewById(R.id.app_bar)
-        progressBar = view.findViewById(R.id.loading_progress)
         adapter = AppListAdapter()
         recyclerView = view.findViewById<RecyclerView>(R.id.apps_list).also {
             it.layoutManager = LinearLayoutManager(context)
             it.adapter = adapter
         }
-        needsToHideProgressBar = true
         refreshList()
     }
 
@@ -238,10 +232,6 @@ abstract class AppListFragment: Fragment(R.layout.apps_list_layout), MenuItem.On
                 }
             }
             adapter.submitList(list)
-            if (needsToHideProgressBar) {
-                progressBar.visibility = View.GONE
-                needsToHideProgressBar = false
-            }
         }
     }
 
