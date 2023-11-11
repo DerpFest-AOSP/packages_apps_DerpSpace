@@ -27,12 +27,6 @@
          android:title="@string/lockscreen_ui_title" />
 
      <org.derpfest.support.preferences.CardviewPreference
-         android:key="lockscreen_shortcuts"
-         android:fragment="org.derpfest.derpspace.fragments.LockscreenShortcuts"
-         android:icon="@drawable/ic_lockscreen_shortcuts"
-         android:title="@string/lockscreen_shortcuts" />
-
-     <org.derpfest.support.preferences.CardviewPreference
          android:key="ambient_ui"
          android:fragment="org.derpfest.derpspace.fragments.AmbientUI"
          android:icon="@drawable/ic_aod"

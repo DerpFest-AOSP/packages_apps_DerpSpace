@@ -49,9 +49,6 @@
     <!-- General Tweaks -->
     <string name="general_tweaks_title">General settings</string>
 
-    <!-- Lockscreen icons -->
-    <string name="lockscreen_shortcuts">Lockscreen shortcuts</string>
-
     <!-- Lockscreen UI -->
     <string name="lockscreen_ui_title">Lockscreen UI</string>
 
@@ -421,20 +418,6 @@
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Background transparency</string>
     <string name="qs_transparency_summary">Set transparency level for QS background</string>
-
-    <!-- Lockscreen bottom shortcuts -->
-    <string name="lockscreen_shortcut_category">Bottom shortcuts</string>
-    <string name="lockscreen_shortcut_start_title">Left shortcut</string>
-    <string name="lockscreen_shortcut_end_title">Right shortcut</string>
-    <string name="lockscreen_shortcut_wallet">Wallet</string>
-    <string name="lockscreen_shortcut_home">Home controls</string>
-    <string name="lockscreen_shortcut_flashlight">Flashlight</string>
-    <string name="lockscreen_shortcut_qr">QR code scanner</string>
-    <string name="lockscreen_shortcut_camera">Camera</string>
-    <string name="lockscreen_shortcut_dnd">DND</string>
-    <string name="lockscreen_shortcut_none">None</string>
-    <string name="lockscreen_shortcut_enforce_title">Single shortcut</string>
-    <string name="lockscreen_shortcut_enforce_summary">Enforce chosen shortcut to be the only existing priority\nWill show nothing until the specific chosen shortcut is available</string>
 
     <!-- Disable QS -->
     <string name="disable_qs_title">Hide QS in secure lockscreen</string>
