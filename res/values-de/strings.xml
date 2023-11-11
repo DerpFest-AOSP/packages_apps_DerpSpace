@@ -229,14 +229,6 @@
     <string name="status_bar_clock_show_seconds_title">Sekunden anzeigen</string>
     <string name="status_bar_clock_show_seconds_desc">Stunden, Minuten und Sekunden anzeigen</string>
 
-    <!-- Statusbar lyric -->
-    <string name="status_bar_lyric_title">Statusleisten-Lyric</string>
-    <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
-    <string name="status_bar_show_lyric_title">Statusleisten-Lyric aktivieren</string>
-    <string name="status_bar_lyric_options_title">Optionen</string>
-    <string name="disguise_props_for_music_app_title">Tarngerät für Musik-Apps</string>
-    <string name="disguise_props_for_music_app_summary">Gibt in einigen Musikanwendungen vor ein anderes Gerätemodell zu sein, um Text in der Statusleiste zu unterstützen. Nach Aktivierung müssen die Anwendungen neu gestartet, damit die Änderung wirksam wird.</string>
-
     <!-- Statusbar logo -->
     <string name="status_bar_logo_title">Logo</string>
     <string name="status_bar_logo_summary">Benutzerdefiniertes Logo rechts oder links in der Statusleiste anzeigen</string>
