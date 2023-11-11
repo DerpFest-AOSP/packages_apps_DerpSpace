@@ -42,7 +42,6 @@
     <string name="notifications_panel_category">QS panel</string>
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
-    <string name="udfps_category">Under-display fingerprint</string>
     <string name="listview">ListView</string>
 
     <!-- Frags -->
@@ -320,16 +319,6 @@
     <string name="pulse_empty_block_size">Block spacing</string>
     <string name="pulse_solid_units_rounded_title">Solid lines rounded</string>
     <string name="pulse_solid_units_rounded_summary">Round the solid lines</string>
-
-    <!-- Udfps animations -->
-    <string name="udfps_recog_animation">Use UDFPS animation</string>
-    <string name="udfps_recog_animation_summary">Shows an animation while reading your finger</string>
-    <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
-    <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
-
-    <!-- Udfps icon picker -->
-    <string name="udfps_icon_picker_title">UDFPS icon picker</string>
-    <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
 
     <!-- Material dismiss all button for notifications -->
     <string name="notification_material_dismiss_title">Clear all notification button</string>
