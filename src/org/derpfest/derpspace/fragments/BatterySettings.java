@@ -55,7 +55,6 @@ public class BatterySettings extends SettingsPreferenceFragment
     private static final int BATTERY_STYLE_PORTRAIT = 0;
     private static final int BATTERY_STYLE_TEXT = 4;
     private static final int BATTERY_STYLE_HIDDEN = 5;
-    private static final int BATTERY_STYLE_IOS16 = 18;
 
     private static final int BATTERY_PERCENT_HIDDEN = 0;
     private static final int BATTERY_PERCENT_INSIDE = 1;
@@ -101,12 +100,7 @@ public class BatterySettings extends SettingsPreferenceFragment
         else {
             mBatteryPercent.setEntries(R.array.status_bar_battery_percent_no_text_inside_entries);
             mBatteryPercent.setEntryValues(R.array.status_bar_battery_percent_no_text_inside_values);
-            if (batterystyle == BATTERY_STYLE_IOS16) {
-                if (batterypercent != BATTERY_PERCENT_INSIDE) {
-                    batterypercent = BATTERY_PERCENT_INSIDE;
-                    mBatteryPercent.setValueIndex(BATTERY_PERCENT_INSIDE);
-                }
-            } else if (batterypercent == BATTERY_PERCENT_INSIDE) {
+            if (batterypercent == BATTERY_PERCENT_INSIDE) {
                 batterypercent = BATTERY_PERCENT_HIDDEN;
                 mBatteryPercent.setValueIndex(BATTERY_PERCENT_HIDDEN);
             }
@@ -117,8 +111,7 @@ public class BatterySettings extends SettingsPreferenceFragment
 
         mBatteryPercent.setEnabled(
                 batterystyle != BATTERY_STYLE_TEXT &&
-                batterystyle != BATTERY_STYLE_HIDDEN &&
-                batterystyle != BATTERY_STYLE_IOS16);
+                batterystyle != BATTERY_STYLE_HIDDEN);
     }
 
     @Override
