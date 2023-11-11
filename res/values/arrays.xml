@@ -430,7 +430,6 @@
         <item>@string/status_bar_battery_style_icon_landscape_ios15</item>
         <item>@string/status_bar_battery_style_icon_landscape_ios16</item>
         <item>@string/status_bar_battery_style_icon_landscape_origami</item>
-        <item>@string/status_bar_battery_style_icon_landscape_miui_pill</item>
     </string-array>
 
     <string-array name="status_bar_battery_style_values" translatable="false">
@@ -454,7 +453,6 @@
         <item>17</item>
         <item>18</item>
         <item>19</item>
-        <item>20</item>
     </string-array>
 
     <string-array name="status_bar_battery_percent_entries">
