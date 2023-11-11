@@ -24,7 +24,6 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
-import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -39,7 +38,6 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -59,9 +57,6 @@ import java.util.regex.Pattern;
 
 public class GeneralTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
-    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
-    private SwitchPreference mPhotosSpoof;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -71,10 +66,6 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-
-        mPhotosSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PHOTOS_SPOOF);
-        mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
-        mPhotosSpoof.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -88,12 +79,8 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mPhotosSpoof) {
-            boolean value = (Boolean) newValue;
-            SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
-        }
-        return true;
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        return false;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
