@@ -184,10 +184,6 @@
     <string name="theme_customization_lock_clock_title">Sperrbildschirm-Uhr-Schriftart</string>
     <string name="theme_customization_lock_clock_summary">Schriftstil der Sperrbildschirm-Uhr einstellen</string>
 
-    <!-- Applications fragment -->
-    <string name="search">Suche</string>
-    <string name="search_apps">Apps suchen</string>
-
     <!-- reTicker -->
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Ersetzen Sie Ihre Benachrichtigungen durch eine neu gestaltete Version vom Ticker. \nSchmal und weniger invasiv als eine Standardbenachrichtigung.</string>
