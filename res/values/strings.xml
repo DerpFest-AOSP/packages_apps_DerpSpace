@@ -414,10 +414,6 @@
     <string name="separate_signal_icons_title">Separate signal icons</string>
     <string name="separate_signal_icons_summary">Show signal and WiFi separately\nRequires a SystemUI restart</string>
 
-    <!-- Android P animation style -->
-    <string name="pie_animation_style_title">Android P animation style</string>
-    <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
-
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">Colored icons</string>
     <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in statusbar</string>

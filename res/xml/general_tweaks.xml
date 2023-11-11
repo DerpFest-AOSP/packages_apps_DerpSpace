@@ -26,12 +26,6 @@
         android:key="general_tweaks_general_category"
         android:title="@string/general_category">
 
-        <org.derpfest.support.preferences.GlobalSettingSwitchPreference
-            android:key="pie_animation_style"
-            android:title="@string/pie_animation_style_title"
-            android:summary="@string/pie_animation_style_summary"
-            android:defaultValue="false" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -408,10 +408,6 @@
     <string name="separate_signal_icons_title">Separate Mobilfunksymbole</string>
     <string name="separate_signal_icons_summary">Mobilfunk und WLAN separat anzeigen\nErfordert einen SystemUI-Neustart</string>
 
-    <!-- Android P animation style -->
-    <string name="pie_animation_style_title">Android P-Animationsstil</string>
-    <string name="pie_animation_style_summary">Aktiviert Android P \"Standard\"-Animationen</string>
-
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">Farbige Symbole</string>
     <string name="statusbar_colored_icons_summary">Verwenden Sie die richtigen App-Symbole für Benachrichtigungssymbole in der Statusleiste</string>
