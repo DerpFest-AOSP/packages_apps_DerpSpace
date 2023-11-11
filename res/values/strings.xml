@@ -134,10 +134,6 @@
     <string name="show_fourg_icon_title">4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
 
-    <!-- Lockscreen battery info indicator  -->
-    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
-    <string name="lockscreen_battery_info_summary">Show charging current, voltage, wattage and battery temperature on lockscreen while charging</string>
-
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Require unlocking to use sensitive tiles</string>
     <string name="qstile_requires_unlocking_summary">Ask to unlock lockscreen when using sensitive tiles</string>
