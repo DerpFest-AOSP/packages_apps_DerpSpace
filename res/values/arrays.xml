@@ -214,58 +214,6 @@
         <item>2</item>
     </string-array>
 
-    <!-- Dismiss all button styles -->
-    <string-array name="notification_material_dismiss_style_entries" translatable="false">
-        <item>@string/notification_material_dismiss_style_default</item>
-        <item>@string/notification_material_dismiss_style_trash</item>
-        <item>@string/notification_material_dismiss_style_broom</item>
-        <item>@string/notification_material_dismiss_style_pac-man</item>
-        <item>@string/notification_material_dismiss_style_minus</item>
-        <item>@string/notification_material_dismiss_style_close</item>
-        <item>@string/notification_material_dismiss_style_recycle</item>
-        <item>@string/notification_material_dismiss_style_eraser</item>
-        <item>@string/notification_material_dismiss_style_playlist</item>
-        <item>@string/notification_material_dismiss_style_magnet</item>
-        <item>@string/notification_material_dismiss_style_derpfest</item>
-    </string-array>
-
-    <string-array name="notification_material_dismiss_style_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-    </string-array>
-
-    <!-- Dismiss all button bg styles -->
-    <string-array name="notification_material_dismiss_bgstyle_entries" translatable="false">
-        <item>@string/notification_material_dismiss_bgstyle_default</item>
-        <item>@string/notification_material_dismiss_bgstyle_rectangle</item>
-        <item>@string/notification_material_dismiss_bgstyle_square</item>
-        <item>@string/notification_material_dismiss_bgstyle_gear</item>
-        <item>@string/notification_material_dismiss_bgstyle_dashedline</item>
-        <item>@string/notification_material_dismiss_bgstyle_circle_accent</item>
-        <item>@string/notification_material_dismiss_bgstyle_rectangle_accent</item>
-        <item>@string/notification_material_dismiss_bgstyle_rectangle_gradient</item>
-    </string-array>
-
-    <string-array name="notification_material_dismiss_bgstyle_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-    </string-array>
-
     <!-- QS brightness slider -->
     <string-array name="qs_brightness_slider_entries" translatable="false">
         <item>@string/qs_brightness_slider_never</item>
