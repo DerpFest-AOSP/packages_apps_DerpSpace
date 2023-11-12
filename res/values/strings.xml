@@ -331,8 +331,8 @@
     <string name="pulse_vertical_mirror_summary">Create other pulse and flip vertically</string>
 
     <!-- Ripple Effect on lockscreen -->
-    <string name="disable_fingerprint_ripple_effect_title">Disable Ripple effect</string>
-    <string name="disable_fingerprint_ripple_effect_summary">Disable ripple effect on unlock</string>
+    <string name="enable_fingerprint_ripple_effect_title">Unlock animation</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
 
     <!-- Charging animation -->
     <string name="charging_animation_title">Charging animation</string>

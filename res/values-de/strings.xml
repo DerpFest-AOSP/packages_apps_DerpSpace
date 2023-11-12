@@ -322,8 +322,8 @@
     <string name="pulse_vertical_mirror_summary">Erzeugt einen weiteren Pulse, der vertikal gedreht ist</string>
 
     <!-- Ripple Effect on lockscreen -->
-    <string name="disable_fingerprint_ripple_effect_title">Ripple-Effekt deaktivieren</string>
-    <string name="disable_fingerprint_ripple_effect_summary">Ripple-Effekt beim Entsperren deaktivieren</string>
+    <string name="enable_fingerprint_ripple_effect_title">Welleneffekt</string>
+    <string name="enable_fingerprint_ripple_effect_summary">Welleneffekt zeigen bei Entsperrung mit Fingerabdruck</string>
 
     <!-- Charging animation -->
     <string name="charging_animation_title">Ladeanimation</string>

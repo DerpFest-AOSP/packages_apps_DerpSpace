@@ -32,10 +32,10 @@
             android:persistent="false" />
 
         <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:key="disable_ripple_effect"
-            android:title="@string/disable_fingerprint_ripple_effect_title"
-            android:summary="@string/disable_fingerprint_ripple_effect_summary"
-            android:defaultValue="false" />
+            android:key="auth_ripple_enabled"
+            android:title="@string/enable_fingerprint_ripple_effect_title"
+            android:summary="@string/enable_fingerprint_ripple_effect_summary"
+            android:defaultValue="true" />
 
         <Preference
             android:key="android.theme.customization.lockscreen_clock_font"
