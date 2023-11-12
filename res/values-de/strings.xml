@@ -220,8 +220,7 @@
     <string name="status_bar_logo_position_right">Rechts</string>
     <string name="status_bar_logo_position_left">Links</string>
     <string name="status_bar_logo_style_title">Logostil</string>
-    <string name="status_bar_logo_style_derp">DerpFest Standard</string>
-    <string name="status_bar_logo_style_derp_2">DerpFest Triangle</string>
+    <string name="status_bar_logo_style_derp">DerpFest (Standard)</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

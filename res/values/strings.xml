@@ -229,8 +229,7 @@
     <string name="status_bar_logo_position_right">Right</string>
     <string name="status_bar_logo_position_left">Left</string>
     <string name="status_bar_logo_style_title">Logo style</string>
-    <string name="status_bar_logo_style_derp">DerpFest default</string>
-    <string name="status_bar_logo_style_derp_2">DerpFest triangle</string>
+    <string name="status_bar_logo_style_derp">DerpFest (Default)</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

@@ -105,7 +105,6 @@
     <!-- Status bar logo style -->
     <string-array name="status_bar_logo_style_entries" translatable="false">
         <item>@string/status_bar_logo_style_derp</item>
-        <item>@string/status_bar_logo_style_derp_2</item>
         <item>@string/status_bar_logo_style_android</item>
         <item>@string/status_bar_logo_style_adidas</item>
         <item>@string/status_bar_logo_style_alien</item>
@@ -174,7 +173,6 @@
         <item>30</item>
         <item>31</item>
         <item>32</item>
-        <item>33</item>
     </string-array>
 
     <!-- Pulse music visualizer -->
