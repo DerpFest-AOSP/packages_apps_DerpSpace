@@ -413,7 +413,6 @@
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 
     <!-- Status bar - Battery -->
-    <string name="status_bar_battery_category_title">Battery customizations</string>
     <string name="status_bar_battery_style_title">Battery style</string>
     <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
     <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
