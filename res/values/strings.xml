@@ -47,6 +47,7 @@
     <!-- Frags -->
     <!-- General Tweaks -->
     <string name="general_tweaks_title">General settings</string>
+    <string name="feature_flags_category">Feature flags</string>
 
     <!-- Lockscreen UI -->
     <string name="lockscreen_ui_title">Lockscreen UI</string>
@@ -458,4 +459,8 @@
     <string name="status_bar_lyric_options_title">Options</string>
     <string name="disguise_props_for_music_app_title">Disguise device for music apps</string>
     <string name="disguise_props_for_music_app_summary">Disguise device in some music applications for support status bar lyric. After changing this toggle, you have to restart applications for the change to take effect.</string>
+
+    <!-- User switcher -->
+    <string name="lockscreen_user_switcher_title">User Switcher</string>
+    <string name="lockscreen_user_switcher_summary">Show user switcher when unlocking secured device\nRequires SystemUI restart</string>
 </resources>
