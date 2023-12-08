@@ -255,6 +255,9 @@
     <string name="status_bar_lyric_title">状态栏歌词</string>
     <string name="status_bar_lyric_summary">在状态栏中显示歌词(需应用程序支持)</string>
     <string name="status_bar_show_lyric_title">显示状态栏歌词</string>
+    <string name="status_bar_lyric_options_title">选项</string>
+    <string name="disguise_props_for_music_app_title">对音乐应用伪装机型</string>
+    <string name="disguise_props_for_music_app_summary">对一些音乐应用伪装机型以正确启用状态栏歌词. 启用该设置后需要重启音乐应用</string>
 
     <!-- Statusbar logo -->
     <string name="status_bar_logo_title">Logo</string>
