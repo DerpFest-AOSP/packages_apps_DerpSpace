@@ -375,27 +375,6 @@
     <string name="theme_customization_navbar_title">Navbar style</string>
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 
-    <!-- Status bar - Battery -->
-    <string name="status_bar_battery_style_title">Battery style</string>
-    <string name="status_bar_battery_style_icon_portrait">Icon portrait</string>
-    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
-    <string name="status_bar_battery_style_icon_landscape">Icon landscape (Left)</string>
-    <string name="status_bar_battery_style_circle">Circle</string>
-    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
-    <string name="status_bar_battery_style_filled_circle">Filled circle</string>
-    <string name="status_bar_battery_style_text">Text</string>
-    <string name="status_bar_battery_style_hidden">Hidden</string>
-    <string name="status_bar_battery_percent_title">Battery percent</string>
-    <string name="status_bar_battery_percent_hidden">Hidden</string>
-    <string name="status_bar_battery_percent_text_inside">Inside the icon</string>
-    <string name="status_bar_battery_percent_text_next_right">Next to the icon (right)</string>
-    <string name="status_bar_battery_percent_text_next_left">Next to the icon (left)</string>
-    <string name="status_bar_battery_text_charging_title">Battery percentage when charging</string>
-    <string name="status_bar_battery_text_charging_summary">Always display battery percentage when charging</string>
-
-    <!-- QS battery -->
-    <string name="qs_use_status_bar_battery_style">Follow status bar style</string>
-
     <!-- Custom Data icons -->
     <string name="theme_customization_data_title">Data icon style</string>
     <string name="theme_customization_data_summary">Set custom data icon style</string>
