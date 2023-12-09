@@ -235,6 +235,19 @@
         <item>1</item>
     </string-array>
 
+    <!-- Battery customizations -->
+    <string-array name="status_bar_battery_style_entries" translatable="false">
+        <item>@string/battery_style_port</item>
+        <item>@string/battery_style_circle</item>
+        <item>@string/battery_style_text</item>
+    </string-array>
+
+    <string-array name="status_bar_battery_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Network Traffic -->
     <string-array name="network_traffic_units_entries" translatable="false">
         <item>@string/network_traffic_units_bytes</item>
