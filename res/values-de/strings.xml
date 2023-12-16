@@ -131,6 +131,10 @@
     <string name="show_fourg_icon_title">4G-Symbol</string>
     <string name="show_fourg_icon_summary">Anzeige von 4G im Signalsymbol anstelle von LTE</string>
 
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Symbol für deaktivierte Mobildaten anzeigen</string>
+    <string name="data_disabled_icon_summary">Zeigen Sie das Kreuz neben der Signalleiste an, wenn die Mobildaten deaktiviert sind</string>
+
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
     <string name="qstile_requires_unlocking_summary">Aufforderung zum Entsperren des Sperrbildschirms bei Verwendung empfindlicher QS-Kacheln</string>
