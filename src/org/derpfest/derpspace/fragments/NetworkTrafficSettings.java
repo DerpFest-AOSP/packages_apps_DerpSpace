@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2021 The LineageOS Project
+ * Copyright (C) 2022 Project Kaleidoscope
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -52,59 +52,55 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
-import org.derpfest.support.preferences.SecureSettingSwitchPreference;
-import org.derpfest.support.preferences.SecureSettingMainSwitchPreference;
-import org.derpfest.support.preferences.SystemSettingDropDownPreference;
+import org.derpfest.support.preferences.SystemSettingSwitchPreference;
+import org.derpfest.support.preferences.SystemSettingMainSwitchPreference;
 
 @SearchIndexable
 public class NetworkTrafficSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String TAG = "NetworkTrafficSettings";
-    private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
-
-    private SecureSettingMainSwitchPreference mNetTraffic;
-    private SecureSettingSwitchPreference mNetTrafficAutohide;
-    private SystemSettingDropDownPreference mNetTrafficUnits;
+    private SystemSettingSwitchPreference mThreshold;
+    private SystemSettingMainSwitchPreference mNetMonitor;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+
         addPreferencesFromResource(R.xml.network_traffic_settings);
-        getActivity().setTitle(R.string.network_traffic_settings_title);
 
         final ContentResolver resolver = getActivity().getContentResolver();
 
-        mNetTraffic = findPreference(Settings.Secure.NETWORK_TRAFFIC_MODE);
-        mNetTraffic.setOnPreferenceChangeListener(this);
+        boolean isNetMonitorEnabled = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_STATE, 1, UserHandle.USER_CURRENT) == 1;
+        mNetMonitor = (SystemSettingMainSwitchPreference) findPreference("network_traffic_state");
+        mNetMonitor.setChecked(isNetMonitorEnabled);
+        mNetMonitor.setOnPreferenceChangeListener(this);
 
-        mNetTrafficAutohide = findPreference(Settings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
-        mNetTrafficAutohide.setOnPreferenceChangeListener(this);
-
-        mNetTrafficUnits = findPreference(Settings.Secure.NETWORK_TRAFFIC_UNITS);
-        mNetTrafficUnits.setOnPreferenceChangeListener(this);
-        int units = Settings.Secure.getInt(resolver,
-                Settings.Secure.NETWORK_TRAFFIC_UNITS, /* Mbps */ 1);
-        mNetTrafficUnits.setValue(String.valueOf(units));
-
-        final boolean enabled = Settings.Secure.getInt(resolver,
-                Settings.Secure.NETWORK_TRAFFIC_MODE, 0) == 1;
-        updateEnabledStates(enabled);
+        boolean isThresholdEnabled = Settings.System.getIntForUser(resolver,
+                Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 0, UserHandle.USER_CURRENT) == 1;
+        mThreshold = (SystemSettingSwitchPreference) findPreference("network_traffic_autohide_threshold");
+        mThreshold.setChecked(isThresholdEnabled);
+        mThreshold.setOnPreferenceChangeListener(this);
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mNetTrafficUnits) {
-            int units = Integer.valueOf((String) newValue);
-            Settings.Secure.putInt(getActivity().getContentResolver(),
-                    Settings.Secure.NETWORK_TRAFFIC_UNITS, units);
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+        if (preference == mNetMonitor) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_STATE, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            mNetMonitor.setChecked(value);
+            mThreshold.setChecked(value);
+            return true;
+        } else if (preference == mThreshold) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            return true;
         }
-        return true;
-    }
-
-    private void updateEnabledStates(boolean enabled) {
-        mNetTrafficAutohide.setEnabled(enabled);
-        mNetTrafficUnits.setEnabled(enabled);
+        return false;
     }
 
     @Override
