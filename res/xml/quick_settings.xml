@@ -89,6 +89,19 @@
 
     </PreferenceCategory>
 
+     <PreferenceCategory
+        android:key="quick_settings_battery_category"
+        android:title="@string/battery_title">
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_show_battery_estimate"
+            android:title="@string/qs_show_battery_estimate_title"
+            android:summaryOn="@string/qs_show_battery_estimate_summary_on"
+            android:summaryOff="@string/qs_show_battery_estimate_summary_off"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory
         android:title="@string/notification_material_dismiss_title">
 
