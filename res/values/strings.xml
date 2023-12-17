@@ -133,9 +133,9 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
-    <string name="qs_set_animation_style">%1$s</string>
-    <string name="qs_set_animation_duration">%1$s</string>
-    <string name="qs_set_animation_interpolator">%1$s</string>
+    <string name="qs_set_animation_style" translatable="false">%1$s</string>
+    <string name="qs_set_animation_duration" translatable="false">%1$s</string>
+    <string name="qs_set_animation_interpolator" translatable="false">%1$s</string>
 
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G icon</string>
