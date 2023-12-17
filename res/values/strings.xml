@@ -76,6 +76,9 @@
     <!-- Status bar clock options -->
     <string name="status_bar_clock_title">Clock Settings</string>
 
+    <!-- Secure quick settings category -->
+    <string name="secure_quick_settings">Security</string>
+
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Brightness slider</string>
 
