@@ -85,6 +85,9 @@
     <!-- Quick Settings footer category -->
     <string name="footer_category">Footer</string>
 
+    <!-- Quick Settings header category -->
+    <string name="header_category">Header</string>
+
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusbar Items</string>
 
@@ -388,6 +391,9 @@
     <string name="qs_show_battery_estimate_title">Battery estimates</string>
     <string name="qs_show_battery_estimate_summary_on">Show battery estimates in QS</string>
     <string name="qs_show_battery_estimate_summary_off">Hide battery estimates in QS</string>
+
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Header Image</string>
 
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Brightness slider style</string>

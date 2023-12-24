@@ -83,6 +83,9 @@
     <!-- Quick Settings footer category -->
     <string name="footer_category">Fußzeile</string>
 
+    <!-- Quick Settings header category -->
+    <string name="header_category">Kopf</string>
+
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusbar-Elemente</string>
 
@@ -377,6 +380,9 @@
     <string name="qs_show_battery_estimate_title">Akkuschätzung</string>
     <string name="qs_show_battery_estimate_summary_on">Geschätzte verbleibende Akkulaufzeit anzeigen, wenn verfügbar</string>
     <string name="qs_show_battery_estimate_summary_off">Geschätzte verbleibende Akkulaufzeit verstecken</string>
+
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Bild in Kopfzeile</string>
 
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Stil des Helligkeitsreglers</string>
