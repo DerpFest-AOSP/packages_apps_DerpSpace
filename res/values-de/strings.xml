@@ -338,6 +338,10 @@
     <string name="statusbar_colored_icons_title">Farbige Symbole</string>
     <string name="statusbar_colored_icons_summary">Verwenden Sie die richtigen App-Symbole für Benachrichtigungssymbole in der Statusleiste</string>
 
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">WLAN-Standard-Symbol</string>
+    <string name="show_wifi_standard_icon_summary">Indikator des WLAN-Standards in der WLAN-Signalanzeige anzeigen</string>
+
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Hintergrundtransparenz</string>
     <string name="qs_transparency_summary">Transparenz des Hintergrunds der Schnelleinstellungen anpassen</string>
