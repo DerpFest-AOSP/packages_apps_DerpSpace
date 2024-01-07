@@ -497,4 +497,9 @@
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Ignore window secure flags</string>
     <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
+
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Unlimited Google photo storage</string>
+    <string name="use_photos_spoof_summary">Your device will be identified as a Pixel XL to get unlimited Google photo storage at original quality</string>
+    <string name="photos_spoof_toast">Restart the Photos app for it to take effect</string>
 </resources>

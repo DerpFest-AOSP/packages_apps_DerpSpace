@@ -24,6 +24,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -38,6 +39,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -57,16 +59,26 @@ import java.util.regex.Pattern;
 
 public class GeneralTweaks extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
+    private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
+    private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
+
     private Preference mUserSwitcher;
+    private SwitchPreference mPhotosSpoof;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.general_tweaks);
+
+        ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
 
         mUserSwitcher = findPreference("persist.sys.flags.enableBouncerUserSwitcher");
         mUserSwitcher.setOnPreferenceChangeListener(this);
+
+        mPhotosSpoof = (SwitchPreference) prefSet.findPreference(KEY_PHOTOS_SPOOF);
+        mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
+        mPhotosSpoof.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -87,6 +99,10 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
             boolean value = (Boolean) newValue;
             Settings.Secure.putIntForUser(getContentResolver(),
                 Settings.Secure.PREF_KG_USER_SWITCHER, value ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mPhotosSpoof) {
+            boolean value = (Boolean) newValue;
+            SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
             return true;
         }
         return false;

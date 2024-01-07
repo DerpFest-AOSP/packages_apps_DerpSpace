@@ -443,4 +443,9 @@
     <string name="status_bar_lyric_title">Statusleisten-Lyric</string>
     <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
     <string name="status_bar_show_lyric_title">Statusleisten-Lyric aktivieren</string>
+
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Unbegrenzter Google Fotos Speicherplatz</string>
+    <string name="use_photos_spoof_summary">Dein Gerät wird als Pixel XL ausgewiesen, um kostenlos Videos und Fotos in verlustfreier Qualität bei Google Fotos zu speichern</string>
+    <string name="photos_spoof_toast">Fotos-App neustarten, damit es wirksam wird</string>
 </resources>
