@@ -417,6 +417,7 @@
     <string name="qs_header_image_padding_top_title">Top padding</string>
     <string name="file_header_select_title">Select local image</string>
     <string name="file_header_select_summary">Select image from storage</string>
+    <string name="qs_header_image_needs_gallery">You must install a gallery app!</string>
 
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Brightness slider style</string>

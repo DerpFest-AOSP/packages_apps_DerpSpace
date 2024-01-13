@@ -33,6 +33,7 @@ import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.preference.Preference;
 import androidx.preference.ListPreference;
@@ -121,10 +122,13 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mQsHeaderImagePicker) {
-            Intent intent = new Intent(Intent.ACTION_PICK);
-            intent.setType("image/*");
-            startActivityForResult(intent, REQUEST_IMAGE_PICKER);
-            return true;
+            try {
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType("image/*");
+                startActivityForResult(intent, REQUEST_IMAGE_PICKER);
+            } catch(Exception e) {
+                Toast.makeText(getContext(), R.string.qs_header_image_needs_gallery, Toast.LENGTH_LONG).show();
+            }
         }
         return super.onPreferenceTreeClick(preference);
     }
