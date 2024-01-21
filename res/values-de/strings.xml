@@ -187,12 +187,12 @@
     <string name="reticker_landscape_only_summary">reTicker nur aktivieren, wenn das Gerät im Querformat ist</string>
 
     <!-- Network traffic -->
-    <string name="network_traffic_title">Netzwerkverkehrsanzeige</string>
-    <string name="network_traffic_summary">Anpassen der Anzeige des Netzwerkverkehrs</string>
-    <string name="network_traffic_state_title">Netzwerkverkehrsanzeige aktivieren</string>
-    <string name="network_options_title">Einstellungen</string>
-    <string name="network_traffic_autohide_title">Netzwerkverkehrsanzeige bei Inaktivität ausblenden</string>
-    <string name="network_traffic_autohide_summary">Blendet die Netzwerkverkehrsanzeige aus, wenn der Netzwerkverkehr unter 1 KB/s liegt</string>
+    <string name="network_traffic_title">Netzwerkmonitor</string>
+    <string name="network_traffic_summary">Netzwerkmonitor in der Statusleiste ein- oder ausblenden</string>
+    <string name="network_traffic_state_title">Netzwerkmonitor aktivieren</string>
+    <string name="network_options_title">Optionen</string>
+    <string name="network_traffic_autohide_title">Netzwerkmonitor ausblenden, wenn inaktiv</string>
+    <string name="network_traffic_autohide_summary">Ausblenden, wenn die Netzwerkaktivität unter 1 KB/s liegt</string>
 
     <!-- Media art -->
     <string name="lockscreen_media_art_options_title">Albumcover</string>
@@ -418,6 +418,15 @@
     <string name="monet_engine_chroma_factor_summary">Höhere Werte erzeugen kräftigere Farben</string>
     <string name="monet_engine_tint_background_title">Hintergrund einfärben</string>
     <string name="monet_engine_tint_background_summary">Leuchtkraft- und Sättigungseinstellung Einfluss auf die Farben des Hintergrundbilds nehmen lassen</string>
+    <string name="monet_engine_style_title">Designstil</string>
+    <string name="monet_engine_style_tonal_spot">Tonal Spot (Standard)</string>
+    <string name="monet_engine_style_vibrant">Lebhaft</string>
+    <string name="monet_engine_style_expressive">Ausdrucksvoll</string>
+    <string name="monet_engine_style_spritz">Spritz</string>
+    <string name="monet_engine_style_rainbow">Regenbogen</string>
+    <string name="monet_engine_style_fruit_salad">Obstsalat</string>
+    <string name="monet_engine_style_muted">Gedämpfte Farben</string>
+    <string name="monet_engine_style_content">Inhalt</string>
     <string name="monet_engine_wallpaper_color_select_summary">Wähle eine Akzentfarbe aus dem Hintergrundbild</string>
     <string name="monet_engine_wallpaper_color_select_title">Hintergrundbild-Farbauswahl</string>
     <string name="not_available">Nicht verfügbar</string>
