@@ -198,6 +198,11 @@
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
 
     <!-- Network traffic -->
+    <string name="network_traffic_intro_text">
+        Shows current network traffic speed in the status bar.
+        The monitor shows the speed dynamically such that it alternates between
+        upload and download speed each second.
+    </string>
     <string name="network_traffic_title">Network traffic indicator</string>
     <string name="network_traffic_summary">Enable or disable network speed indicator in status bar</string>
     <string name="network_traffic_state_title">Enable "Network traffic indicator"</string>

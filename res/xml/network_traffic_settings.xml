@@ -19,6 +19,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="network_traffic_intro"
+        android:title="@string/network_traffic_intro_text" />
+
     <org.derpfest.support.preferences.SystemSettingMainSwitchPreference
         android:key="network_traffic_state"
         android:title="@string/network_traffic_state_title"

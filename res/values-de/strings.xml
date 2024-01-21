@@ -187,6 +187,12 @@
     <string name="reticker_landscape_only_summary">reTicker nur aktivieren, wenn das Gerät im Querformat ist</string>
 
     <!-- Network traffic -->
+    <string name="network_traffic_intro_text">
+        Der Netzwerkmonitor zeigt die aktuelle Geschwindigkeit des Netzwerkverkehrs
+        in der Statusleiste an. Die Geschwindigkeit wird dynamisch angezeigt,
+        sodass jede Sekunde zwischen Upload- und Download-Geschwindigkeit
+        gewechselt wird.
+    </string>
     <string name="network_traffic_title">Netzwerkmonitor</string>
     <string name="network_traffic_summary">Netzwerkmonitor in der Statusleiste ein- oder ausblenden</string>
     <string name="network_traffic_state_title">Netzwerkmonitor aktivieren</string>
