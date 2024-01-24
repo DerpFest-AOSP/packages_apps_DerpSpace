@@ -297,8 +297,6 @@
         <item>@string/monet_engine_style_spritz</item>
         <item>@string/monet_engine_style_rainbow</item>
         <item>@string/monet_engine_style_fruit_salad</item>
-        <item>@string/monet_engine_style_muted</item>
-        <item>@string/monet_engine_style_content</item>
         <item>@string/monet_engine_style_monochromatic</item>
     </string-array>
 
@@ -309,8 +307,6 @@
         <item>SPRITZ</item>
         <item>RAINBOW</item>
         <item>FRUIT_SALAD</item>
-        <item>MUTED</item>
-        <item>CONTENT</item>
         <item>MONOCHROMATIC</item>
     </string-array>
 
