@@ -101,7 +101,7 @@
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">让我们帮助你！</string>
-    <string name="derpspace_dialog_message">如果您发现了这些设置的 bug , 请在 Telegram 群组中告知我们. 您提出的 bug 报告中应包含以下内容:\n\n1. logcat 或 last_kmsg\n2. 内核和使用的模块\n3. 有用的信息\n\n如果您的报告中信息不完整, 您发现的 bug 可能很难得到修复。</string>
+    <string name="derpspace_dialog_message">如果您发现了这些设置的 bug ，请在 Telegram 群组中告知我们。您提出的 bug 报告中应包含以下内容：\n\n1. logcat 或 last_kmsg\n2. 内核和使用的模块\n3. 有用的信息\n\n如果您的报告中信息不完整, 您发现的 bug 可能很难得到修复。</string>
     <string name="derpspace_dialog_toast">请熟读并背诵全文！</string>
     <string name="artwork_media_fade_level_summary">淡出淡入式媒体封面</string>
 
@@ -181,7 +181,7 @@
     <string name="theme_customization_wifi_icon_summary">设置 Wi-Fi 图标风格</string>
 
     <!-- Custom Signal bar icons -->
-        <string name="theme_customization_signal_icon_title">信号图标</string>
+    <string name="theme_customization_signal_icon_title">信号图标</string>
     <string name="theme_customization_signal_icon_summary">设置信号图标风格</string>
 
     <!-- Fonts -->
