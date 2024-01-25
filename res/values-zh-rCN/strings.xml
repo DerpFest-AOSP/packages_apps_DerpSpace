@@ -20,7 +20,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- General app strings -->
-    <string name="derpspace_title" translatable="false">DerpSpace</string>
     <string name="add">添加</string>
     <string name="advanced">高级</string>
     <string name="cancel">取消</string>
@@ -128,9 +127,6 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">前摇惯性式</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">后摇惯性式</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">前后摇惯性式</string>
-    <string name="qs_set_animation_style" translatable="false">%1$s</string>
-    <string name="qs_set_animation_duration" translatable="false">%1$s</string>
-    <string name="qs_set_animation_interpolator" translatable="false">%1$s</string>
 
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G 图标</string>
@@ -189,7 +185,6 @@
     <string name="theme_customization_lock_clock_summary">设置锁屏界面的时钟使用的字体</string>
 
     <!-- reTicker -->
-    <string name="reticker_category" translatable="false">reTicker</string>
     <string name="reticker_title">reTicker 精简横幅通知</string>
     <string name="reticker_summary">将传统的大块横幅通知替换为重新设计的 reTicker 横幅。 \n与传统样式通知相比更简洁，侵入性更小。</string>
     <string name="reticker_colored_title">使用 App 颜色作为横幅背景色</string>
@@ -476,17 +471,9 @@
 
     <!-- QS columns customization -->
     <string name="qs_columns">磁贴列数（竖屏时）</string>
-    <string name="qs_columns_min" translatable="false">2</string>
-    <string name="qs_columns_max" translatable="false">5</string>
     <string name="qs_columns_landscape">磁贴列数（横屏时）</string>
-    <string name="qs_columns_landscape_min" translatable="false">@string/qs_columns_min</string>
-    <string name="qs_columns_landscape_max" translatable="false">6</string>
     <string name="qqs_columns">首页磁贴列数（竖屏时）</string>
-    <string name="qqs_columns_min" translatable="false">@string/qs_columns_min</string>
-    <string name="qqs_columns_max" translatable="false">@string/qs_columns_max</string>
     <string name="qqs_columns_landscape">首页磁贴列数（横屏时）</string>
-    <string name="qqs_columns_landscape_min" translatable="false">@string/qs_columns_landscape_min</string>
-    <string name="qqs_columns_landscape_max" translatable="false">@string/qs_columns_landscape_max</string>
 
     <!-- QS style -->
     <string name="qs_style_title">面板样式</string>
