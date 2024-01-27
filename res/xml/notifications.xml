@@ -19,32 +19,26 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/notifications_title">
+    android:title="@string/reticker_title">
 
-    <PreferenceCategory
-        android:key="reticker"
-        android:title="@string/reticker_category" >
+    <org.derpfest.support.preferences.SystemSettingSwitchPreference
+        android:key="reticker_status"
+        android:title="@string/reticker_title"
+        android:summary="@string/reticker_summary"
+        android:defaultValue="false" />
 
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:key="reticker_status"
-            android:title="@string/reticker_title"
-            android:summary="@string/reticker_summary"
-            android:defaultValue="false" />
+    <org.derpfest.support.preferences.SystemSettingSwitchPreference
+        android:dependency="reticker_status"
+        android:key="reticker_landscape_only"
+        android:title="@string/reticker_landscape_only_title"
+        android:summary="@string/reticker_landscape_only_summary"
+        android:defaultValue="false" />
 
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:dependency="reticker_status"
-            android:key="reticker_landscape_only"
-            android:title="@string/reticker_landscape_only_title"
-            android:summary="@string/reticker_landscape_only_summary"
-            android:defaultValue="false" />
-
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
-            android:dependency="reticker_status"
-            android:key="reticker_colored"
-            android:title="@string/reticker_colored_title"
-            android:summary="@string/reticker_colored_summary"
-            android:defaultValue="false" />
-
-    </PreferenceCategory>
+    <org.derpfest.support.preferences.SystemSettingSwitchPreference
+        android:dependency="reticker_status"
+        android:key="reticker_colored"
+        android:title="@string/reticker_colored_title"
+        android:summary="@string/reticker_colored_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>

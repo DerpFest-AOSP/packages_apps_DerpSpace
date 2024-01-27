@@ -24,7 +24,7 @@
         android:key="notifications"
         android:fragment="org.derpfest.derpspace.fragments.Notifications"
         android:icon="@drawable/ic_notification"
-        android:title="@string/notifications_title" />
+        android:title="@string/reticker_title" />
 
     <org.derpfest.support.preferences.CardviewPreference
         android:key="quick_settings"
