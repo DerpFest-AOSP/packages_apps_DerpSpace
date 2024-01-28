@@ -356,10 +356,6 @@
     <string name="qs_transparency_title">Hintergrundtransparenz</string>
     <string name="qs_transparency_summary">Transparenz des Hintergrunds der Schnelleinstellungen anpassen</string>
 
-    <!-- Disable QS -->
-    <string name="disable_qs_title">Schnelleinstellungen auf dem Sperrbildschirm ausblenden</string>
-    <string name="disable_qs_summary">Blendet die Schnelleinstellungen aus, wenn das Gerät gesperrt ist. Deaktiviert nicht die Benachrichtigungsschattierung</string>
-
     <!-- QS brightness slider -->
     <string name="qs_brightness_slider_title">Helligkeitsregler</string>
     <string name="qs_brightness_slider_summary">Helligkeitsregler in den Schnelleinstellungen anpassen</string>
