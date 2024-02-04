@@ -516,20 +516,4 @@
     <string name="use_photos_spoof_title">Unlimited Google photo storage</string>
     <string name="use_photos_spoof_summary">Your device will be identified as a Pixel XL to get unlimited Google photo storage at original quality</string>
     <string name="photos_spoof_toast">Restart the Photos app for it to take effect</string>
-
-    <!-- Edge light -->
-    <string name="edge_light_category">Edge light</string>
-    <string name="edge_light_title">Edge Light</string>
-    <string name="edge_light_summary">Light up the edges of the screen when a notification is received</string>
-    <string name="edge_light_switch_title">Enable Edge Light</string>
-    <string name="edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
-    <string name="edge_light_always_trigger_on_pulse_summary">Show edge light whenever ambient display is shown and not just for notifications</string>
-    <string name="edge_light_repeat_animation_title">Repeat animation</string>
-    <string name="edge_light_repeat_animation_summary_on">Repeat until timeout</string>
-    <string name="edge_light_repeat_animation_summary_off">Show only once</string>
-    <string name="edge_light_color_mode_title">Color mode</string>
-    <string name="default_string">Default</string>
-    <string name="theme_color">Theme color (Default)</string>
-    <string name="notification_color">Notification color</string>
-    <string name="custom_color">Custom color</string>
 </resources>
