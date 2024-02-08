@@ -20,7 +20,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     
     <!-- General app strings -->
-    <string name="derpspace_title" translatable="false">DerpSpace</string>
     <string name="add">新增</string>
     <string name="advanced">進階</string>
     <string name="cancel">取消</string>
@@ -50,7 +49,7 @@
     <string name="feature_flags_category">功能標誌</string>
 
     <!-- Lockscreen UI -->
-    <string name="lockscreen_ui_title">鎖定螢幕介面</string>
+    <string name="lockscreen_ui_title">鎖定畫面 UI</string>
 
     <!-- Lockscreen general category -->
     <string name="general_category">常規</string>
@@ -103,7 +102,7 @@
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">讓我們幫助你！</string>
     <string name="derpspace_dialog_message">If you find a bug with any of these settings, report it in our Telegram Group. You MUST include the following when posting a bug report:\n\n1. A logcat or last_kmsg\n2. Kernel and mods used\n3. Useful information\n\nIf you fail to report something adequately, DO NOT expect things to be fixed.</string>
-    <string name="derpspace_dialog_toast">READ THE WHOLE THING!</string>
+    <string name="derpspace_dialog_toast">閱讀完全文！</string>
     <string name="artwork_media_fade_level_summary">Fading the media artwork image</string>
 
     <!-- QuickSettings haptic feedback -->
@@ -129,9 +128,6 @@
     <string name="qs_tile_animation_interpolator_overshootInterpolator">過衝</string>
     <string name="qs_tile_animation_interpolator_anticipateInterpolator">預備</string>
     <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">預備後過衝</string>
-    <string name="qs_set_animation_style" translatable="false">%1$s</string>
-    <string name="qs_set_animation_duration" translatable="false">%1$s</string>
-    <string name="qs_set_animation_interpolator" translatable="false">%1$s</string>
 
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G 圖示</string>
@@ -189,7 +185,6 @@
     <string name="theme_customization_lock_clock_summary">設定鎖定畫面時鐘的字體樣式</string>
 
     <!-- reTicker -->
-    <string name="reticker_category" translatable="false">reTicker</string>
     <string name="reticker_title">reTicker</string>
     <string name="reticker_summary">Replace your notifications with a redesigned version of tickers. \nSlim and less invasive than a standard notification</string>
     <string name="reticker_colored_title">Use app colored background</string>
@@ -233,7 +228,7 @@
 
     <!-- Clock show seconds -->
     <string name="status_bar_clock_show_seconds_title">時鐘顯示秒數</string>
-    <string name="status_bar_clock_show_seconds_desc">顯示 小時，分鐘，秒數</string>
+    <string name="status_bar_clock_show_seconds_desc">顯示 小時：分鐘：秒數</string>
 
     <!-- Statusbar logo -->
     <string name="status_bar_logo_title">Logo</string>
@@ -242,7 +237,7 @@
     <string name="status_bar_logo_position_right">右側</string>
     <string name="status_bar_logo_position_left">左側</string>
     <string name="status_bar_logo_style_title">Logo 樣式</string>
-    <string name="status_bar_logo_style_derp">DerpFest (預設)</string>
+    <string name="status_bar_logo_style_derp">DerpFest（預設）</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">愛迪達</string>
     <string name="status_bar_logo_style_alien">外星人</string>
@@ -259,7 +254,7 @@
     <string name="status_bar_logo_style_fire">火焰</string>
     <string name="status_bar_logo_style_heart">愛心</string>
     <string name="status_bar_logo_style_nike">Nike</string>
-    <string name="status_bar_logo_style_pacman">小精靈n</string>
+    <string name="status_bar_logo_style_pacman">小精靈</string>
     <string name="status_bar_logo_style_puma">Puma</string>
     <string name="status_bar_logo_style_rog">ROG</string>
     <string name="status_bar_logo_style_spiderman">蜘蛛人</string>
@@ -297,7 +292,7 @@
     <string name="pulse_solid_units_opacity">線條透明度</string>
     <string name="pulse_solid_dimen_category">線條樣式設定</string>
     <string name="pulse_color_mode_title">顏色</string>
-    <string name="pulse_color_accent">Accent</string>
+    <string name="pulse_color_accent">強調色</string>
     <string name="pulse_color_custom">自訂</string>
     <string name="pulse_color_lava_lamp">熔岩燈</string>
     <string name="pulse_color_auto">專輯</string>
@@ -339,35 +334,35 @@
     <string name="pulse_vertical_mirror_summary">Create other pulse and flip vertically</string>
 
     <!-- Ripple Effect on lockscreen -->
-    <string name="enable_fingerprint_ripple_effect_title">Unlock animation</string>
-    <string name="enable_fingerprint_ripple_effect_summary">Show ripple effect on unlock with fingerprint</string>
+    <string name="enable_fingerprint_ripple_effect_title">解鎖動畫</string>
+    <string name="enable_fingerprint_ripple_effect_summary">使用指紋解鎖時顯示波紋效果</string>
 
     <!-- Charging animation -->
-    <string name="charging_animation_title">Charging animation</string>
-    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
+    <string name="charging_animation_title">充電動畫</string>
+    <string name="charging_animation_summary">當裝置接上電源時顯示充電動畫</string>
 
     <!-- Statusbar Clock background chip -->
-    <string name="statusbar_clock_chip_title">Background chip</string>
-    <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string> 
+    <string name="statusbar_clock_chip_title">時鐘背景</string>
+    <string name="statusbar_clock_chip_summary">在時鐘後方顯示強調色的背景</string> 
 
     <!-- Hide statusbar on lockscreen -->
-    <string name="lockscreen_hide_status_bar_title">Hide Statusbar</string>
-    <string name="lockscreen_hide_status_bar_summary">When enabled, statusbar will be hidden on lockscreen</string>
+    <string name="lockscreen_hide_status_bar_title">隱藏狀態列</string>
+    <string name="lockscreen_hide_status_bar_summary">開啟之後狀態列將會在鎖定畫面上隱藏</string>
 
     <!-- Statusbar colored icons -->
-    <string name="statusbar_colored_icons_title">Colored icons</string>
-    <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in statusbar</string>
+    <string name="statusbar_colored_icons_title">彩色圖示</string>
+    <string name="statusbar_colored_icons_summary">在狀態列上使用應用程式圖示作為通知圖示</string>
 
     <!-- Wi-Fi Standard icon -->
-    <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
-    <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+    <string name="show_wifi_standard_icon_title">顯示 Wi-Fi 類型圖示</string>
+    <string name="show_wifi_standard_icon_summary">在 Wi-Fi 訊號旁顯示 Wi-Fi 類型</string>
 
     <!-- QS Transparency -->
-    <string name="qs_transparency_title">Background transparency</string>
-    <string name="qs_transparency_summary">Set transparency level for QS background</string>
+    <string name="qs_transparency_title">背景透明度</string>
+    <string name="qs_transparency_summary">設定快速設定背景的透明度等級</string>
 
     <!-- QS brightness slider -->
-    <string name="qs_brightness_slider_title">Brightness slider</string>
+    <string name="qs_brightness_slider_title">亮度控制條樣式</string>
     <string name="qs_brightness_slider_summary">Adjust brightness slider from the quick settings</string>
     <string name="qs_brightness_slider_never">Never show</string>
     <string name="qs_brightness_slider_expanded">Show when expanded</string>
@@ -380,14 +375,14 @@
     <string name="qs_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
 
     <!-- Battery customizations -->
-    <string name="battery_options">Battery</string>
-    <string name="battery_style_title">Battery Style</string>
-    <string name="battery_style_port">Portrait</string>
-    <string name="battery_style_circle">Circle</string>
-    <string name="battery_style_text">Text</string>
-    <string name="battery_percent_title">Show percent</string>
+    <string name="battery_options">電池</string>
+    <string name="battery_style_title">電池樣式</string>
+    <string name="battery_style_port">直立</string>
+    <string name="battery_style_circle">圓圈</string>
+    <string name="battery_style_text">文本</string>
+    <string name="battery_percent_title">顯示百分比</string>
     <string name="battery_percent_summary">Always show the battery percent with the icon</string>
-    <string name="battery_percent_inside_title">Show percent inside</string>
+    <string name="battery_percent_inside_title">顯示在圖示裡面</string>
     <string name="battery_percent_inside_summary">Show percent inside the icon</string>
     <string name="show_battery_percent_charging_title">Show percent when charging</string>
     <string name="show_battery_percent_charging_summary">Enforce showing the percent next to the icon when charging</string>
@@ -397,9 +392,9 @@
     <string name="fprint_sucess_vib_summary">Vibrate on successful fingerprint authentication</string>
 
     <!-- QS Battery estimates -->
-    <string name="qs_show_battery_estimate_title">Battery estimates</string>
-    <string name="qs_show_battery_estimate_summary_on">Show battery estimates in QS</string>
-    <string name="qs_show_battery_estimate_summary_off">Hide battery estimates in QS</string>
+    <string name="qs_show_battery_estimate_title">預計電量可用時間</string>
+    <string name="qs_show_battery_estimate_summary_on">在快速設定裡將顯示預計電量可用時間</string>
+    <string name="qs_show_battery_estimate_summary_off">在快速設定裡將隱藏預計電量可用時間</string>
 
     <!-- QS Header -->
     <string name="qs_header_image_title">Header Image</string>
@@ -425,65 +420,57 @@
     <string name="qs_header_image_needs_gallery">You must install a gallery app!</string>
 
     <!-- Brightness slider styles -->
-    <string name="theme_customization_brightness_slider_title">Brightness slider style</string>
-    <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
+    <string name="theme_customization_brightness_slider_title">亮度控制條樣式</string>
+    <string name="theme_customization_brightness_slider_summary">自定義亮度控制條的樣式</string>
 
     <!-- Navbar styles -->
-    <string name="theme_customization_navbar_title">Navbar style</string>
-    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
+    <string name="theme_customization_navbar_title">導覽列樣式</string>
+    <string name="theme_customization_navbar_summary">自定義導覽列的樣式</string>
 
     <!-- Custom Data icons -->
-    <string name="theme_customization_data_title">Data icon style</string>
-    <string name="theme_customization_data_summary">Set custom data icon style</string>
+    <string name="theme_customization_data_title">數據圖示樣式</string>
+    <string name="theme_customization_data_summary">自定義數據圖示的樣式</string>
 
     <!-- QS footer data usage -->
-    <string name="qs_show_data_usage_title">Show data usage</string>
-    <string name="qs_show_data_usage_summary">Show daily cellular/Wi-Fi data usage in QS footer</string>
+    <string name="qs_show_data_usage_title">顯示數據使用量</string>
+    <string name="qs_show_data_usage_summary">在快速設定頁腳顯示每日的 行動數據 / Wi-Fi 使用量</string>
 
     <!-- Monet Engine -->
-    <string name="monet_engine_title">Monet engine</string>
-    <string name="monet_engine_summary">Customize monet parameters</string>
-    <string name="monet_engine_custom_color_title">Accent color</string>
-    <string name="monet_engine_custom_color_summary">Choose custom color for accent</string>
-    <string name="monet_engine_custom_bgcolor_title">Background color</string>
-    <string name="monet_engine_custom_bgcolor_summary">Choose custom color for background</string>
-    <string name="monet_engine_color_override_title">Custom color</string>
-    <string name="monet_engine_luminance_factor_title">Luminance</string>
-    <string name="monet_engine_luminance_factor_summary">Higher values produce brighter colors</string>
-    <string name="monet_engine_chroma_factor_title">Chroma factor</string>
-    <string name="monet_engine_chroma_factor_summary">Higher values produce stronger colors</string>
-    <string name="monet_engine_tint_background_title">Tint background</string>
-    <string name="monet_engine_tint_background_summary">Make luminance and chroma selection affect background colors as well</string>
-    <string name="monet_engine_style_title">Theme style</string>
-    <string name="monet_engine_style_tonal_spot">Tonal Spot (Default)</string>
-    <string name="monet_engine_style_vibrant">Vibrant</string>
-    <string name="monet_engine_style_expressive">Expressive</string>
-    <string name="monet_engine_style_spritz">Spritz</string>
-    <string name="monet_engine_style_rainbow">Rainbow</string>
-    <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
-    <string name="monet_engine_style_monochromatic">Monochromatic</string>
-    <string name="monet_engine_wallpaper_color_select_summary">Select a different accent color from your wallpaper</string>
-    <string name="monet_engine_wallpaper_color_select_title">Wallpaper color selector</string>
+    <string name="monet_engine_title">Monet 引擎</string>
+    <string name="monet_engine_summary">自定義 Monet 的參數</string>
+    <string name="monet_engine_custom_color_title">強調顏色</string>
+    <string name="monet_engine_custom_color_summary">選擇自定義顏色作為強調的顏色</string>
+    <string name="monet_engine_custom_bgcolor_title">背景顏色</string>
+    <string name="monet_engine_custom_bgcolor_summary">選擇自定義顏色作為背景的顏色</string>
+    <string name="monet_engine_color_override_title">自定義顏色</string>
+    <string name="monet_engine_luminance_factor_title">色彩亮度</string>
+    <string name="monet_engine_luminance_factor_summary">該值越高色彩亮度就越高</string>
+    <string name="monet_engine_chroma_factor_title">色度</string>
+    <string name="monet_engine_chroma_factor_summary">該值越高色度就越深</string>
+    <string name="monet_engine_tint_background_title">背景色調</string>
+    <string name="monet_engine_tint_background_summary">使色彩亮度與色度同時作用於背景顏色</string>
+    <string name="monet_engine_style_title">主題樣式</string>
+    <string name="monet_engine_style_tonal_spot">色調點（預設）</string>
+    <string name="monet_engine_style_vibrant">繽紛</string>
+    <string name="monet_engine_style_expressive">表現力</string>
+    <string name="monet_engine_style_spritz">噴灑</string>
+    <string name="monet_engine_style_rainbow">彩虹</string>
+    <string name="monet_engine_style_fruit_salad">水果沙拉</string>
+    <string name="monet_engine_style_monochromatic">單色</string>
+    <string name="monet_engine_wallpaper_color_select_summary">從桌布上選擇一個不同的強調顏色</string>
+    <string name="monet_engine_wallpaper_color_select_title">桌布顏色選擇器</string>
     <string name="not_available">不可用</string>
 
     <!-- QS panel -->
     <string name="qs_panel_options_title">快速設定磁貼布局</string>
-    <string name="qs_panel_options_summary">自定義快色設置面板的磁貼布局</string>
+    <string name="qs_panel_options_summary">自定義快速設置面板的磁貼布局</string>
     <string name="category_name_qs_tiles">快速設定磁貼</string>
 
     <!-- QS columns customization -->
     <string name="qs_columns">QS columns in portrait</string>
-    <string name="qs_columns_min" translatable="false">2</string>
-    <string name="qs_columns_max" translatable="false">5</string>
     <string name="qs_columns_landscape">QS columns in landscape</string>
-    <string name="qs_columns_landscape_min" translatable="false">@string/qs_columns_min</string>
-    <string name="qs_columns_landscape_max" translatable="false">6</string>
     <string name="qqs_columns">QQS columns in portrait</string>
-    <string name="qqs_columns_min" translatable="false">@string/qs_columns_min</string>
-    <string name="qqs_columns_max" translatable="false">@string/qs_columns_max</string>
     <string name="qqs_columns_landscape">QQS columns in landscape</string>
-    <string name="qqs_columns_landscape_min" translatable="false">@string/qs_columns_landscape_min</string>
-    <string name="qqs_columns_landscape_max" translatable="false">@string/qs_columns_landscape_max</string>
 
     <!-- QS style -->
     <string name="qs_style_title">快速設定面板樣式</string>
@@ -494,22 +481,22 @@
     <string name="qs_tile_shape">快速設定磁貼樣式</string>
     <string name="qs_tile_round">圓形</string>
     <string name="qs_tile_rect">圓角矩形</string>
-    <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+    <string name="qs_tile_mix">激活時使用圓形，未激活時使用圓角矩形</string>
 
     <!-- Statusbar lyric -->
-    <string name="status_bar_lyric_title">Status bar lyric</string>
-    <string name="status_bar_lyric_summary">Show lyric in status bar (need app support)</string>
-    <string name="status_bar_show_lyric_title">Enable status bar lyric</string>
-    <string name="status_bar_lyric_options_title">Options</string>
+    <string name="status_bar_lyric_title">狀態列歌詞</string>
+    <string name="status_bar_lyric_summary">在狀態列上顯示歌詞（需要應用程式支援）</string>
+    <string name="status_bar_show_lyric_title">開啟 狀態列歌詞</string>
+    <string name="status_bar_lyric_options_title">選項</string>
     <string name="disguise_props_for_music_app_title">Disguise device for music apps</string>
     <string name="disguise_props_for_music_app_summary">Disguise device in some music applications for support status bar lyric. After changing this toggle, you have to restart applications for the change to take effect.</string>
 
     <!-- User switcher -->
     <string name="lockscreen_user_switcher_title">快速切換使用者</string>
-    <string name="lockscreen_user_switcher_summary">在解鎖受保護的裝置時顯示切換使用者選項\n需要重新啟動系統介面</string>
+    <string name="lockscreen_user_switcher_summary">在解鎖受保護的裝置時顯示切換使用者選項（需要重新啟動系統介面）</string>
 
     <!-- Ignore window secure -->
-    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_title">忽略窗口的安全標誌</string>
     <string name="ignore_window_secure_summary">為全部的應用移除螢幕截圖與螢幕錄影的限制。\n這在一些情況下很方便，但可能會導致隱私洩漏。</string>
 
     <!-- Unlimited g00gle ph0t0s st0rage -->
@@ -529,7 +516,7 @@
     <string name="edge_light_repeat_animation_summary_off">只顯示一次</string>
     <string name="edge_light_color_mode_title">顏色樣式</string>
     <string name="default_string">默認</string>
-    <string name="theme_color">主題色 (默認)</string>
+    <string name="theme_color">主題色（默認）</string>
     <string name="notification_color">通知顏色</string>
     <string name="custom_color">自定義顏色</string>
 </resources>
