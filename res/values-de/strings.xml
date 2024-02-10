@@ -511,4 +511,8 @@
     <string name="ambient_edge_light_duration_title">Effektdauer</string>
     <string name="ambient_edge_light_repeat_count_title">Anzahl der Wiederholungen</string>
     <string name="ambient_edge_light_width_title">Beleuchtungsbreite</string>
+
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Netflix-Spoofing</string>
+    <string name="netflix_spoof_summary">Netflix ein anderes Gerätemodell vortäuschen</string>
 </resources>
