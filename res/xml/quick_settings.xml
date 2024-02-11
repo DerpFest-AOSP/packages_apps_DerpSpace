@@ -81,14 +81,14 @@
             android:title="@string/qs_brightness_slider_title"
             android:entries="@array/qs_brightness_slider_entries"
             android:entryValues="@array/qs_brightness_slider_values"
-            android:defaultValue="1" />
+            android:defaultValue="2" />
 
         <org.derpfest.support.preferences.SecureSettingListPreference
             android:key="qs_brightness_slider_position"
             android:title="@string/qs_brightness_slider_position_title"
             android:entries="@array/qs_brightness_slider_position_entries"
             android:entryValues="@array/qs_brightness_slider_position_values"
-            android:defaultValue="0" />
+            android:defaultValue="1" />
 
         <org.derpfest.support.preferences.SecureSettingSwitchPreference
             android:key="qs_show_auto_brightness"
