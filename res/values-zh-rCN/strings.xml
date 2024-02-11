@@ -136,11 +136,6 @@
     <string name="data_disabled_icon_title">显示数据网络关闭叉号</string>
     <string name="data_disabled_icon_summary">当数据网络关闭时在信号图标上显示一个叉号</string>
 
-
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">显示漫游状态图标</string>
-    <string name="roaming_indicator_icon_summary">处于漫游时在信号图标上方显示漫游状态</string>
-
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">使用敏感磁贴时需要解锁</string>
     <string name="qstile_requires_unlocking_summary">在使用有敏感功能的快速设置磁贴时要求解锁</string>
@@ -314,13 +309,18 @@
     <string name="bluetooth_battery_summary">在可用时显示已连接的蓝牙设备电量</string>
 
     <!-- Ambient battery bar settings -->
-    <string name="ambient_ui">熄屏显示</string>
+    <string name="ambient_ui">息屏显示</string>
     <string name="ambient_battery_settings_title">电池栏</string>
-    <string name="ambient_battery_settings_summary">熄屏时显示电池栏</string>
+    <string name="ambient_battery_settings_summary">息屏时显示电池栏</string>
     <string name="keyguard_show_battery_title">充电时显示电池栏</string>
-    <string name="keyguard_show_battery_summary">熄屏充电时显示电池栏</string>
+    <string name="keyguard_show_battery_summary">息屏充电时显示电池栏</string>
     <string name="keyguard_show_battery_always_title">总是显示电池栏</string>
-    <string name="keyguard_show_battery_always_summary">熄屏时总是显示电池栏</string>
+    <string name="keyguard_show_battery_always_summary">息屏时总是显示电池栏</string> 
+    <string name="keyguard_batterybar_color_source">电池栏颜色</string>
+    <string name="keyguard_batterybar_custom_color">自定义电池栏颜色</string>
+    <string name="keyguard_batterybar_white">白色（默认）</string>
+    <string name="keyguard_batterybar_accent">主题强调色</string>
+    <string name="keyguard_batterybar_custom">自定义</string>
 
     <!-- Pulse Gravity and mirror options -->
     <string name="pulse_custom_gravity_title">重力方向</string>
@@ -360,10 +360,6 @@
     <string name="qs_transparency_title">背景透明度</string>
     <string name="qs_transparency_summary">为快速设置面板设置背景透明度</string>
     
-    <!-- Disable QS -->
-    <string name="disable_qs_title">在受保护的的锁屏中隐藏快速设置</string>
-    <string name="disable_qs_summary">当设备锁定时隐藏快速设置面板。不会关闭通知面板阴影</string>
-
     <!-- QS brightness slider -->
     <string name="qs_brightness_slider_title">亮度调节滑块</string>
     <string name="qs_brightness_slider_summary">从快速设置中调节亮度</string>
@@ -478,7 +474,7 @@
     <!-- QS style -->
     <string name="qs_style_title">面板样式</string>
     <string name="qs_style_default">大号药丸</string>
-    <string name="qs_style_round">小圆圈</string>
+    <string name="qs_style_round">小圆环</string>
 
     <!-- QS tile shape -->
     <string name="qs_tile_shape">磁贴形状</string>
@@ -506,20 +502,25 @@
     <string name="use_photos_spoof_title">无限 Google 相册储存空间</string>
     <string name="use_photos_spoof_summary">你的设备将被识别为 Pixel XL 从而可获取无限的 Google 相册储存空间，并以原始画质备份</string>
     <string name="photos_spoof_toast">重启相册应用以生效</string>
-    
-    <!-- Edge light -->
-    <string name="edge_light_category">通知光效</string>
-    <string name="edge_light_title">通知光效</string>
-    <string name="edge_light_summary">当收到通知时在屏幕边缘显示光效</string>
-    <string name="edge_light_switch_title">启用通知光效</string>
-    <string name="edge_light_always_trigger_on_pulse_title">息屏时始终显示</string>
-    <string name="edge_light_always_trigger_on_pulse_summary">在息屏显示启用时始终显示光效，而不仅是在有通知时</string>
-    <string name="edge_light_repeat_animation_title">重复动画</string>
-    <string name="edge_light_repeat_animation_summary_on">重复显示</string>
-    <string name="edge_light_repeat_animation_summary_off">只显示一次</string>
-    <string name="edge_light_color_mode_title">颜色样式</string>
-    <string name="default_string">默认</string>
-    <string name="theme_color">主题色（默认）</string>
-    <string name="notification_color">通知颜色</string>
-    <string name="custom_color">自定义颜色</string>
+
+    <!-- Ambient edge lighting -->
+    <string name="ambient_edge_light_action_title">息屏边缘光效</string>
+    <string name="ambient_edge_light_title">边缘光效</string>
+    <string name="ambient_edge_light_enable_title">启用边缘光效</string>
+    <string name="ambient_edge_light_summary">当收到通知时在屏幕边缘显示光效</string>
+    <string name="ambient_edge_light_color_mode_category_title">颜色</string>
+    <string name="ambient_edge_light_color_mode_auto">自动</string>
+    <string name="ambient_edge_light_color_mode_app">应用颜色</string>
+    <string name="ambient_edge_light_color_mode_manual">手动</string>
+    <string name="ambient_edge_light_color_mode_auto_summary">将边缘光效颜色设置为系统颜色</string>
+    <string name="ambient_edge_light_color_mode_app_summary">将边缘光效颜色设置为应用颜色</string>
+    <string name="ambient_edge_light_color_mode_manual_summary">手动选择颜色</string>
+    <string name="ambient_edge_light_advanced_category_title">高级</string>
+    <string name="ambient_edge_light_duration_title">光效持续时长</string>
+    <string name="ambient_edge_light_repeat_count_title">重复次数</string>
+    <string name="ambient_edge_light_width_title">光效宽度</string>
+
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Netflix 机型伪装</string>
+    <string name="netflix_spoof_summary">对 Netflix 伪装您的设备为其他型号</string>
 </resources>
