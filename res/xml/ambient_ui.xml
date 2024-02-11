@@ -32,6 +32,22 @@
             android:summary="@string/keyguard_show_battery_always_summary"
             android:dependency="sysui_keyguard_show_battery_bar"
             android:defaultValue="false" />
+
+        <org.derpfest.support.preferences.SystemSettingListPreference
+            android:key="sysui_keyguard_battery_bar_color_source"
+            android:title="@string/keyguard_batterybar_color_source"
+            android:entries="@array/keyguard_batterybar_color_source_entries"
+            android:entryValues="@array/keyguard_batterybar_color_source_values"
+            android:dependency="sysui_keyguard_show_battery_bar"
+            android:summary="%s"
+            android:defaultValue="0" />
+
+        <org.derpfest.support.colorpicker.ColorPickerPreference
+            android:key="sysui_keyguard_battery_bar_custom_color"
+            android:title="@string/keyguard_batterybar_custom_color"
+            android:persistent="false"
+            android:dependency="sysui_keyguard_show_battery_bar"
+            android:defaultValue="0xFF39FF42" />
     </PreferenceCategory>
 
 </PreferenceScreen>

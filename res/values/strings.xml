@@ -327,6 +327,11 @@
     <string name="keyguard_show_battery_summary">Show a battery bar on the ambient display when charging</string>
     <string name="keyguard_show_battery_always_title">Always show battery bar</string>
     <string name="keyguard_show_battery_always_summary">Always show a battery bar on the ambient display</string>
+    <string name="keyguard_batterybar_color_source">Battery bar color source</string>
+    <string name="keyguard_batterybar_custom_color">Battery bar custom color</string>
+    <string name="keyguard_batterybar_white">White (Default)</string>
+    <string name="keyguard_batterybar_accent">Accent color</string>
+    <string name="keyguard_batterybar_custom">Custom</string>
 
     <!-- Pulse Gravity and mirror options -->
     <string name="pulse_custom_gravity_title">Gravity</string>
