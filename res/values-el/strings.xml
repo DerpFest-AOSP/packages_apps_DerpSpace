@@ -576,4 +576,21 @@
     <string name="status_bar_battery_percent_text_next_left">Δίπλα στο εικονίδιο (αριστερά)</string>
     <string name="status_bar_battery_text_charging_title">Ποσοστό μπαταρίας κατά τη φόρτιση</string>
     <string name="status_bar_battery_text_charging_summary">Να εμφανίζεται πάντα το ποσοστό της μπαταρίας κατά τη φόρτιση</string>
+
+    <!-- QS battery -->
+    <string name="qs_use_status_bar_battery_style">Ακολούθηση του στυλ της γραμμής κατάστασης της μπαταρίας</string>
+
+    <!-- Brightness slider haptic feedback -->
+    <string name="qs_brightness_slider_haptic_title">Κραδασμός</string>
+    <string name="qs_brightness_slider_haptic_summary">Παρέχει κραδασμό κατά την αλλαγή της φωτεινότητας χρησιμοποιώντας τον διακόπτη</string>
+
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Στυλ εικονιδίων δεδομένων</string>
+    <string name="theme_customization_data_summary">Ορίστε προσαρμοσμένο στυλ εικονιδίων δεδομένων</string>
+
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Απεριόριστη αποθήκευση φωτογραφιών Google</string>
+    <string name="use_photos_spoof_summary">Η συσκευή σας θα αναγνωρίζεται ως Pixel XL για να λάβετε απεριόριστη αποθήκευση φωτογραφιών Google σε πρωτότυπη ποιότητα</string>
+    <string name="photos_spoof_toast">Επανεκκινήστε την εφαρμογή Φωτογραφίες για να ισχύσουν οι αλλαγές</string>
+
 </resources>
