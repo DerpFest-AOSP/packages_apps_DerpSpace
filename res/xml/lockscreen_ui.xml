@@ -71,6 +71,13 @@
             android:summary="@string/charging_animation_summary"
             android:defaultValue="true" />
 
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="false"
+            settings:controller="org.derpfest.derpspace.fragments.LockscreenBatteryInfoPreferenceController" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
