@@ -83,6 +83,9 @@
     <!-- Quick Settings footer category -->
     <string name="footer_category">Fußzeile</string>
 
+    <!-- Quick Settings header category -->
+    <string name="header_category">Kopf</string>
+
     <!-- Statusbar Iten -->
     <string name="statusbar_items_category">Statusbar-Elemente</string>
 
@@ -492,4 +495,27 @@
     <!-- Netflix Spoof -->
     <string name="netflix_spoof_title">Netflix-Spoofing</string>
     <string name="netflix_spoof_summary">Netflix ein anderes Gerätemodell vortäuschen</string>
+
+    <!-- QS Headers -->
+    <string name="status_bar_custom_header_title">Aktivieren</string>
+    <string name="daylight_header_pack_title">Header image collection</string>
+    <string name="status_bar_custom_header_shadow_title">Kopfzeilenbild-Schatten</string>
+    <string name="status_bar_custom_header_shadow_summary">Bessere Sichtbarkeit bei hellen Bildern</string>
+    <string name="static_header_provider_title">Static image</string>
+    <string name="daylight_header_provider_title">Image collection</string>
+    <string name="custom_header_provider_title">Header provider</string>
+    <string name="custom_header_browse_title">Browse installed headers</string>
+    <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
+    <string name="custom_header_browse_summary_new">Browse all available header collections</string>
+    <string name="custom_header_pick_title">Select header image</string>
+    <string name="custom_header_pick_summary">Select an image to use for static mode</string>
+    <string name="style_enabled_summary">Benutzerdefiniertes Header-Bild ist AN</string>
+    <string name="style_disabled_summary">Benutzerdefiniertes Header-Bild ist AUS</string>
+    <string name="header_provider_disabled">Deaktiviert</string>
+    <string name="custom_header_title">Benutzerdefiniertes Header-Bild</string>
+    <string name="custom_header_summary">Select QS background header image</string>
+    <string name="file_header_select_title">Wähle ein Bild</string>
+    <string name="file_header_select_summary">Select custom image</string>
+    <string name="file_header_provider_title">Einzelnes Bild</string>
+    <string name="custom_header_needs_gallary">You must install a gallery app!</string>
 </resources>
