@@ -49,6 +49,17 @@
             android:min="1" />
     </PreferenceCategory>
 
+     <PreferenceCategory
+        android:key="quick_settings_header_category"
+        android:title="@string/header_category">
+
+        <Preference
+            android:key="category_custom_header"
+            android:fragment="org.derpfest.derpspace.fragments.QsHeaderImageSettings"
+            android:title="@string/custom_header_title"
+            android:summary="@string/custom_header_summary" />
+     </PreferenceCategory>
+
     <PreferenceCategory
         android:key="quick_settings_secure_category"
         android:title="@string/secure_quick_settings" >
