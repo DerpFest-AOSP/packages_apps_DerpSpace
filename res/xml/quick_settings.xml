@@ -53,11 +53,13 @@
         android:key="quick_settings_header_category"
         android:title="@string/header_category">
 
-        <Preference
+        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_image"
-            android:fragment="org.derpfest.derpspace.fragments.QsHeaderImageSettings"
             android:title="@string/qs_header_image_title"
-            android:summary="@string/qs_header_image_summary" />
+            android:defaultValue="0"
+            settings:interval="1"
+            android:max="24"
+            android:min="0" />
      </PreferenceCategory>
 
     <PreferenceCategory
