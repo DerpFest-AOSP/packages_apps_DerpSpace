@@ -117,7 +117,8 @@
         <org.derpfest.support.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
             android:title="@string/notification_material_dismiss_title"
-            android:summary="@string/notification_material_dismiss_summary" />
+            android:summary="@string/notification_material_dismiss_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
     
