@@ -21,138 +21,138 @@
     
     <!-- General app strings -->
     <string name="derpspace_title" translatable="false">DerpSpace</string>
-    <string name="add">Add</string>
-    <string name="advanced">Advanced</string>
-    <string name="cancel">Cancel</string>
-    <string name="default_text">Default</string>
-    <string name="dlg_ok">OK</string>
-    <string name="attention">Attention</string>
-    <string name="loading">Loading\u2026</string>
-    <string name="reset">Reset</string>
-    <string name="reset_colors">Reset colors</string>
+    <string name="add">Ekle</string>
+    <string name="advanced">Gelişmiş</string>
+    <string name="cancel">İptal</string>
+    <string name="default_text">Varsayılan</string>
+    <string name="dlg_ok">TAMAM</string>
+    <string name="attention">Dikkat</string>
+    <string name="loading">Yükleniyor\u2026</string>
+    <string name="reset">Sıfırla</string>
+    <string name="reset_colors">Renkleri sıfırla</string>
     <string name="reset_android">Android</string>
-    <string name="text_title">Text</string>
-    <string name="icon_title">Icon</string>
-    <string name="color_title">Color</string>
-    <string name="colors_title">Colors</string>
+    <string name="text_title">Metin</string>
+    <string name="icon_title">İkon</string>
+    <string name="color_title">Renk</string>
+    <string name="colors_title">Renkler</string>
 
     <!-- DerpSpace categories -->
-    <string name="icons_category">Icons</string>
-    <string name="status_bar_category">Statusbar</string>
-    <string name="notifications_panel_category">QS panel</string>
-    <string name="system_category">System</string>
-    <string name="lockscreen_category">Lockscreen</string>
-    <string name="listview">ListView</string>
+    <string name="icons_category">İkonlar</string>
+    <string name="status_bar_category">Durum çubuğu</string>
+    <string name="notifications_panel_category">Hızlı ayarlar paneli</string>
+    <string name="system_category">Sistem</string>
+    <string name="lockscreen_category">Kilit ekranı</string>
+    <string name="listview">Liste görünümü</string>
 
     <!-- Frags -->
     <!-- General Tweaks -->
-    <string name="general_tweaks_title">General settings</string>
-    <string name="feature_flags_category">Feature flags</string>
+    <string name="general_tweaks_title">Genel ayarlar</string>
+    <string name="feature_flags_category">Özellik bayrakları</string>
 
     <!-- Lockscreen UI -->
-    <string name="lockscreen_ui_title">Lockscreen UI</string>
+    <string name="lockscreen_ui_title">Kilit ekranı arayüzü</string>
 
     <!-- Lockscreen general category -->
-    <string name="general_category">General</string>
+    <string name="general_category">Genel</string>
 
     <!-- Lockscreen charging category -->
-    <string name="charging_category">Charging</string>
+    <string name="charging_category">Şarj oluyor</string>
 
     <!-- Quicksettings media category -->
-    <string name="media_category">Media player</string>
+    <string name="media_category">Medya oynatıcı</string>
 
     <!-- Network Traffic -->
-    <string name="traffic_title">Traffic Indicators</string>
+    <string name="traffic_title">Ağ trafik göstergeleri</string>
 
     <!-- Misc DerpSpace -->
-    <string name="misc_derpspace_title">Miscellaneous</string>
+    <string name="misc_derpspace_title">Çeşitli ayarlar</string>
 
     <!-- Notifications -->
-    <string name="notifications_title">Notifications</string>
+    <string name="notifications_title">Bildirimler</string>
 
     <!-- Quick Settings -->
-    <string name="quick_settings_title">Quick Settings</string>
+    <string name="quick_settings_title">Hızlı Ayarlar</string>
 
     <!-- Status bar clock options -->
-    <string name="status_bar_clock_title">Clock Settings</string>
+    <string name="status_bar_clock_title">Saat Ayarları</string>
 
     <!-- Secure quick settings category -->
-    <string name="secure_quick_settings">Security</string>
+    <string name="secure_quick_settings">Güvenlik</string>
 
     <!-- Quick Settings brightness slider -->
-    <string name="qs_brightness_slider_category">Brightness slider</string>
+    <string name="qs_brightness_slider_category">Parlaklık kaydırıcısı</string>
 
     <!-- Quick Settings footer category -->
-    <string name="footer_category">Footer</string>
+    <string name="footer_category">Alt Bilgi</string>
 
     <!-- Quick Settings header category -->
-    <string name="header_category">Header</string>
+    <string name="header_category">Başlık</string>
 
     <!-- Statusbar Iten -->
-    <string name="statusbar_items_category">Statusbar Items</string>
+    <string name="statusbar_items_category">Durum çubuğu öğeleri</string>
 
     <!-- Customisation -->
-    <string name="customisation_title">Customisation</string>
+    <string name="customisation_title">Özelleştirme</string>
 
     <!-- Battery -->
-    <string name="battery_title">Battery</string>
+    <string name="battery_title">Pil</string>
 
     <!-- Battery Settings -->
-    <string name="battery_settings_title">Battery Settings</string>   
+    <string name="battery_settings_title">Pil Ayarları</string>   
 
     <!-- App info dialog -->
-    <string name="derpspace_dialog_title">Help us help you!</string>
-    <string name="derpspace_dialog_message">If you find a bug with any of these settings, report it in our Telegram Group. You MUST include the following when posting a bug report:\n\n1. A logcat or last_kmsg\n2. Kernel and mods used\n3. Useful information\n\nIf you fail to report something adequately, DO NOT expect things to be fixed.</string>
-    <string name="derpspace_dialog_toast">READ THE WHOLE THING!</string>
-    <string name="artwork_media_fade_level_summary">Fading the media artwork image</string>
+    <string name="derpspace_dialog_title">Size yardım etmemize yardım edin!</string>
+    <string name="derpspace_dialog_message">Eğer bu ayarlarla ilgili bir hata bulursanız, bunu Telegram Grubumuzda bildirin. Bir hata raporu gönderirken aşağıdakileri mutlaka eklemelisiniz:\n\n1. Bir logcat veya last_kmsg\n2. Kullanılan kernel ve modlar\n3. Faydalı bilgiler\n\nEğer yeterli bir şekilde bir şey bildiremezseniz, düzeltilmesini beklemeyin.</string>
+    <string name="derpspace_dialog_toast">HEPSİNİ OKUYUN!</string>
+    <string name="artwork_media_fade_level_summary">Medya sanat eseri görüntüsünün solması</string>
 
     <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Feel a vibration upon touching quick tiles</string>
+    <string name="quick_settings_vibrate_title">Dokunulduğunda titreşimle</string>
+    <string name="quick_settings_vibrate_summary">Hızlı döşemelere dokunduğunuzda bir titreşim hissedin</string>
 
     <!-- Tiles animation style  -->
-    <string name="qs_tile_animation_title">Animations</string>
-    <string name="qs_tile_animation_style_title">Animation style</string>
-    <string name="qs_tile_animation_duration_title">Animation duration</string>
-    <string name="qs_tile_animation_interpolator_title">Tiles animation interpolator</string>
-    <string name="qs_tile_animation_style_off">No animation</string>
-    <string name="qs_tile_animation_style_flip">Flip</string>
-    <string name="qs_tile_animation_style_rotate">Rotate</string>
-    <string name="qs_tile_animation_duration_low">Low</string>
-    <string name="qs_tile_animation_duration_default">Default</string>
-    <string name="qs_tile_animation_duration_fast">Fast</string>
-    <string name="qs_tile_animation_duration_quite_fast">Quite fast</string>
-    <string name="qs_tile_animation_duration_super_fast">Super fast</string>
-    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
-    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
-    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
-    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Accelerate decelerate</string>
-    <string name="qs_tile_animation_interpolator_bounceInterpolator">Bounce</string>
-    <string name="qs_tile_animation_interpolator_overshootInterpolator">Overshoot</string>
-    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Anticipate</string>
-    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Anticipate overshoot</string>
+    <string name="qs_tile_animation_title">Animasyonlar</string>
+    <string name="qs_tile_animation_style_title">Animasyon stili</string>
+    <string name="qs_tile_animation_duration_title">Animasyon süresi</string>
+    <string name="qs_tile_animation_interpolator_title">Döşeme animasyonu içdeğerbiçimi</string>
+    <string name="qs_tile_animation_style_off">Animasyon yok</string>
+    <string name="qs_tile_animation_style_flip">Çevir</string>
+    <string name="qs_tile_animation_style_rotate">Döndür</string>
+    <string name="qs_tile_animation_duration_low">Düşük</string>
+    <string name="qs_tile_animation_duration_default">Varsayılan</string>
+    <string name="qs_tile_animation_duration_fast">Hızlı</string>
+    <string name="qs_tile_animation_duration_quite_fast">Oldukça hızlı</string>
+    <string name="qs_tile_animation_duration_super_fast">Süper hızlı</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Kenar</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Hızlandır</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Yavaşlat</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Hızlan yavaşla</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Sıçrama</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Aşım</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Beklemek</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Aşımı tahmin edin</string>
     <string name="qs_set_animation_style" translatable="false">%1$s</string>
     <string name="qs_set_animation_duration" translatable="false">%1$s</string>
     <string name="qs_set_animation_interpolator" translatable="false">%1$s</string>
 
     <!-- 4G icon -->
-    <string name="show_fourg_icon_title">4G icon</string>
-    <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
+    <string name="show_fourg_icon_title">4G simgesi</string>
+    <string name="show_fourg_icon_summary">Sinyal simgesinde LTE yerine 4G simgesini görüntüleyin.</string>
 
     <!-- Data disabled icon -->
-    <string name="data_disabled_icon_title">Show data disabled icon</string>
-    <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
+    <string name="data_disabled_icon_title">Veri devre dışı simgesini göster</string>
+    <string name="data_disabled_icon_summary">Mobil veri devre dışı bırakıldığında sinyal çubuğunun yanındaki çarpı işaretini görüntüle</string>
 
     <!-- QSTile requires unlocking before being accessible -->
-    <string name="qstile_requires_unlocking_title">Require unlocking to use sensitive tiles</string>
-    <string name="qstile_requires_unlocking_summary">Ask to unlock lockscreen when using sensitive tiles</string>
+    <string name="qstile_requires_unlocking_title">Hassas döşemeleri kullanmak için kilit açmayı zorunlu kılın</string>
+    <string name="qstile_requires_unlocking_summary">Hassas döşemeleri kullanırken kilit ekranının kilidinin açılmasını isteyin</string>
 
     <!-- Notifications general category -->
-    <string name="notifications_general_category_title">General</string>
+    <string name="notifications_general_category_title">Genel</string>
 
     <!-- Notification count -->
-    <string name="status_bar_notif_count_title">Notification count</string>
-    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+    <string name="status_bar_notif_count_title">Bildirim sayısı</string>
+    <string name="status_bar_notif_count_summary">Bekleyen bildirim sayısını göster</string>
 
     <!-- Units -->
     <string name="unit_seconds">s</string>
@@ -160,87 +160,87 @@
     <string name="unit_pixels">dp</string>
 
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
-    <string name="theme_customization_category">Theming</string>
+    <string name="theme_customization_category">Tema düzenlemesi</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Headline / Body font</string>
-    <string name="theme_customization_font_summary">Set system font style</string>
+    <string name="theme_customization_font_title">Başlık / Gövde yazı tipi</string>
+    <string name="theme_customization_font_summary">Sistem yazı tipi stilini ayarla</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
-    <string name="theme_customization_icon_shape_title">Icon shape</string>
-    <string name="theme_customization_icon_shape_summary">Set system icon shape style</string>
+    <string name="theme_customization_icon_shape_title">Simge şekli</string>
+    <string name="theme_customization_icon_shape_summary">Sistem simge şekil stili ayarla</string>
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
-    <string name="theme_customization_icon_pack_title">Icon pack</string>
-    <string name="theme_customization_icon_pack_summary">Set custom icon pack style</string>
+    <string name="theme_customization_icon_pack_title">Simge paketi</string>
+    <string name="theme_customization_icon_pack_summary">Özel simge paketi stili ayarla</string>
 
     <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
-    <string name="theme_customization_device_default">Device default</string>
+    <string name="theme_customization_device_default">Cihaz varsayılanı</string>
 
     <!-- Custom Wi-Fi bar icons -->
-    <string name="theme_customization_wifi_icon_title">Wifi icon</string>
-    <string name="theme_customization_wifi_icon_summary">Set Wifi icon style</string>
+    <string name="theme_customization_wifi_icon_title">Wifi simgesi</string>
+    <string name="theme_customization_wifi_icon_summary">Wifi simgesini ayarla</string>
 
     <!-- Custom Signal bar icons -->
-    <string name="theme_customization_signal_icon_title">Signal icons</string>
-    <string name="theme_customization_signal_icon_summary">Set signal icons style</string>
+    <string name="theme_customization_signal_icon_title">Sinyal simgesi</string>
+    <string name="theme_customization_signal_icon_summary">Sinyal simgesini ayarla</string>
 
     <!-- Fonts -->
-    <string name="theme_customization_lock_clock_title">Lockscreen clock font</string>
-    <string name="theme_customization_lock_clock_summary">Set lockscreen clock font style</string>
+    <string name="theme_customization_lock_clock_title">Kilit ekranı yazı tipi</string>
+    <string name="theme_customization_lock_clock_summary">Kilit ekranı yazı tipi stilini ayarla</string>
 
     <!-- reTicker -->
     <string name="reticker_category" translatable="false">reTicker</string>
     <string name="reticker_title">reTicker</string>
-    <string name="reticker_summary">Replace your notifications with a redesigned version of tickers. \nSlim and less invasive than a standard notification</string>
-    <string name="reticker_colored_title">Use app colored background</string>
-    <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
-    <string name="reticker_landscape_only_title">Landscape only</string>
-    <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
+    <string name="reticker_summary">Bildirimlerinizi yeniden tasarlanmış bir sürümü olan "ticker" ile değiştirin. \nStandart bildirimden daha ince ve daha az rahatsız edici.</string>
+    <string name="reticker_colored_title">Uygulamanın renkli arka planını kullan</string>
+    <string name="reticker_colored_summary">Bildirim uygulamasının ana rengini kullanarak reTicker arka plan rengini değiştirin</string>
+    <string name="reticker_landscape_only_title">Yalnızca yatay</string>
+    <string name="reticker_landscape_only_summary">ReTicker'ı yalnızca cihaz yatay moddayken etkinleştirin</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_intro_text">
-        Shows current network traffic speed in the status bar.
-        The monitor shows the speed dynamically such that it alternates between
-        upload and download speed each second.
+        Durum çubuğunda geçerli ağ trafiği hızını gösterir.
+        Monitör hızı, hızlar arasında geçiş yapacak şekilde dinamik olarak gösterir.
+        Her saniye yükleme ve indirme hızı.
     </string>
-    <string name="network_traffic_title">Network traffic indicator</string>
-    <string name="network_traffic_summary">Enable or disable network speed indicator in status bar</string>
-    <string name="network_traffic_state_title">Enable "Network traffic indicator"</string>
-    <string name="network_options_title">Options</string>
-    <string name="network_traffic_autohide_title">Hide network traffic indicator when inactive</string>
-    <string name="network_traffic_autohide_summary">Hide when the network traffic is below 1 KB/s</string>
+    <string name="network_traffic_title">Ağ trafiği göstergesi</string>
+    <string name="network_traffic_summary">Durum çubuğunda ağ hızı göstergesini etkinleştirin veya devre dışı bırakın</string>
+    <string name="network_traffic_state_title">"Ağ trafiği göstergesini" etkinleştirin"</string>
+    <string name="network_options_title">Seçenekler</string>
+    <string name="network_traffic_autohide_title">Etkin olmadığında ağ trafiği göstergesini gizle</string>
+    <string name="network_traffic_autohide_summary">Ağ trafiği 1 KB/s'nin altında olduğunda gizle</string>
 
     <!-- Media art -->
-    <string name="lockscreen_media_art_options_title">Media cover art</string>
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Display media cover art when available</string>
+    <string name="lockscreen_media_art_options_title">Medya kapak resmi</string>
+    <string name="media_art_title">Medya kapak resmi</string>
+    <string name="media_art_summary">Mümkün olduğunda medya kapak resmini göster</string>
 
     <!-- Lock screen cover art -->
-    <string name="lockscreen_media_blur_title">Media art blur level</string>
+    <string name="lockscreen_media_blur_title">Medya resmi bulanıklık seviyesi</string>
 
     <!-- Clock position -->
-    <string name="status_bar_clock_position_center">Center</string>
-    <string name="status_bar_clock_position_left">Left</string>
-    <string name="status_bar_clock_position_right">Right</string>
-    <string name="status_bar_clock_position_title">Clock position</string>
+    <string name="status_bar_clock_position_center">Merkez</string>
+    <string name="status_bar_clock_position_left">Sol</string>
+    <string name="status_bar_clock_position_right">Sağ</string>
+    <string name="status_bar_clock_position_title">Saat pozisyonu</string>
 
     <!-- Clock AM/PM -->
-    <string name="status_bar_am_pm_hidden">Hidden</string>
+    <string name="status_bar_am_pm_hidden">Gizle</string>
     <string name="status_bar_am_pm_normal">Normal</string>
-    <string name="status_bar_am_pm_small">Small</string>
-    <string name="status_bar_am_pm_title">Clock AM/PM style</string>
-    <string name="status_bar_am_pm_unavailable">24-hour clock is enabled</string>
+    <string name="status_bar_am_pm_small">Küçük</string>
+    <string name="status_bar_am_pm_title">Ö.Ö/ÖS saat stili</string>
+    <string name="status_bar_am_pm_unavailable">24 saatlik saat dilimi etkinleştirildi</string>
 
     <!-- Clock show seconds -->
-    <string name="status_bar_clock_show_seconds_title">Clock show seconds</string>
-    <string name="status_bar_clock_show_seconds_desc">Show hours, minutes, and seconds</string>
+    <string name="status_bar_clock_show_seconds_title">Saat saniyeleri gösterir</string>
+    <string name="status_bar_clock_show_seconds_desc">Saatleri, dakikaları ve saniyeleri göster</string>
 
     <!-- Statusbar logo -->
     <string name="status_bar_logo_title">Logo</string>
-    <string name="status_bar_logo_summary">Display a custom logo on left or right of the status bar</string>
-    <string name="status_bar_logo_position_title">Logo position</string>
-    <string name="status_bar_logo_position_right">Right</string>
-    <string name="status_bar_logo_position_left">Left</string>
-    <string name="status_bar_logo_style_title">Logo style</string>
-    <string name="status_bar_logo_style_derp">DerpFest (Default)</string>
+    <string name="status_bar_logo_summary">Durum çubuğunun sol veya sağ tarafında özel bir logo gösterin</string>
+    <string name="status_bar_logo_position_title">Logo pozisyonu</string>
+    <string name="status_bar_logo_position_right">Sağ</string>
+    <string name="status_bar_logo_position_left">Sol</string>
+    <string name="status_bar_logo_style_title">Logo stili</string>
+    <string name="status_bar_logo_style_derp">DerpFest (Varsayılan)</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>
@@ -249,13 +249,13 @@
     <string name="status_bar_logo_style_batman">Batman</string>
     <string name="status_bar_logo_style_batman_tdk">Batman The Dark Knight</string>
     <string name="status_bar_logo_style_beats">Beats</string>
-    <string name="status_bar_logo_style_biohazard">Biohazard</string>
+    <string name="status_bar_logo_style_biohazard">Biyo tehlike</string>
     <string name="status_bar_logo_style_blackberry">BlackBerry</string>
     <string name="status_bar_logo_style_cannabis">Cannabis</string>
-    <string name="status_bar_logo_style_emoticon_cool">Emoticon cool</string>
-    <string name="status_bar_logo_style_emoticon_devil">Emoticon devil</string>
-    <string name="status_bar_logo_style_fire">Fire</string>
-    <string name="status_bar_logo_style_heart">Heart</string>
+    <string name="status_bar_logo_style_emoticon_cool">Havalı emojisi</string>
+    <string name="status_bar_logo_style_emoticon_devil">Şeytan emojisi</string>
+    <string name="status_bar_logo_style_fire">Ateş</string>
+    <string name="status_bar_logo_style_heart">Kalp</string>
     <string name="status_bar_logo_style_nike">Nike</string>
     <string name="status_bar_logo_style_pacman">Pac-man</string>
     <string name="status_bar_logo_style_puma">Puma</string>
