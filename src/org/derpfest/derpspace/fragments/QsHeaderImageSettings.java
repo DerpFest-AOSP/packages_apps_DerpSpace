@@ -47,7 +47,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
-import org.derpfest.support.preferences.CustomSeekBarPreference;
+import org.derpfest.support.preferences.ProperSeekBarPreference;
 import org.derpfest.support.preferences.SystemSettingSwitchPreference;
 
 import java.util.List;
@@ -73,13 +73,13 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
 
     private Preference mHeaderBrowse;
     private ListPreference mDaylightHeaderPack;
-    private CustomSeekBarPreference mHeaderShadow;
+    private ProperSeekBarPreference mHeaderShadow;
     private ListPreference mHeaderProvider;
     private String mDaylightHeaderProvider;
     private SwitchPreference mHeaderEnabled;
     private Preference mFileHeader;
     private String mFileHeaderProvider;
-    private CustomSeekBarPreference mQsHeaderOffset;
+    private ProperSeekBarPreference mQsHeaderOffset;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -109,7 +109,7 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
         updateHeaderProviderSummary(headerEnabled);
         mDaylightHeaderPack.setOnPreferenceChangeListener(this);
 
-        mHeaderShadow = (CustomSeekBarPreference) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
+        mHeaderShadow = (ProperSeekBarPreference) findPreference(CUSTOM_HEADER_IMAGE_SHADOW);
         final int headerShadow = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CUSTOM_HEADER_SHADOW, 0);
         mHeaderShadow.setValue((int)(((double) headerShadow / 255) * 100));
@@ -134,7 +134,7 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
         mFileHeader = findPreference(FILE_HEADER_SELECT);
         mFileHeader.setEnabled(providerName.equals(mFileHeaderProvider));
 
-        mQsHeaderOffset = (CustomSeekBarPreference) findPreference(QS_HEADER_OFFSET);
+        mQsHeaderOffset = (ProperSeekBarPreference) findPreference(QS_HEADER_OFFSET);
         final int headerOffset = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CUSTOM_HEADER_HEIGHT, 142);
         mQsHeaderOffset.setValue((headerOffset));

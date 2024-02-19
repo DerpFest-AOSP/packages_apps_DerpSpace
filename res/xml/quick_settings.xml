@@ -32,7 +32,7 @@
             android:summary="@string/qs_panel_options_summary"
             android:fragment="org.derpfest.derpspace.fragments.QSPanelSettings" />
 
-        <org.derpfest.support.preferences.SystemSettingSeekBarPreference
+        <org.derpfest.support.preferences.ProperSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
             android:summary="@string/qs_transparency_summary"
