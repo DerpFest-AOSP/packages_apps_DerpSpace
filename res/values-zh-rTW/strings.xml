@@ -61,7 +61,7 @@
     <string name="media_category">媒體播放器</string>
 
     <!-- Network Traffic -->
-    <string name="traffic_title">網路流量指示器</string>
+    <string name="traffic_title">網路流量顯示器</string>
 
     <!-- Misc DerpSpace -->
     <string name="misc_derpspace_title">雜項</string>
@@ -101,7 +101,7 @@
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">讓我們幫助你！</string>
-    <string name="derpspace_dialog_message">如果你發現任何有關設定上的 bug ，請至我們的 Telegram 群組匯報。你提交的 bug 報告中必須包含以下內容：\n\n1. logcat 或 last_kmsg\n2. 內核與使用的模組\n3. 有用的信息\n\n如果你的報告中信息不完整，請不要指望會得到修復。</string>
+    <string name="derpspace_dialog_message">如果你發現任何有關設定上的 bug ，請至我們的 Telegram 群組匯報。你提交的 bug 報告中必須包含以下內容：\n\n1. logcat 或 last_kmsg\n2. 內核與使用的模組\n3. 有用的資訊\n\n如果你的報告中資訊不完整，請不要指望會得到修復。</string>
     <string name="derpspace_dialog_toast">閱讀完全文！</string>
     <string name="artwork_media_fade_level_summary">淡出淡入式媒體封面</string>
 
@@ -182,7 +182,7 @@
 
     <!-- reTicker -->
     <string name="reticker_title">reTicker 通知</string>
-    <string name="reticker_summary">將標準的通知替換為重新設計的 reTicker 通知。 \n與標準的通知相比更精簡且侵入性更小</string>
+    <string name="reticker_summary">將標準的通知替換為重新設計的 reTicker 通知，它與標準的通知相比更精簡且侵入性更小。</string>
     <string name="reticker_colored_title">使用應用程式顏色作為背景色</string>
     <string name="reticker_colored_summary">使用發出通知的應用程式的主體顏色作為 reTicker 的背景顏色</string>
     <string name="reticker_landscape_only_title">僅在螢幕橫向時開啟</string>
@@ -190,15 +190,14 @@
 
     <!-- Network traffic -->
     <string name="network_traffic_intro_text">
-        在狀態列上顯示目前的網速。
-        這個指示器會動態顯示目前上傳與下載的速度。
+        這個顯示器會在狀態列上動態顯示目前網路每秒的上傳下載速度。
     </string>
-    <string name="network_traffic_title">網路流量指示器</string>
+    <string name="network_traffic_title">網路流量顯示器</string>
     <string name="network_traffic_summary">開啟或關閉在狀態列上的網速顯示</string>
-    <string name="network_traffic_state_title">開啟 "網路流量指示器"</string>
+    <string name="network_traffic_state_title">開啟 "網路流量顯示器"</string>
     <string name="network_options_title">選項</string>
-    <string name="network_traffic_autohide_title">當沒有網路流量活動時隱藏指示器</string>
-    <string name="network_traffic_autohide_summary">當網路流量活動低於 1 KB/s 時隱藏指示器</string>
+    <string name="network_traffic_autohide_title">當沒有網路流量活動時隱藏顯示器</string>
+    <string name="network_traffic_autohide_summary">當網路流量活動低於 1 KB/s 時隱藏顯示器</string>
 
     <!-- Media art -->
     <string name="lockscreen_media_art_options_title">媒體封面</string>
