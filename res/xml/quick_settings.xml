@@ -54,10 +54,10 @@
         android:title="@string/header_category">
 
         <Preference
-            android:key="qs_header_image"
+            android:key="category_custom_header"
             android:fragment="org.derpfest.derpspace.fragments.QsHeaderImageSettings"
-            android:title="@string/qs_header_image_title"
-            android:summary="@string/qs_header_image_summary" />
+            android:title="@string/custom_header_title"
+            android:summary="@string/custom_header_summary" />
      </PreferenceCategory>
 
     <PreferenceCategory
@@ -117,7 +117,8 @@
         <org.derpfest.support.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
             android:title="@string/notification_material_dismiss_title"
-            android:summary="@string/notification_material_dismiss_summary" />
+            android:summary="@string/notification_material_dismiss_summary"
+            android:defaultValue="false" />
 
     </PreferenceCategory>
     

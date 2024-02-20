@@ -34,12 +34,16 @@
         <item>@string/qs_tile_animation_duration_low</item>
         <item>@string/qs_tile_animation_duration_default</item>
         <item>@string/qs_tile_animation_duration_fast</item>
+        <item>@string/qs_tile_animation_duration_quite_fast</item>
+        <item>@string/qs_tile_animation_duration_super_fast</item>
     </string-array>
 
     <string-array name="qs_tile_animation_duration_values" translatable="false">
         <item>2500</item>
         <item>2000</item>
         <item>1500</item>
+        <item>1000</item>
+        <item>500</item>
     </string-array>
 
     <!-- Tiles animation interpolator -->
@@ -272,23 +276,6 @@
         <item>2</item>
     </string-array>
 
-    <!-- QS header image -->
-    <string-array name="qs_header_image_tint_entries" translatable="false">
-        <item>@string/qs_header_image_tint_none</item>
-        <item>@string/qs_header_image_tint_accent</item>
-        <item>@string/qs_header_image_tint_primary</item>
-        <item>@string/qs_header_image_tint_primary_inverse</item>
-        <item>@string/qs_header_image_tint_custom</item>
-    </string-array>
-
-    <string-array name="qs_header_image_tint_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-
     <!-- Monet theme styles  -->
     <string-array name="monet_engine_style_entries">
         <item>@string/monet_engine_style_tonal_spot</item>
@@ -336,5 +323,18 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
+    </string-array>
+
+    <!-- QS Headers -->
+    <string-array name="custom_header_provider_entries" translatable="false">
+        <item>@string/daylight_header_provider_title</item>
+        <item>@string/static_header_provider_title</item>
+        <item>@string/file_header_provider_title</item>
+    </string-array>
+
+    <string-array name="custom_header_provider_values" translatable="false">
+        <item>@string/daylight_header_provider</item>
+        <item>@string/static_header_provider</item>
+        <item>@string/file_header_provider</item>
     </string-array>
 </resources>

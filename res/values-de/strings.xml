@@ -121,6 +121,8 @@
     <string name="qs_tile_animation_duration_low">Langsam</string>
     <string name="qs_tile_animation_duration_default">Standard</string>
     <string name="qs_tile_animation_duration_fast">Schnell</string>
+    <string name="qs_tile_animation_duration_quite_fast">Ziemlich schnell</string>
+    <string name="qs_tile_animation_duration_super_fast">Super schnell</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">Beschleunigen</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">Verzögern</string>
@@ -140,10 +142,6 @@
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Symbol für deaktivierte Mobildaten anzeigen</string>
     <string name="data_disabled_icon_summary">Zeigen Sie das Kreuz neben der Signalleiste an, wenn die Mobildaten deaktiviert sind</string>
-
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Anzeige bei Roaming</string>
-    <string name="roaming_indicator_icon_summary">Bei Roaming dies im Signalsymbol anzeigen</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
@@ -399,29 +397,6 @@
     <string name="qs_show_battery_estimate_title">Akkuschätzung</string>
     <string name="qs_show_battery_estimate_summary_on">Geschätzte verbleibende Akkulaufzeit anzeigen, wenn verfügbar</string>
     <string name="qs_show_battery_estimate_summary_off">Geschätzte verbleibende Akkulaufzeit verstecken</string>
-
-    <!-- QS Header -->
-    <string name="qs_header_image_title">Bild in Kopfzeile</string>
-    <string name="qs_header_image_summary">Hintergrundbild der Schnelleinstellungskopfzeile auswählen</string>
-    <string name="qs_header_image_enabled_title">Hintergrundbild in Schnelleinstellungskopfz.</string>
-    <string name="qs_header_image_enabled_summary">Aktiviert das Anp. des Hintergrundbilds der Schnelleinstellungskopfz.</string>
-    <string name="qs_header_image_landscape_enabled_title">Im Querformat anzeigen</string>
-    <string name="qs_header_image_landscape_enabled_summary">Hintergrundbild in Schnelleinstellungskopfz. im Querformat anzeigen</string>
-    <string name="qs_header_image_tint_title">Tönung</string>
-    <string name="qs_header_image_tint_none">Keine Tönung</string>
-    <string name="qs_header_image_tint_accent">Akzentfarbe</string>
-    <string name="qs_header_image_tint_primary">Primärfarbe</string>
-    <string name="qs_header_image_tint_primary_inverse">Primärfarbe invertieren</string>
-    <string name="qs_header_image_tint_custom">Benutzerdefinierte Farbe</string>
-    <string name="qs_header_image_tint_custom_title">Benutzerdefinierte Tönungsfarbe</string>
-    <string name="qs_header_image_height_portrait_title">Höhe (Hochformat)</string>
-    <string name="qs_header_image_height_landscape_title">Höhe (Querformat)</string>
-    <string name="qs_header_image_alpha_title">Deckkraft</string>
-    <string name="qs_header_image_padding_side_title">Abstand zu den Seiten</string>
-    <string name="qs_header_image_padding_top_title">Abstand nach oben</string>
-    <string name="file_header_select_title">Bild aus Speicher auswählen</string>
-    <string name="file_header_select_summary">Ein Bild vom Gerätespeicher auswählen</string>
-    <string name="qs_header_image_needs_gallery">Du musst eine Galerie-App installieren!</string>
 
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Stil des Helligkeitsreglers</string>
