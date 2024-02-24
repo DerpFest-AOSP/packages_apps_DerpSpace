@@ -515,7 +515,7 @@
     <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
     <string name="custom_header_browse_summary_new">Browse all available header collections</string>
     <string name="custom_header_pick_title">選擇頂部圖片</string>
-    <string name="custom_header_pick_summary">選擇一個用於靜態模式的圖片</string>
+    <string name="custom_header_pick_summary">選擇一張用於靜態模式的圖片</string>
     <string name="style_enabled_summary">自訂頂部圖片已開啟</string>
     <string name="style_disabled_summary">自訂頂部圖片已關閉</string>
     <string name="header_provider_disabled">已停用</string>
