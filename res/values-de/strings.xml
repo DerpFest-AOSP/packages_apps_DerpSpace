@@ -498,24 +498,28 @@
 
     <!-- QS Headers -->
     <string name="status_bar_custom_header_title">Aktivieren</string>
-    <string name="daylight_header_pack_title">Header image collection</string>
-    <string name="status_bar_custom_header_shadow_title">Kopfzeilenbild-Schatten</string>
+    <string name="daylight_header_pack_title">Bildersammlung</string>
+    <string name="status_bar_custom_header_shadow_title">Schatten</string>
     <string name="status_bar_custom_header_shadow_summary">Bessere Sichtbarkeit bei hellen Bildern</string>
-    <string name="static_header_provider_title">Static image</string>
-    <string name="daylight_header_provider_title">Image collection</string>
-    <string name="custom_header_provider_title">Header provider</string>
-    <string name="custom_header_browse_title">Browse installed headers</string>
-    <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
-    <string name="custom_header_browse_summary_new">Browse all available header collections</string>
-    <string name="custom_header_pick_title">Select header image</string>
-    <string name="custom_header_pick_summary">Select an image to use for static mode</string>
-    <string name="style_enabled_summary">Benutzerdefiniertes Header-Bild ist AN</string>
-    <string name="style_disabled_summary">Benutzerdefiniertes Header-Bild ist AUS</string>
+    <string name="static_header_provider_title">Statisches Bild</string>
+    <string name="daylight_header_provider_title">Bildersammlung</string>
+    <string name="custom_header_provider_title">Bildquelle</string>
+    <string name="custom_header_browse_title">Installierte Kopfzeilenbilder durchsuchen</string>
+    <string name="custom_header_browse_summary">Klicke auf ein beliebiges Bild, um es für den statischen Modus zu verwenden</string>
+    <string name="custom_header_browse_summary_new">Alle verfügbaren Bildersammlungen durchsuchen</string>
+    <string name="custom_header_pick_title">Kopfzeilenbild auswählen</string>
+    <string name="custom_header_pick_summary">Wähle ein Bild aus, das für den statischen Modus verwendet werden soll</string>
+    <string name="style_enabled_summary">Benutzerdefiniertes Kopfzeilenbild ist AN</string>
+    <string name="style_disabled_summary">Benutzerdefiniertes Kopfzeilenbild ist AUS</string>
     <string name="header_provider_disabled">Deaktiviert</string>
-    <string name="custom_header_title">Benutzerdefiniertes Header-Bild</string>
-    <string name="custom_header_summary">Select QS background header image</string>
+    <string name="custom_header_title">Benutzerdefiniertes Kopfzeilenbild</string>
+    <string name="custom_header_summary">Bild oben im Benachrichtigungsfeld anzeigen</string>
     <string name="file_header_select_title">Wähle ein Bild</string>
-    <string name="file_header_select_summary">Select custom image</string>
+    <string name="file_header_select_summary">Wähle ein benutzerdefiniertes Bild aus</string>
     <string name="file_header_provider_title">Einzelnes Bild</string>
-    <string name="custom_header_needs_gallary">You must install a gallery app!</string>
+    <string name="custom_header_needs_gallary">Eine Galerie-App muss installiert sein!</string>
+
+    <!-- QS Header offset -->
+    <string name="status_bar_custom_header_offset_title">Bildversatz</string>
+    <string name="status_bar_custom_header_offset_summary">Die Größe des Bilds anpassen</string>
 </resources>
