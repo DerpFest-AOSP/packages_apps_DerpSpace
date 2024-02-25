@@ -406,6 +406,10 @@
     <string name="theme_customization_navbar_title">Stil der Navigationsleiste</string>
     <string name="theme_customization_navbar_summary">Stil der Navigationsleiste anpassen</string>
 
+    <!-- Brightness slider haptic feedback -->
+    <string name="qs_brightness_slider_haptic_title">Haptisches Feedback</string>
+    <string name="qs_brightness_slider_haptic_summary">Haptisches Feedback bei Helligkeitsregelung mithilfe des Schiebereglers</string>
+
     <!-- Custom Data icons -->
     <string name="theme_customization_data_title">Mobilfunkdatensymbol</string>
     <string name="theme_customization_data_summary">Stil für Mobilfunkdatensymbol festlegen</string>

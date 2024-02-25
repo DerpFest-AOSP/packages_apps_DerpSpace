@@ -90,6 +90,12 @@
             android:entryValues="@array/qs_brightness_slider_position_values"
             android:defaultValue="1" />
 
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_brightness_slider_haptic_feedback"
+            android:title="@string/qs_brightness_slider_haptic_title"
+            android:summary="@string/qs_brightness_slider_haptic_summary"
+            android:defaultValue="false" />
+
         <org.derpfest.support.preferences.SecureSettingSwitchPreference
             android:key="qs_show_auto_brightness"
             android:title="@string/qs_auto_brightness_title"

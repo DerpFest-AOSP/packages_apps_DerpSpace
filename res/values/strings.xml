@@ -412,6 +412,10 @@
     <string name="theme_customization_navbar_title">Navbar style</string>
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 
+    <!-- Brightness slider haptic feedback -->
+    <string name="qs_brightness_slider_haptic_title">Haptic feedback</string>
+    <string name="qs_brightness_slider_haptic_summary">Provide haptic feedback on changing brightness using slider</string>
+
     <!-- Custom Data icons -->
     <string name="theme_customization_data_title">Data icon style</string>
     <string name="theme_customization_data_summary">Set custom data icon style</string>
