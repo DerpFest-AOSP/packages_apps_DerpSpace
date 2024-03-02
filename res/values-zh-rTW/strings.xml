@@ -505,27 +505,28 @@
 
     <!-- QS Headers -->
     <string name="status_bar_custom_header_title">啟用</string>
-    <string name="daylight_header_pack_title">Header image collection</string>
-    <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
+    <string name="daylight_header_pack_title">頂部圖片集</string>
+    <string name="status_bar_custom_header_shadow_title">頂部圖片陰影</string>
     <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
     <string name="static_header_provider_title">靜態圖片</string>
-    <string name="daylight_header_provider_title">Image collection</string>
-    <string name="custom_header_provider_title">Header provider</string>
-    <string name="custom_header_browse_title">Browse installed headers</string>
-    <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
-    <string name="custom_header_browse_summary_new">Browse all available header collections</string>
+    <string name="daylight_header_provider_title">圖片集</string>
+    <string name="custom_header_provider_title">頂部圖片來源</string>
+    <string name="custom_header_browse_title">瀏覽已安裝的圖片</string>
+    <string name="custom_header_browse_summary">點選任一張用於靜態模式的圖片</string>
+    <string name="custom_header_browse_summary_new">瀏覽所有已安裝的圖片集</string>
     <string name="custom_header_pick_title">選擇頂部圖片</string>
     <string name="custom_header_pick_summary">選擇一張用於靜態模式的圖片</string>
     <string name="style_enabled_summary">自訂頂部圖片已開啟</string>
     <string name="style_disabled_summary">自訂頂部圖片已關閉</string>
     <string name="header_provider_disabled">已停用</string>
     <string name="custom_header_title">自訂頂部圖片</string>
-    <string name="custom_header_summary">選擇一張用於快速設定頂部的背景圖</string>
+    <string name="custom_header_summary">Display image at top of the notification panel</string>
     <string name="file_header_select_title">選擇圖片</string>
     <string name="file_header_select_summary">選擇自訂圖片</string>
     <string name="file_header_provider_title">自訂圖片</string>
+    <string name="custom_header_needs_gallary">你必須安裝一個相簿應用！</string>
 
     <!-- QS Header offset -->
-    <string name="status_bar_custom_header_offset_title">Header image offset</string>
+    <string name="status_bar_custom_header_offset_title">頂部圖片偏移量</string>
     <string name="status_bar_custom_header_offset_summary">Adjust the image header size</string>
 </resources>
