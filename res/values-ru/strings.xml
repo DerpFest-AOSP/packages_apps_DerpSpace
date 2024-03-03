@@ -554,16 +554,11 @@
     <string name="battery_style_port">портрет</string>
     <string name="battery_style_circle">Круг</string>
     <string name="battery_style_text">Текст</string>
-    <string name="battery_percent_title">Показывать процент</string>
     <string name="battery_percent_summary">Всегда показывать процент заряда батареи с помощью значка</string>
     <string name="battery_percent_inside_title">Показывать процент внутри</string>
     <string name="battery_percent_inside_summary">Показывать процент внутри иконки</string>
     <string name="show_battery_percent_charging_title">Показывать процент при зарядке</string>
     <string name="show_battery_percent_charging_summary">Обеспечение отображения процентов рядом со значком во время зарядки</string>
-
-    <!-- Fingerprint authentication vibration -->
-    <string name="fprint_sucess_vib_title">Вибрация аутентификации по отпечатку пальца</string>
-    <string name="fprint_sucess_vib_summary">Вибрация при успешной аутентификации по отпечатку пальца</string>
 
     <!-- QS Battery estimates -->
     <string name="qs_show_battery_estimate_title">Оценка батареи</string>
@@ -735,7 +730,6 @@
     <string name="edge_light_repeat_animation_summary_on">Повторять до истечения времени</string>
     <string name="edge_light_repeat_animation_summary_off">Показать только один раз</string>
     <string name="edge_light_color_mode_title">Цветовой режим</string>
-    <string name="default_string">По умолчанию</string>
     <string name="theme_color">Цвет темы (по умолчанию)</string>
     <string name="notification_color">Цвет уведомления</string>
     <string name="custom_color">Пользовательский цвет</string>
