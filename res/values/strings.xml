@@ -121,6 +121,8 @@
     <string name="qs_tile_animation_duration_low">Low</string>
     <string name="qs_tile_animation_duration_default">Default</string>
     <string name="qs_tile_animation_duration_fast">Fast</string>
+    <string name="qs_tile_animation_duration_quite_fast">Quite fast</string>
+    <string name="qs_tile_animation_duration_super_fast">Super fast</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">Accelerate</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">Decelerate</string>
@@ -140,10 +142,6 @@
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Show data disabled icon</string>
     <string name="data_disabled_icon_summary">Display the cross sign next to signal bar when data is disabled</string>
-
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Show roaming indicator icon</string>
-    <string name="roaming_indicator_icon_summary">Display roaming indicator above signal icon when in roaming mode</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Require unlocking to use sensitive tiles</string>
@@ -327,6 +325,11 @@
     <string name="keyguard_show_battery_summary">Show a battery bar on the ambient display when charging</string>
     <string name="keyguard_show_battery_always_title">Always show battery bar</string>
     <string name="keyguard_show_battery_always_summary">Always show a battery bar on the ambient display</string>
+    <string name="keyguard_batterybar_color_source">Battery bar color source</string>
+    <string name="keyguard_batterybar_custom_color">Battery bar custom color</string>
+    <string name="keyguard_batterybar_white">White (Default)</string>
+    <string name="keyguard_batterybar_accent">Accent color</string>
+    <string name="keyguard_batterybar_custom">Custom</string>
 
     <!-- Pulse Gravity and mirror options -->
     <string name="pulse_custom_gravity_title">Gravity</string>
@@ -401,29 +404,6 @@
     <string name="qs_show_battery_estimate_summary_on">Show battery estimates in QS</string>
     <string name="qs_show_battery_estimate_summary_off">Hide battery estimates in QS</string>
 
-    <!-- QS Header -->
-    <string name="qs_header_image_title">Header Image</string>
-    <string name="qs_header_image_summary">Select QS background header image</string>
-    <string name="qs_header_image_enabled_title">QS header image customization</string>
-    <string name="qs_header_image_enabled_summary">Enable QS header image customization</string>
-    <string name="qs_header_image_landscape_enabled_title">Show on landscape</string>
-    <string name="qs_header_image_landscape_enabled_summary">Display QS header image in landscape mode</string>
-    <string name="qs_header_image_tint_title">Tint</string>
-    <string name="qs_header_image_tint_none">No tint</string>
-    <string name="qs_header_image_tint_accent">Accent color</string>
-    <string name="qs_header_image_tint_primary">Primary color</string>
-    <string name="qs_header_image_tint_primary_inverse">Primary color inverse</string>
-    <string name="qs_header_image_tint_custom">Custom color</string>
-    <string name="qs_header_image_tint_custom_title">Custom tint color</string>
-    <string name="qs_header_image_height_portrait_title">Height (portrait)</string>
-    <string name="qs_header_image_height_landscape_title">Height (landscape)</string>
-    <string name="qs_header_image_alpha_title">Opacity</string>
-    <string name="qs_header_image_padding_side_title">Side padding</string>
-    <string name="qs_header_image_padding_top_title">Top padding</string>
-    <string name="file_header_select_title">Select local image</string>
-    <string name="file_header_select_summary">Select image from storage</string>
-    <string name="qs_header_image_needs_gallery">You must install a gallery app!</string>
-
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Brightness slider style</string>
     <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
@@ -431,6 +411,10 @@
     <!-- Navbar styles -->
     <string name="theme_customization_navbar_title">Navbar style</string>
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
+
+    <!-- Brightness slider haptic feedback -->
+    <string name="qs_brightness_slider_haptic_title">Haptic feedback</string>
+    <string name="qs_brightness_slider_haptic_summary">Provide haptic feedback on changing brightness using slider</string>
 
     <!-- Custom Data icons -->
     <string name="theme_customization_data_title">Data icon style</string>
@@ -517,19 +501,55 @@
     <string name="use_photos_spoof_summary">Your device will be identified as a Pixel XL to get unlimited Google photo storage at original quality</string>
     <string name="photos_spoof_toast">Restart the Photos app for it to take effect</string>
 
-    <!-- Edge light -->
-    <string name="edge_light_category">Edge light</string>
-    <string name="edge_light_title">Edge Light</string>
-    <string name="edge_light_summary">Light up the edges of the screen when a notification is received</string>
-    <string name="edge_light_switch_title">Enable Edge Light</string>
-    <string name="edge_light_always_trigger_on_pulse_title">Always trigger on pulse</string>
-    <string name="edge_light_always_trigger_on_pulse_summary">Show edge light whenever ambient display is shown and not just for notifications</string>
-    <string name="edge_light_repeat_animation_title">Repeat animation</string>
-    <string name="edge_light_repeat_animation_summary_on">Repeat until timeout</string>
-    <string name="edge_light_repeat_animation_summary_off">Show only once</string>
-    <string name="edge_light_color_mode_title">Color mode</string>
-    <string name="default_string">Default</string>
-    <string name="theme_color">Theme color (Default)</string>
-    <string name="notification_color">Notification color</string>
-    <string name="custom_color">Custom color</string>
+    <!-- Ambient edge lighting -->
+    <string name="ambient_edge_light_action_title">Ambient edge lighting</string>
+    <string name="ambient_edge_light_title">Edge lighting</string>
+    <string name="ambient_edge_light_enable_title">Enable edge lighting</string>
+    <string name="ambient_edge_light_summary">Light up the side edges of the screen on notification pulse</string>
+    <string name="ambient_edge_light_color_mode_category_title">Color</string>
+    <string name="ambient_edge_light_color_mode_auto">Auto</string>
+    <string name="ambient_edge_light_color_mode_app">App color</string>
+    <string name="ambient_edge_light_color_mode_manual">Manual</string>
+    <string name="ambient_edge_light_color_mode_auto_summary">Set edge light color to the system color</string>
+    <string name="ambient_edge_light_color_mode_app_summary">Set edge light color to the app color</string>
+    <string name="ambient_edge_light_color_mode_manual_summary">Pick a color manualy</string>
+    <string name="ambient_edge_light_advanced_category_title">Advanced</string>
+    <string name="ambient_edge_light_duration_title">Light duration</string>
+    <string name="ambient_edge_light_repeat_count_title">Repeat count</string>
+    <string name="ambient_edge_light_width_title">Light width</string>
+
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Netflix spoof</string>
+    <string name="netflix_spoof_summary">Spoof your device as different model for Netflix</string>
+
+    <!-- QS Headers -->
+    <string name="status_bar_custom_header_title">Enable</string>
+    <string name="daylight_header_pack_title">Header image collection</string>
+    <string name="status_bar_custom_header_shadow_title">Header image shadow</string>
+    <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider" translatable="false">static</string>
+    <string name="daylight_header_provider" translatable="false">daylight</string>
+    <string name="static_header_provider_title">Static image</string>
+    <string name="daylight_header_provider_title">Image collection</string>
+    <string name="custom_header_provider_title">Header provider</string>
+    <string name="custom_header_browse_title">Browse installed headers</string>
+    <string name="custom_header_browse_summary">Click on any image to use for static mode</string>
+    <string name="custom_header_browse_summary_new">Browse all available header collections</string>
+    <string name="custom_header_pick_title">Select header image</string>
+    <string name="custom_header_pick_summary">Select an image to use for static mode</string>
+    <string name="style_enabled_summary">Custom header image is ON</string>
+    <string name="style_disabled_summary">Custom header image is OFF</string>
+    <string name="header_provider_disabled">Disabled</string>
+    <string name="custom_header_title">Custom header image</string>
+    <string name="custom_header_summary">Display image at top of the notification panel</string>
+    <string name="file_header_select_title">Select image</string>
+    <string name="file_header_select_summary">Select custom image</string>
+    <string name="file_header_provider_title">Custom image</string>
+    <string name="file_header_provider" translatable="false">file</string>
+    <string name="custom_header_needs_gallary">You must install a gallery app!</string>
+
+    <!-- QS Header offset -->
+    <string name="status_bar_custom_header_offset_title">Header image offset</string>
+    <string name="status_bar_custom_header_offset_summary">Adjust the image header size</string>
 </resources>

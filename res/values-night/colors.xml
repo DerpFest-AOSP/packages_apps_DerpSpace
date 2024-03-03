@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 DerpFest
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <color name="ambient_edge_light_color_selector_item_outer_bg_color">#FF2B2930</color>
+</resources>

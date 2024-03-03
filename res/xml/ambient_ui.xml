@@ -8,16 +8,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ambient_ui">
 
-    <PreferenceCategory
-        android:key="edge_light"
-        android:title="@string/edge_light_category" >
-
-        <Preference
-            android:key="edge_light_enabled"
-            android:title="@string/edge_light_title"
-            android:summary="@string/edge_light_summary"
-            android:fragment="org.derpfest.derpspace.fragments.EdgeLightSettings" />
-    </PreferenceCategory>
+    <Preference
+        android:key="ambient_edge_light"
+        android:title="@string/ambient_edge_light_title"
+        android:summary="@string/ambient_edge_light_summary"
+        android:fragment="org.derpfest.derpspace.fragments.AmbientEdgeLightSettings"
+        settings:controller="com.android.settings.derp.edgelight.AmbientEdgeLightPreferenceController"
+        settings:requiresConfig="@bool/config_show_ambient_edge_light" />
 
     <PreferenceCategory
         android:key="ambient_battery_settings"
@@ -35,6 +32,22 @@
             android:summary="@string/keyguard_show_battery_always_summary"
             android:dependency="sysui_keyguard_show_battery_bar"
             android:defaultValue="false" />
+
+        <org.derpfest.support.preferences.SystemSettingListPreference
+            android:key="sysui_keyguard_battery_bar_color_source"
+            android:title="@string/keyguard_batterybar_color_source"
+            android:entries="@array/keyguard_batterybar_color_source_entries"
+            android:entryValues="@array/keyguard_batterybar_color_source_values"
+            android:dependency="sysui_keyguard_show_battery_bar"
+            android:summary="%s"
+            android:defaultValue="0" />
+
+        <org.derpfest.support.colorpicker.ColorPickerPreference
+            android:key="sysui_keyguard_battery_bar_custom_color"
+            android:title="@string/keyguard_batterybar_custom_color"
+            android:persistent="false"
+            android:dependency="sysui_keyguard_show_battery_bar"
+            android:defaultValue="0xFF39FF42" />
     </PreferenceCategory>
 
 </PreferenceScreen>

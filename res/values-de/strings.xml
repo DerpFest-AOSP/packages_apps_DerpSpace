@@ -121,6 +121,8 @@
     <string name="qs_tile_animation_duration_low">Langsam</string>
     <string name="qs_tile_animation_duration_default">Standard</string>
     <string name="qs_tile_animation_duration_fast">Schnell</string>
+    <string name="qs_tile_animation_duration_quite_fast">Ziemlich schnell</string>
+    <string name="qs_tile_animation_duration_super_fast">Super schnell</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">Beschleunigen</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">Verzögern</string>
@@ -140,10 +142,6 @@
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">Symbol für deaktivierte Mobildaten anzeigen</string>
     <string name="data_disabled_icon_summary">Zeigen Sie das Kreuz neben der Signalleiste an, wenn die Mobildaten deaktiviert sind</string>
-
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Anzeige bei Roaming</string>
-    <string name="roaming_indicator_icon_summary">Bei Roaming dies im Signalsymbol anzeigen</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
@@ -321,6 +319,11 @@
     <string name="keyguard_show_battery_summary">Während des Ladevorgangs einen Akkustandbalken auf dem Ambient Display anzeigen</string>
     <string name="keyguard_show_battery_always_title">Akkustandbalken immer anzeigen</string>
     <string name="keyguard_show_battery_always_summary">Akkustandbalken immer auf dem Ambient Display anzeigen</string>
+    <string name="keyguard_batterybar_color_source">Farbquelle des Akkustandbalkens</string>
+    <string name="keyguard_batterybar_custom_color">Benutzerdefinierte Farbe des Akkustandbalkens</string>
+    <string name="keyguard_batterybar_white">Weiß (Standard)</string>
+    <string name="keyguard_batterybar_accent">Akzentfarbe</string>
+    <string name="keyguard_batterybar_custom">Benutzerdefiniert</string>
 
     <!-- Pulse Gravity and mirror options -->
     <string name="pulse_custom_gravity_title">Gravitation</string>
@@ -395,29 +398,6 @@
     <string name="qs_show_battery_estimate_summary_on">Geschätzte verbleibende Akkulaufzeit anzeigen, wenn verfügbar</string>
     <string name="qs_show_battery_estimate_summary_off">Geschätzte verbleibende Akkulaufzeit verstecken</string>
 
-    <!-- QS Header -->
-    <string name="qs_header_image_title">Bild in Kopfzeile</string>
-    <string name="qs_header_image_summary">Hintergrundbild der Schnelleinstellungskopfzeile auswählen</string>
-    <string name="qs_header_image_enabled_title">Hintergrundbild in Schnelleinstellungskopfz.</string>
-    <string name="qs_header_image_enabled_summary">Aktiviert das Anp. des Hintergrundbilds der Schnelleinstellungskopfz.</string>
-    <string name="qs_header_image_landscape_enabled_title">Im Querformat anzeigen</string>
-    <string name="qs_header_image_landscape_enabled_summary">Hintergrundbild in Schnelleinstellungskopfz. im Querformat anzeigen</string>
-    <string name="qs_header_image_tint_title">Tönung</string>
-    <string name="qs_header_image_tint_none">Keine Tönung</string>
-    <string name="qs_header_image_tint_accent">Akzentfarbe</string>
-    <string name="qs_header_image_tint_primary">Primärfarbe</string>
-    <string name="qs_header_image_tint_primary_inverse">Primärfarbe invertieren</string>
-    <string name="qs_header_image_tint_custom">Benutzerdefinierte Farbe</string>
-    <string name="qs_header_image_tint_custom_title">Benutzerdefinierte Tönungsfarbe</string>
-    <string name="qs_header_image_height_portrait_title">Höhe (Hochformat)</string>
-    <string name="qs_header_image_height_landscape_title">Höhe (Querformat)</string>
-    <string name="qs_header_image_alpha_title">Deckkraft</string>
-    <string name="qs_header_image_padding_side_title">Abstand zu den Seiten</string>
-    <string name="qs_header_image_padding_top_title">Abstand nach oben</string>
-    <string name="file_header_select_title">Bild aus Speicher auswählen</string>
-    <string name="file_header_select_summary">Ein Bild vom Gerätespeicher auswählen</string>
-    <string name="qs_header_image_needs_gallery">Du musst eine Galerie-App installieren!</string>
-
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Stil des Helligkeitsreglers</string>
     <string name="theme_customization_brightness_slider_summary">Benutzerdefinierten Helligkeitsreglerstil festlegen</string>
@@ -425,6 +405,10 @@
     <!-- Navbar styles -->
     <string name="theme_customization_navbar_title">Stil der Navigationsleiste</string>
     <string name="theme_customization_navbar_summary">Stil der Navigationsleiste anpassen</string>
+
+    <!-- Brightness slider haptic feedback -->
+    <string name="qs_brightness_slider_haptic_title">Haptisches Feedback</string>
+    <string name="qs_brightness_slider_haptic_summary">Haptisches Feedback bei Helligkeitsregelung mithilfe des Schiebereglers</string>
 
     <!-- Custom Data icons -->
     <string name="theme_customization_data_title">Mobilfunkdatensymbol</string>
@@ -495,19 +479,51 @@
     <string name="use_photos_spoof_summary">Dein Gerät wird als Pixel XL ausgewiesen, um kostenlos Videos und Fotos in verlustfreier Qualität bei Google Fotos zu speichern</string>
     <string name="photos_spoof_toast">Fotos-App neustarten, damit es wirksam wird</string>
 
-    <!-- Edge light -->
-    <string name="edge_light_category">Seitenbeleuchtung</string>
-    <string name="edge_light_title">Seitenbeleuchtung</string>
-    <string name="edge_light_summary">Bei Benachrichtigungsimpuls leuchten die Seitenkanten des Bildschirms auf</string>
-    <string name="edge_light_switch_title">Seitenbeleuchtung aktivieren</string>
-    <string name="edge_light_always_trigger_on_pulse_title">Durch Impuls immer auslösen</string>
-    <string name="edge_light_always_trigger_on_pulse_summary">Seitenbeleuchtung auch bei eingeschaltetem Inaktivitätsdisplay anzeigen und nicht nur bei Benachrichtigungen</string>
-    <string name="edge_light_repeat_animation_title">Animation wiederholen</string>
-    <string name="edge_light_repeat_animation_summary_on">Wiederholen bis zum Timeout</string>
-    <string name="edge_light_repeat_animation_summary_off">Nur einmal anzeigen</string>
-    <string name="edge_light_color_mode_title">Seitenlicht-Farbmodus</string>
-    <string name="default_string">Standard</string>
-    <string name="theme_color">Akzentfarbe (Standard)</string>
-    <string name="notification_color">Benachrichtigungsfarbe</string>
-    <string name="custom_color">Benutzerdefinierte Farbe</string>
+    <!-- Ambient edge lighting -->
+    <string name="ambient_edge_light_action_title">Bildschirm-Seitenbeleuchtung bei Inaktivität</string>
+    <string name="ambient_edge_light_title">Seitenbeleuchtung</string>
+    <string name="ambient_edge_light_enable_title">Bildschirm-Seitenbeleuchtung aktivieren</string>
+    <string name="ambient_edge_light_summary">Bei Benachrichtigungen die Seiten des Bildschirms pulsierend leuchten lassen</string>
+    <string name="ambient_edge_light_color_mode_category_title">Farbe</string>
+    <string name="ambient_edge_light_color_mode_auto">Automatisch</string>
+    <string name="ambient_edge_light_color_mode_app">App-Farbe</string>
+    <string name="ambient_edge_light_color_mode_manual">Manuell</string>
+    <string name="ambient_edge_light_color_mode_auto_summary">Akzentfarbe für die Seitenbeleuchtung verwenden</string>
+    <string name="ambient_edge_light_color_mode_app_summary">App-Benachrichtigungsfarbe für die Seitenbeleuchtung verwenden</string>
+    <string name="ambient_edge_light_color_mode_manual_summary">Eine Farbe manuell auswählen</string>
+    <string name="ambient_edge_light_advanced_category_title">Erweitert</string>
+    <string name="ambient_edge_light_duration_title">Effektdauer</string>
+    <string name="ambient_edge_light_repeat_count_title">Anzahl der Wiederholungen</string>
+    <string name="ambient_edge_light_width_title">Beleuchtungsbreite</string>
+
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Netflix-Spoofing</string>
+    <string name="netflix_spoof_summary">Netflix ein anderes Gerätemodell vortäuschen</string>
+
+    <!-- QS Headers -->
+    <string name="status_bar_custom_header_title">Aktivieren</string>
+    <string name="daylight_header_pack_title">Bildersammlung</string>
+    <string name="status_bar_custom_header_shadow_title">Schatten</string>
+    <string name="status_bar_custom_header_shadow_summary">Bessere Sichtbarkeit bei hellen Bildern</string>
+    <string name="static_header_provider_title">Statisches Bild</string>
+    <string name="daylight_header_provider_title">Bildersammlung</string>
+    <string name="custom_header_provider_title">Bildquelle</string>
+    <string name="custom_header_browse_title">Installierte Kopfzeilenbilder durchsuchen</string>
+    <string name="custom_header_browse_summary">Klicke auf ein beliebiges Bild, um es für den statischen Modus zu verwenden</string>
+    <string name="custom_header_browse_summary_new">Alle verfügbaren Bildersammlungen durchsuchen</string>
+    <string name="custom_header_pick_title">Kopfzeilenbild auswählen</string>
+    <string name="custom_header_pick_summary">Wähle ein Bild aus, das für den statischen Modus verwendet werden soll</string>
+    <string name="style_enabled_summary">Benutzerdefiniertes Kopfzeilenbild ist AN</string>
+    <string name="style_disabled_summary">Benutzerdefiniertes Kopfzeilenbild ist AUS</string>
+    <string name="header_provider_disabled">Deaktiviert</string>
+    <string name="custom_header_title">Benutzerdefiniertes Kopfzeilenbild</string>
+    <string name="custom_header_summary">Bild oben im Benachrichtigungsfeld anzeigen</string>
+    <string name="file_header_select_title">Wähle ein Bild</string>
+    <string name="file_header_select_summary">Wähle ein benutzerdefiniertes Bild aus</string>
+    <string name="file_header_provider_title">Einzelnes Bild</string>
+    <string name="custom_header_needs_gallary">Eine Galerie-App muss installiert sein!</string>
+
+    <!-- QS Header offset -->
+    <string name="status_bar_custom_header_offset_title">Bildversatz</string>
+    <string name="status_bar_custom_header_offset_summary">Die Größe des Bilds anpassen</string>
 </resources>
