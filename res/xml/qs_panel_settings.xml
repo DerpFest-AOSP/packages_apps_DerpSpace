@@ -26,6 +26,8 @@
         <org.derpfest.support.preferences.SecureSettingListPreference
             android:key="qs_style_round"
             android:title="@string/qs_style_title"
+            android:dialogTitle="@string/qs_style_title"
+            android:summary="%s"
             android:entries="@array/qs_style_entries"
             android:entryValues="@array/qs_style_values"
             android:defaultValue="1" />
@@ -33,6 +35,8 @@
         <org.derpfest.support.preferences.SecureSettingListPreference
             android:key="qs_tile_shape"
             android:title="@string/qs_tile_shape"
+            android:dialogTitle="@string/qs_tile_shape"
+            android:summary="%s"
             android:entries="@array/qs_tile_shape_entries"
             android:entryValues="@array/qs_tile_shape_values"
             android:defaultValue="2" />

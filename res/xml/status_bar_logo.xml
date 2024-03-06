@@ -27,6 +27,8 @@
     <org.derpfest.support.preferences.SystemSettingListPreference
         android:key="status_bar_logo_position"
         android:title="@string/status_bar_logo_position_title"
+        android:dialogTitle="@string/status_bar_logo_position_title"
+        android:summary="%s"
         android:entries="@array/status_bar_logo_position_entries"
         android:entryValues="@array/status_bar_logo_position_values"
         android:dependency="status_bar_logo"
@@ -35,6 +37,8 @@
     <org.derpfest.support.preferences.SystemSettingListPreference
         android:key="status_bar_logo_style"
         android:title="@string/status_bar_logo_style_title"
+        android:dialogTitle="@string/status_bar_logo_style_title"
+        android:summary="%s"
         android:entries="@array/status_bar_logo_style_entries"
         android:entryValues="@array/status_bar_logo_style_values"
         android:dependency="status_bar_logo"
