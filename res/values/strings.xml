@@ -106,10 +106,6 @@
     <string name="derpspace_dialog_toast">READ THE WHOLE THING!</string>
     <string name="artwork_media_fade_level_summary">Fading the media artwork image</string>
 
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Feel a vibration upon touching quick tiles</string>
-
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animations</string>
     <string name="qs_tile_animation_style_title">Animation style</string>

@@ -103,13 +103,6 @@
     <string name="derpspace_dialog_message">Wenn Du bei einer dieser Einstellungen einen Bug findest, melde ihn in unserer Telegram-Gruppe. Du MUSST folgendes angeben, wenn Du einen Fehlerbericht postest:\n\n1. Ein logcat oder last_kmsg\n2. Verwendeter Kernel und Mods\n3. Nützliche Informationen\n\nWenn Du etwas nicht angemessen meldest, erwarte NICHT, dass die Dinge behoben werden.</string>
     <string name="derpspace_dialog_toast">LESEN SIE ALLES!</string>
 
-    <!-- QuickSettings haptic feedback -->
-    <string name="qs_tile_vibration_title">Vibration</string>
-    <string name="quick_settings_vibrate_title">Vibrieren bei Berührung</string>
-    <string name="quick_settings_vibrate_summary">Beim Berühren der Schaltflächen vibrieren</string>
-    <string name="quick_settings_vibrate_duration_title">Vibrationsdauer</string>
-    <string name="quick_settings_vibrate_duration_summary">Wie viele Millisekunden soll vibriert werden</string>
-
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">Animationen</string>
     <string name="qs_tile_animation_style_title">Style</string>

@@ -32,12 +32,6 @@
             android:summary="@string/qs_panel_options_summary"
             android:fragment="org.derpfest.derpspace.fragments.QSPanelSettings" />
 
-        <org.derpfest.support.preferences.SecureSettingSwitchPreference
-            android:key="quick_settings_vibrate"
-            android:title="@string/quick_settings_vibrate_title"
-            android:summary="@string/quick_settings_vibrate_summary"
-            android:defaultValue="false"/>
-
         <org.derpfest.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
