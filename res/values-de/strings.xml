@@ -41,6 +41,7 @@
     <string name="notifications_panel_category">Schnelleinstellungen</string>
     <string name="system_category">System</string>
     <string name="lockscreen_category">Sperrbildschirm</string>
+    <string name="udfps_category">Under-Display-Fingerabdruck</string>
     <string name="listview">ListView</string>
 
     <!-- Frags -->
@@ -299,6 +300,10 @@
     <string name="pulse_empty_block_size">Blockabstand</string>
     <string name="pulse_solid_units_rounded_title">Abgerundete Ecken</string>
     <string name="pulse_solid_units_rounded_summary">Durchgezogene Linien mit abgerundeter Spitze</string>
+
+    <!-- UDFPS icon picker -->
+    <string name="udfps_icon_picker_title">Symbolauswahl des Under-Display-Fingerabdrucks</string>
+    <string name="udfps_icon_picker_summary">Bevorzugtes Fingerabdrucksymbol wählen</string>
 
     <!-- Material dismiss all button for notifications -->
     <string name="notification_material_dismiss_title">Schaltfläche zum Löschen aller Benachrichtigungen</string>

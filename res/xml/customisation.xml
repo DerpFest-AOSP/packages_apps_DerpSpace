@@ -82,5 +82,17 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="udfps_category"
+        android:title="@string/udfps_category">
+
+        <Preference
+            android:key="udfps_icon_picker"
+            android:title="@string/udfps_icon_picker_title"
+            android:summary="@string/udfps_icon_picker_summary"
+            android:fragment="org.derpfest.derpspace.fragments.UdfpsIconPicker" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
 

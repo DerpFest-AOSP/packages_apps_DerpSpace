@@ -53,6 +53,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.util.derp.derpUtils;
 import com.android.settings.Utils;
 import com.android.settings.search.BaseSearchIndexProvider;
 
@@ -71,6 +72,8 @@ public class Customisation extends SettingsPreferenceFragment implements OnPrefe
 
     private static final String TAG = "Customisation";
 
+    private Context mContext;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,6 +82,13 @@ public class Customisation extends SettingsPreferenceFragment implements OnPrefe
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen screen = getPreferenceScreen();
+
+        boolean udfpsResPkgInstalled = derpUtils.isPackageInstalled(getContext(),
+                "org.derpfest.udfps.icons");
+        PreferenceCategory udfps = (PreferenceCategory) screen.findPreference("udfps_category");
+        if (!udfpsResPkgInstalled) {
+            screen.removePreference(udfps);
+        }
     }
 
     @Override
