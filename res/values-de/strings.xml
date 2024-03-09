@@ -519,7 +519,7 @@
     <string name="file_header_select_title">Wähle ein Bild</string>
     <string name="file_header_select_summary">Wähle ein benutzerdefiniertes Bild aus</string>
     <string name="file_header_provider_title">Einzelnes Bild</string>
-    <string name="custom_header_needs_gallary">Eine Galerie-App muss installiert sein!</string>
+    <string name="custom_header_needs_gallery">Eine Galerie-App muss installiert sein!</string>
 
     <!-- QS Header offset -->
     <string name="status_bar_custom_header_offset_title">Bildversatz</string>

@@ -214,7 +214,7 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
                 intent.setType("image/*");
                 startActivityForResult(intent, REQUEST_PICK_IMAGE);
             } catch(Exception e) {
-                Toast.makeText(getContext(), R.string.custom_header_needs_gallary, Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), R.string.custom_header_needs_gallery, Toast.LENGTH_LONG).show();
             }
         }
         return super.onPreferenceTreeClick(preference);
