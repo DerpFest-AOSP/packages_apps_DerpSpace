@@ -41,6 +41,7 @@
     <string name="notifications_panel_category">快速设置面板</string>
     <string name="system_category">系统</string>
     <string name="lockscreen_category">锁屏</string>
+    <string name="udfps_category">屏下指纹</string>
     <string name="listview">列表视图</string>
     
     <!-- Frags -->
@@ -104,10 +105,6 @@
     <string name="derpspace_dialog_toast">请熟读并背诵全文！</string>
     <string name="artwork_media_fade_level_summary">淡出淡入式媒体封面</string>
 
-    <!-- QuickSettings haptic feedback -->
-    <string name="quick_settings_vibrate_title">点触时振动</string>
-    <string name="quick_settings_vibrate_summary">点触快速设置磁贴时振动</string>
-
     <!-- Tiles animation style  -->
     <string name="qs_tile_animation_title">动画</string>
     <string name="qs_tile_animation_style_title">动画样式</string>
@@ -118,7 +115,9 @@
     <string name="qs_tile_animation_style_rotate">旋转</string>
     <string name="qs_tile_animation_duration_low">较慢</string>
     <string name="qs_tile_animation_duration_default">默认</string>
-    <string name="qs_tile_animation_duration_fast">较快</string>
+    <string name="qs_tile_animation_duration_fast">快</string>
+    <string name="qs_tile_animation_duration_quite_fast">很快</string>
+    <string name="qs_tile_animation_duration_super_fast">非常快</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">线性式</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">加速式</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">减速式</string>
@@ -135,6 +134,10 @@
     <!-- Data disabled icon -->
     <string name="data_disabled_icon_title">显示数据网络关闭叉号</string>
     <string name="data_disabled_icon_summary">当数据网络关闭时在信号图标上显示一个叉号</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">锁屏充电信息</string>
+    <string name="lockscreen_battery_info_summary">在充电时显示详细信息</string>
 
     <!-- QSTile requires unlocking before being accessible -->
     <string name="qstile_requires_unlocking_title">使用敏感磁贴时需要解锁</string>
@@ -300,6 +303,10 @@
     <string name="pulse_solid_units_rounded_title">线条圆角</string>
     <string name="pulse_solid_units_rounded_summary">使用圆角化的线条</string>
 
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">选择屏下指纹图标</string>
+    <string name="udfps_icon_picker_summary">选择你最喜爱的指纹图标</string>
+
       <!-- Material dismiss all button for notifications -->
     <string name="notification_material_dismiss_title">“清除所有通知”按钮</string>
     <string name="notification_material_dismiss_summary">使用 Material You 风格的“清除所有通知”按钮取代原本的文本</string>
@@ -394,29 +401,6 @@
     <string name="qs_show_battery_estimate_title">电池可用时间</string>
     <string name="qs_show_battery_estimate_summary_on">在快速设置面板显示预估的电池可用时间</string>
     <string name="qs_show_battery_estimate_summary_off">在快速设置面板隐藏预估的电池可用时间</string>
-
-    <!-- QS Header -->
-    <string name="qs_header_image_title">头图</string>
-    <string name="qs_header_image_summary">选择快速设置面板头图</string>
-    <string name="qs_header_image_enabled_title">自定义快速设置面板头图</string>
-    <string name="qs_header_image_enabled_summary">允许自定义快速设置面板头图</string>
-    <string name="qs_header_image_landscape_enabled_title">在横屏时启用</string>
-    <string name="qs_header_image_landscape_enabled_summary">在横屏状态下显示快速设置面板头图</string>
-    <string name="qs_header_image_tint_title">淡色</string>
-    <string name="qs_header_image_tint_none">无淡色</string>
-    <string name="qs_header_image_tint_accent">强调色</string>
-    <string name="qs_header_image_tint_primary">主体色</string>
-    <string name="qs_header_image_tint_primary_inverse">反转主体色</string>
-    <string name="qs_header_image_tint_custom">自定义颜色</string>
-    <string name="qs_header_image_tint_custom_title">自定义淡色使用的颜色</string>
-    <string name="qs_header_image_height_portrait_title">高度（竖屏时）</string>
-    <string name="qs_header_image_height_landscape_title">高度（横屏时）</string>
-    <string name="qs_header_image_alpha_title">不透明度</string>
-    <string name="qs_header_image_padding_side_title">侧边距</string>
-    <string name="qs_header_image_padding_top_title">上边距</string>
-    <string name="file_header_select_title">选择本地图片</string>
-    <string name="file_header_select_summary">从设备存储中选择图片</string>
-    <string name="qs_header_image_needs_gallery">你需要安装一个相册应用！</string>
 
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">亮度调节滑块样式</string>
@@ -523,4 +507,50 @@
     <!-- Netflix Spoof -->
     <string name="netflix_spoof_title">Netflix 机型伪装</string>
     <string name="netflix_spoof_summary">对 Netflix 伪装您的设备为其他型号</string>
+
+    <!-- QS Headers -->
+    <string name="status_bar_custom_header_title">启用</string>
+    <string name="daylight_header_pack_title">顶部图片集</string>
+    <string name="status_bar_custom_header_shadow_title">顶部图片阴影</string>
+    <string name="status_bar_custom_header_shadow_summary">可提高明亮图像的可视性</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">静态图片</string>
+    <string name="daylight_header_provider_title">图片集</string>
+    <string name="custom_header_provider_title">顶部图片来源</string>
+    <string name="custom_header_browse_title">浏览已安装的顶部图片</string>
+    <string name="custom_header_browse_summary">点按一张图片以在静态模式中使用</string>
+    <string name="custom_header_browse_summary_new">浏览所有可用的顶部图片集</string>
+    <string name="custom_header_pick_title">选择顶部图片</string>
+    <string name="custom_header_pick_summary">选择一张图片以用于静态模式</string>
+    <string name="style_enabled_summary">自定义顶部图片已启用</string>
+    <string name="style_disabled_summary">自定义顶部图片已关闭</string>
+    <string name="header_provider_disabled">禁用</string>
+    <string name="custom_header_title">自定义顶部图片</string>
+    <string name="custom_header_summary">在通知面板顶部显示图片</string>
+    <string name="file_header_select_title">选择图片</string>
+    <string name="file_header_select_summary">选择自定义图片</string>
+    <string name="file_header_provider_title">自定义图片</string>
+    <string name="custom_header_needs_gallery">你需要安装一个相册应用！</string>
+
+    <!-- QS Header offset -->
+    <string name="status_bar_custom_header_offset_title">顶部图片偏移量</string>
+    <string name="status_bar_custom_header_offset_summary">调整顶部图片尺寸</string>
+
+    <!-- Carrier label -->
+    <string name="carrier_label_category">运营商信息</string>
+    <string name="carrier_label_custom">自定义运营商信息</string>
+    <string name="carrier_label_custom_unset">点触以设置</string>
+    <string name="carrier_label_custom_title">自定义运营商信息</string>
+    <string name="carrier_label_custom_explain">请输入自定义的信息。留空以使用你原本的网络名</string>
+    <string name="carrier_label_position">运营商信息位置</string>
+    <string name="carrier_label_position_hide">隐藏</string>
+    <string name="carrier_label_position_lockscreen">锁屏界面</string>
+    <string name="carrier_label_position_statusbar">状态栏</string>
+    <string name="carrier_label_position_both">锁屏界面 &amp; 状态栏</string>
+    
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">灭屏动画</string>
+    <string name="screen_off_animation_default">默认</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">缩放</string>
 </resources>
