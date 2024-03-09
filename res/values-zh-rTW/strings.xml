@@ -524,7 +524,7 @@
     <string name="file_header_select_title">選擇圖片</string>
     <string name="file_header_select_summary">選擇自訂圖片</string>
     <string name="file_header_provider_title">自訂圖片</string>
-    <string name="custom_header_needs_gallary">你必須安裝一個相簿應用！</string>
+    <string name="custom_header_needs_gallery">你必須安裝一個相簿應用！</string>
 
     <!-- QS Header offset -->
     <string name="status_bar_custom_header_offset_title">頂部圖片偏移量</string>

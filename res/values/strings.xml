@@ -548,7 +548,7 @@
     <string name="file_header_select_summary">Select custom image</string>
     <string name="file_header_provider_title">Custom image</string>
     <string name="file_header_provider" translatable="false">file</string>
-    <string name="custom_header_needs_gallary">You must install a gallery app!</string>
+    <string name="custom_header_needs_gallery">You must install a gallery app!</string>
 
     <!-- QS Header offset -->
     <string name="status_bar_custom_header_offset_title">Header image offset</string>
