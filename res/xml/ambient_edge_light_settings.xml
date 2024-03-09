@@ -55,7 +55,7 @@
             android:title="@string/ambient_edge_light_advanced_category_title"
             android:dependency="pulse_ambient_light" >
 
-            <org.derpfest.support.preferences.CustomSecureSeekBarPreference
+            <org.derpfest.support.preferences.SecureSettingSeekBarPreference
                 android:key="pulse_ambient_light_duration"
                 android:title="@string/ambient_edge_light_duration_title"
                 android:max="10"
@@ -64,7 +64,7 @@
                 android:dependency="pulse_ambient_light"
                 settings:units="sec" />
 
-            <org.derpfest.support.preferences.CustomSecureSeekBarPreference
+            <org.derpfest.support.preferences.SecureSettingSeekBarPreference
                 android:key="pulse_ambient_light_repeat_count"
                 android:title="@string/ambient_edge_light_repeat_count_title"
                 android:max="10"
@@ -73,7 +73,7 @@
                 android:dependency="pulse_ambient_light"
                 settings:units="times" />
 
-            <org.derpfest.support.preferences.CustomSecureSeekBarPreference
+            <org.derpfest.support.preferences.SecureSettingSeekBarPreference
                 android:key="pulse_ambient_light_width"
                 android:title="@string/ambient_edge_light_width_title"
                 android:max="150"
