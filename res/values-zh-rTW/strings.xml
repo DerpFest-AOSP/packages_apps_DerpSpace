@@ -512,7 +512,8 @@
     <string name="status_bar_custom_header_title">啟用</string>
     <string name="daylight_header_pack_title">頂部圖片集</string>
     <string name="status_bar_custom_header_shadow_title">頂部圖片陰影</string>
-    <string name="status_bar_custom_header_shadow_summary">For better visibility on bright images</string>
+    <string name="status_bar_custom_header_shadow_summary">提高明亮圖像的可視性</string>
+    <string name="unit_percent">\u0025</string>
     <string name="static_header_provider_title">靜態圖片</string>
     <string name="daylight_header_provider_title">圖片集</string>
     <string name="custom_header_provider_title">頂部圖片來源</string>
@@ -525,7 +526,7 @@
     <string name="style_disabled_summary">自訂頂部圖片已關閉</string>
     <string name="header_provider_disabled">已停用</string>
     <string name="custom_header_title">自訂頂部圖片</string>
-    <string name="custom_header_summary">Display image at top of the notification panel</string>
+    <string name="custom_header_summary">在通知面板頂部顯示圖片</string>
     <string name="file_header_select_title">選擇圖片</string>
     <string name="file_header_select_summary">選擇自訂圖片</string>
     <string name="file_header_provider_title">自訂圖片</string>
@@ -533,15 +534,15 @@
 
     <!-- QS Header offset -->
     <string name="status_bar_custom_header_offset_title">頂部圖片偏移量</string>
-    <string name="status_bar_custom_header_offset_summary">Adjust the image header size</string>
+    <string name="status_bar_custom_header_offset_summary">調整頂部圖片尺寸</string>
 
     <!-- Carrier label -->
-    <string name="carrier_label_category">載體標籤</string>
-    <string name="carrier_label_custom">自訂載體標籤</string>
+    <string name="carrier_label_category">電信業者標籤</string>
+    <string name="carrier_label_custom">自訂電信業者標籤</string>
     <string name="carrier_label_custom_unset">點擊以設定</string>
-    <string name="carrier_label_custom_title">自訂載體標籤</string>
-    <string name="carrier_label_custom_explain">輸入一個自訂標籤（留空的話預設使用你的網路名稱）</string>
-    <string name="carrier_label_position">載體標籤位置</string>
+    <string name="carrier_label_custom_title">自訂電信業者標籤</string>
+    <string name="carrier_label_custom_explain">輸入一個自訂標籤（留空則使用你原本的網路名稱）</string>
+    <string name="carrier_label_position">電信業者標籤位置</string>
     <string name="carrier_label_position_hide">隱藏</string>
     <string name="carrier_label_position_lockscreen">鎖定畫面</string>
     <string name="carrier_label_position_statusbar">狀態列</string>
@@ -550,6 +551,6 @@
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">螢幕關閉動畫</string>
     <string name="screen_off_animation_default">預設</string>
-    <string name="screen_off_animation_crt">陰極射線管（CRT）</string>
+    <string name="screen_off_animation_crt">CRT（陰極射線管）</string>
     <string name="screen_off_animation_scale">縮放</string>
 </resources>
