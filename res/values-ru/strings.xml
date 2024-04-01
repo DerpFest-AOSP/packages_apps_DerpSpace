@@ -584,10 +584,6 @@
     <string name="file_header_select_summary">Выбрать изображение из хранилища</string>
     <string name="qs_header_image_needs_gallery">Вам необходимо установить приложение галереи!</string>
 
-    <!-- Fingerprint authentication vibration -->
-    <string name="fprint_sucess_vib_title">Вибрация при разблокировке отпечатком</string>
-    <string name="fprint_sucess_vib_summary">Вибрировать при успешной разблокировке по отпечатку</string>
-
     <!-- Brightness slider styles -->
     <string name="theme_customization_brightness_slider_title">Стиль слайдера яркости</string>
     <string name="theme_customization_brightness_slider_summary">Установка пользовательского стиля ползунка яркости</string>
