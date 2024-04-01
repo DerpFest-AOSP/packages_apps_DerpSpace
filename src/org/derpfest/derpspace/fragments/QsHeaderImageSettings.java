@@ -33,7 +33,7 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
@@ -76,7 +76,7 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
     private ProperSeekBarPreference mHeaderShadow;
     private ListPreference mHeaderProvider;
     private String mDaylightHeaderProvider;
-    private SwitchPreference mHeaderEnabled;
+    private SwitchPreferenceCompat mHeaderEnabled;
     private Preference mFileHeader;
     private String mFileHeaderProvider;
     private ProperSeekBarPreference mQsHeaderOffset;
@@ -93,7 +93,7 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
         mHeaderBrowse = findPreference(CUSTOM_HEADER_BROWSE);
         mHeaderBrowse.setEnabled(isBrowseHeaderAvailable());
 
-        mHeaderEnabled = (SwitchPreference) findPreference(CUSTOM_HEADER_ENABLED);
+        mHeaderEnabled = (SwitchPreferenceCompat) findPreference(CUSTOM_HEADER_ENABLED);
         mHeaderEnabled.setOnPreferenceChangeListener(this);
 
         mDaylightHeaderPack = (ListPreference) findPreference(DAYLIGHT_HEADER_PACK);

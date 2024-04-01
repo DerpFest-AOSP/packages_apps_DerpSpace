@@ -29,7 +29,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -64,12 +64,12 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
     private static final String PULSE_SETTINGS_FOOTER = "pulse_settings_footer";
 
-    private SwitchPreference mNavbarPulse;
-    private SwitchPreference mLockscreenPulse;
-    private SwitchPreference mAmbientPulse;
-    private SwitchPreference mPulseSmoothing;
-    private SwitchPreference mPulseCenterMirrored;
-    private SwitchPreference mPulseVerticalMirror;
+    private SwitchPreferenceCompat mNavbarPulse;
+    private SwitchPreferenceCompat mLockscreenPulse;
+    private SwitchPreferenceCompat mAmbientPulse;
+    private SwitchPreferenceCompat mPulseSmoothing;
+    private SwitchPreferenceCompat mPulseCenterMirrored;
+    private SwitchPreferenceCompat mPulseVerticalMirror;
     private Preference mRenderMode;
     private ListPreference mColorModePref;
     private ColorPickerPreference mColorPickerPref;
@@ -88,19 +88,19 @@ public class PulseSettings extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getContext().getContentResolver();
 
-        mNavbarPulse = (SwitchPreference) findPreference(NAVBAR_PULSE_ENABLED_KEY);
+        mNavbarPulse = (SwitchPreferenceCompat) findPreference(NAVBAR_PULSE_ENABLED_KEY);
         boolean navbarPulse = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.NAVBAR_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
         mNavbarPulse.setChecked(navbarPulse);
         mNavbarPulse.setOnPreferenceChangeListener(this);
 
-        mLockscreenPulse = (SwitchPreference) findPreference(LOCKSCREEN_PULSE_ENABLED_KEY);
+        mLockscreenPulse = (SwitchPreferenceCompat) findPreference(LOCKSCREEN_PULSE_ENABLED_KEY);
         boolean lockscreenPulse = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.LOCKSCREEN_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
         mLockscreenPulse.setChecked(lockscreenPulse);
         mLockscreenPulse.setOnPreferenceChangeListener(this);
 
-        mAmbientPulse = (SwitchPreference) findPreference(AMBIENT_PULSE_ENABLED_KEY);
+        mAmbientPulse = (SwitchPreferenceCompat) findPreference(AMBIENT_PULSE_ENABLED_KEY);
         boolean ambientPulse = Settings.Secure.getIntForUser(resolver,
                 Settings.Secure.AMBIENT_PULSE_ENABLED, 0, UserHandle.USER_CURRENT) != 0;
         mAmbientPulse.setChecked(ambientPulse);
@@ -119,11 +119,11 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         mSolidBarsCat = (PreferenceCategory) findPreference(
                 PULSE_RENDER_CATEGORY_SOLID);
 
-        mPulseSmoothing = (SwitchPreference) findPreference(PULSE_SMOOTHING_KEY);
+        mPulseSmoothing = (SwitchPreferenceCompat) findPreference(PULSE_SMOOTHING_KEY);
 
-        mPulseCenterMirrored = (SwitchPreference) findPreference(VISUALIZER_CENTER_MIRRORED);
+        mPulseCenterMirrored = (SwitchPreferenceCompat) findPreference(VISUALIZER_CENTER_MIRRORED);
 
-        mPulseVerticalMirror = (SwitchPreference) findPreference(PULSE_VERTICAL_MIRROR);
+        mPulseVerticalMirror = (SwitchPreferenceCompat) findPreference(PULSE_VERTICAL_MIRROR);
 
         mPulseGravity = (ListPreference) findPreference(PULSE_CUSTOM_GRAVITY);
 

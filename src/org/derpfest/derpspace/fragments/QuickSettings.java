@@ -28,7 +28,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -49,7 +49,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
 
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
-    private SwitchPreference mShowAutoBrightness;
+    private SwitchPreferenceCompat mShowAutoBrightness;
 
     @Override
     public void onCreate(Bundle icicle) {

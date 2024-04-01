@@ -27,7 +27,6 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 
-import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;

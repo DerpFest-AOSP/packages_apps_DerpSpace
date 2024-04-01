@@ -39,7 +39,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.SwitchPreference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 
@@ -66,8 +66,8 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
 
     private Preference mUserSwitcher;
-    private SwitchPreference mPhotosSpoof;
-    private SwitchPreference mNetFlixSpoof;
+    private SwitchPreferenceCompat mPhotosSpoof;
+    private SwitchPreferenceCompat mNetFlixSpoof;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -80,11 +80,11 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
         mUserSwitcher = findPreference("persist.sys.flags.enableBouncerUserSwitcher");
         mUserSwitcher.setOnPreferenceChangeListener(this);
 
-        mPhotosSpoof = (SwitchPreference) prefSet.findPreference(KEY_PHOTOS_SPOOF);
+        mPhotosSpoof = (SwitchPreferenceCompat) prefSet.findPreference(KEY_PHOTOS_SPOOF);
         mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
         mPhotosSpoof.setOnPreferenceChangeListener(this);
 
-        mNetFlixSpoof = (SwitchPreference) findPreference(KEY_NETFLIX_SPOOF);
+        mNetFlixSpoof = (SwitchPreferenceCompat) findPreference(KEY_NETFLIX_SPOOF);
         mNetFlixSpoof.setChecked(SystemProperties.getBoolean(SYS_NETFLIX_SPOOF, false));
         mNetFlixSpoof.setOnPreferenceChangeListener(this);
     }

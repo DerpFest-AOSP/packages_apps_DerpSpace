@@ -26,13 +26,13 @@
         android:key="general_tweaks_general_category"
         android:title="@string/general_category">
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="use_photos_spoof"
             android:title="@string/use_photos_spoof_title"
             android:summary="@string/use_photos_spoof_summary"
             android:defaultValue="true" />
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="use_netflix_spoof"
             android:title="@string/netflix_spoof_title"
             android:summary="@string/netflix_spoof_summary"
