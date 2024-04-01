@@ -305,6 +305,10 @@
     <string name="bluetooth_battery_title">Bluetooth-Akkustand</string>
     <string name="bluetooth_battery_summary">Akkustand des verbundenen Bluetooth-Geräts anzeigen, falls verfügbar</string>
 
+    <!-- Clock auto hide -->
+    <string name="status_bar_clock_auto_hide_title">Automatisch ausblenden</string>
+    <string name="status_bar_clock_auto_hide_summary">Uhr auf dem Startbildschirm ausblenden</string>
+
     <!-- Ambient battery bar settings -->
     <string name="ambient_ui">Ambient/Always on display</string>
     <string name="ambient_battery_settings_title">Akkustandbalken</string>

@@ -314,6 +314,10 @@
     <string name="bluetooth_battery_title">Bluetooth battery status</string>
     <string name="bluetooth_battery_summary">Display battery status for the connected bluetooth device, if available</string>
 
+    <!-- Clock auto hide -->
+    <string name="status_bar_clock_auto_hide_title">Auto hide</string>
+    <string name="status_bar_clock_auto_hide_summary">Hide clock if launcher is visible</string>
+
     <!-- Ambient battery bar settings -->
     <string name="ambient_ui">Ambient/Always on display</string>
     <string name="ambient_battery_settings_title">Battery bar</string>
