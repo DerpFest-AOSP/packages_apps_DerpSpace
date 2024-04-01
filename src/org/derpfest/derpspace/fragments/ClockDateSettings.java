@@ -48,7 +48,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexable;
 
-import org.derpfest.support.preferences.SecureSettingListPreference;
+import org.derpfest.support.preferences.SystemSettingListPreference;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -62,7 +62,7 @@ public class ClockDateSettings extends SettingsPreferenceFragment
 
     private static final String KEY_STATUS_BAR_AM_PM = "status_bar_am_pm";
 
-    private SecureSettingListPreference mStatusBarAmPm;
+    private SystemSettingListPreference mStatusBarAmPm;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
