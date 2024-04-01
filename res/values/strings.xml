@@ -209,11 +209,6 @@
     <string name="network_traffic_autohide_title">Hide network traffic indicator when inactive</string>
     <string name="network_traffic_autohide_summary">Hide when the network traffic is below 1 KB/s</string>
 
-    <!-- Media art -->
-    <string name="lockscreen_media_art_options_title">Media cover art</string>
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Display media cover art when available</string>
-
     <!-- Clock position -->
     <string name="status_bar_clock_position_center">Center</string>
     <string name="status_bar_clock_position_left">Left</string>
