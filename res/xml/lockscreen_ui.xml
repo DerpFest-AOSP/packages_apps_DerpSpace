@@ -83,15 +83,6 @@
             android:summary="@string/media_art_summary"
             android:defaultValue="false" />
 
-        <org.derpfest.support.preferences.ProperSeekBarPreference
-            android:key="lockscreen_media_blur"
-            android:title="@string/lockscreen_media_blur_title"
-            android:dependency="lockscreen_media_metadata"
-            android:max="25"
-            android:min="0"
-            android:defaultValue="25"
-            settings:units="dp" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>
