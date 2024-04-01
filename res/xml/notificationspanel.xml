@@ -22,9 +22,9 @@
 
     <org.derpfest.support.preferences.CardviewPreference
         android:key="notifications"
-        android:fragment="org.derpfest.derpspace.fragments.Notifications"
+        android:fragment="org.derpfest.derpspace.fragments.IslandSettings"
         android:icon="@drawable/ic_notification"
-        android:title="@string/reticker_title" />
+        android:title="@string/island_notification_title" />
 
     <org.derpfest.support.preferences.CardviewPreference
         android:key="quick_settings"

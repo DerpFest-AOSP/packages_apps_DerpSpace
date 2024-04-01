@@ -187,14 +187,12 @@
     <string name="theme_customization_lock_clock_title">Lockscreen clock font</string>
     <string name="theme_customization_lock_clock_summary">Set lockscreen clock font style</string>
 
-    <!-- reTicker -->
-    <string name="reticker_category" translatable="false">reTicker</string>
-    <string name="reticker_title">reTicker</string>
-    <string name="reticker_summary">Replace your notifications with a redesigned version of tickers. \nSlim and less invasive than a standard notification</string>
-    <string name="reticker_colored_title">Use app colored background</string>
-    <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
-    <string name="reticker_landscape_only_title">Landscape only</string>
-    <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
+    <!-- Island Notification -->
+    <string name="island_notification_title">Island notification</string>
+    <string name="island_notification_summary">Display heads-up notification in Dynamic Island style</string>
+    <string name="island_notification_footer_text">
+        The Island notification feature, inspired by iOS\'s Dynamic Island, transforms Android\'s heads-up notifications into quick-access and compact notification utility.\n\nIsland Quick Access Controls includes the following features:\n1. Tap island notification to quick answer phone calls.\n2. Long press island notification to reject phone calls.\n3. Long press island notification to expand the island notification preview.
+    </string>
 
     <!-- Network traffic -->
     <string name="network_traffic_intro_text">
