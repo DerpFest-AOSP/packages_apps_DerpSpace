@@ -337,10 +337,6 @@
     <string name="charging_animation_title">Ladeanimation</string>
     <string name="charging_animation_summary">Animation anzeigen, wenn das Gerät angeschlossen wird</string>
 
-    <!-- Statusbar Clock background chip -->
-    <string name="statusbar_clock_chip_title">Hintergrundchip anzeigen</string>
-    <string name="statusbar_clock_chip_summary">Akzentuierter Chip hinter der Uhr anzeigen</string>
-
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">Farbige Symbole</string>
     <string name="statusbar_colored_icons_summary">Verwenden Sie die richtigen App-Symbole für Benachrichtigungssymbole in der Statusleiste</string>
