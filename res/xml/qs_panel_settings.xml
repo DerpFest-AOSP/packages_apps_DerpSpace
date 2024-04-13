@@ -23,7 +23,7 @@
     <PreferenceCategory
         android:title="@string/category_name_qs_tiles">
 
-        <org.derpfest.support.preferences.SecureSettingListPreference
+        <com.android.settings.support.SecureSettingListPreference
             android:key="qs_style_round"
             android:title="@string/qs_style_title"
             android:dialogTitle="@string/qs_style_title"
@@ -32,7 +32,7 @@
             android:entryValues="@array/qs_style_values"
             android:defaultValue="1" />
 
-        <org.derpfest.support.preferences.SecureSettingListPreference
+        <com.android.settings.support.SecureSettingListPreference
             android:key="qs_tile_shape"
             android:title="@string/qs_tile_shape"
             android:dialogTitle="@string/qs_tile_shape"
