@@ -529,4 +529,8 @@
     <string name="screen_off_animation_default">Standard</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Skalieren</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel-Animation</string>
+    <string name="pixel_navbar_anim_summary">Animation der Home-Taste aktivieren</string>
 </resources>

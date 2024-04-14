@@ -92,6 +92,12 @@
             android:summary="@string/theme_customization_navbar_summary"
             android:fragment="org.derpfest.derpspace.fragments.NavbarStyles"/>
 
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="pixel_nav_animation"
+            android:title="@string/pixel_navbar_anim_title"
+            android:summary="@string/pixel_navbar_anim_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
