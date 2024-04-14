@@ -45,16 +45,22 @@
             android:fragment="org.derpfest.derpspace.fragments.BrightnessSlider"/>
 
         <Preference
-            android:key="android.theme.customization.navbar"
-            android:title="@string/theme_customization_navbar_title"
-            android:summary="@string/theme_customization_navbar_summary"
-            android:fragment="org.derpfest.derpspace.fragments.NavbarStyles"/>
-
-        <Preference
             android:key="android.theme.customization.icon_pack"
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"
             android:fragment="org.derpfest.derpspace.fragments.StatusbarIcons"/>
+
+        <Preference
+            android:key="android.theme.customization.adaptive_icon_shape"
+            android:title="@string/theme_customization_icon_shape_title"
+            android:summary="@string/theme_customization_icon_shape_summary"
+            android:fragment="org.derpfest.derpspace.fragments.IconShapes"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="statusbar_items_category"
+        android:title="@string/statusbar_items_category">
 
         <Preference
             android:key="android.theme.customization.wifi_icon"
@@ -74,11 +80,17 @@
             android:summary="@string/theme_customization_data_summary"
             android:fragment="org.derpfest.derpspace.fragments.DataStyles"/>
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="three_button_navbar_category"
+        android:title="@string/three_button_navbar_category">
+
         <Preference
-            android:key="android.theme.customization.adaptive_icon_shape"
-            android:title="@string/theme_customization_icon_shape_title"
-            android:summary="@string/theme_customization_icon_shape_summary"
-            android:fragment="org.derpfest.derpspace.fragments.IconShapes"/>
+            android:key="android.theme.customization.navbar"
+            android:title="@string/theme_customization_navbar_title"
+            android:summary="@string/theme_customization_navbar_summary"
+            android:fragment="org.derpfest.derpspace.fragments.NavbarStyles"/>
 
     </PreferenceCategory>
 
