@@ -82,13 +82,16 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">亮度控制條</string>
 
+    <!-- Three button navbar -->
+    <string name="three_button_navbar_category">三按鈕導覽列</string>
+
     <!-- Quick Settings footer category -->
     <string name="footer_category">頁腳</string>
 
     <!-- Quick Settings header category -->
     <string name="header_category">頂部</string>
 
-    <!-- Statusbar Iten -->
+    <!-- Statusbar Items -->
     <string name="statusbar_items_category">狀態列圖示</string>
 
     <!-- Customisation -->
@@ -98,7 +101,7 @@
     <string name="battery_title">電池</string>
 
     <!-- Battery Settings -->
-    <string name="battery_settings_title">電池設定</string>   
+    <string name="battery_settings_title">電池設定</string>
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">讓我們幫助你！</string>
@@ -539,13 +542,7 @@
     <string name="screen_off_animation_crt">CRT（陰極射線管）</string>
     <string name="screen_off_animation_scale">縮放</string>
 
-    <!-- Weather -->
-    <string name="weather_category_title">天氣</string>
-    <string name="weather_settings_title">天氣設定</string>
-    <string name="weather_settings_summary">設定圖示包和天氣服務</string>
-    <string name="lockscreen_weather_title">天氣狀況</string>
-    <string name="lockscreen_weather_summary">顯示目前的天氣狀況和溫度</string>
-    <string name="lockscreen_weather_enabled_info">需要啟用天氣服務</string>
-    <string name="lockscreen_weather_location_title">天氣位置</string>
-    <string name="lockscreen_weather_location_summary">顯示目前的天氣位置</string>
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel 動畫</string>
+    <string name="pixel_navbar_anim_summary">對「三按鈕」的導覽列啟用 Pixel 樣式的動畫</string>
 </resources>
