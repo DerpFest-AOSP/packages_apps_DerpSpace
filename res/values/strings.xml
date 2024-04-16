@@ -83,13 +83,16 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Brightness slider</string>
 
+    <!-- Three button navbar -->
+    <string name="three_button_navbar_category">Three button navbar</string>
+
     <!-- Quick Settings footer category -->
     <string name="footer_category">Footer</string>
 
     <!-- Quick Settings header category -->
     <string name="header_category">Header</string>
 
-    <!-- Statusbar Iten -->
+    <!-- Statusbar Items -->
     <string name="statusbar_items_category">Statusbar Items</string>
 
     <!-- Customisation -->
@@ -99,7 +102,7 @@
     <string name="battery_title">Battery</string>
 
     <!-- Battery Settings -->
-    <string name="battery_settings_title">Battery Settings</string>   
+    <string name="battery_settings_title">Battery Settings</string>
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">Help us help you!</string>
@@ -555,4 +558,8 @@
     <string name="screen_off_animation_default">Default</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel animation</string>
+    <string name="pixel_navbar_anim_summary">Enable pixel style animation for three button navigation bar</string>
 </resources>

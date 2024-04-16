@@ -81,13 +81,16 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Helligkeitsregler</string>
 
+    <!-- Three button navbar -->
+    <string name="three_button_navbar_category">Drei-Schaltflächen-Navigationsleiste</string>
+
     <!-- Quick Settings footer category -->
     <string name="footer_category">Fußzeile</string>
 
     <!-- Quick Settings header category -->
     <string name="header_category">Kopf</string>
 
-    <!-- Statusbar Iten -->
+    <!-- Statusbar Items -->
     <string name="statusbar_items_category">Statusbar-Elemente</string>
 
     <!-- Customisation -->
@@ -97,7 +100,7 @@
     <string name="battery_title">Akkustand</string>
 
     <!-- Battery Settings -->
-    <string name="battery_settings_title">Akkustandanzeige</string>   
+    <string name="battery_settings_title">Akkustandanzeige</string>
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">Hilf uns, Dir zu helfen!</string>
@@ -526,4 +529,8 @@
     <string name="screen_off_animation_default">Standard</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Skalieren</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel-Animation</string>
+    <string name="pixel_navbar_anim_summary">Animation der Home-Taste aktivieren</string>
 </resources>
