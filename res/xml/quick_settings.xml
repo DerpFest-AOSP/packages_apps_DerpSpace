@@ -25,13 +25,6 @@
         android:key="quick_settings_general_category"
         android:title="@string/general_category">
 
-        <Preference
-            android:key="qs_panel_options"
-            android:persistent="false"
-            android:title="@string/qs_panel_options_title"
-            android:summary="@string/qs_panel_options_summary"
-            android:fragment="org.derpfest.derpspace.fragments.QSPanelSettings" />
-
         <org.derpfest.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
@@ -42,17 +35,6 @@
             android:max="100"
             android:min="1" />
     </PreferenceCategory>
-
-     <PreferenceCategory
-        android:key="quick_settings_header_category"
-        android:title="@string/header_category">
-
-        <Preference
-            android:key="category_custom_header"
-            android:fragment="org.derpfest.derpspace.fragments.QsHeaderImageSettings"
-            android:title="@string/custom_header_title"
-            android:summary="@string/custom_header_summary" />
-     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="quick_settings_secure_category"
