@@ -52,28 +52,18 @@
         android:key="quick_settings_brighness_category"
         android:title="@string/qs_brightness_slider_category">
 
-        <org.derpfest.support.preferences.SecureSettingListPreference
+        <org.derpfest.support.preferences.SecureSettingSwitchPreference
             android:key="qs_show_brightness_slider"
-            android:title="@string/qs_brightness_slider_title"
-            android:dialogTitle="@string/qs_brightness_slider_title"
-            android:summary="%s"
-            android:entries="@array/qs_brightness_slider_entries"
-            android:entryValues="@array/qs_brightness_slider_values"
-            android:defaultValue="2" />
-
-        <org.derpfest.support.preferences.SecureSettingListPreference
-            android:key="qs_brightness_slider_position"
-            android:title="@string/qs_brightness_slider_position_title"
-            android:dialogTitle="@string/qs_brightness_slider_position_title"
-            android:summary="%s"
-            android:entries="@array/qs_brightness_slider_position_entries"
-            android:entryValues="@array/qs_brightness_slider_position_values"
-            android:defaultValue="1" />
+            android:title="@string/status_bar_brightness_slider_title"
+            android:summary="@string/status_bar_brightness_slider_summary"
+            android:defaultValue="true" />
 
         <org.derpfest.support.preferences.SecureSettingSwitchPreference
             android:key="qs_show_auto_brightness"
-            android:title="@string/qs_auto_brightness_title"
-            android:summary="@string/qs_auto_brightness_summary"
+            android:title="@string/status_bar_brightness_slider_auto_title"
+            android:summary="@string/status_bar_brightness_slider_auto_summary"
+            android:dependency="qs_show_brightness_slider"
+            settings:controller="org.derpfest.derpspace.fragments.ShowAutoBrightnessController"
             android:defaultValue="true" />
 
     </PreferenceCategory>
