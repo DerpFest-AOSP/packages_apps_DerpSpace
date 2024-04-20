@@ -55,6 +55,12 @@
             android:title="@string/ambient_edge_light_advanced_category_title"
             android:dependency="pulse_ambient_light" >
 
+            <org.derpfest.support.preferences.SecureSettingSwitchPreference
+                android:key="pulse_ambient_light_face_down"
+                android:title="@string/ambient_edge_light_face_down_title"
+                android:summary="@string/ambient_edge_light_face_down_summary"
+                android:defaultValue="@*android:bool/config_edgeLightFaceDownEnabledByDefault" />
+
             <org.derpfest.support.preferences.SecureSettingSeekBarPreference
                 android:key="pulse_ambient_light_duration"
                 android:title="@string/ambient_edge_light_duration_title"

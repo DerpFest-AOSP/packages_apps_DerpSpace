@@ -480,6 +480,8 @@
     <string name="ambient_edge_light_duration_title">Effektdauer</string>
     <string name="ambient_edge_light_repeat_count_title">Anzahl der Wiederholungen</string>
     <string name="ambient_edge_light_width_title">Beleuchtungsbreite</string>
+    <string name="ambient_edge_light_face_down_title">Umdrehen zum aktivieren</string>
+    <string name="ambient_edge_light_face_down_summary">Seitenbeleuchtung wird nur angezeigt, wenn das Telefon mit der Vorderseite nach unten liegt</string>
 
     <!-- Netflix Spoof -->
     <string name="netflix_spoof_title">Netflix-Spoofing</string>
