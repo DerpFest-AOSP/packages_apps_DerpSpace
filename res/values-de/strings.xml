@@ -543,4 +543,13 @@
     <!-- QS Bluetooth auto on -->
     <string name="qs_bt_auto_on_title">Automatische Bluetooth-Aktivierung</string>
     <string name="qs_bt_auto_on_summary">Schaltet Bluetooth immer ein, wenn auf die Bluetooth-QS-Kachel gedrückt wird</string>
+
+    <!-- Privacy Indicator -->
+    <string name="privacy_category">Privatsphäre</string>
+    <string name="mic_camera_privacy_indicator_title">Anzeige bei Mikrofon-/Kamerazugriff</string>
+    <string name="mic_camera_privacy_indicator_summary">In der Statusleiste anzeigen, wenn eine App auf Mikrofon oder Kamera zugreift</string>
+    <string name="location_privacy_indicator_title">Anzeige bei Standortzugriff</string>
+    <string name="location_privacy_indicator_summary">In der Statusleiste anzeigen, wenn eine App auf den Standort zugreift</string>
+    <string name="projection_privacy_indicator_title">Anzeige bei Streamen des Bildschirms</string>
+    <string name="projection_privacy_indicator_summary">Separate Anzeige bei aktivem Streamen des Bildschirms</string>
 </resources>
