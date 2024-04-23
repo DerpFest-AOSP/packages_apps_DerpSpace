@@ -382,6 +382,10 @@
     <string name="show_battery_percent_charging_title">Akkuanzeige in Prozent beim Aufladen</string>
     <string name="show_battery_percent_charging_summary">Beim Aufladen immer den Akkuprozentsatz anzeigen</string>
 
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibration bei Fingerabdruckerkennung</string>
+    <string name="fprint_sucess_vib_summary">Bei erfolgreicher Fingerabdruckerkennung vibrieren</string>
+
     <!-- QS Battery estimates -->
     <string name="qs_show_battery_estimate_title">Akkuschätzung</string>
     <string name="qs_show_battery_estimate_summary_on">Geschätzte verbleibende Akkulaufzeit anzeigen, wenn verfügbar</string>

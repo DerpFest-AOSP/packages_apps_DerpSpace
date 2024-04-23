@@ -25,6 +25,13 @@
         android:key="lockscreen_ui_general_category"
         android:title="@string/general_category">
 
+        <SwitchPreferenceCompat
+            android:key="fingerprint_success_vib"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:persistent="false"
+            android:defaultValue="true" />
+
         <org.derpfest.support.preferences.SystemSettingSwitchPreference
             android:key="auth_ripple_enabled"
             android:title="@string/enable_fingerprint_ripple_effect_title"
