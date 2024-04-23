@@ -41,6 +41,12 @@
             settings:units="%"
             android:max="100"
             android:min="1" />
+
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_bt_auto_on"
+            android:title="@string/qs_bt_auto_on_title"
+            android:summary="@string/qs_bt_auto_on_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
      <PreferenceCategory

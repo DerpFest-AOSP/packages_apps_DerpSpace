@@ -535,4 +535,8 @@
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel-Animation</string>
     <string name="pixel_navbar_anim_summary">Animation der Home-Taste aktivieren</string>
+
+    <!-- QS Bluetooth auto on -->
+    <string name="qs_bt_auto_on_title">Automatische Bluetooth-Aktivierung</string>
+    <string name="qs_bt_auto_on_summary">Schaltet Bluetooth immer ein, wenn auf die Bluetooth-QS-Kachel gedrückt wird</string>
 </resources>
