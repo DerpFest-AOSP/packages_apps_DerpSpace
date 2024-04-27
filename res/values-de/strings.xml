@@ -552,4 +552,8 @@
     <string name="location_privacy_indicator_summary">In der Statusleiste anzeigen, wenn eine App auf den Standort zugreift</string>
     <string name="projection_privacy_indicator_title">Anzeige bei Streamen des Bildschirms</string>
     <string name="projection_privacy_indicator_summary">Separate Anzeige bei aktivem Streamen des Bildschirms</string>
+
+    <!-- Colored QS notification icons -->  
+    <string name="qs_colored_icons_title">Farbige Symbole</string>
+    <string name="qs_colored_icons_summary">Richtige App-Symbole für Benachrichtigungssymbole in den Schnelleinstellungen verwenden</string>
 </resources>

@@ -32,6 +32,12 @@
             android:summary="@string/qs_panel_options_summary"
             android:fragment="org.derpfest.derpspace.fragments.QSPanelSettings" />
 
+        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+            android:key="qs_colored_icons"
+            android:title="@string/qs_colored_icons_title"
+            android:summary="@string/qs_colored_icons_summary"
+            android:defaultValue="false" />
+
         <org.derpfest.support.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:title="@string/qs_transparency_title"
