@@ -353,8 +353,8 @@
     <string name="show_wifi_standard_icon_summary">Indikator des WLAN-Standards in der WLAN-Signalanzeige anzeigen</string>
 
     <!-- QS Transparency -->
-    <string name="qs_transparency_title">Hintergrundtransparenz</string>
-    <string name="qs_transparency_summary">Transparenz des Hintergrunds der Schnelleinstellungen anpassen</string>
+    <string name="qs_transparency_title">Deckkraft des Hintergrunds</string>
+    <string name="qs_transparency_summary">Deckkraft des Hintergrunds der Schnelleinstellungen anpassen</string>
 
     <!-- QS brightness slider -->
     <string name="qs_brightness_slider_title">Helligkeitsregler</string>
