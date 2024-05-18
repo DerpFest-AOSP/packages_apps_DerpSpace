@@ -82,13 +82,16 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">亮度调节条</string>
 
+    <!-- Three button navbar -->
+    <string name="three_button_navbar_category">三按钮导航栏</string>
+
     <!-- Quick Settings footer category -->
     <string name="footer_category">脚注</string>
     
     <!-- Quick Settings header category -->
     <string name="header_category">头图</string>
 
-    <!-- Statusbar Iten -->
+    <!-- Statusbar Items -->
     <string name="statusbar_items_category">状态栏图标</string>
 
     <!-- Customisation -->
@@ -97,7 +100,7 @@
     <!-- Battery -->
     <string name="battery_title">电量显示</string>
     <!-- Battery Settings -->
-    <string name="battery_settings_title">电池栏设置</string>   
+    <string name="battery_settings_title">电池栏设置</string>
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">让我们帮助你！</string>
@@ -182,13 +185,14 @@
     <string name="theme_customization_lock_clock_title">锁屏时钟字体</string>
     <string name="theme_customization_lock_clock_summary">设置锁屏界面的时钟使用的字体</string>
 
-    <!-- reTicker -->
-    <string name="reticker_title">reTicker 精简横幅通知</string>
-    <string name="reticker_summary">将传统的大块横幅通知替换为重新设计的 reTicker 横幅。 \n与传统样式通知相比更简洁，侵入性更小。</string>
-    <string name="reticker_colored_title">使用 App 颜色作为横幅背景色</string>
-    <string name="reticker_colored_summary">使用发出通知的 App 的主色调填作为 reTicker 横幅的背景色</string>
-    <string name="reticker_landscape_only_title">仅横屏时启用</string>
-    <string name="reticker_landscape_only_summary">只在设备处于横屏模式下时启用 reTicker 横幅</string>
+    <!-- Island Notification -->
+    <string name="island_notification_title">灵动岛式通知</string>
+    <string name="island_notification_summary">以灵动岛样式显示弹出通知</string>
+    <string name="island_notification_now_playing_title">正在播放</string>
+    <string name="island_notification_now_playing_summary">以灵动岛样式显示正在播放的歌曲</string>
+    <string name="island_notification_footer_text">
+        受 iOS 中灵动岛的启发，灵动岛式通知功能可将 Android 的弹出通知更改为便捷小巧而实用的通知样式。\n\n灵动岛快捷控制包含以下功能：\n1. 点按灵动岛式通知以快速接听来电。\n2. 长按灵动岛式通知以拒接来电。\n3. 长按灵动岛式通知以展开通知预览。
+    </string>
 
     <!-- Network traffic -->
     <string name="network_traffic_intro_text">
@@ -201,14 +205,6 @@
     <string name="network_options_title">选项</string>
     <string name="network_traffic_autohide_title">当网络不活跃时隐藏网速显示</string>
     <string name="network_traffic_autohide_summary">当网速低于 1 KB/s 时隐藏网速显示</string>
-
-    <!-- Media art -->
-    <string name="lockscreen_media_art_options_title">媒体封面</string>
-    <string name="media_art_title">媒体封面</string>
-    <string name="media_art_summary">当可用时显示媒体封面</string>
-
-    <!-- Lock screen cover art -->
-    <string name="lockscreen_media_blur_title">媒体封面模糊等级</string>
 
     <!-- Clock position -->
     <string name="status_bar_clock_position_center">居中</string>
@@ -315,6 +311,10 @@
     <string name="bluetooth_battery_title">蓝牙设备电量显示</string>
     <string name="bluetooth_battery_summary">在可用时显示已连接的蓝牙设备电量</string>
 
+    <!-- Clock auto hide -->
+    <string name="status_bar_clock_auto_hide_title">自动隐藏</string>
+    <string name="status_bar_clock_auto_hide_summary">在启动器可见时自动隐藏时钟</string>
+
     <!-- Ambient battery bar settings -->
     <string name="ambient_ui">息屏显示</string>
     <string name="ambient_battery_settings_title">电池栏</string>
@@ -347,14 +347,6 @@
     <string name="charging_animation_title">充电动画</string>
     <string name="charging_animation_summary">当充电器插入时显示动画</string>
 
-    <!-- Statusbar Clock background chip -->
-    <string name="statusbar_clock_chip_title">背景条</string>
-    <string name="statusbar_clock_chip_summary">显示强调色填充的状态栏时钟背景条</string> 
-
-    <!-- Hide statusbar on lockscreen -->
-    <string name="lockscreen_hide_status_bar_title">隐藏状态栏</string>
-    <string name="lockscreen_hide_status_bar_summary">启用以在锁屏界面将状态栏隐藏</string>
-
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">原始图标</string>
     <string name="statusbar_colored_icons_summary">为状态栏中的通知使用应用原本的图标</string>
@@ -364,8 +356,8 @@
     <string name="show_wifi_standard_icon_summary">在 Wi-Fi 信号指示器中显示信号类型</string>
 
     <!-- QS Transparency -->
-    <string name="qs_transparency_title">背景透明度</string>
-    <string name="qs_transparency_summary">为快速设置面板设置背景透明度</string>
+    <string name="qs_transparency_title">背景不透明度</string>
+    <string name="qs_transparency_summary">为快速设置面板设置背景不透明度</string>
     
     <!-- QS brightness slider -->
     <string name="qs_brightness_slider_title">亮度调节滑块</string>
@@ -503,6 +495,8 @@
     <string name="ambient_edge_light_duration_title">光效持续时长</string>
     <string name="ambient_edge_light_repeat_count_title">重复次数</string>
     <string name="ambient_edge_light_width_title">光效宽度</string>
+    <string name="ambient_edge_light_face_down_title">翻转以启用</string>
+    <string name="ambient_edge_light_face_down_summary">仅在手机面朝下放置时显示边缘光效</string>
 
     <!-- Netflix Spoof -->
     <string name="netflix_spoof_title">Netflix 机型伪装</string>
@@ -553,4 +547,29 @@
     <string name="screen_off_animation_default">默认</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">缩放</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel 动画</string>
+    <string name="pixel_navbar_anim_summary">为三按钮导航栏启用 Pixel 样式动画</string>
+    <!-- QS Bluetooth auto on -->
+    <string name="qs_bt_auto_on_title">自动打开蓝牙</string>
+    <string name="qs_bt_auto_on_summary">在按住蓝牙快速设置磁贴时自动打开蓝牙</string>
+
+    <!-- Privacy Indicator -->
+    <string name="privacy_category">隐私</string>
+    <string name="mic_camera_privacy_indicator_title">麦克风与相机隐私指示器</string>
+    <string name="mic_camera_privacy_indicator_summary">当有应用使用麦克风或相机时显示指示器</string>
+    <string name="location_privacy_indicator_title">位置信息隐私指示器</string>
+    <string name="location_privacy_indicator_summary">当有应用使用位置信息时显示指示器</string>
+    <string name="projection_privacy_indicator_title">屏幕投放隐私指示器</string>
+    <string name="projection_privacy_indicator_summary">当设备正在屏幕投放时显示指示器</string>
+
+    <!-- Colored QS notification icons -->  
+    <string name="qs_colored_icons_title">彩色通知图标</string>
+    <string name="qs_colored_icons_summary">显示彩色的应用图标而不是单色图标</string>
+
+    <!-- Colored keyguard clock -->
+    <string name="lockscreen_clock_colored_title">彩色时钟</string>
+    <string name="lockscreen_clock_colored_summary_on">时钟颜色将受莫奈取色影响</string>
+    <string name="lockscreen_clock_colored_summary_off">时钟颜色将总是黑色或白色</string>
 </resources>
