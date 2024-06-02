@@ -585,4 +585,9 @@
     <!-- Colored QS notification icons -->  
     <string name="qs_colored_icons_title">Colored QS notification icons</string>
     <string name="qs_colored_icons_summary">Show colored app icon instead of monochrome icons</string>
+
+    <!-- Colored keyguard clock -->
+    <string name="lockscreen_clock_colored_title">Colored clock</string>
+    <string name="lockscreen_clock_colored_summary_on">Clock color is affected by monet</string>
+    <string name="lockscreen_clock_colored_summary_off">Clock color is always black or white</string>
 </resources>

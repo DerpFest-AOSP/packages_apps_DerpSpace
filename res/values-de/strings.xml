@@ -556,4 +556,9 @@
     <!-- Colored QS notification icons -->  
     <string name="qs_colored_icons_title">Farbige Symbole</string>
     <string name="qs_colored_icons_summary">Richtige App-Symbole für Benachrichtigungssymbole in den Schnelleinstellungen verwenden</string>
+
+    <!-- Colored keyguard clock -->
+    <string name="lockscreen_clock_colored_title">Farbige Uhr</string>
+    <string name="lockscreen_clock_colored_summary_on">Die Farbe der Uhr wird von Monet beeinflusst</string>
+    <string name="lockscreen_clock_colored_summary_off">Die Farbe der Uhr ist immer schwarz oder weiß</string>
 </resources>
