@@ -437,7 +437,6 @@
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Rainbow</string>
     <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
-    <string name="monet_engine_style_monochromatic">Monochromatic</string>
     <string name="monet_engine_wallpaper_color_select_summary">Select a different accent color from your wallpaper</string>
     <string name="monet_engine_wallpaper_color_select_title">Wallpaper color selector</string>
     <string name="not_available">Not available</string>

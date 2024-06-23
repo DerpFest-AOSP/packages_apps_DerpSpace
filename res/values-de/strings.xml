@@ -428,7 +428,6 @@
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Regenbogen</string>
     <string name="monet_engine_style_fruit_salad">Obstsalat</string>
-    <string name="monet_engine_style_monochromatic">Monochromatisch</string>
     <string name="monet_engine_wallpaper_color_select_summary">Wähle eine Akzentfarbe aus dem Hintergrundbild</string>
     <string name="monet_engine_wallpaper_color_select_title">Hintergrundbild-Farbauswahl</string>
     <string name="not_available">Nicht verfügbar</string>
