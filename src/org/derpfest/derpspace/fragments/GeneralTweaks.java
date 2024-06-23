@@ -65,7 +65,6 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
 
-    private Preference mUserSwitcher;
     private SwitchPreferenceCompat mPhotosSpoof;
     private SwitchPreferenceCompat mNetFlixSpoof;
 
@@ -76,9 +75,6 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
 
         ContentResolver resolver = getActivity().getContentResolver();
         PreferenceScreen prefSet = getPreferenceScreen();
-
-        mUserSwitcher = findPreference("persist.sys.flags.enableBouncerUserSwitcher");
-        mUserSwitcher.setOnPreferenceChangeListener(this);
 
         mPhotosSpoof = (SwitchPreferenceCompat) prefSet.findPreference(KEY_PHOTOS_SPOOF);
         mPhotosSpoof.setChecked(SystemProperties.getBoolean(SYS_PHOTOS_SPOOF, true));
@@ -103,12 +99,7 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
     public boolean onPreferenceChange(Preference preference, Object newValue) {
 	Context mContext = getActivity().getApplicationContext();
 	ContentResolver resolver = mContext.getContentResolver();
-        if (preference == mUserSwitcher) {
-            boolean value = (Boolean) newValue;
-            Settings.Secure.putIntForUser(getContentResolver(),
-                Settings.Secure.PREF_KG_USER_SWITCHER, value ? 1 : 0, UserHandle.USER_CURRENT);
-            return true;
-        } else if (preference == mPhotosSpoof) {
+        if (preference == mPhotosSpoof) {
             boolean value = (Boolean) newValue;
             SystemProperties.set(SYS_PHOTOS_SPOOF, value ? "true" : "false");
             SystemPropPoker.getInstance().poke();

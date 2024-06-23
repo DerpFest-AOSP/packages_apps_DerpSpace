@@ -454,10 +454,6 @@
     <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
     <string name="status_bar_show_lyric_title">Statusleisten-Lyric aktivieren</string>
 
-    <!-- User switcher -->
-    <string name="lockscreen_user_switcher_title">Benutzerumschaltung auf dem Sperrbildschirm</string>
-    <string name="lockscreen_user_switcher_summary">Beim Entsperren des gesicherten Geräts Benutzerumschalter anzeigen\nErfordert einen Neustart der SystemUI</string>
-
     <!-- Ignore window secure -->
     <string name="ignore_window_secure_title">Flag für sichere Fenster ignorieren</string>
     <string name="ignore_window_secure_summary">Entfernt Screenshot- und Screenrecord-Limits für alle Apps. Dies kann in einigen Fällen bequem sein, kann aber zu Datenschutzlecks führen.</string>
