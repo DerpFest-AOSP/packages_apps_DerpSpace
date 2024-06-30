@@ -552,6 +552,12 @@
     <string name="carrier_label_position_lockscreen">Lockscreen</string>
     <string name="carrier_label_position_statusbar">Statusbar</string>
     <string name="carrier_label_position_both">Lockscreen &amp; Statusbar</string>
+    
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
 
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel animation</string>

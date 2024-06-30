@@ -525,6 +525,12 @@
     <string name="carrier_label_position_statusbar">Statusbar</string>
     <string name="carrier_label_position_both">Sperrbildschirm und Statusbar</string>
 
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Stil der Abschaltanimation</string>
+    <string name="screen_off_animation_default">Standard</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Skalieren</string>
+
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel-Animation</string>
     <string name="pixel_navbar_anim_summary">Animation der Home-Taste aktivieren</string>
