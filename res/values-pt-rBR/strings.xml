@@ -72,6 +72,9 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Controle de brilho da tela</string>
 
+    <!-- Quick Settings header category -->
+<string name="header_category">Cabeçalho</string>
+
     <!-- Quick Settings footer category -->
     <string name="footer_category">Rodapé</string>
 
@@ -86,6 +89,13 @@
 
    <!-- Battery Settings -->
     <string name="battery_settings_title">Configurações da bateria</string>
+    <string name="status_bar_battery_percent_title">Porcentagem da bateria</string>
+    <string name="status_bar_battery_percent_hidden">Oculto</string>
+    <string name="status_bar_battery_percent_text_inside">Dentro do ícone</string>
+    <string name="status_bar_battery_percent_text_next_right">Ao lado do ícone (direita)</string>
+    <string name="status_bar_battery_percent_text_next_left">Ao lado do ícone (esquerda)</string>
+    <string name="status_bar_battery_text_charging_title">Porcentagem da bateria durante o carregamento</string>
+    <string name="status_bar_battery_text_charging_summary">Sempre exiba a porcentagem da bateria durante o carregamento</string>
 
     <!-- Battery Styles -->
     <string name="battery_style_category_title">Estilo do ícone da bateria</string>
@@ -96,6 +106,39 @@
     <string name="derpspace_dialog_message">Se você encontrar um bug em qualquer uma dessas configurações, nos conte em nosso Grupo do Telegram. Você DEVE incluir o seguinte ao postar um relatório de bug:\n\n1. Um logcat ou last_kmsg\n2. Kernel e mods usados\n3. Informações úteis\n\nlf se você não relatar algo adequadamente NÃO espere que as coisas sejam corrigidas...</string>
     <string name="derpspace_dialog_toast">ATENÇÃO! LEIA TUDO COM CALMA.</string>
     <string name="artwork_media_fade_level_summary">Desbotando a imagem de arte da mídia</string>
+
+    <!-- Disable QS -->
+    <string name="disable_qs_title">Ocultar QS na tela de bloqueio segura</string>
+    <string name="disable_qs_summary">Oculta QS se o dispositivo estiver bloqueado. Não desabilita o painel de notificações</string>
+
+    <!-- QS Transparency -->
+    <string name="qs_transparency_title">Transparência de fundo</string>
+    <string name="qs_transparency_summary">Defina o nível de transparência para o fundo do QS</string>
+
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Imagem do Cabeçalho do QS</string>
+
+    <!-- QS tiles layout -->
+    <string name="qs_layout_category_title">Layout dos Ícones</string>
+    <string name="qs_tile_label_hide_title">Ocultar rótulo</string>
+
+    <!-- QS brightness slider -->
+    <string name="qs_brightness_slider_title">Controle de brilho</string>
+    <string name="qs_brightness_slider_summary">Ajuste o controle de brilho nas Configurações Rápidas</string>
+    <string name="qs_brightness_slider_never">Nunca mostrar</string>
+    <string name="qs_brightness_slider_expanded">Mostrar ao expandir</string>
+    <string name="qs_brightness_slider_always">Sempre mostrar</string>
+    <string name="qs_brightness_slider_position_title">Posição</string>
+    <string name="qs_brightness_slider_position_top">Topo</string>
+    <string name="qs_brightness_slider_position_bottom">Base</string>
+
+    <!-- Brightness slider haptic feedback -->
+    <string name="qs_brightness_slider_haptic_title">Feedback tátil</string>
+    <string name="qs_brightness_slider_haptic_summary">Fornecer feedback tátil ao ajustar o brilho com o controle</string>
+
+    <!-- QS auto brightness icon -->
+    <string name="qs_auto_brightness_title">Ícone de brilho automático</string>
+    <string name="qs_auto_brightness_summary">Mostrar alternância para brilho adaptativo perto do controle</string>
 
     <!-- QuickSettings haptic feedback -->
     <string name="qs_tile_vibration_title">Vibração</string>
@@ -195,6 +238,56 @@
     <string name="system_black_theme_title">Usar o tema preto</string>
     <string name="system_black_theme_summary">Force o sistam a usar o tema preto</string>
 
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Configurações avançadas do monet</string>
+    <string name="monet_settings_summary">Configurações adicionais para personalizar o motor monet</string>
+    <string name="theme_style_title">Estilo do tema</string>
+    <string name="theme_style_tonal_spot">Tonal Spot (Padrão)</string>
+    <string name="theme_style_vibrant">Vibrante</string>
+    <string name="theme_style_expressive">Expressivo</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Arco-íris</string>
+    <string name="theme_style_fruit_salad">Salada de Frutas</string>
+    <string name="theme_style_muted">Suave</string>
+    <string name="theme_style_content">Conteúdo</string>
+    <string name="theme_style_monochromatic">Monocromático</string>
+    <string name="color_source_title">Fonte de cor</string>
+    <string name="color_source_both">Ambos (Padrão)</string>
+    <string name="color_source_home">Papel de parede da tela inicial</string>
+    <string name="color_source_lock">Papel de parede da tela de bloqueio</string>
+    <string name="color_source_preset">Predefinido</string>
+    <string name="accent_color_title">Cor de destaque</string>
+    <string name="accent_color_summary">Substituir a cor de destaque padrão</string>
+    <string name="accent_background_title">Fundo de destaque</string>
+    <string name="accent_background_summary">Escolher uma cor de destaque diferente para o fundo</string>
+    <string name="bg_color_title">Cor de fundo</string>
+    <string name="bg_color_summary">Substituir a cor de destaque do fundo padrão</string>
+    <string name="luminance_factor_title">Luminância</string>
+    <string name="luminance_factor_summary">Valores mais altos produzem cores mais brilhantes</string>
+    <string name="chroma_factor_title">Croma</string>
+    <string name="chroma_factor_summary">Valores mais altos produzem cores mais intensas</string>
+    <string name="tint_background_title">Cor do fundo</string>
+    <string name="tint_background_summary">Fazer a seleção de Luminância e Croma afetar também as cores de fundo</string>
+
+    <!-- Navbar styles -->
+    <string name="theme_customization_navbar_title">Estilo da barra de navegação</string>
+    <string name="theme_customization_navbar_summary">Definir estilo personalizado para a barra de navegação</string>
+
+    <!-- Custom Data icons -->
+    <string name="theme_customization_data_title">Estilo do ícone de dados</string>
+    <string name="theme_customization_data_summary">Definir estilo personalizado para ícone de dados</string>
+
+    <!-- Custom switch -->
+    <string name="theme_customization_switch_title">Estilo do interruptor</string>
+    <string name="theme_customization_switch_summary">Definir estilo personalizado para o interruptor</string>
+
+    <!-- Brightness slider styles -->
+    <string name="theme_customization_brightness_slider_title">Estilo do controle de brilho</string>
+    <string name="theme_customization_brightness_slider_summary">Definir estilo personalizado para o controle de brilho</string>
+
+    <!-- Quick settings styles -->
+    <string name="qs_styles_title">Tema dos ícones QS</string>
+
     <!-- Applications fragment -->
     <string name="search">Procurar</string>
     <string name="search_apps">Procurar por apps</string>
@@ -268,5 +361,25 @@
     <string name="ambient_notification_light_color_automatic_title">Cor da notificação</string>
     <string name="pulse_ambient_light_color">Ao pulsar, use</string>
 
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Ícones coloridos</string>
+    <string name="statusbar_colored_icons_summary">Use ícones de aplicativos adequados para ícones de notificação na barra de status</string>
+
+    <!-- Separate signal icons -->
+    <string name="separate_signal_icons_title">Ícones de sinal separados</string>
+    <string name="separate_signal_icons_summary">Mostrar sinal e WiFi separadamente\nRequer reinicialização do SystemUI</string>
+
+     <!-- Statusbar lyric -->
+     <string name="disguise_props_for_music_app_title">Dispositivo disfarçado para aplicativos de música</string>
+    <string name="disguise_props_for_music_app_summary">Disfarce o dispositivo em alguns aplicativos de música para suportar letras da barra de status. Depois de alterar essa alternância, você deve reiniciar os aplicativos para que a alteração tenha efeito.</string>
+
+    <!-- Wi-Fi Standard icon -->
+    <string name="show_wifi_standard_icon_title">Mostrar ícone do tipo de Wi-Fi</string>
+    <string name="show_wifi_standard_icon_summary">Mostrar tipo de Wi-Fi no indicador de sinal de Wi-Fi</string>
+
+    <!-- Unlimited g00gle ph0t0s st0rage -->
+    <string name="use_photos_spoof_title">Armazenamento ilimitado de fotos do Google</string>
+    <string name="use_photos_spoof_summary">Seu dispositivo será identificado como um Pixel XL para obter armazenamento ilimitado de fotos do Google na qualidade original</string>
+    <string name="photos_spoof_toast">Reinicie o app Fotos para que a alteração tenha efeito</string>
 
 </resources>
