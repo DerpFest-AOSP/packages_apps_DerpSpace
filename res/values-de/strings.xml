@@ -374,6 +374,8 @@
     <string name="battery_style_title">Akkudarstellung</string>
     <string name="battery_style_port">Hochformat</string>
     <string name="battery_style_circle">Kreis</string>
+    <string name="battery_style_landscape">Querformat</string>
+    <string name="battery_style_landscape_reversed">Querformat (umgedreht)</string>
     <string name="battery_style_text">Text</string>
     <string name="battery_percent_title">Akkuanzeige mit Prozent</string>
     <string name="battery_percent_summary">Immer den Akkuprozentsatz anzeigen</string>
