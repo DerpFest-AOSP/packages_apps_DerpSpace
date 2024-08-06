@@ -32,6 +32,12 @@
             android:summary="@string/use_photos_spoof_summary"
             android:defaultValue="true" />
 
+        <org.derpfest.support.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pixelprops.integrity"
+            android:title="@string/play_integrity_spoof_title"
+            android:summary="@string/play_integrity_spoof_summary"
+            android:defaultValue="true" />
+
         <SwitchPreferenceCompat
             android:key="use_netflix_spoof"
             android:title="@string/netflix_spoof_title"

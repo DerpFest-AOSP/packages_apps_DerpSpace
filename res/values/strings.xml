@@ -586,4 +586,8 @@
     <string name="lockscreen_clock_colored_title">Colored clock</string>
     <string name="lockscreen_clock_colored_summary_on">Clock color is affected by monet</string>
     <string name="lockscreen_clock_colored_summary_off">Clock color is always black or white</string>
+
+    <!-- Google Play Integrity Spoof -->
+    <string name="play_integrity_spoof_title">Google Play Integrity spoof</string>
+    <string name="play_integrity_spoof_summary">Spoof your device as different model for Google Play Integrity</string>
 </resources>
