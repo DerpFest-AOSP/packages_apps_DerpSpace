@@ -64,6 +64,7 @@ public class GeneralTweaks extends SettingsPreferenceFragment implements OnPrefe
     private static final String KEY_NETFLIX_SPOOF = "use_netflix_spoof";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
+    private static final String SYS_INTEGRITY_SPOOF = "persist.sys.pixelprops.integrity";
 
     private SwitchPreferenceCompat mPhotosSpoof;
     private SwitchPreferenceCompat mNetFlixSpoof;
