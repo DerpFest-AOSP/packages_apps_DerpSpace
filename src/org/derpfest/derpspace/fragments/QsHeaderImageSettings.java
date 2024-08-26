@@ -34,6 +34,7 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreferenceCompat;
+import android.provider.MediaStore;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 
@@ -41,6 +42,8 @@ import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
+
+import org.derpfest.derpspace.utils.ImageUtils;
 
 import java.util.Locale;
 import android.text.TextUtils;
@@ -210,12 +213,13 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mFileHeader) {
             try {
-                Intent intent = new Intent(Intent.ACTION_PICK);
+                Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 intent.setType("image/*");
-                startActivityForResult(intent, REQUEST_PICK_IMAGE);
+                startActivityForResult(intent, 10001);
             } catch(Exception e) {
                 Toast.makeText(getContext(), R.string.custom_header_needs_gallery, Toast.LENGTH_LONG).show();
             }
+            return true;
         }
         return super.onPreferenceTreeClick(preference);
     }
@@ -276,12 +280,18 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent result) {
-        if (requestCode == REQUEST_PICK_IMAGE) {
+        if (requestCode == 10001) {
             if (resultCode != Activity.RESULT_OK) {
                 return;
             }
-            final Uri imageUri = result.getData();
-            Settings.System.putString(getContentResolver(), Settings.System.STATUS_BAR_FILE_HEADER_IMAGE, imageUri.toString());
+            final Uri imgUri = result.getData();
+            if (imgUri != null) {
+                String savedImagePath = ImageUtils.saveImageToInternalStorage(getContext(), imgUri, "qs_header_image", "QS_HEADER_IMAGE");
+                if (savedImagePath != null) {
+                    ContentResolver resolver = getContext().getContentResolver();
+                    Settings.System.putStringForUser(resolver, Settings.System.STATUS_BAR_FILE_HEADER_IMAGE, savedImagePath, UserHandle.USER_CURRENT);
+                }
+            }
         }
     }
 
