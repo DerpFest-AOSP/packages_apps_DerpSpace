@@ -85,6 +85,9 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Слайдер яркости</string>
 
+    <!-- Three button navbar -->
+    <string name="three_button_navbar_category">Навигация с помощью трёх кнопок</string>
+
     <!-- Quick Settings footer category -->
     <string name="footer_category">Подпись</string>
 
@@ -101,11 +104,11 @@
     <string name="battery_title">Батарея</string>
 
    <!-- Battery Settings -->
-    <string name="battery_settings_title">Настройки батареи</string>   
+    <string name="battery_settings_title">Настройки батареи</string>
 
     <!-- Battery Styles -->
     <string name="battery_style_category_title">Стиль батареи</string>
-    <string name="battery_percent_title">Процент зярядки</string>
+    <string name="battery_percent_title">Процент зарядки</string>
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">Помоги нам помочь тебе!</string>
@@ -131,6 +134,8 @@
     <string name="qs_tile_animation_duration_low">Медленно</string>
     <string name="qs_tile_animation_duration_default">По умолчанию</string>
     <string name="qs_tile_animation_duration_fast">Быстро</string>
+    <string name="qs_tile_animation_duration_quite_fast">Быстрее</string>
+    <string name="qs_tile_animation_duration_super_fast">Очень быстро</string>
     <string name="qs_tile_animation_interpolator_linearInterpolator">Линейный</string>
     <string name="qs_tile_animation_interpolator_accelerateInterpolator">Ускоренный</string>
     <string name="qs_tile_animation_interpolator_decelerateInterpolator">Замедленный</string>
@@ -214,6 +219,15 @@
     <!-- Fonts -->
     <string name="theme_customization_lock_clock_title">Шрифт часов на экране блокировки</string>
     <string name="theme_customization_lock_clock_summary">Установить шрифт часов на экране блокировки</string>
+
+    <!-- Island Notification -->
+    <string name="island_notification_title">Островные уведомления</string>
+    <string name="island_notification_summary">Всплывающие уведомления отображаются в стиле динамического острова</string>
+    <string name="island_notification_now_playing_title">Сейчас играет</string>
+    <string name="island_notification_now_playing_summary">Показать играющую сейчас музыку в стиле динамического острова</string>
+    <string name="island_notification_footer_text">
+      Функция Островных уведомлений, вдохновлённая Dynamic Island в iOS, превращает всплывающие уведомения Android в легкодоступные и компактные уведомления.\n\nУправление быстрым доступом островов включает следующие возможности:\n1. Нажмите на островное уведомление, чтобы быстро ответить на звонок.\n2. Нажмите и удерживайте, чтобы отклонить звонок.\n3. Нажмите и удерживайте, чтобы увеличить предпросмотр островного уведомления.
+    </string>
 
     <!-- Applications fragment -->
     <string name="search">Поиск</string>
@@ -419,6 +433,11 @@
     <string name="keyguard_show_battery_summary">Показывать полосу заряда в Ambient/Always on display во время зарядки</string>
     <string name="keyguard_show_battery_always_title">Всегда показывать полосу заряда</string>
     <string name="keyguard_show_battery_always_summary">Всегда показывать полосу заряда в Ambient/Always on display</string>
+    <string name="keyguard_batterybar_color_source">Источник цвета полоски заряда батареи</string>
+    <string name="keyguard_batterybar_custom_color">Пользовательский цвет полоски заряда батареи</string>
+    <string name="keyguard_batterybar_white">Белый (По умолчанию)</string>
+    <string name="keyguard_batterybar_accent">Главный цвет</string>
+    <string name="keyguard_batterybar_custom">Пользовательский</string>
 
     <!-- Pulse Gravity and mirror options -->
     <string name="pulse_custom_gravity_title">Гравитация</string>
@@ -441,7 +460,7 @@
     <!-- Charging animation -->
     <string name="charging_animation_title">Анимация зарядки</string>
     <string name="charging_animation_summary">Показывать анимацию при подключении кабеля зарядки</string>
-    
+
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Задний фон часов</string>
     <string name="statusbar_clock_chip_summary">Дисплей с акцентированным фоном за часами</string>
@@ -453,7 +472,7 @@
     <string name="solid_gradient_void">Градиентная пустота</string>
     <string name="solid_gradient_neumorph">Нейморфный градиент</string>
     <string name="solid_gradient_stroke">Резкий градиентный мазок</string>
-    <string name="solid_accent_transperent">Прозрачный с аккцентом</string>    
+    <string name="solid_accent_transperent">Прозрачный с аккцентом</string>
     <string name="solid_gradient_light">Светлый градиент</string>
     <string name="solid_gradient_shape">Легкий градиентный мазок</string>
     <string name="solid_gradient_void_light">Светлая градиентная пустота</string>
@@ -547,8 +566,10 @@
     <!-- Battery customizations -->
     <string name="battery_options">Батарея</string>
     <string name="battery_style_title">Стиль батареи</string>
-    <string name="battery_style_port">портрет</string>
+    <string name="battery_style_port">Портретный</string>
     <string name="battery_style_circle">Круг</string>
+    <string name="battery_style_landscape">Ландшафтный</string>
+    <string name="battery_style_landscape_reversed">Ландшафтный (обратный)</string>
     <string name="battery_style_text">Текст</string>
     <string name="battery_percent_summary">Всегда показывать процент заряда батареи с помощью значка</string>
     <string name="battery_percent_inside_title">Показывать процент внутри</string>
@@ -729,4 +750,104 @@
     <string name="theme_color">Цвет темы (по умолчанию)</string>
     <string name="notification_color">Цвет уведомления</string>
     <string name="custom_color">Пользовательский цвет</string>
+
+    <!-- Ambient edge lighting -->
+    <string name="ambient_edge_light_action_title">Подсветка краев экрана</string>
+    <string name="ambient_edge_light_title">Подсветка краев экрана</string>
+    <string name="ambient_edge_light_enable_title">Включить подсветку краев</string>
+    <string name="ambient_edge_light_summary">Подсвечивать боковые края экрана при получении уведомлений</string>
+    <string name="ambient_edge_light_color_mode_category_title">Цвет</string>
+    <string name="ambient_edge_light_color_mode_auto">Авто</string>
+    <string name="ambient_edge_light_color_mode_app">Цвет приложения</string>
+    <string name="ambient_edge_light_color_mode_manual">Пользовательский</string>
+    <string name="ambient_edge_light_color_mode_auto_summary">Использовать цвет системы для подсветки краев</string>
+    <string name="ambient_edge_light_color_mode_app_summary">Использовать цвет приложения для подсветки краев</string>
+    <string name="ambient_edge_light_color_mode_manual_summary">Выбрать цвет подсветки</string>
+    <string name="ambient_edge_light_advanced_category_title">Расширенные настройки</string>
+    <string name="ambient_edge_light_duration_title">Продолжительность свечения</string>
+    <string name="ambient_edge_light_repeat_count_title">Количество повторов</string>
+    <string name="ambient_edge_light_width_title">Ширина подсветки</string>
+    <string name="ambient_edge_light_face_down_title">Перевернуть для активации</string>
+    <string name="ambient_edge_light_face_down_summary">Использовать подсветку краев только когда телефон лежит экраном вниз</string>
+
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Спуфинг Netflix</string>
+    <string name="netflix_spoof_summary">Подмена модели устройства для Netflix</string>
+
+    <!-- QS Headers -->
+    <string name="status_bar_custom_header_title">Включить</string>
+    <string name="daylight_header_pack_title">Коллекция фоновых изображений заголовка QS</string>
+    <string name="status_bar_custom_header_shadow_title">Тень изображения заголовка</string>
+    <string name="status_bar_custom_header_shadow_summary">Для лучшей видимости на ярких изображениях</string>
+    <string name="unit_percent">\u0025</string>
+    <string name="static_header_provider_title">Статичное изображение</string>
+    <string name="daylight_header_provider_title">Коллекция изображений</string>
+    <string name="custom_header_provider_title">Источник фонового изображения</string>
+    <string name="custom_header_browse_title">Просмотр установленных фоновых изображений заголовка</string>
+    <string name="custom_header_browse_summary">Нажмите на изображение для использования его как статичный фон заголовка</string>
+    <string name="custom_header_browse_summary_new">Просмотр всех доступных коллекций фоновых изображений заголовка</string>
+    <string name="custom_header_pick_title">Выберите фоновое изображение заголовка</string>
+    <string name="custom_header_pick_summary">Выберите изображение для использования его как статичный фон заголовка</string>
+    <string name="style_enabled_summary">Пользовательское фоновое изображение заголовка включено</string>
+    <string name="style_disabled_summary">Пользовательское фоновое изображение заголовка выключено</string>
+    <string name="header_provider_disabled">Выключено</string>
+    <string name="custom_header_title">Фоновое изображение заголовка QS</string>
+    <string name="custom_header_summary">Отображение картинки наверху панели быстрых настроек</string>
+    <string name="file_header_select_title">Выбрать локальное изображение</string>
+    <string name="file_header_select_summary">Выбрать изображение из хранилища</string>
+    <string name="file_header_provider_title">Пользовательское изображение</string>
+    <string name="custom_header_needs_gallery">Необходимо установить приложение галереи!</string>
+
+    <!-- QS Header offset -->
+    <string name="status_bar_custom_header_offset_title">Смещение изображения заголовка</string>
+    <string name="status_bar_custom_header_offset_summary">Настроить размер изображения заголовка</string>
+
+    <!-- Carrier label -->
+    <string name="carrier_label_category">Название оператора</string>
+    <string name="carrier_label_custom">Пользовательское название оператора</string>
+    <string name="carrier_label_custom_unset">Нажмите, чтобы изменить</string>
+    <string name="carrier_label_custom_title">Пользовательное название оператора </string>
+    <string name="carrier_label_custom_explain">Введите своё название. Оставьте пустым, чтобы использовать название сети</string>
+    <string name="carrier_label_position">Расположение названия оператора</string>
+    <string name="carrier_label_position_hide">Скрыть</string>
+    <string name="carrier_label_position_lockscreen">Экран блокировки</string>
+    <string name="carrier_label_position_statusbar">Строка состояния</string>
+    <string name="carrier_label_position_both">Экран блокировки и строка состояния</string>
+
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Анимация выключения экрана</string>
+    <string name="screen_off_animation_default">По умолчанию</string>
+    <string name="screen_off_animation_crt">ЭЛТ</string>
+    <string name="screen_off_animation_scale">Масштабирование</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Анимации Pixel</string>
+    <string name="pixel_navbar_anim_summary">Включить стиль анимации Pixel для навигации с помощью трёх кнопок</string>
+
+    <!-- QS Bluetooth auto on -->
+    <string name="qs_bt_auto_on_title">Авто включение Bluetooth</string>
+    <string name="qs_bt_auto_on_summary">Всегда включать Bluetooth при нажатии на плитку на панели быстрых настроек</string>
+
+    <!-- Privacy Indicator -->
+    <string name="privacy_category">Конфиденциальность</string>
+    <string name="mic_camera_privacy_indicator_title">Индикатор для микрофона и камеры</string>
+    <string name="mic_camera_privacy_indicator_summary">Показывать индикатор, когда какое-либо приложение использует микрофон или камеру устройства</string>
+    <string name="location_privacy_indicator_title">Индикатор местоположения</string>
+    <string name="location_privacy_indicator_summary">Показывать индикатор, когда какое-либо приложение использует местоположение устройства</string>
+    <string name="projection_privacy_indicator_title">Индикатор проекции медиа</string>
+    <string name="projection_privacy_indicator_summary">Показывать индикатор, когда экран устройства проецируется</string>
+
+    <!-- Colored QS notification icons -->
+    <string name="qs_colored_icons_title">Цветные иконки уведомлений на панели быстрых настроек</string>
+    <string name="qs_colored_icons_summary">Использовать собственные иконки приложений вместо монохромных</string>
+
+    <!-- Colored keyguard clock -->
+    <string name="lockscreen_clock_colored_title">Цветные часы</string>
+    <string name="lockscreen_clock_colored_summary_on">Цвет часов зависит от темы monet</string>
+    <string name="lockscreen_clock_colored_summary_off">Часы всегда чёрные или белые</string>
+
+    <!-- Google Play Integrity Spoof -->
+    <string name="play_integrity_spoof_title">Спуфинг Google Play Integrity</string>
+    <string name="play_integrity_spoof_summary">Подмена модели вашего устройства для прохождения Google Play Integrity</string>
+
 </resources>
