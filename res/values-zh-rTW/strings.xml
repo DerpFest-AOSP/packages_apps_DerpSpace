@@ -82,13 +82,16 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">亮度控制條</string>
 
+    <!-- Three button navbar -->
+    <string name="three_button_navbar_category">三按鈕導覽列</string>
+
     <!-- Quick Settings footer category -->
     <string name="footer_category">頁腳</string>
 
     <!-- Quick Settings header category -->
     <string name="header_category">頂部</string>
 
-    <!-- Statusbar Iten -->
+    <!-- Statusbar Items -->
     <string name="statusbar_items_category">狀態列圖示</string>
 
     <!-- Customisation -->
@@ -98,7 +101,7 @@
     <string name="battery_title">電池</string>
 
     <!-- Battery Settings -->
-    <string name="battery_settings_title">電池設定</string>   
+    <string name="battery_settings_title">電池設定</string>
 
     <!-- App info dialog -->
     <string name="derpspace_dialog_title">讓我們幫助你！</string>
@@ -183,13 +186,14 @@
     <string name="theme_customization_lock_clock_title">鎖定畫面時鐘字體</string>
     <string name="theme_customization_lock_clock_summary">設定鎖定畫面時鐘的字體樣式</string>
 
-    <!-- reTicker -->
-    <string name="reticker_title">reTicker 通知</string>
-    <string name="reticker_summary">將標準的通知替換為重新設計的 reTicker 通知，它與標準的通知相比更精簡且侵入性更小。</string>
-    <string name="reticker_colored_title">使用應用程式顏色作為背景色</string>
-    <string name="reticker_colored_summary">使用發出通知的應用程式的主體顏色作為 reTicker 的背景顏色</string>
-    <string name="reticker_landscape_only_title">僅在螢幕橫向時啟用</string>
-    <string name="reticker_landscape_only_summary">只有裝置在螢幕橫向模式下才會啟用 reTicker 模式</string>
+    <!-- Island Notification -->
+    <string name="island_notification_title">Island notification</string>
+    <string name="island_notification_summary">Display heads-up notification in Dynamic Island style</string>
+    <string name="island_notification_now_playing_title">Now playing</string>
+    <string name="island_notification_now_playing_summary">Display currently playing song in Dynamic Island style</string>
+    <string name="island_notification_footer_text">
+        The Island notification feature, inspired by iOS\'s Dynamic Island, transforms Android\'s heads-up notifications into quick-access and compact notification utility.\n\nIsland Quick Access Controls includes the following features:\n1. Tap island notification to quick answer phone calls.\n2. Long press island notification to reject phone calls.\n3. Long press island notification to expand the island notification preview.
+    </string>
 
     <!-- Network traffic -->
     <string name="network_traffic_intro_text">
@@ -201,14 +205,6 @@
     <string name="network_options_title">選項</string>
     <string name="network_traffic_autohide_title">當沒有網路流量活動時隱藏顯示器</string>
     <string name="network_traffic_autohide_summary">當網路流量活動低於 1 KB/s 時隱藏顯示器</string>
-
-    <!-- Media art -->
-    <string name="lockscreen_media_art_options_title">媒體封面</string>
-    <string name="media_art_title">媒體封面</string>
-    <string name="media_art_summary">可用時顯示媒體封面</string>
-
-    <!-- Lock screen cover art -->
-    <string name="lockscreen_media_blur_title">媒體封面模糊等級</string>
 
     <!-- Clock position -->
     <string name="status_bar_clock_position_center">置中</string>
@@ -315,6 +311,10 @@
     <string name="bluetooth_battery_title">藍牙裝置電量狀態</string>
     <string name="bluetooth_battery_summary">顯示目前連接的藍牙裝置的電量狀態（如果可用）</string>
 
+    <!-- Clock auto hide -->
+    <string name="status_bar_clock_auto_hide_title">自動隱藏</string>
+    <string name="status_bar_clock_auto_hide_summary">如果啟動器的時鐘可見的話，則隱藏狀態列上的時鐘。</string>
+
     <!-- Ambient battery bar settings -->
     <string name="ambient_ui">隨顯螢幕</string>
     <string name="ambient_battery_settings_title">電量條</string>
@@ -346,14 +346,6 @@
     <!-- Charging animation -->
     <string name="charging_animation_title">充電動畫</string>
     <string name="charging_animation_summary">當裝置接上電源時顯示充電動畫</string>
-
-    <!-- Statusbar Clock background chip -->
-    <string name="statusbar_clock_chip_title">時鐘背景</string>
-    <string name="statusbar_clock_chip_summary">在時鐘後方顯示強調色的背景</string> 
-
-    <!-- Hide statusbar on lockscreen -->
-    <string name="lockscreen_hide_status_bar_title">隱藏狀態列</string>
-    <string name="lockscreen_hide_status_bar_summary">啟用之後狀態列將會在鎖定畫面上隱藏</string>
 
     <!-- Statusbar colored icons -->
     <string name="statusbar_colored_icons_title">彩色圖示</string>
@@ -392,10 +384,6 @@
     <string name="battery_percent_inside_summary">將百分比顯示在圖示內</string>
     <string name="show_battery_percent_charging_title">充電時顯示百分比</string>
     <string name="show_battery_percent_charging_summary">充電時強制在圖示旁顯示百分比</string>
-
-    <!-- Fingerprint authentication vibration -->
-    <string name="fprint_sucess_vib_title">指紋辨識震動</string>
-    <string name="fprint_sucess_vib_summary">指紋辨識通過時震動</string>
 
     <!-- QS Battery estimates -->
     <string name="qs_show_battery_estimate_title">預計電量可用時間</string>
@@ -553,4 +541,8 @@
     <string name="screen_off_animation_default">預設</string>
     <string name="screen_off_animation_crt">CRT（陰極射線管）</string>
     <string name="screen_off_animation_scale">縮放</string>
+
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel 動畫</string>
+    <string name="pixel_navbar_anim_summary">對「三按鈕」的導覽列啟用 Pixel 樣式的動畫</string>
 </resources>
