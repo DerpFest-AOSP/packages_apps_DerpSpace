@@ -22,7 +22,7 @@
     <!-- General app strings -->
     <string name="derpspace_title" translatable="false">DerpSpace</string>
     <string name="add">Adicionar</string>
-    <string name="advanced">Advaçado</string>
+    <string name="advanced">Avançado</string>
     <string name="cancel">Cancelar</string>
     <string name="default_text">Padrão</string>
     <string name="dlg_ok">OK</string>
@@ -47,6 +47,9 @@
     <!-- Frags -->
     <!-- General Tweaks -->
     <string name="general_tweaks_title">Configurações Gerais</string>
+
+    <!-- Lockscreen icons -->
+    <string name="lockscreen_shortcuts">Atalhos da tela de bloqueio</string>
 
     <!-- Lockscreen UI -->
     <string name="lockscreen_ui_title">Interface da tela de bloqueio</string>
@@ -73,7 +76,7 @@
     <string name="qs_brightness_slider_category">Controle de brilho da tela</string>
 
     <!-- Quick Settings header category -->
-<string name="header_category">Cabeçalho</string>
+    <string name="header_category">Cabeçalho</string>
 
     <!-- Quick Settings footer category -->
     <string name="footer_category">Rodapé</string>
@@ -89,16 +92,17 @@
 
    <!-- Battery Settings -->
     <string name="battery_settings_title">Configurações da bateria</string>
-    <string name="status_bar_battery_percent_title">Porcentagem da bateria</string>
+    <string name="battery_style_category_title">Personalização de ícones da bateria</string>
+    <string name="status_bar_battery_text_charging_title">Porcentagem da bateria durante o carregamento</string>
+    <string name="status_bar_battery_text_charging_summary">Sempre exiba a porcentagem da bateria durante o carregamento</string>
+    <string name="status_bar_battery_style_title">Estilo de ícones da bateria</string>
+    <string name="status_bar_battery_percent_title">Estilos de porcentagem da bateria</string>
     <string name="status_bar_battery_percent_hidden">Oculto</string>
     <string name="status_bar_battery_percent_text_inside">Dentro do ícone</string>
     <string name="status_bar_battery_percent_text_next_right">Ao lado do ícone (direita)</string>
     <string name="status_bar_battery_percent_text_next_left">Ao lado do ícone (esquerda)</string>
-    <string name="status_bar_battery_text_charging_title">Porcentagem da bateria durante o carregamento</string>
-    <string name="status_bar_battery_text_charging_summary">Sempre exiba a porcentagem da bateria durante o carregamento</string>
 
     <!-- Battery Styles -->
-    <string name="battery_style_category_title">Estilo do ícone da bateria</string>
     <string name="battery_percent_title">Porcentagem da bateria</string>
 
     <!-- App info dialog -->
@@ -107,9 +111,22 @@
     <string name="derpspace_dialog_toast">ATENÇÃO! LEIA TUDO COM CALMA.</string>
     <string name="artwork_media_fade_level_summary">Desbotando a imagem de arte da mídia</string>
 
+    <!-- Ambient battery bar settings -->
+    <string name="ambient_ui">Tela ambiente</string>
+    <string name="ambient_battery_settings_title">Barra da bateria</string>
+    <string name="ambient_battery_settings_summary">Exibir uma barra de bateria na tela ambiente</string>
+    <string name="keyguard_show_battery_title">Barra de bateria durante o carregamento</string>
+    <string name="keyguard_show_battery_summary">Mostrar uma barra de bateria na tela ambiente durante o carregamento</string>
+    <string name="keyguard_show_battery_always_title">Sempre mostrar a barra da bateria</string>
+    <string name="keyguard_show_battery_always_summary">Sempre mostre uma barra de bateria na tela ambiente</string>
+
     <!-- Disable QS -->
     <string name="disable_qs_title">Ocultar QS na tela de bloqueio segura</string>
     <string name="disable_qs_summary">Oculta QS se o dispositivo estiver bloqueado. Não desabilita o painel de notificações</string>
+
+    <!-- QSTile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">Exigir desbloqueio para usar blocos QS avançados</string>
+    <string name="qstile_requires_unlocking_summary">Peça para desbloquear a tela de bloqueio ao usar blocos QS avançados</string>
 
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Transparência de fundo</string>
@@ -121,6 +138,10 @@
     <!-- QS tiles layout -->
     <string name="qs_layout_category_title">Layout dos Ícones</string>
     <string name="qs_tile_label_hide_title">Ocultar rótulo</string>
+    <string name="qs_tile_label_hide_summary">Mostrar apenas ícones no QS</string>
+    <string name="qs_tile_label_size_title">Tamanho do texto da etiqueta</string>
+    <string name="qs_columns_portrait_title">Colunas (retrato)</string>
+    <string name="qs_columns_landscape_title">Colunas (paisagem)</string>
 
     <!-- QS brightness slider -->
     <string name="qs_brightness_slider_title">Controle de brilho</string>
@@ -135,6 +156,25 @@
     <!-- Brightness slider haptic feedback -->
     <string name="qs_brightness_slider_haptic_title">Feedback tátil</string>
     <string name="qs_brightness_slider_haptic_summary">Fornecer feedback tátil ao ajustar o brilho com o controle</string>
+
+    <!-- Fonts -->
+    <string name="theme_customization_lock_clock_title">Fonte do relógio da tela de bloqueio</string>
+    <string name="theme_customization_lock_clock_summary">Definir estilo de fonte do relógio</string>
+
+     <!-- Lockscreen bottom shortcuts -->
+    <string name="lockscreen_shortcut_category">Atalhos inferiores</string>
+    <string name="lockscreen_shortcut_start_title">Atalho esquerdo</string>
+    <string name="lockscreen_shortcut_end_title">Atalho direito</string>
+    <string name="lockscreen_shortcut_wallet">Carteira</string>
+    <string name="lockscreen_shortcut_home">Controle da Home</string>
+    <string name="lockscreen_shortcut_flashlight">Lanterna</string>
+    <string name="lockscreen_shortcut_none">Nenhum</string>
+    <string name="lockscreen_shortcut_enforce_title">Atalho único</string>
+    <string name="lockscreen_shortcut_enforce_summary">Aplicar o atalho escolhido como a única prioridade existente\nNão mostrará nada até que o atalho específico escolhido esteja disponível</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fprint_sucess_vib_title">Vibração de autenticação de impressão digital</string>
+    <string name="fprint_sucess_vib_summary">Vibrar na autenticação de impressão digital bem-sucedida</string>
 
     <!-- QS auto brightness icon -->
     <string name="qs_auto_brightness_title">Ícone de brilho automático</string>
@@ -151,7 +191,7 @@
     <string name="qs_tile_animation_title">Animações</string>
     <string name="qs_tile_animation_style_title">Estilo das animações</string>
     <string name="qs_tile_animation_duration_title">Duração das animações</string>
-    <string name="qs_tile_animation_interpolator_title">interpolador de animação das tiles</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolador de animação das tiles</string>
     <string name="qs_tile_animation_style_off">Sem animação</string>
     <string name="qs_tile_animation_style_flip">Virar</string>
     <string name="qs_tile_animation_style_rotate">Rotação</string>
@@ -334,16 +374,6 @@
     <string name="status_bar_clock_show_seconds_title">Mostar os segundos</string>
     <string name="status_bar_clock_show_seconds_desc">Exibir horas, minutos, e os segundos</string>
 
-    <!-- Battery style and percentage -->
-    <string name="status_bar_battery_style_circle">Círculo</string>
-    <string name="status_bar_battery_style_icon_portrait">Retrato</string>
-    <string name="status_bar_battery_style_text">Texto</string>
-    <string name="status_bar_battery_style_title">Estilo da porcentagem da bateria</string>
-    <string name="status_bar_battery_percentage_hidden">Escondido</string>
-    <string name="status_bar_battery_percentage_text_inside">Dentro do Ícone</string>
-    <string name="status_bar_battery_percentage_text_next">Em frente ao Ícone</string>
-    <string name="status_bar_battery_percentage_title">Porcentagem da bateria</string>
-
     <!-- Brightness slider -->
     <string name="qqs_show_brightness_title">Mostar o controle de brilho no painel das QS</string>
     <string name="brightness_slider_position_title">Posição do controle de brilho</string>
@@ -382,4 +412,13 @@
     <string name="use_photos_spoof_summary">Seu dispositivo será identificado como um Pixel XL para obter armazenamento ilimitado de fotos do Google na qualidade original</string>
     <string name="photos_spoof_toast">Reinicie o app Fotos para que a alteração tenha efeito</string>
 
+    <!-- Udfps animations -->
+    <string name="udfps_recog_animation">Usar animação UDFPS</string>
+    <string name="udfps_recog_animation_summary">Mostra uma animação enquanto lê sua fingerprint</string>
+    <string name="udfps_recog_animation_effect_title">Animação personalizada UDFPS</string>
+    <string name="udfps_recog_animation_effect_summary">Escolha o efeito de animação</string>
+
+    <!-- Udfps icon picker -->
+    <string name="udfps_icon_picker_title">Seletor de ícones UDFPS</string>
+    <string name="udfps_icon_picker_summary">Escolha o seu ícone de impressão digital favorito</string>
 </resources>
